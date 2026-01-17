@@ -50,8 +50,8 @@
           <a href="/levels" class="nav-link" @click="closeMobileMenu">Levels</a>
           <a href="/maps-keys" class="nav-link" @click="closeMobileMenu">Maps & Keys</a>
           <a href="/codes-solutions" class="nav-link" @click="closeMobileMenu">Codes & Solutions</a>
-          <!-- <a href="/wiki" class="nav-link" @click="closeMobileMenu">Wiki</a>
-          <a href="/guides" class="nav-link" @click="closeMobileMenu">Guides</a> -->
+          <!-- <a href="/wiki" class="nav-link" @click="closeMobileMenu">Wiki</a> -->
+          <!-- <a href="/guides" class="nav-link" @click="closeMobileMenu">Guides</a> -->
         </nav>
       </div>
     </div>

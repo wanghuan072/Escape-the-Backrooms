@@ -9,15 +9,15 @@
               <span class="badge badge-new">v1.0 Full Release</span>
               <span class="badge">Steam Edition</span>
             </div>
-            <h1 class="hero-title">Escape the Backrooms Ultimate Wiki & Strategy Guide</h1>
+            <h1 class="hero-title">Escape the Backrooms: Levels, Maps, Codes & Walkthroughs</h1>
             <p class="hero-description">
-              Escape the Backrooms is your ultimate guide to navigating through 30+ levels of terror. Find maps, codes, entity guides, and puzzle solutions for Escape the Backrooms. Everything you need to escape the Backrooms and survive this horror adventure.
+              Escape the Backrooms is your ultimate guide to navigating through 30+ levels of terror. Find levels, maps, codes, entity guides, and puzzle solutions for Escape the Backrooms. Everything you need to escape the Backrooms and survive this horror adventure.
             </p>
             <div class="hero-features">
               <div class="feature-item">Complete level walkthroughs</div>
-              <div class="feature-item">High-resolution maps</div>
+              <div class="feature-item">High-resolution maps & keys</div>
               <div class="feature-item">Entity database</div>
-              <div class="feature-item">Video guides included</div>
+              <div class="feature-item">Elevator codes, door codes, and computer passwords</div>
             </div>
             <div class="hero-stats">
               <div class="stat-box">
@@ -156,7 +156,7 @@
           <a href="/wiki/entities" class="section-link">View All Entities →</a>
         </div>
         <div class="featured-grid">
-          <a
+          <div
             v-for="entity in homeEntities"
             :key="entity.id"
             :href="`/wiki/entities/${entity.slug}`"
@@ -182,7 +182,7 @@
                 <span v-if="entity.firstAppearsIn" class="meta-item">{{ entity.firstAppearsIn }}</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -242,7 +242,7 @@
           <div class="section-header">
             <div class="header-content">
               <span class="section-label">About</span>
-              <h2 class="section-title">About Escape the Backrooms</h2>
+              <h2 class="section-title">About Us</h2>
               <p class="section-subtitle">Your complete guide to escaping the Backrooms</p>
             </div>
           </div>
@@ -323,9 +323,9 @@
           </div>
           <div class="faq-list">
             <div class="faq-item" v-for="(item, index) in faqItems" :key="index">
-              <div class="faq-question">
-                <span>{{ item.question }}</span>
-              </div>
+              <h3 class="faq-question">
+                {{ item.question }}
+              </h3>
               <div class="faq-answer">
                 <p v-html="item.answer"></p>
               </div>

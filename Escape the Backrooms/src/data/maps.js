@@ -3,6 +3,7 @@ export default [
   {
     id: 1,
     title: 'Map:Level 0 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 0 Map',
     addressBar: 'level-0-map',
     description: 'Complete navigation map for Level 0 with all spawn points, key locations, and exit routes.',
     imageUrl: '/images/maps/map-01.webp',
@@ -107,6 +108,7 @@ export default [
   {
     id: 2,
     title: 'Map:Level 1 Floor 1 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 1 Floor 1 Map',
     addressBar: 'level-1-floor-1-map',
     description: 'Detailed map of Level 1 Floor 1 showing key locations and escape routes.',
     imageUrl: '/images/maps/map-02.webp',
@@ -167,6 +169,7 @@ export default [
   {
     id: 3,
     title: 'Map:Level 1 Floor 3 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 1 Floor 3 Map',
     addressBar: 'level-1-floor-3-map',
     description: 'Detailed map of Level 1 Floor 3 showing key locations and escape routes.',
     imageUrl: '/images/maps/map-03.webp',
@@ -174,7 +177,7 @@ export default [
     mapImageUrl: '/images/maps/map-03-map.webp',
     category: 'Early Game',
     tags: ['Keys', 'Keyholes'],
-    isHome: false,
+    isHome: true,
     seo: {
       title: 'Level 1 Floor 3 Map Walkthrough: Elevator Exits & Navigation - Escape the Backrooms',
       description: 'Complete map guide for Level 1 Floor 3 (The Habitable Zone). Navigate elevator exits for different floors, use downward ramp, and find the darkness entrance spawn point.',
@@ -234,6 +237,7 @@ export default [
   {
     id: 4,
     title: 'Map:Level 2 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 2 Map',
     addressBar: 'level-2-map',
     description: 'Complete navigation map for Level 2 showing all routes and key locations.',
     imageUrl: '/images/maps/map-04.webp',
@@ -285,6 +289,7 @@ export default [
   {
     id: 5,
     title: 'Map:Level 37 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 37 Map',
     addressBar: 'level-37-map',
     description: 'Complete navigation map for Level 37 The Poolrooms showing Dark-Tiled Rooms, spawn points, and exit routes.',
     imageUrl: '/images/maps/map-05.webp',
@@ -392,6 +397,7 @@ export default [
   {
     id: 6,
     title: 'Map:Level 3 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 3 Map',
     addressBar: 'level-3-map',
     description: 'Complete navigation map for Level 3 Electrical Station showing breaker locations, zones, and elevator.',
     imageUrl: '/images/maps/map-06.webp',
@@ -652,7 +658,8 @@ export default [
   },
   {
     id: 7,
-    title: 'Map:Level 4 Map',
+    title: 'Map: Level 4 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 4 Map',
     addressBar: 'level-4-map',
     description: 'Complete navigation map for Level 4 Abandoned Office showing vending machine puzzle, CCTV cameras, and safe zones.',
     imageUrl: '/images/maps/map-07.webp',
@@ -770,7 +777,8 @@ export default [
   },
   {
     id: 8,
-    title: 'Map:Level 9 Map',
+    title: 'Map: Level 9 Map',
+    pageTitle: 'Escape the Backrooms Map: Level 9 Map',
     addressBar: 'level-9-map',
     description: 'Complete navigation map for Level 9 The Suburbs showing safe houses, unsafe houses, computers, and Wretch locations.',
     imageUrl: '/images/maps/map-08.webp',

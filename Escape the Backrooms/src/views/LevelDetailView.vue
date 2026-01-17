@@ -5,7 +5,7 @@
       <div class="container">
         <div class="header-content">
           <div class="title-section">
-            <h1 class="page-title">{{ level.title }}</h1>
+            <h1 class="page-title">{{ level.pageTitle }}</h1>
 
             <div class="quote" v-if="level.quote">
               <div class="quote-text">{{ level.quote }}</div>
@@ -40,7 +40,7 @@
           <aside class="sidebar">
             <!-- Image Card -->
             <div class="image-card">
-              <div class="image-header">{{ level.title }}</div>
+              <div class="image-header">{{ level.pageTitle }}</div>
               <div class="image-wrapper">
                 <img
                   v-if="level.imageUrl"
@@ -56,7 +56,7 @@
             <!-- Information -->
             <div class="info-card" v-if="level.info">
               <div class="info-header">
-                <h3 class="info-title">Information</h3>
+                <h3 class="info-title">Escape the Backrooms: Information</h3>
               </div>
               <div class="info-content">
                 <div class="info-row" v-if="level.info.numberAfterLevel">
@@ -221,9 +221,9 @@ watch(() => route.params.slug, () => {
 
 
 .sidebar {
-  position: sticky;
+  /* position: sticky;
   top: 100px;
-  height: fit-content;
+  height: fit-content; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

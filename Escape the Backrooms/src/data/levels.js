@@ -3,6 +3,7 @@ export default [
   {
     id: 1,
     title: 'Escape the Backrooms: Level 0 Guide',
+    pageTitle: 'Escape the Backrooms: Level 0 Guide',
     addressBar: 'level-0',
     description: 'The first level — a seemingly endless 1970s office-like maze.',
     imageUrl: '/images/levels/level-01.webp',
@@ -132,6 +133,7 @@ export default [
   {
     id: 2,
     title: 'Level 1 - The Habitable Zone',
+    pageTitle: 'Escape the Backrooms: Level 1 - The Habitable Zone',
     addressBar: 'level-1-the-habitable-zone',
     description: 'A massive parking garage with concrete floors, exposed rebar, and a low-hanging fog.',
     imageUrl: '/images/levels/level-02.webp',
@@ -267,6 +269,7 @@ export default [
   {
     id: 3,
     title: 'The Hub',
+    pageTitle: 'Escape the Backrooms: The Hub',
     addressBar: 'hub',
     description: 'A large underground tunnel connecting to most levels in the game, featuring an abandoned M.E.G. Base.',
     imageUrl: '/images/levels/level-03.webp',
@@ -405,6 +408,7 @@ export default [
   {
     id: 4,
     title: 'Level 2 - Pipe Dreams',
+    pageTitle: 'Escape the Backrooms: Level 2 - Pipe Dreams',
     addressBar: 'level-2-pipe-dreams',
     description: 'A long, dark maintenance tunnel with pipes lining the walls and steam hazards.',
     imageUrl: '/images/levels/level-04.webp',
@@ -512,6 +516,7 @@ export default [
   {
     id: 5,
     title: 'Level 3 - Electrical Station',
+    pageTitle: 'Escape the Backrooms: Level 3 - Electrical Station',
     addressBar: 'level-3-electrical-station',
     description: 'A large abandoned electrical station with three dangerous zones, home to the Hounds.',
     imageUrl: '/images/levels/level-05.webp',
@@ -625,6 +630,7 @@ export default [
   {
     id: 6,
     title: 'Level 4 - Abandoned Office',
+    pageTitle: 'Escape the Backrooms: Level 4 - Abandoned Office',
     addressBar: 'level-4-abandoned-office',
     description: 'An abandoned office building with CCTV systems and vending machine puzzles.',
     imageUrl: '/images/levels/level-06.webp',
@@ -726,6 +732,7 @@ export default [
   {
     id: 7,
     title: 'Level 5 - Terror Hotel',
+    pageTitle: 'Escape the Backrooms: Level 5 - Terror Hotel',
     addressBar: 'level-5-terror-hotel',
     description: 'A vintage 1930s hotel complex split into three floors, infested with Deathmoths.',
     imageUrl: '/images/levels/level-07.webp',
@@ -869,6 +876,7 @@ export default [
   {
     id: 8,
     title: 'Level Fun',
+    pageTitle: 'Escape the Backrooms: Level Fun',
     addressBar: 'level-fun',
     description: 'A children\'s birthday party with orange walls and fuzzy blue carpets, home to the Partygoers.',
     imageUrl: '/images/levels/level-08.webp',
@@ -974,6 +982,7 @@ export default [
   {
     id: 9,
     title: 'Level 37 - The Poolrooms',
+    pageTitle: 'Escape the Backrooms: Level 37 - The Poolrooms',
     addressBar: 'level-37-the-poolrooms',
     description: 'A large complex of pools slightly submerged in lukewarm water. A safe haven for restoring sanity.',
     imageUrl: '/images/levels/level-09.webp',
@@ -1066,6 +1075,7 @@ export default [
   {
     id: 10,
     title: 'Level ! - Run For Your Life!',
+    pageTitle: 'Escape the Backrooms: Level ! - Run For Your Life!',
     addressBar: 'level-run-for-your-life',
     description: 'A long hospital hallway with red lights and hospital sirens. A dangerous chase sequence with multiple entities.',
     imageUrl: '/images/levels/level-10.webp',

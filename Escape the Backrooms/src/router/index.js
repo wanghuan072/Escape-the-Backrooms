@@ -9,6 +9,7 @@ import CodesSolutionsView from '../views/CodesSolutionsView.vue'
 // import EntitiesView from '../views/wiki/EntitiesView.vue'
 // import EntityDetailView from '../views/wiki/EntityDetailView.vue'
 // import GuidesView from '../views/GuidesView.vue'
+// import GuideDetailView from '../views/GuideDetailView.vue'
 import SearchView from '../views/SearchView.vue'
 
 const router = createRouter({
@@ -20,7 +21,7 @@ const router = createRouter({
       component: HomeView,
       meta: {
         seo: {
-          title: 'Escape the Backrooms Wiki: Maps, Codes & Walkthroughs',
+          title: 'Escape the Backrooms: Levels, Maps, Codes & Walkthroughs',
           description: 'Comprehensive Escape the Backrooms Wiki. Access high-res maps, elevator codes, entity database, and step-by-step walkthroughs for all game levels.',
           keywords: 'Escape the Backrooms, Wiki, Maps, Walkthrough, Level Guides, Steam, Elevator Codes, Entities, Puzzle Solutions, Strategy Guide'
         }
@@ -115,6 +116,12 @@ const router = createRouter({
     //       keywords: 'Escape the Backrooms guides, beginner tips, multiplayer setup, mic fix, voice chat not working, achievement guide, VR support, how to play'
     //     }
     //   }
+    // },
+    // {
+    //   path: '/guides/:slug',
+    //   name: 'guide-detail',
+    //   component: GuideDetailView,
+    //   // 详情页的 TDK 从数据中的 seo 字段读取，不在路由中设置
     // },
     {
       path: '/search',
