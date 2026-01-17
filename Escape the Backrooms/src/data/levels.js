@@ -7,7 +7,7 @@ export default [
     description: 'The first level — a seemingly endless 1970s office-like maze.',
     imageUrl: '/images/levels/level-01.webp',
     imageAlt: 'Level 0',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Beginner', 'Maze', 'Key Item'],
     isHome: true,
     seo: {
@@ -136,7 +136,7 @@ export default [
     description: 'A massive parking garage with concrete floors, exposed rebar, and a low-hanging fog.',
     imageUrl: '/images/levels/level-02.webp',
     imageAlt: 'Level 1 The Habitable Zone',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Parking Garage', 'Multi-Floor', 'Puzzle'],
     isHome: true,
     seo: {
@@ -271,7 +271,7 @@ export default [
     description: 'A large underground tunnel connecting to most levels in the game, featuring an abandoned M.E.G. Base.',
     imageUrl: '/images/levels/level-03.webp',
     imageAlt: 'The Hub',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Hub', 'Safe Zone', 'Multi-Level Access'],
     isHome: true,
     seo: {
@@ -409,9 +409,9 @@ export default [
     description: 'A long, dark maintenance tunnel with pipes lining the walls and steam hazards.',
     imageUrl: '/images/levels/level-04.webp',
     imageAlt: 'Level 2 Pipe Dreams',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Maintenance Tunnel', 'Steam Hazard', 'Linear'],
-    isHome: true,
+    isHome: false,
     seo: {
       title: 'Level 2 Pipe Dreams Walkthrough: Station & Steam Hazards - Escape the Backrooms',
       description: 'Complete guide for Level 2 Pipe Dreams. Navigate through dark maintenance tunnels, avoid steam pipes and Smilers, find the Station entrance, and reach Level 3 or Level Fun.',
@@ -516,7 +516,7 @@ export default [
     description: 'A large abandoned electrical station with three dangerous zones, home to the Hounds.',
     imageUrl: '/images/levels/level-05.webp',
     imageAlt: 'Level 3 Electrical Station',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Electrical Station', 'Puzzle', 'High Danger'],
     isHome: true,
     seo: {
@@ -629,7 +629,7 @@ export default [
     description: 'An abandoned office building with CCTV systems and vending machine puzzles.',
     imageUrl: '/images/levels/level-06.webp',
     imageAlt: 'Level 4 Abandoned Office',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Office', 'Puzzle', 'Safe Zone'],
     isHome: true,
     seo: {
@@ -730,9 +730,9 @@ export default [
     description: 'A vintage 1930s hotel complex split into three floors, infested with Deathmoths.',
     imageUrl: '/images/levels/level-07.webp',
     imageAlt: 'Level 5 Terror Hotel',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Hotel', 'Multi-Floor', 'High Danger'],
-    isHome: true,
+    isHome: false,
     seo: {
       title: 'Level 5 Terror Hotel Walkthrough: Paintings, Mailboxes & Deathmoths - Escape the Backrooms',
       description: 'Complete guide for Level 5 Terror Hotel. Navigate through Main Hall (paintings puzzle), Hotel (mailbox letters), and Boiler Room. Use bug spray on Deathmoths, collect moth jelly, and avoid Skin-Stealers and Hounds.',
@@ -873,7 +873,7 @@ export default [
     description: 'A children\'s birthday party with orange walls and fuzzy blue carpets, home to the Partygoers.',
     imageUrl: '/images/levels/level-08.webp',
     imageAlt: 'Level Fun',
-    category: 'Early Game',
+    category: 'Main Levels',
     tags: ['Party', 'Stealth', 'High Danger'],
     isHome: true,
     seo: {
@@ -978,9 +978,9 @@ export default [
     description: 'A large complex of pools slightly submerged in lukewarm water. A safe haven for restoring sanity.',
     imageUrl: '/images/levels/level-09.webp',
     imageAlt: 'Level 37 The Poolrooms',
-    category: 'Mid Game',
+    category: 'Main Levels',
     tags: ['Safe', 'Restoration', 'Pools'],
-    isHome: true,
+    isHome: false,
     seo: {
       title: 'Level 37 The Poolrooms Walkthrough: Sanity Restoration & Hazards - Escape the Backrooms',
       description: 'Complete guide for Level 37 The Poolrooms. Navigate the poolrooms to restore sanity, avoid Dark-Tiled Rooms with Hydrolitis Plague and Hot Water Zone, and find the exit to Level !.',
