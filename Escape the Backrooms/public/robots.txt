@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://escapethebackrooms.org/sitemap.xml
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+
+
+

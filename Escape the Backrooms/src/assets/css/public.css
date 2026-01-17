@@ -1,0 +1,257 @@
+/* 全局重置和基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #0a0a0a;
+  background-image: url('/images/bg.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(10, 10, 10, 0.7) 0%, rgba(0, 0, 0, 0.95) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 0, 0.03) 2px,
+      rgba(0, 255, 0, 0.03) 4px
+    );
+  pointer-events: none;
+  z-index: 0;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* 容器样式 */
+.container { 
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* V-HTML content styles (for v-html in Levels, Entities, and Maps detail pages) */
+.v-html-style {
+  color: #fff;
+  line-height: 1.8;
+}
+
+.v-html-style h2 {
+  font-size: 1.8rem;
+  color: #ffd700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+  font-weight: normal;
+}
+
+.v-html-style h2:first-child {
+  margin-top: 0;
+}
+
+.v-html-style h3 {
+  font-size: 1.3rem;
+  color: #ffd700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: normal;
+}
+
+.v-html-style h4 {
+  font-size: 1.1rem;
+  color: #ffd700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.v-html-style p {
+  margin-bottom: 1rem;
+  color: #ddd;
+  line-height: 1.7;
+}
+
+.v-html-style ul,
+.v-html-style ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  color: #ddd;
+}
+
+.v-html-style li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.v-html-style strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.v-html-style a {
+  color: #0a0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.v-html-style .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.v-html-style .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  background: rgba(10, 10, 10, 0.5);
+  aspect-ratio: 1;
+}
+
+.v-html-style .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.v-html-style .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Page Hero - Common styles for all inner pages (NOT for home page) */
+.page-hero {
+  padding: 4rem 0 3rem;
+  background: rgba(5, 5, 5, 0.6);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.page-hero .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.page-hero .title-section {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.page-hero .page-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: #ffd700;
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.page-hero .page-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.page-hero .hero-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* 移动端 - 768px 全局字体样式 */
+@media (max-width: 768px) {
+  .container{
+    padding: 0 10px
+  }
+  .home-view h1,
+  .home-view .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  .home-view h2,
+  .home-view .section-title {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  .home-view h3,
+  .home-view .card-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  .home-view h4 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  .home-view p,
+  .home-view .hero-description,
+  .home-view .section-subtitle,
+  .home-view .card-desc,
+  .home-view .about-text p,
+  .home-view .faq-answer p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+}
+
+
