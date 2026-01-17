@@ -1063,6 +1063,84 @@ export default [
       </div>
     `,
   },
+  {
+    id: 10,
+    title: 'Level ! - Run For Your Life!',
+    addressBar: 'level-run-for-your-life',
+    description: 'A long hospital hallway with red lights and hospital sirens. A dangerous chase sequence with multiple entities.',
+    imageUrl: '/images/levels/level-10.webp',
+    imageAlt: 'Level ! Run For Your Life',
+    category: 'Main Levels',
+    tags: ['Chase', 'Extreme Danger', 'Hospital'],
+    isHome: false,
+    seo: {
+      title: 'Level ! Run For Your Life Walkthrough: Chase & Escape Guide - Escape the Backrooms',
+      description: 'Complete guide for Level ! Run For Your Life. Navigate the hospital hallway, escape from Smiler and 6 Partygoers, and reach The End.',
+      keywords: 'Level !, Run For Your Life, Escape the Backrooms, Smiler, Partygoer, hospital hallway, chase, The End, Walkthrough',
+    },
+    quote: '"Well this doesn\'t look good..."',
+    quoteBy: 'The player at the start of the Level',
+    survivalDifficulty: 'Class 5 - Extreme Danger',
+    sanityDanger: 'Class 0 - No Sanity Risk',
+    // Right sidebar: basic info only
+    hubModeInfo: {
+      name: 'Run For Your Life!',
+      description: 'Run for your Life! is fairly uncomplicated in appearance and layout, though that does not take away from the ever-present danger here. The level consists entirely of one long, narrow hallway reminiscent of hallways commonly found inside modern hospitals.',
+    },
+    info: {
+      numberAfterLevel: '!',
+      subName: 'Run For Your Life!',
+      orderInPath: 'N/A',
+    },
+    // Left content: all detailed information
+    detailsHtml: `
+      <p>Level !, also known as Run For Your Life! is a level in Escape the Backrooms. It appears to be a hospital hallway with red lights.</p>
+
+      <h2>Document in The M.E.G. Base</h2>
+      <p><strong>File Name:</strong> Run for your Life!</p>
+      <p><strong>Description:</strong> Run for your Life! is fairly uncomplicated in appearance and layout, though that does not take away from the ever-present danger here. The level consists entirely of one long, narrow hallway reminiscent of hallways commonly found inside modern hospitals.</p>
+
+      <h2>Appearance</h2>
+      <p>Level ! is a long hospital hallway with red lights and the loud sound of hospital sirens in all directions. The hallway is fairly short, with various objects such as hospital equipment and beds scattered that block your way. The atmosphere is tense and dangerous, with the constant threat of entities chasing you from behind.</p>
+
+      <h2>Objective</h2>
+      <p>Once you first spawn in, you must enter the hallway, and you will get chased by a <a href="/wiki/entities/smiler">Smiler</a> and a group of 6 <a href="/wiki/entities/partygoer">Partygoers</a>. You will then have to run down the hallway and as you go through the Level, doors will open up and act as obstacles.</p>
+      <p>Eventually, the path will be blocked off and you will have to take an open path on the left to proceed on. In this hallway, one of the Partygoers will enter it and chase you. Shortly after leaving this hallway you should arrive at the exit door. Push it and enter it and then you will fall down a hole and get to <a href="/levels/the-end">The End</a>.</p>
+
+      <h2>Items</h2>
+      <p>There are no items that can be found in this level.</p>
+
+      <h2>Entities</h2>
+      <p>In this level, you get chased by a horde of entities. The entities you will get chased by include:</p>
+      <ul>
+        <li><a href="/wiki/entities/smiler">Smiler</a> (1) — Chases you from the start of the level. This entity will pursue you throughout the hallway.</li>
+        <li><a href="/wiki/entities/partygoer">Partygoer</a> (6) — A group of 6 Partygoers will chase you alongside the Smiler. One of them will enter the left hallway path and continue chasing you there.</li>
+      </ul>
+
+      <h2>Objects</h2>
+      <p>There are no objects in this level.</p>
+
+      <h2>Entrances & Exits</h2>
+      <h3>Entrances</h3>
+      <ul>
+        <li>Find the red short hallway in <a href="/levels/level-37-the-poolrooms">Level 37</a> to get here.</li>
+      </ul>
+      <h3>Exits</h3>
+      <ul>
+        <li>Run through the entire hallway and reach the door at the end to get to <a href="/levels/the-end">The End</a>.</li>
+      </ul>
+
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="/images/levels/level-10-01.webp" alt="Level ! image 1" /></div>
+        <div class="gallery-item"><img src="/images/levels/level-10-02.webp" alt="Level ! image 2" /></div>
+        <div class="gallery-item"><img src="/images/levels/level-10-03.webp" alt="Level ! image 3" /></div>
+        <div class="gallery-item"><img src="/images/levels/level-10-04.webp" alt="Level ! image 4" /></div>
+        <div class="gallery-item"><img src="/images/levels/level-10-05.webp" alt="Level ! image 5" /></div>
+        <div class="gallery-item"><img src="/images/levels/level-10-06.webp" alt="Level ! image 6" /></div>
+      </div>
+    `,
+  },
 ]
 
 
