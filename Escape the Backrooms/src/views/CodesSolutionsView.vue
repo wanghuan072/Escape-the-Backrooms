@@ -134,7 +134,6 @@
             </div>
             <div class="solution-images">
               <img src="/images/levels/level-05-05.webp" alt="Level 3 Wire Puzzle" class="solution-img" loading="lazy" />
-              <img src="/images/levels/level-05-06.webp" alt="Level 3 Triway" class="solution-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -191,7 +190,6 @@
             <p class="solution-description">After the vending machine puzzle, you'll enter a room full of cubicles. Find the "Reset Cameras" button located at the very end of the room and press it. Then you must sneak past 4 different Security Cameras scattered throughout multiple rooms. If you get spotted by a Camera, it will flash red and trigger an alarm, causing the door to Level 5 to be locked. You'll need to use a Crowbar to break open the Vent in the hallway to try again. Don't get seen by any Cameras, and the door will open.</p>
             <div class="solution-images">
               <img src="/images/levels/level-06-04.webp" alt="Level 4 Cameras" class="solution-img" loading="lazy" />
-              <img src="/images/levels/level-06-05.webp" alt="Level 4 Security Office" class="solution-img" loading="lazy" />
             </div>
           </div>
         </div>
