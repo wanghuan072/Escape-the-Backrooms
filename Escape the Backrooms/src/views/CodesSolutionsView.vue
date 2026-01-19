@@ -215,9 +215,6 @@
               <span class="solution-badge type-puzzle">Puzzle</span>
             </div>
             <p class="solution-description">In the Lobby of The Main Hall, there are four paintings on the walls, each depicting a person of different age: a young girl, a young adult man, a middle-aged man, and an old man. Under each painting is a button. Press the buttons in order from the youngest person in the painting to the oldest person. Once you do that, the door to the rest of The Main Hall will open.</p>
-            <div class="solution-images">
-              <img src="/images/levels/level-07-02.webp" alt="Level 5 Paintings" class="solution-img" loading="lazy" />
-                </div>
               </div>
 
           <div class="solution-item">
@@ -226,9 +223,6 @@
               <span class="solution-badge type-collect">Collect Items</span>
             </div>
             <p class="solution-description">In the left hallway of The Main Hall is a Dumbwaiter with a Note that says "iF YOU FEED THEM THEY WiLL REWARD YOU". Using Bug Spray, you need to search the whole floor for three clusters of Male Deathmoths to get Moth Jelly. Use Bug Spray on a cluster of Male Deathmoths and they will die and turn into Moth Jelly. Putting the Moth Jelly in the Dumbwaiter and sending it down will reward a Key when it comes back up, so you will need three things of Moth Jelly. Using all three Keys on the locks on the glass door will open a hallway leading to the Elevator.</p>
-            <div class="solution-images">
-              <img src="/images/levels/level-07-03.webp" alt="Level 5 Deathmoths" class="solution-img" loading="lazy" />
-                </div>
               </div>
 
           <div class="solution-item">
@@ -242,10 +236,6 @@
               <li><strong>05938</strong></li>
               <li><strong>89472</strong></li>
             </ul>
-            <div class="solution-images">
-              <img src="/images/levels/level-07-04.webp" alt="Level 5 Mailbox" class="solution-img" loading="lazy" />
-              <img src="/images/levels/level-07-05.webp" alt="Level 5 Room 235" class="solution-img" loading="lazy" />
-            </div>
           </div>
         </div>
 
