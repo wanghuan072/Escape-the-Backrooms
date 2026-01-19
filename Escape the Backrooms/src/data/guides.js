@@ -1,7 +1,7 @@
 // Guides data - flat array structure
 export default [
   {
-    id: 1,
+      id: 1,
     title: 'Multiplayer Guide: How to Play Co-op',
     addressBar: 'multiplayer-guide',
     description: 'Complete guide on how to play Escape the Backrooms with friends and rescue teammates in multiplayer mode.',
@@ -310,8 +310,8 @@ export default [
     imageAlt: 'Beginner Tips Guide',
     category: 'Gameplay Guides',
     tags: ['Beginners', 'Tips', 'Survival'],
-    isHome: true,
-    seo: {
+      isHome: true,
+      seo: {
       title: 'Beginner Tips & Survival Guide for Escape the Backrooms - Escape the Backrooms',
       description: 'Essential beginner tips and survival strategies for Escape the Backrooms. Learn how to conserve resources, avoid entities, solve puzzles, and escape successfully as a new player.',
       keywords: 'Escape the Backrooms beginner guide, survival tips, how to play, new player guide, entity avoidance, resource management, puzzle solving',

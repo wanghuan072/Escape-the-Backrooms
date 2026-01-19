@@ -34,13 +34,38 @@
           <!-- Left -->
           <main class="main-content">
             <div class="content-body v-html-style" v-html="level.detailsHtml"></div>
+            
+            <!-- Previous / Next Navigation -->
+            <div class="nav-links" v-if="prevLevel || nextLevel">
+              <a
+                v-if="prevLevel"
+                :href="`/levels/${prevLevel.addressBar}`"
+                class="nav-link prev-link"
+              >
+                <span class="nav-arrow">←</span>
+                <div class="nav-content">
+                  <span class="nav-label">Previous</span>
+                  <span class="nav-title">{{ prevLevel.title }}</span>
+                </div>
+              </a>
+              <a
+                v-if="nextLevel"
+                :href="`/levels/${nextLevel.addressBar}`"
+                class="nav-link next-link"
+              >
+                <div class="nav-content">
+                  <span class="nav-label">Next</span>
+                  <span class="nav-title">{{ nextLevel.title }}</span>
+                </div>
+                <span class="nav-arrow">→</span>
+              </a>
+            </div>
           </main>
 
           <!-- Right -->
           <aside class="sidebar">
             <!-- Image Card -->
             <div class="image-card">
-              <div class="image-header">{{ level.pageTitle }}</div>
               <div class="image-wrapper">
                 <img
                   v-if="level.imageUrl"
@@ -53,41 +78,47 @@
               </div>
             </div>
 
-            <!-- Information -->
-            <div class="info-card" v-if="level.info">
-              <div class="info-header">
-                <h3 class="info-title">Escape the Backrooms: Information</h3>
+            <!-- Sidebar Information -->
+            <div class="info-card" v-if="level.sideBarInfo">
+              <div class="info-header" v-if="level.sideBarInfo.name">
+                <h3 class="info-title">{{ level.sideBarInfo.name }}</h3>
               </div>
               <div class="info-content">
-                <div class="info-row" v-if="level.info.numberAfterLevel">
-                  <div class="info-label">Number or Word after "Level"</div>
-                  <div class="info-value-text">{{ level.info.numberAfterLevel }}</div>
+                <div class="info-row" v-if="level.sideBarInfo.difficulty">
+                  <div class="info-label">Difficulty</div>
+                  <div class="info-value-text">{{ level.sideBarInfo.difficulty }}</div>
                 </div>
-                <div class="info-row" v-if="level.info.subName">
-                  <div class="info-label">Sub-Name</div>
-                  <div class="info-value-text">{{ level.info.subName }}</div>
-                </div>
-                <div class="info-row" v-if="level.info.orderInPath">
-                  <div class="info-label">Order in path level is apart of</div>
-                  <div class="info-value-text">{{ level.info.orderInPath }}</div>
+                <div class="info-row" v-if="level.sideBarInfo.objectives">
+                  <div class="info-label">Objectives</div>
+                  <div class="info-value-text">{{ level.sideBarInfo.objectives }}</div>
                 </div>
               </div>
             </div>
 
-            <!-- The Hub Mode Information -->
-            <div class="info-card" v-if="level.hubModeInfo">
+            <!-- Featured Levels -->
+            <div class="info-card" v-if="level.featured && level.featured.length > 0">
               <div class="info-header">
-                <h3 class="info-title">The Hub Mode Information</h3>
+                <h3 class="info-title">Featured Levels</h3>
               </div>
-              <div class="info-content">
-                <div class="info-row" v-if="level.hubModeInfo.name">
-                  <div class="info-label">Name</div>
-                  <div class="info-value-text">{{ level.hubModeInfo.name }}</div>
-                </div>
-                <div class="info-row" v-if="level.hubModeInfo.description">
-                  <div class="info-label">Description</div>
-                  <div class="info-value-text">{{ level.hubModeInfo.description }}</div>
-                </div>
+              <div class="featured-levels">
+                <a
+                  v-for="featured in level.featured"
+                  :key="featured.title"
+                  :href="`/levels/${featured.addressBar}`"
+                  class="featured-item"
+                >
+                  <img
+                    v-if="featured.imageUrl"
+                    :src="featured.imageUrl"
+                    :alt="featured.imageAlt || featured.title"
+                    class="featured-image"
+                    loading="lazy"
+                  />
+                  <div class="featured-info">
+                    <div class="featured-title">{{ featured.title }}</div>
+                    <div class="featured-desc" v-if="featured.description">{{ featured.description }}</div>
+                  </div>
+                </a>
               </div>
             </div>
           </aside>
@@ -116,6 +147,27 @@ const { setSEO, generateStructuredData, addStructuredData } = useSEO()
 const level = computed(() => {
   const slug = route.params.slug
   return levelsData.find(l => l.addressBar === slug)
+})
+
+const currentIndex = computed(() => {
+  if (!level.value) return -1
+  return levelsData.findIndex(l => l.id === level.value.id)
+})
+
+const prevLevel = computed(() => {
+  const index = currentIndex.value
+  if (index > 0) {
+    return levelsData[index - 1]
+  }
+  return null
+})
+
+const nextLevel = computed(() => {
+  const index = currentIndex.value
+  if (index >= 0 && index < levelsData.length - 1) {
+    return levelsData[index + 1]
+  }
+  return null
 })
 
 const updateSEO = () => {
@@ -217,13 +269,84 @@ watch(() => route.params.slug, () => {
   padding: 2.5rem;
   color: #fff;
   line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  border-color: #ffd700;
+  background: rgba(30, 30, 30, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+.prev-link {
+  text-align: left;
+}
+
+.next-link {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.nav-arrow {
+  font-size: 1.5rem;
+  color: #ffd700;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.nav-label {
+  font-size: 0.85rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-title {
+  font-size: 1rem;
+  color: #ffd700;
+  font-weight: 600;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 
 .sidebar {
-  /* position: sticky;
+  position: sticky;
   top: 100px;
-  height: fit-content; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -311,6 +434,69 @@ watch(() => route.params.slug, () => {
   line-height: 1.6;
 }
 
+.info-subtitle {
+  color: #ffd700;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+.featured-levels {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featured-item {
+  display: flex;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.featured-item:hover {
+  background: rgba(255, 215, 0, 0.1);
+  transform: translateX(3px);
+}
+
+.featured-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.featured-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.featured-title {
+  color: #ffd700;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.featured-desc {
+  color: #aaa;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .compact-list {
   margin: 0;
   padding-left: 1.25rem;
@@ -350,6 +536,77 @@ watch(() => route.params.slug, () => {
 .back-link:hover {
   background: rgba(255, 215, 0, 0.2);
   border-color: #ffd700;
+}
+
+.nav-section {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  border-color: #ffd700;
+  background: rgba(30, 30, 30, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+.prev-link {
+  text-align: left;
+}
+
+.next-link {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.nav-arrow {
+  font-size: 1.5rem;
+  color: #ffd700;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.nav-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prev-link .nav-content {
+  text-align: left;
+}
+
+.next-link .nav-content {
+  text-align: right;
+}
+
+.nav-label {
+  font-size: 0.85rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-title {
+  font-size: 1.1rem;
+  color: #ffd700;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 /* iPad端 - 1024px */
@@ -428,6 +685,67 @@ watch(() => route.params.slug, () => {
     padding: 0.5rem;
   }
 
+  .content-body :deep(h2) {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .content-body :deep(h3) {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-body :deep(p) {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  .content-body :deep(ul),
+  .content-body :deep(ol) {
+    margin-bottom: 0.6rem;
+    padding-left: 0.5rem;
+  }
+
+  .content-body :deep(li) {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-body :deep(iframe) {
+    min-height: 200px;
+    margin: 1rem 0;
+  }
+
+  .nav-links {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .nav-arrow {
+    font-size: 1.2rem;
+  }
+
+  .nav-label {
+    font-size: 0.8rem;
+  }
+
+  .nav-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
   .sidebar {
     gap: 1rem;
   }
@@ -467,6 +785,34 @@ watch(() => route.params.slug, () => {
     line-height: 1.2;
   }
 
+  .info-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .featured-levels {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .featured-item {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .featured-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .featured-title {
+    font-size: 0.9rem;
+  }
+
+  .featured-desc {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
   .not-found {
     padding: 0.5rem 0;
   }
@@ -479,6 +825,34 @@ watch(() => route.params.slug, () => {
   .back-link {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
+  }
+
+  .nav-section {
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .nav-arrow {
+    font-size: 1.2rem;
+  }
+
+  .nav-label {
+    font-size: 0.8rem;
+  }
+
+  .nav-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
   }
 }
 

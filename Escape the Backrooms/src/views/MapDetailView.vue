@@ -5,7 +5,7 @@
       <div class="container">
         <div class="header-content">
           <div class="title-section">
-            <h1 class="page-title">{{ map.pageTitle }}</h1>
+            <h1 class="page-title">{{ map.title }}</h1>
             <div class="map-badges">
               <span class="badge" v-if="map.category">{{ map.category }}</span>
             </div>

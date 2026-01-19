@@ -156,7 +156,7 @@
           <a href="/wiki/entities" class="section-link">View All Entities →</a>
         </div>
         <div class="featured-grid">
-          <div
+          <a
             v-for="entity in homeEntities"
             :key="entity.id"
             :href="`/wiki/entities/${entity.slug}`"
@@ -182,7 +182,7 @@
                 <span v-if="entity.firstAppearsIn" class="meta-item">{{ entity.firstAppearsIn }}</span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>

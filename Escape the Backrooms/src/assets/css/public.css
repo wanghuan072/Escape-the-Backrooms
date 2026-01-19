@@ -155,6 +155,13 @@ body::after {
   aspect-ratio: 1;
 }
 
+.v-html-style img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
 .v-html-style .gallery-item img {
   width: 100%;
   height: 100%;
@@ -165,6 +172,18 @@ body::after {
 
 .v-html-style .gallery-item:hover img {
   transform: scale(1.05);
+}
+
+.v-html-style iframe{
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 300px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  display: block;
 }
 
 /* Page Hero - Common styles for all inner pages (NOT for home page) */

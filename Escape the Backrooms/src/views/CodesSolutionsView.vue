@@ -208,8 +208,8 @@
             <p class="solution-description">The elevator code for Level 5 is <strong>314</strong>. Enter this code in the elevator keypad to access the upper floors of the hotel.</p>
             <div class="solution-images">
               <img src="/images/levels/level-07-01.webp" alt="Level 5 Elevator" class="solution-img" loading="lazy" />
-            </div>
-          </div>
+                </div>
+              </div>
 
           <div class="solution-item">
             <div class="solution-header">
@@ -219,8 +219,8 @@
             <p class="solution-description">In the Lobby of The Main Hall, there are four paintings on the walls, each depicting a person of different age: a young girl, a young adult man, a middle-aged man, and an old man. Under each painting is a button. Press the buttons in order from the youngest person in the painting to the oldest person. Once you do that, the door to the rest of The Main Hall will open.</p>
             <div class="solution-images">
               <img src="/images/levels/level-07-02.webp" alt="Level 5 Paintings" class="solution-img" loading="lazy" />
-            </div>
-          </div>
+                </div>
+              </div>
 
           <div class="solution-item">
             <div class="solution-header">
@@ -230,8 +230,8 @@
             <p class="solution-description">In the left hallway of The Main Hall is a Dumbwaiter with a Note that says "iF YOU FEED THEM THEY WiLL REWARD YOU". Using Bug Spray, you need to search the whole floor for three clusters of Male Deathmoths to get Moth Jelly. Use Bug Spray on a cluster of Male Deathmoths and they will die and turn into Moth Jelly. Putting the Moth Jelly in the Dumbwaiter and sending it down will reward a Key when it comes back up, so you will need three things of Moth Jelly. Using all three Keys on the locks on the glass door will open a hallway leading to the Elevator.</p>
             <div class="solution-images">
               <img src="/images/levels/level-07-03.webp" alt="Level 5 Deathmoths" class="solution-img" loading="lazy" />
-            </div>
-          </div>
+                </div>
+              </div>
 
           <div class="solution-item">
             <div class="solution-header">
@@ -275,15 +275,15 @@
             <div class="solution-header">
               <h3 class="solution-title">Level 94 - Computer Password: PASSWORD</h3>
               <span class="solution-badge type-code">Password</span>
-            </div>
+              </div>
             <p class="solution-description">The computer password for Level 94 (Motion) is <strong>PASSWORD</strong>. This password is needed to access the computer system and unlock important information.</p>
-          </div>
+              </div>
 
           <div class="solution-item">
             <div class="solution-header">
               <h3 class="solution-title">Level 3999 - Computer Password: ESCAPE</h3>
               <span class="solution-badge type-code">Password</span>
-            </div>
+              </div>
             <p class="solution-description">The final computer password for Level 3999 (The True Ending) is <strong>ESCAPE</strong>. This password is crucial for completing the escape sequence.</p>
           </div>
         </div>
@@ -541,16 +541,16 @@ setSEO({
   }
 
   .level-title {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
     line-height: 1.2;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
     padding-bottom: 0.5rem;
   }
 
   .solution-item {
     padding: 0.5rem;
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
+}
 
   .solution-header {
     gap: 0.5rem;
