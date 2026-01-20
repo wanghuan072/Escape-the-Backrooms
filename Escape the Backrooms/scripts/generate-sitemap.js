@@ -21,8 +21,6 @@ const baseRoutes = [
   // { path: '/wiki/entities', name: 'wiki-entities', priority: 0.8, changefreq: 'weekly' },
   // { path: '/guides', name: 'guides', priority: 0.8, changefreq: 'weekly' },
   { path: '/search', name: 'search', priority: 0.7, changefreq: 'daily' },
-  { path: '/about-us', name: 'about-us', priority: 0.6, changefreq: 'monthly' },
-  { path: '/contact-us', name: 'contact-us', priority: 0.6, changefreq: 'monthly' }
 ]
 
 // 动态加载数据

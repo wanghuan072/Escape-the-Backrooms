@@ -57,10 +57,3 @@ function updateCanonicalLink(url) {
   }
   canonical.setAttribute('href', url)
 }
-
-
-
-
-
-
-
