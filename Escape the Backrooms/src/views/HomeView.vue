@@ -153,10 +153,10 @@
             <h2 class="section-title">Escape the Backrooms Entities</h2>
             <p class="section-subtitle">Important Escape the Backrooms entities you need to know</p>
           </div>
-          <a href="/wiki/entities" class="section-link">View All Entities →</a>
+          <!-- <a href="/wiki/entities" class="section-link">View All Entities →</a> -->
         </div>
         <div class="featured-grid">
-          <a
+          <div
             v-for="entity in homeEntities"
             :key="entity.id"
             :href="`/wiki/entities/${entity.slug}`"
@@ -182,7 +182,7 @@
                 <span v-if="entity.firstAppearsIn" class="meta-item">{{ entity.firstAppearsIn }}</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>

@@ -113,7 +113,7 @@ export default [
     imageUrl: '/images/levels/level-02.webp',
     imageAlt: 'Escape the Backrooms: Level 1 - The Habitable Zone',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Escape the Backrooms: Level 1 - The Habitable Zone',
       difficulty: 'Medium',
@@ -222,7 +222,7 @@ export default [
     imageUrl: '/images/levels/level-03.webp',
     imageAlt: 'Escape the Backrooms: Level 2 - Pipe Dreams (Walkthrough & Secrets)',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Escape the Backrooms: Level 2 - Pipe Dreams',
       difficulty: 'Hard',
@@ -684,7 +684,7 @@ export default [
     imageUrl: '/images/levels/level-07.webp',
     imageAlt: 'Escape the Backrooms: Level 5.5 - The Beverly Room (Walkthrough & Secrets)',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Escape the Backrooms: Level 5.5 - The Beverly Room',
       difficulty: 'Hard',
@@ -878,7 +878,7 @@ export default [
     imageUrl: '/images/levels/level-09.webp',
     imageAlt: 'Escape the Backrooms: The Pipe Run (To Level Fun) (Walkthrough & Secrets)',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Escape the Backrooms: The Pipe Run',
       difficulty: 'Medium',
@@ -1084,7 +1084,7 @@ export default [
     imageUrl: '/images/levels/level-11.webp',
     imageAlt: 'Escape the Backrooms: Level 37 - The Poolrooms & Deep Water Traps (Walkthrough & Secrets)',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Escape the Backrooms: Level 37 - The Poolrooms',
       difficulty: 'Easy',

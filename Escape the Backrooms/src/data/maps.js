@@ -174,7 +174,7 @@ export default [
     mapImageUrl: '/images/maps/map-03-map.webp',
     category: 'Early Game',
     tags: ['Keys', 'Keyholes'],
-    isHome: false,
+    isHome: true,
     seo: {
       title: 'Level 1 Floor 3 Map Walkthrough: Elevator Exits & Navigation - Escape the Backrooms',
       description: 'Complete map guide for Level 1 Floor 3 (The Habitable Zone). Navigate elevator exits for different floors, use downward ramp, and find the darkness entrance spawn point.',
