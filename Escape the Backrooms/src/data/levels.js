@@ -1166,5 +1166,89 @@ export default [
       </ul>
     `,
   },
+
+  {
+    id: 12,
+    title: 'Escape the Backrooms: Level !',
+    pageTitle: 'Escape the Backrooms Level ! Guide: Run For Your Life (Slide Jump Tech)',
+    addressBar: 'level-run-for-your-life-walkthrough',
+    description: 'The most intense level in the game. You are in a red hospital corridor and must run for your life from a horde of entities. Learn the "Second Door" trigger, the jump-crouch technique, and the safest path to survive.',
+    imageUrl: '/images/levels/level-12.webp',
+    imageAlt: 'Escape the Backrooms: Level ! - Red Hallway Chase',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level ! (Run For Your Life)',
+      difficulty: 'Hard / Survival',
+      objectives: 'Run 10km (Lore) / Survive the Chase, Don\'t Stop, Reach the Exit Door'
+    },
+    featured: [
+      {
+        title: 'Level 37',
+        description: 'The Poolrooms - The peaceful level you just came from.',
+        imageUrl: '/images/levels/level-37.webp',
+        imageAlt: 'Level 37 - The Poolrooms',
+        addressBar: 'level-37-the-poolrooms-walkthrough'
+      }
+    ],
+    seo: {
+      title: 'Level ! Walkthrough: Run For Your Life Guide - Escape the Backrooms',
+      description: 'Survival guide for Level ! (Red Hallway). Critical multiplayer tips to avoid team wipes, jump-crouch keybinding tricks, and the best route to dodge obstacles.',
+      keywords: 'Level !, Run For Your Life, Escape the Backrooms, Red Hallway, Partygoers Chase, Jump Crouch, Multiplayer Trigger'
+    },
+    detailsHtml: `
+      <h3>Level Overview: The Red Hospital Chase</h3>
+      <p>
+        <strong>Level !</strong> (pronounced "Level Run") is a high-octane survival challenge. The environment is a long, infinite hospital corridor bathed in flashing red emergency lights and blaring alarms. Your only objective is to run. Behind you is a horde of entities (Partygoers) ready to kill you instantly if you slow down.
+      </p>
+
+      <h3>Walkthrough Video</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/3FChsY_BfUs" allowfullscreen></iframe>
+      </div>
+
+      <h3>Critical Multiplayer Mechanics</h3>
+      <div class="alert-box danger">
+        <strong>TEAM WIPE WARNING:</strong> Do not rush ahead blindly in multiplayer!
+      </div>
+      <p>
+        As explained in the video, the chase trigger is scripted based on the player in the front.
+      </p>
+      <ul>
+        <li><strong>The Trigger Point:</strong> The chase begins when the first player runs past the <strong>Second Door</strong> (shortly after the initial trash can).</li>
+        <li><strong>The Risk:</strong> If your teammates are still loading in or walking slowly behind the "Trash Can" line when the front player triggers the event, the entities will spawn <em>between</em> the players, instantly killing those in the back.</li>
+        <li><strong>Strategy:</strong> Wait for ALL teammates to group up near the first trash can before sprinting past the second door together.</li>
+      </ul>
+
+      <img src="/images/levels/level-12-01.webp" alt="Escape the Backrooms: Level !" />
+
+      <h3>Movement Tech: The "Jump-Crouch"</h3>
+      <p>
+        To survive the obstacles (hospital beds, chairs, stretchers) without losing momentum, you need to master the Jump-Crouch.
+      </p>
+      <ul>
+        <li><strong>The Move:</strong> Press Jump, then immediately press Crouch while in mid-air. This lifts your character's legs, allowing you to clear taller obstacles like stacked beds.</li>
+        <li><strong>Pro Tip (Keybinding):</strong> As suggested in the guide, many players find it hard to press <code>Ctrl</code> or <code>C</code> while jumping. Try binding <strong>Crouch to the Right Mouse Button</strong> in settings. This makes spamming jump-crouches much smoother.</li>
+      </ul>
+
+      <img src="/images/levels/level-12-02.webp" alt="Escape the Backrooms: Level !" />
+
+      <h3>Route Strategy: Left vs. Right</h3>
+      <p>
+        The corridor is filled with random debris, but there is a pattern observed in the walkthrough:
+      </p>
+      <ul>
+        <li><strong>Stick to the Left:</strong> In the section with the heavy debris fields, the <strong>Left Side</strong> often has clearer gaps and fewer "stuck spots" than the right.</li>
+        <li><strong>Avoid the Right:</strong> The right side tends to have obstacles that can trap you (clip you into geometry), leading to an instant death.</li>
+      </ul>
+
+      <h3>The Exit</h3>
+      <p>
+        Keep running until you see a door at the end of the hallway that looks like a drop-off or a distinct exit door. Jump through it without hesitation to transport to the next level.
+      </p>
+
+      <img src="/images/levels/level-12-03.webp" alt="Escape the Backrooms: Level !" />
+    `,
+  },
   
 ]
