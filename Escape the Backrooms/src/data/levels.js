@@ -1197,17 +1197,17 @@ export default [
       keywords: 'Level !, Run For Your Life, Escape the Backrooms, Red Hallway, Partygoers Chase, Jump Crouch, Multiplayer Trigger'
     },
     detailsHtml: `
-      <h3>Level Overview: The Red Hospital Chase</h3>
+      <h2>Level Overview: The Red Hospital Chase</h2>
       <p>
         <strong>Level !</strong> (pronounced "Level Run") is a high-octane survival challenge. The environment is a long, infinite hospital corridor bathed in flashing red emergency lights and blaring alarms. Your only objective is to run. Behind you is a horde of entities (Partygoers) ready to kill you instantly if you slow down.
       </p>
 
-      <h3>Walkthrough Video</h3>
+      <h2>Walkthrough Video</h2>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/3FChsY_BfUs" allowfullscreen></iframe>
       </div>
 
-      <h3>Critical Multiplayer Mechanics</h3>
+      <h2>Critical Multiplayer Mechanics</h2>
       <div class="alert-box danger">
         <strong>TEAM WIPE WARNING:</strong> Do not rush ahead blindly in multiplayer!
       </div>
@@ -1222,7 +1222,7 @@ export default [
 
       <img src="/images/levels/level-12-01.webp" alt="Escape the Backrooms: Level !" />
 
-      <h3>Movement Tech: The "Jump-Crouch"</h3>
+      <h2>Movement Tech: The "Jump-Crouch"</h2>
       <p>
         To survive the obstacles (hospital beds, chairs, stretchers) without losing momentum, you need to master the Jump-Crouch.
       </p>
@@ -1233,7 +1233,7 @@ export default [
 
       <img src="/images/levels/level-12-02.webp" alt="Escape the Backrooms: Level !" />
 
-      <h3>Route Strategy: Left vs. Right</h3>
+      <h2>Route Strategy: Left vs. Right</h2>
       <p>
         The corridor is filled with random debris, but there is a pattern observed in the walkthrough:
       </p>
@@ -1242,12 +1242,96 @@ export default [
         <li><strong>Avoid the Right:</strong> The right side tends to have obstacles that can trap you (clip you into geometry), leading to an instant death.</li>
       </ul>
 
-      <h3>The Exit</h3>
+      <h2>The Exit</h2>
       <p>
         Keep running until you see a door at the end of the hallway that looks like a drop-off or a distinct exit door. Jump through it without hesitation to transport to the next level.
       </p>
 
       <img src="/images/levels/level-12-03.webp" alt="Escape the Backrooms: Level !" />
+    `,
+  },
+
+  {
+    id: 13,
+    title: 'Escape the Backrooms: The End (Updated)',
+    pageTitle: 'Escape the Backrooms Level "The End" Guide: Library Bugs, Safe Spots & 24/48 Tapes',
+    addressBar: 'level-the-end-library-updated-guide',
+    description: 'Walkthrough for the updated "Din Library" (The End). This guide covers the major graphical updates, the "Blind Entity" bug, the table safe zone exploit, and why you no longer need to touch the computer first.',
+    imageUrl: '/images/levels/level-13.webp',
+    imageAlt: 'Escape the Backrooms: The End (Refurbished Library)',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'The End (Din Library)',
+      difficulty: 'Medium (Bugged/Easy)',
+      objectives: 'Collect Tapes (24 Solo/48 Multi), Abuse AI Bugs, Reach the Ladder'
+    },
+    featured: [
+      {
+        title: 'Level 94',
+        description: 'Motion - The destination after climbing the ladder in The Library.',
+        imageUrl: '/images/levels/level-94.webp',
+        imageAlt: 'Level 94 - Motion',
+        addressBar: 'level-94-motion-walkthrough'
+      }
+    ],
+    seo: {
+      title: 'The End Library Updated Guide - Escape the Backrooms Glitches & Tips',
+      description: 'Analysis of the updated The End level. Explaining the "Blind Monster" bug, how to exploit tables to freeze the AI, the new tape collection UI, and the persistent threat at the ending.',
+      keywords: 'The End, Din Library, Escape the Backrooms Update, Entity Bug, Table Glitch, 48 Tapes, Fire Alarm'
+    },
+    detailsHtml: `
+      <h2>Level Overview: The "Refurbished" Library</好>
+      <p>
+        The video highlights that this level (referred to as "Din Library" in the subtitles) has received a <strong>significant graphical update</strong>. The models are sharper, a new small room has been added, and the atmosphere is distinct. However, the update also brought some exploitable behaviors.
+      </p>
+
+      <h2>Video Walkthrough & Critical Bugs</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/xqjOhlKuGiw" allowfullscreen></iframe>
+      </div>
+
+      <h2>Mechanic Change: The Tapes & Computer</h2>
+      <p>
+        A huge Quality-of-Life improvement mentioned in the video:
+      </p>
+      <ul>
+        <li><strong>Old Version:</strong> You had to click the computer <em>before</em> collecting tapes.</li>
+        <li><strong>New Version:</strong> <strong>You do NOT need to touch the computer first.</strong> As soon as you pick up a tape, the screen updates automatically.</li>
+        <li><strong>Goal:</strong> 24 Tapes (Solo/Duo) or 48 Tapes (3-4 Players).</li>
+      </ul>
+
+      <img src="/images/levels/level-13-01.webp" alt="Escape the Backrooms: The End (Refurbished Library)" />
+
+      <img src="/images/levels/level-13-03.webp" alt="Escape the Backrooms: The End (Refurbished Library)" />
+
+      <h2>The "Bugged" Entity (The Librarian)</h2>
+      <div class="alert-box success">
+        <strong>CURRENT EXPLOIT:</strong> The video demonstrates that the Entity is currently extremely buggy.
+      </div>
+      <ul>
+        <li><strong>Blind & Passive:</strong> The player explicitly tests this by bumping directly into the monster. <strong>It does not kill on contact</strong> instantly in this state, which the player identifies as a "Bug."</li>
+        <li><strong>The Table Glitch:</strong> If you stay near or get under specific tables, the Entity's AI seems to break ("It won't come after us"). This serves as an ultimate safe zone.</li>
+        <li><strong>Fire Alarms:</strong> There are two alarms (Left and Right). While intended to lure the monster, given the current buggy AI, they are less critical but still useful for moving the entity away.</li>
+      </ul>
+
+      <img src="/images/levels/level-13-02.webp" alt="Escape the Backrooms: The End (Refurbished Library)" />
+
+      <h2>The Environmental Threat: The Blackout</h2>
+      <p>
+        Despite the buggy monster, the environment is still hostile. <strong>One minute into the level, the lights will cut out.</strong> You must hurry to collect the tapes before you are forced to navigate in pitch darkness with only a flashlight.
+      </p>
+
+      <h2>The Escape: Warning on Changes</h2>
+      <p>
+        Once you collect all the tapes, a specific sound will play, and the ladder will drop (or open). However, pay attention to the major change at the end:
+      </p>
+      <div class="alert-box warning">
+        <strong>SURVIVAL WARNING:</strong> Unlike previous versions, <strong>the Monster does NOT disappear</strong> when the task is done. It remains in the library. Do not let your guard down while running to the ladder!
+      </div>
+      <p>
+        Climb the ladder to transition to the next level: <strong>Level 94 (Motion)</strong>.
+      </p>
     `,
   },
   
