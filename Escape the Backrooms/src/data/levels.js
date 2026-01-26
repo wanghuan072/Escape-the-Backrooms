@@ -1268,6 +1268,13 @@ export default [
     },
     featured: [
       {
+        title: 'Level !',
+        description: 'Run For Your Life - The intense red hospital chase level before The End.',
+        imageUrl: '/images/levels/level-12.webp',
+        imageAlt: 'Level ! - Run For Your Life',
+        addressBar: 'level-run-for-your-life-walkthrough'
+      },
+      {
         title: 'Level 94',
         description: 'Motion - The destination after climbing the ladder in The Library.',
         imageUrl: '/images/levels/level-94.webp',
@@ -1281,57 +1288,107 @@ export default [
       keywords: 'The End, Din Library, Escape the Backrooms Update, Entity Bug, Table Glitch, 48 Tapes, Fire Alarm'
     },
     detailsHtml: `
-      <h2>Level Overview: The "Refurbished" Library</好>
-      <p>
-        The video highlights that this level (referred to as "Din Library" in the subtitles) has received a <strong>significant graphical update</strong>. The models are sharper, a new small room has been added, and the atmosphere is distinct. However, the update also brought some exploitable behaviors.
-      </p>
+      <p>Welcome to the complete guide for <strong>The End</strong> (also known as the "Din Library" or "Refurbished Library"). This level has received a significant graphical update in recent patches, featuring sharper models, new rooms, and improved atmosphere. However, the update also introduced exploitable bugs that can make this level much easier than intended.</p>
 
-      <h2>Video Walkthrough & Critical Bugs</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/xqjOhlKuGiw" allowfullscreen></iframe>
-      </div>
-
-      <h2>Mechanic Change: The Tapes & Computer</h2>
-      <p>
-        A huge Quality-of-Life improvement mentioned in the video:
-      </p>
+      <h2>Escape the Backrooms: The End Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/xqjOhlKuGiw" allowfullscreen></iframe>
+      
+      <h3>Video Highlights:</h3>
       <ul>
-        <li><strong>Old Version:</strong> You had to click the computer <em>before</em> collecting tapes.</li>
-        <li><strong>New Version:</strong> <strong>You do NOT need to touch the computer first.</strong> As soon as you pick up a tape, the screen updates automatically.</li>
-        <li><strong>Goal:</strong> 24 Tapes (Solo/Duo) or 48 Tapes (3-4 Players).</li>
+        <li><strong>Updated Mechanics:</strong> How the tape collection system has been simplified.</li>
+        <li><strong>Entity Bug Exploit:</strong> The "Blind Librarian" bug and table safe zone glitch.</li>
+        <li><strong>Blackout Warning:</strong> Critical timing information about the lights cutting out.</li>
+        <li><strong>Survival Strategy:</strong> How to collect all tapes efficiently before darkness falls.</li>
       </ul>
 
-      <img src="/images/levels/level-13-01.webp" alt="Escape the Backrooms: The End (Refurbished Library)" />
+      <h2>Level Overview: The Refurbished Library</h2>
+      <p>
+        After surviving the intense chase in <a href="/levels/level-run-for-your-life-walkthrough">Level ! (Run For Your Life)</a>, you will find yourself in The End—a massive library filled with bookshelves, tables, and a dangerous entity known as The Librarian. The level has been visually overhauled with sharper textures and new environmental details, but the core objective remains the same: collect tapes and escape.
+      </p>
 
-      <img src="/images/levels/level-13-03.webp" alt="Escape the Backrooms: The End (Refurbished Library)" />
+      <h2>Step-by-Step Text Guide</h2>
+      <p>Follow this comprehensive guide to successfully complete The End and progress to <a href="/levels/level-94-motion-walkthrough">Level 94 (Motion)</a>.</p>
 
-      <h2>The "Bugged" Entity (The Librarian)</h2>
+      <h3>1. Mechanic Change: The Tapes & Computer (Quality-of-Life Update)</h3>
+      <p>
+        A major improvement has been made to the tape collection system:
+      </p>
+      <ul>
+        <li><strong>Old Version:</strong> You had to interact with the computer terminal <em>before</em> collecting any tapes to activate the tracking system.</li>
+        <li><strong>New Version:</strong> <strong>You do NOT need to touch the computer first.</strong> As soon as you pick up your first tape, the screen updates automatically, showing your progress in real-time.</li>
+        <li><strong>Collection Goal:</strong> 
+          <ul>
+            <li><strong>Solo/Duo Mode:</strong> Collect 24 tapes</li>
+            <li><strong>3-4 Player Mode:</strong> Collect 48 tapes (double the requirement)</li>
+          </ul>
+        </li>
+        <li><strong>Strategy:</strong> Start collecting tapes immediately upon entering. There is no need to waste time at the computer terminal.</li>
+      </ul>
+
+      <img src="/images/levels/level-13-01.webp" alt="Escape the Backrooms: The End - Tape Collection System" />
+
+      <h3>2. The "Bugged" Entity: The Librarian Exploit</h3>
       <div class="alert-box success">
-        <strong>CURRENT EXPLOIT:</strong> The video demonstrates that the Entity is currently extremely buggy.
+        <strong>CURRENT EXPLOIT (May Be Patched):</strong> The Librarian entity is currently experiencing significant AI bugs that can be exploited for an easier completion.
       </div>
+      <p>
+        The Librarian is the primary threat in this level, but due to recent updates, it exhibits exploitable behavior:
+      </p>
       <ul>
-        <li><strong>Blind & Passive:</strong> The player explicitly tests this by bumping directly into the monster. <strong>It does not kill on contact</strong> instantly in this state, which the player identifies as a "Bug."</li>
-        <li><strong>The Table Glitch:</strong> If you stay near or get under specific tables, the Entity's AI seems to break ("It won't come after us"). This serves as an ultimate safe zone.</li>
-        <li><strong>Fire Alarms:</strong> There are two alarms (Left and Right). While intended to lure the monster, given the current buggy AI, they are less critical but still useful for moving the entity away.</li>
+        <li><strong>Blind & Passive State:</strong> The entity appears to be in a "blind" state where it does not react immediately to player presence. Testing shows that <strong>direct contact does not result in instant death</strong> in this bugged state, though this may be patched in future updates.</li>
+        <li><strong>The Table Glitch (Safe Zone Exploit):</strong> If you position yourself near or underneath specific tables in the library, the Librarian's AI pathfinding breaks. The entity will not pursue you, creating a permanent safe zone. This is the most reliable exploit for avoiding the entity entirely.</li>
+        <li><strong>Fire Alarm System:</strong> There are two fire alarms located on the left and right sides of the library. While intended to lure the Librarian away from your position, given the current buggy AI, they are less critical. However, they can still be useful for repositioning the entity if needed.</li>
+        <li><strong>Warning:</strong> These exploits may be patched in future updates. Always be prepared to play legitimately if the bugs are fixed.</li>
       </ul>
 
-      <img src="/images/levels/level-13-02.webp" alt="Escape the Backrooms: The End (Refurbished Library)" />
+      <img src="/images/levels/level-13-02.webp" alt="Escape the Backrooms: The End - The Librarian Entity" />
 
-      <h2>The Environmental Threat: The Blackout</h2>
+      <h3>3. The Environmental Threat: The Blackout Timer</h3>
       <p>
-        Despite the buggy monster, the environment is still hostile. <strong>One minute into the level, the lights will cut out.</strong> You must hurry to collect the tapes before you are forced to navigate in pitch darkness with only a flashlight.
+        Despite the exploitable entity behavior, the environment itself poses a significant threat:
       </p>
+      <ul>
+        <li><strong>The Blackout:</strong> Exactly <strong>one minute (60 seconds) after entering the level</strong>, all lights will cut out, plunging the library into complete darkness.</li>
+        <li><strong>Impact:</strong> After the blackout, you must navigate using only your flashlight, making tape collection much more difficult and dangerous.</li>
+        <li><strong>Strategy:</strong> Prioritize speed. Collect as many tapes as possible in the first minute while you still have full visibility. Use the table glitch to avoid the entity and focus on efficiency.</li>
+        <li><strong>Multiplayer Tip:</strong> Coordinate with teammates to cover different areas of the library simultaneously to maximize collection speed before the blackout.</li>
+      </ul>
 
-      <h2>The Escape: Warning on Changes</h2>
+      <img src="/images/levels/level-13-03.webp" alt="Escape the Backrooms: The End - Library Layout" />
+
+      <h3>4. Tape Collection Strategy</h3>
       <p>
-        Once you collect all the tapes, a specific sound will play, and the ladder will drop (or open). However, pay attention to the major change at the end:
+        Tapes are scattered throughout the library on bookshelves, tables, and in various rooms. Here are some tips for efficient collection:
+      </p>
+      <ul>
+        <li><strong>Systematic Approach:</strong> Work your way through the library methodically, checking each bookshelf and table.</li>
+        <li><strong>Use the Table Glitch:</strong> If you encounter the Librarian, quickly move to a table and use the safe zone exploit to avoid it.</li>
+        <li><strong>Listen for Audio Cues:</strong> The Librarian makes distinct sounds when nearby. Use audio to track its position and avoid it.</li>
+        <li><strong>Check All Rooms:</strong> The updated version includes new small rooms. Make sure to explore thoroughly to find all tapes.</li>
+      </ul>
+
+      <h3>5. The Escape: Critical Warning</h3>
+      <p>
+        Once you have collected all required tapes (24 for solo/duo, 48 for 3-4 players), a specific sound will play, and the ladder will drop or become accessible. However, there is a critical change from previous versions:
       </p>
       <div class="alert-box warning">
-        <strong>SURVIVAL WARNING:</strong> Unlike previous versions, <strong>the Monster does NOT disappear</strong> when the task is done. It remains in the library. Do not let your guard down while running to the ladder!
+        <strong>SURVIVAL WARNING:</strong> Unlike previous versions of the game, <strong>the Librarian does NOT disappear or despawn</strong> when you complete the tape collection objective. The entity remains active in the library and will continue to pursue you. Do not let your guard down while running to the ladder!
       </div>
-      <p>
-        Climb the ladder to transition to the next level: <strong>Level 94 (Motion)</strong>.
-      </p>
+      <ul>
+        <li><strong>Final Sprint:</strong> After collecting all tapes, immediately locate the ladder and make a beeline for it.</li>
+        <li><strong>Stay Alert:</strong> Even if you used exploits earlier, the Librarian may still be a threat during your escape.</li>
+        <li><strong>The Ladder:</strong> Climb the ladder to transition to <a href="/levels/level-94-motion-walkthrough">Level 94 (Motion)</a>, the next level in your journey.</li>
+      </ul>
+
+      <h2>Tips & Tricks for The End</h2>
+      <ul>
+        <li><strong>Exploit While You Can:</strong> The table glitch and blind entity bug may be patched in future updates. Use them while they are available, but be prepared to adapt if they are fixed.</li>
+        <li><strong>Speed is Key:</strong> The one-minute blackout timer is your biggest enemy. Collect tapes as quickly as possible in the first minute.</li>
+        <li><strong>Flashlight Management:</strong> After the blackout, conserve your flashlight battery. Only use it when necessary to navigate.</li>
+        <li><strong>Multiplayer Coordination:</strong> In multiplayer, assign different areas to each player to maximize collection efficiency before the blackout.</li>
+        <li><strong>Don't Get Complacent:</strong> Even with exploits, always have an escape plan. The Librarian can still be dangerous if you make mistakes.</li>
+        <li><strong>Previous Level Preparation:</strong> If you are struggling, make sure you have completed <a href="/levels/level-run-for-your-life-walkthrough">Level ! (Run For Your Life)</a> successfully, as The End is the next challenge in the progression.</li>
+      </ul>
     `,
   },
   
