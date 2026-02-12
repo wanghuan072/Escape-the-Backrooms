@@ -16,7 +16,7 @@ export default [
     },
     featured: [
       {
-    title: 'Level 1',
+        title: 'Level 1',
         description: 'The Habitable Zone - The first level with diverse environments.',
         imageUrl: '/images/levels/level-01.webp',
         imageAlt: 'Level 1',
@@ -237,7 +237,7 @@ export default [
         addressBar: 'level-1-the-habitable-zone'
       },
       {
-    title: 'Level 3',
+        title: 'Level 3',
         description: 'The Electrical Station - Dark industrial maze with circuit breakers and Hound entity.',
         imageUrl: '/images/levels/level-01.webp',
         imageAlt: 'Level 3',
@@ -1277,7 +1277,7 @@ export default [
       {
         title: 'Level 94',
         description: 'Motion - The destination after climbing the ladder in The Library.',
-        imageUrl: '/images/levels/level-94.webp',
+        imageUrl: '/images/levels/level-14.webp',
         imageAlt: 'Level 94 - Motion',
         addressBar: 'level-94-motion-walkthrough'
       }
@@ -1391,5 +1391,468 @@ export default [
       </ul>
     `,
   },
-  
+
+  {
+    id: 14,
+    title: 'Escape the Backrooms: Level 94 (Motion)',
+    pageTitle: 'Escape the Backrooms Level 94 Guide: Motion, The Castle & Funhouse Walkthrough',
+    addressBar: 'level-94-motion-walkthrough',
+    description: 'Complete guide for Level 94 (Motion). Learn how to survive the day/night cycle, evade the "Animation" entities, utilize the van, and survive the Clown\'s rollercoaster puzzle in the floating castle.',
+    imageUrl: '/images/levels/level-14.webp',
+    imageAlt: 'Escape the Backrooms: Level 94 - Motion (Rolling Hills)',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 94 (Motion)',
+      difficulty: 'Hard',
+      objectives: 'Reach the Castle, Avoid Nighttime, Complete Funhouse Puzzle'
+    },
+    featured: [
+      {
+        title: 'The End',
+        description: 'The Library - The level immediately preceding Motion.',
+        imageUrl: '/images/levels/level-13.webp',
+        imageAlt: 'The End Level',
+        addressBar: 'level-the-end-library-updated-guide'
+      },
+      {
+        title: 'Level 6',
+        "description": 'Lights Out - The next dark challenge after the rollercoaster.',
+        imageUrl: '/images/levels/level-15.webp',
+        imageAlt: 'Level 6 - Lights Out',
+        addressBar: 'level-6-lights-out-walkthrough'
+      }
+    ],
+    seo: {
+      title: 'Level 94 Motion Guide - Escape the Backrooms Walkthrough',
+      description: 'How to beat Level 94 in Escape the Backrooms. Covers the "Animation" entity behavior, the restart timer trick, safe spots on fences, and the cheese strategy for the Clown boss fight.',
+      keywords: 'Level 94, Motion, Escape the Backrooms, Animation Entity, Clown Puzzle, Rollercoaster, Safe Spots'
+    },
+    detailsHtml: `
+      <p><strong>Level 94</strong>, also known as "Motion," is a deceptive level that begins with a surreal, grassy landscape known as the Transparent Hills and ends in a terrifying Funhouse dungeon. Time is your enemy here—you must race against the sunset to reach the floating castle before the entities come out to hunt.</p>
+
+      <h2>Escape the Backrooms: Level 94 Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/WdizI7rFMso" allowfullscreen></iframe>
+      
+      <h3>Video Highlights:</h3>
+      <ul>
+        <li><strong>The Restart Trick:</strong> How to reset the day timer to ensure you reach the castle safely.</li>
+        <li><strong>Safe Zones:</strong> Utilizing high ground, fences, and houses to avoid the "Animation" entities.</li>
+        <li><strong>The Van:</strong> Using the vehicle and Almond Water (Juice) for maximum speed.</li>
+        <li><strong>The Funhouse:</strong> Solving the shape puzzle and cheesing the Clown encounter.</li>
+      </ul>
+
+      <h2>Part 1: The Transparent Hills (Race to the Castle)</h2>
+      <p>
+        Upon spawning, you are on a road winding through grassy hills. Your goal is the large water tower and the floating castle in the distance.
+      </p>
+
+      <h3>The Day/Night Cycle & Entities</h3>
+      <ul>
+        <li><strong>Time Limit:</strong> You have exactly <strong>3 minutes</strong> of daylight when you first spawn. Once night falls, the entities—wooden puppet children known as <strong>"Animations"</strong>—will emerge and kill you instantly.</li>
+        <li><strong>Subsequent Cycles:</strong> After the first night, daylight only lasts 1 minute and 45 seconds.</li>
+        <li><strong>The Restart Strategy:</strong> As mentioned in the video, if you are halfway through and the sun is setting, you can reload your save file. This resets the daylight timer back to the full 3 minutes, guaranteeing you enough time to reach the castle.</li>
+      </ul>
+
+      <h3>Survival & Safe Spots</h3>
+      <p>If you get caught out at night, you must hide immediately:</p>
+      <ul>
+        <li><strong>Inside Houses:</strong> Hide under beds, on top of beds, or inside cabinets. Turn off the lights to prevent Animations from entering.</li>
+        <li><strong>High Ground:</strong> Animations cannot spawn or reach high altitudes. The tops of steep hills are generally safe.</li>
+        <li><strong>The Fence Glitch:</strong> Standing on fence posts often prevents the AI from detecting or reaching you.</li>
+      </ul>
+
+      <h3>The Van & The Juice</h3>
+      <p>
+        Halfway up the road, you will find a delivery truck. Enter the back to find <strong>Almond Water (Juice)</strong>. Drinking this gives you a stamina boost. The truck will drive you part of the way up the hill automatically. <em>Note: Recent updates prevent players from standing on the truck's roof.</em>
+      </p>
+
+      <img src="/images/levels/level-14-01.webp" alt="The delivery truck in Level 94" />
+
+      <h2>Part 2: The Floating Castle</h2>\
+      <p>
+        Once the truck stops or you reach the top of the hill, look for a rope hanging from the sky (press 'F' to interact, or aim for the circle on the ground). This teleports you into the Castle interior.
+      </p>
+
+      <h3>The Shape Puzzle</h3>
+      <p>
+        Inside the funhouse, you will find blocks with shapes (Star, Square, Circle) and corresponding floor slots.
+      </p>
+      <div class="alert-box tip">
+        <strong>PRO TIP:</strong> If the physics blocks feel too heavy or hard to push, try lowering your Frame Rate (FPS) in the settings. Higher framerates can sometimes make physics objects harder to move.
+      </div>
+
+      <h2>Part 3: The Clown & The Rollercoaster</h2>
+      <p>
+        After opening the door, you enter an amusement park area guarded by a <strong>Clown Entity</strong>.
+      </p>
+
+      <h3>Entity Mechanics: The Clown</h3>
+      <ul>
+        <li><strong>Behavior:</strong> The Clown functions similarly to a "Weeping Angel." He attacks when you <strong>cannot see him</strong> (or if you turn your back). You must keep line-of-sight with him to freeze him in place.</li>
+        <li><strong>Objective:</strong> A timer on the wall counts down from <strong>100 seconds</strong>. You must survive until it hits zero, at which point the rollercoaster cart will arrive.</li>
+      </ul>
+
+      <h3>The Safe Spot Exploit (Cheese Strategy)</h3>
+      <p>
+        As shown in the video, you don't need to run around the room risking death.
+      </p>
+      <ol>
+        <li><strong>Jump the Railing:</strong> Near the entrance or the tables, you can jump over the railings onto the furniture.</li>
+        <li><strong>Invisible Wall:</strong> There is an invisible wall near the center pillar/stools. If you crouch-jump into this corner, the Clown's AI cannot reach you.</li>
+        <li><strong>Visual Settings:</strong> If the room is too dark, lower your "Shadow Quality" in settings. This renders the Clown as a bright white object, making him easier to track in the fog.</li>
+      </ol>
+
+      <img src="/images/levels/level-14-02.webp" alt="The Clown entity in the fog" />
+
+      <p>
+        Once the timer reaches 100 (or 0, depending on the display), the gate opens. Sprint to the coaster cart to exit the level and proceed to <strong>Level 6</strong>.
+      </p>
+    `
+  },
+
+  {
+    id: 15,
+    title: 'Escape the Backrooms: Level 6 (Lights Out)',
+    pageTitle: 'Escape the Backrooms Level 6 Guide: Lights Out, LiDAR Scanner & Wretch Stealth',
+    addressBar: 'level-6-lights-out-walkthrough',
+    description: 'Guide for Level 6 (Lights Out). Master the LiDAR scanner mechanics, learn the "Right Wall" navigation strategy, stealth past the blind Wretch entities, and find the exit to Level 7.',
+    imageUrl: '/images/levels/level-15.webp',
+    imageAlt: 'Escape the Backrooms: Level 6 - Lights Out (LiDAR View)',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 6 (Lights Out)',
+      difficulty: 'Hard',
+      objectives: 'Retrieve LiDAR Scanner, Stealth Past Wretches, Find the Exit'
+    },
+    featured: [
+      {
+        title: 'Level 94',
+        description: 'Motion - The previous level with the roller coaster exit.',
+        imageUrl: '/images/levels/level-14.webp',
+        imageAlt: 'Level 94 - Motion',
+        addressBar: 'level-94-motion-walkthrough'
+      },
+      {
+        title: 'Level 7',
+        description: 'Thalassophobia - The flooded ocean level following Lights Out.',
+        imageUrl: '/images/levels/level-16.webp',
+        imageAlt: 'Level 7 - Thalassophobia',
+        addressBar: 'level-7-thalassophobia-walkthrough'
+      }
+    ],
+    seo: {
+      title: 'Level 6 Lights Out Guide - Escape the Backrooms Walkthrough',
+      description: 'How to beat Level 6 in Escape the Backrooms. Detailed walkthrough for finding the LiDAR scanner, the "Hug the Right Wall" strategy, and avoiding the blind Wretch monsters.',
+      keywords: 'Level 6, Lights Out, Escape the Backrooms, LiDAR Scanner, Wretch, Behemoth, Blind Entity, Stealth'
+    },
+    detailsHtml: `
+      <p><strong>Level 6</strong>, known as "Lights Out," is one of the most disorienting levels in the game. It is a pitch-black maze made of concrete walls where your eyes are useless. You must rely on a <strong>LiDAR Scanner</strong> to map your surroundings and stealth to survive the blind entities that roam the darkness.</p>
+
+      <h2>Escape the Backrooms: Level 6 Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/UNGLQ3pgFJM" allowfullscreen></iframe>
+      
+      <h3>Video Highlights:</h3>
+      <ul>
+        <li><strong>Starting Supplies:</strong> Locating the Medicine and Flashlight rooms near the spawn.</li>
+        <li><strong>The LiDAR Scanner:</strong> Where to find the essential tool for seeing in the dark.</li>
+        <li><strong>Navigation Rule:</strong> Why "Hugging the Right Wall" is the most effective pathfinding strategy.</li>
+        <li><strong>Entity Stealth:</strong> How to crouch-walk past the blind Wretches (Behemoths).</li>
+      </ul>
+
+      <h2>Part 1: The Darkness & Supplies</h2>
+      <p>
+        You arrive in Level 6 via the roller coaster from Level 94. The area is pitch black.
+      </p>
+      <ul>
+        <li><strong>The Flashlight Room:</strong> To your right upon entering, there is a room containing a flashlight. While useful, it may attract unwanted attention.</li>
+        <li><strong>The Medicine Room:</strong> To your left, there is a room with Almond Water/Medicine. Grab these if you are low on sanity or health.</li>
+      </ul>
+
+      <h2>Part 2: The LiDAR Scanner</h2>
+      <p>
+        From the starting area, follow the path forward past a table with a drawer. Continue navigating carefully until you reach a room with computers and equipment on a table. Here you will find the <strong>LiDAR Scanner</strong>.
+      </p>
+      <p>
+        <strong>How it works:</strong> The scanner emits laser points that stick to walls and objects, outlining the geometry of the room. It is your only reliable way to see the path ahead.
+      </p>
+
+      <img src="/images/levels/level-15-01.webp" alt="Using the LiDAR Scanner in Level 6" />
+
+      <h2>Part 3: The Wretch (Blind Entity)</h2>
+      <p>
+        The maze is inhabited by <strong>Wretches</strong> (also referred to as Behemoths in the video).
+      </p>
+      <ul>
+        <li><strong>Blindness:</strong> These entities cannot see you. They rely entirely on <strong>sound</strong>.</li>
+        <li><strong>Stealth Strategy:</strong> <strong>ALWAYS CROUCH</strong> when moving near them. Walking or running will alert them to your location.</li>
+        <li><strong>Pathing Logic:</strong> The entity generally tracks your last known position. As long as you keep moving quietly and don't backtrack directly into them, they cannot catch you. Wait for them to pass before moving.</li>
+      </ul>
+
+      <h2>Part 4: Navigation Strategy - "Hug the Right"</h2>
+      <p>
+        The maze is complex and full of dead ends. As demonstrated in the walkthrough:
+      </p>
+      <ul>
+        <li><strong>Avoid Small Rooms:</strong> Small doors usually lead to dead ends. Look for larger openings and hallways.</li>
+        <li><strong>The Golden Rule:</strong> <strong>Hug the right-hand wall.</strong> While the player initially tries going left and hits dead ends, sticking to the right wall and choosing right turns generally leads to the correct path through the largest spaces.</li>
+        <li><strong>Correction:</strong> If you hit a dead end, simply turn around and take the other path. The Wretches are slow, so you have time to correct mistakes.</li>
+      </ul>
+
+      <img src="/images/levels/level-15-02.webp" alt="Navigating the maze with LiDAR points" />
+
+      <h2>Part 5: The Hidden Door & Exit</h2>
+      <p>
+        Near the end of the level, you may encounter a metal door marked with the <strong>M.E.G.</strong> logo.
+      </p>
+      <ul>
+        <li><strong>The Hidden Level:</strong> This door leads to a secret level, but it is locked (greyed out on the scanner) on your first playthrough. It only unlocks after you have completed all levels in the game.</li>
+        <li><strong>The Real Exit:</strong> Continue past the hidden door to find a standard white residential door. Open it to exit Level 6 and proceed to <strong>Level 7 (Thalassophobia)</strong>.</li>
+      </ul>
+    `
+  },
+
+  {
+    id: 16,
+    title: 'Escape the Backrooms: Level 7 (Thalassophobia)',
+    pageTitle: 'Escape the Backrooms Level 7 Guide: Ocean, Fog Glitch & Lighthouse Walkthrough',
+    addressBar: 'level-7-thalassophobia-walkthrough',
+    description: 'Walkthrough for Level 7 (Thalassophobia). Learn the critical "Shadow Quality" trick to remove fog, how to navigate the ocean safely, locate the lighthouse, and survive the underwater cave descent.',
+    imageUrl: '/images/levels/level-16.webp',
+    imageAlt: 'Escape the Backrooms: Level 7 - The Flooded House and Ocean',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 7 (Thalassophobia)',
+      difficulty: 'Hard',
+      objectives: 'Cross the Ocean, Activate Lighthouse, Dive to the Cave'
+    },
+    featured: [
+      {
+        title: 'Level 6',
+        description: 'Lights Out - The dark maze preceding the ocean.',
+        imageUrl: '/images/levels/level-15.webp',
+        imageAlt: 'Level 6 - Lights Out',
+        addressBar: 'level-6-lights-out-walkthrough'
+      },
+      {
+        title: 'Level 8',
+        description: 'Cave System - The next level found at the end of the underwater tunnel.',
+        imageUrl: '/images/levels/level-17.webp',
+        imageAlt: 'Level 8 - Cave System',
+        addressBar: 'level-8-cave-system-walkthrough'
+      }
+    ],
+    seo: {
+      title: 'Level 7 Thalassophobia Guide - Escape the Backrooms Walkthrough',
+      description: 'Detailed guide for Level 7. Explains the shadow quality fog removal glitch, how to use the diving helmet, avoiding the Angler Fish, and finding the hidden underwater cave exit.',
+      keywords: 'Level 7, Thalassophobia, Escape the Backrooms, Lighthouse, Diving Helmet, Fog Glitch, Angler Fish'
+    },
+    detailsHtml: `
+      <p><strong>Level 7</strong>, also known as "Thalassophobia," is a vast, flooded ocean level. You start in a submerged room and must navigate endless waters to find a lighthouse. Beneath the surface lurks a massive entity and dangerous fish, making this a terrifying experience for those afraid of the deep.</p>
+
+      <h2>Escape the Backrooms: Level 7 Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/FDk9KG4pB4E" allowfullscreen></iframe>
+      
+      <h3>Video Highlights:</h3>
+      <ul>
+        <li><strong>The Fog Glitch:</strong> A critical settings tweak to remove the dense fog and see clearly.</li>
+        <li><strong>Swimming Bug:</strong> How to gain a speed boost when entering the water.</li>
+        <li><strong>The Lighthouse:</strong> retrieving the diving helmet to access the depths.</li>
+        <li><strong>The Cave Exit:</strong> Exact directions (15 degrees left) to find the exit tunnel.</li>
+      </ul>
+
+      <h2>Part 1: The Flooded Room & The Hub Warning</h2>
+      <p>
+        You enter via a door from Level 6.
+      </p>
+      <div class="alert-box warning">
+        <strong>WARNING:</strong> At the top of the stairs, there is a door leading to "The Hub." Do <strong>NOT</strong> enter this door if you want to continue the level progression, as you may not be able to return. Instead, go through the door that leads to the flooded living room with the floating couch.
+      </div>
+
+      <h2>Part 2: The Ocean & The Fog Exploit</h2>
+      <p>
+        Once you exit the house, you are in the open ocean. There are two main threats: the distance and the fish.
+      </p>
+
+      <h3>Critical Setting: Remove the Fog</h3>
+      <p>
+        Normally, this level becomes covered in a thick, blinding fog halfway through your swim. However, you can remove this entirely:
+      </p>
+      <ul>
+        <li><strong>The Trick:</strong> Go to your <strong>Settings</strong> -> <strong>Graphics</strong> -> set <strong>Shadow Quality</strong> to <strong>"Low"</strong> or <strong>"Off"</strong>.</li>
+        <li><strong>Result:</strong> The fog will vanish, allowing you to see the lighthouse and underwater obstacles clearly. This makes the level significantly easier.</li>
+      </ul>
+
+      <h3>Transport: Boat vs. Swimming</h3>
+      <ul>
+        <li><strong>The Boat:</strong> There is a small boat nearby. Standing on it makes you 100% safe from the fish in the water.</li>
+        <li><strong>Swimming:</strong> Swimming is faster but dangerous. One bite from a fish is instant death.</li>
+        <li><strong>Speed Bug:</strong> As shown in the video, pressing <strong>Shift</strong> the moment you dive into the water can sometimes trigger a speed boost bug, allowing you to swim incredibly fast.</li>
+      </ul>
+
+      <h2>Part 3: The Flare Gun (Optional)</h2>
+      <p>
+        Straight ahead from the start, there is a house on stilts. On the second floor, you can find a <strong>Flare Gun</strong>.
+      </p>
+      <ul>
+        <li><strong>Purpose:</strong> It is used to signal lost teammates. Firing it into the sky creates a visual marker even through the fog.</li>
+        <li><strong>Necessity:</strong> It is not required to beat the level. If you are playing solo or know the way, you can skip this to save time.</li>
+      </ul>
+
+      <img src="/images/levels/level-16-01.webp" alt="The Lighthouse in Level 7" />
+
+      <h2>Part 4: The Lighthouse</h2>
+      <p>
+        Your main objective is the massive <strong>Lighthouse</strong> visible in the distance (especially clear with shadows turned off). Swim or boat towards it.
+      </p>
+      <ul>
+        <li><strong>Arrival:</strong> The lighthouse light will activate when you get close.</li>
+        <li><strong>The Diving Helmet:</strong> Walk to the end of the pier. You will find a heavy diving helmet. <strong>Hold Left Click</strong> to put it on.</li>
+        <li><strong>The Cage:</strong> Step into the metal cage at the end of the pier. With the helmet equipped, the cage will automatically descend into the dark water. Without the helmet, it will not move.</li>
+      </ul>
+
+      <h2>Part 5: The Depths & The Angler Fish</h2>
+      <p>
+        As the cage lowers, look to your left. You will see a massive <strong>Angler Fish</strong> (resembling the bacteria/worm entities) circling the area.
+      </p>
+      <ul>
+        <li><strong>The Entity:</strong> Do not touch it. It patrols the area.</li>
+        <li><strong>Exit the Cage:</strong> Once the cage reaches the bottom, the door opens. Swim out immediately.</li>
+      </ul>
+
+      <h2>Part 6: Finding the Cave Exit</h2>
+      <p>
+        Navigation here is tricky due to the darkness.
+      </p>
+      <ol>
+        <li><strong>Orientation:</strong> Exit the cage facing straight ahead.</li>
+        <li><strong>Turn Left:</strong> Turn approximately <strong>15 to 20 degrees to the left</strong>.</li>
+        <li><strong>Visual Aid:</strong> Turn up your <strong>Gamma</strong> settings if it is too dark to see. The diving helmet has a built-in light, which helps.</li>
+        <li><strong>The Cave:</strong> Swim forward until you see a cave entrance in the rock wall.</li>
+        <li><strong>Ascend:</strong> Enter the cave and swim <strong>upwards</strong> through the tunnel to surface in the next area.</li>
+      </ol>
+
+      <img src="/images/levels/level-16-02.webp" alt="The underwater cave entrance" />
+
+      <p>
+        Surfacing in the cave pool will lead you directly to <strong>Level 8</strong>.
+      </p>
+    `
+  },
+
+  {
+    id: 17,
+    title: 'Escape the Backrooms: Level 8 (Cave System)',
+    pageTitle: 'Escape the Backrooms Level 8 Guide: Caves, Skinstealers & The Parkour Skip',
+    addressBar: 'level-8-cave-system-walkthrough',
+    description: 'Walkthrough for Level 8 (Cave System). Master the stealth mechanics against Death Moths and Skinstealers, survive the Suspension Bridge, or learn the "Rock Climb" glitch to skip directly to Level 9.',
+    imageUrl: '/images/levels/level-17.webp',
+    imageAlt: 'Escape the Backrooms: Level 8 - The Dark Cave System',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 8 (Cave System)',
+      difficulty: 'Hard',
+      objectives: 'Navigate the maze, Avoid Moths, Escape Skinstealers, Reach Level 9'
+    },
+    featured: [
+      {
+        title: 'Level 7',
+        description: 'Thalassophobia - The ocean level preceding the caves.',
+        imageUrl: '/images/levels/level-16.webp',
+        imageAlt: 'Level 7 - Thalassophobia',
+        addressBar: 'level-7-thalassophobia-walkthrough'
+      },
+      // {
+      //   title: 'Level 9',
+      //   description: 'Darkened Suburbs - The destination after the cave glitch.',
+      //   imageUrl: '/images/levels/level-9.webp',
+      //   imageAlt: 'Level 9 - Darkened Suburbs',
+      //   addressBar: 'level-9-darkened-suburbs-walkthrough'
+      // }
+    ],
+    seo: {
+      title: 'Level 8 Cave System Guide - Escape the Backrooms Glitches & Tips',
+      description: 'How to beat Level 8 in Escape the Backrooms. Explaining the Skinstealer evasion strategy, the Suspension Bridge mechanics, and the massive parkour glitch that skips Level 0.11.',
+      keywords: 'Level 8, Cave System, Escape the Backrooms, Skinstealer, Death Moth, Level Skip Glitch, Suspension Bridge'
+    },
+    detailsHtml: `
+      <p><strong>Level 8</strong> is a winding system of dark caves infested with hostile entities. Unlike the open ocean of Level 7, this area is claustrophobic and requires careful management of your flashlight and stamina. It features two main threats: <strong>Death Moths</strong> and <strong>Skinstealers</strong>.</p>
+
+      <h2>Escape the Backrooms: Level 8 Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/FDk9KG4pB4E" allowfullscreen></iframe>
+      
+      <h3>Video Highlights:</h3>
+      <ul>
+        <li><strong>Insecticide & Doors:</strong> How to open the airlock doors using the spray mechanism.</li>
+        <li><strong>Entity Stealth:</strong> Crouching past Death Moths and breaking line-of-sight with Skinstealers.</li>
+        <li><strong>The Bridge:</strong> The safe way to cross the deadly suspension bridge.</li>
+        <li><strong>The Major Skip:</strong> A parkour glitch that allows you to skip the end of Level 8 and the entirety of Level 0.11.</li>
+      </ul>
+
+      <h2>Part 1: The Airlock & Supplies</h2>
+      <p>
+        Upon arriving from the underwater cave, you will find a table with supplies (Almond Water). Ahead is a metal door with a wheel valve.
+      </p>
+      <ul>
+        <li><strong>The Mechanism:</strong> Turning the wheel releases insecticide gas. You must wait for the door to open.</li>
+        <li><strong>The Rule:</strong> Only one door functions at a time. If you are in multiplayer, ensure everyone gathers before moving through, or the doors may desync/lock others out.</li>
+      </ul>
+
+      <h2>Part 2: Death Moths</h2>
+      <p>
+        You will encounter large moths clinging to the cave walls or flying in swarms.
+      </p>
+      <ul>
+        <li><strong>Behavior:</strong> They are attracted to light and movement. If you shine your flashlight directly on them or run past them, they may grab you.</li>
+        <li><strong>Strategy:</strong> <strong>Crouch</strong> when moving near moths. As shown in the video, crouching significantly reduces their detection range. If you are an experienced player, you can sprint past them, but this is risky.</li>
+      </ul>
+
+      <h2>Part 3: The Skinstealer (Xiepi)</h2>
+      <p>
+        The Skinstealer is a tall, humanoid entity that patrols the caves.
+      </p>
+      <ul>
+        <li><strong>Chase Mechanics:</strong> It runs faster than you but has a short attention span.</li>
+        <li><strong>Evasion:</strong> If spotted, run back through a doorway or around a sharp corner. As the video explains, if you break line-of-sight for <strong>4-5 seconds</strong>, the entity will often "disengage" and walk away.</li>
+        <li><strong>Hiding:</strong> Unlike Level 6, there are fewer safe spots, so breaking visual contact is your best defense.</li>
+      </ul>
+
+      <h2>Part 4: The Suspension Bridge</h2>
+      <p>
+        You will eventually reach a deep chasm crossed by a narrow wooden suspension bridge.
+      </p>
+      <div class="alert-box warning">
+        <strong>CRITICAL WARNING:</strong> Do <strong>NOT</strong> run (Shift) on the bridge. Do <strong>NOT</strong> have more than one person on the bridge at a time. Doing either will cause the bridge to break, sending you to your death.
+      </div>
+      <p>
+        Walk normally across the bridge. Once you reach the other side, turn the valve to open the next security door and trigger a checkpoint.
+      </p>
+
+      <h2>Part 5: The "Rock Climb" Glitch (Level Skip)</h2>
+      <p>
+        This level features a massive exploit that allows you to skip a difficult section and the entirety of the next transition level (Level 0.11).
+      </p>
+      <ul>
+        <li><strong>Location:</strong> Near the suspension bridge area, look for a specific cave opening that leads to a dead-end with rocky ledges (shown at 03:00 in the video).</li>
+        <li><strong>The Method:</strong>
+          <ol>
+            <li>Jump-crouch onto the first small ledge on the left wall.</li>
+            <li>Jump-crouch again to the higher platform.</li>
+            <li>Continue jumping up the jagged rocks. The character controller in the updated version is slimmer, making it much easier to climb geometry than before.</li>
+          </ol>
+        </li>
+        <li><strong>The Destination:</strong> Once you climb high enough, aim for the large rock sticking out above and jump towards it. You will clip through the ceiling/teleport.</li>
+        <li><strong>Result:</strong> This teleports you directly to the start of <strong>Level 9 (The Suburbs)</strong>, bypassing the rest of the caves and the glass room puzzle.</li>
+      </ul>
+
+      <img src="/images/levels/level-17-01.webp" alt="Climbing the rocks to skip Level 8" />
+
+      <p>
+        If you choose not to use the glitch, continue through the standard path past the bridge to reach the ladder leading to Level 0.11. However, the glitch is recommended for speedruns or difficult runs.
+      </p>
+    `
+}
 ]
