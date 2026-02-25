@@ -3,8 +3,8 @@
     <section class="page-hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="page-title">Escape the Backrooms: All Levels List & Walkthroughs</h1>
-          <p class="page-subtitle">Navigate the comprehensive directory of Escape the Backrooms levels. Browse all Escape the Backrooms level guides organized by Chapters, including the new v1.0 update, secret Escape the Backrooms levels, and endings. Select any Escape the Backrooms level to view maps, codes, and entity data.</p>
+          <h1 class="page-title">{{ $t('levelsPage.hero.title') }}</h1>
+          <p class="page-subtitle">{{ $t('levelsPage.hero.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -16,7 +16,7 @@
           <div class="sidebar-content">
             <!-- Category Navigation -->
             <div class="category-nav">
-              <h2 class="sidebar-title">Escape the Backrooms Level Categories</h2>
+              <h2 class="sidebar-title">{{ $t('levelsPage.sidebar.title') }}</h2>
               <nav class="nav-list">
                 <a 
                   href="#" 
@@ -45,13 +45,13 @@
             >
               <div class="group-header">
                 <h2 class="group-title">{{ category }}</h2>
-                <span class="category-count">{{ groupedLevels[category].length }} Escape the Backrooms levels</span>
+                <span class="category-count">{{ groupedLevels[category].length }} {{ $t('levelsPage.category.countText') }}</span>
               </div>
               <div class="levels-grid">
                 <a 
-                  :href="`/levels/${level.addressBar}`"
+                  :href="getLocalizedPath(`/levels/${level.addressBar}`)"
                   class="level-card" 
-                  v-for="level in (groupedLevels[category] || [])" 
+                  v-for="level in groupedLevels[category]" 
                   :key="level.id"
                   :id="`level-${level.id}`"
                 >
@@ -85,25 +85,29 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import levelsData from '../data/levels.js'
+import { computed, onMounted, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useLevelsData } from '../composables/useLevelsData.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+
+const { t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const { data: levelsData, loadData, getGroupedLevels } = useLevelsData()
 
 // 根据 category 字段分组
 const groupedLevels = computed(() => {
-  const groups = {}
-  levelsData.forEach(level => {
-    const category = level.category || 'Other'
-    if (!groups[category]) {
-      groups[category] = []
-    }
-    groups[category].push(level)
-  })
-  return groups
+  return getGroupedLevels()
 })
 
 // 获取所有分类名称
 const categories = computed(() => {
   return Object.keys(groupedLevels.value)
+})
+
+// 加载数据
+onMounted(async () => {
+  await nextTick()
+  await loadData()
 })
 
 // 生成分类的 slug（用于锚点）

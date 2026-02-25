@@ -10,6 +10,17 @@ const seoConfig = {
   fullDomain: 'https://escapethebackrooms.org'
 }
 
+// 支持的语言列表
+const supportedLocales = ['en', 'de']
+
+// 生成本地化路径
+function createLocalizedPath(path, locale = 'en') {
+  if (locale === 'en') {
+    return path
+  }
+  return `/${locale}${path}`
+}
+
 // 基础路由配置
 // Note: Legal pages (privacy-policy, terms-of-service, copyright) are excluded from sitemap
 const baseRoutes = [
@@ -23,8 +34,8 @@ const baseRoutes = [
   { path: '/search', name: 'search', priority: 0.7, changefreq: 'daily' },
 ]
 
-// 动态加载数据
-async function loadData() {
+// 动态加载数据（支持多语言）
+async function loadData(locale = 'en') {
   const data = {
     levels: [],
     maps: [],
@@ -33,18 +44,22 @@ async function loadData() {
 
   try {
     // 加载 levels 数据
-    const levelsModule = await import('../src/data/levels.js')
-    data.levels = levelsModule.default || []
+    const levelsModule = await import(`../src/data/levels/${locale}.js`).catch(() => 
+      import('../src/data/levels/en.js')
+    )
+    data.levels = levelsModule.default || levelsModule.levels || []
   } catch (error) {
-    console.warn('Failed to load levels data:', error.message)
+    console.warn(`Failed to load levels data (${locale}):`, error.message)
   }
 
   try {
     // 加载 maps 数据
-    const mapsModule = await import('../src/data/maps.js')
-    data.maps = mapsModule.default || []
+    const mapsModule = await import(`../src/data/maps/${locale}.js`).catch(() => 
+      import('../src/data/maps/en.js')
+    )
+    data.maps = mapsModule.default || mapsModule.maps || []
   } catch (error) {
-    console.warn('Failed to load maps data:', error.message)
+    console.warn(`Failed to load maps data (${locale}):`, error.message)
   }
 
   // try {
@@ -69,44 +84,55 @@ function generateUrlXml(path, lastmod, priority, changefreq) {
   </url>`
 }
 
-// 生成站点地图
+// 生成站点地图（支持多语言）
 async function generateSitemap() {
   const lastmod = new Date().toISOString().split('T')[0]
 
-  // 加载数据
-  const data = await loadData()
+  // 加载所有语言的数据
+  const allData = {}
+  for (const locale of supportedLocales) {
+    allData[locale] = await loadData(locale)
+  }
 
   let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">`
 
-  // 生成基础路由
+  // 生成基础路由（为每种语言生成）
   baseRoutes.forEach(route => {
-    sitemapXml += `\n${generateUrlXml(route.path, lastmod, route.priority, route.changefreq)}`
+    supportedLocales.forEach(locale => {
+      const localizedPath = createLocalizedPath(route.path, locale)
+      sitemapXml += `\n${generateUrlXml(localizedPath, lastmod, route.priority, route.changefreq)}`
+    })
   })
 
-  // 为 levels 生成URL
-  const levels = data.levels || []
-  levels.forEach(level => {
-    if (!level || !level.addressBar) return
-    const levelPath = `/levels/${level.addressBar}`
-    sitemapXml += `\n${generateUrlXml(levelPath, lastmod, 0.8, 'monthly')}`
+  // 为 levels 生成URL（为每种语言生成）
+  supportedLocales.forEach(locale => {
+    const levels = allData[locale].levels || []
+    levels.forEach(level => {
+      if (!level || !level.addressBar) return
+      const levelPath = createLocalizedPath(`/levels/${level.addressBar}`, locale)
+      sitemapXml += `\n${generateUrlXml(levelPath, lastmod, 0.8, 'monthly')}`
+    })
   })
 
-  // 为 maps 生成URL
-  const maps = data.maps || []
-  maps.forEach(map => {
-    if (!map || !map.addressBar) return
-    const mapPath = `/maps-keys/${map.addressBar}`
-    sitemapXml += `\n${generateUrlXml(mapPath, lastmod, 0.8, 'monthly')}`
+  // 为 maps 生成URL（为每种语言生成）
+  supportedLocales.forEach(locale => {
+    const maps = allData[locale].maps || []
+    maps.forEach(map => {
+      if (!map || !map.addressBar) return
+      const mapPath = createLocalizedPath(`/maps-keys/${map.addressBar}`, locale)
+      sitemapXml += `\n${generateUrlXml(mapPath, lastmod, 0.8, 'monthly')}`
+    })
   })
 
-  // 为 entities 生成URL
-  const entities = data.entities || []
-  entities.forEach(entity => {
-    if (!entity || !entity.slug) return
-    const entityPath = `/wiki/entities/${entity.slug}`
-    sitemapXml += `\n${generateUrlXml(entityPath, lastmod, 0.7, 'monthly')}`
-  })
+  // 为 entities 生成URL（为每种语言生成）
+  // const entities = data.entities || []
+  // entities.forEach(entity => {
+  //   if (!entity || !entity.slug) return
+  //   const entityPath = `/wiki/entities/${entity.slug}`
+  //   sitemapXml += `\n${generateUrlXml(entityPath, lastmod, 0.7, 'monthly')}`
+  // })
 
   sitemapXml += `\n</urlset>`
 
@@ -142,17 +168,24 @@ async function main() {
     const urlCount = (sitemapContent.match(/<url>/g) || []).length
     console.log(`✅ Total URLs in sitemap: ${urlCount}`)
     
+    // 统计各语言的URL数量
+    const enUrls = sitemapContent.match(/<loc>https:\/\/escapethebackrooms\.org\/[^<]*<\/loc>/g) || []
+    const enUrlCount = enUrls.filter(url => !url.includes('/de/')).length
+    const deUrlCount = enUrls.filter(url => url.includes('/de/')).length
+    
     // 统计各类URL数量
     const levelsCount = (sitemapContent.match(/\/levels\//g) || []).length
     const mapsCount = (sitemapContent.match(/\/maps-keys\//g) || []).length
-    const entitiesCount = (sitemapContent.match(/\/wiki\/entities\//g) || []).length
+    
+    console.log('\n📊 URLs by language:')
+    console.log(`   English (en): ${enUrlCount}`)
+    console.log(`   German (de): ${deUrlCount}`)
+    console.log(`   Total: ${urlCount}`)
     
     console.log('\n📊 URLs by category:')
-    console.log(`   Base routes: ${baseRoutes.length}`)
+    console.log(`   Base routes: ${baseRoutes.length * supportedLocales.length}`)
     console.log(`   Levels: ${levelsCount}`)
     console.log(`   Maps: ${mapsCount}`)
-    console.log(`   Entities: ${entitiesCount}`)
-    console.log(`   Total: ${urlCount}`)
     
     // 验证生成的站点地图
     const validation = sitemapContent.includes('<?xml') && 

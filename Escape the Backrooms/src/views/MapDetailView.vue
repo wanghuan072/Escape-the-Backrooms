@@ -75,15 +75,15 @@
             <!-- Information Card -->
             <div class="info-card" v-if="map.category">
               <div class="info-header">
-                <h3 class="info-title">Information</h3>
+                <h3 class="info-title">{{ $t('mapDetailPage.sidebar.information') }}</h3>
               </div>
               <div class="info-content">
                 <div class="info-row" v-if="map.category">
-                  <div class="info-label">Category</div>
+                  <div class="info-label">{{ $t('mapDetailPage.sidebar.category') }}</div>
                   <div class="info-value-text">{{ map.category }}</div>
                 </div>
                 <div class="info-row" v-if="map.tags && map.tags.length > 0">
-                  <div class="info-label">Tags</div>
+                  <div class="info-label">{{ $t('mapDetailPage.sidebar.tags') }}</div>
                   <div class="info-value-text">
                     <span v-for="tag in map.tags" :key="tag" class="tag-badge">{{ tag }}</span>
                   </div>
@@ -98,24 +98,29 @@
 
   <div v-else class="not-found">
     <div class="container">
-      <h1>Map Not Found</h1>
-      <a href="/maps-keys" class="back-link">Back to Maps & Keys</a>
+      <h1>{{ $t('mapDetailPage.notFound.title') }}</h1>
+      <a :href="getLocalizedPath('/maps-keys')" class="back-link">{{ $t('mapDetailPage.notFound.backLink') }}</a>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed, onMounted, watch } from 'vue'
+import { computed, onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
-import mapsData from '../data/maps.js'
+import { useI18n } from 'vue-i18n'
+import { useMapsData } from '../composables/useMapsData.js'
 import { useSEO } from '../seo/composables.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
+const { locale, t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const { data: mapsData, loadData, findByAddress } = useMapsData()
 const { setSEO, generateStructuredData, addStructuredData } = useSEO()
 
 const map = computed(() => {
   const slug = route.params.slug
-  return mapsData.find(m => m.addressBar === slug)
+  return findByAddress(slug)
 })
 
 const updateSEO = () => {
@@ -135,13 +140,39 @@ const updateSEO = () => {
   }
 }
 
-onMounted(() => {
+// 初始化加载数据
+const initMap = async () => {
+  await nextTick() // 等待路由守卫设置语言
+  await loadData()
+  updateSEO()
+}
+
+onMounted(async () => {
+  await initMap()
+})
+
+// 监听路由完整路径变化（包括语言前缀变化）
+watch(() => route.fullPath, async (newPath, oldPath) => {
+  if (newPath !== oldPath && oldPath) {
+    await nextTick() // 等待路由守卫设置语言
+    await initMap()
+  }
+}, { immediate: false })
+
+// 监听路由参数变化
+watch(() => route.params.slug, async () => {
+  await nextTick() // 等待路由守卫设置语言
+  await loadData()
   updateSEO()
 })
 
-watch(() => route.params.slug, () => {
-  updateSEO()
-})
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale, oldLocale) => {
+  // 只有当语言真正变化时才重新加载
+  if (newLocale !== oldLocale && oldLocale !== undefined) {
+    await initMap()
+  }
+}, { immediate: false })
 </script>
 
 <style scoped>
@@ -440,7 +471,7 @@ watch(() => route.params.slug, () => {
     position: relative;
     top: 0;
   }
-}
+  }
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {

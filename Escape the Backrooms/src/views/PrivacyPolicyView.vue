@@ -4,8 +4,8 @@
     <section class="page-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Privacy Policy</h1>
-          <p class="page-subtitle">Last updated: January 14, 2025</p>
+          <h1 class="page-title">{{ $t('privacyPolicyPage.hero.title') }}</h1>
+          <p class="page-subtitle">{{ $t('privacyPolicyPage.hero.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -15,52 +15,32 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="legal-text v-html-style">
-            <p>
-              At Escape the Backrooms Wiki, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
-            </p>
+            <p v-html="$t('privacyPolicyPage.content.intro')"></p>
 
-            <h2>Information We Collect</h2>
-            <p>
-              We may collect information that you provide directly to us, such as when you contact us or subscribe to our newsletter. This may include your name, email address, and any other information you choose to provide.
-            </p>
-            <p>
-              We also automatically collect certain information about your device when you visit our website, including your IP address, browser type, operating system, and browsing behavior.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.informationTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.informationText1')"></p>
+            <p v-html="$t('privacyPolicyPage.content.informationText2')"></p>
 
-            <h2>How We Use Your Information</h2>
-            <p>
-              We use the information we collect to provide, maintain, and improve our services, respond to your inquiries, send you updates about our content, and analyze how our website is used.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.howWeUseTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.howWeUseText')"></p>
 
-            <h2>Cookies and Tracking Technologies</h2>
-            <p>
-              We use cookies and similar tracking technologies to track activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.cookiesTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.cookiesText')"></p>
 
-            <h2>Third-Party Services</h2>
-            <p>
-              Our website may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.thirdPartyTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.thirdPartyText')"></p>
 
-            <h2>Data Security</h2>
-            <p>
-              We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.securityTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.securityText')"></p>
 
-            <h2>Your Rights</h2>
-            <p>
-              You have the right to access, update, or delete your personal information at any time. If you wish to exercise these rights, please contact us through our Contact Us page.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.rightsTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.rightsText')"></p>
 
-            <h2>Changes to This Policy</h2>
-            <p>
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.changesTitle') }}</h2>
+            <p v-html="$t('privacyPolicyPage.content.changesText')"></p>
 
-            <h2>Contact Us</h2>
-            <p>
-              If you have any questions about this Privacy Policy, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.
-            </p>
+            <h2>{{ $t('privacyPolicyPage.content.contactTitle') }}</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.</p>
           </div>
         </div>
       </div>
@@ -69,18 +49,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { useSEO } from '../seo/composables.js'
-
-const { setSEO } = useSEO()
-
-onMounted(() => {
-  setSEO({
-    title: 'Privacy Policy | Escape the Backrooms Wiki',
-    description: 'Privacy Policy for Escape the Backrooms Wiki. Learn how we collect, use, and protect your personal information.',
-    keywords: 'privacy policy, data protection, user privacy, Escape the Backrooms Wiki'
-  })
-})
+// SEO is handled by useAutoSEO composable in router
 </script>
 
 <style scoped>

@@ -4,8 +4,8 @@
     <section class="page-header">
       <div class="container">
         <div class="header-content">
-          <h1 class="page-title">Terms of Service</h1>
-          <p class="page-subtitle">Last updated: January 14, 2025</p>
+          <h1 class="page-title">{{ $t('termsOfServicePage.hero.title') }}</h1>
+          <p class="page-subtitle">{{ $t('termsOfServicePage.hero.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -15,52 +15,32 @@
       <div class="container">
         <div class="content-wrapper">
           <div class="legal-text v-html-style">
-            <p>
-              Welcome to Escape the Backrooms Wiki. By accessing and using this website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website.
-            </p>
+            <p v-html="$t('termsOfServicePage.content.intro')"></p>
 
-            <h2>Use of Website</h2>
-            <p>
-              You may use our website for personal, non-commercial purposes. You agree not to use the website in any way that violates any applicable laws or regulations, or that could damage, disable, or impair the website.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.useTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.useText')"></p>
 
-            <h2>Content and Intellectual Property</h2>
-            <p>
-              All content on this website, including text, graphics, logos, and images, is the property of Escape the Backrooms Wiki or its content suppliers and is protected by copyright and other intellectual property laws.
-            </p>
-            <p>
-              This is an independent fan site created for informational purposes only. All trademarks and copyrights related to "Escape the Backrooms" belong to their respective owners (Fancy Games and Secret Mode).
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.contentTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.contentText1')"></p>
+            <p v-html="$t('termsOfServicePage.content.contentText2')"></p>
 
-            <h2>User Conduct</h2>
-            <p>
-              You agree not to engage in any activity that interferes with or disrupts the website or servers and networks connected to the website. You also agree not to attempt to gain unauthorized access to any portion of the website.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.conductTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.conductText')"></p>
 
-            <h2>Disclaimer of Warranties</h2>
-            <p>
-              The information on this website is provided on an "as is" basis. We make no warranties, expressed or implied, regarding the accuracy, completeness, or reliability of the information provided.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.disclaimerTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.disclaimerText')"></p>
 
-            <h2>Limitation of Liability</h2>
-            <p>
-              Escape the Backrooms Wiki shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of this website.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.liabilityTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.liabilityText')"></p>
 
-            <h2>Links to Third-Party Websites</h2>
-            <p>
-              Our website may contain links to third-party websites. We are not responsible for the content, privacy policies, or practices of these third-party sites.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.linksTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.linksText')"></p>
 
-            <h2>Modifications to Terms</h2>
-            <p>
-              We reserve the right to modify these Terms of Service at any time. Your continued use of the website after any changes constitutes your acceptance of the new terms.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.modificationsTitle') }}</h2>
+            <p v-html="$t('termsOfServicePage.content.modificationsText')"></p>
 
-            <h2>Contact Information</h2>
-            <p>
-              If you have any questions about these Terms of Service, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.
-            </p>
+            <h2>{{ $t('termsOfServicePage.content.contactTitle') }}</h2>
+            <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.</p>
           </div>
         </div>
       </div>
@@ -69,18 +49,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { useSEO } from '../seo/composables.js'
-
-const { setSEO } = useSEO()
-
-onMounted(() => {
-  setSEO({
-    title: 'Terms of Service | Escape the Backrooms Wiki',
-    description: 'Terms of Service for Escape the Backrooms Wiki. Read our terms and conditions for using our website.',
-    keywords: 'terms of service, terms and conditions, user agreement, Escape the Backrooms Wiki'
-  })
-})
+// SEO is handled by useAutoSEO composable in router
 </script>
 
 <style scoped>

@@ -6,36 +6,36 @@
         <div class="hero-layout">
           <div class="hero-content">
             <div class="hero-badges">
-              <span class="badge badge-new">v1.0 Full Release</span>
-              <span class="badge">Steam Edition</span>
+              <span class="badge badge-new">{{ $t('homePage.hero.badgeNew') }}</span>
+              <span class="badge">{{ $t('homePage.hero.badgeSteam') }}</span>
             </div>
-            <h1 class="hero-title">Escape the Backrooms: Levels, Maps, Codes & Walkthroughs</h1>
+            <h1 class="hero-title">{{ $t('homePage.hero.title') }}</h1>
             <p class="hero-description">
-              Escape the Backrooms is your ultimate guide to navigating through 30+ levels of terror. Find levels, maps, codes, entity guides, and puzzle solutions for Escape the Backrooms. Everything you need to escape the Backrooms and survive this horror adventure.
+              {{ $t('homePage.hero.description') }}
             </p>
             <div class="hero-features">
-              <div class="feature-item">Complete level walkthroughs</div>
-              <div class="feature-item">High-resolution maps & keys</div>
-              <div class="feature-item">Entity database</div>
-              <div class="feature-item">Elevator codes, door codes, and computer passwords</div>
+              <div class="feature-item">{{ $t('homePage.hero.feature01') }}</div>
+              <div class="feature-item">{{ $t('homePage.hero.feature02') }}</div>
+              <div class="feature-item">{{ $t('homePage.hero.feature03') }}</div>
+              <div class="feature-item">{{ $t('homePage.hero.feature04') }}</div>
             </div>
             <div class="hero-stats">
               <div class="stat-box">
-                <div class="stat-number">30+</div>
-                <div class="stat-text">Playable Levels</div>
+                <div class="stat-number">{{ $t('homePage.hero.stat01Number') }}</div>
+                <div class="stat-text">{{ $t('homePage.hero.stat01Text') }}</div>
               </div>
               <div class="stat-box">
-                <div class="stat-number">35+</div>
-                <div class="stat-text">Total Scenes</div>
+                <div class="stat-number">{{ $t('homePage.hero.stat02Number') }}</div>
+                <div class="stat-text">{{ $t('homePage.hero.stat02Text') }}</div>
               </div>
               <div class="stat-box">
-                <div class="stat-number">30+</div>
-                <div class="stat-text">Unique Entities</div>
+                <div class="stat-number">{{ $t('homePage.hero.stat03Number') }}</div>
+                <div class="stat-text">{{ $t('homePage.hero.stat03Text') }}</div>
               </div>
             </div>
             <div class="hero-actions">
-              <a href="/levels" class="btn btn-primary">Explore All Levels</a>
-              <a href="/codes-solutions" class="btn btn-secondary">Codes & Solutions</a>
+              <a :href="getLocalizedPath('/levels')" class="btn btn-primary">{{ $t('homePage.hero.button01') }}</a>
+              <a :href="getLocalizedPath('/codes-solutions')" class="btn btn-secondary">{{ $t('homePage.hero.button02') }}</a>
             </div>
           </div>
           <div class="hero-video">
@@ -46,7 +46,7 @@
               <div class="video-iframe-container" v-else>
                 <iframe
                   src="https://www.youtube.com/embed/6xbnqo48K2c"
-                  title="Escape the Backrooms Walkthrough"
+                  :title="$t('homePage.hero.videoTitle')"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
@@ -65,17 +65,17 @@
       <div class="container">
         <div class="section-header">
           <div class="header-content">
-            <span class="section-label">Featured</span>
-            <h2 class="section-title">Escape the Backrooms Levels</h2>
-            <p class="section-subtitle">Essential Escape the Backrooms level guides to get you started</p>
+            <span class="section-label">{{ $t('homePage.featuredLevels.label') }}</span>
+            <h2 class="section-title">{{ $t('homePage.featuredLevels.title') }}</h2>
+            <p class="section-subtitle">{{ $t('homePage.featuredLevels.subtitle') }}</p>
           </div>
-          <a href="/levels" class="section-link">View All Levels →</a>
+          <a :href="getLocalizedPath('/levels')" class="section-link">{{ $t('homePage.featuredLevels.linkText') }}</a>
         </div>
         <div class="featured-grid">
           <a
             v-for="level in homeLevels"
             :key="level.id"
-            :href="`/levels/${level.addressBar}`"
+            :href="getLocalizedPath(`/levels/${level.addressBar}`)"
             class="featured-card"
           >
             <div class="card-image">
@@ -107,17 +107,17 @@
       <div class="container">
         <div class="section-header">
           <div class="header-content">
-            <span class="section-label">Maps</span>
-            <h2 class="section-title">Escape the Backrooms Maps</h2>
-            <p class="section-subtitle">Essential Escape the Backrooms navigation maps for key levels</p>
+            <span class="section-label">{{ $t('homePage.featuredMaps.label') }}</span>
+            <h2 class="section-title">{{ $t('homePage.featuredMaps.title') }}</h2>
+            <p class="section-subtitle">{{ $t('homePage.featuredMaps.subtitle') }}</p>
           </div>
-          <a href="/maps-keys" class="section-link">View All Maps →</a>
+          <a :href="getLocalizedPath('/maps-keys')" class="section-link">{{ $t('homePage.featuredMaps.linkText') }}</a>
         </div>
         <div class="featured-grid">
           <a
             v-for="map in homeMaps"
             :key="map.id"
-            :href="`/maps-keys/${map.addressBar}`"
+            :href="getLocalizedPath(`/maps-keys/${map.addressBar}`)"
             class="featured-card"
           >
             <div class="card-image">
@@ -149,11 +149,11 @@
       <div class="container">
         <div class="section-header">
           <div class="header-content">
-            <span class="section-label">Entities</span>
-            <h2 class="section-title">Escape the Backrooms Entities</h2>
-            <p class="section-subtitle">Important Escape the Backrooms entities you need to know</p>
+            <span class="section-label">{{ $t('homePage.featuredEntities.label') }}</span>
+            <h2 class="section-title">{{ $t('homePage.featuredEntities.title') }}</h2>
+            <p class="section-subtitle">{{ $t('homePage.featuredEntities.subtitle') }}</p>
           </div>
-          <!-- <a href="/wiki/entities" class="section-link">View All Entities →</a> -->
+          <!-- <a href="/wiki/entities" class="section-link">{{ $t('homePage.featuredEntities.linkText') }}</a> -->
         </div>
         <div class="featured-grid">
           <div
@@ -192,43 +192,43 @@
       <div class="container">
         <div class="section-header">
           <div class="header-content">
-            <span class="section-label">Game Info</span>
-            <h2 class="section-title">Escape the BackroomsGame Information</h2>
-            <p class="section-subtitle">Essential information about the Escape the Backrooms game</p>
+            <span class="section-label">{{ $t('homePage.gameInfo.label') }}</span>
+            <h2 class="section-title">{{ $t('homePage.gameInfo.title') }}</h2>
+            <p class="section-subtitle">{{ $t('homePage.gameInfo.subtitle') }}</p>
           </div>
         </div>
         <div class="info-grid">
           <div class="info-card">
-            <h3>Game Information</h3>
+            <h3>{{ $t('homePage.gameInfo.card01Title') }}</h3>
             <ul class="info-list">
-              <li><strong>Developer:</strong> Fancy Games</li>
-              <li><strong>Publisher:</strong> Secret Mode</li>
-              <li><strong>Release:</strong> v1.0 (Oct 23, 2024)</li>
-              <li><strong>Platform:</strong> Steam</li>
-              <li><strong>Players:</strong> 1-4 Co-op</li>
-              <li><strong>Genre:</strong> Horror Adventure</li>
+              <li><strong>{{ $t('homePage.gameInfo.card01Item01Label') }}</strong> {{ $t('homePage.gameInfo.card01Item01Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card01Item02Label') }}</strong> {{ $t('homePage.gameInfo.card01Item02Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card01Item03Label') }}</strong> {{ $t('homePage.gameInfo.card01Item03Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card01Item04Label') }}</strong> {{ $t('homePage.gameInfo.card01Item04Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card01Item05Label') }}</strong> {{ $t('homePage.gameInfo.card01Item05Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card01Item06Label') }}</strong> {{ $t('homePage.gameInfo.card01Item06Value') }}</li>
             </ul>
           </div>
           <div class="info-card">
-            <h3>Game Statistics</h3>
+            <h3>{{ $t('homePage.gameInfo.card02Title') }}</h3>
             <ul class="info-list">
-              <li><strong>Total Levels:</strong> 28+ playable in Escape the Backrooms</li>
-              <li><strong>Total Scenes:</strong> 35+ including transitions in Escape the Backrooms</li>
-              <li><strong>Entities:</strong> 30+ unique Escape the Backrooms entities</li>
-              <li><strong>Playtime:</strong> 8-12 hours to complete Escape the Backrooms</li>
-              <li><strong>Difficulty:</strong> Medium to Extreme in Escape the Backrooms</li>
-              <li><strong>Endings:</strong> Multiple endings in Escape the Backrooms</li>
+              <li><strong>{{ $t('homePage.gameInfo.card02Item01Label') }}</strong> {{ $t('homePage.gameInfo.card02Item01Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card02Item02Label') }}</strong> {{ $t('homePage.gameInfo.card02Item02Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card02Item03Label') }}</strong> {{ $t('homePage.gameInfo.card02Item03Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card02Item04Label') }}</strong> {{ $t('homePage.gameInfo.card02Item04Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card02Item05Label') }}</strong> {{ $t('homePage.gameInfo.card02Item05Value') }}</li>
+              <li><strong>{{ $t('homePage.gameInfo.card02Item06Label') }}</strong> {{ $t('homePage.gameInfo.card02Item06Value') }}</li>
             </ul>
           </div>
           <div class="info-card">
-            <h3>Gameplay Features</h3>
+            <h3>{{ $t('homePage.gameInfo.card03Title') }}</h3>
             <ul class="info-list">
-              <li>Linear progression system</li>
-              <li>Unique level mechanics</li>
-              <li>Entity avoidance gameplay</li>
-              <li>Puzzle solving elements</li>
-              <li>Cooperative multiplayer</li>
-              <li>Immersive horror atmosphere</li>
+              <li>{{ $t('homePage.gameInfo.card03Item01') }}</li>
+              <li>{{ $t('homePage.gameInfo.card03Item02') }}</li>
+              <li>{{ $t('homePage.gameInfo.card03Item03') }}</li>
+              <li>{{ $t('homePage.gameInfo.card03Item04') }}</li>
+              <li>{{ $t('homePage.gameInfo.card03Item05') }}</li>
+              <li>{{ $t('homePage.gameInfo.card03Item06') }}</li>
             </ul>
           </div>
         </div>
@@ -241,67 +241,52 @@
         <div class="about-wrap">
           <div class="section-header">
             <div class="header-content">
-              <span class="section-label">About</span>
-              <h2 class="section-title">About Us</h2>
-              <p class="section-subtitle">Your complete guide to escaping the Backrooms</p>
+              <span class="section-label">{{ $t('homePage.about.label') }}</span>
+              <h2 class="section-title">{{ $t('homePage.about.title') }}</h2>
+              <p class="section-subtitle">{{ $t('homePage.about.subtitle') }}</p>
             </div>
           </div>
           <div class="about-content">
             <div class="about-text">
-              <p>
-                Welcome to the most comprehensive guide for <strong>Escape the Backrooms</strong>, the
-                first-person horror adventure game developed by Fancy Games and published by Secret Mode.
-                This fan-made wiki is dedicated to helping players navigate through all 28+ levels of
-                terror in Escape the Backrooms and successfully escape the Backrooms.
-              </p>
-              <p>
-                Our Escape the Backrooms guides cover the Steam version (v1.0 Full Release), including detailed walkthroughs
-                for every level from Level 0 (The Lobby) to Level 3999 (The True Ending). Each Escape the Backrooms level guide
-                includes comprehensive information about objectives, entities, items, entrances, exits, and
-                detailed walkthrough steps to help you progress through Escape the Backrooms.
-              </p>
-              <p>
-                In addition to Escape the Backrooms level guides, we provide high-resolution navigation maps with spawn points
-                and key locations for Escape the Backrooms, a complete database of all Escape the Backrooms entities with behavior patterns and survival
-                strategies, and a comprehensive reference for all elevator codes, door codes, and computer
-                passwords needed throughout your Escape the Backrooms journey.
-              </p>
+              <p v-html="$t('homePage.about.text01')"></p>
+              <p v-html="$t('homePage.about.text02')"></p>
+              <p v-html="$t('homePage.about.text03')"></p>
             </div>
             <div class="about-highlights">
               <div class="highlight-item">
                 <div>
-                  <strong>Level Walkthroughs</strong>
-                  <p>Complete guides for all 28+ levels with objectives, entities, and exit routes</p>
+                  <strong>{{ $t('homePage.about.highlight01Title') }}</strong>
+                  <p>{{ $t('homePage.about.highlight01Text') }}</p>
                 </div>
               </div>
               <div class="highlight-item">
                 <div>
-                  <strong>Navigation Maps</strong>
-                  <p>High-resolution maps with spawn points, key locations, and navigation routes</p>
+                  <strong>{{ $t('homePage.about.highlight02Title') }}</strong>
+                  <p>{{ $t('homePage.about.highlight02Text') }}</p>
                 </div>
               </div>
               <div class="highlight-item">
                 <div>
-                  <strong>Key Locations</strong>
-                  <p>Detailed guides on where to find keys and how to collect them in each level</p>
+                  <strong>{{ $t('homePage.about.highlight03Title') }}</strong>
+                  <p>{{ $t('homePage.about.highlight03Text') }}</p>
                 </div>
               </div>
               <div class="highlight-item">
                 <div>
-                  <strong>Entity Database</strong>
-                  <p>Complete information about all entities, their behaviors, and avoidance strategies</p>
+                  <strong>{{ $t('homePage.about.highlight04Title') }}</strong>
+                  <p>{{ $t('homePage.about.highlight04Text') }}</p>
                 </div>
               </div>
               <div class="highlight-item">
                 <div>
-                  <strong>Codes & Solutions</strong>
-                  <p>All elevator codes, door codes, and computer passwords with usage instructions</p>
+                  <strong>{{ $t('homePage.about.highlight05Title') }}</strong>
+                  <p>{{ $t('homePage.about.highlight05Text') }}</p>
                 </div>
               </div>
               <div class="highlight-item">
                 <div>
-                  <strong>Guides & Tips</strong>
-                  <p>Additional Escape the Backrooms guides and tips to help you survive and escape the Backrooms</p>
+                  <strong>{{ $t('homePage.about.highlight06Title') }}</strong>
+                  <p>{{ $t('homePage.about.highlight06Text') }}</p>
                 </div>
               </div>
             </div>
@@ -316,9 +301,9 @@
         <div class="faq-wrap">
           <div class="section-header">
             <div class="header-content">
-              <span class="section-label">FAQ</span>
-              <h2 class="section-title">Frequently Asked Questions</h2>
-              <p class="section-subtitle">Find answers to common questions</p>
+              <span class="section-label">{{ $t('homePage.faq.label') }}</span>
+              <h2 class="section-title">{{ $t('homePage.faq.title') }}</h2>
+              <p class="section-subtitle">{{ $t('homePage.faq.subtitle') }}</p>
             </div>
           </div>
           <div class="faq-list">
@@ -338,10 +323,17 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
-import levelsData from '../data/levels.js'
+import { computed, ref, onMounted, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useLevelsData } from '../composables/useLevelsData.js'
+import { useMapsData } from '../composables/useMapsData.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 import entitiesData from '../data/wiki/entities.js'
-import mapsData from '../data/maps.js'
+
+const { t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const { data: levelsData, loadData: loadLevelsData, getHomeLevels } = useLevelsData()
+const { data: mapsData, loadData: loadMapsData, getHomeMaps } = useMapsData()
 
 // Video player state
 const isVideoPlaying = ref(false)
@@ -354,9 +346,16 @@ const closeVideo = () => {
   isVideoPlaying.value = false
 }
 
+// Load data
+onMounted(async () => {
+  await nextTick()
+  await loadLevelsData()
+  await loadMapsData()
+})
+
 // Filter data where isHome is true
 const homeLevels = computed(() => {
-  return levelsData.filter(level => level.isHome === true)
+  return getHomeLevels()
 })
 
 const homeEntities = computed(() => {
@@ -364,52 +363,52 @@ const homeEntities = computed(() => {
 })
 
 const homeMaps = computed(() => {
-  return mapsData.filter(map => map.isHome === true)
+  return getHomeMaps()
 })
 
 // FAQ Items
-const faqItems = [
+const faqItems = computed(() => [
   {
-    question: 'What is Escape the Backrooms?',
-    answer: '<strong>Escape the Backrooms</strong> is a first-person horror adventure game developed by Fancy Games and published by Secret Mode. Escape the Backrooms features 28+ levels with unique challenges, entities, and puzzles. The Escape the Backrooms game supports single-player and cooperative play for up to 4 players. Players must navigate through various Escape the Backrooms levels, avoid dangerous entities, solve puzzles, and find keys to progress and ultimately escape Escape the Backrooms.',
+    question: t('homePage.faq.item01Question'),
+    answer: t('homePage.faq.item01Answer'),
   },
   {
-    question: 'How many levels are in the game?',
-    answer: 'Escape the Backrooms features 28+ main playable levels, plus various transition areas (stairwells, elevators, hubs). If you count all Escape the Backrooms scenes including transitions, the total exceeds 35 scenes. Escape the Backrooms levels range from early game tutorials like Level 0 to challenging late-game levels like Level 3999, which serves as the true ending of Escape the Backrooms.',
+    question: t('homePage.faq.item02Question'),
+    answer: t('homePage.faq.item02Answer'),
   },
   {
-    question: 'Where can I find maps for specific levels?',
-    answer: 'You can find detailed Escape the Backrooms navigation maps in our <strong>Maps & Keys</strong> section. Each Escape the Backrooms map includes spawn points, key locations, and exit routes. Escape the Backrooms maps are organized by level and include visual markers to help you navigate. Simply navigate to the Maps & Keys page and select the Escape the Backrooms level map you need.',
+    question: t('homePage.faq.item03Question'),
+    answer: t('homePage.faq.item03Answer'),
   },
   {
-    question: 'How do I find keys in each level?',
-    answer: 'Keys are essential for progressing through many Escape the Backrooms levels. Our <strong>Maps & Keys</strong> section provides detailed information about key locations for each Escape the Backrooms level. For example, Level 0 in Escape the Backrooms requires finding a key after repairing the ladder, Level 1 has 4 keys hidden in wardrobes in Section II, and Level 5 keys are obtained by placing Moth Jelly in the Food Elevator in Escape the Backrooms.',
+    question: t('homePage.faq.item04Question'),
+    answer: t('homePage.faq.item04Answer'),
   },
   {
-    question: 'What are elevator codes and door codes?',
-    answer: 'Many Escape the Backrooms levels require specific codes to access elevators or unlock doors. Our <strong>Codes & Solutions</strong> page contains a complete list of all Escape the Backrooms elevator codes (like Level 3: 042, Level 5: 314), door codes (like Level 1: 1234), and computer passwords (like Level 94: PASSWORD). Each Escape the Backrooms code entry includes the location, usage instructions, and helpful images.',
+    question: t('homePage.faq.item05Question'),
+    answer: t('homePage.faq.item05Answer'),
   },
   {
-    question: 'How do I avoid entities like the Hound or Moth?',
-    answer: 'Our <strong>Entity Database</strong> provides complete information about all Escape the Backrooms entities, including their behaviors, locations, and danger levels. Each Escape the Backrooms entity guide explains how to avoid or deal with them. For example, Hounds in Escape the Backrooms are aggressive and fast, so you should avoid them in early Escape the Backrooms levels. Moths in Level 5 of Escape the Backrooms are attracted to light, so avoid using light sources near them.',
+    question: t('homePage.faq.item06Question'),
+    answer: t('homePage.faq.item06Answer'),
   },
   {
-    question: 'What is Level 3999 and the task list system?',
-    answer: 'Level 3999 is the final level and true ending of Escape the Backrooms. It features a unique task list system where players must complete randomly generated tasks (like breaking glass, finding specific items, or solving puzzles) before being able to escape Escape the Backrooms. This is currently the only "escape" ending in Escape the Backrooms. Our Escape the Backrooms level guides provide detailed walkthroughs for completing these tasks.',
+    question: t('homePage.faq.item07Question'),
+    answer: t('homePage.faq.item07Answer'),
   },
   {
-    question: 'How do I navigate between levels?',
-    answer: 'Each Escape the Backrooms level has specific entrances and exits. Our Escape the Backrooms level guides detail all possible entrances and exits for each level. Some Escape the Backrooms levels can be accessed from multiple previous levels, while others have only one entry point. The Escape the Backrooms progression is generally linear, but some levels offer alternative routes or shortcuts.',
+    question: t('homePage.faq.item08Question'),
+    answer: t('homePage.faq.item08Answer'),
   },
   {
-    question: 'Can I play this game with friends?',
-    answer: 'Yes! Escape the Backrooms supports cooperative multiplayer for up to 4 players. You can play Escape the Backrooms with friends to make navigation easier, share resources, and help each other complete Escape the Backrooms objectives. However, Escape the Backrooms can also be completed solo if you prefer a more challenging experience.',
+    question: t('homePage.faq.item09Question'),
+    answer: t('homePage.faq.item09Answer'),
   },
   {
-    question: 'What should I do if I get stuck in a level?',
-    answer: 'If you get stuck in Escape the Backrooms, check our detailed Escape the Backrooms level walkthroughs which include step-by-step instructions, objectives, and exit routes. You can also refer to our Escape the Backrooms maps to see the level layout, check the codes section if you need an Escape the Backrooms code, or consult the entity database if you\'re having trouble avoiding Escape the Backrooms entities. Each Escape the Backrooms guide is designed to help you progress without spoiling the entire experience.',
+    question: t('homePage.faq.item10Question'),
+    answer: t('homePage.faq.item10Answer'),
   },
-]
+])
 </script>
 
 <style scoped>

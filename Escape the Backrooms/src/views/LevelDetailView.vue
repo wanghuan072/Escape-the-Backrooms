@@ -15,11 +15,11 @@
 
           <div class="header-badges">
             <div class="badge" v-if="level.survivalDifficulty">
-              <span class="badge-label">Survival Difficulty</span>
+              <span class="badge-label">{{ $t('levelDetailPage.badge.survivalDifficulty') }}</span>
               <span class="badge-value">{{ level.survivalDifficulty }}</span>
             </div>
             <div class="badge" v-if="level.sanityDanger">
-              <span class="badge-label">Sanity Danger</span>
+              <span class="badge-label">{{ $t('levelDetailPage.badge.sanityDanger') }}</span>
               <span class="badge-value">{{ level.sanityDanger }}</span>
             </div>
           </div>
@@ -39,22 +39,22 @@
             <div class="nav-links" v-if="prevLevel || nextLevel">
               <a
                 v-if="prevLevel"
-                :href="`/levels/${prevLevel.addressBar}`"
+                :href="getLocalizedPath(`/levels/${prevLevel.addressBar}`)"
                 class="nav-link prev-link"
               >
                 <span class="nav-arrow">←</span>
                 <div class="nav-content">
-                  <span class="nav-label">Previous</span>
+                  <span class="nav-label">{{ $t('levelDetailPage.navigation.previous') }}</span>
                   <span class="nav-title">{{ prevLevel.title }}</span>
                 </div>
               </a>
               <a
                 v-if="nextLevel"
-                :href="`/levels/${nextLevel.addressBar}`"
+                :href="getLocalizedPath(`/levels/${nextLevel.addressBar}`)"
                 class="nav-link next-link"
               >
                 <div class="nav-content">
-                  <span class="nav-label">Next</span>
+                  <span class="nav-label">{{ $t('levelDetailPage.navigation.next') }}</span>
                   <span class="nav-title">{{ nextLevel.title }}</span>
                 </div>
                 <span class="nav-arrow">→</span>
@@ -85,11 +85,11 @@
               </div>
               <div class="info-content">
                 <div class="info-row" v-if="level.sideBarInfo.difficulty">
-                  <div class="info-label">Difficulty</div>
+                  <div class="info-label">{{ $t('levelDetailPage.sidebar.difficulty') }}</div>
                   <div class="info-value-text">{{ level.sideBarInfo.difficulty }}</div>
                 </div>
                 <div class="info-row" v-if="level.sideBarInfo.objectives">
-                  <div class="info-label">Objectives</div>
+                  <div class="info-label">{{ $t('levelDetailPage.sidebar.objectives') }}</div>
                   <div class="info-value-text">{{ level.sideBarInfo.objectives }}</div>
                 </div>
               </div>
@@ -98,13 +98,13 @@
             <!-- Featured Levels -->
             <div class="info-card" v-if="level.featured && level.featured.length > 0">
               <div class="info-header">
-                <h3 class="info-title">Featured Levels</h3>
+                <h3 class="info-title">{{ $t('levelDetailPage.sidebar.featuredTitle') }}</h3>
               </div>
               <div class="featured-levels">
                 <a
                   v-for="featured in level.featured"
                   :key="featured.title"
-                  :href="`/levels/${featured.addressBar}`"
+                  :href="getLocalizedPath(`/levels/${featured.addressBar}`)"
                   class="featured-item"
                 >
                   <img
@@ -117,7 +117,7 @@
                   <div class="featured-info">
                     <div class="featured-title">{{ featured.title }}</div>
                     <div class="featured-desc" v-if="featured.description">{{ featured.description }}</div>
-                  </div>
+                </div>
                 </a>
               </div>
             </div>
@@ -129,46 +129,38 @@
 
   <div v-else class="not-found">
     <div class="container">
-      <h1>Level Not Found</h1>
-      <a href="/levels" class="back-link">Back to Levels List</a>
+      <h1>{{ $t('levelDetailPage.notFound.title') }}</h1>
+      <a :href="getLocalizedPath('/levels')" class="back-link">{{ $t('levelDetailPage.notFound.backLink') }}</a>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed, onMounted, watch } from 'vue'
+import { computed, onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
-import levelsData from '../data/levels.js'
+import { useI18n } from 'vue-i18n'
+import { useLevelsData } from '../composables/useLevelsData.js'
 import { useSEO } from '../seo/composables.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
+const { locale, t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const { data: levelsData, loadData, findByAddress, getAdjacentLevels } = useLevelsData()
 const { setSEO, generateStructuredData, addStructuredData } = useSEO()
 
 const level = computed(() => {
   const slug = route.params.slug
-  return levelsData.find(l => l.addressBar === slug)
+  return findByAddress(slug)
 })
 
-const currentIndex = computed(() => {
-  if (!level.value) return -1
-  return levelsData.findIndex(l => l.id === level.value.id)
+const adjacentLevels = computed(() => {
+  if (!level.value) return { prev: null, next: null }
+  return getAdjacentLevels(level.value)
 })
 
-const prevLevel = computed(() => {
-  const index = currentIndex.value
-  if (index > 0) {
-    return levelsData[index - 1]
-  }
-  return null
-})
-
-const nextLevel = computed(() => {
-  const index = currentIndex.value
-  if (index >= 0 && index < levelsData.length - 1) {
-    return levelsData[index + 1]
-  }
-  return null
-})
+const prevLevel = computed(() => adjacentLevels.value.prev)
+const nextLevel = computed(() => adjacentLevels.value.next)
 
 const updateSEO = () => {
   if (level.value && level.value.seo) {
@@ -187,13 +179,39 @@ const updateSEO = () => {
   }
 }
 
-onMounted(() => {
+// 初始化加载数据
+const initLevel = async () => {
+  await nextTick() // 等待路由守卫设置语言
+  await loadData()
+  updateSEO()
+}
+
+onMounted(async () => {
+  await initLevel()
+})
+
+// 监听路由完整路径变化（包括语言前缀变化）
+watch(() => route.fullPath, async (newPath, oldPath) => {
+  if (newPath !== oldPath && oldPath) {
+    await nextTick() // 等待路由守卫设置语言
+    await initLevel()
+  }
+}, { immediate: false })
+
+// 监听路由参数变化
+watch(() => route.params.slug, async () => {
+  await nextTick() // 等待路由守卫设置语言
+  await loadData()
   updateSEO()
 })
 
-watch(() => route.params.slug, () => {
-  updateSEO()
-})
+// 监听语言变化，重新加载数据
+watch(() => locale.value, async (newLocale, oldLocale) => {
+  // 只有当语言真正变化时才重新加载
+  if (newLocale !== oldLocale && oldLocale !== undefined) {
+    await initLevel()
+  }
+}, { immediate: false })
 </script>
 
 <style scoped>

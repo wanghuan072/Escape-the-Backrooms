@@ -4,8 +4,8 @@
     <section class="page-hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="page-title">Escape the Backrooms Codes & Puzzle Solutions</h1>
-          <p class="page-subtitle">Instant access to all elevator codes, door passwords, and puzzle answers. Don't get stuck—find the solution you need.</p>
+          <h1 class="page-title">{{ $t('codesPage.hero.title') }}</h1>
+          <p class="page-subtitle">{{ $t('codesPage.hero.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -15,14 +15,14 @@
       <div class="container">
         <!-- Level 0 -->
         <div class="level-section">
-          <h2 class="level-title">Level 0 - The Lobby</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.level0.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Fix the Ladder (Find Ladder Pieces)</h3>
-              <span class="solution-badge type-collect">Collect Items</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level0.solution1.title') }}</h3>
+              <span class="solution-badge type-collect">{{ $t('codesPage.badge.collect') }}</span>
             </div>
-            <p class="solution-description">At the start of the level, you need to explore and find 4 ladder pieces to repair the broken ladder. After finding all pieces, climb the ladder to get the key, then locate a wooden door and use the key to unlock it.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level0.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-01-01.webp" alt="Level 0 Ladder" class="solution-img" loading="lazy" />
               <img src="/images/levels/level-01-02.webp" alt="Level 0 Key" class="solution-img" loading="lazy" />
@@ -31,10 +31,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Locker Code (When Entering from Level 8)</h3>
-              <span class="solution-badge type-puzzle">Puzzle</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level0.solution2.title') }}</h3>
+              <span class="solution-badge type-puzzle">{{ $t('codesPage.badge.puzzle') }}</span>
             </div>
-            <p class="solution-description">In the miniature Level 0.2 area, use the light switch. When the lights go out briefly, shapes will appear over numbers on the wall, indicating the locker code. Each switch press reveals the next symbol. The code is: Square, Circle, Arrow. Opening the locker grants you a Chainsaw, which is used to break the boards in The Manilla Room.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level0.solution2.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-01-03.webp" alt="Level 0 Locker" class="solution-img" loading="lazy" />
             </div>
@@ -43,14 +43,14 @@
 
         <!-- Level 1 -->
         <div class="level-section">
-          <h2 class="level-title">Level 1 - The Habitable Zone</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.level1.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Floor 1 - Color-Coded Lock (Find Different Colored Cars)</h3>
-              <span class="solution-badge type-color">Color Code</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level1.solution1.title') }}</h3>
+              <span class="solution-badge type-color">{{ $t('codesPage.badge.color') }}</span>
             </div>
-            <p class="solution-description">At the elevator, there is a color-coded lock that requires finding the correct color sequence. Look for a red door, and after entering, you'll find a room containing 4 different colored cars. Count the number of cars of each color, then press the corresponding color buttons on the elevator keypad. For example: if you see 1 blue car, 2 red cars, and 1 green car, press 1 blue button, 2 red buttons, and 1 green button.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level1.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-02-01.webp" alt="Level 1 Color Lock" class="solution-img" loading="lazy" />
               <img src="/images/levels/level-02-02.webp" alt="Level 1 Colored Cars" class="solution-img" loading="lazy" />
@@ -59,10 +59,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Floor 2 - Find 4 Keys</h3>
-              <span class="solution-badge type-key">Find Keys</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level1.solution2.title') }}</h3>
+              <span class="solution-badge type-key">{{ $t('codesPage.badge.key') }}</span>
             </div>
-            <p class="solution-description">Floor 2 is much larger than Floor 1. Your objective is to find 4 keys scattered throughout the rooms. Keys can be found on desks, inside closets, or in open drawers. After collecting all 4 keys, locate the room with a vault door. Insert each key into the 4 different keyholes around the room, then turn all keys simultaneously. Note: The keys will automatically unturn after some time, so act quickly. If all keys are turned at the same time, the vault door will open, allowing progression to Floor 3.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level1.solution2.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-02-03.webp" alt="Level 1 Keys" class="solution-img" loading="lazy" />
               <img src="/images/levels/level-02-04.webp" alt="Level 1 Vault Door" class="solution-img" loading="lazy" />
@@ -71,10 +71,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Floor 3 - Find the Elevator</h3>
-              <span class="solution-badge type-find">Find Item</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level1.solution3.title') }}</h3>
+              <span class="solution-badge type-find">{{ $t('codesPage.badge.find') }}</span>
             </div>
-            <p class="solution-description">Floor 3 is a dimly-lit area consisting of 3 individual floors. Each floor has the same basic structure but with slight layout variations. You need to search for an elevator that will take you to Floor 4. There is one possible elevator spawn location per floor, and which floor contains the elevator is randomized. If you encounter a locked door, that indicates a potential elevator spawn location that didn't activate on your current floor.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level1.solution3.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-02-05.webp" alt="Level 1 Elevator" class="solution-img" loading="lazy" />
             </div>
@@ -83,14 +83,14 @@
 
         <!-- Level 3 -->
         <div class="level-section">
-          <h2 class="level-title">Level 3 - Electrical Station</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.level3.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Elevator Code: 042</h3>
-              <span class="solution-badge type-code">Code</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level3.solution1.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.code') }}</span>
             </div>
-            <p class="solution-description">The elevator code for Level 3 is <strong>042</strong>. Enter this code in the elevator keypad to access different floors.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level3.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-05-01.webp" alt="Level 3 Elevator" class="solution-img" loading="lazy" />
               <img src="/images/levels/level-05-02.webp" alt="Level 3 Code" class="solution-img" loading="lazy" />
@@ -99,10 +99,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Zone 1 - Enable Fuse Boxes</h3>
-              <span class="solution-badge type-switch">Switch</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level3.solution2.title') }}</h3>
+              <span class="solution-badge type-switch">{{ $t('codesPage.badge.switch') }}</span>
             </div>
-            <p class="solution-description">In Zone 1 (East Substation), you need to find and enable 3 Fuse Boxes. For the normal Fuse Box, simply flip all the switches to activate it. After enabling all 3, the locked bars at the entrance of Zone 1 will open, allowing access to Zone 2.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level3.solution2.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-05-03.webp" alt="Level 3 Fuse Box" class="solution-img" loading="lazy" />
             </div>
@@ -110,10 +110,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Zone 2 - Enable Fuse Boxes</h3>
-              <span class="solution-badge type-switch">Switch</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level3.solution3.title') }}</h3>
+              <span class="solution-badge type-switch">{{ $t('codesPage.badge.switch') }}</span>
             </div>
-            <p class="solution-description">Zone 2 (West Substation) is much darker and more dangerous than Zone 1. Again, you need to find and enable 3 Fuse Boxes. This zone has Hounds roaming around, so have a Flashlight ready to blind them. After enabling all 3 Fuse Boxes, the other bars in the big room will open, allowing access to Zone 3.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level3.solution3.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-05-04.webp" alt="Level 3 Zone 2" class="solution-img" loading="lazy" />
             </div>
@@ -121,16 +121,16 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Zone 3 - Wire Puzzles (Triway & Colored Wires)</h3>
-              <span class="solution-badge type-wire">Wire Puzzle</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level3.solution4.title') }}</h3>
+              <span class="solution-badge type-wire">{{ $t('codesPage.badge.wire') }}</span>
             </div>
-            <p class="solution-description">Zone 3 (Generator) is the most dangerous zone. The Fuse Boxes here are puzzle-based. There are two types of puzzles:</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level3.solution4.description')"></p>
             <div class="solution-details">
-              <h4>Triway Puzzle</h4>
-              <p>This puzzle involves multiple electricity connectors, each with 3 fuses (colors: green, blue, or red). All connectors form a hexagon shape. You can turn the connectors, and if 2 of the same fuse colors are aiming at each other, electricity will form. The goal is to get them all to match up.</p>
+              <h4>{{ $t('codesPage.levels.level3.solution4.details.triwayTitle') }}</h4>
+              <p v-html="$t('codesPage.levels.level3.solution4.details.triwayDescription')"></p>
               
-              <h4>Colored Wires Puzzle</h4>
-              <p>This puzzle is much simpler. On the left side, there is a bunch of wires, each labeled with different colors (green, blue, red, yellow). On the right side lies what the wires must be connected to. Connect the correct colors with each one and that's it.</p>
+              <h4>{{ $t('codesPage.levels.level3.solution4.details.coloredWiresTitle') }}</h4>
+              <p v-html="$t('codesPage.levels.level3.solution4.details.coloredWiresDescription')"></p>
             </div>
             <div class="solution-images">
               <img src="/images/levels/level-05-05.webp" alt="Level 3 Wire Puzzle" class="solution-img" loading="lazy" />
@@ -140,14 +140,14 @@
 
         <!-- The Hub -->
         <div class="level-section">
-          <h2 class="level-title">The Hub</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.hub.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">M.E.G. Base Computer Password: itheardyou</h3>
-              <span class="solution-badge type-code">Password</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.hub.solution1.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.password') }}</span>
             </div>
-            <p class="solution-description">After entering The M.E.G. Base, you need to unlock the computer. The password is <strong>"itheardyou"</strong>. After entering the password, open the file "Gate.exe" to unlock the gate in Level 1.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.hub.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-03-01.webp" alt="The Hub M.E.G. Base" class="solution-img" loading="lazy" />
               <img src="/images/levels/level-03-02.webp" alt="The Hub Computer" class="solution-img" loading="lazy" />
@@ -157,14 +157,14 @@
 
         <!-- Level 4 -->
         <div class="level-section">
-          <h2 class="level-title">Level 4 - Abandoned Office</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.level4.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Elevator Code: 729</h3>
-              <span class="solution-badge type-code">Code</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level4.solution1.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.code') }}</span>
             </div>
-            <p class="solution-description">The elevator code for Level 4 is <strong>729</strong>. Enter this code in the elevator keypad to navigate between floors.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level4.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-06-01.webp" alt="Level 4 Elevator" class="solution-img" loading="lazy" />
             </div>
@@ -172,10 +172,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Vending Machine Puzzle (Count Objects)</h3>
-              <span class="solution-badge type-count">Count Objects</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level4.solution2.title') }}</h3>
+              <span class="solution-badge type-count">{{ $t('codesPage.badge.count') }}</span>
             </div>
-            <p class="solution-description">At the start of the level, look for a room with 4 different vending machines. The door leading to this room is locked. To unlock it, you need to use the vending machines. Every vending machine is associated with an object type: chairs, tables, water coolers, and stacks of books. Count how many of each object is in the room, then on the vending machines, select the corresponding number button (not the object button, but the number button). If all values are correct, the door will open.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level4.solution2.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-06-02.webp" alt="Level 4 Vending Machines" class="solution-img" loading="lazy" />
               <img src="/images/levels/level-06-03.webp" alt="Level 4 Objects" class="solution-img" loading="lazy" />
@@ -184,10 +184,10 @@
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Avoid Security Cameras</h3>
-              <span class="solution-badge type-stealth">Stealth</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level4.solution3.title') }}</h3>
+              <span class="solution-badge type-stealth">{{ $t('codesPage.badge.stealth') }}</span>
             </div>
-            <p class="solution-description">After the vending machine puzzle, you'll enter a room full of cubicles. Find the "Reset Cameras" button located at the very end of the room and press it. Then you must sneak past 4 different Security Cameras scattered throughout multiple rooms. If you get spotted by a Camera, it will flash red and trigger an alarm, causing the door to Level 5 to be locked. You'll need to use a Crowbar to break open the Vent in the hallway to try again. Don't get seen by any Cameras, and the door will open.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level4.solution3.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-06-04.webp" alt="Level 4 Cameras" class="solution-img" loading="lazy" />
             </div>
@@ -196,41 +196,41 @@
 
         <!-- Level 5 -->
         <div class="level-section">
-          <h2 class="level-title">Level 5 - Terror Hotel</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.level5.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Elevator Code: 314</h3>
-              <span class="solution-badge type-code">Code</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level5.solution1.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.code') }}</span>
             </div>
-            <p class="solution-description">The elevator code for Level 5 is <strong>314</strong>. Enter this code in the elevator keypad to access the upper floors of the hotel.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level5.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-07-01.webp" alt="Level 5 Elevator" class="solution-img" loading="lazy" />
-                </div>
-              </div>
+            </div>
+          </div>
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Main Hall - Painting Button Puzzle</h3>
-              <span class="solution-badge type-puzzle">Puzzle</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level5.solution2.title') }}</h3>
+              <span class="solution-badge type-puzzle">{{ $t('codesPage.badge.puzzle') }}</span>
             </div>
-            <p class="solution-description">In the Lobby of The Main Hall, there are four paintings on the walls, each depicting a person of different age: a young girl, a young adult man, a middle-aged man, and an old man. Under each painting is a button. Press the buttons in order from the youngest person in the painting to the oldest person. Once you do that, the door to the rest of The Main Hall will open.</p>
-              </div>
+            <p class="solution-description" v-html="$t('codesPage.levels.level5.solution2.description')"></p>
+          </div>
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Main Hall - Find Male Deathmoths to Get Keys</h3>
-              <span class="solution-badge type-collect">Collect Items</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level5.solution3.title') }}</h3>
+              <span class="solution-badge type-collect">{{ $t('codesPage.badge.collect') }}</span>
             </div>
-            <p class="solution-description">In the left hallway of The Main Hall is a Dumbwaiter with a Note that says "iF YOU FEED THEM THEY WiLL REWARD YOU". Using Bug Spray, you need to search the whole floor for three clusters of Male Deathmoths to get Moth Jelly. Use Bug Spray on a cluster of Male Deathmoths and they will die and turn into Moth Jelly. Putting the Moth Jelly in the Dumbwaiter and sending it down will reward a Key when it comes back up, so you will need three things of Moth Jelly. Using all three Keys on the locks on the glass door will open a hallway leading to the Elevator.</p>
-              </div>
+            <p class="solution-description" v-html="$t('codesPage.levels.level5.solution3.description')"></p>
+          </div>
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Hotel - Collect Letters to Get Room Password</h3>
-              <span class="solution-badge type-code">Password</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level5.solution4.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.password') }}</span>
             </div>
-            <p class="solution-description">In The Hotel floor, there is a Mailbox that has compartments for each main room. 7 of the boxes will be open (the open boxes are different every time). You need to travel to those rooms and collect papers that are on a drawer in the room. Once you collect a paper, you can place it in the mailbox, and it will automatically be placed in its position. Once you put all of the papers into the open Mailboxes, a code will appear on the ceiling. The papers spell out "LOOK UP", hinting at the ceiling code. Put the code into the Number Lock on the Room 235 door. There are only 3 possible codes for the Number Lock:</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level5.solution4.description')"></p>
             <ul class="solution-codes">
               <li><strong>17564</strong></li>
               <li><strong>05938</strong></li>
@@ -241,14 +241,14 @@
 
         <!-- Level 8 -->
         <div class="level-section">
-          <h2 class="level-title">Level 8 - Cave System</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.level8.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Elevator Code: 826</h3>
-              <span class="solution-badge type-code">Code</span>
+              <h3 class="solution-title">{{ $t('codesPage.levels.level8.solution1.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.code') }}</span>
             </div>
-            <p class="solution-description">The elevator code for Level 8 is <strong>826</strong>. Use this code to navigate the complex cave network.</p>
+            <p class="solution-description" v-html="$t('codesPage.levels.level8.solution1.description')"></p>
             <div class="solution-images">
               <img src="/images/levels/level-08.webp" alt="Level 8 Elevator" class="solution-img" loading="lazy" />
             </div>
@@ -257,22 +257,22 @@
 
         <!-- Other Levels -->
         <div class="level-section">
-          <h2 class="level-title">Other Levels</h2>
+          <h2 class="level-title">{{ $t('codesPage.levels.otherLevels.title') }}</h2>
           
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Level 94 - Computer Password: PASSWORD</h3>
-              <span class="solution-badge type-code">Password</span>
-              </div>
-            <p class="solution-description">The computer password for Level 94 (Motion) is <strong>PASSWORD</strong>. This password is needed to access the computer system and unlock important information.</p>
-              </div>
+              <h3 class="solution-title">{{ $t('codesPage.levels.otherLevels.solution1.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.password') }}</span>
+            </div>
+            <p class="solution-description" v-html="$t('codesPage.levels.otherLevels.solution1.description')"></p>
+          </div>
 
           <div class="solution-item">
             <div class="solution-header">
-              <h3 class="solution-title">Level 3999 - Computer Password: ESCAPE</h3>
-              <span class="solution-badge type-code">Password</span>
-              </div>
-            <p class="solution-description">The final computer password for Level 3999 (The True Ending) is <strong>ESCAPE</strong>. This password is crucial for completing the escape sequence.</p>
+              <h3 class="solution-title">{{ $t('codesPage.levels.otherLevels.solution2.title') }}</h3>
+              <span class="solution-badge type-code">{{ $t('codesPage.badge.password') }}</span>
+            </div>
+            <p class="solution-description" v-html="$t('codesPage.levels.otherLevels.solution2.description')"></p>
           </div>
         </div>
       </div>
@@ -281,15 +281,7 @@
 </template>
 
 <script setup>
-import { useSEO } from '../seo/composables.js'
-
-const { setSEO } = useSEO()
-
-setSEO({
-  title: 'Codes & Solutions - Complete Guide | Escape the Backrooms Wiki',
-  description: 'Complete reference guide for all codes, passwords, puzzles, and solutions in Escape the Backrooms. Find color codes, keys, elevator codes, wire puzzles, and more organized by level.',
-  keywords: 'Escape the Backrooms, codes, passwords, solutions, elevator codes, color codes, wire puzzles, keys, Level 3, Level 4, Level 5, Level 8, The Hub'
-})
+// SEO is handled by useAutoSEO composable in router
 </script>
 
 <style scoped>

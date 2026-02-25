@@ -4,8 +4,8 @@
     <section class="page-hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="page-title">Escape the Backrooms Maps & Key Locations</h1>
-          <p class="page-subtitle">High-resolution maps and key location guides for all levels. Find precise spawn points, exits, ladder pieces, and hidden items.</p>
+          <h1 class="page-title">{{ $t('mapsPage.hero.title') }}</h1>
+          <p class="page-subtitle">{{ $t('mapsPage.hero.subtitle') }}</p>
         </div>
       </div>
     </section>
@@ -14,14 +14,14 @@
     <section class="maps-section">
       <div class="container">
           <div class="section-header">
-          <h2 class="section-title">Escape the Backrooms: All Maps</h2>
-          <p class="section-subtitle">Detailed navigation maps for all levels</p>
+          <h2 class="section-title">{{ $t('mapsPage.mapsSection.title') }}</h2>
+          <p class="section-subtitle">{{ $t('mapsPage.mapsSection.subtitle') }}</p>
           </div>
           <div class="maps-grid">
             <a 
             v-for="map in mapsData"
               :key="map.id" 
-            :href="`/maps-keys/${map.addressBar}`"
+            :href="getLocalizedPath(`/maps-keys/${map.addressBar}`)"
               class="map-card"
             >
               <div class="map-image">
@@ -53,16 +53,16 @@
     <section class="keys-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Keys</h2>
-          <p class="section-subtitle">Key locations and collection guides for all levels</p>
+          <h2 class="section-title">{{ $t('mapsPage.keysSection.title') }}</h2>
+          <p class="section-subtitle">{{ $t('mapsPage.keysSection.subtitle') }}</p>
         </div>
 
         <!-- Description Card -->
         <div class="keys-intro">
           <div class="intro-icon">🔑</div>
           <div class="intro-content">
-            <h3 class="intro-title">About Keys</h3>
-            <p class="intro-text">The keys look the same in every level. They all look like normal metal padlock keys.</p>
+            <h3 class="intro-title">{{ $t('mapsPage.keysSection.introTitle') }}</h3>
+            <p class="intro-text">{{ $t('mapsPage.keysSection.introText') }}</p>
           </div>
         </div>
 
@@ -74,29 +74,29 @@
               <div class="key-level">
                 <span class="key-icon">🔑</span>
                 <div>
-                  <h3 class="key-title">Level 0</h3>
-                  <span class="key-count">1 Key</span>
+                  <h3 class="key-title">{{ $t('mapsPage.keysSection.level0.title') }}</h3>
+                  <span class="key-count">{{ $t('mapsPage.keysSection.level0.count') }}</span>
                 </div>
               </div>
             </div>
             <div class="key-card-body">
               <div class="key-info">
                 <div class="info-item">
-                  <span class="info-label">Location</span>
-                  <span class="info-value">Hole in the wall after using the Ladder</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.location') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level0.location') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Prerequisite</span>
-                  <span class="info-value">Collect and repair broken ladder pieces</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.prerequisite') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level0.prerequisite') }}</span>
                 </div>
               </div>
               <div class="key-steps">
-                <h4 class="steps-title">Collection Steps</h4>
+                <h4 class="steps-title">{{ $t('mapsPage.keysSection.labels.collectionSteps') }}</h4>
                 <ol class="steps-list">
-                  <li>Collect all broken ladder pieces in the room</li>
-                  <li>Repair the ladder</li>
-                  <li>Use the ladder to reach the hole in the wall</li>
-                  <li>Collect the key from the hole</li>
+                  <li>{{ $t('mapsPage.keysSection.level0.steps.step1') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level0.steps.step2') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level0.steps.step3') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level0.steps.step4') }}</li>
                 </ol>
               </div>
             </div>
@@ -108,30 +108,30 @@
               <div class="key-level">
                 <span class="key-icon">🔑</span>
                 <div>
-                  <h3 class="key-title">Level 1</h3>
-                  <span class="key-count">4 Keys</span>
+                  <h3 class="key-title">{{ $t('mapsPage.keysSection.level1.title') }}</h3>
+                  <span class="key-count">{{ $t('mapsPage.keysSection.level1.count') }}</span>
                 </div>
               </div>
             </div>
             <div class="key-card-body">
               <div class="key-info">
                 <div class="info-item">
-                  <span class="info-label">Location</span>
-                  <span class="info-value">Section II - Wardrobes</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.location') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level1.location') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Total Required</span>
-                  <span class="info-value">4 keys to unlock exit</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.totalRequired') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level1.totalRequired') }}</span>
                 </div>
               </div>
               <div class="key-steps">
-                <h4 class="steps-title">Collection Steps</h4>
+                <h4 class="steps-title">{{ $t('mapsPage.keysSection.labels.collectionSteps') }}</h4>
                 <ol class="steps-list">
-                  <li>Navigate to Section II of the level</li>
-                  <li>Search wardrobes around the level</li>
-                  <li>Collect all 4 keys from different wardrobes</li>
-                  <li>Insert all keys into the keyholes</li>
-                  <li>Escape through the unlocked door</li>
+                  <li>{{ $t('mapsPage.keysSection.level1.steps.step1') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level1.steps.step2') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level1.steps.step3') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level1.steps.step4') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level1.steps.step5') }}</li>
                 </ol>
               </div>
           </div>
@@ -143,35 +143,35 @@
               <div class="key-level">
                 <span class="key-icon">🔑</span>
                 <div>
-                  <h3 class="key-title">Level 5</h3>
-                  <span class="key-count">3 Keys</span>
+                  <h3 class="key-title">{{ $t('mapsPage.keysSection.level5.title') }}</h3>
+                  <span class="key-count">{{ $t('mapsPage.keysSection.level5.count') }}</span>
                 </div>
               </div>
             </div>
             <div class="key-card-body">
               <div class="key-info">
                 <div class="info-item">
-                  <span class="info-label">Location</span>
-                  <span class="info-value">The Entry Floor</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.location') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level5.location') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Obtain Method</span>
-                  <span class="info-value">Reward for placing Moth Jelly</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.obtainMethod') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level5.obtainMethod') }}</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label">Required</span>
-                  <span class="info-value">3 keys to unlock exit door</span>
+                  <span class="info-label">{{ $t('mapsPage.keysSection.labels.required') }}</span>
+                  <span class="info-value">{{ $t('mapsPage.keysSection.level5.required') }}</span>
                 </div>
               </div>
               <div class="key-steps">
-                <h4 class="steps-title">Collection Steps</h4>
+                <h4 class="steps-title">{{ $t('mapsPage.keysSection.labels.collectionSteps') }}</h4>
                 <ol class="steps-list">
-                  <li>Find Moth Jelly on The Entry Floor</li>
-                  <li>Locate the Food Elevator in the main hallway</li>
-                  <li>Place Moth Jelly in the Food Elevator</li>
-                  <li>Receive 3 keys as reward</li>
-                  <li>Use keys to unlock the exit door</li>
-                  <li>Enter the elevator to escape</li>
+                  <li>{{ $t('mapsPage.keysSection.level5.steps.step1') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level5.steps.step2') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level5.steps.step3') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level5.steps.step4') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level5.steps.step5') }}</li>
+                  <li>{{ $t('mapsPage.keysSection.level5.steps.step6') }}</li>
                 </ol>
               </div>
             </div>
@@ -183,7 +183,20 @@
 </template>
 
 <script setup>
-import mapsData from '../data/maps.js'
+import { onMounted, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useMapsData } from '../composables/useMapsData.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+
+const { t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const { data: mapsData, loadData } = useMapsData()
+
+// Load data
+onMounted(async () => {
+  await nextTick()
+  await loadData()
+})
 </script>
 
 <style scoped>

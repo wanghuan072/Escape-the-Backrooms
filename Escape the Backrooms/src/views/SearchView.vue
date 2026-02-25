@@ -4,17 +4,17 @@
     <section class="page-hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="page-title">Search Results</h1>
+          <h1 class="page-title">{{ $t('searchPage.hero.title') }}</h1>
           <div class="search-box">
             <input
               type="text"
               class="search-input"
-              placeholder="Search levels, maps, codes, entities..."
+              :placeholder="$t('searchPage.hero.placeholder')"
               v-model="searchQuery"
               @keyup.enter="performSearch"
               ref="searchInputRef"
             />
-            <button class="search-button" @click="performSearch">Search</button>
+            <button class="search-button" @click="performSearch">{{ $t('searchPage.hero.button') }}</button>
           </div>
           <p v-if="searchQuery && results.length > 0" class="results-count">
             Found {{ results.length }} result{{ results.length > 1 ? 's' : '' }} for "{{ searchQuery }}"
@@ -35,7 +35,7 @@
           <div v-if="levelResults.length > 0" class="results-section">
             <h2 class="section-title">
               <span class="section-icon">📋</span>
-              Levels ({{ levelResults.length }})
+              {{ $t('searchPage.sections.levels') }} ({{ levelResults.length }})
             </h2>
             <div class="results-grid">
               <a
@@ -65,7 +65,7 @@
           <div v-if="mapResults.length > 0" class="results-section">
             <h2 class="section-title">
               <span class="section-icon">🗺️</span>
-              Maps ({{ mapResults.length }})
+              {{ $t('searchPage.sections.maps') }} ({{ mapResults.length }})
             </h2>
             <div class="results-grid">
               <a
@@ -95,7 +95,7 @@
           <div v-if="entityResults.length > 0" class="results-section">
             <h2 class="section-title">
               <span class="section-icon">👹</span>
-              Entities ({{ entityResults.length }})
+              {{ $t('searchPage.sections.entities') }} ({{ entityResults.length }})
             </h2>
             <div class="results-grid">
               <a
@@ -125,7 +125,7 @@
           <div v-if="codeResults.length > 0" class="results-section">
             <h2 class="section-title">
               <span class="section-icon">🔢</span>
-              Codes & Solutions ({{ codeResults.length }})
+              {{ $t('searchPage.sections.codes') }} ({{ codeResults.length }})
             </h2>
             <div class="results-grid">
               <a
@@ -149,13 +149,13 @@
         <!-- No Results -->
         <div v-else class="no-results-container">
           <div class="no-results-content">
-            <p class="no-results-text">Try searching for:</p>
+            <p class="no-results-text">{{ $t('searchPage.noResults.trySearching') }}</p>
             <ul class="suggestions-list">
-              <li>Level names (e.g., "Level 0", "Level 1")</li>
-              <li>Entity names (e.g., "Wanderer", "Bacteria")</li>
-              <li>Map names (e.g., "Level 0 Map")</li>
-              <li>Codes (e.g., "042", "729")</li>
-              <li>Keywords (e.g., "key", "exit", "door")</li>
+              <li>{{ $t('searchPage.noResults.suggestions.levelNames') }}</li>
+              <li>{{ $t('searchPage.noResults.suggestions.entityNames') }}</li>
+              <li>{{ $t('searchPage.noResults.suggestions.mapNames') }}</li>
+              <li>{{ $t('searchPage.noResults.suggestions.codes') }}</li>
+              <li>{{ $t('searchPage.noResults.suggestions.keywords') }}</li>
             </ul>
           </div>
         </div>
@@ -166,8 +166,8 @@
     <section class="empty-state" v-else>
       <div class="container">
         <div class="empty-content">
-          <h2>Start Searching</h2>
-          <p>Enter a search term above to find levels, maps, entities, and codes.</p>
+          <h2>{{ $t('searchPage.emptyState.title') }}</h2>
+          <p>{{ $t('searchPage.emptyState.description') }}</p>
         </div>
       </div>
     </section>
@@ -175,15 +175,17 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, watch, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import levelsData from '../data/levels.js'
+import { useLevelsData } from '../composables/useLevelsData.js'
+import { useMapsData } from '../composables/useMapsData.js'
 import entitiesData from '../data/wiki/entities.js'
-import mapsData from '../data/maps.js'
 
 const route = useRoute()
 const router = useRouter()
 const searchInputRef = ref(null)
+const { data: levelsData, loadData: loadLevelsData } = useLevelsData()
+const { data: mapsData, loadData: loadMapsData } = useMapsData()
 
 const searchQuery = ref('')
 
@@ -294,7 +296,11 @@ const results = computed(() => {
 })
 
 // Initialize from URL query
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
+  await loadLevelsData()
+  await loadMapsData()
+  
   if (route.query.q) {
     searchQuery.value = route.query.q
   }

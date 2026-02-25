@@ -3,7 +3,7 @@
     <div class="header-container">
       <div class="header-wrap">
         <div class="logo">
-          <a href="/" class="logo-link">
+          <a :href="getLocalizedPath('/')" class="logo-link">
             <img src="/images/logo.webp" alt="Escape the Backrooms" class="logo-image">
             <span class="logo-text">Escape the Backrooms</span>
           </a>
@@ -46,29 +46,125 @@
               </button>
             </div>
           </div>
-          <a href="/" class="nav-link" @click="closeMobileMenu">Home</a>
-          <a href="/levels" class="nav-link" @click="closeMobileMenu">Levels</a>
-          <a href="/maps-keys" class="nav-link" @click="closeMobileMenu">Maps & Keys</a>
-          <a href="/codes-solutions" class="nav-link" @click="closeMobileMenu">Codes & Solutions</a>
-          <!-- <a href="/wiki" class="nav-link" @click="closeMobileMenu">Wiki</a> -->
-          <!-- <a href="/guides" class="nav-link" @click="closeMobileMenu">Guides</a> -->
+          <a :href="getLocalizedPath('/')" class="nav-link" @click="closeMobileMenu">Home</a>
+          <a :href="getLocalizedPath('/levels')" class="nav-link" @click="closeMobileMenu">Levels</a>
+          <a :href="getLocalizedPath('/maps-keys')" class="nav-link" @click="closeMobileMenu">Maps & Keys</a>
+          <a :href="getLocalizedPath('/codes-solutions')" class="nav-link" @click="closeMobileMenu">Codes & Solutions</a>
+          <!-- <a :href="getLocalizedPath('/wiki')" class="nav-link" @click="closeMobileMenu">Wiki</a> -->
+          <!-- <a :href="getLocalizedPath('/guides')" class="nav-link" @click="closeMobileMenu">Guides</a> -->
         </nav>
+        <div class="language-switcher" ref="langSwitcherRef">
+          <button 
+            class="language-button" 
+            @click="toggleLangDropdown"
+            :aria-label="`Current language: ${currentLanguageName}`"
+          >
+            <span class="language-text">{{ currentLanguageName }}</span>
+            <svg class="language-arrow" :class="{ open: isLangDropdownOpen }" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="language-dropdown" :class="{ open: isLangDropdownOpen }" v-if="isLangDropdownOpen">
+            <button
+              v-for="lang in languages"
+              :key="lang.code"
+              class="language-option"
+              :class="{ active: currentLocale === lang.code }"
+              @click="selectLanguage(lang.code)"
+            >
+              {{ lang.name }}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const router = useRouter()
+const route = useRoute()
+const { locale } = useI18n()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
+
 const searchQuery = ref('')
 const isMobileMenuOpen = ref(false)
+const isLangDropdownOpen = ref(false)
+const langSwitcherRef = ref(null)
+
+// 语言列表
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'de', name: 'Deutsch' }
+]
+
+// 当前语言
+const currentLocale = computed(() => getCurrentLocale())
+
+// 当前语言名称
+const currentLanguageName = computed(() => {
+  const lang = languages.find(l => l.code === currentLocale.value)
+  return lang ? lang.name : 'English'
+})
+
+// 切换语言下拉菜单
+const toggleLangDropdown = () => {
+  isLangDropdownOpen.value = !isLangDropdownOpen.value
+}
+
+// 选择语言
+const selectLanguage = (newLocale) => {
+  if (newLocale === currentLocale.value) {
+    isLangDropdownOpen.value = false
+    return
+  }
+  
+  // 获取当前路径（去除语言前缀）
+  let currentPath = route.path
+  const pathSegments = currentPath.split('/').filter(Boolean)
+  
+  // 如果当前路径有语言前缀，移除它
+  if (pathSegments.length > 0 && ['en', 'de'].includes(pathSegments[0])) {
+    pathSegments.shift()
+    currentPath = '/' + pathSegments.join('/')
+  }
+  
+  // 如果新语言是英文，直接跳转（无前缀）
+  if (newLocale === 'en') {
+    router.push(currentPath || '/')
+  } else {
+    // 其他语言添加前缀
+    router.push(`/${newLocale}${currentPath || '/'}`)
+  }
+  
+  isLangDropdownOpen.value = false
+  closeMobileMenu()
+}
+
+// 点击外部关闭下拉菜单
+const handleClickOutside = (event) => {
+  if (langSwitcherRef.value && !langSwitcherRef.value.contains(event.target)) {
+    isLangDropdownOpen.value = false
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
 
 const handleSearch = () => {
   if (searchQuery.value.trim()) {
-    router.push({ path: '/search', query: { q: searchQuery.value.trim() } })
+    const searchPath = getLocalizedPath('/search')
+    router.push({ path: searchPath, query: { q: searchQuery.value.trim() } })
   }
 }
 
@@ -351,6 +447,121 @@ const closeMobileMenu = () => {
 
   .nav-link:last-child {
     border-bottom: none;
+  }
+}
+
+/* Language Switcher */
+.language-switcher {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.language-button:hover {
+  border-color: #ffd700;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.language-text {
+  color: #fff;
+}
+
+.language-arrow {
+  transition: transform 0.3s ease;
+  color: rgba(255, 215, 0, 0.6);
+}
+
+.language-arrow.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 6px;
+  min-width: 150px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1002;
+}
+
+.language-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-option {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.language-option:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.language-option:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.language-option:hover {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+}
+
+.language-option.active {
+  background: rgba(255, 215, 0, 0.15);
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
+  .language-switcher {
+    margin-left: 0.5rem;
+  }
+}
+
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  .language-switcher {
+    order: 3;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .language-dropdown {
+    right: auto;
+    left: 0;
   }
 }
 </style>
