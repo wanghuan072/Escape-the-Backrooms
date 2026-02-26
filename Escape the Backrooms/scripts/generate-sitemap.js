@@ -11,7 +11,7 @@ const seoConfig = {
 }
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de']
+const supportedLocales = ['en', 'de', 'fa']
 
 // 生成本地化路径
 function createLocalizedPath(path, locale = 'en') {
@@ -170,8 +170,9 @@ async function main() {
     
     // 统计各语言的URL数量
     const enUrls = sitemapContent.match(/<loc>https:\/\/escapethebackrooms\.org\/[^<]*<\/loc>/g) || []
-    const enUrlCount = enUrls.filter(url => !url.includes('/de/')).length
+    const enUrlCount = enUrls.filter(url => !url.includes('/de/') && !url.includes('/fa/')).length
     const deUrlCount = enUrls.filter(url => url.includes('/de/')).length
+    const faUrlCount = enUrls.filter(url => url.includes('/fa/')).length
     
     // 统计各类URL数量
     const levelsCount = (sitemapContent.match(/\/levels\//g) || []).length
@@ -180,6 +181,7 @@ async function main() {
     console.log('\n📊 URLs by language:')
     console.log(`   English (en): ${enUrlCount}`)
     console.log(`   German (de): ${deUrlCount}`)
+    console.log(`   French (fa): ${faUrlCount}`)
     console.log(`   Total: ${urlCount}`)
     
     console.log('\n📊 URLs by category:')

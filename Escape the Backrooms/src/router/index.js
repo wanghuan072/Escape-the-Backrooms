@@ -15,7 +15,7 @@ import i18n from '../i18n'
 import { extractLocaleFromPath } from '../composables/useLocalizedPath.js'
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de']
+const supportedLocales = ['en', 'de', 'fa']
 
 // 创建路由路径（为不同语言添加前缀）
 function createRoutePath(path, locale = 'en') {

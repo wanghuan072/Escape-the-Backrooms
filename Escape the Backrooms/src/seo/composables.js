@@ -206,11 +206,11 @@ export function useAutoSEO() {
     // 从路由名称中提取基础名称（移除语言后缀，如 'home-de' -> 'home', 'levels-de' -> 'levels'）
     let baseRouteName = routeName
     if (typeof routeName === 'string') {
-      // 检查是否是带语言后缀的路由名称（以 '-en' 或 '-de' 结尾）
-      const supportedLocales = ['en', 'de']
+      // 检查是否是带语言后缀的路由名称（以 '-en'、'-de' 或 '-fa' 结尾）
+      const supportedLocales = ['en', 'de', 'fa']
       for (const loc of supportedLocales) {
         if (routeName.endsWith(`-${loc}`)) {
-          baseRouteName = routeName.slice(0, -(loc.length + 1)) // 移除 '-en' 或 '-de'
+          baseRouteName = routeName.slice(0, -(loc.length + 1)) // 移除 '-en'、'-de' 或 '-fa'
           break
         }
       }
@@ -282,7 +282,7 @@ export function useAutoSEO() {
     const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]')
     existingHreflangs.forEach(link => link.remove())
     
-    const supportedLocales = ['en', 'de']
+    const supportedLocales = ['en', 'de', 'fa']
     const currentPath = route.path
     
     // 从当前路径中提取基础路径（移除语言前缀）

@@ -100,7 +100,8 @@ const langSwitcherRef = ref(null)
 // 语言列表
 const languages = [
   { code: 'en', name: 'English' },
-  { code: 'de', name: 'Deutsch' }
+  { code: 'de', name: 'Deutsch' },
+  { code: 'fa', name: 'Français' }
 ]
 
 // 当前语言
@@ -129,7 +130,7 @@ const selectLanguage = (newLocale) => {
   const pathSegments = currentPath.split('/').filter(Boolean)
   
   // 如果当前路径有语言前缀，移除它
-  if (pathSegments.length > 0 && ['en', 'de'].includes(pathSegments[0])) {
+  if (pathSegments.length > 0 && ['en', 'de', 'fa'].includes(pathSegments[0])) {
     pathSegments.shift()
     currentPath = '/' + pathSegments.join('/')
   }

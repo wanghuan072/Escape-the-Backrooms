@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de']
+const supportedLocales = ['en', 'de', 'fa']
 
 /**
  * 从路径中提取语言
