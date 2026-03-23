@@ -1720,7 +1720,7 @@ export default [
           <p><strong>Level 8</strong> ist ein verwinkeltes System aus dunklen Höhlen, die von feindseligen Entitäten bevölkert sind. Im Gegensatz zum offenen Ozean von Level 7 ist dieser Bereich klaustrophobisch und erfordert ein sorgfältiges Management deiner Taschenlampe und Ausdauer. Es gibt zwei Hauptbedrohungen: <strong>Death Moths</strong> (Todesmotten) und <strong>Skinstealer</strong> (Hautdiebe).</p>
     
           <h2>Escape the Backrooms: Level 8 Walkthrough Video</h2>
-          <iframe src="https://www.youtube.com/embed/FDk9KG4pB4E" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/hDsXOxSmbLU" allowfullscreen></iframe>
           
           <h3>Video-Highlights:</h3>
           <ul>
@@ -1792,5 +1792,201 @@ export default [
             Wenn du den Glitch nicht nutzen möchtest, folge dem Standardpfad hinter der Brücke, um die Leiter zu Level 0.11 zu erreichen. Der Glitch wird jedoch für Speedruns empfohlen.
           </p>
         `
-  }
+    },
+    {
+        id: 18,
+        title: 'Escape the Backrooms: Level 8 (Cave System)',
+        pageTitle: 'Level 8 Walkthrough: Motten, Skinstealer & der Rock-Climb-Skip',
+        addressBar: 'level-8-cave-system-guide',
+        description: 'Ein umfassender Guide für die dunklen Höhlen von Level 8. Lerne, Luftschleusen zu bedienen, Death Moths und Skinstealer zu umgehen und einen großen Glitch zu nutzen, um direkt zu Level 9 zu springen.',
+        imageUrl: '/images/levels/level-18.webp',
+        imageAlt: 'Escape the Backrooms Level 8 Guide: Höhlen-Skip-Glitch (Level 0.11 überspringen)',
+        category: 'Main Levels',
+        isHome: false,
+        sideBarInfo: {
+          name: 'Level 8 Guide: Höhlen-Skip-Glitch (Level 0.11 überspringen)',
+          difficulty: 'Schwer',
+          objectives: 'Durch die Höhlen navigieren, Motten meiden, Skinstealern entkommen, Level 9 erreichen'
+        },
+        featured: [
+          {
+            title: 'Level 7',
+            description: 'Thalassophobia - Das Tiefsee-Level vor den Höhlen.',
+            imageUrl: '/images/levels/level-16.webp',
+            imageAlt: 'Level 7 - Thalassophobia',
+            addressBar: 'level-7-thalassophobia-walkthrough'
+          }
+        ],
+        seo: {
+          title: 'Level 8 Guide: So schlägst du die Höhlen in Escape the Backrooms',
+          description: 'Meistere Level 8 mit Tipps zu Death-Moth-Stealth, Skinstealer-Ausweichmanövern und dem Kletterglitch, der Level 0.11 überspringt.',
+          keywords: 'Level 8, Cave System, Escape the Backrooms, Skinstealer, Death Moth, Glitch, Level Skip, Walkthrough'
+        },
+        detailsHtml: `
+        <p><strong>Level 8</strong> ist ein klaustrophobisches, dunkles Höhlensystem, das hohe Aufmerksamkeit verlangt. Die Sicht ist minimal, und zwei der gefährlichsten Entitäten des Spiels lauern hier: <strong>Death Moths</strong> und <strong>Skinstealer</strong>. Erfolg hängt von Stealth und sicherer Bewegung ab.</p>
+  
+        <h2>Level 8 Walkthrough-Video</h2>
+        <iframe src="https://www.youtube.com/embed/hDsXOxSmbLU" allowfullscreen></iframe>
+        
+        <h3>Wichtige Punkte aus dem Guide:</h3>
+        <ul>
+          <li><strong>Luftschleusen:</strong> Wie die Türen mit Insektizid-Spray funktionieren.</li>
+          <li><strong>Stealth:</strong> Im Ducken an Motten vorbei und Sichtlinien zu Skinstealern nutzen.</li>
+          <li><strong>Sicherheit:</strong> Tödliche Fehler auf der Hängebrücke vermeiden.</li>
+          <li><strong>Speedrun-Glitch:</strong> Die Jump-Crouch-Methode, um das Levelende und Level 0.11 zu überspringen.</li>
+        </ul>
+  
+        <h2>Teil 1: Erste Luftschleusen & Vorräte</h2>
+        <p>
+          Beim Betreten von Level 8 findest du einen Vorrattisch mit Mandelwasser und Taschenlampen. Vor dir liegt eine mechanische Tür mit Radventil.
+        </p>
+        <ul>
+          <li><strong>Insektizid-Spray:</strong> Das Drehen des Ventils lässt Gas frei und öffnet die Tür. <strong>Es kann immer nur eine Tür gleichzeitig offen sein</strong>. Drehst du erneut, schließt sich die aktuelle Tür und die andere öffnet sich.</li>
+          <li><strong>Checkpoints:</strong> Das Passieren der Luftschleusen löst meist einen Speicherpunkt aus – angesichts der Schwierigkeit sehr wichtig.</li>
+        </ul>
+  
+        <h2>Teil 2: Umgang mit Death Moths</h2>
+        <p>
+          Death Moths sitzen überall in den Tunneln, oft an Decke oder Wänden.
+        </p>
+        <ul>
+          <li><strong>Stealth:</strong> Du <strong>solltest ducken</strong>, wenn du dich in ihrer Nähe bewegst. Erfahrene Spieler können manchmal sprinten, aber Ducken verringert den Erkennungsradius deutlich.</li>
+          <li><strong>Routen-Tipp:</strong> <strong>Death Moths neigen oft dazu, nach links</strong> abzuzweigen. Um sie zu meiden, nimm nach Möglichkeit den rechten Pfad.</li>
+          <li><strong>Licht:</strong> Leuchte Motten nicht lange direkt an – das kann einen Angriff auslösen.</li>
+        </ul>
+  
+        <h2>Teil 3: Der Skinstealer (Xiepi)</h2>
+        <p>
+          Der Skinstealer ist eine schnelle, aggressive humanoide Entität, die den Höhlenboden patrouilliert.
+        </p>
+        <ul>
+          <li><strong>KI:</strong> Er ist schneller als du, lässt sich aber leicht ausmanövrieren. Wenn er dich sieht, renne hinter einen Felsen oder durch eine Türöffnung, um die Sicht zu unterbrechen.</li>
+          <li><strong>Aggro-Reset:</strong> Wie im Video erklärt: Bleibst du <strong>4 bis 5 Sekunden</strong> außer Sicht, verliert er das Interesse und patrouilliert weiter.</li>
+          <li><strong>Routen-Tipp:</strong> Im Gegensatz zu den Motten <strong>patrouilliert der Skinstealer meist auf der rechten Seite</strong> des Höhlensystems.</li>
+        </ul>
+  
+        <h2>Teil 4: Die Hängebrücke (Wei Bridge)</h2>
+        <p>
+          Irgendwann kommst du zu einer Holzbrücke über einen riesigen Abgrund.
+        </p>
+        <div class="alert-box warning">
+          <strong>KRITISCHE REGELN:</strong> 
+          1. <strong>Nicht sprinten (Shift)</strong> auf der Brücke – sie bricht sofort. 
+          2. Es sollte <strong>immer nur ein Spieler</strong> gleichzeitig auf der Brücke sein.
+        </div>
+        <p>
+          Gehe normal und vorsichtig. Auf der anderen Seite das Ventil betätigen, um den Bereich zu sichern. Der Brückenweg ist riskant, da es unterwegs keinen Save gibt wie in manchen Tunnelabschnitten.
+        </p>
+  
+        <h2>Teil 5: Der „Rock Climb“-Skip (großer Glitch)</h2>
+        <p>
+          Das Video zeigt einen großen Exploit: Du kannst das Ende von Level 8 und ganz Level 0.11 überspringen.
+        </p>
+        <ul>
+          <li><strong>Ort:</strong> Nahe der Hängebrücke: Felsvorsprünge am Höhleneingang (im Video bei 03:00).</li>
+          <li><strong>Methode:</strong>
+            <ol>
+              <li><strong>Jump-Crouch</strong> (Springen und sofort Ducken), um auf den ersten kleinen Felsvorsprung zu landen.</li>
+              <li>Zweiten Jump-Crouch zur höheren Plattform. Das Kollisionsmodell der aktuellen Version ist großzügiger – das Klettern fällt leichter.</li>
+              <li>Weiter nach oben bis ganz oben an den Felsen.</li>
+            </ol>
+          </li>
+          <li><strong>Ergebnis:</strong> Oben zielst du auf die Leere oder bestimmte Teleport-Trigger darüber. So umgehst du Leiter und Glasraum-Rätsel und gelangst direkt zu <strong>Level 9 (The Suburbs)</strong>.</li>
+        </ul>
+  
+        <p>
+          Der Standardweg führt über eine Leiter zu Level 0.11; der Rock-Climb-Glitch ist aber sehr empfehlenswert, um den Schwierigkeitsspitzen am Höhlenende auszuweichen.
+        </p>
+      `
+    },
+    {
+        id: 19,
+        title: 'Escape the Backrooms: Level 9 (The Suburbs) & das Labor',
+        pageTitle: 'Level 9 Guide: Vorstadt-Rätsel, Beishi ausweichen & Labor-Walkthrough',
+        addressBar: 'level-9-suburbs-and-lab-walkthrough',
+        description: 'Meistere das Computer-Rätsel von Level 9 (The Suburbs) und das unterirdische Labor. Nutze Wand-Interaktions-Tricks, weiche Beishi und Big Eye aus und hole dir den Ausweis für den Ausgang.',
+        imageUrl: '/images/levels/level-19.webp',
+        imageAlt: 'Escape the Backrooms: Level 9 - Unheimliche Vorstadt und unterirdisches Labor',
+        category: 'Main Levels',
+        isHome: false,
+        sideBarInfo: {
+          name: 'Level 9 (The Suburbs)',
+          difficulty: 'Schwer',
+          objectives: 'Alle Sicherheitsterminals aktivieren, das versteckte Labor betreten, die Heilung synthetisieren und den Ausweis erhalten.'
+        },
+        featured: [
+          {
+            title: 'Level 8',
+            description: 'Das Höhlensystem – vorheriges Level mit Rock-Climb-Skip.',
+            imageUrl: '/images/levels/level-17.webp',
+            imageAlt: 'Level 8 - Höhlensystem',
+            addressBar: 'level-8-cave-system-guide'
+          }
+        ],
+        seo: {
+          title: 'Level 9 Vorstadt & Labor Guide - Escape the Backrooms PC Walkthrough',
+          description: 'Schritt-für-Schritt zu Level 9 in Escape the Backrooms: Computer-Standorte, Beishi-Köder-Strategie im Labor und Wand-Interaktions-Bug.',
+          keywords: 'Level 9, Suburbs, The Lab, Escape the Backrooms, Beishi, Big Eye, ID Badge, Walkthrough, Glitch'
+        },
+        detailsHtml: `
+      <p><strong>Level 9</strong> hat zwei Phasen: ein nebliges Vorstadtviertel und ein hochentwickeltes unterirdisches Labor. Es ist eine große Hürde: Rätsel unter Druck und präzise Entitäten-Manipulation.</p>
+
+      <h2>Escape the Backrooms: Level 9 & Labor Walkthrough-Video</h2>
+      <iframe src="https://www.youtube.com/embed/kEZQ5NJM8sQ" allowfullscreen></iframe>
+      
+      <h3>Video-Highlights:</h3>
+      <ul>
+        <li><strong>Terminal-Karte:</strong> Wie du die Überwachungsmonitore liest, um alle Computer zu finden.</li>
+        <li><strong>Wand-Trick:</strong> Computer durch Hauswände bedienen, um dem Beishi auszuweichen.</li>
+        <li><strong>Big-Eye-Glitch:</strong> Sicher an dem riesigen Monster auf der Straße vorbeikommen.</li>
+        <li><strong>Labor-Ablauf:</strong> 4 Konzentrat-Flaschen sammeln und den Beishi für die Schlüsselkarte verwandeln.</li>
+      </ul>
+
+      <h2>Teil 1: Das Vorstadt-Rätsel</h2>
+      <p>
+        Finde mehrere Computer-Terminals in den Häusern. Die Positionen sind jedes Mal zufällig.
+      </p>
+      <ul>
+        <li><strong>Karte lesen:</strong> Finde eine zentrale Sicherheitszentrale (oft bei Zäunen). Der Bildschirm zeigt grüne Punkte (Computer) und deine Position.</li>
+        <li><strong>Wand-Trick:</strong> Wie im Video (01:23): Du musst nicht immer ins Haus. Viele Computer kannst du von außen durch Glas oder Wände „anklicken“ und bleibst sicher vor Entitäten drinnen.</li>
+        <li><strong>Beishi (Steinwächter):</strong> Patrouilliert in den Innenräumen. Im Gegensatz zu den blinden Entitäten von Level 6 kann der Beishi <strong>sehen</strong>. Wenn du reingehen musst: Jump-Crouch über Treppengeländer, um Aggro abzuschütteln.</li>
+      </ul>
+
+      <h2>Teil 2: Das Big Eye & Sicherheit auf der Straße</h2>
+      <p>
+        Ein riesiges „Big Eye“ mit vielen Beinen patrouilliert auf den Straßen. Es ist extrem schnell und tötet sofort.
+      </p>
+      <ul>
+        <li><strong>Vermeidung:</strong> Bleib im Schatten und bewege dich schnell zwischen den Häusern.</li>
+        <li><strong>Clip-Bug:</strong> Das Video zeigt einen Trick, bei dem man durch Big Eye „glitchen“ oder sich hinter Bäumen verstecken kann, sodass kein Treffer registriert wird (08:15).</li>
+      </ul>
+
+      <h2>Teil 3: Das unterirdische Labor</h2>
+      <p>
+        Wenn alle Computer aktiv sind, öffnet sich das M.E.G.-Tor zum geheimen Labor unter der Vorstadt.
+      </p>
+      <ul>
+        <li><strong>Brecheisen & Schächte:</strong> Finde ein Brecheisen, um Lüftungsschächte aufzubrechen. Dort liegen die Räume mit <strong>Xingren-Wasser-Konzentrat</strong>.</li>
+        <li><strong>Flaschen sammeln:</strong> Du brauchst <strong>4 Flaschen</strong> Konzentrat. Manche liegen offen, andere hinter Türen, die du aufhebeln musst.</li>
+        <li><strong>Tank-Rätsel:</strong> Schiebe den großen weißen Drucktank in die vorgesehene Position beim „Notfall-Dusch“-Bereich. 
+          <div class="alert-box tip"><strong>PRO-TIPP:</strong> Wenn der Tank schwer zu bewegen ist, senke die Bildrate in den Einstellungen – die Physik-Interaktion wird oft flüssiger.</div>
+        </li>
+      </ul>
+
+      <h2>Teil 4: Den Ausgangsausweis erhalten</h2>
+      <p>
+        Zum Verlassen brauchst du einen physischen ID-Ausweis von einem M.E.G.-Forscher, der in einen Beishi verwandelt wurde.
+      </p>
+      <ol>
+        <li>Die 4 Konzentrat-Flaschen in die Maschine einsetzen.</li>
+        <li>Einen Beishi in die Mitte der Behandlungsplattform (Fußspuren-Bereich) locken.</li>
+        <li>Schnell in die Kontrollkabine rennen und die Dusche aktivieren.</li>
+        <li>Das Gas verwandelt den Beishi zurück in einen Menschen. Nach der Animation den Raum betreten und den <strong>Ausweis</strong> von der Brust des Forschers nehmen.</li>
+      </ol>
+
+      <p>
+        Mit dem Ausweis zum finalen Kartenlese-Terminal am Ende des Gangs. Das öffnet die Tür zu <strong>Level 10 (The Fields)</strong>.
+      </p>
+    `
+    }
 ]

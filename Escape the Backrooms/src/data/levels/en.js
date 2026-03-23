@@ -1781,7 +1781,7 @@ export default [
         <p><strong>Level 8</strong> is a winding system of dark caves infested with hostile entities. Unlike the open ocean of Level 7, this area is claustrophobic and requires careful management of your flashlight and stamina. It features two main threats: <strong>Death Moths</strong> and <strong>Skinstealers</strong>.</p>
   
         <h2>Escape the Backrooms: Level 8 Walkthrough Video</h2>
-        <iframe src="https://www.youtube.com/embed/FDk9KG4pB4E" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/hDsXOxSmbLU" allowfullscreen></iframe>
         
         <h3>Video Highlights:</h3>
         <ul>
@@ -1853,5 +1853,250 @@ export default [
           If you choose not to use the glitch, continue through the standard path past the bridge to reach the ladder leading to Level 0.11. However, the glitch is recommended for speedruns or difficult runs.
         </p>
       `
+  },
+
+  {
+    id: 18,
+    title: 'Escape the Backrooms: Level 8 (Cave System)',
+    pageTitle: 'Level 8 Walkthrough: Moths, Skinstealers & The Rock-Climb Skip',
+    addressBar: 'level-8-cave-system-guide',
+    description: 'A comprehensive guide to navigating the dark caves of Level 8. Learn how to manage airlock doors, bypass Death Moths and Skinstealers, and utilize a major glitch to skip straight to Level 9.',
+    imageUrl: '/images/levels/level-18.webp',
+    imageAlt: 'Escape the Backrooms Level 8 Guide: Cave Skip Glitch (Skip Level 0.11)',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 8 Guide: Cave Skip Glitch (Skip Level 0.11)',
+      difficulty: 'Hard',
+      objectives: 'Navigate the caves, Avoid Moths, Escape Skinstealers, Reach Level 9'
+    },
+    featured: [
+      {
+        title: 'Level 7',
+        description: 'Thalassophobia - The deep-sea level preceding the caves.',
+        imageUrl: '/images/levels/level-16.webp',
+        imageAlt: 'Level 7 - Thalassophobia',
+        addressBar: 'level-7-thalassophobia-walkthrough'
+      },
+      // {
+      //   title: 'Level 9',
+      //   description: 'Darkened Suburbs - The destination reachable via the Level 8 glitch.',
+      //   imageUrl: '/images/levels/level-9.webp',
+      //   imageAlt: 'Level 9 - Darkened Suburbs',
+      //   addressBar: 'level-9-darkened-suburbs-walkthrough'
+      // }
+    ],
+    seo: {
+      title: 'Level 8 Guide: How to Beat the Caves in Escape the Backrooms',
+      description: 'Master Level 8 with tips on Death Moth stealth, Skinstealer evasion, and the game-breaking rock climbing glitch that skips Level 0.11.',
+      keywords: 'Level 8, Cave System, Escape the Backrooms, Skinstealer, Death Moth, Glitch, Level Skip, Walkthrough'
+    },
+    detailsHtml: `
+        <p><strong>Level 8</strong> is a claustrophobic and dark cave system that demands high situational awareness. Visibility is minimal, and the environment is populated by two of the game's most dangerous entities: <strong>Death Moths</strong> and <strong>Skinstealers</strong>. Success depends on stealth and mastering the movement mechanics.</p>
+  
+        <h2>Level 8 Walkthrough Video Guide</h2>
+        <iframe src="https://www.youtube.com/embed/hDsXOxSmbLU" allowfullscreen></iframe>
+        
+        <h3>Key Guide Takeaways:</h3>
+        <ul>
+          <li><strong>Airlock Mechanics:</strong> Understanding how to operate the insecticide spray doors.</li>
+          <li><strong>Stealth Tactics:</strong> Crouching past Moths and exploiting Skinstealer line-of-sight.</li>
+          <li><strong>Safety Protocols:</strong> Avoiding the fatal mistakes on the Suspension Bridge.</li>
+          <li><strong>Speedrun Glitch:</strong> Using the "Jump-Crouch" method to skip the end of the level and Level 0.11.</li>
+        </ul>
+  
+        <h2>Part 1: Initial Airlocks & Supplies</h2>
+        <p>
+          Upon entering Level 8, you will find a supply table with Almond Water and flashlights. Ahead lies a mechanical door with a wheel valve.
+        </p>
+        <ul>
+          <li><strong>Insecticide Spray:</strong> Turning the wheel valve releases gas and opens the door. Note that <strong>only one door can be open at a time</strong>. If you turn it again, the current door closes and the opposite one opens.</li>
+          <li><strong>Checkpoints:</strong> Passing through these airlocks usually triggers a save point, which is vital given the difficulty ahead.</li>
+        </ul>
+  
+        <h2>Part 2: Dealing with Death Moths</h2>
+        <p>
+          Death Moths are scattered throughout the tunnels, often clinging to the ceiling or walls.
+        </p>
+        <ul>
+          <li><strong>Stealth:</strong> You <strong>must crouch</strong> when moving near them. While experienced players can occasionally sprint past, crouching significantly lowers their detection radius.</li>
+          <li><strong>Pathing Tip:</strong> A useful trick to remember is that <strong>Death Moths usually path towards the left</strong> in branching tunnels. If you want to avoid them, consider the right-hand path where possible.</li>
+          <li><strong>Light Sensitivity:</strong> Avoid shining your flashlight directly on a Moth for extended periods, as this can trigger an attack.</li>
+        </ul>
+  
+        <h2>Part 3: The Skinstealer (Xiepi)</h2>
+        <p>
+          The Skinstealer is a fast, aggressive humanoid entity that patrols the cave floor.
+        </p>
+        <ul>
+          <li><strong>AI Behavior:</strong> While it is faster than the player, its AI is easily manipulated. If it spots you, run behind a rock or through a doorway to break line-of-sight.</li>
+          <li><strong>Aggro Reset:</strong> As explained in the video, if you manage to stay out of the Skinstealer's vision for <strong>4 to 5 seconds</strong>, it will lose interest and return to its patrol.</li>
+          <li><strong>Pathing Tip:</strong> Unlike the Moths, the <strong>Skinstealer typically patrols towards the right-hand side</strong> of the cave system.</li>
+        </ul>
+  
+        <h2>Part 4: The Suspension Bridge (Wei Bridge)</h2>
+        <p>
+          Eventually, you will encounter a wooden bridge crossing a massive abyss.
+        </p>
+        <div class="alert-box warning">
+          <strong>CRITICAL SAFETY RULES:</strong> 
+          1. <strong>Do NOT sprint (Shift)</strong> while on the bridge; it will break immediately. 
+          2. <strong>Only one player</strong> should be on the bridge at any given time.
+        </div>
+        <p>
+          Walk normally and carefully. Once across, activate the valve on the far side to secure the area. Note that the bridge path itself is risky as it lacks a mid-way save point compared to the tunnel path.
+        </p>
+  
+        <h2>Part 5: The "Rock Climb" Skip (Major Glitch)</h2>
+        <p>
+          The video highlights a significant exploit that allows players to skip the final section of Level 8 and the entirety of the Level 0.11 transition.
+        </p>
+        <ul>
+          <li><strong>Location:</strong> Near the suspension bridge, locate the rocky outcroppings near the cave entrance (demonstrated at 03:00 in the video).</li>
+          <li><strong>The Method:</strong>
+            <ol>
+              <li>Use a <strong>Jump-Crouch</strong> (Jump then immediately press Crouch) to land on the first small jagged ledge.</li>
+              <li>Perform a second Jump-Crouch to reach the higher platform. The collision model in the current version is more forgiving, making it easier to scale the geometry.</li>
+              <li>Continue upward until you reach the very top of the cave rocks.</li>
+            </ol>
+          </li>
+          <li><strong>Result:</strong> Once at the top, aim for the "void" or specific teleport triggers above. This will bypass the ladder and the glass room puzzle, teleporting you directly to <strong>Level 9 (The Suburbs)</strong>.</li>
+        </ul>
+  
+        <p>
+          While the standard path involves climbing a ladder to Level 0.11, the Rock Climb glitch is highly recommended for those looking to avoid the difficulty spike at the end of the caves.
+        </p>
+      `
+  },
+
+  {
+    id: 19,
+    title: 'Escape the Backrooms: Level 9 (The Suburbs) & The Lab',
+    pageTitle: 'Level 9 Guide: Suburbs Puzzle, Beishi Evasion & Lab Walkthrough',
+    addressBar: 'level-9-suburbs-and-lab-walkthrough',
+    description: 'Master the computer puzzle of Level 9 (The Suburbs) and navigate the complex underground laboratory. Learn how to use wall-clipping tricks, avoid the Beishi and Big Eye, and obtain the exit badge.',
+    imageUrl: '/images/levels/level-19.webp',
+    imageAlt: 'Escape the Backrooms: Level 9 - The Eerie Suburbs and Underground Laboratory',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 9 (The Suburbs)',
+      difficulty: 'Hard',
+      objectives: 'Activate all security terminals, enter the hidden lab, synthesize the cure, and obtain the ID badge.'
+    },
+    featured: [
+      {
+        title: 'Level 8',
+        description: 'The Cave System - The previous level featuring the rock-climb skip.',
+        imageUrl: '/images/levels/level-17.webp',
+        imageAlt: 'Level 8 - Cave System',
+        addressBar: 'level-8-cave-system-guide'
+      },
+      // {
+      //   title: 'Level 10',
+      //   description: 'The Fields - The destination after escaping the Lab.',
+      //   imageUrl: '/images/levels/level-10.webp',
+      //   imageAlt: 'Level 10 - The Fields',
+      //   addressBar: 'level-10-the-fields-walkthrough'
+      // }
+    ],
+    seo: {
+      title: 'Level 9 Suburbs & Lab Guide - Escape the Backrooms PC Walkthrough',
+      description: 'Step-by-step guide for Level 9 in Escape the Backrooms. Learn the computer locations, the Beishi lure strategy in the lab, and how to use the wall-interaction bug.',
+      keywords: 'Level 9, Suburbs, The Lab, Escape the Backrooms, Beishi, Big Eye, ID Badge, Walkthrough, Glitch'
+    },
+    detailsHtml: `
+      <p><strong>Level 9</strong> consists of two distinct phases: a fog-covered suburban neighborhood and a high-tech underground laboratory. This level is a major skill check, requiring puzzle-solving under pressure and precise entity manipulation.</p>
+
+      <h2>Escape the Backrooms: Level 9 & Lab Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/kEZQ5NJM8sQ" allowfullscreen></iframe>
+      
+      <h3>Video Highlights:</h3>
+      <ul>
+        <li><strong>Terminal Map:</strong> How to read the security monitors to find all required computers.</li>
+        <li><strong>Wall-Clipping Trick:</strong> Interacting with computers through house walls to avoid the Beishi.</li>
+        <li><strong>The Big Eye Glitch:</strong> A method to pass the giant roaming street monster safely.</li>
+        <li><strong>Lab Procedure:</strong> Collecting 4 concentrate bottles and transforming the Beishi into a human for the keycard.</li>
+      </ul>
+
+      <h2>Part 1: The Suburbs Puzzle</h2>
+      <p>
+        Your goal is to find several computer terminals scattered across the houses. The locations are randomized each playthrough.
+      </p>
+      <ul>
+        <li><strong>Reading the Map:</strong> Locate a main security hub (usually near fences). The screen shows green dots (computers) and your current location.</li>
+        <li><strong>The Wall Trick:</strong> As demonstrated in the video (01:23), you don't always need to enter a house. Many computers can be "clicked" through the glass or walls from the outside, keeping you safe from entities inside.</li>
+        <li><strong>Beishi (Stone Guardian):</strong> This entity patrols the interiors. Unlike the blind entities of Level 6, the Beishi <strong>can see</strong>. If you must enter, use jump-crouches over stair railings to lose its aggro.</li>
+      </ul>
+
+      <h2>Part 2: The Big Eye & Street Safety</h2>
+      <p>
+        A massive, multi-legged "Big Eye" monster patrols the streets. It is extremely fast and can kill you instantly.
+      </p>
+      <ul>
+        <li><strong>Avoidance:</strong> Stay in the shadows and move between houses quickly.</li>
+        <li><strong>The Clipping Bug:</strong> The video shows a trick where players can "glitch" through the Big Eye or use specific trees to hide their hitbox, making the monster unable to register a kill (08:15).</li>
+      </ul>
+
+      <h2>Part 3: The Underground Laboratory</h2>
+      <p>
+        After all computers are activated, the M.E.G. gate opens, leading to a secret laboratory beneath the suburbs.
+      </p>
+      <ul>
+        <li><strong>The Crowbar & Vents:</strong> Find a crowbar to pry open ventilation shafts. These shafts contain the hidden rooms where the <strong>Xingren Water Concentrates</strong> are located.</li>
+        <li><strong>Collecting Bottles:</strong> You need <strong>4 bottles</strong> of concentrate. Some are in plain sight, others are behind prying-access doors.</li>
+        <li><strong>The Tank Puzzle:</strong> Push the large white pressurized tank into the designated slot near the "Emergency Shower" area. 
+          <div class="alert-box tip"><strong>PRO TIP:</strong> If the tank is hard to move, lower your game's frame rate in the settings; it often makes the physics interaction much smoother.</div>
+        </li>
+      </ul>
+
+      <h2>Part 4: Obtaining the Exit ID</h2>
+      <p>
+        To leave the level, you must obtain a physical ID badge from an M.E.G. researcher who has been turned into a Beishi.
+      </p>
+      <ol>
+        <li>Insert the 4 concentrate bottles into the machine.</li>
+        <li>Lure a Beishi entity into the center of the treatment platform (the footprint area).</li>
+        <li>Quickly run to the control booth and activate the shower.</li>
+        <li>The gas will transform the Beishi back into a human. Once the animation finishes, enter the room and <strong>grab the Badge</strong> from the researcher's chest.</li>
+      </ol>
+
+      <p>
+        Take the Badge to the final card-swipe terminal at the end of the hall. This will unlock the door to <strong>Level 10 (The Fields)</strong>.
+      </p>
+    `
   }
+
+
+  // {
+  //   id: 1,
+  //   title: '',
+  //   pageTitle: '',
+  //   addressBar: '',
+  //   description: '',
+  //   imageUrl: '',
+  //   imageAlt: '',
+  //   category: '',
+  //   isHome: true,
+  //   sideBarInfo: {
+  //     name: '',
+  //     difficulty: '',
+  //     objectives: ''
+  //   },
+  //   featured: [
+  //     {
+  //       title: '',
+  //       description: '',
+  //       imageUrl: '',
+  //       imageAlt: '',
+  //       addressBar: ''
+  //     }
+  //   ],
+  //   seo: {
+  //     title: '',
+  //     description: '',
+  //     keywords: '',
+  //   },
+  //   detailsHtml: ``,
+  // },
 ]

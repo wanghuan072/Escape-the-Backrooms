@@ -1768,7 +1768,7 @@ export default [
           <p><strong>Le Niveau 8</strong> est un système sinueux de grottes sombres infestées d'entités hostiles. Contrairement à l'océan ouvert du Niveau 7, cette zone est claustrophobique et nécessite une gestion prudente de votre lampe et de votre endurance. Il présente deux menaces majeures : les <strong>Death Moths</strong> (Phalènes de la mort) et les <strong>Skinstealers</strong> (Voleurs de peau).</p>
     
           <h2>Vidéo de soluce Escape the Backrooms : Niveau 8</h2>
-          <iframe src="https://www.youtube.com/embed/FDk9KG4pB4E" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/hDsXOxSmbLU" allowfullscreen></iframe>
           
           <h3>Points forts de la vidéo :</h3>
           <ul>
@@ -1840,10 +1840,202 @@ export default [
             Si vous choisissez de ne pas utiliser le glitch, continuez par le chemin standard après le pont pour atteindre l'échelle menant au Niveau 0.11. Cependant, le glitch est vivement recommandé pour les speedruns ou les parties difficiles.
           </p>
         `
+  },
+  {
+    "id": 18,
+    "title": "Escape the Backrooms : Niveau 8 (Cave System)",
+    "pageTitle": "Solution Niveau 8 : Moths, Skinstealers et le skip « Rock Climb »",
+    "addressBar": "level-8-cave-system-guide",
+    "description": "Guide complet pour les grottes sombres du Niveau 8. Apprenez à gérer les sas, à éviter les Death Moths et les Skinstealers, et à utiliser un glitch majeur pour passer directement au Niveau 9.",
+    "imageUrl": "/images/levels/level-18.webp",
+    "imageAlt": "Escape the Backrooms Niveau 8 : glitch de skip des grottes (sauter le Niveau 0.11)",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 8 : glitch de skip (sauter le 0.11)",
+      "difficulty": "Difficile",
+      "objectives": "Traverser les grottes, Éviter les Moths, Échapper aux Skinstealers, Atteindre le Niveau 9"
+    },
+    "featured": [
+      {
+        "title": "Level 7",
+        "description": "Thalassophobia - Le niveau océanique précédant les grottes.",
+        "imageUrl": "/images/levels/level-16.webp",
+        "imageAlt": "Level 7 - Thalassophobia",
+        "addressBar": "level-7-thalassophobia-walkthrough"
+      }
+    ],
+    "seo": {
+      "title": "Guide Niveau 8 : battre les grottes dans Escape the Backrooms",
+      "description": "Maîtrisez le Niveau 8 : furtivité face aux Death Moths, évasion des Skinstealers et glitch d'escalade qui saute le Niveau 0.11.",
+      "keywords": "Level 8, Cave System, Escape the Backrooms, Skinstealer, Death Moth, Glitch, Level Skip, Walkthrough"
+    },
+    "detailsHtml": `
+          <p><strong>Le Niveau 8</strong> est un système de grottes sombres et claustrophobique qui exige une grande vigilance. La visibilité est faible, et deux des entités les plus dangereuses du jeu y rôdent : les <strong>Death Moths</strong> et les <strong>Skinstealers</strong>. La réussite repose sur la furtivité et la maîtrise des déplacements.</p>
+    
+          <h2>Vidéo guide du Niveau 8</h2>
+          <iframe src="https://www.youtube.com/embed/hDsXOxSmbLU" allowfullscreen></iframe>
+          
+          <h3>Points clés du guide :</h3>
+          <ul>
+            <li><strong>Sas :</strong> Fonctionnement des portes avec pulvérisation d'insecticide.</li>
+            <li><strong>Furtivité :</strong> Passer accroupi près des Moths et couper la ligne de vue des Skinstealers.</li>
+            <li><strong>Sécurité :</strong> Éviter les erreurs fatales sur le pont suspendu.</li>
+            <li><strong>Glitch speedrun :</strong> La méthode saut–accroupi pour sauter la fin du niveau et le Niveau 0.11.</li>
+          </ul>
+    
+          <h2>Partie 1 : Premiers sas et fournitures</h2>
+          <p>
+            En entrant au Niveau 8, vous trouvez une table avec de l'eau d'amande et des lampes. Devant vous, une porte mécanique avec une roue.
+          </p>
+          <ul>
+            <li><strong>Pulvérisation :</strong> Tourner la roue libère le gaz et ouvre la porte. <strong>Une seule porte peut être ouverte à la fois</strong>. Si vous tournez à nouveau, la porte actuelle se ferme et l'autre s'ouvre.</li>
+            <li><strong>Checkpoints :</strong> Traverser ces sas déclenche souvent une sauvegarde, cruciale vu la difficulté.</li>
+          </ul>
+    
+          <h2>Partie 2 : Les Death Moths</h2>
+          <p>
+            Les Death Moths sont éparpillées dans les tunnels, souvent au plafond ou sur les parois.
+          </p>
+          <ul>
+            <li><strong>Furtivité :</strong> Vous <strong>devez vous accroupir</strong> près d'elles. Les joueurs expérimentés peuvent parfois sprinter, mais s'accroupir réduit fortement leur zone de détection.</li>
+            <li><strong>Astuce de trajet :</strong> Les <strong>Death Moths ont tendance à prendre la branche de gauche</strong> dans les tunnels. Pour les éviter, privilégiez le chemin de droite quand c'est possible.</li>
+            <li><strong>Lumière :</strong> Évitez de braquer longtemps votre lampe sur une Moth, cela peut déclencher une attaque.</li>
+          </ul>
+    
+          <h2>Partie 3 : Le Skinstealer (Xiepi)</h2>
+          <p>
+            Le Skinstealer est une entité humanoïde rapide et agressive qui patrouille le sol des grottes.
+          </p>
+          <ul>
+            <li><strong>IA :</strong> Plus rapide que vous, mais facile à manipuler. S'il vous repère, filez derrière un rocher ou une porte pour couper la ligne de vue.</li>
+            <li><strong>Reset d'aggro :</strong> Comme expliqué dans la vidéo, restez hors de sa vue pendant <strong>4 à 5 secondes</strong> pour qu'il reprenne sa patrouille.</li>
+            <li><strong>Astuce de trajet :</strong> Contrairement aux Moths, le <strong>Skinstealer patrouille plutôt vers la droite</strong> du réseau de grottes.</li>
+          </ul>
+    
+          <h2>Partie 4 : Le pont suspendu (Wei Bridge)</h2>
+          <p>
+            Vous finirez par un pont de bois au-dessus d'un immense gouffre.
+          </p>
+          <div class="alert-box warning">
+            <strong>RÈGLES CRITIQUES :</strong> 
+            1. <strong>Ne sprinter pas (Shift)</strong> sur le pont : il casse aussitôt. 
+            2. <strong>Un seul joueur</strong> à la fois sur le pont.
+          </div>
+          <p>
+            Avancez normalement avec prudence. De l'autre côté, actionnez la valve pour sécuriser la zone. Le pont est risqué : pas de sauvegarde à mi-chemin comme dans certains tunnels.
+          </p>
+    
+          <h2>Partie 5 : Le skip « Rock Climb » (glitch majeur)</h2>
+          <p>
+            La vidéo montre un exploit massif : sauter la fin du Niveau 8 et tout le Niveau 0.11.
+          </p>
+          <ul>
+            <li><strong>Emplacement :</strong> Près du pont, repérez les surplombs rocheux à l'entrée d'une grotte (démontré à 03:00 dans la vidéo).</li>
+            <li><strong>Méthode :</strong>
+              <ol>
+                <li><strong>Saut accroupi</strong> (sauter puis accroupir tout de suite) pour atterrir sur le premier rebord.</li>
+                <li>Deuxième saut accroupi vers la plateforme supérieure. Les collisions sont plus indulgentes dans la version actuelle, l'escalade est plus facile.</li>
+                <li>Montez jusqu'au sommet des rochers.</li>
+              </ol>
+            </li>
+            <li><strong>Résultat :</strong> En haut, visez le vide ou les déclencheurs de téléportation au-dessus. Vous évitez l'échelle et l'énigme de la salle en verre et arrivez directement au <strong>Niveau 9 (The Suburbs)</strong>.</li>
+          </ul>
+    
+          <p>
+            Le chemin normal passe par une échelle vers le Niveau 0.11 ; le glitch Rock Climb est fortement conseillé pour éviter le pic de difficulté en fin de grottes.
+          </p>
+        `
+  },
+  {
+    "id": 19,
+    "title": "Escape the Backrooms : Niveau 9 (The Suburbs) & le laboratoire",
+    "pageTitle": "Guide Niveau 9 : banlieue, éviter le Beishi & soluce du labo",
+    "addressBar": "level-9-suburbs-and-lab-walkthrough",
+    "description": "Maîtrisez l'énigme des ordinateurs du Niveau 9 (The Suburbs) et le laboratoire souterrain. Astuces d'interaction à travers les murs, éviter le Beishi et le Big Eye, et obtenir le badge de sortie.",
+    "imageUrl": "/images/levels/level-19.webp",
+    "imageAlt": "Escape the Backrooms : Niveau 9 - Banlieue inquiétante et laboratoire souterrain",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 9 (The Suburbs)",
+      "difficulty": "Difficile",
+      "objectives": "Activer tous les terminaux de sécurité, entrer dans le labo caché, synthétiser le remède et obtenir le badge d'identité."
+    },
+    "featured": [
+      {
+        "title": "Level 8",
+        "description": "Le système de grottes - niveau précédent avec le skip Rock Climb.",
+        "imageUrl": "/images/levels/level-17.webp",
+        "imageAlt": "Level 8 - Cave System",
+        "addressBar": "level-8-cave-system-guide"
+      }
+    ],
+    "seo": {
+      "title": "Guide Niveau 9 banlieue & labo - Escape the Backrooms PC",
+      "description": "Guide pas à pas du Niveau 9 : emplacements des ordinateurs, stratégie d'appât pour le Beishi au labo, bug d'interaction murale.",
+      "keywords": "Level 9, Suburbs, The Lab, Escape the Backrooms, Beishi, Big Eye, ID Badge, Walkthrough, Glitch"
+    },
+    "detailsHtml": `
+      <p><strong>Le Niveau 9</strong> se déroule en deux phases : un quartier de banlieue dans le brouillard et un laboratoire high-tech souterrain. C'est un gros test : énigmes sous pression et manipulation précise des entités.</p>
+
+      <h2>Vidéo soluce Escape the Backrooms : Niveau 9 & laboratoire</h2>
+      <iframe src="https://www.youtube.com/embed/kEZQ5NJM8sQ" allowfullscreen></iframe>
+      
+      <h3>Points forts de la vidéo :</h3>
+      <ul>
+        <li><strong>Carte des terminaux :</strong> Lire les écrans de surveillance pour trouver tous les ordinateurs.</li>
+        <li><strong>Astuce des murs :</strong> Interagir avec les PC à travers les murs des maisons pour éviter le Beishi.</li>
+        <li><strong>Glitch Big Eye :</strong> Passer le monstre géant qui rôde dans la rue en sécurité.</li>
+        <li><strong>Procédure labo :</strong> Récupérer 4 flacons de concentré et transformer le Beishi en humain pour la carte-clé.</li>
+      </ul>
+
+      <h2>Partie 1 : L'énigme de la banlieue</h2>
+      <p>
+        Trouvez plusieurs terminaux informatiques dispersés dans les maisons. Les emplacements sont aléatoires à chaque partie.
+      </p>
+      <ul>
+        <li><strong>Lire la carte :</strong> Repérez un hub de sécurité principal (souvent près des clôtures). L'écran montre les points verts (ordinateurs) et votre position.</li>
+        <li><strong>Astuce du mur :</strong> Comme dans la vidéo (01:23), vous n'avez pas toujours besoin d'entrer. Beaucoup d'ordinateurs peuvent être « cliqués » depuis l'extérieur à travers la vitre ou les murs, à l'abri des entités à l'intérieur.</li>
+        <li><strong>Beishi (gardien de pierre) :</strong> Patrouille à l'intérieur. Contrairement aux entités aveugles du Niveau 6, le Beishi <strong>voit</strong>. Si vous devez entrer, utilisez saut–accroupi par-dessus les rampes d'escalier pour perdre l'aggro.</li>
+      </ul>
+
+      <h2>Partie 2 : Le Big Eye & la rue</h2>
+      <p>
+        Un énorme « Big Eye » à plusieurs pattes patrouille dans les rues. Il est extrêmement rapide et vous tue sur le coup.
+      </p>
+      <ul>
+        <li><strong>Évitement :</strong> Restez dans l'ombre et déplacez-vous vite entre les maisons.</li>
+        <li><strong>Bug de clip :</strong> La vidéo montre un truc pour « glitcher » à travers le Big Eye ou se cacher derrière certains arbres pour que le jeu n'enregistre pas l'impact (08:15).</li>
+      </ul>
+
+      <h2>Partie 3 : Le laboratoire souterrain</h2>
+      <p>
+        Une fois tous les ordinateurs activés, le portail M.E.G. s'ouvre vers un laboratoire secret sous la banlieue.
+      </p>
+      <ul>
+        <li><strong>Pied-de-biche & conduits :</strong> Trouvez un pied-de-biche pour forcer des grilles de ventilation. Les salles cachées contiennent les <strong>concentrés d'eau Xingren</strong>.</li>
+        <li><strong>Flacons :</strong> Il vous faut <strong>4 flacons</strong> de concentré. Certains sont visibles, d'autres derrière des portes à forcer.</li>
+        <li><strong>Énigme du réservoir :</strong> Poussez le grand réservoir blanc sous pression jusqu'à l'emplacement prévu près de la zone « douche d'urgence ». 
+          <div class="alert-box tip"><strong>CONSEIL DE PRO :</strong> Si le réservoir est dur à déplacer, baissez le framerate dans les réglages ; la physique devient souvent plus coopérative.</div>
+        </li>
+      </ul>
+
+      <h2>Partie 4 : Obtenir le badge de sortie</h2>
+      <p>
+        Pour quitter le niveau, il vous faut un badge physique sur un chercheur M.E.G. transformé en Beishi.
+      </p>
+      <ol>
+        <li>Insérez les 4 flacons dans la machine.</li>
+        <li>Attirez un Beishi au centre de la plateforme de traitement (zone des empreintes).</li>
+        <li>Courez vite vers la cabine de contrôle et activez la douche.</li>
+        <li>Le gaz retransforme le Beishi en humain. Après l'animation, entrez et <strong>prenez le badge</strong> sur la poitrine du chercheur.</li>
+      </ol>
+
+      <p>
+        Emmenez le badge au terminal final à badge en bout de couloir. Cela déverrouille la porte vers le <strong>Niveau 10 (The Fields)</strong>.
+      </p>
+    `
   }
-
-
-
-
 
 ]
