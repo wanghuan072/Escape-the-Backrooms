@@ -2036,6 +2036,89 @@ export default [
         Emmenez le badge au terminal final à badge en bout de couloir. Cela déverrouille la porte vers le <strong>Niveau 10 (The Fields)</strong>.
       </p>
     `
+  },
+
+  {
+    "id": 20,
+    "title": "Escape the Backrooms : Niveau 10 (The Fields) & Niveau 3999",
+    "pageTitle": "Guide Niveau 10 : Champs de maïs, Faceless Bell & Glitch du saut de barrière",
+    "addressBar": "guide-niveau-10-les-champs-et-arcade",
+    "description": "Conquérez les champs de maïs infinis du Niveau 10. Apprenez à optimiser les graphismes pour une meilleure visibilité, à échapper à la Faceless Bell et à utiliser le bug de la barrière pour atteindre le Niveau 3999 en toute sécurité.",
+    "imageUrl": "/images/levels/level-20.webp",
+    "imageAlt": "Escape the Backrooms : Niveau 10 - Champs de maïs infinis au coucher du soleil",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 10 (The Fields)",
+      "difficulty": "Moyen à Difficile",
+      "objectives": "Suivez les lumières colorées des moulins à vent, évitez les Faceless Bells et atteignez le bâtiment de l'Arcade (Niveau 3999)."
+    },
+    "featured": [
+      {
+        "title": "Niveau 9",
+        "description": "The Suburbs – le niveau précédent avec l'énigme du laboratoire.",
+        "imageUrl": "/images/levels/level-19.webp",
+        "imageAlt": "Niveau 9 - The Suburbs",
+        "addressBar": "walkthrough-niveau-9-banlieue-et-labo"
+      }
+    ],
+    "seo": {
+      "title": "Guide Niveau 10 The Fields - Astuces et conseils Escape the Backrooms",
+      "description": "Guide détaillé du Niveau 10 : Comment contourner la Faceless Bell, utiliser le glitch de la barrière et atteindre le Niveau 3999 (The Arcade).",
+      "keywords": "Niveau 10, The Fields, Niveau 3999, The Arcade, Faceless Bell, Wu Mian Ling, Walkthrough, Glitch, Fence Skip"
+    },
+    "detailsHtml": `
+      <p>Le <strong>Niveau 10</strong> est un vaste champ de maïs sous un coucher de soleil éternel. Le danger principal n'est pas seulement de s'y perdre, mais aussi les « Faceless Bells » qui rôdent parmi les hautes tiges.</p>
+
+      <h2>Vidéo de soluce du Niveau 10 (Champs de maïs et Arcade)</h2>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+      
+      <h3>Points clés de la vidéo :</h3>
+      <ul>
+        <li><strong>00:05 :</strong> Astuce graphique – Supprimer l'herbe pour une visibilité à 100 %.</li>
+        <li><strong>01:15 :</strong> Navigation – Suivre les lumières rouges et vertes des moulins.</li>
+        <li><strong>04:20 :</strong> Le Fence Skip – Marcher en toute sécurité sur le haut des barrières.</li>
+        <li><strong>07:25 :</strong> Niveau 3999 – Entrer par la porte tambours et logique de l'hôte.</li>
+      </ul>
+
+      <h2>Partie 1 : L'astuce graphique (Maximiser la visibilité)</h2>
+      <p>Le maïs haut du Niveau 10 rend la détection précoce des entités presque impossible. Cependant, il existe une solution technique :</p>
+      <div class="alert-box tip">
+        <strong>OPTIMISATION GRAPHIQUE :</strong> Allez dans les paramètres et réglez la <strong>« Qualité Visuelle »</strong> sur <strong>Faible (Low)</strong>. Cela empêche l'herbe de s'afficher au loin, vous offrant une vue dégagée sur toute la carte et les monstres qui s'y cachent.
+      </div>
+
+      <h2>Partie 2 : La « Faceless Bell » (Wu Mian Ling)</h2>
+      <p>Vous rencontrerez deux variantes de la Faceless Bell dans ce niveau :</p>
+      <ul>
+        <li><strong>Le Grabber :</strong> Il s'approche silencieusement et vous soulève pour vous traîner dans le maïs. Ne vous arrêtez jamais de bouger !</li>
+        <li><strong>La variante Tronçonneuse :</strong> Beaucoup plus agressive, elle garde souvent les passages directs. Si vous entendez la tronçonneuse, gardez vos distances.</li>
+      </ul>
+
+      <h2>Partie 3 : Naviguer grâce aux moulins à vent</h2>
+      <p>La navigation se fait grâce aux grands moulins à vent à l'horizon :</p>
+      <ul>
+        <li>Cherchez la <strong>lumière rouge</strong> dans le ciel. Une fois que vous avez atteint et interagi avec ce moulin, la cible suivante passera au <strong>vert</strong>.</li>
+        <li>Utilisez des <strong>Boissons Énergisantes (Acide Metasequoia)</strong> pour parcourir plus rapidement les longues distances entre les champs.</li>
+      </ul>
+
+      <h2>Partie 4 : Le mouvement de pro – Glitch du Fence-Skip</h2>
+      <p>Si vous voulez éviter totalement les champs de maïs et les combats, utilisez le bug montré à (04:20) :</p>
+      <ol>
+        <li>Allez au bord de la route où se trouvent les barrières en bois noir.</li>
+        <li>Positionnez-vous à un angle, regardez le haut de la traverse et appuyez simultanément sur <strong>A + Saut</strong>.</li>
+        <li>Si c'est bien fait, vous resterez « bloqué » sur le dessus de la fine barrière.</li>
+        <li>Vous pouvez maintenant marcher le long de la clôture directement vers le grand panneau <strong>« ARCADE »</strong> sans jamais toucher le sol où les monstres apparaissent.</li>
+      </ol>
+
+      <h2>Partie 5 : Niveau 3999 (The Arcade)</h2>
+      <p>Au bout de la route, vous trouverez un bâtiment brillamment éclairé — L'Arcade.</p>
+      <ul>
+        <li><strong>La porte tambours :</strong> C'est la transition vers le Niveau 3999.</li>
+        <li><strong>Note pour le multijoueur :</strong> Si vos coéquipiers ne peuvent pas entrer, c'est généralement parce que l'<strong>Hôte</strong> est trop loin de la porte. L'Hôte doit être physiquement proche de la porte pour que le déclencheur fonctionne pour tout le monde.</li>
+      </ul>
+
+      <p>Une fois à l'intérieur du Niveau 3999, vous avez atteint un point de passage sûr avant le début de la prochaine série de défis.</p>
+    `
   }
 
 ]

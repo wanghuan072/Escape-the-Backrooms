@@ -1988,5 +1988,88 @@ export default [
         Mit dem Ausweis zum finalen Kartenlese-Terminal am Ende des Gangs. Das öffnet die Tür zu <strong>Level 10 (The Fields)</strong>.
       </p>
     `
-    }
+    },
+
+    {
+      "id": 20,
+      "title": "Escape the Backrooms: Level 10 (Die Felder) & Level 3999",
+      "pageTitle": "Level 10 Guide: Maisfelder, Gesichtlose Glocke & Zaun-Skip-Glitch",
+      "addressBar": "level-10-die-felder-und-arcade-guide",
+      "description": "Bezwinger die endlosen Maisfelder von Level 10. Lerne, wie du die Grafik für bessere Sicht optimierst, der Gesichtlosen Glocke entkommst und den Zaun-Bug nutzt, um sicher Level 3999 zu erreichen.",
+      "imageUrl": "/images/levels/level-20.webp",
+      "imageAlt": "Escape the Backrooms: Level 10 – Endlose Maisfelder bei Sonnenuntergang",
+      "category": "Haupt-Level",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 10 (Die Felder)",
+        "difficulty": "Mittel bis Schwer",
+        "objectives": "Folge den farbigen Windmühlen-Lichtern, weiche den Gesichtlosen Glocken aus und erreiche das Arcade-Gebäude (Level 3999)."
+      },
+      "featured": [
+        {
+          "title": "Level 9",
+          "description": "Die Vororte – das vorherige Level mit dem Labor-Rätsel.",
+          "imageUrl": "/images/levels/level-19.webp",
+          "imageAlt": "Level 9 - Die Vororte",
+          "addressBar": "level-9-vororte-und-labor-walkthrough"
+        }
+      ],
+      "seo": {
+        "title": "Level 10 Die Felder Guide - Escape the Backrooms Tipps & Tricks",
+        "description": "Detaillierter Walkthrough für Level 10: Wie man die Gesichtlose Glocke umgeht, den Zaun-Glitch nutzt und Level 3999 (Die Arcade) erreicht.",
+        "keywords": "Level 10, Die Felder, Level 3999, Die Arcade, Gesichtlose Glocke, Wu Mian Ling, Walkthrough, Glitch, Zaun-Skip"
+      },
+      "detailsHtml": `
+        <p><strong>Level 10</strong> ist ein riesiges Maisfeld unter einem ewigen Sonnenuntergang. Die größte Gefahr besteht hier nicht nur darin, sich zu verirren, sondern in den „Gesichtlosen Glocken“ (Faceless Bells), die in den hohen Halmen lauern.</p>
+  
+        <h2>Level 10 Maisfelder & Arcade Walkthrough Video</h2>
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+        
+        <h3>Video-Highlights:</h3>
+        <ul>
+          <li><strong>00:05:</strong> Grafik-Tipp – Entfernen von Gras für 100% Sichtbarkeit.</li>
+          <li><strong>01:15:</strong> Navigation – Den roten und grünen Windmühlen-Lichtern folgen.</li>
+          <li><strong>04:20:</strong> Der Zaun-Skip – Sicher auf den Geländern laufen.</li>
+          <li><strong>07:25:</strong> Level 3999 – Betreten der Drehtür und Host-Logik.</li>
+        </ul>
+  
+        <h2>Teil 1: Der Grafik-Trick (Maximale Sichtbarkeit)</h2>
+        <p>Der hohe Mais in Level 10 macht es fast unmöglich, Entitäten frühzeitig zu entdecken. Es gibt jedoch einen technischen Workaround:</p>
+        <div class="alert-box tip">
+          <strong>GRAFIK-OPTIMIERUNG:</strong> Gehe in die Einstellungen und setze die <strong>„Visual Quality“</strong> (Visuelle Qualität) auf <strong>Low</strong> (Niedrig). Dies verhindert, dass Gras in der Ferne gerendert wird, was dir eine klare Sicht über die gesamte Karte und auf lauernde Monster ermöglicht.
+        </div>
+  
+        <h2>Teil 2: Die „Gesichtlose Glocke“ (Wu Mian Ling)</h2>
+        <p>In diesem Level wirst du zwei Varianten der Gesichtlosen Glocke begegnen:</p>
+        <ul>
+          <li><strong>Der Grabber (Greifer):</strong> Er schleicht sich lautlos an und hebt dich hoch, um dich in den Mais zu ziehen. Bleib niemals stehen!</li>
+          <li><strong>Die Kettensägen-Variante:</strong> Viel aggressiver und bewacht oft direkte Pfade. Wenn du die Kettensäge hörst, halte Abstand.</li>
+        </ul>
+  
+        <h2>Teil 3: Navigation durch die Windmühlen</h2>
+        <p>Die Navigation erfolgt über die großen Windmühlen am Horizont:</p>
+        <ul>
+          <li>Suche nach dem <strong>roten Licht</strong> am Himmel. Sobald du diese Windmühle erreicht und mit ihr interagiert hast, wird das nächste Ziel <strong>grün</strong> leuchten.</li>
+          <li>Nutze <strong>Energy Drinks (Metasequoia-Säure)</strong>, um die langen Distanzen zwischen den Feldern schneller zu überbrücken.</li>
+        </ul>
+  
+        <h2>Teil 4: Der „Pro-Move“ – Zaun-Skip-Glitch</h2>
+        <p>Wenn du die Maisfelder und Kämpfe komplett vermeiden willst, nutze den Bug, der bei (04:20) gezeigt wird:</p>
+        <ol>
+          <li>Gehe zum Rand der Straße, wo sich die schwarzen Holzzäune befinden.</li>
+          <li>Positioniere dich an einer Ecke, schaue auf das obere Geländer und drücke gleichzeitig <strong>A + Springen</strong>.</li>
+          <li>Wenn es richtig gemacht wurde, bleibst du oben auf dem dünnen Geländer „stecken“.</li>
+          <li>Du kannst nun am Zaun entlang direkt zum großen <strong>„ARCADE“</strong>-Schild laufen, ohne jemals den Boden zu berühren, auf dem Monster spawnen.</li>
+        </ol>
+  
+        <h2>Teil 5: Level 3999 (Die Arcade)</h2>
+        <p>Am Ende der Straße findest du ein hell erleuchtetes Gebäude – die Arcade.</p>
+        <ul>
+          <li><strong>Die Drehtür:</strong> Dies ist der Übergang zu Level 3999.</li>
+          <li><strong>Multiplayer-Hinweis:</strong> Wenn deine Teammitglieder nicht eintreten können, liegt es meistens daran, dass der <strong>Host</strong> zu weit von der Tür entfernt ist. Der Host muss sich physisch nah an der Tür befinden, damit der Trigger für alle funktioniert.</li>
+        </ul>
+  
+        <p>Sobald du Level 3999 betreten hast, hast du einen sicheren Checkpoint erreicht, bevor die nächsten Herausforderungen beginnen.</p>
+      `
+  }
 ]
