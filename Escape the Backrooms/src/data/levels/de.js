@@ -1992,7 +1992,7 @@ export default [
 
     {
       "id": 20,
-      "title": "Escape the Backrooms: Level 10 (Die Felder) & Level 3999",
+      "title": "Escape the Backrooms Level 10 Guide: Wheat Field Shortcut to Arcade",
       "pageTitle": "Level 10 Guide: Maisfelder, Gesichtlose Glocke & Zaun-Skip-Glitch",
       "addressBar": "level-10-die-felder-und-arcade-guide",
       "description": "Bezwinger die endlosen Maisfelder von Level 10. Lerne, wie du die Grafik für bessere Sicht optimierst, der Gesichtlosen Glocke entkommst und den Zaun-Bug nutzt, um sicher Level 3999 zu erreichen.",
@@ -2023,7 +2023,7 @@ export default [
         <p><strong>Level 10</strong> ist ein riesiges Maisfeld unter einem ewigen Sonnenuntergang. Die größte Gefahr besteht hier nicht nur darin, sich zu verirren, sondern in den „Gesichtlosen Glocken“ (Faceless Bells), die in den hohen Halmen lauern.</p>
   
         <h2>Level 10 Maisfelder & Arcade Walkthrough Video</h2>
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VCNPh9_dLZI" allowfullscreen></iframe>
         
         <h3>Video-Highlights:</h3>
         <ul>
@@ -2071,5 +2071,82 @@ export default [
   
         <p>Sobald du Level 3999 betreten hast, hast du einen sicheren Checkpoint erreicht, bevor die nächsten Herausforderungen beginnen.</p>
       `
-  }
+    },
+
+    {
+      "id": 21,
+      "title": "Escape the Backrooms Level-3999-Guide: Arcade-Ticket-Standort & Code",
+      "pageTitle": "Level-3999-Guide: Arcade-Hub, Ticket-Code & geheimer Aufzug",
+      "addressBar": "level-3999-die-arcade-guide",
+      "description": "Erkunde Level 3999, den neonbeleuchteten Arcade-Hub. Finde den geheimen Ticket-Code, schalte den Aufzug frei und erfahre die Voraussetzungen für das wahre Ende.",
+      "imageUrl": "/images/levels/level-21.webp",
+      "imageAlt": "Level 3999 – Der Neon-Arcade-Hub in Escape the Backrooms",
+      "category": "Haupt-Level",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 3999 (Die Arcade)",
+        "difficulty": "Sicher",
+        "objectives": "Erkunde den Arcade-Hub, finde das Gewinn-Ticket und gib den Code im geheimen Aufzug ein."
+      },
+      "featured": [
+        {
+          "title": "Level 10",
+          "description": "Die Felder – das vorherige Level auf dem Weg zur Arcade.",
+          "imageUrl": "/images/levels/level-20.webp",
+          "imageAlt": "Level 10 – Die Felder",
+          "addressBar": "level-10-die-felder-und-arcade-guide"
+        }
+      ],
+      "seo": {
+        "title": "Level-3999-Arcade-Guide – Escape-the-Backrooms-Walkthrough",
+        "description": "Finde den Ticket-Code und schalte den geheimen Aufzug in Level 3999 frei. Kompletter Guide zum Arcade-Hub und zu den Anforderungen für das wahre Ende.",
+        "keywords": "Level 3999, Die Arcade, Escape the Backrooms, Ticket-Code, 931, Wahres Ende, M.E.G., Aufzug-Rätsel"
+      },
+      "detailsHtml": `
+        <p><strong>Level 3999</strong>, auch bekannt als „The Arcade“, ist ein riesiger, neongetränkter Hub. Anders als in den vorherigen Levels ist dieser Bereich in der Regel sicher und dient als Übergang sowie als Ort, an dem besondere Enden freigeschaltet werden können.</p>
+
+        <h2>Level 3999: The Arcade – Walkthrough-Video</h2>
+        <iframe src="https://www.youtube.com/embed/HGS4_EGr1m4" allowfullscreen></iframe>
+
+        <h3>Video-Highlights:</h3>
+        <ul>
+          <li><strong>00:05:</strong> Hub erkunden – Navigation zwischen den Automaten.</li>
+          <li><strong>00:15:</strong> Das wahre Ende – Voraussetzungen für das geheime Ende verstehen.</li>
+          <li><strong>00:23:</strong> Ticket-Standort – Den versteckten Code finden.</li>
+          <li><strong>00:40:</strong> Aufzug-Rätsel – Code <strong>931</strong> eingeben, um fortzufahren.</li>
+        </ul>
+
+        <h2>Teil 1: Sichere Zone & wahres Ende</h2>
+        <p>Level 3999 ist ein sicherer Rückzugsort voller Retro-Arcade-Automaten und Vaporwave-Ästhetik. Für Spielerinnen und Spieler, die das Spiel abschließen wollen, ist es ein entscheidender Ort.</p>
+        <div class="alert-box tip">
+          <strong>DAS WAHRE ENDE:</strong> Um das geheime „New Ending“ in Level 3999 freizuschalten, musst du <strong>alle vorherigen Levels erfolgreich abgeschlossen</strong> haben. Wenn du Levels per Glitch übersprungen hast, kann das Ende gesperrt bleiben.
+        </div>
+
+        <h2>Teil 2: Das Gewinn-Ticket finden</h2>
+        <p>Um tiefer in die von der M.E.G. kontrollierten Bereiche vorzudringen, brauchst du einen bestimmten Zugangscode, der auf einem Gewinn-Ticket steht.</p>
+        <ul>
+          <li>Geh in den hinteren Bereich der Arcade, vorbei an den Reihen der Spielkabinette.</li>
+          <li>Suche einen kleinen Raum oder Thekenbereich mit verschiedenen Gegenständen.</li>
+          <li><strong>Der Code:</strong> Nimm das Ticket auf. Die darauf notierte Nummer lautet <strong>931</strong>. Dieser Code ist für den nächsten Schritt unverzichtbar.</li>
+        </ul>
+
+        <h2>Teil 3: Der geheime Aufzug</h2>
+        <p>Sobald du den Code <strong>931</strong> hast, suche den High-Tech-Aufzug in der Nähe der Neon-Säulen.</p>
+        <ul>
+          <li>Interagiere mit dem Ziffernfeld neben den Aufzugstüren.</li>
+          <li>Gib den Code ein: <strong>9 3 1</strong>.</li>
+          <li>Die Aufzugstüren öffnen sich und führen dich in einen Übergangsbereich, in dem eine M.E.G.-Sendung abgespielt wird.</li>
+        </ul>
+
+        <h2>Teil 4: Lore zur Zivilisation der M.E.G.</h2>
+        <p>Während der Fahrt zeigt ein Monitor eine Nachricht der <strong>M.E.G. (Major Explorer Group)</strong>. Sie heißen dich in ihrer „Zivilisation“ willkommen und erklären ihr Ziel, sichere, bewohnbare Räume innerhalb der Backrooms zu schaffen. Dieser Aufzug wirkt als Brücke zwischen den chaotischen äußeren Levels und den organisierten M.E.G.-Sektoren.</p>
+
+        <div class="guide-box">
+          <h4>Technischer Hinweis:</h4>
+          <p>In älteren Versionen des Spiels konnten Spielerinnen und Spieler bestimmte Hinweise auf den M.E.G.-Bildschirmen anklicken, um direkt in „sichere“ Sektoren zu springen. In der aktuellen Version dient dies vor allem als Story-Moment und als Einstieg in die letzten Herausforderungen.</p>
+        </div>
+
+        <p>Von hier aus bist du bereit, dich den letzten Phasen deiner Flucht zuzuwenden.</p>
+      `
+    }
 ]

@@ -2069,7 +2069,7 @@ export default [
   
   {
     id: 20,
-    title: 'Escape the Backrooms: Level 10 (The Fields) & Level 3999',
+    title: 'Escape the Backrooms Level 10 Guide: Wheat Field Shortcut to Arcade',
     pageTitle: 'Level 10 Guide: Cornfields, Faceless Bell & Fence-Skip Glitch',
     addressBar: 'level-10-the-fields-and-arcade-guide',
     description: 'Conquer the endless cornfields of Level 10. Learn to optimize graphics for better visibility, escape the Faceless Bell, and use the fence bug to safely reach Level 3999.',
@@ -2100,7 +2100,7 @@ export default [
       <p><strong>Level 10</strong> is a vast cornfield under an eternal sunset. The main danger here isn't just getting lost, but the "Faceless Bells" that lurk within the tall stalks.</p>
 
       <h2>Level 10 Cornfields & Arcade Walkthrough Video</h2>
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VCNPh9_dLZI" allowfullscreen></iframe>
       
       <h3>Video Highlights:</h3>
       <ul>
@@ -2148,6 +2148,83 @@ export default [
 
       <p>Once inside Level 3999, you have reached a safe checkpoint before the next set of challenges begins.</p>
     `
+},
+
+{
+  id: 21,
+  title: 'Escape the Backrooms Level 3999 Guide: Arcade Ticket Location & Code',
+  pageTitle: 'Level 3999 Guide: Arcade Hub, Ticket Code & Secret Elevator',
+  addressBar: 'level-3999-the-arcade-guide',
+  description: 'Explore Level 3999, the neon-lit Arcade hub. Learn how to find the secret ticket code, unlock the elevator, and discover the requirements for the True Ending.',
+  imageUrl: '/images/levels/level-21.webp',
+  imageAlt: 'Level 3999 - The Neon Arcade Hub in Escape the Backrooms',
+  category: 'Main Levels',
+  isHome: false,
+  sideBarInfo: {
+    name: 'Level 3999 (The Arcade)',
+    difficulty: 'Safe',
+    objectives: 'Explore the Arcade hub, locate the prize ticket, and enter the password into the secret elevator.'
+  },
+  featured: [
+    {
+      title: 'Level 10',
+      description: 'The Fields – the previous level leading to the Arcade.',
+      imageUrl: '/images/levels/level-20.webp',
+      imageAlt: 'Level 10 - The Fields',
+      addressBar: 'level-10-the-fields-and-arcade-guide'
+    }
+  ],
+  seo: {
+    title: 'Level 3999 Arcade Guide - Escape the Backrooms Walkthrough',
+    description: 'Find the ticket code and unlock the secret elevator in Level 3999. Complete guide to the Arcade hub and True Ending requirements.',
+    keywords: 'Level 3999, The Arcade, Escape the Backrooms, Ticket Code, 931, True Ending, M.E.G., Elevator Puzzle'
+  },
+  detailsHtml: `
+    <p><strong>Level 3999</strong>, also known as "The Arcade," serves as a massive, neon-drenched hub. Unlike the previous levels, this area is generally safe and acts as a transition point and a place to unlock special endings.</p>
+
+    <h2>Level 3999: The Arcade Walkthrough Video</h2>
+    <iframe src="https://www.youtube.com/embed/HGS4_EGr1m4" allowfullscreen></iframe>
+    
+    <h3>Video Highlights:</h3>
+    <ul>
+      <li><strong>00:05:</strong> Exploring the Hub – Navigating the arcade machines.</li>
+      <li><strong>00:15:</strong> The True Ending – Understanding the requirements for the secret ending.</li>
+      <li><strong>00:23:</strong> The Ticket Location – Finding the hidden code.</li>
+      <li><strong>00:40:</strong> The Elevator Puzzle – Entering code 931 to proceed.</li>
+    </ul>
+
+    <h2>Part 1: The Safe Zone & True Ending</h2>
+    <p>Level 3999 is a safe haven filled with retro arcade machines and vaporwave aesthetics. It is a critical location for players aiming for completion.</p>
+    <div class="alert-box tip">
+      <strong>THE TRUE ENDING:</strong> To unlock the secret "New Ending" at Level 3999, you must have successfully completed <strong>all previous levels</strong>. If you have skipped levels using glitches, the ending may remain locked.
+    </div>
+
+    <h2>Part 2: Finding the Prize Ticket</h2>
+    <p>To progress further into the M.E.G. controlled areas, you need a specific access code found on a prize ticket.</p>
+    <ul>
+      <li>Head toward the back areas of the arcade, past the rows of gaming cabinets.</li>
+      <li>Look for a small room or counter area containing various items.</li>
+      <li><strong>The Code:</strong> Pick up the ticket. The number written on it is <strong>931</strong>. This code is essential for the next step.</li>
+    </ul>
+
+    <h2>Part 3: The Secret Elevator</h2>
+    <p>Once you have the code <strong>931</strong>, locate the high-tech elevator near the neon pillars.</p>
+    <ul>
+      <li>Interact with the keypad next to the elevator doors.</li>
+      <li>Input the code: <strong>9 3 1</strong>.</li>
+      <li>The elevator doors will open, leading you to a transition space where an M.E.G. broadcast will play.</li>
+    </ul>
+
+    <h2>Part 4: M.E.G. Civilization Lore</h2>
+    <p>As you ride the elevator, a monitor will display a message from the <strong>M.E.G. (Major Explorer Group)</strong>. They welcome you to their "civilization" and explain their goal of creating safe, habitable spaces within the Backrooms. This elevator acts as a bridge between the chaotic outer levels and the organized M.E.G. sectors.</p>
+    
+    <div class="guide-box">
+      <h4>Technical Note:</h4>
+      <p>In older versions of the game, players could click specific prompts on the M.E.G. screens to jump directly to "Safety" sectors. In the current version, this serves primarily as a story beat and a gateway to the final challenges.</p>
+    </div>
+
+    <p>From here, you are ready to move toward the final stages of your escape journey.</p>
+  `
 }
 
 

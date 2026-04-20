@@ -2040,7 +2040,7 @@ export default [
 
   {
     "id": 20,
-    "title": "Escape the Backrooms : Niveau 10 (The Fields) & Niveau 3999",
+    "title": "Escape the Backrooms Level 10 Guide: Wheat Field Shortcut to Arcade",
     "pageTitle": "Guide Niveau 10 : Champs de maïs, Faceless Bell & Glitch du saut de barrière",
     "addressBar": "guide-niveau-10-les-champs-et-arcade",
     "description": "Conquérez les champs de maïs infinis du Niveau 10. Apprenez à optimiser les graphismes pour une meilleure visibilité, à échapper à la Faceless Bell et à utiliser le bug de la barrière pour atteindre le Niveau 3999 en toute sécurité.",
@@ -2071,7 +2071,7 @@ export default [
       <p>Le <strong>Niveau 10</strong> est un vaste champ de maïs sous un coucher de soleil éternel. Le danger principal n'est pas seulement de s'y perdre, mais aussi les « Faceless Bells » qui rôdent parmi les hautes tiges.</p>
 
       <h2>Vidéo de soluce du Niveau 10 (Champs de maïs et Arcade)</h2>
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VCNPh9_dLZI" allowfullscreen></iframe>
       
       <h3>Points clés de la vidéo :</h3>
       <ul>
@@ -2118,6 +2118,83 @@ export default [
       </ul>
 
       <p>Une fois à l'intérieur du Niveau 3999, vous avez atteint un point de passage sûr avant le début de la prochaine série de défis.</p>
+    `
+  },
+
+  {
+    "id": 21,
+    "title": "Escape the Backrooms – Guide du Niveau 3999 : ticket d'arcade, emplacement & code",
+    "pageTitle": "Guide Niveau 3999 : hub Arcade, code du ticket & ascenseur secret",
+    "addressBar": "guide-niveau-3999-larcade",
+    "description": "Explorez le Niveau 3999, le hub néon de l'Arcade. Trouvez le code secret du ticket, déverrouillez l'ascenseur et découvrez les conditions de la Vraie Fin.",
+    "imageUrl": "/images/levels/level-21.webp",
+    "imageAlt": "Niveau 3999 – Le hub néon de l'Arcade dans Escape the Backrooms",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 3999 (The Arcade)",
+      "difficulty": "Sûr",
+      "objectives": "Explorer le hub de l'Arcade, localiser le ticket à prix et saisir le mot de passe dans l'ascenseur secret."
+    },
+    "featured": [
+      {
+        "title": "Niveau 10",
+        "description": "The Fields – le niveau précédent menant à l'Arcade.",
+        "imageUrl": "/images/levels/level-20.webp",
+        "imageAlt": "Niveau 10 – The Fields",
+        "addressBar": "guide-niveau-10-les-champs-et-arcade"
+      }
+    ],
+    "seo": {
+      "title": "Guide Niveau 3999 (Arcade) – Walkthrough Escape the Backrooms",
+      "description": "Trouvez le code du ticket et ouvrez l'ascenseur secret au Niveau 3999. Guide complet du hub Arcade et des exigences de la Vraie Fin.",
+      "keywords": "Niveau 3999, The Arcade, Escape the Backrooms, code ticket, 931, Vraie Fin, M.E.G., énigme ascenseur"
+    },
+    "detailsHtml": `
+      <p>Le <strong>Niveau 3999</strong>, aussi appelé « The Arcade », est un hub immense baigné de néons. Contrairement aux niveaux précédents, cette zone est en général sûre : elle sert de transition et de lieu pour débloquer des fins spéciales.</p>
+
+      <h2>Niveau 3999 : The Arcade – vidéo soluce</h2>
+      <iframe src="https://www.youtube.com/embed/HGS4_EGr1m4" allowfullscreen></iframe>
+
+      <h3>Points forts de la vidéo :</h3>
+      <ul>
+        <li><strong>00:05 :</strong> Explorer le hub – se repérer entre les bornes d'arcade.</li>
+        <li><strong>00:15 :</strong> La Vraie Fin – comprendre les conditions de la fin secrète.</li>
+        <li><strong>00:23 :</strong> Emplacement du ticket – trouver le code caché.</li>
+        <li><strong>00:40 :</strong> Énigme de l'ascenseur – saisir le code <strong>931</strong> pour continuer.</li>
+      </ul>
+
+      <h2>Partie 1 : zone sûre & Vraie Fin</h2>
+      <p>Le Niveau 3999 est un havre de paix rempli de bornes rétro et d'esthétique vaporwave. C'est un lieu clé pour les joueurs qui visent le contenu complet.</p>
+      <div class="alert-box tip">
+        <strong>LA VRAIE FIN :</strong> pour débloquer la fin secrète « New Ending » au Niveau 3999, vous devez avoir <strong>terminé avec succès tous les niveaux précédents</strong>. Si vous avez sauté des niveaux grâce à des glitchs, la fin peut rester verrouillée.
+      </div>
+
+      <h2>Partie 2 : trouver le ticket à prix</h2>
+      <p>Pour avancer vers les zones contrôlées par la M.E.G., il vous faut un code d'accès précis, indiqué sur un ticket à prix.</p>
+      <ul>
+        <li>Dirigez-vous vers l'arrière de l'arcade, au-delà des rangées de bornes.</li>
+        <li>Cherchez une petite salle ou un comptoir avec divers objets.</li>
+        <li><strong>Le code :</strong> ramassez le ticket. Le numéro inscrit est <strong>931</strong>. Ce code est indispensable pour la suite.</li>
+      </ul>
+
+      <h2>Partie 3 : l'ascenseur secret</h2>
+      <p>Une fois le code <strong>931</strong> en votre possession, repérez l'ascenseur high-tech près des piliers néon.</p>
+      <ul>
+        <li>Interagissez avec le clavier à côté des portes de l'ascenseur.</li>
+        <li>Saisissez le code : <strong>9 3 1</strong>.</li>
+        <li>Les portes s'ouvrent et vous mènent vers un espace de transition où une diffusion M.E.G. est jouée.</li>
+      </ul>
+
+      <h2>Partie 4 : lore de la civilisation M.E.G.</h2>
+      <p>Pendant la montée, un écran affiche un message de la <strong>M.E.G. (Major Explorer Group)</strong>. Ils vous accueillent dans leur « civilisation » et expliquent leur objectif : créer des espaces sûrs et habitables dans les Backrooms. Cet ascenseur fait le pont entre les niveaux extérieurs chaotiques et les secteurs organisés de la M.E.G.</p>
+
+      <div class="guide-box">
+        <h4>Note technique :</h4>
+        <p>Dans d'anciennes versions du jeu, on pouvait cliquer sur certains éléments des écrans M.E.G. pour sauter directement vers des secteurs « sûrs ». Dans la version actuelle, cela sert surtout de moment narratif et de passage vers les derniers défis.</p>
+      </div>
+
+      <p>À partir d'ici, vous êtes prêt à affronter les dernières étapes de votre évasion.</p>
     `
   }
 
