@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onUnmounted, shallowRef } from 'vue'
 
 const props = defineProps({
   /** sidebar: 300×250 | leaderboard: 728×90 | native: 原生横幅（每页仅一处有效容器 id） */
@@ -10,7 +10,7 @@ const props = defineProps({
   },
 })
 
-const root = ref(null)
+const root = shallowRef(null)
 
 const NATIVE_CONTAINER_ID = 'container-891ef749e6c0675d4b64b98d4922ecad'
 
@@ -76,24 +76,34 @@ function mountNative(el) {
   ])
 }
 
-onMounted(() => {
-  const el = root.value
-  if (!el) return
+function mountAd(el) {
   el.innerHTML = ''
-
   if (props.variant === 'sidebar') mountSidebar(el)
   else if (props.variant === 'leaderboard') mountLeaderboard(el)
   else mountNative(el)
-})
+}
+
+function bindRoot(el) {
+  if (!el) {
+    root.value = null
+    return
+  }
+  if (el.dataset.adMounted === '1') return
+  el.dataset.adMounted = '1'
+  root.value = el
+  mountAd(el)
+}
 
 onUnmounted(() => {
   const el = root.value
   if (!el) return
   el.innerHTML = ''
+  delete el.dataset.adMounted
   if (props.variant === 'native' && el.id === NATIVE_CONTAINER_ID) el.removeAttribute('id')
+  root.value = null
 })
 </script>
 
 <template>
-  <div ref="root" class="ad-slot-root" :class="`ad-slot-root--${variant}`" />
+  <div :ref="bindRoot" class="ad-slot-root" :class="`ad-slot-root--${variant}`" />
 </template>

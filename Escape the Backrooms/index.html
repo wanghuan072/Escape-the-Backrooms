@@ -66,38 +66,28 @@
     }
     </script>
 
+    <!-- 广告：popunder（全站，立即加载） -->
+    <script
+      async
+      src="https://pl29633105.effectivecpmnetwork.com/8e/03/52/8e035273b08267f4adb8f1fd96d3e90f.js"
+    ></script>
+
     <script>
       window.addEventListener('load', function () {
-      setTimeout(function () {
-        // 延迟加载Google Analytics
-        const gtagScript = document.createElement('script');
-        gtagScript.async = true;
-        gtagScript.defer = true;
-        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-BFYQB388T1';
-        document.head.appendChild(gtagScript);
+        setTimeout(function () {
+          // 延迟加载 Google Analytics（非广告）
+          const gtagScript = document.createElement('script');
+          gtagScript.async = true;
+          gtagScript.defer = true;
+          gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-BFYQB388T1';
+          document.head.appendChild(gtagScript);
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-BFYQB388T1');
-
-
-        // 延迟加载广告
-        // const adsScript = document.createElement('script');
-        // adsScript.async = true;
-        // adsScript.defer = true;
-        // adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042701865163735';
-        // adsScript.crossOrigin = 'anonymous';
-        // document.head.appendChild(adsScript);
-
-        // 广告：popunder（全站，仅加载一次）
-        const popunderScript = document.createElement('script');
-        popunderScript.src =
-          'https://pl29633105.effectivecpmnetwork.com/8e/03/52/8e035273b08267f4adb8f1fd96d3e90f.js';
-        popunderScript.async = true;
-        document.body.appendChild(popunderScript);
-      }, 3000);
-    });
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-BFYQB388T1');
+        }, 3000);
+      });
     </script>
 
   </head>
