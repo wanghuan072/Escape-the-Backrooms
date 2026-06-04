@@ -1,4 +1,4 @@
-import { AD_SNIPPETS } from './snippets.js'
+import { AD_SNIPPETS, NATIVE_AD } from './snippets.js'
 
 let loadChain = Promise.resolve()
 
@@ -11,15 +11,24 @@ function runQueued(task) {
   )
 }
 
+/** 解析实际投放：PC 全宽 728；移动端全宽 300；侧边栏始终 300 */
+export function resolveBannerVariant(variant, isMobile) {
+  if (variant === 'sidebar') return 'sidebar'
+  if (variant === 'leaderboard' && isMobile) return 'sidebar'
+  if (variant === 'leaderboard') return 'leaderboard'
+  return null
+}
+
 /**
- * 在主文档中、锚点元素前插入与后台一致的两段 script（不用 iframe）
+ * highperformanceformat：atOptions + invoke.js，插在锚点前
  */
-export function mountBannerAd(anchorEl, variant) {
-  const spec = AD_SNIPPETS[variant]
+export function mountBannerAd(anchorEl, variant, isMobile = false) {
+  const key = resolveBannerVariant(variant, isMobile)
+  const spec = key ? AD_SNIPPETS[key] : null
   if (!anchorEl?.parentNode || !spec) return () => {}
 
   const parent = anchorEl.parentNode
-  const scripts = []
+  const nodes = []
 
   runQueued((done) => {
     const opts = document.createElement('script')
@@ -39,10 +48,45 @@ export function mountBannerAd(anchorEl, variant) {
 
     parent.insertBefore(opts, anchorEl)
     parent.insertBefore(invoke, anchorEl)
-    scripts.push(opts, invoke)
+    nodes.push(opts, invoke)
   })
 
   return () => {
-    scripts.forEach((node) => node.remove())
+    nodes.forEach((node) => node.remove())
+  }
+}
+
+/**
+ * 原生横幅（每页首个全宽位）
+ * <script async src="...invoke.js">
+ * <div id="container-...">
+ */
+export function mountNativeAd(anchorEl) {
+  const wrap = anchorEl?.parentElement
+  if (!wrap) return () => {}
+
+  const existing = document.getElementById(NATIVE_AD.containerId)
+  if (existing && !wrap.contains(existing)) return () => {}
+
+  const nodes = []
+
+  const script = document.createElement('script')
+  script.type = 'text/javascript'
+  script.async = true
+  script.defer = true
+  script.setAttribute('data-cfasync', 'false')
+  script.dataset.adPart = 'native-invoke'
+  script.src = NATIVE_AD.invokeSrc
+
+  const container = document.createElement('div')
+  container.id = NATIVE_AD.containerId
+  container.dataset.adPart = 'native-container'
+
+  wrap.insertBefore(script, anchorEl)
+  wrap.insertBefore(container, anchorEl)
+  nodes.push(script, container)
+
+  return () => {
+    nodes.forEach((node) => node.remove())
   }
 }

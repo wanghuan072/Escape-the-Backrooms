@@ -1,8 +1,8 @@
 /**
  * 与广告后台提供的代码完全一致（勿改 key / URL）
- * native 暂用 728 代替：effectivecpmnetwork 对未审核域名常返回 403
  */
 export const AD_SNIPPETS = {
+  /** 侧边栏 & 移动端全宽：300×250 */
   sidebar: {
     atOptions: `atOptions = {
     'key' : '3751be4b9ce0480df348da850f20d44b',
@@ -13,7 +13,10 @@ export const AD_SNIPPETS = {
   };`,
     invokeSrc:
       'https://www.highperformanceformat.com/3751be4b9ce0480df348da850f20d44b/invoke.js',
+    width: 300,
+    height: 250,
   },
+  /** PC 全宽：728×90 */
   leaderboard: {
     atOptions: `atOptions = {
     'key' : 'ab7db8cc8b466411697f6cd47e0fd01a',
@@ -24,17 +27,13 @@ export const AD_SNIPPETS = {
   };`,
     invokeSrc:
       'https://www.highperformanceformat.com/ab7db8cc8b466411697f6cd47e0fd01a/invoke.js',
+    width: 728,
+    height: 90,
   },
-  /** 原 effectivecpm 原生位：后台 403 时先用 728 顶位 */
-  native: {
-    atOptions: `atOptions = {
-    'key' : 'ab7db8cc8b466411697f6cd47e0fd01a',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };`,
-    invokeSrc:
-      'https://www.highperformanceformat.com/ab7db8cc8b466411697f6cd47e0fd01a/invoke.js',
-  },
+}
+
+export const NATIVE_AD = {
+  invokeSrc:
+    'https://pl29633107.effectivecpmnetwork.com/891ef749e6c0675d4b64b98d4922ecad/invoke.js',
+  containerId: 'container-891ef749e6c0675d4b64b98d4922ecad',
 }

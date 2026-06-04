@@ -27,13 +27,13 @@
       </div>
     </section>
 
-    <!-- 广告：banner_728（728×90） -->
+    <!-- 广告：banner_native（原生横幅） -->
 
 
     <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-      <AdSlot variant="leaderboard" />
+      <AdSlot variant="native" />
 
 
     </aside>
@@ -46,13 +46,13 @@
           <main class="main-content">
             <div class="content-body v-html-style" v-html="level.detailsHtml"></div>
 
-            <!-- 广告：banner_native（原生横幅） -->
+            <!-- 广告：banner_728（728×90，PC）/ 300×250（移动） -->
 
 
             <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-              <AdSlot variant="native" />
+              <AdSlot variant="leaderboard" />
 
 
             </aside>

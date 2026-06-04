@@ -1,4 +1,4 @@
-/* 广告外层：不撑破移动端，iframe 由 invoke.js 插入在 .ad-slot-anchor 之前 */
+/* 广告外层 */
 .ad-slot-wrap {
   width: 100%;
   max-width: 100%;
@@ -11,11 +11,25 @@
 
 .ad-slot-wrap--sidebar {
   max-width: min(300px, 100%);
+  min-height: 250px;
 }
 
-.ad-slot-wrap--leaderboard,
-.ad-slot-wrap--native {
+/* PC 全宽 728×90 */
+.ad-slot-wrap--leaderboard {
   max-width: min(728px, 100%);
+  min-height: 90px;
+}
+
+/* 原生横幅 */
+.ad-slot-wrap--native {
+  max-width: 100%;
+  min-height: 90px;
+}
+
+.ad-slot-wrap--native [id^='container-'] {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
 }
 
 .ad-slot-anchor {
@@ -27,7 +41,6 @@
   font-size: 0;
 }
 
-/* invoke.js 生成的 iframe / 容器 */
 .ad-slot-wrap > iframe,
 .ad-slot-wrap > div:not(.ad-slot-anchor) {
   display: block;
@@ -37,16 +50,6 @@
   margin-inline: auto;
 }
 
-.ad-slot-wrap--sidebar {
-  min-height: 250px;
-}
-
-.ad-slot-wrap--leaderboard,
-.ad-slot-wrap--native {
-  min-height: 90px;
-}
-
-/* 页面里包裹广告的 aside，避免 100% + 固定 min-width 横向溢出 */
 aside.container:has(.ad-slot-wrap) {
   width: 100% !important;
   max-width: 100% !important;
@@ -55,11 +58,21 @@ aside.container:has(.ad-slot-wrap) {
   box-sizing: border-box;
 }
 
+/* 移动端：全宽 banner 改为 300×250（leaderboard 位） */
 @media (max-width: 768px) {
-  .ad-slot-wrap--sidebar,
   .ad-slot-wrap--leaderboard,
+  .ad-slot-wrap--mobile-banner {
+    max-width: min(300px, 100%);
+    min-height: 250px;
+  }
+
+  .ad-slot-wrap--sidebar {
+    max-width: 100%;
+  }
+
   .ad-slot-wrap--native {
     max-width: 100%;
+    min-height: 100px;
   }
 
   .ad-slot-wrap > iframe,
