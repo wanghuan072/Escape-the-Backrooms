@@ -3,8 +3,8 @@
     <div class="header-container">
       <div class="header-wrap">
         <div class="logo">
-          <a :href="getLocalizedPath('/')" class="logo-link">
-            <img src="/images/logo.webp" alt="Escape the Backrooms" class="logo-image">
+          <a :href="getLocalizedPath('/')" class="logo-link" aria-label="Escape the Backrooms">
+            <img src="/images/logo.webp" alt="" class="logo-image">
             <span class="logo-text">Escape the Backrooms</span>
           </a>
         </div>
@@ -24,11 +24,36 @@
             </button>
           </div>
         </div>
-        <button class="mobile-menu-toggle" @click="toggleMobileMenu" aria-label="Toggle menu" :class="{ active: isMobileMenuOpen }">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
+        <div class="header-actions">
+          <button class="mobile-menu-toggle" @click="toggleMobileMenu" aria-label="Toggle menu" :class="{ active: isMobileMenuOpen }">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div class="language-switcher" ref="langSwitcherRef">
+            <button 
+              class="language-button" 
+              @click="toggleLangDropdown"
+              :aria-label="`Current language: ${currentLanguageName}`"
+            >
+              <span class="language-text">{{ currentLanguageName }}</span>
+              <svg class="language-arrow" :class="{ open: isLangDropdownOpen }" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="language-dropdown" :class="{ open: isLangDropdownOpen }" v-if="isLangDropdownOpen">
+              <button
+                v-for="lang in languages"
+                :key="lang.code"
+                class="language-option"
+                :class="{ active: currentLocale === lang.code }"
+                @click="selectLanguage(lang.code)"
+              >
+                {{ lang.name }}
+              </button>
+            </div>
+          </div>
+        </div>
         <nav class="nav" :class="{ open: isMobileMenuOpen }">
           <div class="mobile-search">
             <div class="search-wrapper">
@@ -53,29 +78,6 @@
           <!-- <a :href="getLocalizedPath('/wiki')" class="nav-link" @click="closeMobileMenu">Wiki</a> -->
           <!-- <a :href="getLocalizedPath('/guides')" class="nav-link" @click="closeMobileMenu">Guides</a> -->
         </nav>
-        <div class="language-switcher" ref="langSwitcherRef">
-          <button 
-            class="language-button" 
-            @click="toggleLangDropdown"
-            :aria-label="`Current language: ${currentLanguageName}`"
-          >
-            <span class="language-text">{{ currentLanguageName }}</span>
-            <svg class="language-arrow" :class="{ open: isLangDropdownOpen }" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="language-dropdown" :class="{ open: isLangDropdownOpen }" v-if="isLangDropdownOpen">
-            <button
-              v-for="lang in languages"
-              :key="lang.code"
-              class="language-option"
-              :class="{ active: currentLocale === lang.code }"
-              @click="selectLanguage(lang.code)"
-            >
-              {{ lang.name }}
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   </header>
@@ -200,6 +202,40 @@ const closeMobileMenu = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.logo {
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* 桌面端：Logo | 搜索 | 导航 | 语言 */
+@media (min-width: 769px) {
+  .header-search {
+    flex: 1;
+    max-width: 400px;
+    order: 1;
+  }
+
+  .nav {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .header-actions {
+    order: 3;
+    margin-left: 0.5rem;
+  }
 }
 
 .header-search {
@@ -271,6 +307,7 @@ const closeMobileMenu = () => {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-width: 0;
 }
 
 .logo-link img {
@@ -280,10 +317,11 @@ const closeMobileMenu = () => {
 }
 
 .logo-text {
-  
   color: #ffd700;
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .logo-link:hover {
@@ -379,31 +417,75 @@ const closeMobileMenu = () => {
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
+  .header {
+    padding: 0.65rem 0;
+  }
+
+  .header-container {
+    padding: 0 12px;
+  }
+
   .header-wrap {
     flex-wrap: nowrap;
-    gap: 1rem;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .header-actions {
+    margin-left: auto;
   }
 
   .logo-link img {
-    width: 40px;
+    width: 36px;
+    flex-shrink: 0;
   }
 
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 0.72rem;
+    line-height: 1.15;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .logo-link {
+    gap: 0.35rem;
+    min-width: 0;
   }
 
   .mobile-menu-toggle {
     display: flex;
-    order: 2;
+    padding: 0.35rem;
   }
 
   .header-search {
     display: none;
   }
 
+  .language-button {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.8rem;
+    gap: 0.35rem;
+  }
+
+  .language-text {
+    max-width: 4.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .nav {
     position: fixed;
-    top: 70px;
+    top: 56px;
     left: 0;
     right: 0;
     background: rgba(10, 10, 10, 0.98);
@@ -454,7 +536,6 @@ const closeMobileMenu = () => {
 /* Language Switcher */
 .language-switcher {
   position: relative;
-  margin-left: 1rem;
 }
 
 .language-button {
@@ -545,24 +626,33 @@ const closeMobileMenu = () => {
   font-weight: 600;
 }
 
-/* iPad端 - 1024px */
-@media (max-width: 1024px) {
-  .language-switcher {
-    margin-left: 0.5rem;
+/* 小屏仍显示站点名（平板） */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .logo-text {
+    font-size: 1.15rem;
+  }
+
+  .logo-link img {
+    width: 44px;
   }
 }
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
-  .language-switcher {
-    order: 3;
-    margin-left: 0;
-    margin-right: auto;
+  .language-dropdown {
+    right: 0;
+    left: auto;
+  }
+}
+
+/* 较宽手机：标题略大一点 */
+@media (min-width: 480px) and (max-width: 768px) {
+  .logo-text {
+    font-size: 0.82rem;
   }
 
-  .language-dropdown {
-    right: auto;
-    left: 0;
+  .logo-link img {
+    width: 40px;
   }
 }
 </style>
