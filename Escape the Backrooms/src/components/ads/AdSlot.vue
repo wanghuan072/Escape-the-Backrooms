@@ -66,13 +66,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div
-    class="ad-slot-wrap"
-    :class="[
-      `ad-slot-wrap--${variant}`,
-      { 'ad-slot-wrap--mobile-banner': variant === 'leaderboard' },
-    ]"
-  >
-    <div :ref="bindRoot" class="ad-slot-anchor" aria-hidden="true" />
+  <div>
+    <div :ref="bindRoot" aria-hidden="true" />
   </div>
 </template>
