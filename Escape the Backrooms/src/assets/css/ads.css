@@ -1,17 +1,74 @@
-/* 广告锚点：仅占位，实际 iframe 由 invoke.js 插在锚点前方 */
+/* 广告外层：不撑破移动端，iframe 由 invoke.js 插入在 .ad-slot-anchor 之前 */
+.ad-slot-wrap {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin-inline: auto;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ad-slot-wrap--sidebar {
+  max-width: min(300px, 100%);
+}
+
+.ad-slot-wrap--leaderboard,
+.ad-slot-wrap--native {
+  max-width: min(728px, 100%);
+}
+
 .ad-slot-anchor {
   display: block;
-  margin-inline: auto;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   line-height: 0;
   font-size: 0;
 }
 
-.ad-slot-anchor--sidebar {
-  max-width: 300px;
+/* invoke.js 生成的 iframe / 容器 */
+.ad-slot-wrap > iframe,
+.ad-slot-wrap > div:not(.ad-slot-anchor) {
+  display: block;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin-inline: auto;
 }
 
-.ad-slot-anchor--leaderboard,
-.ad-slot-anchor--native {
-  width: 100%;
-  max-width: 728px;
+.ad-slot-wrap--sidebar {
+  min-height: 250px;
+}
+
+.ad-slot-wrap--leaderboard,
+.ad-slot-wrap--native {
+  min-height: 90px;
+}
+
+/* 页面里包裹广告的 aside，避免 100% + 固定 min-width 横向溢出 */
+aside.container:has(.ad-slot-wrap) {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .ad-slot-wrap--sidebar,
+  .ad-slot-wrap--leaderboard,
+  .ad-slot-wrap--native {
+    max-width: 100%;
+  }
+
+  .ad-slot-wrap > iframe,
+  .ad-slot-wrap > div:not(.ad-slot-anchor) {
+    max-width: 100% !important;
+  }
+
+  aside.container:has(.ad-slot-wrap) {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
 }

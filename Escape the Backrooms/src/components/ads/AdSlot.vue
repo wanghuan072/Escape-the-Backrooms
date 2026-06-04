@@ -1,7 +1,6 @@
 <script setup>
-import { computed, onUnmounted, shallowRef } from 'vue'
+import { onUnmounted, shallowRef } from 'vue'
 import { mountBannerAd } from './loadAd.js'
-import { AD_SNIPPETS } from './snippets.js'
 
 const props = defineProps({
   variant: {
@@ -11,7 +10,6 @@ const props = defineProps({
   },
 })
 
-const spec = computed(() => AD_SNIPPETS[props.variant])
 const root = shallowRef(null)
 let teardown = null
 
@@ -38,14 +36,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div
-    :ref="bindRoot"
-    class="ad-slot-anchor"
-    :class="`ad-slot-anchor--${variant}`"
-    :style="{
-      minWidth: `${spec.minWidth}px`,
-      minHeight: `${spec.minHeight}px`,
-    }"
-    aria-hidden="true"
-  />
+  <div class="ad-slot-wrap" :class="`ad-slot-wrap--${variant}`">
+    <div :ref="bindRoot" class="ad-slot-anchor" aria-hidden="true" />
+  </div>
 </template>
