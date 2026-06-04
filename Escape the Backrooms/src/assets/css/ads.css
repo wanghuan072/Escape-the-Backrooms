@@ -1,24 +1,17 @@
-/* 页内广告 iframe 容器（不控制广告内部样式） */
-.ad-slot-iframe {
+/* 广告锚点：仅占位，实际 iframe 由 invoke.js 插在锚点前方 */
+.ad-slot-anchor {
   display: block;
   margin-inline: auto;
-  border: 0;
-  max-width: 100%;
-  background: transparent;
+  line-height: 0;
+  font-size: 0;
 }
 
-.ad-slot-iframe--sidebar {
-  width: 300px;
-  height: 250px;
+.ad-slot-anchor--sidebar {
+  max-width: 300px;
 }
 
-.ad-slot-iframe--leaderboard {
+.ad-slot-anchor--leaderboard,
+.ad-slot-anchor--native {
   width: 100%;
   max-width: 728px;
-  height: 90px;
-}
-
-.ad-slot-iframe--native {
-  width: 100%;
-  min-height: 90px;
 }

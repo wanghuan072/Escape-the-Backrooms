@@ -1,6 +1,9 @@
 <script setup>
+import { computed, onUnmounted, shallowRef } from 'vue'
+import { mountBannerAd } from './loadAd.js'
+import { AD_SNIPPETS } from './snippets.js'
+
 const props = defineProps({
-  /** sidebar: 300×250 | leaderboard: 728×90 | native: 原生横幅 */
   variant: {
     type: String,
     required: true,
@@ -8,41 +11,41 @@ const props = defineProps({
   },
 })
 
-const IFRAME_CONFIG = {
-  sidebar: {
-    src: '/ads/banner-300x250.html',
-    width: 300,
-    height: 250,
-    title: 'Advertisement 300x250',
-  },
-  leaderboard: {
-    src: '/ads/banner-728x90.html',
-    width: 728,
-    height: 90,
-    title: 'Advertisement 728x90',
-  },
-  native: {
-    src: '/ads/native-banner.html',
-    width: '100%',
-    height: 120,
-    title: 'Advertisement native',
-  },
+const spec = computed(() => AD_SNIPPETS[props.variant])
+const root = shallowRef(null)
+let teardown = null
+
+function bindRoot(el) {
+  if (!el) {
+    teardown?.()
+    teardown = null
+    root.value = null
+    return
+  }
+  if (el.dataset.adMounted === '1') return
+  el.dataset.adMounted = '1'
+  root.value = el
+  teardown?.()
+  teardown = mountBannerAd(el, props.variant)
 }
 
-const config = IFRAME_CONFIG[props.variant]
+onUnmounted(() => {
+  teardown?.()
+  teardown = null
+  const el = root.value
+  if (el) delete el.dataset.adMounted
+})
 </script>
 
 <template>
-  <iframe
-    class="ad-slot-iframe"
-    :class="`ad-slot-iframe--${variant}`"
-    :src="config.src"
-    :title="config.title"
-    :width="config.width"
-    :height="config.height"
-    frameborder="0"
-    scrolling="no"
-    loading="eager"
-    referrerpolicy="no-referrer-when-downgrade"
+  <div
+    :ref="bindRoot"
+    class="ad-slot-anchor"
+    :class="`ad-slot-anchor--${variant}`"
+    :style="{
+      minWidth: `${spec.minWidth}px`,
+      minHeight: `${spec.minHeight}px`,
+    }"
+    aria-hidden="true"
   />
 </template>
