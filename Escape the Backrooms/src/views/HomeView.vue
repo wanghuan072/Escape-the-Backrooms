@@ -58,6 +58,17 @@
           </div>
         </div>
       </div>
+      
+      <!-- 广告：banner_728（728×90） -->
+
+      
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+      
+        <AdSlot variant="leaderboard" />
+
+      
+      </aside>
     </section>
 
     <!-- Featured Levels Section -->
@@ -100,6 +111,17 @@
           </a>
         </div>
       </div>
+
+      <!-- 广告：banner_native（原生横幅） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="native" />
+
+
+      </aside>
     </section>
 
     <!-- Featured Maps Section -->
@@ -142,6 +164,17 @@
           </a>
         </div>
       </div>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
     </section>
 
     <!-- Featured Entities Section -->
@@ -185,6 +218,17 @@
           </div>
         </div>
       </div>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
     </section>
 
     <!-- Game Info Section -->
@@ -233,6 +277,17 @@
           </div>
         </div>
       </div>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
     </section>
 
     <!-- About Section -->
@@ -293,6 +348,17 @@
           </div>
         </div>
       </div>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
     </section>
 
     <!-- FAQ Section -->
@@ -318,6 +384,17 @@
           </div>
         </div>
       </div>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
     </section>
   </div>
 </template>

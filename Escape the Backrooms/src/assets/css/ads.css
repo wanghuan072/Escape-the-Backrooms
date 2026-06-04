@@ -1,0 +1,26 @@
+/* 页内广告容器（不控制广告 iframe 内部样式） */
+.ad-slot-root {
+  margin-inline: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-slot-root--sidebar {
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 250px;
+}
+
+.ad-slot-root--leaderboard {
+  width: 100%;
+  max-width: 728px;
+  min-width: 300px;
+  min-height: 90px;
+}
+
+.ad-slot-root--native {
+  width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+}

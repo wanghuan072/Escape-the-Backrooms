@@ -8,6 +8,17 @@
           <p class="page-subtitle">{{ $t('codesPage.hero.subtitle') }}</p>
         </div>
       </div>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
     </section>
 
     <!-- Solutions Content -->
@@ -40,6 +51,17 @@
             </div>
           </div>
         </div>
+
+        <!-- 广告：banner_native（原生横幅） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="native" />
+
+
+        </aside>
 
         <!-- Level 1 -->
         <div class="level-section">
@@ -80,6 +102,17 @@
             </div>
           </div>
         </div>
+
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
 
         <!-- Level 3 -->
         <div class="level-section">
@@ -138,6 +171,17 @@
           </div>
         </div>
 
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
+
         <!-- The Hub -->
         <div class="level-section">
           <h2 class="level-title">{{ $t('codesPage.levels.hub.title') }}</h2>
@@ -154,6 +198,17 @@
             </div>
           </div>
         </div>
+
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
 
         <!-- Level 4 -->
         <div class="level-section">
@@ -193,6 +248,17 @@
             </div>
           </div>
         </div>
+
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
 
         <!-- Level 5 -->
         <div class="level-section">
@@ -239,6 +305,17 @@
           </div>
         </div>
 
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
+
         <!-- Level 8 -->
         <div class="level-section">
           <h2 class="level-title">{{ $t('codesPage.levels.level8.title') }}</h2>
@@ -254,6 +331,17 @@
             </div>
           </div>
         </div>
+
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
 
         <!-- Other Levels -->
         <div class="level-section">
@@ -275,6 +363,17 @@
             <p class="solution-description" v-html="$t('codesPage.levels.otherLevels.solution2.description')"></p>
           </div>
         </div>
+
+        <!-- 广告：banner_728（728×90） -->
+
+
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+          <AdSlot variant="leaderboard" />
+
+
+        </aside>
       </div>
     </section>
   </div>

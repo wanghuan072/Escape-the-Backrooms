@@ -9,6 +9,17 @@
       </div>
     </section>
 
+    <!-- 广告：banner_728（728×90） -->
+
+
+    <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+      <AdSlot variant="leaderboard" />
+
+
+    </aside>
+
     <section class="levels-content">
       <div class="content-wrapper">
         <!-- Sidebar: Category Navigation & All Levels -->
@@ -30,8 +41,11 @@
                 </a>
               </nav>
             </div>
-
           </div>
+          <!-- 广告：banner_300（侧边栏 300×250） -->
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
         </aside>
 
         <!-- Main Content: Categories -->
@@ -81,6 +95,17 @@
         </main>
       </div>
     </section>
+
+    <!-- 广告：banner_native（原生横幅） -->
+
+
+    <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+      <AdSlot variant="native" />
+
+
+    </aside>
   </div>
 </template>
 
@@ -158,7 +183,7 @@ const scrollToCategory = (category) => {
 .sidebar {
   position: sticky;
   top: 80px; /* Header height + padding */
-  width: 280px;
+  width: 340px;
   flex-shrink: 0;
   max-height: calc(100vh - 100px);
   overflow-y: auto;

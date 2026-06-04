@@ -27,6 +27,17 @@
       </div>
     </section>
 
+    <!-- 广告：banner_728（728×90） -->
+
+
+    <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+      <AdSlot variant="leaderboard" />
+
+
+    </aside>
+
     <!-- Main Content -->
     <section class="detail-content">
       <div class="container">
@@ -34,6 +45,17 @@
           <!-- Left -->
           <main class="main-content">
             <div class="content-body v-html-style" v-html="level.detailsHtml"></div>
+
+            <!-- 广告：banner_native（原生横幅） -->
+
+
+            <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+              <AdSlot variant="native" />
+
+
+            </aside>
             
             <!-- Previous / Next Navigation -->
             <div class="nav-links" v-if="prevLevel || nextLevel">
@@ -60,11 +82,23 @@
                 <span class="nav-arrow">→</span>
               </a>
             </div>
+
+            <!-- 广告：banner_728（728×90） -->
+
+
+            <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+              <AdSlot variant="leaderboard" />
+
+
+            </aside>
           </main>
 
           <!-- Right -->
           <aside class="sidebar">
             <!-- Image Card -->
+             
             <div class="image-card">
               <div class="image-wrapper">
                 <img
@@ -77,6 +111,11 @@
                 <div v-else class="level-image placeholder">{{ level.title }}</div>
               </div>
             </div>
+
+            <!-- 广告：banner_300（侧边栏 300×250） -->
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
 
             <!-- Sidebar Information -->
             <div class="info-card" v-if="level.sideBarInfo">
@@ -94,6 +133,11 @@
                 </div>
               </div>
             </div>
+
+              <!-- 广告：banner_300（侧边栏 300×250） -->
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
 
             <!-- Featured Levels -->
             <div class="info-card" v-if="level.featured && level.featured.length > 0">
@@ -121,6 +165,12 @@
                 </a>
               </div>
             </div>
+
+              <!-- 广告：banner_300（侧边栏 300×250） -->
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
+      
           </aside>
         </div>
       </div>

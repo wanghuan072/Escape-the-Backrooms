@@ -26,6 +26,17 @@
       </div>
     </section>
 
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
+
     <!-- Search Results -->
     <section class="search-results" v-if="searchQuery">
       <div class="container">
@@ -160,6 +171,7 @@
           </div>
         </div>
       </div>
+      
     </section>
 
     <!-- Empty State -->

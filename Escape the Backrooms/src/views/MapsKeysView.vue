@@ -10,6 +10,17 @@
       </div>
     </section>
 
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
+
     <!-- Maps Section -->
     <section class="maps-section">
       <div class="container">
@@ -49,6 +60,17 @@
       </div>
     </section>
 
+      <!-- 广告：banner_native（原生横幅） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="native" />
+
+
+      </aside>
+
     <!-- Keys Section -->
     <section class="keys-section">
       <div class="container">
@@ -65,6 +87,17 @@
             <p class="intro-text">{{ $t('mapsPage.keysSection.introText') }}</p>
           </div>
         </div>
+
+          <!-- 广告：banner_728（728×90） -->
+
+
+          <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+            <AdSlot variant="leaderboard" />
+
+
+          </aside>
 
         <!-- Keys Grid -->
         <div class="keys-grid">
@@ -179,6 +212,17 @@
         </div>
       </div>
     </section>
+
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
   </div>
 </template>
 

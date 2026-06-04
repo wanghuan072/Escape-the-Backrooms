@@ -14,6 +14,17 @@
       </div>
     </section>
 
+      <!-- 广告：banner_728（728×90） -->
+
+
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+        <AdSlot variant="leaderboard" />
+
+
+      </aside>
+
     <!-- Main Content -->
     <section class="detail-content">
       <div class="container">
@@ -34,6 +45,17 @@
               </div>
             </div>
 
+              <!-- 广告：banner_native（原生横幅） -->
+
+
+              <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+                <AdSlot variant="native" />
+
+
+              </aside>
+
             <!-- Map Points -->
             <div class="map-points-container" v-if="map.mapPoints && map.mapPoints.length > 0">
               <div class="map-points-grid">
@@ -51,8 +73,30 @@
               </div>
             </div>
 
+              <!-- 广告：banner_728（728×90） -->
+
+
+              <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+                <AdSlot variant="leaderboard" />
+
+
+              </aside>
+
             <!-- Content Body with v-html -->
             <div class="content-body v-html-style" v-html="map.detailsHtml"></div>
+
+              <!-- 广告：banner_728（728×90） -->
+
+
+              <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+
+
+                <AdSlot variant="leaderboard" />
+
+
+              </aside>
           </main>
 
           <!-- Right: Sidebar -->
@@ -72,6 +116,11 @@
               </div>
             </div>
 
+              <!-- 广告：banner_300（侧边栏 300×250） -->
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
+
             <!-- Information Card -->
             <div class="info-card" v-if="map.category">
               <div class="info-header">
@@ -90,6 +139,11 @@
                 </div>
               </div>
             </div>
+
+              <!-- 广告：banner_300（侧边栏 300×250） -->
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
           </aside>
         </div>
       </div>

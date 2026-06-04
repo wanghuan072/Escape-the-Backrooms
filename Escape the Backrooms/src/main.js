@@ -4,8 +4,12 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
+import AdSlot from '@/components/ads/AdSlot.vue'
+import '@/assets/css/ads.css'
 
 const app = createApp(App)
+
+app.component('AdSlot', AdSlot)
 
 app.use(createPinia())
 app.use(router)
