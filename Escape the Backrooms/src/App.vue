@@ -22,7 +22,7 @@ const updateHtmlLang = () => {
   const currentLocale = extractLocaleFromPath(route.path)
   
   // 更新 HTML lang 属性
-  document.documentElement.lang = currentLocale === 'de' ? 'de' : 'en'
+  document.documentElement.lang = currentLocale
 }
 
 // 监听路由变化，更新 lang 属性

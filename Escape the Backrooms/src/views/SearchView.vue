@@ -17,10 +17,10 @@
             <button class="search-button" @click="performSearch">{{ $t('searchPage.hero.button') }}</button>
           </div>
           <p v-if="searchQuery && results.length > 0" class="results-count">
-            Found {{ results.length }} result{{ results.length > 1 ? 's' : '' }} for "{{ searchQuery }}"
+            {{ resultsSummary }}
           </p>
           <p v-else-if="searchQuery && results.length === 0" class="results-count no-results">
-            No results found for "{{ searchQuery }}"
+            {{ noResultsSummary }}
           </p>
         </div>
       </div>
@@ -52,7 +52,7 @@
               <a
                 v-for="item in levelResults"
                 :key="`level-${item.id}`"
-                :href="`/levels/${item.addressBar}`"
+                :href="getLocalizedPath(`/levels/${item.addressBar}`)"
                 class="result-card"
               >
                 <div class="card-image" v-if="item.imageUrl">
@@ -82,7 +82,7 @@
               <a
                 v-for="item in mapResults"
                 :key="`map-${item.id}`"
-                :href="`/maps-keys/${item.addressBar}`"
+                :href="getLocalizedPath(`/maps-keys/${item.addressBar}`)"
                 class="result-card"
               >
                 <div class="card-image" v-if="item.imageUrl">
@@ -109,10 +109,9 @@
               {{ $t('searchPage.sections.entities') }} ({{ entityResults.length }})
             </h2>
             <div class="results-grid">
-              <a
+              <div
                 v-for="item in entityResults"
                 :key="`entity-${item.id}`"
-                :href="`/wiki/entities/${item.slug}`"
                 class="result-card"
               >
                 <div class="card-image" v-if="item.imageUrl">
@@ -128,7 +127,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -142,7 +141,7 @@
               <a
                 v-for="item in codeResults"
                 :key="`code-${item.id}`"
-                href="/codes-solutions"
+                :href="getLocalizedPath('/codes-solutions')"
                 class="result-card code-card"
               >
                 <div class="card-content">
@@ -191,15 +190,42 @@ import { ref, computed, onMounted, watch, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useLevelsData } from '../composables/useLevelsData.js'
 import { useMapsData } from '../composables/useMapsData.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 import entitiesData from '../data/wiki/entities.js'
 
 const route = useRoute()
 const router = useRouter()
 const searchInputRef = ref(null)
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 const { data: levelsData, loadData: loadLevelsData } = useLevelsData()
 const { data: mapsData, loadData: loadMapsData } = useMapsData()
 
 const searchQuery = ref('')
+
+const summaryCopy = {
+  en: {
+    found: (count, query) => `Found ${count} result${count > 1 ? 's' : ''} for "${query}"`,
+    empty: (query) => `No results found for "${query}"`
+  },
+  de: {
+    found: (count, query) => `${count} Ergebnis${count > 1 ? 'se' : ''} für "${query}" gefunden`,
+    empty: (query) => `Keine Ergebnisse für "${query}" gefunden`
+  },
+  fr: {
+    found: (count, query) => `${count} résultat${count > 1 ? 's' : ''} pour "${query}"`,
+    empty: (query) => `Aucun résultat pour "${query}"`
+  }
+}
+
+const resultsSummary = computed(() => {
+  const locale = getCurrentLocale()
+  return (summaryCopy[locale] || summaryCopy.en).found(results.value.length, searchQuery.value)
+})
+
+const noResultsSummary = computed(() => {
+  const locale = getCurrentLocale()
+  return (summaryCopy[locale] || summaryCopy.en).empty(searchQuery.value)
+})
 
 // Codes data (extracted from CodesSolutionsView structure)
 const codesData = [
@@ -723,6 +749,5 @@ watch(() => route.query.q, (newQuery) => {
 }
 
 </style>
-
 
 

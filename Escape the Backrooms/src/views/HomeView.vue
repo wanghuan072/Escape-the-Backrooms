@@ -60,13 +60,9 @@
       </div>
       
       <!-- 广告：banner_native（原生横幅，每页首个全宽位） -->
-
-      
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
-      
         <AdSlot variant="native" />
-
       
       </aside>
     </section>
@@ -409,8 +405,8 @@ import entitiesData from '../data/wiki/entities.js'
 
 const { t } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
-const { data: levelsData, loadData: loadLevelsData, getHomeLevels } = useLevelsData()
-const { data: mapsData, loadData: loadMapsData, getHomeMaps } = useMapsData()
+const { loadData: loadLevelsData, getHomeLevels } = useLevelsData()
+const { loadData: loadMapsData, getHomeMaps } = useMapsData()
 
 // Video player state
 const isVideoPlaying = ref(false)

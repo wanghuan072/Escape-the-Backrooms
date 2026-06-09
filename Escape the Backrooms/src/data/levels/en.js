@@ -2066,7 +2066,7 @@ export default [
       </p>
     `
   },
-  
+
   {
     id: 20,
     title: 'Escape the Backrooms Level 10 Guide: Wheat Field Shortcut to Arcade',
@@ -2148,38 +2148,38 @@ export default [
 
       <p>Once inside Level 3999, you have reached a safe checkpoint before the next set of challenges begins.</p>
     `
-},
+  },
 
-{
-  id: 21,
-  title: 'Escape the Backrooms Level 3999 Guide: Arcade Ticket Location & Code',
-  pageTitle: 'Level 3999 Guide: Arcade Hub, Ticket Code & Secret Elevator',
-  addressBar: 'level-3999-the-arcade-guide',
-  description: 'Explore Level 3999, the neon-lit Arcade hub. Learn how to find the secret ticket code, unlock the elevator, and discover the requirements for the True Ending.',
-  imageUrl: '/images/levels/level-21.webp',
-  imageAlt: 'Level 3999 - The Neon Arcade Hub in Escape the Backrooms',
-  category: 'Main Levels',
-  isHome: false,
-  sideBarInfo: {
-    name: 'Level 3999 (The Arcade)',
-    difficulty: 'Safe',
-    objectives: 'Explore the Arcade hub, locate the prize ticket, and enter the password into the secret elevator.'
-  },
-  featured: [
-    {
-      title: 'Level 10',
-      description: 'The Fields – the previous level leading to the Arcade.',
-      imageUrl: '/images/levels/level-20.webp',
-      imageAlt: 'Level 10 - The Fields',
-      addressBar: 'level-10-the-fields-and-arcade-guide'
-    }
-  ],
-  seo: {
-    title: 'Level 3999 Arcade Guide - Escape the Backrooms Walkthrough',
-    description: 'Find the ticket code and unlock the secret elevator in Level 3999. Complete guide to the Arcade hub and True Ending requirements.',
-    keywords: 'Level 3999, The Arcade, Escape the Backrooms, Ticket Code, 931, True Ending, M.E.G., Elevator Puzzle'
-  },
-  detailsHtml: `
+  {
+    id: 21,
+    title: 'Escape the Backrooms Level 3999 Guide: Arcade Ticket Location & Code',
+    pageTitle: 'Level 3999 Guide: Arcade Hub, Ticket Code & Secret Elevator',
+    addressBar: 'level-3999-the-arcade-guide',
+    description: 'Explore Level 3999, the neon-lit Arcade hub. Learn how to find the secret ticket code, unlock the elevator, and discover the requirements for the True Ending.',
+    imageUrl: '/images/levels/level-21.webp',
+    imageAlt: 'Level 3999 - The Neon Arcade Hub in Escape the Backrooms',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 3999 (The Arcade)',
+      difficulty: 'Safe',
+      objectives: 'Explore the Arcade hub, locate the prize ticket, and enter the password into the secret elevator.'
+    },
+    featured: [
+      {
+        title: 'Level 10',
+        description: 'The Fields – the previous level leading to the Arcade.',
+        imageUrl: '/images/levels/level-20.webp',
+        imageAlt: 'Level 10 - The Fields',
+        addressBar: 'level-10-the-fields-and-arcade-guide'
+      }
+    ],
+    seo: {
+      title: 'Level 3999 Arcade Guide - Escape the Backrooms Walkthrough',
+      description: 'Find the ticket code and unlock the secret elevator in Level 3999. Complete guide to the Arcade hub and True Ending requirements.',
+      keywords: 'Level 3999, The Arcade, Escape the Backrooms, Ticket Code, 931, True Ending, M.E.G., Elevator Puzzle'
+    },
+    detailsHtml: `
     <p><strong>Level 3999</strong>, also known as "The Arcade," serves as a massive, neon-drenched hub. Unlike the previous levels, this area is generally safe and acts as a transition point and a place to unlock special endings.</p>
 
     <h2>Level 3999: The Arcade Walkthrough Video</h2>
@@ -2225,7 +2225,360 @@ export default [
 
     <p>From here, you are ready to move toward the final stages of your escape journey.</p>
   `
-}
+  },
+
+  {
+    id: 22,
+    title: "Escape the Backrooms: Level 0.2 'Ancient Path' Speed-Run & Exploit Guide",
+    pageTitle: "Escape the Backrooms Level 0.2: Ancient Path Walkthrough",
+    addressBar: "level-0-2-ancient-path-walkthrough",
+    description: "Escape the Backrooms Level 0.2 route: read the blueprint, clear the 5 lower-upper gate pairs, counter Smiling Eyes and the Skin Peeler, and use the starting fuse-box ceiling clip if needed.",
+    imageUrl: "/images/levels/level-22.webp",
+    imageAlt: "Level 0.2 Blueprint Map layout",
+    category: "Main Levels",
+    isHome: false,
+    sideBarInfo: {
+      name: "Level 0.2: Ancient Path",
+      difficulty: "Medium / Route Knowledge Heavy",
+      objectives: "Study the blueprint map, unlock the 5 lower-upper gate pairs, manage Smiling Eyes and the Skin Peeler, then open the master exit to reach Level 6.1."
+    },
+    featured: [
+      {
+        title: "Ceiling Clip at the Starting Fuse Box",
+        description: "Use the fuse-box ledge and wall-ceiling seam to clip above the corridor ceiling, bypass standard pathing, and break Skin Peeler pressure.",
+        imageUrl: "/images/levels/level-22.webp",
+        imageAlt: "Player clipping above the ceiling panels in Level 0.2",
+        addressBar: "#ceiling-clip-exploit"
+      }
+    ],
+    seo: {
+      title: "Level 0.2 Ancient Path Walkthrough - Escape the Backrooms",
+      description: "Escape the Backrooms Level 0.2 walkthrough with the gate-pair route, Smiling Eye and Skin Peeler counters, the Door 2 crouch skip, and the starting-area ceiling clip.",
+      keywords: "escape the backrooms level 0.2, ancient path backrooms, smiling eye backrooms, skin peeler glitch, level 0.2 backrooms map"
+    },
+    detailsHtml: `
+      <p>Level 0.2, titled <strong>"Ancient Path,"</strong> presents players with a narrow, segmented corridor maze. Survival relies on understanding the relationship between the upper and lower gates, maintaining spatial awareness, and managing your flashlight battery against dark-dwelling entities. Below is our hand-verified routing guide, along with a useful out-of-bounds clip exploit to safely bypass the standard hazards.</p>
+  
+      <h2>Escape the Backrooms Level 0.2 Guide: Ancient Path Door Puzzle Video</h2>
+      <iframe src="https://www.youtube.com/embed/TvYjhNwfDSI" allowfullscreen></iframe>
+
+      <h2>1. Understanding the Level 0.2 Map &amp; Mechanics</h2>
+      <p>Near the beginning of the level, you will find a framed blueprint on the wall labeled <strong>"Level 0.2 - General Plan of Renovation."</strong> Studying this blueprint is crucial for standard progression:</p>
+      <ul>
+        <li><strong>The Blue Zone:</strong> Represents your current starting area (safe zone).</li>
+        <li><strong>The Red Zone:</strong> Denotes the active corridor maze, which is split into upper and lower pathing loops.</li>
+        <li><strong>The Gate Pairs:</strong> There are 5 doors on the upper level and 5 doors on the lower level. They are paired numerically (1 through 5).</li>
+        <li><strong>The Unlock Rule:</strong> You cannot open an upper door until you have navigated the lower corridors and unlocked its corresponding lower partner door first.</li>
+      </ul>
+
+      <img src="/images/levels/level-22-01.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <h2>2. The Standard Path: Gate-Pairing &amp; Entity Management</h2>
+      <p>If you choose to run this level normally without clipping out of bounds, you must execute the gate-pairing sequence while evading two dangerous entities:</p>
+      
+      <h3>Entity 1: The Smiling Eye (笑魔)</h3>
+      <p>These appear as floating, glowing grins in the pitch-black corridors. 
+      <br>
+      * <strong>Standard Counter:</strong> Keep your flashlight equipped. When you spot a Smiling Eye, shine your beam directly at it. It will quickly vanish, allowing you to pass safely.</p>
+  
+      <h3>Entity 2: The Skin Peeler (切皮)</h3>
+      <p>A fast, highly aggressive humanoid entity that roams the narrow hallways. 
+      <br>
+      * <strong>Standard Counter:</strong> If you hear footsteps or metallic screeching, turn off your flashlight and duck into a side corridor. If it spots you, run immediately toward the nearest unlocked gate door.</p>
+  
+      <h3>Step-by-Step Gate Progression:</h3>
+      <ol>
+        <li>Locate the first active lower corridor and progress through to find <strong>Lower Door No. 1</strong>. Interaction turns its indicator light green.</li>
+        <li>Backtrack to the upper loop; <strong>Upper Door No. 1</strong> is now accessible. Open it to proceed deeper into the maze.</li>
+        <li><strong>The Crouch Trap (Door No. 2):</strong> Near Door No. 2, overworld signs suggest you must crouch to get past the iron barricades. Our testing showed that you can actually walk straight through while standing up, saving valuable time.</li>
+        <li>Repeat this process for Doors 3, 4, and 5. Once all indicator panels are green, the master exit gate in the starting room will unlock.</li>
+      </ol>
+
+      <img src="/images/levels/level-22-02.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <h2 id="ceiling-clip-exploit">3. The Out-of-Bounds Ceiling Clip Exploit</h2>
+      <p>If you want to bypass the entities entirely and complete the level without taking risks, you can exploit a geometry collision bug right at the starting area:</p>
+      
+      <div class="exploit-box">
+        <strong>How to execute the ceiling clip:</strong>
+        <ol>
+          <li>Go to the electrical fuse box panel mounted on the wall next to the starting warning signs.</li>
+          <li>Jump onto the small protruding ledge of the fuse box, then press your jump/climb input again to stand fully on top of it.</li>
+          <li>Position your character model against the corner seam where the curved wall meets the flat ceiling panel.</li>
+          <li>Aim your camera slightly upward at the seam, press forward, and spam your jump/crouch keys.</li>
+          <li>If done correctly, your character model will clip through the ceiling collision layer.</li>
+        </ol>
+      </div>
+  
+      <p>Once you are above the ceiling panels, you can walk directly over the maze corridors. This exploit provides two massive advantages:</p>
+      <ul>
+        <li><strong>Despawning the Skin Peeler:</strong> Climbing above the ceiling collision often causes the Skin Peeler's AI pathing to break. The entity will attempt to reach you vertically, clip through the lower map boundaries, and get permanently trapped in the void.</li>
+        <li><strong>The Smiling Eye AI Freeze:</strong> If you drop down from the ceiling directly behind a Smiling Eye, its trigger volume fails to initialize. You can shine your flashlight directly at it; it won't disappear, but it also won't attack or kill you.</li>
+      </ul>
+
+      <img src="/images/levels/level-22-03.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <h2>4. Escaping to Level 6.1</h2>
+      <p>Once all gates are paired and green, return to the main starting room. Pull the master exit lever. This action drops a heavy iron gate, locking the roaming entities (Guodao/Bone Thief) outside. Walk into the elevator shaft at the end of the corridor to drop down and safely load into <strong>Level 6.1 (LE6.1)</strong>.</p>
+    `
+  },
+
+  {
+    id: 23,
+    title: "Escape the Backrooms: Level '!!' (Double Exclamation) Guide",
+    pageTitle: "Escape the Backrooms: Level '!!' Complete Chase Walkthrough",
+    addressBar: "level-double-exclamation",
+    description: "Escape the Backrooms Level !! chase route: handle solo or co-op pressure plates, trigger the Branch, take the stair-drop shortcut, and follow the exact left / right / left / right path.",
+    imageUrl: "/images/levels/level-23.webp",
+    imageAlt: "The red-lit corridors of Level Double Exclamation",
+    category: "Main Levels",
+    isHome: false,
+    sideBarInfo: {
+      name: "Level !! (Double Exclamation)",
+      difficulty: "Hard / Chase Execution",
+      objectives: "Handle the M.E.G. rug pressure plates, trigger the Branch chase, take the stair-drop shortcut, and hold the left -> right -> left -> right route to the exit."
+    },
+    featured: [
+      {
+        title: "Multiplayer Plate-Holding Strategy",
+        description: "Keep anchor players on the M.E.G. rugs until the runner clears the gate line, or the route resets and traps the run.",
+        imageUrl: "/images/levels/level-23.webp",
+        imageAlt: "M.E.G. rug pressure plates at the start of Level Double Exclamation",
+        addressBar: "#plate-holding-strategy"
+      }
+    ],
+    seo: {
+      title: "Level !! Escape Guide - Escape the Backrooms Chase Walkthrough",
+      description: "Escape the Backrooms Level !! guide with M.E.G. rug plate rules, Branch chase behavior, the stair-drop shortcut, and the exact corridor turn sequence.",
+      keywords: "escape the backrooms level !!, double exclamation backrooms, level !! turn sequence, backrooms branch entity, level !! step guide"
+    },
+    detailsHtml: `
+      <p>Unlike the puzzle-heavy layout of Level 0.2, <strong>Level '!!' (Double Exclamation)</strong> is a pure, high-intensity sprint. One wrong turn or hesitated movement will result in your model getting consumed by bacteria. Below is the tactical breakdown of how the level mechanics scale between solo and multiplayer, alongside the exact corridor routing required to survive.</p>
+  
+      <h2>Escape the Backrooms Level !! Guide: Run Order & Glitches Video</h2>
+      <iframe src="https://www.youtube.com/embed/W4WGueErhlI" allowfullscreen></iframe>
+
+      <h2 id="plate-holding-strategy">1. Solo vs. Multiplayer Plate Mechanics</h2>
+      <p>At the start of the red corridor loop, you will encounter gold-colored doors with <strong>M.E.G. rugs</strong> serving as pressure plates on the floor. The game handles these plates differently depending on your party size:</p>
+      
+      <ul>
+        <li><strong>In Solo Mode:</strong> The mechanic is highly forgiving. Simply step on the M.E.G. rug once to activate the door sequence, and you can immediately proceed down the corridor. The doors will remain open.</li>
+        <li><strong>In Multiplayer Mode:</strong> Coordination is mandatory. One player must act as the designated "Runner" while the remaining players serve as "Anchors" by standing firmly on the pressure plates. 
+          <br>
+          <em>Crucial Note:</em> The Anchors <strong>cannot lift their feet</strong> or leave the plate while the Runner is executing the task. If an Anchor steps off, the gates will drop back down, trapping the Runner inside. Only when the Runner safely returns can the rest of the team release the plates and move forward.</li>
+      </ul>
+
+      <img src="/images/levels/level-23-01.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <h2>2. Triggering the Chase: The "Branch" Entity </h2>
+      <p>Once you press the wall button to open the gates, you will trigger the spawn of the <strong>"Branch" </strong>—a massive, aggressive mass of thrashing limbs that chases you down the corridors.</p>
+      <ul>
+        <li><strong>The Chase Rules:</strong> Do not look back to check its distance; looking back slows down your forward momentum. Maintain a sprint.</li>
+        <li>In multiplayer, ensure that the players holding the plates wait until the runner is completely clear of the gate line before they join the sprint, otherwise the closing gate will crush the runner.</li>
+      </ul>
+  
+      <h2>3. The Staircase Skip &amp; Speedrun Shortcut</h2>
+      <p>As you sprint through the red halls, you will reach a series of stairwells leading down. 
+      <br>
+      * <strong>The Skilled Skip:</strong> Instead of taking the stairs normally, you can jump over the banister/railing and drop down directly to the lower level. This skip saves roughly 2 to 3 seconds of running time, which is often the difference-maker in outrunning the Branch.</p>
+  
+      <img src="/images/levels/level-23-02.webp" alt="Level 0.2 Blueprint Map layout" />
+
+      <h2>4. The Crucial Corridor Routing (The L-R-L-R Rule)</h2>
+      <p>Taking a single wrong turn will lead you into dead-ends infested with terminal bacteria. Based on our test runs, you must memorize and follow this exact sequence of movements:</p>
+      
+      <div class="warning-box">
+        <strong>The Corridor Turn Sequence:</strong>
+        <ul>
+          <li><strong>Before the Staircase:</strong> Always take the <strong>LEFT</strong> turn pathways.</li>
+          <li><strong>After Descending the Stairs:</strong> Turn <strong>RIGHT</strong>, then immediately <strong>LEFT</strong>, and then <strong>RIGHT</strong> again (R-L-R).</li>
+          <li><strong>The Final Stretch:</strong> Continue straight down the illuminated hallway toward the exit door.</li>
+        </ul>
+      </div>
+
+      <img src="/images/levels/level-23-03.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <p>Once you successfully execute the turn sequence, you will pass through a final door into a clean, blue-lit hospital hallway. Turn off your flashlight, swap to your consumable items if needed to recover stamina, and exit through the door at the end of the corridor to proceed to the next stage.</p>
+    `
+  },
+
+  {
+    id: 24,
+    title: "Escape the Backrooms: Level 188 'Courtyard' Walkthrough & TV Skip Exploit",
+    pageTitle: "Escape the Backrooms Level 188: Complete Courtyard Guide",
+    addressBar: "level-188-courtyard-walkthrough",
+    description: "Escape the Backrooms Level 188 route: move TVs A, B, and C through the freight elevator path, avoid Ceiling Spider and Curtain Spirit kills, or use the 1-TV diagonal skip.",
+    imageUrl: "/images/levels/level-24.webp",
+    imageAlt: "Hotel hallways of Level 188 overlooking the courtyard",
+    category: "Main Levels",
+    isHome: false,
+    sideBarInfo: {
+      name: "Level 188: Courtyard",
+      difficulty: "Hard / Slow Puzzle Route",
+      objectives: "Move TVs A, B, and C through the freight route, avoid the Ceiling Spider and Curtain Spirits, or use the 1-TV diagonal clip to skip the full puzzle."
+    },
+    featured: [
+      {
+        title: "1-TV Diagonal Freight Elevator Skip",
+        description: "Wedge a single TV diagonally into the freight elevator corner and force the collision to break instead of finishing the full A-B-C TV route.",
+        imageUrl: "/images/levels/level-24.webp",
+        imageAlt: "CRT TV cart wedged diagonally inside the freight elevator",
+        addressBar: "#tv-clipping-skip"
+      }
+    ],
+    seo: {
+      title: "Level 188 Courtyard Guide - Escape the Backrooms TV Glitch",
+      description: "Escape the Backrooms Level 188 walkthrough covering the freight-vs-passenger elevator rule, TV slide-tackle movement, threat zones, and the 1-TV clipping skip.",
+      keywords: "escape the backrooms level 188, level 188 tv puzzle, backrooms curtain spirit, backrooms spider hole, level 188 glitch, 1 tv elevator skip"
+    },
+    detailsHtml: `
+      <p>Level 188, styled after the infamous <strong>"Courtyard"</strong> hotel corridors, is a slow-paced, tedious stage under normal conditions. It requires you to locate and sort heavy CRT TVs across multiple floors using a specific elevator system. However, the level features a highly reliable speedrun exploit that lets you skip 90% of the work. Below is the tactical breakdown for both standard execution and the 1-TV skip.</p>
+  
+      <h2>Escape the Backrooms Level 188 Guide: 1-TV Puzzle & Glitch Video</h2>
+      <iframe src="https://www.youtube.com/embed/2Giiy2ixJNw" allowfullscreen></iframe>
+
+      <h2>1. The Standard Route: The TV-Elevator Sorting Puzzle</h2>
+      <p>Normally, you must locate three heavy CRT TVs labeled <strong>A, B, and C</strong> scattered across Floors 2 and 3 of the hotel. Your objective is to return them to their designated labeled spots in the central hub.</p>
+      
+      <h3>Freight vs. Passenger Elevators:</h3>
+      <p>The layout features two distinct elevator shafts. 
+      <br>
+      * <strong>The Rule:</strong> You are <strong>not allowed</strong> to push the TV carts into the Passenger Elevator (the game physically blocks entry). You must push them into the Freight Elevator to transport them between floors.</p>
+    
+      <img src="/images/levels/level-24-01.webp" alt="Level 0.2 Blueprint Map layout" />
+
+      <h3>Movement Optimization (Slide-Tackling):</h3>
+      <p>Manually pushing the TV carts is painfully slow. To move them efficiently, do not just walk behind them:</p>
+      <ul>
+        <li><strong>The Sprint:</strong> Hold <code>Shift</code> to sprint-push, but monitor your stamina closely. Drink soda cans if you run out of energy.</li>
+        <li><strong>The Slide-Tackle Method:</strong> For maximum speed, hold <code>Shift</code> + <code>Left Click</code> to perform a slide-tackle directly into the back of the TV cart. This will kick-slide the cart across the carpeted corridors at triple the normal speed.</li>
+      </ul>
+  
+      <h2>2. Entity Hazard Profiles</h2>
+      <p>While hunting for the TVs, you will navigate dangerous corridors patrolled by three distinct threats:</p>
+      
+      <h3>The Ceiling Spider (Hole Entity)</h3>
+      <p>Watch the ceiling. You will see dark, open ventilation holes. If you walk directly under them, a massive, hyper-fast spider will drop down to kill you. You cannot outrun it in a straight line.</p>
+      <ul>
+        <li><strong>Multiplayer Proximity Baiting:</strong> In co-op mode, the spider will always descend from the hole of the player who reaches their respective corridor hole first. Have one player step near a hole to bait the drop, then quickly retreat while the second player dashes past.</li>
+      </ul>
+  
+      <h3>The Curtain Spirit </h3>
+      <p>Do not enter hotel rooms with closed curtains showing glowing red eyes. Getting too close triggers an instant-kill attack where the entity pulls you through the curtain.</p>
+  
+      <h3>The Smiling Eye</h3>
+      <p>Dispel them by shining your flashlight beam directly on their face.</p>
+
+      <img src="/images/levels/level-24-02.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <h2 id="tv-clipping-skip">3. The God-Tier 1-TV Diagonal Skip</h2>
+      <p>Why waste time hunting for all three TVs when you only need one? You can completely bypass the sorting puzzle and the high-floor entities using this collision exploit:</p>
+      
+      <div class="exploit-box">
+        <strong>How to execute the 1-TV skip:</strong>
+        <ol>
+          <li>Locate just <strong>one TV cart</strong> (any letter) on the lower floors.</li>
+          <li>Push it inside the <strong>Freight Elevator</strong>.</li>
+          <li>Instead of parking it normally, wedge the cart <strong>diagonally</strong> into the corner of the elevator wall.</li>
+          <li>Hold your sprint/accelerate key and spam your push input (<code>F</code>) to shove the cart forcefully into the wall collision boundaries.</li>
+          <li>Your character model or the elevator's transition trigger will glitch through the floor boundaries, instantly loading you into the next level.</li>
+        </ol>
+      </div>
+
+      <img src="/images/levels/level-24-03.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <p>By executing this clip, you will bypass the need to collect the remaining TVs, entirely avoiding the dangerous upper floors. Once through, walk down the corridor to transition safely into the next stage.</p>
+    `
+  },
+
+  {
+    id: 25,
+    title: "Escape the Backrooms: Level 37.2 'Poolrooms' Complete Guide & Skip Glitches",
+    pageTitle: "Escape the Backrooms Level 37.2: Complete Poolrooms Walkthrough",
+    addressBar: "level-37-2-poolrooms-walkthrough",
+    description: "Escape the Backrooms Level 37.2 route: cross toxic water with squat-jumps, clear the 4-, 3-, and 7-valve phases, exploit the safe interaction window on Zhi Tuan, or use the F11 clip.",
+    imageUrl: "/images/levels/level-25.webp",
+    imageAlt: "Chlorinated tiled pool corridors of Level 37.2",
+    category: "Main Levels",
+    isHome: false,
+    sideBarInfo: {
+      name: "Level 37.2: Poolrooms",
+      difficulty: "Hard / High Damage, Multi-Phase",
+      objectives: "Cross toxic water with squat-jumps or ledge-running, clear the 4-, 3-, and 7-valve sections, abuse the safe interaction window on Zhi Tuan, or skip the final route with the F11 water clip."
+    },
+    featured: [
+      {
+        title: "F11 Windowed Water Clip",
+        description: "Enable V-Sync and Windowed Mode, then toggle F11 on the water drop to slip through the toxic pool and bypass the last valve section.",
+        imageUrl: "/images/levels/level-25.webp",
+        imageAlt: "Player clipping through the toxic pool surface in Level 37.2",
+        addressBar: "#f11-window-clip"
+      }
+    ],
+    seo: {
+      title: "Level 37.2 Poolrooms Guide - Escape the Backrooms Water Glitch",
+      description: "Escape the Backrooms Level 37.2 walkthrough with valve-phase routing, toxic water movement, the Zhi Tuan interaction exploit, and the F11 windowed water clip.",
+      keywords: "escape the backrooms level 37.2, poolrooms backrooms guide, backrooms zhi tuan exploit, level 37.2 glitch, f11 water clip bypass"
+    },
+    detailsHtml: `
+      <p>Level 37.2, part of the infamous <strong>"Poolrooms,"</strong> is a grueling test of movement precision and pathing. The water is saturated with hydrolytic bacteria that will drain your health in seconds. While the intended route requires turning multiple valve arrays to drain the pools, the game's code features two massive flaws that allow for easy, time-saving bypasses. Below is the guide for both standard navigation and speedrun exploits.</p>
+  
+      <h2>Escape the Backrooms Level 37.2 Guide: F11 & VSync Skip Video</h2>
+      <iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe>
+
+      <h2>1. Intended Route &amp; Movement Basics</h2>
+      <p>To survive the standard corridor loops, you must minimize your contact time with the toxic water and avoid getting cornered by entities.</p>
+      
+      <h3>The Squat-Jump (Jump-Crouch) Technique:</h3>
+      <p>To cross shallow water paths without losing health, do not simply walk. Press your jump key (<code>Space</code>), and then hit your crouch key (<code>Ctrl</code>) at the peak of your jump. This crouch-jump allows you to hop across the water sections with minimal contact.</p>
+
+      <img src="/images/levels/level-25-01.webp" alt="Level 0.2 Blueprint Map layout" />
+
+      <h3>Raft vs. Ledge-Running:</h3>
+      <p>The developers placed an inflatable raft at the start of the level. However, the raft is slow and clunky to steer. Skip the raft entirely—simply sprint along the narrow tiled wall ledges to bypass the deep water channels safely.</p>
+  
+      <h3>The Valve Arrays:</h3>
+      <p>The standard progression requires you to locate fuel tanks and turn their corresponding valves to drain the pools. You must do this across three increasingly complex areas:
+      <br>
+      * <strong>Area 1:</strong> Requires turning 4 valves.
+      <br>
+      * <strong>Area 2:</strong> Requires turning 3 valves.
+      <br>
+      * <strong>Area 3:</strong> Requires turning 7 valves.
+      </p>
+  
+      <h2>2. The "Dead State" Interaction Exploit (Zhi Tuan Counter)</h2>
+      <p>The lower valve corridors are patrolled by <strong>Zhi Tuan </strong>. If they catch you idle, they will instantly kill you. However, you can exploit a loophole in the game's interaction code:</p>
+      <ul>
+        <li><strong>How it works:</strong> If a Zhi Tuan is already actively chasing you (red aggro), it will still attack. However, if you begin the valve-turning animation <em>before</em> the entity gets close enough to trigger its aggro state, its AI will completely ignore you.</li>
+        <li>In the game's code, player characters are flagged as "dead/inactive" while interacting with puzzle objects. The Zhi Tuan will simply wander past your character while you safely turn the valve.</li>
+      </ul>
+
+      <img src="/images/levels/level-25-02.webp" alt="Level 0.2 Blueprint Map layout" />
+
+      <h2 id="f11-window-clip">3. The Game-Breaking F11 Windowed Water Clip</h2>
+      <p>If you want to skip the massive, tedious 7-valve sequence entirely, you can exploit a rendering thread collision bug to drop straight to the exit without draining the pool:</p>
+      
+      <div class="exploit-box">
+        <strong>How to execute the F11 water clip:</strong>
+        <ol>
+          <li>Open your game settings, enable <strong>V-Sync </strong>, and set your display to <strong>Windowed Mode</strong>.</li>
+          <li>Walk to the edge of the high tiled platform overlooking the deep pool.</li>
+          <li>Jump down toward the water.</li>
+          <li>Just before your model collides with the water surface, press <code>F11</code> (or your windowed/fullscreen toggle key).</li>
+          <li>This temporarily hangs the rendering thread, dropping your framerate and allowing your collision model to slip directly through the toxic water volume without registering damage, landing you safely on the bottom level transition trigger.</li>
+        </ol>
+      </div>
+
+      <img src="/images/levels/level-25-03.webp" alt="Level 0.2 Blueprint Map layout" />
+  
+      <p>This skip allows you to bypass the entire valve-turning routine on the final floor. Once you slip through, climb the ladders and walk through the exit doorway to load into <strong>Level Fang Plus / Le Fang Plus </strong>.</p>
+    `
+  }
+
+
+
+
 
 
   // {

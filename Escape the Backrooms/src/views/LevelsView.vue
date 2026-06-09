@@ -111,13 +111,11 @@
 
 <script setup>
 import { computed, onMounted, nextTick } from 'vue'
-import { useI18n } from 'vue-i18n'
 import { useLevelsData } from '../composables/useLevelsData.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
-const { t } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
-const { data: levelsData, loadData, getGroupedLevels } = useLevelsData()
+const { loadData, getGroupedLevels } = useLevelsData()
 
 // 根据 category 字段分组
 const groupedLevels = computed(() => {
@@ -319,7 +317,7 @@ const scrollToCategory = (category) => {
 
 .levels-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -379,6 +377,12 @@ const scrollToCategory = (category) => {
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .level-desc {
@@ -388,8 +392,8 @@ const scrollToCategory = (category) => {
   margin-bottom: 0.75rem;
   flex: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -538,4 +542,3 @@ const scrollToCategory = (category) => {
 }
 
 </style>
-

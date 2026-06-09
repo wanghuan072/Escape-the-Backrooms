@@ -194,9 +194,9 @@ import { useSEO } from '../seo/composables.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
-const { data: levelsData, loadData, findByAddress, getAdjacentLevels } = useLevelsData()
+const { loadData, findByAddress, getAdjacentLevels } = useLevelsData()
 const { setSEO, generateStructuredData, addStructuredData } = useSEO()
 
 const level = computed(() => {
@@ -925,5 +925,4 @@ watch(() => locale.value, async (newLocale, oldLocale) => {
 }
 
 </style>
-
 

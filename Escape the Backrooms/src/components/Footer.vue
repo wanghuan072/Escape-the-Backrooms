@@ -14,10 +14,10 @@
         <div class="link-column">
           <h2>Navigate</h2>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/levels">Levels</a></li>
-            <li><a href="/maps-keys">Maps & Keys</a></li>
-            <li><a href="/codes-solutions">Codes & Solutions</a></li>
+            <li><a :href="getLocalizedPath('/')">Home</a></li>
+            <li><a :href="getLocalizedPath('/levels')">Levels</a></li>
+            <li><a :href="getLocalizedPath('/maps-keys')">Maps & Keys</a></li>
+            <li><a :href="getLocalizedPath('/codes-solutions')">Codes & Solutions</a></li>
             <!-- <li><a href="/wiki">Wiki</a></li>
             <li><a href="/guides">Guides</a></li> -->
           </ul>
@@ -25,11 +25,11 @@
         <div class="link-column">
           <h2>Legal</h2>
           <ul>
-            <li><a href="/privacy-policy" rel="nofollow">Privacy Policy</a></li>
-            <li><a href="/terms-of-service" rel="nofollow">Terms of Service</a></li>
-            <li><a href="/copyright" rel="nofollow">Copyright</a></li>
-            <li><a href="/about-us" rel="nofollow">About Us</a></li>
-            <li><a href="/contact-us" rel="nofollow">Contact Us</a></li>
+            <li><a :href="getLocalizedPath('/privacy-policy')" rel="nofollow">Privacy Policy</a></li>
+            <li><a :href="getLocalizedPath('/terms-of-service')" rel="nofollow">Terms of Service</a></li>
+            <li><a :href="getLocalizedPath('/copyright')" rel="nofollow">Copyright</a></li>
+            <li><a :href="getLocalizedPath('/about-us')" rel="nofollow">About Us</a></li>
+            <li><a :href="getLocalizedPath('/contact-us')" rel="nofollow">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,15 @@
   </footer>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+  name: 'SiteFooter'
+})
+
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+
+const { getLocalizedPath } = useLocalizedPath()
+</script>
 
 <style scoped>
 .site-footer {
@@ -227,4 +235,3 @@
   }
 }
 </style>
-

@@ -228,13 +228,11 @@
 
 <script setup>
 import { onMounted, nextTick } from 'vue'
-import { useI18n } from 'vue-i18n'
 import { useMapsData } from '../composables/useMapsData.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
-const { t } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
-const { data: mapsData, loadData } = useMapsData()
+const { loadData } = useMapsData()
 
 // Load data
 onMounted(async () => {

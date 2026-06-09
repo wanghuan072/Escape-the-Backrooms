@@ -1,7 +1,7 @@
 // SEO插件 - 处理全局SEO更新
 export function createSEOPlugin() {
   return {
-    install(app, options) {
+    install(app) {
       // 在应用实例上添加SEO方法
       app.config.globalProperties.$updateSEO = (seoData) => {
         // 更新页面标题

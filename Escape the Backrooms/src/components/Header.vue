@@ -84,14 +84,16 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: 'SiteHeader'
+})
+
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const router = useRouter()
 const route = useRoute()
-const { locale } = useI18n()
 const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 
 const searchQuery = ref('')
@@ -103,7 +105,7 @@ const langSwitcherRef = ref(null)
 const languages = [
   { code: 'en', name: 'English' },
   { code: 'de', name: 'Deutsch' },
-  { code: 'fa', name: 'Français' }
+  { code: 'fr', name: 'Français' }
 ]
 
 // 当前语言
@@ -132,7 +134,7 @@ const selectLanguage = (newLocale) => {
   const pathSegments = currentPath.split('/').filter(Boolean)
   
   // 如果当前路径有语言前缀，移除它
-  if (pathSegments.length > 0 && ['en', 'de', 'fa'].includes(pathSegments[0])) {
+  if (pathSegments.length > 0 && ['en', 'de', 'fr'].includes(pathSegments[0])) {
     pathSegments.shift()
     currentPath = '/' + pathSegments.join('/')
   }
@@ -656,4 +658,3 @@ const closeMobileMenu = () => {
   }
 }
 </style>
-

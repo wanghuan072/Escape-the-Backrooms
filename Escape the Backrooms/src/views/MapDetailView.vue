@@ -167,9 +167,9 @@ import { useSEO } from '../seo/composables.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
-const { data: mapsData, loadData, findByAddress } = useMapsData()
+const { loadData, findByAddress } = useMapsData()
 const { setSEO, generateStructuredData, addStructuredData } = useSEO()
 
 const map = computed(() => {

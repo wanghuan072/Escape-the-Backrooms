@@ -38,7 +38,7 @@ export default [
           <ul>
             <li><strong>Expérience Pro :</strong> Solution présentée par un vétéran avec plus de 5 000 heures de jeu.</li>
             <li><strong>Dernière Version :</strong> Mis à jour pour la version finale, couvrant tous les correctifs de bugs actuels.</li>
-            <li><strong>Succès Garanti :</strong> Démontre la \"Règle de la main droite\" pour trouver la sortie en moins de 3 minutes.</li>
+            <li><strong>Succès Garanti :</strong> Démontre la "Règle de la main droite" pour trouver la sortie en moins de 3 minutes.</li>
           </ul>
     
           <h2>Solution Textuelle Escape the Backrooms Niveau 0</h2>
@@ -52,7 +52,7 @@ export default [
             <li>C'est la méthode la plus fiable pour trouver tous les objectifs sans carte.</li>
           </ul>
           
-          <img src=\"/images/levels/level-01-01.webp\" alt=\"Escape the Backrooms : Niveau 0 - La règle de la main droite\" />
+          <img src="/images/levels/level-01-01.webp" alt="Escape the Backrooms : Niveau 0 - La règle de la main droite" />
     
           <h3>2. Trouver les pièces de l'échelle</h3>
           <p>Votre objectif principal est de réparer une échelle brisée pour atteindre le conduit de ventilation. Vous devez collecter 4 fragments d'échelle éparpillés sur le sol près de l'intersection de départ.</p>
@@ -62,7 +62,7 @@ export default [
             <li><strong>Pièces 3 & 4 :</strong> Continuez à suivre le mur de droite près de l'intersection ; elles se trouvent généralement derrière les cloisons.</li>
           </ul>
     
-          <img src=\"/images/levels/level-01-02.webp\" alt=\"Escape the Backrooms : Niveau 0 - Trouver les pièces de l'échelle\" />
+          <img src="/images/levels/level-01-02.webp" alt="Escape the Backrooms : Niveau 0 - Trouver les pièces de l'échelle" />
     
           <h3>3. Récupérer la clé et déverrouiller la sortie</h3>
           <p>Une fois les 4 pièces en votre possession :</p>
@@ -74,7 +74,7 @@ export default [
             <li>Localisez la porte en bois et utilisez la clé pour l'ouvrir.</li>
           </ol>
     
-          <img src=\"/images/levels/level-01-03.webp\" alt=\"Escape the Backrooms : Niveau 0 - Récupérer la clé et déverrouiller la sortie\" />
+          <img src="/images/levels/level-01-03.webp" alt="Escape the Backrooms : Niveau 0 - Récupérer la clé et déverrouiller la sortie" />
     
           <h3>4. Comment traverser la salle piégée (Le Gouffre)</h3>
           <p>La pièce suivante présente un gouffre profond avec une grille de poutres. Ne courez pas.</p>
@@ -84,9 +84,9 @@ export default [
             <li><strong>Sauvetage en solo :</strong> Si vous tombez seul, tournez le dos au mur d'où vous êtes tombé. Cherchez une flèche sur le pilier et suivez-la vers une porte secrète qui ramène au début.</li>
           </ul>
     
-          <img src=\"/images/levels/level-01-04.webp\" alt=\"Escape the Backrooms : Niveau 0 - Comment traverser la salle piégée\" />
+          <img src="/images/levels/level-01-04.webp" alt="Escape the Backrooms : Niveau 0 - Comment traverser la salle piégée" />
     
-          <img src=\"/images/levels/level-01-05.webp\" alt=\"Escape the Backrooms : Niveau 0 - Transition vers le Niveau 1\" />
+          <img src="/images/levels/level-01-05.webp" alt="Escape the Backrooms : Niveau 0 - Transition vers le Niveau 1" />
     
           <h3>5. Transition vers le Niveau 1</h3>
           <p>Après le gouffre, vous entrerez dans un couloir sombre menant à un escalier.</p>
@@ -99,7 +99,7 @@ export default [
           <ul>
             <li><strong>Ajuster les réglages Gamma :</strong> Avant d'entrer dans les zones sombres (après le Lobby), allez dans les paramètres et montez le Gamma à 60% ou plus. Cela vous permet de voir sans utiliser constamment la lampe de poche.</li>
             <li><strong>Stamina Infinie :</strong> Au Niveau 0, vous avez une endurance illimitée. Même si l'entité Bacteria apparaît (ce qui arrive après 3 minutes), elle ne peut pas vous rattraper. Continuez simplement à bouger.</li>
-            <li><strong>Correctifs de bugs :</strong> L'ancien glitch \"Q-spam\" pour traverser les murs et le bug pour voler au-dessus du gouffre ont été corrigés. Vous devez maintenant jouer le niveau de manière légitime.</li>
+            <li><strong>Correctifs de bugs :</strong> L'ancien glitch "Q-spam" pour traverser les murs et le bug pour voler au-dessus du gouffre ont été corrigés. Vous devez maintenant jouer le niveau de manière légitime.</li>
             <li><strong>Droit à l'erreur :</strong> Si vous entrez accidentellement dans un niveau par erreur, la nouvelle mise à jour vous permet de faire demi-tour, d'ouvrir la porte et de revenir au niveau précédent.</li>
           </ul>
         `
@@ -161,12 +161,12 @@ export default [
           <p>Pour entrer au Niveau 1, vous avez besoin d'un code couleur à 4 chiffres.</p>
           <ul>
             <li><strong>Le Code :</strong> Le code est aléatoire (ex: Rouge, Rouge, Rouge, Bleu). Regardez la note adhésive à l'intérieur de l'ascenseur ou essayez des combinaisons courantes.</li>
-            <li><strong>Astuce secrète :</strong> Au moment où les portes de l'ascenseur se ferment, sprintez pour ressortir dans le garage. L'ascenseur \"partira\" sans vous, mais le jeu fait apparaître une bouteille d'Eau d'Amande sur la table dans la salle de l'ascenseur. Prenez-la, vous en aurez besoin pour votre santé mentale.</li>
+            <li><strong>Astuce secrète :</strong> Au moment où les portes de l'ascenseur se ferment, sprintez pour ressortir dans le garage. L'ascenseur "partira" sans vous, mais le jeu fait apparaître une bouteille d'Eau d'Amande sur la table dans la salle de l'ascenseur. Prenez-la, vous en aurez besoin pour votre santé mentale.</li>
           </ul>
     
-          <img src=\"/images/levels/level-02-01.webp\" alt=\"Escape the Backrooms : Niveau 1 - Le code de l'ascenseur\" />
+          <img src="/images/levels/level-02-01.webp" alt="Escape the Backrooms : Niveau 1 - Le code de l'ascenseur" />
     
-          <img src=\"/images/levels/level-02-02.webp\" alt=\"Escape the Backrooms : Niveau 1 - L'astuce secrète\" />
+          <img src="/images/levels/level-02-02.webp" alt="Escape the Backrooms : Niveau 1 - L'astuce secrète" />
     
           <h3>2. Collecter les clés (Parking)</h3>
           <p>La carte a la forme d'un carré dans un carré. Votre but est de trouver 4 clés pour déverrouiller la porte centrale.</p>
@@ -176,27 +176,27 @@ export default [
             <li><strong>Stratégie de combat :</strong> Ne vous cachez pas. Le Skin-Stealer ne peut pas ouvrir les portes. Attirez-le dans une pièce, sortez en courant et fermez la porte pour le piéger à jamais. Vous avez une endurance infinie, vous pouvez donc toujours le distancer.</li>
           </ul>
     
-          <img src=\"/images/levels/level-02-03.webp\" alt=\"Escape the Backrooms : Niveau 1 - Collecter les clés\" />
+          <img src="/images/levels/level-02-03.webp" alt="Escape the Backrooms : Niveau 1 - Collecter les clés" />
     
           <h3>3. La salle médicale et la santé mentale</h3>
           <p>Surveillez l'icône de cerveau dans votre inventaire. Si elle devient basse, votre vision se trouble. Buvez de l'Eau d'Amande ou trouvez des médicaments dans les casiers pour la restaurer. Une fois les 4 clés en main, allez à la porte centrale et tournez le verrou rapidement (tous les joueurs doivent interagir en coopération).</p>
     
-          <h3>4. Le sous-sol (L'astuce \"X-Ray\")</h3>
+          <h3>4. Le sous-sol (L'astuce "X-Ray")</h3>
           <p>Après le garage, vous entrez dans un labyrinthe de sous-sol totalement noir.</p>
           <ul>
-            <li><strong>Conseil Pro :</strong> Allez dans Paramètres -> Graphismes et réglez tout sur \"Plus bas\" (Lowest). Cela supprime l'obscurité (vous donnant une vision nocturne) et vous permet de voir les contours des portes à travers les murs (vision X-Ray).</li>
+            <li><strong>Conseil Pro :</strong> Allez dans Paramètres -> Graphismes et réglez tout sur "Plus bas" (Lowest). Cela supprime l'obscurité (vous donnant une vision nocturne) et vous permet de voir les contours des portes à travers les murs (vision X-Ray).</li>
             <li><strong>Trouver la sortie :</strong> Cherchez une porte d'ascenseur. Elle se trouve généralement au 2ème étage (côté droit) ou au 3ème étage (côté gauche). Avec les graphismes au minimum, vous verrez la silhouette de la porte pour confirmer le bon chemin sans tout fouiller.</li>
           </ul>
     
           <h3>5. Déverrouiller le Hub (Optionnel mais recommandé)</h3>
-          <p>Avant de partir, vous pouvez débloquer un raccourci vers \"The Hub\".</p>
+          <p>Avant de partir, vous pouvez débloquer un raccourci vers "The Hub".</p>
           <ul>
             <li><strong>L'énigme du mot de passe :</strong> Trouvez la porte avec le clavier. L'écran de l'ordinateur affiche 4 colonnes de texte. Vous devez cliquer sur le texte des 3 premières colonnes pour qu'elles correspondent exactement à la 4ème.</li>
             <li><strong>Mise sous tension :</strong> Allez dans la pièce du fond et basculez les interrupteurs jusqu'à ce que tous les voyants deviennent verts (cliquer rapidement sur le dernier interrupteur fonctionne souvent).</li>
             <li><strong>Lancer le programme :</strong> Retournez au PC et lancez DOOR.EXE. Cela déverrouille la porte de raccourci permanente.</li>
           </ul>
     
-          <img src=\"/images/levels/level-02-05.webp\" alt=\"Escape the Backrooms : Niveau 1 - Déverrouiller le Hub\" />
+          <img src="/images/levels/level-02-05.webp" alt="Escape the Backrooms : Niveau 1 - Déverrouiller le Hub" />
     
           <h3>6. Le tunnel final</h3>
           <p>La zone finale est un long tunnel en béton avec des trous sur les côtés.</p>
@@ -209,7 +209,7 @@ export default [
             <li><strong>Les graphismes bas sont surpuissants :</strong> Sérieusement, mettre les graphismes au minimum dans la section sombre change tout. Cela transforme un labyrinthe effrayant en promenade de santé.</li>
             <li><strong>Les Skin-Stealers sont stupides :</strong> Ils sont rapides mais ne peuvent pas interagir avec les mécanismes. Utilisez les portes comme armes pour les neutraliser tôt.</li>
             <li><strong>La santé mentale compte :</strong> C'est le premier niveau où elle chute. Fouillez chaque casier pour de l'Eau d'Amande, même si vous n'en avez pas encore besoin.</li>
-            <li><strong>Porte Coop :</strong> La porte aux 4 clés nécessite une coordination. Si vous jouez avec des amis, comptez \"3, 2, 1\" et appuyez sur E ensemble.</li>
+            <li><strong>Porte Coop :</strong> La porte aux 4 clés nécessite une coordination. Si vous jouez avec des amis, comptez "3, 2, 1" et appuyez sur E ensemble.</li>
           </ul>
         `
   },
@@ -250,14 +250,14 @@ export default [
       "keywords": "Niveau 2, Escape the Backrooms, Pipe Dreams, Smiler, Vapeur, Astuce endurance, saut-course, solution"
     },
     "detailsHtml": `
-          <p>Bienvenue dans le guide complet du Niveau 2 : Pipe Dreams (également connu sous le nom de Zone Publique Abandonnée). Ce niveau est un long tunnel linéaire parsemé de jets de vapeur mortels et d'une poursuite terrifiante avec un \"Smiler\".</p>
+          <p>Bienvenue dans le guide complet du Niveau 2 : Pipe Dreams (également connu sous le nom de Zone Publique Abandonnée). Ce niveau est un long tunnel linéaire parsemé de jets de vapeur mortels et d'une poursuite terrifiante avec un "Smiler".</p>
     
           <h2>Vidéo Solution Niveau 2</h2>
           <iframe src="https://www.youtube.com/embed/6Ypd5PZsXBs" allowfullscreen></iframe>
           
           <h3>Points forts de la vidéo :</h3>
           <ul>
-            <li><strong>Astuce d'Endurance :</strong> Comment utiliser le \"Saut-Course\" (Run-Jumping) pour économiser l'endurance.</li>
+            <li><strong>Astuce d'Endurance :</strong> Comment utiliser le "Saut-Course" (Run-Jumping) pour économiser l'endurance.</li>
             <li><strong>Danger de Vapeur :</strong> Avertissements critiques sur les tuyaux de vapeur mortels.</li>
             <li><strong>Poursuite du Smiler :</strong> Un guide étape par étape pour survivre à la séquence de poursuite finale.</li>
             <li><strong>Lampe cachée :</strong> Emplacement d'une lampe de poche gratuite au début du niveau.</li>
@@ -269,16 +269,16 @@ export default [
           <h3>1. Le départ et la lampe cachée</h3>
           <p>Vous apparaissez dans un long tunnel en béton bordé de tuyaux.</p>
           <ul>
-            <li><strong>Direction :</strong> Il n'y a qu'un seul chemin (suivez les flèches \"STATION\"). Le chemin derrière vous est une impasse.</li>
+            <li><strong>Direction :</strong> Il n'y a qu'un seul chemin (suivez les flèches "STATION"). Le chemin derrière vous est une impasse.</li>
             <li><strong>Lampe gratuite :</strong> Dès que vous commencez à courir, cherchez une petite grille ou une étagère sur le côté droit au début du tunnel. Il y a souvent une lampe de poche posée là. Prenez-la !</li>
           </ul>
     
-          <img src=\"/images/levels/level-03-01.webp\" alt=\"Escape the Backrooms : Niveau 2 - Départ et lampe cachée\" />
+          <img src="/images/levels/level-03-01.webp" alt="Escape the Backrooms : Niveau 2 - Départ et lampe cachée" />
     
           <h3>2. La longue course (Gestion de l'endurance)</h3>
           <p>Pendant la première moitié du niveau, rien ne vous poursuit. Cependant, vous devez gérer votre endurance si vous sprintez.</p>
           <ul>
-            <li><strong>Conseil Pro (Saut-Course) :</strong> Tout en courant (Shift), appuyez sur Espace pour sauter à plusieurs reprises. Cette technique de \"bunny hop\" conserve l'endurance, vous permettant de bouger plus vite plus longtemps.</li>
+            <li><strong>Conseil Pro (Saut-Course) :</strong> Tout en courant (Shift), appuyez sur Espace pour sauter à plusieurs reprises. Cette technique de "bunny hop" conserve l'endurance, vous permettant de bouger plus vite plus longtemps.</li>
           </ul>
     
           <h3>3. Le danger de la vapeur</h3>
@@ -288,7 +288,7 @@ export default [
             <li><strong>Stratégie :</strong> Utilisez votre lampe de poche. Observez les jets de vapeur sortant des tuyaux. Vous pouvez soit vous accroupir dessous, soit sprinter entre deux jets. Ne touchez pas les nuages de vapeur blanche.</li>
           </ul>
     
-          <img src=\"/images/levels/level-03-02.webp\" alt=\"Escape the Backrooms : Niveau 2 - Danger de vapeur\" />
+          <img src="/images/levels/level-03-02.webp" alt="Escape the Backrooms : Niveau 2 - Danger de vapeur" />
     
           <h3>4. La poursuite du Smiler (Endurance infinie)</h3>
           <p>Une fois la zone de vapeur sombre passée, vous entendrez un cri strident. Une entité géante Smiler apparaîtra derrière vous et commencera la chasse.</p>
@@ -297,7 +297,7 @@ export default [
             <li><strong>Pas besoin de sauter :</strong> Puisque l'endurance est infinie, sprinter normalement est plus sûr et plus facile à contrôler.</li>
           </ul>
     
-          <img src=\"/images/levels/level-03-03.webp\" alt=\"Escape the Backrooms : Niveau 2 - Poursuite du Smiler\" />
+          <img src="/images/levels/level-03-03.webp" alt="Escape the Backrooms : Niveau 2 - Poursuite du Smiler" />
     
           <h3>5. Trouver la sortie</h3>
           <p>La poursuite est intense mais directe. Continuez à courir tout droit dans le tunnel.</p>
@@ -306,8 +306,8 @@ export default [
             <li><strong>Action :</strong> Dès que vous voyez l'ouverture sur la gauche avec une grille, tournez et entrez. La grille se refermera brutalement derrière vous, bloquant le Smiler à l'extérieur.</li>
           </ul>
     
-          <h3>6. Confusion avec le \"Hub\" (Note sur le Lore)</h3>
-          <p>Vous verrez peut-être des panneaux pour le \"Level 4\" ou \"Level 5\" sur le côté droit pendant votre course.</p>
+          <h3>6. Confusion avec le "Hub" (Note sur le Lore)</h3>
+          <p>Vous verrez peut-être des panneaux pour le "Level 4" ou "Level 5" sur le côté droit pendant votre course.</p>
           <ul>
             <li><strong>Ignorez-les :</strong> Dans la version actuelle du jeu, ces chemins sont bloqués ou mènent à une mort certaine. Le seul chemin valide est celui qui mène au Niveau 3 (La Station Électrique).</li>
           </ul>
@@ -913,18 +913,18 @@ export default [
               <h3>Points saillants de la vidéo :</h3>
               <ul>
                 <li><strong>Technique du Run-Jumping :</strong> Une compétence de mouvement critique pour conserver l'endurance avant le début de la poursuite.</li>
-                <li><strong>Le retour du Smiler :</strong> Survivre à la deuxième séquence de poursuite avec les \"Yeux souriants\".</li>
+                <li><strong>Le retour du Smiler :</strong> Survivre à la deuxième séquence de poursuite avec les "Yeux souriants".</li>
                 <li><strong>La Sortie :</strong> Localiser la porte verte qui mène aux Partygoers.</li>
               </ul>
         
               <h2>Guide Textuel Étape par Étape</h2>
-              <p>Ce niveau est linéaire. Vous apparaissez dans un couloir avec des flèches pointant vers \"FUN!\".</p>
+              <p>Ce niveau est linéaire. Vous apparaissez dans un couloir avec des flèches pointant vers "FUN!".</p>
         
               <h3>1. Orientation</h3>
               <ul>
                 <li><strong>Derrière vous :</strong> Le chemin ramène au Niveau 5 (Chaufferie).</li>
                 <li><strong>Côté gauche :</strong> Ramène au Niveau 1.</li>
-                <li><strong>Devant :</strong> Suivez la flèche marquée \"FUN!\". C'est votre destination (Niveau Fun / Xiao Le City).</li>
+                <li><strong>Devant :</strong> Suivez la flèche marquée "FUN!". C'est votre destination (Niveau Fun / Xiao Le City).</li>
               </ul>
         
               <h3>2. Mouvement avancé : Run-Jumping (Bunny Hopping)</h3>
@@ -956,7 +956,7 @@ export default [
               <h2>Conseils et astuces pour The Pipe Run</h2>
               <ul>
                 <li><strong>Ne paniquez pas :</strong> C'est beaucoup plus court que le Niveau 2. Tant que vous ne restez pas coincé dans les décors, vous sèmerez le Smiler facilement.</li>
-                <li><strong>Indices sonores :</strong> Écoutez le bruit de \"grondement\" derrière vous. Cela signale le début de la poursuite.</li>
+                <li><strong>Indices sonores :</strong> Écoutez le bruit de "grondement" derrière vous. Cela signale le début de la poursuite.</li>
                 <li><strong>Gamma :</strong> Gardez votre luminosité élevée. L'entrée du Niveau Fun est lumineuse, mais le tunnel lui-même est sombre.</li>
               </ul>
             `
@@ -1007,11 +1007,11 @@ export default [
                 <ul>
                   <li><strong>Le Glitch du Ballon :</strong> Une astuce révolutionnaire pour geler les Partygoers sur place.</li>
                   <li><strong>Le Glitch de la Table :</strong> Comment exploiter le pathfinding de l'IA en se cachant sous les tables.</li>
-                  <li><strong>Guide de Discrétion :</strong> L'itinéraire \"légitime\" pour ceux qui recherchent un défi.</li>
+                  <li><strong>Guide de Discrétion :</strong> L'itinéraire "légitime" pour ceux qui recherchent un défi.</li>
                   <li><strong>La Sortie :</strong> Trouver la porte vers les Poolrooms.</li>
                 </ul>
           
-                <h2>Les méthodes de \"Glitch\" (Victoires faciles)</h2>
+                <h2>Les méthodes de "Glitch" (Victoires faciles)</h2>
                 <p>Le Level Fun est notoirement difficile, mais vous pouvez briser l'IA pour survivre facilement.</p>
           
                 <h3>1. Le Glitch du Ballon (Astuce de gel)</h3>
@@ -1028,7 +1028,7 @@ export default [
                 <p>Si un Partygoer vous repère, ne paniquez pas.</p>
                 <ul>
                   <li><strong>Action :</strong> Courez vers la table blanche la plus proche et accroupissez-vous dessous.</li>
-                  <li><strong>Le Glitch :</strong> L'IA du Partygoer ne peut souvent pas vous atteindre sous la table. Il restera là de manière menaçante mais ne pourra pas vous \"attraper\".</li>
+                  <li><strong>Le Glitch :</strong> L'IA du Partygoer ne peut souvent pas vous atteindre sous la table. Il restera là de manière menaçante mais ne pourra pas vous "attraper".</li>
                   <li><strong>Attention :</strong> Ne les laissez pas vous voir passer sous la table. S'ils vous voient entrer dans la cachette, ils pourraient tout de même vous tuer. Rompez d'abord la ligne de vue, puis cachez-vous.</li>
                 </ul>
           
@@ -1070,7 +1070,7 @@ export default [
                 <ul>
                   <li><strong>Patience :</strong> Si vous jouez de manière légitime, la patience est tout. Observez leurs cycles de patrouille. Ils sont lents mais tuent instantanément.</li>
                   <li><strong>Luminosité :</strong> Augmentez votre gamma. Cela aide à voir les Partygoers dans les coins sombres du labyrinthe.</li>
-                  <li><strong>Audio :</strong> Écoutez la \"chanson d'anniversaire\" ou les bruits de pas lourds. Si la musique devient plus forte, un Partygoer est proche.</li>
+                  <li><strong>Audio :</strong> Écoutez la "chanson d'anniversaire" ou les bruits de pas lourds. Si la musique devient plus forte, un Partygoer est proche.</li>
                 </ul>
               `
   },
@@ -1112,7 +1112,7 @@ export default [
                 <h3>Points saillants de la vidéo :</h3>
                 <ul>
                   <li><strong>Régénération de santé mentale :</strong> Pourquoi ce niveau est un havre de paix pour votre santé mentale.</li>
-                  <li><strong>Le piège à eau :</strong> Avertissement concernant la redoutable \"Bactérie hydrolytique\" dans certains bassins.</li>
+                  <li><strong>Le piège à eau :</strong> Avertissement concernant la redoutable "Bactérie hydrolytique" dans certains bassins.</li>
                   <li><strong>Infos sur les points de spawn :</strong> Différences entre les lieux d'apparition en solo et en multijoueur.</li>
                   <li><strong>Avertissement sur le Hub :</strong> Comment éviter de se perdre dans le Hub et trouver le bon chemin.</li>
                 </ul>
@@ -1124,7 +1124,7 @@ export default [
                 <ul>
                   <li><strong>Solo/Hôte :</strong> Vous apparaissez généralement près de la sortie d'un toboggan.</li>
                   <li><strong>Multijoueur :</strong> Dans une partie à 4 joueurs, les coéquipiers peuvent apparaître à des endroits différents. Communiquez pour vous retrouver d'abord.</li>
-                  <li><strong>Objectif :</strong> Cherchez une zone spécifique avec des \"vagues\" ou une grande salle de piscine ouverte avec des piliers.</li>
+                  <li><strong>Objectif :</strong> Cherchez une zone spécifique avec des "vagues" ou une grande salle de piscine ouverte avec des piliers.</li>
                 </ul>
           
                 <img src="/images/levels/level-11-01.webp" alt="Escape the Backrooms : Niveau 37 - The Poolrooms" />
@@ -1132,11 +1132,11 @@ export default [
                 <h3>2. Le piège du Hub</h3>
                 <p>Vous pourriez rencontrer une porte ou un passage menant au Hub.</p>
                 <ul>
-                  <li><strong>Attention :</strong> Si vous entrez dans le Hub par erreur, vous devez trouver la porte marquée \"Level 37\" pour revenir. N'entrez pas dans d'autres portes de niveaux, car vous pourriez sauter des étapes sans préparation ou rester bloqué.</li>
+                  <li><strong>Attention :</strong> Si vous entrez dans le Hub par erreur, vous devez trouver la porte marquée "Level 37" pour revenir. N'entrez pas dans d'autres portes de niveaux, car vous pourriez sauter des étapes sans préparation ou rester bloqué.</li>
                   <li><strong>Navigation :</strong> Depuis le départ, rester sur le côté droit est généralement une bonne stratégie pour trouver le chemin principal.</li>
                 </ul>
           
-                <h3>3. Les bassins à \"Bactéries\" (Piège mortel)</h3>
+                <h3>3. Les bassins à "Bactéries" (Piège mortel)</h3>
                 <p>Bien que l'eau semble invitante, elle n'est pas toute sûre.</p>
                 <ul>
                   <li><strong>Bactérie hydrolytique :</strong> Certains bassins sombres ou profonds contiennent des bactéries invisibles qui vous tueront instantanément si vous y mettez le pied.</li>
@@ -1153,14 +1153,14 @@ export default [
                 <h3>5. Trouver la sortie</h3>
                 <p>La sortie n'est pas une porte standard.</p>
                 <ul>
-                  <li><strong>Le Signe :</strong> Cherchez un panneau rouge brillant \"!\" (Point d'exclamation) ou un couloir spécifique éclairé en rouge.</li>
+                  <li><strong>Le Signe :</strong> Cherchez un panneau rouge brillant "!" (Point d'exclamation) ou un couloir spécifique éclairé en rouge.</li>
                   <li><strong>Le Chemin :</strong> Naviguez dans le labyrinthe carrelé jusqu'à trouver un couloir étroit baigné de lumière rouge. Cela mène au point de transition pour le niveau suivant (Level Run for Your Life!).</li>
                 </ul>
           
                 <h2>Conseils et astuces pour les Poolrooms</h2>
                 <ul>
                   <li><strong>Détendez-vous :</strong> C'est l'un des rares niveaux sans entité de poursuite (hormis les bactéries aquatiques). Prenez votre temps pour explorer et récupérer.</li>
-                  <li><strong>Visuels :</strong> Profitez de l'esthétique. Ce niveau est l'un des préférés des fans pour son atmosphère de \"liminal space\".</li>
+                  <li><strong>Visuels :</strong> Profitez de l'esthétique. Ce niveau est l'un des préférés des fans pour son atmosphère de "liminal space".</li>
                   <li><strong>Pas de perte de santé mentale :</strong> Contrairement aux autres niveaux où rester immobile vous nuit, ici cela vous aide. Profitez-en.</li>
                 </ul>
               `
@@ -1197,7 +1197,7 @@ export default [
     "detailsHtml": `
                 <h2>Aperçu du niveau : La poursuite de l'hôpital rouge</h2>
                 <p>
-                  <strong>Le Niveau !</strong> (prononcé \"Level Run\") est un défi de survie à haute intensité. L'environnement est un long couloir d'hôpital infini baigné de lumières d'urgence rouges clignotantes et d'alarmes hurlantes. Votre seul objectif est de courir. Derrière vous, une horde d'entités (Partygoers) est prête à vous tuer instantanément si vous ralentissez.
+                  <strong>Le Niveau !</strong> (prononcé "Level Run") est un défi de survie à haute intensité. L'environnement est un long couloir d'hôpital infini baigné de lumières d'urgence rouges clignotantes et d'alarmes hurlantes. Votre seul objectif est de courir. Derrière vous, une horde d'entités (Partygoers) est prête à vous tuer instantanément si vous ralentissez.
                 </p>
           
                 <h2>Vidéo Walkthrough</h2>
@@ -1214,13 +1214,13 @@ export default [
                 </p>
                 <ul>
                   <li><strong>Le point de déclenchement :</strong> La poursuite commence quand le premier joueur dépasse la <strong>Deuxième Porte</strong> (peu après la première poubelle).</li>
-                  <li><strong>Le risque :</strong> Si vos coéquipiers sont encore en train de charger ou marchent lentement derrière la ligne de la \"poubelle\" quand le joueur de tête déclenche l'événement, les entités apparaîtront <em>entre</em> les joueurs, tuant instantanément ceux qui sont à l'arrière.</li>
+                  <li><strong>Le risque :</strong> Si vos coéquipiers sont encore en train de charger ou marchent lentement derrière la ligne de la "poubelle" quand le joueur de tête déclenche l'événement, les entités apparaîtront <em>entre</em> les joueurs, tuant instantanément ceux qui sont à l'arrière.</li>
                   <li><strong>Stratégie :</strong> Attendez que TOUS les coéquipiers soient regroupés près de la première poubelle avant de sprinter ensemble au-delà de la deuxième porte.</li>
                 </ul>
           
                 <img src="/images/levels/level-12-01.webp" alt="Escape the Backrooms : Niveau !" />
           
-                <h2>Technique de mouvement : Le \"Saut-Accroupi\"</h2>
+                <h2>Technique de mouvement : Le "Saut-Accroupi"</h2>
                 <p>
                   Pour survivre aux obstacles (lits d'hôpital, chaises, brancards) sans perdre d'élan, vous devez maîtriser le Saut-Accroupi (Jump-Crouch).
                 </p>
@@ -2195,6 +2195,355 @@ export default [
       </div>
 
       <p>À partir d'ici, vous êtes prêt à affronter les dernières étapes de votre évasion.</p>
+    `
+  },
+
+  {
+    "id": 22,
+    "title": "Escape the Backrooms – Guide du Niveau 0.2 « Ancient Path » : speedrun et glitch",
+    "pageTitle": "Escape the Backrooms Niveau 0.2 : soluce Ancient Path",
+    "addressBar": "level-0-2-ancient-path-walkthrough",
+    "description": "Route du Niveau 0.2 dans Escape the Backrooms : lisez le plan, ouvrez les 5 paires de portes hautes et basses, gérez les Smiling Eyes et le Skin Peeler, puis utilisez si besoin le ceiling clip près du boîtier électrique.",
+    "imageUrl": "/images/levels/level-22.webp",
+    "imageAlt": "Plan blueprint du Niveau 0.2",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 0.2 : Ancient Path",
+      "difficulty": "Moyen / demande une bonne lecture de route",
+      "objectives": "Étudiez le plan blueprint, ouvrez les 5 paires de portes basses et hautes, contrôlez les Smiling Eyes et le Skin Peeler, puis déverrouillez la sortie principale vers le Niveau 6.1."
+    },
+    "featured": [
+      {
+        "title": "Ceiling clip au boîtier électrique de départ",
+        "description": "Utilisez la petite avancée du boîtier et la jonction mur-plafond pour passer au-dessus du plafond, contourner la route normale et casser l'IA du Skin Peeler.",
+        "imageUrl": "/images/levels/level-22.webp",
+        "imageAlt": "Joueur au-dessus des panneaux du plafond dans le Niveau 0.2",
+        "addressBar": "#ceiling-clip-exploit"
+      }
+    ],
+    "seo": {
+      "title": "Niveau 0.2 Ancient Path Walkthrough - Escape the Backrooms",
+      "description": "Soluce Escape the Backrooms Niveau 0.2 avec la route des paires de portes, les contres contre Smiling Eye et Skin Peeler, le faux piège d'accroupissement de la porte 2 et le ceiling clip du départ.",
+      "keywords": "escape the backrooms level 0.2, ancient path backrooms, smiling eye backrooms, skin peeler glitch, level 0.2 backrooms map"
+    },
+    "detailsHtml": `
+      <p>Le Niveau 0.2, intitulé <strong>« Ancient Path »</strong>, est un labyrinthe de couloirs étroits et segmentés. Pour survivre, vous devez comprendre le lien entre les portes du haut et du bas, garder votre orientation et gérer votre lampe torche contre les créatures des zones sombres. Voici notre route vérifiée en jeu, ainsi qu'un ceiling clip utile pour contourner les dangers du parcours normal.</p>
+
+      <h2>Escape the Backrooms Level 0.2 Guide: Ancient Path Door Puzzle Video</h2>
+      <iframe src="https://www.youtube.com/embed/TvYjhNwfDSI" allowfullscreen></iframe>
+
+      <h2>1. Comprendre la carte et les mécaniques du Niveau 0.2</h2>
+      <p>Au début du niveau, vous trouverez un plan encadré intitulé <strong>« Level 0.2 - General Plan of Renovation »</strong>. Ce plan est essentiel pour progresser normalement :</p>
+      <ul>
+        <li><strong>Zone bleue :</strong> votre zone de départ actuelle (zone sûre).</li>
+        <li><strong>Zone rouge :</strong> le labyrinthe actif, divisé en boucles hautes et basses.</li>
+        <li><strong>Paires de portes :</strong> il y a 5 portes en hauteur et 5 portes en bas, numérotées de 1 à 5.</li>
+        <li><strong>Règle d'ouverture :</strong> une porte du haut ne s'ouvre qu'après avoir débloqué sa porte correspondante en bas.</li>
+      </ul>
+
+      <img src="/images/levels/level-22-01.webp" alt="Plan blueprint du Niveau 0.2" />
+
+      <h2>2. Route standard : paires de portes et gestion des entités</h2>
+      <p>Si vous jouez sans sortir des limites de la carte, vous devez exécuter proprement la séquence des portes tout en gérant deux menaces majeures :</p>
+
+      <h3>Entité 1 : Smiling Eye (笑魔)</h3>
+      <p>Ce sont des sourires lumineux flottants dans les couloirs plongés dans le noir.
+      <br>
+      * <strong>Contre standard :</strong> gardez la lampe torche équipée. Quand vous voyez un Smiling Eye, éclairez-le directement jusqu'à ce qu'il disparaisse.</p>
+
+      <h3>Entité 2 : Skin Peeler (切皮)</h3>
+      <p>Une entité humanoïde rapide et agressive qui patrouille les couloirs étroits.
+      <br>
+      * <strong>Contre standard :</strong> si vous entendez des pas ou un grincement métallique, éteignez la lampe et cachez-vous dans un couloir latéral. S'il vous repère, courez vers la porte déjà déverrouillée la plus proche.</p>
+
+      <h3>Progression porte par porte :</h3>
+      <ol>
+        <li>Trouvez le premier couloir actif en bas et atteignez <strong>la porte basse n°1</strong>. L'interaction fait passer son voyant au vert.</li>
+        <li>Revenez à la boucle du haut : <strong>la porte haute n°1</strong> est maintenant accessible.</li>
+        <li><strong>Le faux piège accroupi (porte n°2) :</strong> des panneaux suggèrent qu'il faut se baisser sous les barrières, mais nos tests montrent que vous pouvez simplement passer debout.</li>
+        <li>Répétez pour les portes 3, 4 et 5. Une fois tous les voyants verts, la sortie principale de la salle de départ s'ouvre.</li>
+      </ol>
+
+      <img src="/images/levels/level-22-02.webp" alt="Plan blueprint du Niveau 0.2" />
+
+      <h2 id="ceiling-clip-exploit">3. Ceiling clip hors limites</h2>
+      <p>Si vous voulez éviter complètement les entités, vous pouvez exploiter un bug de collision près du point de départ :</p>
+
+      <div class="exploit-box">
+        <strong>Comment faire le ceiling clip :</strong>
+        <ol>
+          <li>Allez au boîtier électrique à côté des panneaux d'avertissement du départ.</li>
+          <li>Sautez sur le petit rebord, puis remontez complètement dessus.</li>
+          <li>Placez votre personnage sur la jonction entre le mur courbé et le plafond plat.</li>
+          <li>Levez légèrement la caméra, avancez et spammez saut et accroupissement.</li>
+          <li>Si c'est bien fait, votre modèle passe au-dessus du plafond.</li>
+        </ol>
+      </div>
+
+      <p>Une fois au-dessus des panneaux, vous pouvez marcher directement au-dessus du labyrinthe. Cet exploit apporte deux gros avantages :</p>
+      <ul>
+        <li><strong>Despawn du Skin Peeler :</strong> son pathfinding casse souvent et il finit par tomber dans le vide.</li>
+        <li><strong>Freeze du Smiling Eye :</strong> si vous redescendez derrière lui depuis le plafond, son volume de déclenchement peut ne pas s'initialiser correctement. Il ne disparaît pas, mais il ne vous tue pas non plus.</li>
+      </ul>
+
+      <img src="/images/levels/level-22-03.webp" alt="Plan blueprint du Niveau 0.2" />
+
+      <h2>4. Sortie vers le Niveau 6.1</h2>
+      <p>Quand toutes les portes sont appariées et vertes, revenez dans la salle de départ et actionnez le levier principal. Une lourde grille tombe alors et bloque les entités dehors. Laissez-vous tomber dans la cage d'ascenseur au bout du couloir pour charger en sécurité le <strong>Niveau 6.1 (LE6.1)</strong>.</p>
+    `
+  },
+
+  {
+    "id": 23,
+    "title": "Escape the Backrooms – Guide du Niveau « !! » (Double Exclamation)",
+    "pageTitle": "Escape the Backrooms : soluce complète du Niveau « !! »",
+    "addressBar": "level-double-exclamation",
+    "description": "Route du Niveau !! dans Escape the Backrooms : gérez les plaques solo ou coop, déclenchez la poursuite de Branch, utilisez le stair-drop skip et suivez exactement le chemin gauche / droite / gauche / droite.",
+    "imageUrl": "/images/levels/level-23.webp",
+    "imageAlt": "Les couloirs rouges du Niveau Double Exclamation",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau !! (Double Exclamation)",
+      "difficulty": "Difficile / exécution de poursuite",
+      "objectives": "Gérez correctement les tapis M.E.G., déclenchez la poursuite de Branch, prenez le stair-drop skip et maintenez la route gauche -> droite -> gauche -> droite jusqu'à la sortie."
+    },
+    "featured": [
+      {
+        "title": "Stratégie coop pour tenir les plaques",
+        "description": "Laissez les joueurs ancrés sur les tapis M.E.G. jusqu'à ce que le runner ait franchi la ligne des grilles, sinon la route se referme.",
+        "imageUrl": "/images/levels/level-23.webp",
+        "imageAlt": "Tapis M.E.G. servant de plaques au début du Niveau Double Exclamation",
+        "addressBar": "#plate-holding-strategy"
+      }
+    ],
+    "seo": {
+      "title": "Level !! Escape Guide - Escape the Backrooms Chase Walkthrough",
+      "description": "Soluce Escape the Backrooms Niveau !! avec règles des tapis M.E.G., poursuite de Branch, stair-drop skip et route exacte dans les couloirs.",
+      "keywords": "escape the backrooms level !!, double exclamation backrooms, level !! turn sequence, backrooms branch entity, level !! step guide"
+    },
+    "detailsHtml": `
+      <p>Contrairement aux passages à énigmes comme le Niveau 0.2, <strong>le Niveau « !! » (Double Exclamation)</strong> est un pur sprint sous pression. Un seul mauvais virage ou une hésitation suffit pour finir englouti par les bactéries. Voici le détail tactique du niveau en solo et en coop, ainsi que la route exacte à suivre.</p>
+
+      <h2>Escape the Backrooms Level !! Guide: Run Order & Glitches Video</h2>
+      <iframe src="https://www.youtube.com/embed/W4WGueErhlI" allowfullscreen></iframe>
+
+      <h2 id="plate-holding-strategy">1. Plaques solo vs. multijoueur</h2>
+      <p>Au début de la boucle rouge, vous trouverez des portes dorées avec des <strong>tapis M.E.G.</strong> au sol jouant le rôle de plaques de pression. Le fonctionnement dépend du nombre de joueurs :</p>
+
+      <ul>
+        <li><strong>En solo :</strong> il suffit de marcher une fois sur le tapis pour activer la séquence. Vous pouvez partir immédiatement et les portes restent ouvertes.</li>
+        <li><strong>En coop :</strong> un joueur devient le runner, les autres restent sur les plaques en tant qu'ancrages.
+          <br>
+          <em>Point crucial :</em> les ancrages <strong>ne doivent pas bouger</strong> tant que le runner n'a pas fini son segment, sinon les grilles retombent.</li>
+      </ul>
+
+      <img src="/images/levels/level-23-01.webp" alt="Plaques de pression dans le Niveau Double Exclamation" />
+
+      <h2>2. Déclencher la poursuite : l'entité « Branch »</h2>
+      <p>Quand vous appuyez sur le bouton mural, vous déclenchez l'apparition de <strong>« Branch »</strong>, une masse agressive de membres qui vous pourchasse dans les couloirs.</p>
+      <ul>
+        <li><strong>Règle de la poursuite :</strong> ne regardez pas en arrière. Cela vous fait perdre de la vitesse.</li>
+        <li>En coop, les joueurs sur les plaques doivent attendre que le runner ait réellement franchi la ligne des grilles avant de partir à leur tour.</li>
+      </ul>
+
+      <h2>3. Staircase skip et raccourci speedrun</h2>
+      <p>Pendant le sprint, vous atteignez plusieurs cages d'escalier descendantes.
+      <br>
+      * <strong>Le gros raccourci :</strong> au lieu de suivre tout l'escalier, sautez par-dessus la rambarde pour tomber directement à l'étage inférieur. Cela fait gagner 2 à 3 secondes.</p>
+
+      <img src="/images/levels/level-23-02.webp" alt="Raccourci d'escalier dans le Niveau Double Exclamation" />
+
+      <h2>4. La route de couloir à mémoriser</h2>
+      <p>Un seul mauvais virage vous envoie dans une impasse remplie de bactéries mortelles. D'après nos runs de test, il faut suivre cette séquence :</p>
+
+      <div class="warning-box">
+        <strong>Séquence des virages :</strong>
+        <ul>
+          <li><strong>Avant l'escalier :</strong> prenez toujours les embranchements de <strong>GAUCHE</strong>.</li>
+          <li><strong>Après la descente :</strong> tournez à <strong>DROITE</strong>, puis tout de suite à <strong>GAUCHE</strong>, puis encore à <strong>DROITE</strong>.</li>
+          <li><strong>Dernière ligne droite :</strong> continuez tout droit jusqu'à la porte de sortie.</li>
+        </ul>
+      </div>
+
+      <img src="/images/levels/level-23-03.webp" alt="Route du Niveau Double Exclamation" />
+
+      <p>Si vous exécutez correctement cette route, vous atteignez un couloir d'hôpital bleu et propre. Éteignez la lampe, repassez sur vos consommables si besoin et empruntez la porte du fond pour charger l'étape suivante.</p>
+    `
+  },
+
+  {
+    "id": 24,
+    "title": "Escape the Backrooms – Niveau 188 « Courtyard » : soluce et skip TV",
+    "pageTitle": "Escape the Backrooms Niveau 188 : guide complet Courtyard",
+    "addressBar": "level-188-courtyard-walkthrough",
+    "description": "Route du Niveau 188 dans Escape the Backrooms : transportez les TV A, B et C via l'ascenseur de fret, évitez Ceiling Spider et Curtain Spirit, ou utilisez le skip diagonal 1-TV.",
+    "imageUrl": "/images/levels/level-24.webp",
+    "imageAlt": "Couloirs d'hôtel du Niveau 188 donnant sur la cour intérieure",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 188 : Courtyard",
+      "difficulty": "Difficile / route d'énigme lente",
+      "objectives": "Déplacez les TV A, B et C par la route de fret, évitez Ceiling Spider et Curtain Spirit, ou utilisez le clip diagonal 1-TV pour sauter toute l'énigme."
+    },
+    "featured": [
+      {
+        "title": "Skip diagonal 1-TV dans l'ascenseur de fret",
+        "description": "Coincez une seule TV en diagonale dans le coin de l'ascenseur de fret et forcez la collision à casser au lieu de finir la route complète A-B-C.",
+        "imageUrl": "/images/levels/level-24.webp",
+        "imageAlt": "Télévision CRT coincée en diagonale dans l'ascenseur de fret",
+        "addressBar": "#tv-clipping-skip"
+      }
+    ],
+    "seo": {
+      "title": "Level 188 Courtyard Guide - Escape the Backrooms TV Glitch",
+      "description": "Soluce Escape the Backrooms Niveau 188 avec règle fret vs passager, slide-tackle sur les TV, zones de danger et skip 1-TV.",
+      "keywords": "escape the backrooms level 188, level 188 tv puzzle, backrooms curtain spirit, backrooms spider hole, level 188 glitch, 1 tv elevator skip"
+    },
+    "detailsHtml": `
+      <p>Le Niveau 188, avec son ambiance d'hôtel <strong>« Courtyard »</strong>, est normalement un passage lent et pénible. Il faut localiser et trier de lourdes télévisions CRT sur plusieurs étages via un système d'ascenseurs précis. Heureusement, un exploit très fiable permet d'éviter la majeure partie du niveau.</p>
+
+      <h2>Escape the Backrooms Level 188 Guide: 1-TV Puzzle & Glitch Video</h2>
+      <iframe src="https://www.youtube.com/embed/2Giiy2ixJNw" allowfullscreen></iframe>
+
+      <h2>1. Route standard : l'énigme des TV et des ascenseurs</h2>
+      <p>Normalement, vous devez trouver trois télévisions CRT marquées <strong>A, B et C</strong> sur les étages 2 et 3, puis les ramener à leurs emplacements dans le hub central.</p>
+
+      <h3>Ascenseur de fret vs ascenseur passager</h3>
+      <p>Le niveau contient deux ascenseurs distincts.
+      <br>
+      * <strong>La règle :</strong> vous ne pouvez <strong>pas</strong> pousser les chariots TV dans l'ascenseur passager. Le jeu le bloque physiquement. Utilisez toujours l'ascenseur de fret.</p>
+
+      <img src="/images/levels/level-24-01.webp" alt="Ascenseurs du Niveau 188" />
+
+      <h3>Optimiser le déplacement (slide-tackle)</h3>
+      <p>Pousser les TV à la main est très lent. Pour aller plus vite :</p>
+      <ul>
+        <li><strong>Sprint push :</strong> maintenez <code>Shift</code>, mais surveillez votre endurance.</li>
+        <li><strong>Slide-tackle :</strong> utilisez <code>Shift</code> + <code>Clic gauche</code> pour percuter la TV et la faire glisser beaucoup plus vite dans le couloir.</li>
+      </ul>
+
+      <h2>2. Profil des menaces</h2>
+      <p>Pendant la recherche des TV, trois menaces principales doivent être gérées :</p>
+
+      <h3>Ceiling Spider (entité des trous)</h3>
+      <p>Surveillez les trous sombres au plafond. Si vous passez juste dessous, une grosse araignée très rapide tombe et vous tue.</p>
+      <ul>
+        <li><strong>Bait en coop :</strong> en multijoueur, l'araignée descend généralement sur le joueur qui déclenche sa zone en premier. Vous pouvez l'appâter pour libérer le passage d'un coéquipier.</li>
+      </ul>
+
+      <h3>Curtain Spirit</h3>
+      <p>N'entrez pas dans les chambres avec des rideaux fermés et des yeux rouges visibles. S'approcher trop près déclenche une mort instantanée.</p>
+
+      <h3>Smiling Eye</h3>
+      <p>Comme d'habitude, il disparaît lorsque vous l'éclairez directement avec la lampe torche.</p>
+
+      <img src="/images/levels/level-24-02.webp" alt="Dangers du Niveau 188" />
+
+      <h2 id="tv-clipping-skip">3. Le gros skip diagonal 1-TV</h2>
+      <p>Vous pouvez éviter presque toute l'énigme et les dangers des étages supérieurs en utilisant une seule TV correctement :</p>
+
+      <div class="exploit-box">
+        <strong>Comment exécuter le skip 1-TV :</strong>
+        <ol>
+          <li>Trouvez <strong>une seule TV</strong> sur les étages inférieurs.</li>
+          <li>Poussez-la dans <strong>l'ascenseur de fret</strong>.</li>
+          <li>Ne la placez pas droite : coincez-la <strong>en diagonale</strong> dans un coin.</li>
+          <li>Maintenez le sprint et spammez l'input de poussée (<code>F</code>) pour forcer la TV dans les limites de collision.</li>
+          <li>Votre personnage ou le trigger de transition clippe alors à travers le sol et charge directement l'étape suivante.</li>
+        </ol>
+      </div>
+
+      <img src="/images/levels/level-24-03.webp" alt="Skip diagonal TV dans le Niveau 188" />
+
+      <p>Grâce à ce clip, vous n'avez plus besoin de récupérer les autres TV et vous évitez totalement les étages supérieurs dangereux.</p>
+    `
+  },
+
+  {
+    "id": 25,
+    "title": "Escape the Backrooms – Niveau 37.2 « Poolrooms » : guide complet et skips",
+    "pageTitle": "Escape the Backrooms Niveau 37.2 : soluce complète Poolrooms",
+    "addressBar": "level-37-2-poolrooms-walkthrough",
+    "description": "Route du Niveau 37.2 dans Escape the Backrooms : traversez l'eau toxique en squat-jump, résolvez les phases à 4, 3 et 7 valves, exploitez la fenêtre d'interaction sûre contre Zhi Tuan, ou utilisez le clip F11.",
+    "imageUrl": "/images/levels/level-25.webp",
+    "imageAlt": "Couloirs de piscine carrelés du Niveau 37.2",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Niveau 37.2 : Poolrooms",
+      "difficulty": "Difficile / dégâts élevés, plusieurs phases",
+      "objectives": "Traversez l'eau toxique avec des squat-jumps ou en longeant les rebords, terminez les sections à 4, 3 et 7 valves, exploitez la fenêtre d'interaction sûre contre Zhi Tuan, ou sautez la dernière partie avec le water clip F11."
+    },
+    "featured": [
+      {
+        "title": "Water clip F11 en mode fenêtré",
+        "description": "Activez la V-Sync et le mode fenêtré, puis utilisez F11 lors de la chute dans l'eau pour traverser le bassin toxique et sauter la dernière phase de valves.",
+        "imageUrl": "/images/levels/level-25.webp",
+        "imageAlt": "Joueur traversant la surface toxique dans le Niveau 37.2",
+        "addressBar": "#f11-window-clip"
+      }
+    ],
+    "seo": {
+      "title": "Level 37.2 Poolrooms Guide - Escape the Backrooms Water Glitch",
+      "description": "Soluce Escape the Backrooms Niveau 37.2 avec route des valves, déplacement sur eau toxique, exploit d'interaction contre Zhi Tuan et water clip F11.",
+      "keywords": "escape the backrooms level 37.2, poolrooms backrooms guide, backrooms zhi tuan exploit, level 37.2 glitch, f11 water clip bypass"
+    },
+    "detailsHtml": `
+      <p>Le Niveau 37.2, partie des célèbres <strong>« Poolrooms »</strong>, est un test dur de déplacement, de trajectoire et de précision. L'eau est saturée de bactéries et peut vider votre vie en quelques secondes. La route normale demande plusieurs séries de valves, mais deux gros défauts de collision permettent des skips très puissants.</p>
+
+      <h2>Escape the Backrooms Level 37.2 Guide: F11 & VSync Skip Video</h2>
+      <iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe>
+
+      <h2>1. Route normale et bases de déplacement</h2>
+      <p>Pour survivre, il faut réduire au maximum le temps passé dans l'eau toxique et éviter de se faire coincer par les entités.</p>
+
+      <h3>Technique du squat-jump</h3>
+      <p>Pour traverser les zones peu profondes sans perdre trop de vie, sautez avec <code>Espace</code> puis appuyez sur <code>Ctrl</code> au sommet du saut. Ce jump-crouch réduit fortement le contact avec l'eau.</p>
+
+      <img src="/images/levels/level-25-01.webp" alt="Squat-jump dans le Niveau 37.2" />
+
+      <h3>Radeau vs course sur rebord</h3>
+      <p>Le jeu place un radeau gonflable au début, mais il est lent et pénible à contrôler. Le plus rapide reste de courir le long des bords carrelés.</p>
+
+      <h3>Les séries de valves</h3>
+      <p>La progression normale demande d'ouvrir les bons réservoirs et leurs valves :
+      <br>
+      * <strong>Zone 1 :</strong> 4 valves
+      <br>
+      * <strong>Zone 2 :</strong> 3 valves
+      <br>
+      * <strong>Zone 3 :</strong> 7 valves
+      </p>
+
+      <h2>2. Exploit d'interaction « dead state » contre Zhi Tuan</h2>
+      <p>Les couloirs de valves inférieurs sont patrouillés par <strong>Zhi Tuan</strong>. Normalement, ils vous tuent très vite si vous restez exposé. Mais il existe une faille dans le code :</p>
+      <ul>
+        <li><strong>Principe :</strong> si Zhi Tuan vous poursuit déjà, l'exploit ne sauvera pas la run. En revanche, si vous commencez l'animation d'une valve <em>avant</em> que son aggro ne s'active, l'IA peut totalement vous ignorer.</li>
+        <li>Le jeu marque temporairement le joueur comme « dead/inactive » pendant certaines interactions. Zhi Tuan passe alors à côté sans attaquer.</li>
+      </ul>
+
+      <img src="/images/levels/level-25-02.webp" alt="Zhi Tuan dans le Niveau 37.2" />
+
+      <h2 id="f11-window-clip">3. Le water clip F11</h2>
+      <p>Pour sauter complètement la longue phase à 7 valves, vous pouvez exploiter un bug de rendu et de collision :</p>
+
+      <div class="exploit-box">
+        <strong>Comment exécuter le water clip F11 :</strong>
+        <ol>
+          <li>Activez la <strong>V-Sync</strong> et passez le jeu en <strong>mode fenêtré</strong>.</li>
+          <li>Placez-vous sur le bord de la haute plateforme au-dessus du grand bassin.</li>
+          <li>Sautez vers l'eau.</li>
+          <li>Appuyez sur <code>F11</code> juste avant l'impact avec la surface.</li>
+          <li>Le rendu peut alors se bloquer brièvement et votre modèle passe à travers le volume d'eau jusqu'à la zone de transition du bas.</li>
+        </ol>
+      </div>
+
+      <img src="/images/levels/level-25-03.webp" alt="Water clip F11 dans le Niveau 37.2" />
+
+      <p>Ce skip vous évite toute la dernière phase de valves. Remontez ensuite par les échelles et passez la sortie pour charger vers <strong>Level Fang Plus / Le Fang Plus</strong>.</p>
     `
   }
 

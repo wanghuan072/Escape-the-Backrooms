@@ -2148,5 +2148,354 @@ export default [
 
         <p>Von hier aus bist du bereit, dich den letzten Phasen deiner Flucht zuzuwenden.</p>
       `
+    },
+
+    {
+      "id": 22,
+      "title": "Escape the Backrooms – Level 0.2 „Ancient Path“ Speedrun- & Exploit-Guide",
+      "pageTitle": "Escape the Backrooms Level 0.2: Ancient Path Walkthrough",
+      "addressBar": "level-0-2-ancient-path-walkthrough",
+      "description": "Route für Escape the Backrooms Level 0.2: Lies den Bauplan, öffne alle 5 Türpaare aus Unter- und Oberweg, kontere Smiling Eyes und den Skin Peeler und nutze bei Bedarf den Ceiling-Clip am Sicherungskasten.",
+      "imageUrl": "/images/levels/level-22.webp",
+      "imageAlt": "Bauplan-Karte von Level 0.2",
+      "category": "Hauptlevel",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 0.2: Ancient Path",
+        "difficulty": "Mittel / Routenwissen wichtig",
+        "objectives": "Studieren Sie den Bauplan, öffnen Sie die 5 Türpaare aus Unter- und Oberweg, kontrollieren Sie Smiling Eyes und den Skin Peeler und aktivieren Sie dann den Hauptexit zu Level 6.1."
+      },
+      "featured": [
+        {
+          "title": "Ceiling-Clip am Sicherungskasten",
+          "description": "Nutzen Sie die Kante am Sicherungskasten und die Naht zwischen Wand und Decke, um über die Flurdecke zu clippen, Standardpfade zu umgehen und den Skin Peeler auszuschalten.",
+          "imageUrl": "/images/levels/level-22.webp",
+          "imageAlt": "Spieler clippt über die Deckenpaneele in Level 0.2",
+          "addressBar": "#ceiling-clip-exploit"
+        }
+      ],
+      "seo": {
+        "title": "Level 0.2 Ancient Path Walkthrough - Escape the Backrooms",
+        "description": "Escape the Backrooms Level 0.2 mit Türpaar-Route, Kontern gegen Smiling Eye und Skin Peeler, Door-2-Crouch-Skip und Ceiling-Clip im Startbereich.",
+        "keywords": "escape the backrooms level 0.2, ancient path backrooms, smiling eye backrooms, skin peeler glitch, level 0.2 backrooms map"
+      },
+      "detailsHtml": `
+        <p>Level 0.2 mit dem Titel <strong>„Ancient Path“</strong> ist ein enger, segmentierter Korridor-Irrgarten. Um zu überleben, musst du die Beziehung zwischen oberen und unteren Türen verstehen, die Orientierung behalten und deine Taschenlampe gegen die Kreaturen der Dunkelheit gut managen. Unten findest du unsere praxiserprobte Route sowie einen nützlichen Out-of-Bounds-Clip, mit dem du die üblichen Gefahren umgehen kannst.</p>
+  
+        <h2>Escape the Backrooms Level 0.2 Guide: Ancient Path Door Puzzle Video</h2>
+        <iframe src="https://www.youtube.com/embed/TvYjhNwfDSI" allowfullscreen></iframe>
+
+        <h2>1. Level-0.2-Karte & Mechaniken verstehen</h2>
+        <p>Nahe dem Start findest du einen gerahmten Bauplan mit der Aufschrift <strong>„Level 0.2 - General Plan of Renovation“</strong>. Diese Karte ist für den normalen Fortschritt entscheidend:</p>
+        <ul>
+          <li><strong>Die blaue Zone:</strong> Dein aktueller Startbereich (sichere Zone).</li>
+          <li><strong>Die rote Zone:</strong> Der aktive Korridor-Irrgarten mit oberem und unterem Rundkurs.</li>
+          <li><strong>Die Türpaare:</strong> Es gibt 5 Türen auf der oberen Ebene und 5 Türen auf der unteren Ebene. Sie sind mit 1 bis 5 nummeriert.</li>
+          <li><strong>Die Freischaltregel:</strong> Eine obere Tür öffnet sich erst, nachdem du ihre entsprechende untere Tür freigeschaltet hast.</li>
+        </ul>
+
+        <img src="/images/levels/level-22-01.webp" alt="Bauplan-Karte von Level 0.2" />
+  
+        <h2>2. Standardroute: Türpaare & Gegnerkontrolle</h2>
+        <p>Wenn du dieses Level ohne Out-of-Bounds-Clip spielst, musst du die Türpaar-Sequenz sauber abarbeiten und dabei zwei gefährliche Gegner kontrollieren:</p>
+        
+        <h3>Gegner 1: Smiling Eye (笑魔)</h3>
+        <p>Diese Gegner erscheinen als schwebendes, leuchtendes Grinsen in den dunklen Korridoren.
+        <br>
+        * <strong>Standard-Konter:</strong> Halte die Taschenlampe bereit. Sobald du ein Smiling Eye siehst, richte den Lichtstrahl direkt darauf. Es verschwindet dann schnell.</p>
+  
+        <h3>Gegner 2: Skin Peeler (切皮)</h3>
+        <p>Ein schneller, aggressiver humanoider Gegner, der durch die engen Gänge patrouilliert.
+        <br>
+        * <strong>Standard-Konter:</strong> Wenn du Schritte oder metallisches Kreischen hörst, schalte die Taschenlampe aus und weiche in einen Seitengang aus. Wenn er dich sieht, sprinte sofort zur nächsten geöffneten Tür.</p>
+  
+        <h3>Schritt-für-Schritt-Fortschritt:</h3>
+        <ol>
+          <li>Suche den ersten aktiven unteren Gang und erreiche <strong>Untere Tür Nr. 1</strong>. Nach der Interaktion wird die Anzeige grün.</li>
+          <li>Gehe zurück zur oberen Schleife; <strong>Obere Tür Nr. 1</strong> ist jetzt zugänglich.</li>
+          <li><strong>Die Crouch-Falle (Tür Nr. 2):</strong> Schilder deuten an, dass du dich ducken musst. Unsere Tests zeigen aber, dass du geradeaus hindurchgehen kannst.</li>
+          <li>Wiederhole das für Türen 3, 4 und 5. Wenn alle Anzeigen grün sind, öffnet sich das Hauptexit im Startraum.</li>
+        </ol>
+
+        <img src="/images/levels/level-22-02.webp" alt="Bauplan-Karte von Level 0.2" />
+  
+        <h2 id="ceiling-clip-exploit">3. Out-of-Bounds-Ceiling-Clip</h2>
+        <p>Wenn du die Gegner komplett umgehen willst, kannst du direkt am Start einen Geometrie-Bug nutzen:</p>
+        
+        <div class="exploit-box">
+          <strong>So funktioniert der Ceiling-Clip:</strong>
+          <ol>
+            <li>Gehe zum Sicherungskasten neben den Warnschildern am Start.</li>
+            <li>Springe auf die kleine Kante des Kastens und stelle dich ganz darauf.</li>
+            <li>Richte deine Figur an der Naht zwischen gebogener Wand und flacher Decke aus.</li>
+            <li>Ziele leicht nach oben, drücke vorwärts und spamme Sprung und Ducken.</li>
+            <li>Wenn es klappt, clippt dein Charakter durch die Decke.</li>
+          </ol>
+        </div>
+  
+        <p>Oberhalb der Deckenpaneele kannst du direkt über den Korridoren laufen. Das bringt zwei große Vorteile:</p>
+        <ul>
+          <li><strong>Skin Peeler despawnen:</strong> Sein Pathfinding bricht oft und er fällt schließlich in die Leere.</li>
+          <li><strong>Smiling-Eye-Freeze:</strong> Wenn du direkt hinter einem Smiling Eye von oben herunterfällst, initialisiert sein Trigger nicht korrekt. Es verschwindet nicht, greift dich aber auch nicht an.</li>
+        </ul>
+
+        <img src="/images/levels/level-22-03.webp" alt="Bauplan-Karte von Level 0.2" />
+  
+        <h2>4. Flucht zu Level 6.1</h2>
+        <p>Wenn alle Türen gepaart und grün sind, kehre in den Startraum zurück und ziehe den Hauptexit-Hebel. Danach fällt ein schweres Tor herunter und sperrt die Gegner aus. Geh in den Aufzugsschacht am Ende des Flurs, um sicher nach <strong>Level 6.1 (LE6.1)</strong> zu laden.</p>
+      `
+    },
+
+    {
+      "id": 23,
+      "title": "Escape the Backrooms – Guide für Level „!!“ (Double Exclamation)",
+      "pageTitle": "Escape the Backrooms: Level „!!“ Kompletter Chase-Walkthrough",
+      "addressBar": "level-double-exclamation",
+      "description": "Route für Escape the Backrooms Level !!: Beherrsche Solo- oder Koop-Druckplatten, löse den Branch-Chase aus, nutze den Stair-Drop-Skip und folge exakt dem Pfad links / rechts / links / rechts.",
+      "imageUrl": "/images/levels/level-23.webp",
+      "imageAlt": "Die rot beleuchteten Korridore von Level Double Exclamation",
+      "category": "Hauptlevel",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level !! (Double Exclamation)",
+        "difficulty": "Schwer / Chase-Ausführung",
+        "objectives": "Nutzen Sie die M.E.G.-Teppich-Druckplatten korrekt, starten Sie den Branch-Chase, nehmen Sie den Stair-Drop-Skip und halten Sie die Route links -> rechts -> links -> rechts bis zum Ausgang."
+      },
+      "featured": [
+        {
+          "title": "Koop-Strategie für die Druckplatten",
+          "description": "Halte die Anker-Spieler auf den M.E.G.-Teppichen, bis der Runner die Torlinie sicher passiert hat, sonst schließt sich die Route wieder.",
+          "imageUrl": "/images/levels/level-23.webp",
+          "imageAlt": "M.E.G.-Teppich-Druckplatten am Start von Level Double Exclamation",
+          "addressBar": "#plate-holding-strategy"
+        }
+      ],
+      "seo": {
+        "title": "Level !! Escape Guide - Escape the Backrooms Chase Walkthrough",
+        "description": "Escape the Backrooms Level !! mit M.E.G.-Druckplatten, Branch-Chase, Stair-Drop-Skip und exakter Korridorroute.",
+        "keywords": "escape the backrooms level !!, double exclamation backrooms, level !! turn sequence, backrooms branch entity, level !! step guide"
+      },
+      "detailsHtml": `
+        <p>Im Gegensatz zu den rätsellastigen Bereichen von Level 0.2 ist <strong>Level „!!“ (Double Exclamation)</strong> ein reiner Hochgeschwindigkeits-Sprint. Ein falscher Abzweig oder ein kurzer Zögern genügt, und du wirst von Bakterien erwischt. Unten findest du die taktische Aufschlüsselung für Solo und Koop sowie die exakte Route, die zum Überleben nötig ist.</p>
+  
+        <h2>Escape the Backrooms Level !! Guide: Run Order & Glitches Video</h2>
+        <iframe src="https://www.youtube.com/embed/W4WGueErhlI" allowfullscreen></iframe>
+
+        <h2 id="plate-holding-strategy">1. Solo- vs. Koop-Druckplatten</h2>
+        <p>Am Anfang dieses roten Korridorkreislaufs findest du goldene Türen mit <strong>M.E.G.-Teppichen</strong> als Druckplatten. Das Spiel behandelt sie je nach Gruppengröße unterschiedlich:</p>
+        
+        <ul>
+          <li><strong>Solo:</strong> Einmal auf den Teppich treten reicht, um die Türen zu öffnen. Du kannst direkt weiterlaufen.</li>
+          <li><strong>Koop:</strong> Ein Spieler ist der Runner, die anderen bleiben als Anker auf den Platten stehen.
+            <br>
+            <em>Wichtig:</em> Die Anker dürfen die Platte <strong>nicht verlassen</strong>, solange der Runner noch unterwegs ist. Sonst schließen sich die Tore wieder und sperren ihn ein.</li>
+        </ul>
+
+        <img src="/images/levels/level-23-01.webp" alt="Druckplatten in Level Double Exclamation" />
+  
+        <h2>2. Den Chase auslösen: die „Branch“-Entität</h2>
+        <p>Sobald du den Wandknopf drückst, spawnst du die <strong>„Branch“</strong> – eine aggressive Masse aus peitschenden Gliedern, die dich durch die Korridore jagt.</p>
+        <ul>
+          <li><strong>Regel für den Chase:</strong> Schau nicht zurück. Das kostet Tempo. Halte den Sprint.</li>
+          <li>Im Koop müssen die Plattenspieler warten, bis der Runner das Tor wirklich passiert hat.</li>
+        </ul>
+  
+        <h2>3. Staircase-Skip & Speedrun-Abkürzung</h2>
+        <p>Während des Sprints erreichst du mehrere Treppen nach unten.
+        <br>
+        * <strong>Der starke Skip:</strong> Statt die Treppe normal zu laufen, springst du über das Geländer direkt auf die untere Ebene. Das spart 2 bis 3 Sekunden.</p>
+
+        <img src="/images/levels/level-23-02.webp" alt="Treppenskip in Level Double Exclamation" />
+
+        <h2>4. Die entscheidende Korridorroute</h2>
+        <p>Ein falscher Turn führt in Sackgassen mit tödlichen Bakterien. Nach unseren Testläufen musst du diese Reihenfolge halten:</p>
+        
+        <div class="warning-box">
+          <strong>Turn-Sequenz:</strong>
+          <ul>
+            <li><strong>Vor der Treppe:</strong> Immer den <strong>LINKEN</strong> Weg nehmen.</li>
+            <li><strong>Nach der Treppe:</strong> <strong>RECHTS</strong>, dann sofort <strong>LINKS</strong>, dann noch einmal <strong>RECHTS</strong>.</li>
+            <li><strong>Endspurt:</strong> Geradeaus durch den beleuchteten Flur bis zur Ausgangstür.</li>
+          </ul>
+        </div>
+
+        <img src="/images/levels/level-23-03.webp" alt="Route in Level Double Exclamation" />
+  
+        <p>Wenn du diese Route sauber läufst, erreichst du einen sauberen, blau beleuchteten Krankenhausflur. Schalte die Taschenlampe aus, wechsle bei Bedarf auf Verbrauchsitems und gehe durch die Tür am Ende, um zur nächsten Phase zu gelangen.</p>
+      `
+    },
+
+    {
+      "id": 24,
+      "title": "Escape the Backrooms – Level 188 „Courtyard“ Walkthrough & TV-Skip",
+      "pageTitle": "Escape the Backrooms Level 188: Kompletter Courtyard-Guide",
+      "addressBar": "level-188-courtyard-walkthrough",
+      "description": "Route für Escape the Backrooms Level 188: Transportiere die TVs A, B und C über den Frachtauszug, meide Ceiling Spider und Curtain Spirit oder nutze den diagonalen 1-TV-Skip.",
+      "imageUrl": "/images/levels/level-24.webp",
+      "imageAlt": "Hotelkorridore von Level 188 mit Blick in den Innenhof",
+      "category": "Hauptlevel",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 188: Courtyard",
+        "difficulty": "Schwer / Langsame Puzzle-Route",
+        "objectives": "Bewegen Sie die TVs A, B und C über die Frachtroute, vermeiden Sie Ceiling Spider und Curtain Spirits oder nutzen Sie den diagonalen 1-TV-Clip, um das Puzzle zu überspringen."
+      },
+      "featured": [
+        {
+          "title": "Diagonaler 1-TV-Frachtaufzug-Skip",
+          "description": "Verkeile einen einzelnen TV diagonal in der Ecke des Frachtaufzugs und brich die Kollision, statt die komplette A-B-C-TV-Route zu spielen.",
+          "imageUrl": "/images/levels/level-24.webp",
+          "imageAlt": "CRT-TV diagonal im Frachtaufzug verkeilt",
+          "addressBar": "#tv-clipping-skip"
+        }
+      ],
+      "seo": {
+        "title": "Level 188 Courtyard Guide - Escape the Backrooms TV Glitch",
+        "description": "Escape the Backrooms Level 188 mit Fracht- vs.-Passagieraufzug-Regel, TV-Slide-Tackle, Gefahrenzonen und 1-TV-Clip-Skip.",
+        "keywords": "escape the backrooms level 188, level 188 tv puzzle, backrooms curtain spirit, backrooms spider hole, level 188 glitch, 1 tv elevator skip"
+      },
+      "detailsHtml": `
+        <p>Level 188 mit seiner typischen <strong>„Courtyard“</strong>-Hotelarchitektur ist im normalen Ablauf ein langsames, zähes Level. Du musst schwere CRT-Fernseher über mehrere Stockwerke bewegen und ein bestimmtes Aufzugssystem korrekt nutzen. Gleichzeitig gibt es einen verlässlichen Speedrun-Exploit, mit dem du rund 90 % der Arbeit überspringst.</p>
+  
+        <h2>Escape the Backrooms Level 188 Guide: 1-TV Puzzle & Glitch Video</h2>
+        <iframe src="https://www.youtube.com/embed/2Giiy2ixJNw" allowfullscreen></iframe>
+
+        <h2>1. Standardroute: TV-Aufzug-Rätsel</h2>
+        <p>Normalerweise musst du drei CRT-Fernseher mit den Markierungen <strong>A, B und C</strong> auf Etage 2 und 3 finden und in den zentralen Hub zurückbringen.</p>
+        
+        <h3>Fracht- vs. Passagieraufzug</h3>
+        <p>Das Layout hat zwei verschiedene Aufzüge.
+        <br>
+        * <strong>Die Regel:</strong> Du kannst TV-Wagen <strong>nicht</strong> in den Passagieraufzug schieben. Das Spiel blockiert das physisch. Nutze immer den Frachtaufzug.</p>
+    
+        <img src="/images/levels/level-24-01.webp" alt="Aufzüge in Level 188" />
+
+        <h3>Bewegungsoptimierung (Slide-Tackle)</h3>
+        <p>Normales Schieben ist extrem langsam. Nutze für schnelleres Bewegen diese Technik:</p>
+        <ul>
+          <li><strong>Sprint-Schieben:</strong> Halte <code>Shift</code>, aber achte auf die Ausdauer.</li>
+          <li><strong>Slide-Tackle:</strong> Mit <code>Shift</code> + <code>Linksklick</code> kannst du direkt in den TV-Wagen gleiten und ihn viel schneller vorschieben.</li>
+        </ul>
+  
+        <h2>2. Gefahrenprofile der Gegner</h2>
+        <p>Während du die Fernseher suchst, musst du drei Gegnertypen beachten:</p>
+        
+        <h3>Ceiling Spider (Loch-Entität)</h3>
+        <p>Achte auf offene Deckenlöcher. Wenn du direkt darunter läufst, fällt eine extrem schnelle Spinne herunter und tötet dich.</p>
+        <ul>
+          <li><strong>Koop-Köderung:</strong> Im Mehrspieler fällt die Spinne bei dem Spieler herunter, der seinen Deckenbereich zuerst auslöst. So kannst du sie gezielt baiten.</li>
+        </ul>
+  
+        <h3>Curtain Spirit</h3>
+        <p>Gehe nicht in Hotelzimmer mit geschlossenen Vorhängen und roten Augen. Zu große Nähe löst einen Instant-Kill aus.</p>
+  
+        <h3>Smiling Eye</h3>
+        <p>Wie gewohnt verschwindet es, wenn du direkt mit der Taschenlampe darauf leuchtest.</p>
+
+        <img src="/images/levels/level-24-02.webp" alt="Gefahren in Level 188" />
+  
+        <h2 id="tv-clipping-skip">3. Der starke diagonale 1-TV-Skip</h2>
+        <p>Du kannst das ganze Rätsel und die oberen Gefahren fast komplett überspringen, wenn du nur einen einzigen TV richtig nutzt:</p>
+        
+        <div class="exploit-box">
+          <strong>So funktioniert der 1-TV-Skip:</strong>
+          <ol>
+            <li>Finde <strong>einen einzigen TV-Wagen</strong> auf den unteren Etagen.</li>
+            <li>Schiebe ihn in den <strong>Frachtaufzug</strong>.</li>
+            <li>Parke ihn nicht gerade, sondern verkeile ihn <strong>diagonal</strong> in der Ecke.</li>
+            <li>Halte Sprint und spamme den Push-Input (<code>F</code>), um den Wagen in die Kollisionsgrenzen zu drücken.</li>
+            <li>Dein Modell oder der Aufzugs-Trigger clippt durch den Boden und lädt dich direkt ins nächste Level.</li>
+          </ol>
+        </div>
+
+        <img src="/images/levels/level-24-03.webp" alt="Diagonaler TV-Skip in Level 188" />
+  
+        <p>Mit diesem Clip musst du die übrigen TVs nicht mehr einsammeln und vermeidest die gefährlichen oberen Stockwerke vollständig.</p>
+      `
+    },
+
+    {
+      "id": 25,
+      "title": "Escape the Backrooms – Level 37.2 „Poolrooms“ Guide & Skip-Glitches",
+      "pageTitle": "Escape the Backrooms Level 37.2: Kompletter Poolrooms-Walkthrough",
+      "addressBar": "level-37-2-poolrooms-walkthrough",
+      "description": "Route für Escape the Backrooms Level 37.2: Überquere toxisches Wasser mit Squat-Jumps, löse die 4-, 3- und 7-Ventil-Phasen, nutze das sichere Interaktionsfenster gegen Zhi Tuan oder den F11-Clip.",
+      "imageUrl": "/images/levels/level-25.webp",
+      "imageAlt": "Geflieste Pool-Korridore von Level 37.2",
+      "category": "Hauptlevel",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 37.2: Poolrooms",
+        "difficulty": "Schwer / Hoher Schaden, mehrere Phasen",
+        "objectives": "Überqueren Sie toxisches Wasser mit Squat-Jumps oder Ledge-Running, lösen Sie die 4-, 3- und 7-Ventil-Sektionen, nutzen Sie das sichere Interaktionsfenster gegen Zhi Tuan oder überspringen Sie den letzten Bereich mit dem F11-Wasserclip."
+      },
+      "featured": [
+        {
+          "title": "F11-Fenstermodus-Wasserclip",
+          "description": "Aktivieren Sie V-Sync und Fenstermodus und nutzen Sie F11 beim Wassertropfen, um durch das toxische Becken zu clippen und die letzte Ventilphase zu überspringen.",
+          "imageUrl": "/images/levels/level-25.webp",
+          "imageAlt": "Spieler clippt durch die toxische Wasseroberfläche in Level 37.2",
+          "addressBar": "#f11-window-clip"
+        }
+      ],
+      "seo": {
+        "title": "Level 37.2 Poolrooms Guide - Escape the Backrooms Water Glitch",
+        "description": "Escape the Backrooms Level 37.2 mit Ventilrouten, toxischer Wasserbewegung, Zhi-Tuan-Interaktions-Exploit und F11-Wasserclip.",
+        "keywords": "escape the backrooms level 37.2, poolrooms backrooms guide, backrooms zhi tuan exploit, level 37.2 glitch, f11 water clip bypass"
+      },
+      "detailsHtml": `
+        <p>Level 37.2, Teil der berüchtigten <strong>„Poolrooms“</strong>, ist ein zäher Test für Bewegung, Routenwahl und Präzision. Das Wasser ist mit Bakterien gesättigt und zieht dir in Sekunden Leben ab. Der normale Weg verlangt mehrere Ventilfelder, doch zwei große Programmfehler erlauben schnelle Abkürzungen.</p>
+  
+        <h2>Escape the Backrooms Level 37.2 Guide: F11 & VSync Skip Video</h2>
+        <iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe>
+
+        <h2>1. Normale Route & Bewegungsbasis</h2>
+        <p>Um die Standardroute zu überleben, musst du die Zeit im toxischen Wasser minimieren und dich nicht von Gegnern einkesseln lassen.</p>
+        
+        <h3>Squat-Jump-Technik</h3>
+        <p>Um flache Wasserbereiche fast schadlos zu überqueren, springst du mit <code>Leertaste</code> und drückst dann am höchsten Punkt <code>Strg</code>. Dieser Jump-Crouch reduziert den Wasserkontakt stark.</p>
+
+        <img src="/images/levels/level-25-01.webp" alt="Squat-Jump in Level 37.2" />
+
+        <h3>Floß vs. Kantenlauf</h3>
+        <p>Zwar gibt es am Anfang ein aufblasbares Floß, aber es ist langsam und unhandlich. Schneller ist es, entlang der schmalen gefliesten Kanten zu sprinten.</p>
+  
+        <h3>Die Ventilfelder</h3>
+        <p>Der normale Fortschritt verlangt, passende Tanks zu finden und Ventile zu drehen:
+        <br>
+        * <strong>Bereich 1:</strong> 4 Ventile
+        <br>
+        * <strong>Bereich 2:</strong> 3 Ventile
+        <br>
+        * <strong>Bereich 3:</strong> 7 Ventile
+        </p>
+  
+        <h2>2. „Dead-State“-Interaktions-Exploit gegen Zhi Tuan</h2>
+        <p>Die unteren Ventilkorridore werden von <strong>Zhi Tuan</strong> patrouilliert. Normalerweise töten sie dich sofort, wenn sie dich ungeschützt erwischen. Durch einen Code-Exploit kannst du das aber aushebeln:</p>
+        <ul>
+          <li><strong>So funktioniert es:</strong> Wenn Zhi Tuan bereits aggressiv auf dich zuläuft, hilft es nicht. Wenn du aber die Ventil-Animation startest, <em>bevor</em> es dich in Aggro-Reichweite erfasst, ignoriert dich seine KI oft komplett.</li>
+          <li>Während der Rätselinteraktion markiert das Spiel den Spieler intern als „dead/inactive“. Zhi Tuan läuft dann einfach vorbei.</li>
+        </ul>
+
+        <img src="/images/levels/level-25-02.webp" alt="Zhi Tuan in Level 37.2" />
+
+        <h2 id="f11-window-clip">3. Der F11-Wasserclip</h2>
+        <p>Wenn du die lange 7-Ventil-Sequenz komplett skippen willst, kannst du einen Render-/Kollisionsfehler nutzen:</p>
+        
+        <div class="exploit-box">
+          <strong>So funktioniert der F11-Wasserclip:</strong>
+          <ol>
+            <li>Aktiviere <strong>V-Sync</strong> und stelle das Spiel auf <strong>Fenstermodus</strong>.</li>
+            <li>Gehe zur Kante der hohen Plattform über dem tiefen Becken.</li>
+            <li>Springe Richtung Wasser.</li>
+            <li>Drücke kurz vor dem Auftreffen <code>F11</code>.</li>
+            <li>Dadurch kann die Kollision aussetzen und dein Modell fällt durch die Wasseroberfläche direkt in den unteren Exit-Bereich.</li>
+          </ol>
+        </div>
+
+        <img src="/images/levels/level-25-03.webp" alt="F11-Wasserclip in Level 37.2" />
+  
+        <p>Mit diesem Skip sparst du dir die gesamte letzte Ventilphase. Klettere danach die Leitern hoch und gehe durch den Ausgang, um in <strong>Level Fang Plus / Le Fang Plus</strong> zu laden.</p>
+      `
     }
 ]
