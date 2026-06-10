@@ -1,5 +1,5 @@
 <script setup>
-import { watch } from 'vue'
+import { provide, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Header from './components/Header.vue'
@@ -11,8 +11,22 @@ import './assets/css/public.css'
 // 启用自动 SEO
 useAutoSEO()
 
-// 更新 HTML lang 属性
+// GPT banner 轮换：leaderboard 位按 1 → 2 → 3 循环
+const bannerSeq = ref(0)
+provide('gptNextBannerUnit', () => {
+  bannerSeq.value = bannerSeq.value >= 3 ? 1 : bannerSeq.value + 1
+  return bannerSeq.value
+})
+
 const route = useRoute()
+watch(
+  () => route.fullPath,
+  () => {
+    bannerSeq.value = 0
+  },
+)
+
+// 更新 HTML lang 属性
 const { locale } = useI18n()
 
 const updateHtmlLang = () => {

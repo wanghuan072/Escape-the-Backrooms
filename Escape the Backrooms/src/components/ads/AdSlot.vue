@@ -1,8 +1,7 @@
 <script setup>
-import { onMounted, onUnmounted, shallowRef } from 'vue'
-import { mountBannerAd, mountNativeAd } from './loadAd.js'
-
-const MOBILE_QUERY = '(max-width: 768px)'
+import { computed, inject, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { Gt } from '@/utils/gptAds'
 
 const props = defineProps({
   /** sidebar: 300×250 | leaderboard: PC 728 / 移动 300 | native: 原生横幅（每页第一个全宽位） */
@@ -11,62 +10,54 @@ const props = defineProps({
     required: true,
     validator: (v) => ['sidebar', 'leaderboard', 'native'].includes(v),
   },
+  /** 显式指定 GPT 单元：1 | 2 | 3 */
+  unit: {
+    type: [Number, String],
+    default: null,
+  },
 })
 
-const root = shallowRef(null)
-let teardown = null
-let mediaQuery = null
+const route = useRoute()
+const nextBannerUnit = inject('gptNextBannerUnit', null)
 
-function isMobileViewport() {
-  return typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches
+const elementId = `div-gpt-ad-slot-${Math.random().toString(36).slice(2, 11)}`
+
+const minStyle = computed(() => {
+  if (props.variant === 'native') {
+    return { minWidth: '300px', minHeight: '50px' }
+  }
+  if (props.variant === 'sidebar') {
+    return { minWidth: '300px', minHeight: '250px' }
+  }
+  return { minWidth: '300px', minHeight: '90px' }
+})
+
+function resolveUnit() {
+  if (props.unit != null && props.unit !== '') {
+    return props.unit
+  }
+  if (props.variant === 'native' || props.variant === 'sidebar') {
+    return 1
+  }
+  return nextBannerUnit ? nextBannerUnit() : 1
 }
 
 function mountAd() {
-  const el = root.value
-  if (!el) return
-
-  teardown?.()
-  teardown =
-    props.variant === 'native'
-      ? mountNativeAd(el)
-      : mountBannerAd(el, props.variant, isMobileViewport())
+  Gt(elementId, resolveUnit())
 }
 
-function bindRoot(el) {
-  if (!el) {
-    teardown?.()
-    teardown = null
-    root.value = null
-    return
-  }
-  if (el.dataset.adMounted === '1' && el === root.value) return
-  el.dataset.adMounted = '1'
-  root.value = el
-  mountAd()
-}
+onMounted(mountAd)
 
-function onViewportChange() {
-  if (props.variant === 'leaderboard' && root.value) {
+watch(
+  () => route.fullPath,
+  () => {
     mountAd()
-  }
-}
-
-onMounted(() => {
-  mediaQuery = window.matchMedia(MOBILE_QUERY)
-  mediaQuery.addEventListener('change', onViewportChange)
-})
-
-onUnmounted(() => {
-  mediaQuery?.removeEventListener('change', onViewportChange)
-  teardown?.()
-  teardown = null
-  const el = root.value
-  if (el) delete el.dataset.adMounted
-})
+  },
+)
 </script>
 
 <template>
-  <div>
-    <div :ref="bindRoot" aria-hidden="true" />
+  <div class="gpt-ad-slot">
+    <div :id="elementId" :style="minStyle" aria-hidden="true" />
   </div>
 </template>

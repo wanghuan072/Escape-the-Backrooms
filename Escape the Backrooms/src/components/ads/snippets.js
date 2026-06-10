@@ -1,8 +1,8 @@
 /**
- * 与广告后台提供的代码完全一致（勿改 key / URL）
+ * 旧广告代码（highperformanceformat / effectivecpmnetwork）已停用，保留备查。
  */
+/*
 export const AD_SNIPPETS = {
-  /** 侧边栏 & 移动端全宽：300×250 */
   sidebar: {
     atOptions: `atOptions = {
     'key' : '3751be4b9ce0480df348da850f20d44b',
@@ -16,7 +16,6 @@ export const AD_SNIPPETS = {
     width: 300,
     height: 250,
   },
-  /** PC 全宽：728×90 */
   leaderboard: {
     atOptions: `atOptions = {
     'key' : 'ab7db8cc8b466411697f6cd47e0fd01a',
@@ -37,3 +36,7 @@ export const NATIVE_AD = {
     'https://pl29633107.effectivecpmnetwork.com/891ef749e6c0675d4b64b98d4922ecad/invoke.js',
   containerId: 'container-891ef749e6c0675d4b64b98d4922ecad',
 }
+*/
+
+export const AD_SNIPPETS = {}
+export const NATIVE_AD = {}
