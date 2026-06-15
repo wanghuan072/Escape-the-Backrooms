@@ -550,7 +550,7 @@ export default [
   },
   {
     id: 6,
-    title: 'Escape the Backrooms: Level 5',
+    title: 'Escape the Backrooms: Level 5 Terror Hotel',
     pageTitle: 'Escape the Backrooms Level 5 Guide: Terror Hotel (Walkthrough & Secrets)',
     addressBar: 'level-5-terror-hotel-Walkthrough',
     description: 'Welcome to the ultimate guide for Level 5: Terror Hotel. This level is a surreal, vintage hotel that tests your sanity and patience. It is divided into distinct stages, starting from a mysterious portrait hallway and ending in a creature-infested boiler room.',
@@ -775,7 +775,7 @@ export default [
   },
   {
     id: 8,
-    title: 'Escape the Backrooms: Level 5',
+    title: 'Escape the Backrooms: Level 5 The Boiler Room',
     pageTitle: 'Escape the Backrooms Level 5 Guide: The Boiler Room (Walkthrough & Secrets)',
     addressBar: 'level-5-the-boiler-room-Walkthrough',
     description: 'Welcome to the complete guide for Level 5: The Boiler Room. This level is a maze of hot pipes and machinery, infested with deadly Death Moths. Your goal is to navigate the maze without getting caught.',
@@ -2574,6 +2574,257 @@ export default [
   
       <p>This skip allows you to bypass the entire valve-turning routine on the final floor. Once you slip through, climb the ladders and walk through the exit doorway to load into <strong>Level Fang Plus / Le Fang Plus </strong>.</p>
     `
+  },
+
+  {
+    id: 26,
+    title: 'Escape the Backrooms Level Fun+: All Color Codes & Claw Machine FPS Hack!',
+    pageTitle: 'Escape the Backrooms Level Fun+: All Color Codes & Claw Machine FPS Hack!',
+    addressBar: 'escape-the-backrooms-level-fun-plus-guide',
+    description: 'A comprehensive, player-tested walkthrough for Escape the Backrooms Level Fun+ (Levian\'s House). Learn how to survive the Partygoers, locate every randomized key, solve the darkroom glow stick puzzle, and use an exclusive V-Sync exploit to skip the final animation.',
+    imageUrl: '/images/levels/level-26.webp',
+    imageAlt: 'Escape the Backrooms Level Fun Plus Hub Room and Partygoer Danger Zone',
+    category: 'Main Levels',
+    isHome: true,
+    sideBarInfo: {
+      name: 'Level Fun+ (Levian\'s House)',
+      difficulty: 'Hard / Nightmare Recommended',
+      objectives: 'Infiltrate four dangerous sub-rooms, solve the environmental puzzles to obtain four hidden keys, and submit them at the central vending machine to escape.'
+    },
+    featured: [
+      {
+        title: 'V-Sync Exploit: Bypass the Vending Machine Delays',
+        description: 'Discover how unlocking your in-game framerate speeds up the clunky key-submission animation for an instant level exit.',
+        imageUrl: '/images/levels/level-26.webp',
+        imageAlt: 'Level Fun Plus Vending Machine Key Insertion',
+        addressBar: '#vsync-fps-exploit'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Level Fun+ Guide & FPS Skip',
+      description: 'Escape the Backrooms Level Fun+ guide with the fixed green-yellow-blue-red-pink code, 4 key rooms, table stealth, glow stick targets, and the FPS skip.',
+      keywords: 'escape the backrooms level fun+, level fun+ guide, levian house, color code, 4 keys, fps skip, partygoer stealth',
+    },
+    detailsHtml: `
+      <section>
+        <h2>An Experienced Wanderer's Blueprint to Level Fun+</h2>
+        <p>If you have made it to <strong>Level Fun+</strong> (often called Levian's House or Levon Plus) in <em>Escape the Backrooms</em>, you know the standard childhood-themed horror has been dialed up significantly. The layout here drops you into a central hub with four distinct doors. Behind each door sits a unique puzzle room protecting exactly <strong>one key</strong>. Your main goal is simple but nerve-wracking: survive all four trials, grab the keys, and bring them back to the central claw-style vending machine to unlock the exit.</p>
+        
+        <p>
+          <strong>Hard and Nightmare Mode Warning:</strong> If you are playing on easier difficulties, you can grab a key and instantly hit "Restart" in your menu to teleport right back to the hub. However, as an active player who runs high-difficulty settings, I must warn you that <strong>this menu-warp trick is entirely disabled on Hard and Nightmare</strong>. If you are pushing for those achievements, you have to physically run back through the doors every time.
+        </p>
+      </section>
+
+      <h2>Escape the Backrooms Level Fun+ Guide: All Keys & FPS Trick Video</h2>
+      <iframe src="https://www.youtube.com/embed/D223jekpV4Q" allowfullscreen></iframe>
+  
+      <section>
+        <h2>Trial 1: The VCR Tape and The 5-Color Memory Sequence</h2>
+        <p>When you enter the first door on the right, you will find yourself in a cluster of three small rooms. This is a game of observation and memory. Your first task is to scour the area for a single VHS videotape. It can spawn randomly on tables, desks, or high shelves, but you only need to secure one.</p>
+        <p>Once you grab the tape, head over to the TV monitor and slide it in. The screen will turn on and prompt you to interact with the colored buttons on the wall panel. While the initial prompt might seem unpredictable, the underlying color stacking pattern is entirely static. To beat this without breaking a sweat, memorise and stack the inputs in this exact order across the rounds:</p>
+        <blockquote>
+          <strong>Green &rarr; Yellow &rarr; Blue &rarr; Red &rarr; Pink</strong>
+        </blockquote>
+        <p>Keep entering this exact sequence as the rounds add more steps. Once you complete the fifth round, a hidden compartment pops open, giving you your first key.</p>
+      </section>
+
+      <img src="/images/levels/level-26-01.webp" alt="Level Fun Plus Trial 1" />
+  
+      <section>
+        <h2>Trial 2: Balloon Popping and Table Stealth Tactics</h2>
+        <p>The Sky Blue door opens up a room where your stealth skills are heavily tested by a patrolling Partygoer. The objective here is to pop balloons to locate the second key, but you have to be incredibly careful with your positioning.</p>
+        <ul>
+          <li><strong>Breaking Line of Sight:</strong> The moment you hear the heavy footsteps of a Partygoer or know you have been spotted, immediately crouch and slide completely underneath the nearest long table. The room is dark enough that the tables function as absolute stealth zones; the entity's AI will lose track of you instantly as long as you stay tucked underneath.</li>
+          <li><strong>Efficient Balloon Tracking:</strong> Do not just run around popping everything in sight. The key is hard-coded to appear in a few specific clusters, mostly deeper in the back rooms. You can actually crawl under the tables and safely pop the balloons within your reaching distance as you advance.</li>
+          <li><strong>The Entrance Bait:</strong> When you first walk in, you might notice a floating balloon right at the entrance door that drops a key when popped. Do not fall for it. This specific key is a dummy item tied strictly to that spot and won't count toward your central hub machine. Ignore it and focus entirely on clearing the inner rooms.</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>Trial 3: The Pitch-Black Darkroom and Glow Stick Targets</h2>
+        <p>The Red door leads into a trial that plunges you into near-total darkness. For this room, you have to rely entirely on colored neon glow sticks to light up hidden drawings on the walls.</p>
+        <p>Before heading up the stairs to the main puzzle floor, look around the ground level and gather your supplies. Grab at least one glow stick for each of the four main colors: <strong>Blue, Red, Green, and Yellow</strong>. When you move upstairs, keep your ears open. A slow-moving Partygoer patrols the dark hallways. Fortunately, his vision is just as bad as yours in the dark, so give him a wide berth and you will be completely safe.</p>
+        <p>To unlock the key pedestal, you must equip and throw your glow sticks using Left-Click directly at the correct environmental wall icons:</p>
+        <ul>
+          <li><strong>Red Glow Stick:</strong> Aim and hurl this at the <em>Gift Box</em> drawing on your immediate left as you enter the main room.</li>
+          <li><strong>Green Glow Stick:</strong> Toss this at the <em>Balloon</em> sketch found on the wall to the immediate right of the entrance.</li>
+          <li><strong>Yellow Glow Stick:</strong> Look further into the room and throw this directly at the <em>Eye</em> icon.</li>
+          <li><strong>Blue Glow Stick:</strong> Find the final matching shape pattern on the remaining wall section and light it up.</li>
+        </ul>
+        <p>If you are unsure if your throw landed correctly, check the ceiling structure. There is a row of indicator bulbs overhead that light up individually for every correct match. If the central cage is still locked, look up, spot which bulb is dark, and you will immediately know which color you missed. Grab your third key and head out.</p>
+      </section>
+  
+      <img src="/images/levels/level-26-02.webp" alt="Level Fun Plus Trial 2" />
+
+      <section>
+        <h2>Trial 4: Clearing the Party Hosts and Managing Aggro Spikes</h2>
+        <p>The Dark Blue door houses the most chaotic challenge of the level. Here, you are given explosive charges to destroy the stationary, mutated entities hanging from the ceiling, known as Party Hosts.</p>
+        <p>When throwing these explosives with Left-Click, you must prioritize your own safety. The blast features incredibly punishing friendly fire. If you stand anywhere near the explosion, it will take you out alongside the monster. Throw your charge and instantly dive for cover.</p>
+        <p>Every single time you successfully blow up a Party Host or hit a stage objective, a regular Partygoer will crawl out of the floor hatches to hunt you down. In solo play, this spawn isn't random at all; the entity is programmed to emerge from the specific hatch <strong>closest to your current location</strong>. When you see him give up the hunt and climb back down, stay under your table for an extra second or two. The AI frequently loops its animation and will look back out or step out of the hatch for an extra half-second trick window. Once all the ceiling hosts are clear, the hunts stop entirely, letting you safely pick up the fourth key.</p>
+      </section>
+  
+      <section id="vsync-fps-exploit">
+        <h2>The Ultimate Speedrun Trick: The Vending Machine Framerate Hack</h2>
+        <p>Once you return to the main hub with all 4 keys in hand, you have to insert them into the vending machine. Normally, the game forces you through a painfully slow, tedious animation for each individual key. If you want to bypass this entirely and complete your escape instantly, you can use a clever optimization exploit tied to the game engine's physics simulation:</p>
+        
+        <div>
+          <strong>Step-by-Step Unlimited FPS Escape:</strong>
+          <ol>
+            <li>Walk right up to the front interaction panel of the vending machine.</li>
+            <li>Press <code>ESC</code> on your keyboard to pull up the main game menu and open your Graphic Settings.</li>
+            <li>Find the <strong>V-Sync (Vertical Synchronization)</strong> setting and turn it completely <strong>OFF</strong>.</li>
+            <li>Set your maximum <strong>Frame Rate Limit</strong> to <strong>Unlimited</strong>.</li>
+            <li>Apply changes, return to the game, and spam your interact key to submit the keys.</li>
+          </ol>
+        </div>
+
+        <img src="/images/levels/level-26-03.webp" alt="Level Fun Plus Trial 3" />
+
+        <p>Because <em>Escape the Backrooms</em> runs its mechanical interaction animations directly parallel to your rendering frame rate, jumping from a locked 60 FPS to hundreds of frames causes the internal logic to fast-forward. The slow key-turning and dispensing animations will skip entirely, wrapping up the level and opening your escape path within the blink of an eye.</p>
+      </section>
+    `,
+  },
+
+  {
+    id: 27,
+    title: 'Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path',
+    pageTitle: 'Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path',
+    addressBar: 'escape-the-backrooms-level-52-guide',
+    description: 'Conquer Level 52 (School Halls) in Escape the Backrooms with this player-verified guide. Learn how to manage the updated Partygoer aggro ranges, synchronize with the friendly companion NPC, and use the loading-screen restart skip.',
+    imageUrl: '/images/levels/level-27.webp',
+    imageAlt: 'Escape the Backrooms Level 52 School Halls and Companion NPC Walkthrough',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 52 (School Halls)',
+      difficulty: 'Normal / Hard (Aggro Range Expanded in Recent Update)',
+      objectives: 'Navigate the dimly lit school corridors by shadowing a friendly NPC to evade high-alert Partygoers, or use an advanced loading glitch to warp straight to the final escape ladder.'
+    },
+    featured: [
+      {
+        title: 'Stealth Revision: Surviving the Buffed Partygoer AI',
+        description: 'The latest game updates have expanded the entity detection radius. Learn how to adapt your positioning so you do not get instantly caught.',
+        imageUrl: '/images/levels/level-27.webp',
+        imageAlt: 'Level 52 Partygoer Detection Zone and Dark Corridors',
+        addressBar: '#section-stealth-strategy'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Level 52 Guide & Restart Skip',
+      description: 'Escape the Backrooms Level 52 guide with the follow-him School Halls route, wider Partygoer aggro, safe dark zones, farewell wave, and restart skip.',
+      keywords: 'escape the backrooms level 52, level 52 guide, school halls, follow him route, partygoer aggro, restart skip, companion guest',
+    },
+    detailsHtml: `
+      <section>
+        <h2>Navigating the Hub and Meeting Your Unlikely Guide</h2>
+        <p>When you first materialize into <strong>Level 52</strong>, also widely recognized as the School Halls, you will find yourself standing in a central transitional hub area. Before you take a single step forward, let me give you a crucial piece of advice from someone who has run this level dozens of times: <strong>do not aimlessly wander into the wrong side corridors</strong>. If you accidentally take a wrong turn and find yourself deeper in an unmarked hallway, you need to turn right around and trace your steps back to the main room. Look up at the door frames until you see the one clearly marked with the number <strong>52</strong>—that is your only correct starting point.</p>
+        
+        <p>As you approach this door, you will notice an ominous message etched onto the structure telling you to follow "him" to find the way out. The "him" the game is referring to is a friendly, anomalous entity that the player community affectionately calls the companion guest. Lore-wise, these passive creatures went almost entirely extinct following the Fun War, making this particular guide likely the last surviving member of his kind. To survive this level conventionally, your entire run hinges on cooperating with this silent guide as he leads you through the dangerous, maze-like corridors.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path Video</h2>
+      <iframe src="https://www.youtube.com/embed/d-Xwm5CY4tM" allowfullscreen></iframe>
+  
+      <section id="section-stealth-strategy">
+        <h2>Cracking the Stealth Code: How to Sync with the Guide's Movement</h2>
+        <p>If you are returning to this level after a break, I need to wave a massive red flag. A recent game update secretly tweaked the AI coding here, and <strong>the detection and trigger range of the patrolling Partygoers is significantly larger than it used to be</strong>. In older versions of the game, I could easily stand up and sprint across certain open gaps without consequence. Now, if you dare to stand up prematurely, the Partygoers will pull aggro from across the hall and aggressively hunt you down within seconds. This means your posture discipline needs to be absolutely flawless.</p>
+        
+        <p>For players tackling this for the first time, the safest method is to treat the companion NPC like a strict mirror image. When he drops into a low crouch, you drop into a low crouch immediately. When he stands tall, you stand tall. However, if you want to move through this area like a seasoned pro rather than just copying his animations frame-for-frame, you need to understand that <strong>the game checks your physical coordinates, not just your timing</strong>. Instead of standing up the exact millisecond the NPC does, watch the exact physical spot on the floor where he chose to stand up. Move your character directly onto that specific tile, and <em>then</em> stand up. This ensures you are utilizing the level's natural structural sightline blocks perfectly.</p>
+        
+        <p>Furthermore, you don't have to be glued to his hip the entire time. The school halls are filled with deep, pitch-black pockets of shadow. As long as you remain completely shrouded in these unlit, dark zones, the enemy AI is effectively blinded, allowing you to walk freely and adjust your positioning without fear of triggering a chase sequence. Once your guide safely escorts you to the final exit door at the end of the hall, the path forward is clear. If you feel like experiencing a neat little developer easter egg, pause at the threshold for a moment before leaving; the friendly entity will turn around and give you a warm wave goodbye before you ascend.</p>
+      </section>
+
+      <img src="/images/levels/level-27-01.webp" alt="Level 52 Companion NPC" />
+  
+      <section>
+        <h2>The Ultimate Speedrun Glitch: How to Warp Past the School Halls Entirely</h2>
+        <p>While playing through the stealth puzzle with your companion is the intended experience, it can become incredibly tedious on repeat runs, and it offers almost zero room for error on Nightmare difficulty. If you want to bypass the entire corridor sequence instantly, I discovered a powerful engine-level exploitation loop that tricks the game into marking the level as cleared the moment you spawn in. Here is exactly how to execute this level-skipping glitch:</p>
+        
+        <div>
+          <strong>Step-by-Step Loading Screen Warp:</strong>
+          <ol>
+            <li>The very moment Level 52 loads and you gain control of your character, immediately pivot 180 degrees to face backwards.</li>
+            <li>Walk directly back into the dark threshold where you technically just entered from (the absolute boundary of your initial spawn point).</li>
+            <li>As your screen transitions to black and the game begins loading the previous zone, you must act with extreme speed. Instantly hit <code>ESC</code> to pull up the system menu and spam-click the <strong>Restart Level</strong> button before the load completes.</li>
+            <li>If your timing is correct, the engine will break its positional validation logic. When the level finishes reloading, you will not spawn at the beginning. Instead, the game forces your coordinates right to the absolute end of Level 52.</li>
+          </ol>
+        </div>
+
+        <img src="/images/levels/level-27-02.webp" alt="Level 52 Restart Skip" />
+
+        <p>When the screen fades back in from the glitch, you will find yourself standing directly in front of the final exit ladder. All the dangerous corridors and patrolling entities will be completely behind you, allowing you to simply step up, climb the rungs, and secure an instant, seamless level completion.</p>
+      </section>
+    `,
+  },
+
+  {
+    id: 28,
+    title: 'Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending!',
+    pageTitle: 'Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending!',
+    addressBar: 'escape-the-backrooms-level-55-1-guide',
+    description: 'Master Escape the Backrooms Level 55.1 with this comprehensive guide covering both the Normal Ending and the secret "Wrong Door" Ending. Learn critical entity photography tracking mechanics for both solo and co-op players, and find out how to safely deal with the level\'s supercharged Bacteria.',
+    imageUrl: '/images/levels/level-28.webp',
+    imageAlt: 'Escape the Backrooms Level 55.1 Normal Ending and Secret Ending Walkthrough',
+    category: 'Main Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 55.1',
+      difficulty: 'Normal / Nightmare (Requires Specific Sequence)',
+      objectives: 'Utilize the camera mechanics to photograph all required entities, manage the elevator car placement, and execute specific choices to unlock both the Normal and "Wrong Door" Secret Endings.'
+    },
+    featured: [
+      {
+        title: 'Solo vs Co-op: Camera Tracking Workaround',
+        description: 'Stuck without teammates? Learn how the developer-intended wall mechanic substitutes multiplayer progression so you can advance solo without issues.',
+        imageUrl: '/images/levels/level-28.webp',
+        imageAlt: 'Level 55.1 Camera Objective Wall Location',
+        addressBar: '#camera-mechanics'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Level 55.1 Guide & Normal Ending',
+      description: 'Escape the Backrooms Level 55.1 guide with the solo wall photo, lowered cart setup, Bacteria trigger, entity photos, and the normal ending route.',
+      keywords: 'escape the backrooms level 55.1, level 55.1 guide, camera route, solo wall photo, bacteria trigger, entity photos, normal ending',
+    },
+    detailsHtml: `
+      <section id="camera-mechanics">
+        <h2>Understanding Level 55.1 and the Camera Requirements</h2>
+        <p>When you first load into <strong>Level 55.1</strong>, you will immediately notice that this unique level shifts your focus heavily toward navigation and photography. Your first order of business is to pick up the camera provided at the starting area. The text prompts displayed on the camera housing dictate your progression goals based on your current party size. If you are playing through this level in multiplayer co-op with a full lobby of four players, your primary task is to take a group photograph that successfully captures your three fellow teammates together. </p>
+        
+        <p>However, if you are tackling this level entirely solo, you obviously cannot take photos of other wanderers. To account for this, the developers implemented a dedicated workaround: instead of targeting players, you must stand at the starting zone and snap a clear photograph of the specifically marked wall section right in front of you. Taking this photo flags the initial objective as complete, allowing you to advance through the rest of the level without any mechanical differences between solo or multiplayer modes.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending! Video</h2>
+      <iframe src="https://www.youtube.com/embed/PRsArou9ipY" allowfullscreen></iframe>
+  
+      <section>
+        <h2>Managing the Elevator Car and Avoiding Softlocks</h2>
+        <p>Directly below your starting photography position, there is an elevator car that plays a major operational role in how you exit the level. As an experienced player who has analyzed multiple route optimization failures, I cannot stress this enough: <strong>do not simply jump down into the lower levels without dropping the elevator car first</strong>. While it is physically possible to leap straight down into the lower corridors on lower difficulties to speed up your routing, doing so leaves the car stranded at the upper levels. </p>
+        
+        <p>If you are playing solo and descend without moving the vehicle, you will find yourself completely trapped at the bottom with no physical way to touch or interact with the car to complete your extraction. If you happen to be running on Nightmare difficulty where menu-warps and loose restarts are heavily restricted, this oversight will completely softlock your run, forcing a total level reset. Make sure to pull the upper activation levers to properly drop the vehicle down into the lower staging area before you commit to descending.</p>
+      </section>
+
+      <img src="/images/levels/level-28-01.webp" alt="Level 55.1 Elevator Car" />
+  
+      <section>
+        <h2>Entity Photography: Surviving the Supercharged Bacteria</h2>
+        <p>Once you are safely in the lower corridors, you must locate and photograph several distinct entities native to this zone to fully satisfy your objective list. The threat priority here is vastly different from other standard levels, and you must adapt your movement styles accordingly:</p>
+        <ul>
+          <li><strong>The Buffed Bacteria:</strong> The Bacteria lurking within Level 55.1 is an absolute nightmare. It possesses the fastest movement velocity of any entity on this level, and its baseline pursuit speed has been heavily buffed compared to the Bacteria you encounter anywhere else in the game. You must maintain extreme situational awareness. Furthermore, if you navigate to its designated spawn hall and find it empty, do not assume you are safe. The AI trigger is tied to a specific spatial zone; you must physically walk along the upper observation walkway to cross the invisible barrier that forces the Bacteria to spawn and activate.</li>
+          <li><strong>The Smiler and Skin-Stealer:</strong> Compared to the relentless speed of the Bacteria, the other entities here are much more manageable. When you encounter the Smiler, keep your distance and snap a clear, steady photo through your lens. Shortly after, a Skin-Stealer will emerge and attempt to stalk you. Because the Skin-Stealer's pathfinding and walking speed are incredibly slow in this specific environment, you can easily pull out your camera, secure its photograph, and slip into a nearby closet to break aggro without wasting precious stamina.</li>
+        </ul>
+        <p>After successfully securing clean photographs of the stone statue, the Smiler, the Skin-Stealer, and the supercharged Bacteria, your objective tracker will update. If you bypassed the elevator car earlier, you will have to make a choice to either loop back up using the mechanical lifts or run a calculated level restart to reset your tracking position safely with the car lowered.</p>
+      </section>
+
+      <img src="/images/levels/level-28-02.webp" alt="Level 55.1 Bacteria" />
+  
+      <section>
+        <h2>Unlocking the Normal Ending Sequence</h2>
+        <p>With all your entity photography requirements fully checked off and the elevator car correctly positioned in the lower bays, you can now proceed toward the extraction point. Locate the primary control junction and pull the main lever mechanism up and down to completely cycle the power. From this platform, align your character with the central drop zone and safely jump straight down into the extraction bay. </p>
+        
+        <p>Descending through this path triggers the official <strong>Normal Ending</strong> sequence for Level 55.1. It is highly recommended to secure this standard completion path first; completing the main ending is a hard-coded prerequisite that updates your save state, permanently unlocking the necessary flags required to access the hidden "Wrong Door" Secret Ending and alternate side branches on subsequent playthroughs.</p>
+      </section>
+    `,
   }
 
 

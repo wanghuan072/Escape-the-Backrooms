@@ -2497,5 +2497,244 @@ export default [
   
         <p>Mit diesem Skip sparst du dir die gesamte letzte Ventilphase. Klettere danach die Leitern hoch und gehe durch den Ausgang, um in <strong>Level Fang Plus / Le Fang Plus</strong> zu laden.</p>
       `
+    },
+    {
+      "id": 26,
+      "title": "Escape the Backrooms Level Fun+: Alle Farb-Codes & Greifautomat-FPS-Hack!",
+      "pageTitle": "Escape the Backrooms Level Fun+: Alle Farb-Codes & Greifautomat-FPS-Hack!",
+      "addressBar": "escape-the-backrooms-level-fun-plus-guide",
+      "description": "Ein umfassender, spielerprobter Guide für Escape the Backrooms Level Fun+ (Levians Haus). Lerne, wie du Partygoers überlebst, alle zufälligen Schlüssel findest, das Glowstick-Rätsel im Dunkelraum löst und mit einem V-Sync-Exploit die finale Animation überspringst.",
+      "imageUrl": "/images/levels/level-26.webp",
+      "imageAlt": "Escape the Backrooms Level Fun Plus Hub-Raum und Partygoer-Gefahrenzone",
+      "category": "Hauptlevel",
+      "isHome": true,
+      "sideBarInfo": {
+        "name": "Level Fun+ (Levians Haus)",
+        "difficulty": "Schwer / Albtraum empfohlen",
+        "objectives": "Durchquere vier gefährliche Nebenräume, löse die Umgebungsrätsel für vier versteckte Schlüssel und gib sie am zentralen Automaten ab, um zu entkommen."
+      },
+      "featured": [
+        {
+          "title": "V-Sync-Exploit: Die Automaten-Verzögerung umgehen",
+          "description": "So beschleunigst du durch eine entkoppelte Framerate die träge Schlüssel-Abgabe am Greifautomaten bis zum Sofort-Exit.",
+          "imageUrl": "/images/levels/level-26.webp",
+          "imageAlt": "Schlüsselabgabe am Automaten in Level Fun+",
+          "addressBar": "#vsync-fps-exploit"
+        }
+      ],
+      "seo": {
+        "title": "Escape the Backrooms Level Fun+ Guide & FPS-Skip",
+        "description": "Escape the Backrooms Level Fun+ Guide mit Farbcode Grün-Gelb-Blau-Rot-Pink, 4 Schlüsselräumen, Tisch-Stealth, Glowstick-Zielen und FPS-Skip.",
+        "keywords": "escape the backrooms level fun+, level fun+ guide, levians haus, farbcode, 4 schluessel, fps-skip, partygoer-stealth"
+      },
+      "detailsHtml": `
+        <section>
+          <h2>Der erprobte Bauplan für Level Fun+</h2>
+          <p>Wenn du in <strong>Level Fun+</strong> angekommen bist, auch als Levians Haus oder Levian Plus bekannt, merkst du sofort, dass der kindlich wirkende Horror deutlich härter geworden ist. Die Karte startet in einem zentralen Hub mit vier Türen. Hinter jeder Tür steckt ein eigenes Rätselzimmer mit genau <strong>einem Schlüssel</strong>. Dein Ziel ist klar: Überlebe alle vier Prüfungen, sammle die Schlüssel ein und bringe sie zum zentralen Greifautomaten, um den Ausgang freizuschalten.</p>
+          
+          <p>
+            <strong>Warnung für Hard und Nightmare:</strong> Auf leichteren Schwierigkeitsgraden kannst du nach einem Schlüssel einfach im Menü auf „Restart“ gehen und direkt in den Hub zurückspringen. In unseren Testläufen auf hohen Schwierigkeiten war dieser Menü-Warp auf <strong>Hard und Nightmare komplett deaktiviert</strong>. Wenn du dort spielst, musst du jedes Mal physisch zurücklaufen.
+          </p>
+        </section>
+
+        <h2>Escape the Backrooms Level Fun+ Guide: All Keys & FPS Trick Video</h2>
+        <iframe src="https://www.youtube.com/embed/D223jekpV4Q" allowfullscreen></iframe>
+  
+        <section>
+          <h2>Prüfung 1: VHS-Kassette und die 5-Farben-Reihenfolge</h2>
+          <p>Wenn du die erste Tür rechts betrittst, landest du in einem Verbund aus drei kleinen Räumen. Hier geht es um Beobachtung und Gedächtnis. Suche zuerst eine einzelne VHS-Kassette. Sie kann zufällig auf Tischen, Regalen oder hohen Ablagen spawnen, aber du brauchst nur eine davon.</p>
+          <p>Setze die Kassette danach in den Fernseher ein. Der Bildschirm zeigt dir anschließend, welche Farben du am Wandpanel drücken sollst. Der Ablauf wirkt zufällig, ist aber tatsächlich fest. Wenn du die Sequenz sicher lösen willst, merke dir genau diese Reihenfolge:</p>
+          <blockquote>
+            <strong>Grün &rarr; Gelb &rarr; Blau &rarr; Rot &rarr; Pink</strong>
+          </blockquote>
+          <p>Gib diese Reihenfolge in jeder Runde weiter ein, während das Spiel die Kette verlängert. Nach der fünften Runde öffnet sich ein verstecktes Fach mit deinem ersten Schlüssel.</p>
+          <img src="/images/levels/level-26-01.webp" alt="Level Fun Plus Prüfung 1" />
+        </section>
+  
+        <section>
+          <h2>Prüfung 2: Ballons platzen und Tisch-Stealth</h2>
+          <p>Hinter der himmelblauen Tür wartet ein Raum, in dem dich ein patrouillierender Partygoer zum sauberen Stealth zwingt. Deine Aufgabe ist es, Ballons zu zerstören, um den zweiten Schlüssel zu finden.</p>
+          <ul>
+            <li><strong>Sichtlinie brechen:</strong> Sobald du schwere Schritte hörst oder weißt, dass du entdeckt wurdest, rutsche sofort unter den nächsten langen Tisch. In diesem Raum funktionieren die Tische als echte Safe-Spots; die KI verliert dich dort sofort.</li>
+            <li><strong>Ballons effizient prüfen:</strong> Laufe nicht blind durch den Raum. Der Schlüssel erscheint nur an einigen festen Clustern, meist weiter hinten. Du kannst unter den Tischen kriechen und Ballons in Reichweite sicher von dort aus platzen lassen.</li>
+            <li><strong>Der Köder am Eingang:</strong> Direkt an der Eingangstür kann ein Ballon mit einem Schlüssel auftauchen. Das ist ein Dummy-Schlüssel nur für diesen Unterraum und zählt nicht für den Automaten im Hub. Ignoriere ihn und konzentriere dich auf die tieferen Räume.</li>
+          </ul>
+        </section>
+  
+        <section>
+          <h2>Prüfung 3: Der dunkle Raum und Glowstick-Ziele</h2>
+          <p>Die rote Tür führt in eine fast komplett dunkle Prüfung. Hier musst du farbige Glowsticks benutzen, um versteckte Symbole an den Wänden zu markieren.</p>
+          <p>Bevor du nach oben gehst, sammle unten deine Ausrüstung ein. Nimm mindestens je einen Glowstick in <strong>Blau, Rot, Grün und Gelb</strong> mit. Oben patrouilliert ein langsamer Partygoer. Sein Sichtfeld ist im Dunkeln genauso schlecht wie deins, also halte Abstand und du bleibst sicher.</p>
+          <p>Um das Schlüsselpodest zu öffnen, wirfst du die Glowsticks mit Linksklick exakt auf die passenden Symbole:</p>
+          <ul>
+            <li><strong>Roter Glowstick:</strong> Auf die <em>Geschenkbox</em> links beim Betreten des Hauptraums.</li>
+            <li><strong>Grüner Glowstick:</strong> Auf die <em>Ballon</em>-Zeichnung rechts neben dem Eingang.</li>
+            <li><strong>Gelber Glowstick:</strong> Direkt auf das <em>Auge</em> weiter hinten im Raum.</li>
+            <li><strong>Blauer Glowstick:</strong> Auf das letzte noch fehlende Symbol an der übrigen Wand.</li>
+          </ul>
+          <p>Wenn du unsicher bist, ob ein Wurf richtig saß, schaue nach oben. Über dir leuchten Kontrolllampen für jede korrekt aktivierte Farbe. Wenn das Gitter noch geschlossen ist, erkennst du dort sofort, welche Farbe noch fehlt.</p>
+          <img src="/images/levels/level-26-02.webp" alt="Level Fun Plus Prüfung 2" />
+        </section>
+  
+        <section>
+          <h2>Prüfung 4: Party Hosts sprengen und Aggro-Spitzen steuern</h2>
+          <p>Die dunkelblaue Tür ist der chaotischste Abschnitt des Levels. Hier bekommst du Sprengladungen, mit denen du die stationären Deckenwesen, die sogenannten Party Hosts, zerstören musst.</p>
+          <p>Beim Werfen mit Linksklick musst du deine Position strikt kontrollieren. Der Explosionsradius bestraft Friendly Fire extrem. Wenn du zu nah stehst, tötest du dich selbst direkt mit.</p>
+          <p>Jedes Mal, wenn du einen Party Host sprengst oder ein Zwischenziel auslöst, kriecht ein normaler Partygoer aus den Bodenluken. Im Solo-Modus ist sein Spawn nicht zufällig, sondern an die Luke <strong>am nächsten zu deiner aktuellen Position</strong> gebunden. Wenn er sich scheinbar zurückzieht, bleib noch einen Moment unter dem Tisch. Seine Animation kann kurz nachtriggern und er schaut oft noch ein halbes bis ganzes Sekündchen wieder heraus. Sobald alle Party Hosts beseitigt sind, enden die Hunts vollständig und du kannst den vierten Schlüssel sicher aufnehmen.</p>
+        </section>
+  
+        <section id="vsync-fps-exploit">
+          <h2>Der stärkste Speedrun-Trick: Der Framerate-Hack am Automaten</h2>
+          <p>Mit allen vier Schlüsseln musst du sie im Hub in den Automaten einsetzen. Normalerweise zwingt dich das Spiel in eine langsame Einzelanimation pro Schlüssel. Mit einem Grafik-Exploit kannst du diesen Vorgang fast vollständig überspringen:</p>
+          
+          <div>
+            <strong>So funktioniert der Unlimited-FPS-Skip:</strong>
+            <ol>
+              <li>Stelle dich direkt vor das Interaktionsfeld des Automaten.</li>
+              <li>Öffne mit <code>ESC</code> das Menü und gehe in die Grafikoptionen.</li>
+              <li>Schalte <strong>V-Sync</strong> komplett <strong>aus</strong>.</li>
+              <li>Setze das <strong>Frame Rate Limit</strong> auf <strong>Unlimited</strong>.</li>
+              <li>Übernimm die Einstellungen, kehre ins Spiel zurück und spamme deine Interaktionstaste.</li>
+            </ol>
+          </div>
+          <img src="/images/levels/level-26-03.webp" alt="Level Fun Plus Prüfung 3" />
+          <p>Da Escape the Backrooms bestimmte Interaktionsanimationen parallel zur Render-Framerate verarbeitet, beschleunigt eine entkoppelte hohe Bildrate die Abgabe massiv. Die langsame Schlüssel-Animation wird dadurch praktisch vorgespult und der Ausgang öffnet sich fast sofort.</p>
+        </section>
+      `
+    },
+    {
+      "id": 27,
+      "title": "Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path",
+      "pageTitle": "Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path",
+      "addressBar": "escape-the-backrooms-level-52-guide",
+      "description": "Besiege Level 52 (School Halls) in Escape the Backrooms mit diesem spielerprobten Guide. Lerne, wie du die vergrößerte Partygoer-Aggro kontrollierst, dich mit dem freundlichen Begleiter synchronisierst und den Restart-Skip im Ladeschirm nutzt.",
+      "imageUrl": "/images/levels/level-27.webp",
+      "imageAlt": "Escape the Backrooms Level 52 School Halls und Begleiter-NPC",
+      "category": "Hauptlevel",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 52 (School Halls)",
+        "difficulty": "Normal / Schwer (Aggro-Reichweite nach Update erhöht)",
+        "objectives": "Folge dem Begleiter durch die dunklen Schulkorridore, vermeide Partygoers über Positioning und nutze optional den Loading-Restart-Skip bis zur letzten Leiter."
+      },
+      "featured": [
+        {
+          "title": "Stealth-Anpassung: So überlebst du die gebuffte Partygoer-KI",
+          "description": "Neuere Updates haben die Erkennungsreichweite spürbar vergrößert. Mit dem richtigen Positioning vermeidest du sofortige Aggro.",
+          "imageUrl": "/images/levels/level-27.webp",
+          "imageAlt": "Partygoer-Erkennungszone und dunkle Korridore in Level 52",
+          "addressBar": "#section-stealth-strategy"
+        }
+      ],
+      "seo": {
+        "title": "Escape the Backrooms Level 52 Guide & Restart-Skip",
+        "description": "Escape the Backrooms Level 52 Guide mit Follow-Him-Route, größerer Partygoer-Aggro, sicheren Dunkelzonen, Abschiedsgruß und Restart-Skip zur Leiter.",
+        "keywords": "escape the backrooms level 52, level 52 guide, school halls, follow-him-route, partygoer-aggro, restart-skip, begleiter-npc"
+      },
+      "detailsHtml": `
+        <section>
+          <h2>Den Hub lesen und den richtigen Führer erkennen</h2>
+          <p>Wenn du in <strong>Level 52</strong> spawnst, stehst du zuerst in einem kleinen Hub-Bereich. Die wichtigste Regel hier: <strong>nicht in falsche Seitenkorridore abdriften</strong>. Falls du dich verläufst, gehe zurück und suche wieder die Tür mit der klaren Markierung <strong>52</strong>. Das ist dein korrekter Startpunkt.</p>
+          
+          <p>An dieser Tür steht sinngemäß, dass du „ihm“ folgen sollst, um den Ausgang zu finden. Gemeint ist der freundliche Begleiter, den viele Spieler als Companion Guest bezeichnen. In der normalen Route hängt dein kompletter Durchlauf daran, dass du seine Bewegung korrekt liest und mit ihm zusammen durch die School Halls gehst.</p>
+        </section>
+
+        <h2>Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path Video</h2>
+        <iframe src="https://www.youtube.com/embed/d-Xwm5CY4tM" allowfullscreen></iframe>
+  
+        <section id="section-stealth-strategy">
+          <h2>Die Stealth-Regel: Crouch und Stand exakt am selben Tile</h2>
+          <p>Nach dem Update ist die <strong>Aggro-Reichweite der Partygoers deutlich größer</strong> als früher. Stellen, an denen man früher noch unbestraft aufstehen konnte, ziehen jetzt sofort eine Jagd. Das heißt: ungeduldiges Aufstehen killt die Run.</p>
+          
+          <p>Wenn du die Route noch nicht kennst, spiegele den Begleiter exakt: Wenn er sich duckt, duckst du dich. Wenn er aufsteht, stehst du erst dort auf, <strong>wo er gerade aufgestanden ist</strong>. Das Spiel prüft hier nicht nur Timing, sondern sehr stark deine genaue Position im Korridor.</p>
+          
+          <p>Du musst ihm aber nicht permanent an der Schulter kleben. In den tiefdunklen Zonen der Schulgänge kannst du dich frei bewegen, solange du komplett im Schatten bleibst. Die KI ist dort praktisch blind. Kurz vor dem Ausgang kannst du sogar einen kleinen Extra-Moment mitnehmen: Wartest du an der Tür, dreht sich der Begleiter noch einmal um und grüßt dich zum Abschied.</p>
+          <img src="/images/levels/level-27-01.webp" alt="Level 52 Begleiter-NPC" />
+        </section>
+  
+        <section>
+          <h2>Der Level-Skip: Restart während des Ladeschirms</h2>
+          <p>Wenn du den gesamten Begleiter-Abschnitt überspringen willst, kannst du einen starken Level-Skip nutzen. Die Technik basiert darauf, dass du beim Übergang in den vorherigen Bereich den Restart exakt in den Ladeschirm legst.</p>
+          
+          <div>
+            <strong>So funktioniert der Loading-Restart-Skip:</strong>
+            <ol>
+              <li>Drehe dich direkt nach dem Spawn in Level 52 sofort um 180 Grad.</li>
+              <li>Gehe zurück in die dunkle Schwelle, aus der du gerade gekommen bist.</li>
+              <li>Sobald der Bildschirm schwarz wird und der Ladevorgang startet, drücke schnell <code>ESC</code> und spamme <strong>Restart Level</strong>.</li>
+              <li>Wenn das Timing sitzt, spawnst du nach dem Reload nicht am Anfang, sondern direkt am Ende von Level 52.</li>
+            </ol>
+          </div>
+          <img src="/images/levels/level-27-02.webp" alt="Level 52 Restart-Skip" />
+          <p>Nach dem erfolgreichen Skip landest du unmittelbar an der letzten Leiter. Der komplette gefährliche Schultrakt liegt dann hinter dir und du kannst das Level praktisch sofort beenden.</p>
+        </section>
+      `
+    },
+    {
+      "id": 28,
+      "title": "Escape the Backrooms Level 55.1 Guide: Normales Ende & „Wrong Door“-Geheimende!",
+      "pageTitle": "Escape the Backrooms Level 55.1 Guide: Normales Ende & „Wrong Door“-Geheimende!",
+      "addressBar": "escape-the-backrooms-level-55-1-guide",
+      "description": "Meistere Escape the Backrooms Level 55.1 mit diesem umfassenden Guide zu Normal Ending und „Wrong Door“-Geheimende. Lerne die Kamera-Ziele für Solo und Koop, die korrekte Wagen-Vorbereitung und den Umgang mit der extrem schnellen Bacteria.",
+      "imageUrl": "/images/levels/level-28.webp",
+      "imageAlt": "Escape the Backrooms Level 55.1 Normal Ending und Secret Ending Walkthrough",
+      "category": "Hauptlevel",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 55.1",
+        "difficulty": "Normal / Albtraum (erfordert präzise Reihenfolge)",
+        "objectives": "Nutze die Kamera für alle Pflichtziele, senke den Wagen vor dem Abstieg ab, fotografiere die relevanten Entitäten und schalte über das normale Ende die versteckten Folge-Enden frei."
+      },
+      "featured": [
+        {
+          "title": "Solo vs. Koop: Kamera-Workaround an der Startwand",
+          "description": "Solo ersetzt die markierte Wand das Gruppenfoto. Damit lässt sich die erste Zielbedingung ohne Team sauber abschließen.",
+          "imageUrl": "/images/levels/level-28.webp",
+          "imageAlt": "Kamera-Zielwand in Level 55.1",
+          "addressBar": "#camera-mechanics"
+        }
+      ],
+      "seo": {
+        "title": "Escape the Backrooms Level 55.1 Guide & Normal Ending",
+        "description": "Escape the Backrooms Level 55.1 Guide mit Solo-Wandfoto, abgesenktem Wagen, Bacteria-Trigger, Pflichtfotos und Route zum Normal Ending im Finale.",
+        "keywords": "escape the backrooms level 55.1, level 55.1 guide, kamera-route, solo-wandfoto, bacteria-trigger, entitaetenfotos, normal ending"
+      },
+      "detailsHtml": `
+        <section id="camera-mechanics">
+          <h2>Level 55.1 verstehen: Kamera-Ziele für Solo und Koop</h2>
+          <p>Direkt zu Beginn von <strong>Level 55.1</strong> dreht sich alles um Navigation und Fotografie. Nimm zuerst die Kamera am Startpunkt auf. Die Zieltexte auf der Kamera unterscheiden zwischen Solo und Koop. Im 4-Spieler-Koop musst du zu Beginn deine <strong>drei Mitspieler</strong> gemeinsam fotografieren.</p>
+          
+          <p>Im Solo-Modus geht das natürlich nicht. Genau dafür haben die Entwickler am Start eine markierte Wand eingebaut. Fotografiere stattdessen diese Wand. Dadurch wird das erste Ziel korrekt abgeschlossen und der restliche Ablauf bleibt mechanisch identisch.</p>
+        </section>
+
+        <h2>Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending! Video</h2>
+        <iframe src="https://www.youtube.com/embed/PRsArou9ipY" allowfullscreen></iframe>
+  
+        <section>
+          <h2>Den Wagen vorher absenken oder einen Softlock riskieren</h2>
+          <p>Unterhalb des Startbereichs befindet sich ein Wagen, der für den weiteren Fortschritt wichtig ist. Der kritische Fehler in Solo-Runs ist, einfach nach unten zu springen, <strong>ohne den Wagen zuerst abzusenken</strong>. Das spart am Anfang zwar ein paar Sekunden, kann dich aber komplett einsperren.</p>
+          
+          <p>Wenn du alleine spielst und den Wagen oben stehen lässt, kommst du unten nicht mehr an ihn heran. Auf Nightmare kann das die gesamte Run softlocken. Darum gilt: Senke den Wagen mit den Hebeln zuerst in den unteren Bereich ab, bevor du dich nach unten commitest.</p>
+          <img src="/images/levels/level-28-01.webp" alt="Level 55.1 Aufzugswagen" />
+        </section>
+  
+        <section>
+          <h2>Entitäten fotografieren: Die gebuffte Bacteria hat Priorität</h2>
+          <p>Unten musst du mehrere Entitäten für deine Zielliste fotografieren. Der gefährlichste Gegner in diesem Level ist eindeutig die <strong>Bacteria</strong>, und genau hier hat sie eine Sonderregel:</p>
+          <ul>
+            <li><strong>Die Bacteria:</strong> In Level 55.1 ist sie schneller als jede andere Entität dieser Map und sogar schneller als die Bacteria-Versionen aus anderen Levels. Wenn sie nicht an ihrer üblichen Stelle auftaucht, heißt das nicht, dass sie fehlt. Du musst den oberen Steg ablaufen, um ihren Spawn-Trigger zu aktivieren.</li>
+            <li><strong>Smiler und Skin-Stealer:</strong> Diese beiden sind deutlich kontrollierbarer. Fotografiere den Smiler mit Abstand. Der Skin-Stealer bewegt sich in diesem Level langsam genug, dass du sein Foto holen und danach bequem im Schrank die Aggro brechen kannst.</li>
+          </ul>
+          <img src="/images/levels/level-28-02.webp" alt="Level 55.1 Bacteria" />
+          <p>Wenn du die Statue, den Smiler, den Skin-Stealer und die Bacteria fotografiert hast, ist der Pflichtteil der Entitätsfotos abgeschlossen. Falls du den Wagen vorher nicht korrekt vorbereitet hast, musst du den Weg zurück organisieren oder die Run mit einem gezielten Restart resetten.</p>
+        </section>
+  
+        <section>
+          <h2>Das normale Ende als Freischaltpfad</h2>
+          <p>Mit allen Pflichtfotos und dem korrekt positionierten Wagen kannst du zum Abschlussbereich gehen. Ziehe dort den Haupthebel einmal vollständig hoch und wieder runter, richte dich am zentralen Drop aus und springe in die Zielzone.</p>
+          
+          <p>Dieser Ablauf löst das offizielle <strong>Normal Ending</strong> von Level 55.1 aus. Das Video bestätigt dabei vor allem einen wichtigen Punkt: Erst wenn dieses normale Ende abgeschlossen ist, werden die versteckten und alternativen Enden zuverlässig freigeschaltet.</p>
+        </section>
+      `
     }
 ]

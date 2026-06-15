@@ -2545,6 +2545,244 @@ export default [
 
       <p>Ce skip vous évite toute la dernière phase de valves. Remontez ensuite par les échelles et passez la sortie pour charger vers <strong>Level Fang Plus / Le Fang Plus</strong>.</p>
     `
-  }
+  },
+  {
+    "id": 26,
+    "title": "Escape the Backrooms Level Fun+ : tous les codes couleurs et le hack FPS du distributeur !",
+    "pageTitle": "Escape the Backrooms Level Fun+ : tous les codes couleurs et le hack FPS du distributeur !",
+    "addressBar": "escape-the-backrooms-level-fun-plus-guide",
+    "description": "Guide complet et testé en jeu pour Escape the Backrooms Level Fun+ (la maison de Levian). Apprenez à survivre aux Partygoers, trouver toutes les clés aléatoires, résoudre l'énigme des glow sticks et utiliser un exploit V-Sync pour accélérer la sortie.",
+    "imageUrl": "/images/levels/level-26.webp",
+    "imageAlt": "Escape the Backrooms Level Fun Plus, salle centrale et zone dangereuse des Partygoers",
+    "category": "Niveaux Principaux",
+    "isHome": true,
+    "sideBarInfo": {
+      "name": "Level Fun+ (maison de Levian)",
+      "difficulty": "Difficile / Nightmare recommandé",
+      "objectives": "Traversez quatre sous-salles dangereuses, récupérez quatre clés via les puzzles environnementaux, puis déposez-les dans le distributeur central pour ouvrir la sortie."
+    },
+    "featured": [
+      {
+        "title": "Exploit V-Sync : contourner les délais du distributeur",
+        "description": "Débloquez la fréquence d'images pour accélérer brutalement l'animation d'insertion des clés et sortir presque instantanément.",
+        "imageUrl": "/images/levels/level-26.webp",
+        "imageAlt": "Insertion des clés dans le distributeur de Level Fun+",
+        "addressBar": "#vsync-fps-exploit"
+      }
+    ],
+    "seo": {
+      "title": "Escape the Backrooms Level Fun+ Guide et skip FPS",
+      "description": "Guide Escape the Backrooms Level Fun+ avec code vert-jaune-bleu-rouge-rose, 4 salles à clé, stealth sous table, cibles glow stick et skip FPS.",
+      "keywords": "escape the backrooms level fun+, level fun+ guide, maison levian, code couleur, 4 cles, skip fps, stealth partygoer"
+    },
+    "detailsHtml": `
+      <section>
+        <h2>Le plan de route testé pour Level Fun+</h2>
+        <p>Quand vous arrivez dans <strong>Level Fun+</strong>, aussi appelé maison de Levian ou Levian Plus, le jeu passe immédiatement sur une version plus dure de la formule Party Rooms. La carte démarre dans un hub central avec quatre portes. Derrière chacune se trouve une épreuve différente qui protège exactement <strong>une clé</strong>. Votre objectif est simple : survivre aux quatre salles, récupérer les clés et les rapporter au distributeur central pour ouvrir la sortie.</p>
+        
+        <p>
+          <strong>Alerte Hard et Nightmare :</strong> sur les difficultés basses, vous pouvez récupérer une clé puis utiliser « Restart » dans le menu pour revenir directement au hub. En revanche, ce raccourci de menu est <strong>désactivé en Hard et Nightmare</strong>. Sur ces modes, il faut refaire physiquement l'aller-retour à chaque fois.
+        </p>
+      </section>
 
+      <h2>Escape the Backrooms Level Fun+ Guide: All Keys & FPS Trick Video</h2>
+      <iframe src="https://www.youtube.com/embed/D223jekpV4Q" allowfullscreen></iframe>
+
+      <section>
+        <h2>Épreuve 1 : la cassette VHS et la séquence à 5 couleurs</h2>
+        <p>Dans la première porte à droite, vous entrez dans un petit groupe de trois salles. Votre première tâche est de trouver une cassette VHS. Son emplacement est aléatoire : table, étagère ou rebord, mais une seule suffit.</p>
+        <p>Une fois la cassette insérée dans la télévision, le panneau mural vous demandera une suite de couleurs. Le puzzle paraît variable, mais l'ordre est en fait fixe. Pour le résoudre proprement, mémorisez cette séquence :</p>
+        <blockquote>
+          <strong>Vert &rarr; Jaune &rarr; Bleu &rarr; Rouge &rarr; Rose</strong>
+        </blockquote>
+        <p>Répétez cet ordre au fil des manches. Après la cinquième, un compartiment caché s'ouvre et donne la première clé.</p>
+        <img src="/images/levels/level-26-01.webp" alt="Level Fun Plus épreuve 1" />
+      </section>
+
+      <section>
+        <h2>Épreuve 2 : ballons, furtivité et cachettes sous les tables</h2>
+        <p>La porte bleu ciel mène à une salle où un Partygoer patrouille pendant que vous devez faire éclater des ballons pour trouver la deuxième clé.</p>
+        <ul>
+          <li><strong>Casser la ligne de vue :</strong> dès que vous entendez ses pas lourds ou que vous savez avoir été repéré, glissez immédiatement sous la table la plus proche. Dans cette salle, les tables fonctionnent comme de vraies zones sûres.</li>
+          <li><strong>Recherche efficace :</strong> ne faites pas exploser tous les ballons au hasard. La clé apparaît dans quelques groupes fixes, surtout au fond des salles. Vous pouvez avancer sous les tables et éclater ceux qui sont à portée.</li>
+          <li><strong>Le faux appât à l'entrée :</strong> un ballon près de la porte peut parfois laisser tomber une clé. Ne perdez pas de temps dessus : c'est une clé locale à cette sous-salle et elle ne compte pas pour le distributeur central.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Épreuve 3 : la salle noire et les cibles aux glow sticks</h2>
+        <p>La porte rouge vous plonge dans une salle presque totalement noire. Ici, tout repose sur des glow sticks colorés à lancer sur les bons symboles muraux.</p>
+        <p>Avant de monter, récupérez au moins un glow stick de chaque couleur principale : <strong>bleu, rouge, vert et jaune</strong>. En haut, un Partygoer se déplace lentement. Sa vision est mauvaise dans l'obscurité, donc gardez vos distances et vous resterez en sécurité.</p>
+        <p>Pour ouvrir le piédestal de la clé, lancez les glow sticks avec clic gauche sur les bons motifs :</p>
+        <ul>
+          <li><strong>Glow stick rouge :</strong> sur le <em>cadeau</em> à gauche en entrant.</li>
+          <li><strong>Glow stick vert :</strong> sur le <em>ballon</em> à droite de l'entrée.</li>
+          <li><strong>Glow stick jaune :</strong> sur l'<em>œil</em> plus loin dans la salle.</li>
+          <li><strong>Glow stick bleu :</strong> sur le dernier symbole restant sur le mur opposé.</li>
+        </ul>
+        <p>Si vous hésitez, regardez les voyants au plafond. Chaque couleur correcte allume un indicateur. Si la cage reste fermée, il suffit de repérer le voyant éteint pour savoir quelle couleur manque encore.</p>
+        <img src="/images/levels/level-26-02.webp" alt="Level Fun Plus épreuve 2" />
+      </section>
+
+      <section>
+        <h2>Épreuve 4 : détruire les Party Hosts et gérer les pics d'aggro</h2>
+        <p>La porte bleu foncé abrite la partie la plus chaotique du niveau. Vous y recevez des charges explosives pour détruire les Party Hosts suspendus au plafond.</p>
+        <p>Les explosions punissent énormément les erreurs de placement. Si vous restez trop près au moment de l'explosion, vous mourrez avec la cible. Lancez puis mettez-vous immédiatement à couvert.</p>
+        <p>Chaque Party Host détruit ou sous-objectif validé fait sortir un Partygoer des trappes au sol. En solo, ce spawn n'est pas aléatoire : il est lié à la trappe <strong>la plus proche de votre position actuelle</strong>. Quand il semble repartir, restez encore un instant sous la table ; son animation peut reboucler brièvement. Une fois tous les Party Hosts détruits, les poursuites cessent complètement et vous pouvez récupérer la quatrième clé en sécurité.</p>
+      </section>
+
+      <section id="vsync-fps-exploit">
+        <h2>Le meilleur skip speedrun : le hack de framerate du distributeur</h2>
+        <p>De retour au hub avec les quatre clés, vous devez normalement les insérer une par une dans le distributeur. Le jeu force alors une animation lente et pénible. Un exploit graphique permet de l'accélérer presque entièrement :</p>
+        
+        <div>
+          <strong>Comment exécuter le skip Unlimited FPS :</strong>
+          <ol>
+            <li>Placez-vous juste devant le panneau d'interaction du distributeur.</li>
+            <li>Ouvrez le menu avec <code>ESC</code> et allez dans les paramètres graphiques.</li>
+            <li>Désactivez complètement la <strong>V-Sync</strong>.</li>
+            <li>Réglez la <strong>limite d'images par seconde</strong> sur <strong>Unlimited</strong>.</li>
+            <li>Appliquez, revenez en jeu et spammez la touche d'interaction.</li>
+          </ol>
+        </div>
+        <img src="/images/levels/level-26-03.webp" alt="Level Fun Plus épreuve 3" />
+        <p>Comme certaines animations d'interaction d'Escape the Backrooms évoluent en parallèle du rendu, une très haute fréquence d'images accélère brutalement la logique interne. L'animation d'insertion des clés est alors quasi sautée et la sortie s'ouvre immédiatement.</p>
+      </section>
+    `
+  },
+  {
+    "id": 27,
+    "title": "Escape the Backrooms Level 52 Guide : School Halls & Bounty Hunter Path",
+    "pageTitle": "Escape the Backrooms Level 52 Guide : School Halls & Bounty Hunter Path",
+    "addressBar": "escape-the-backrooms-level-52-guide",
+    "description": "Terminez Level 52 (School Halls) dans Escape the Backrooms avec ce guide vérifié en jeu. Apprenez à gérer l'aggro élargie des Partygoers, à vous synchroniser avec le compagnon et à utiliser le restart skip pendant le chargement.",
+    "imageUrl": "/images/levels/level-27.webp",
+    "imageAlt": "Escape the Backrooms Level 52 School Halls et PNJ compagnon",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Level 52 (School Halls)",
+      "difficulty": "Normal / Difficile (portée d'aggro augmentée après mise à jour)",
+      "objectives": "Suivez le compagnon dans les couloirs sombres, évitez les Partygoers avec le bon positionnement, puis utilisez éventuellement le restart skip jusqu'à l'échelle finale."
+    },
+    "featured": [
+      {
+        "title": "Révision furtive : survivre à la KI Partygoer renforcée",
+        "description": "Les mises à jour ont agrandi la portée de détection. Avec un meilleur positionnement, vous évitez l'aggro instantanée.",
+        "imageUrl": "/images/levels/level-27.webp",
+        "imageAlt": "Zone de détection des Partygoers et couloirs sombres dans Level 52",
+        "addressBar": "#section-stealth-strategy"
+      }
+    ],
+    "seo": {
+      "title": "Escape the Backrooms Level 52 Guide et restart skip",
+      "description": "Guide Escape the Backrooms Level 52 avec route follow-him, aggro Partygoer élargie, zones sombres sûres, salut final et restart skip rapide.",
+      "keywords": "escape the backrooms level 52, level 52 guide, school halls, route follow-him, aggro partygoer, restart skip, companion guest"
+    },
+    "detailsHtml": `
+      <section>
+        <h2>Lire le hub et reconnaître le bon guide</h2>
+        <p>Quand vous arrivez dans <strong>Level 52</strong>, vous commencez dans un petit hub. La règle la plus importante ici est simple : <strong>n'entrez pas au hasard dans les mauvais couloirs</strong>. Si vous vous perdez, revenez jusqu'à retrouver la porte marquée <strong>52</strong>. C'est le vrai point de départ.</p>
+        
+        <p>Sur cette porte, le niveau vous dit de suivre « lui » pour trouver la sortie. Il s'agit du compagnon amical que beaucoup de joueurs appellent le Companion Guest. Dans la route normale, toute votre progression dépend de votre capacité à suivre correctement ce guide silencieux à travers School Halls.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 52 Guide: School Halls & Bounty Hunter Path Video</h2>
+      <iframe src="https://www.youtube.com/embed/d-Xwm5CY4tM" allowfullscreen></iframe>
+
+      <section id="section-stealth-strategy">
+        <h2>La règle de furtivité : s'accroupir et se relever au bon carreau</h2>
+        <p>Depuis la mise à jour, la <strong>portée d'aggro des Partygoers est nettement plus grande</strong> qu'avant. Des endroits où l'on pouvait autrefois se relever sans danger déclenchent maintenant une poursuite immédiate. Se relever trop tôt tue la run.</p>
+        
+        <p>Si vous ne connaissez pas encore la route, copiez le compagnon exactement : quand il s'accroupit, accroupissez-vous ; quand il se relève, relevez-vous seulement <strong>à l'endroit exact où il s'est relevé</strong>. Le jeu vérifie ici autant votre position physique que votre timing.</p>
+        
+        <p>Vous n'avez cependant pas besoin de rester collé à lui tout le temps. Les zones très sombres des couloirs permettent de marcher librement tant que vous restez complètement caché dans l'ombre. Juste avant la sortie, vous pouvez même attendre un instant pour voir un petit easter egg : le compagnon se retourne et vous salue.</p>
+        <img src="/images/levels/level-27-01.webp" alt="Level 52 PNJ compagnon" />
+      </section>
+
+      <section>
+        <h2>Le skip de niveau : restart pendant l'écran de chargement</h2>
+        <p>Si vous voulez sauter toute la séquence du compagnon, il existe un skip puissant basé sur le redémarrage pendant le chargement.</p>
+        
+        <div>
+          <strong>Comment exécuter le loading-restart skip :</strong>
+          <ol>
+            <li>Dès le spawn dans Level 52, tournez-vous immédiatement à 180 degrés.</li>
+            <li>Retournez dans la zone sombre d'où vous venez.</li>
+            <li>Au moment où l'écran devient noir et que le chargement commence, ouvrez vite le menu avec <code>ESC</code> et spammez <strong>Restart Level</strong>.</li>
+            <li>Si le timing est bon, le niveau vous replacera directement à la fin de Level 52 au lieu du début.</li>
+          </ol>
+        </div>
+        <img src="/images/levels/level-27-02.webp" alt="Level 52 restart skip" />
+        <p>Après un skip réussi, vous apparaissez directement devant l'échelle finale. Toute la partie dangereuse des School Halls se retrouve alors derrière vous et le niveau peut être terminé presque instantanément.</p>
+      </section>
+    `
+  },
+  {
+    "id": 28,
+    "title": "Escape the Backrooms Level 55.1 Guide : fin normale et fin secrète « Wrong Door » !",
+    "pageTitle": "Escape the Backrooms Level 55.1 Guide : fin normale et fin secrète « Wrong Door » !",
+    "addressBar": "escape-the-backrooms-level-55-1-guide",
+    "description": "Maîtrisez Escape the Backrooms Level 55.1 avec ce guide complet. Vous y trouverez les objectifs photo en solo et en coop, la préparation correcte du wagon, ainsi que la gestion de la Bacteria extrêmement rapide de cette map.",
+    "imageUrl": "/images/levels/level-28.webp",
+    "imageAlt": "Escape the Backrooms Level 55.1 guide fin normale et fin secrète",
+    "category": "Niveaux Principaux",
+    "isHome": false,
+    "sideBarInfo": {
+      "name": "Level 55.1",
+      "difficulty": "Normal / Nightmare (ordre précis requis)",
+      "objectives": "Utilisez la caméra pour tous les objectifs obligatoires, abaissez le wagon avant de descendre, photographiez les entités requises et déverrouillez les fins cachées via la fin normale."
+    },
+    "featured": [
+      {
+        "title": "Solo vs coop : le workaround photo sur le mur de départ",
+        "description": "En solo, le mur marqué remplace la photo de groupe et valide proprement le premier objectif.",
+        "imageUrl": "/images/levels/level-28.webp",
+        "imageAlt": "Mur d'objectif photo dans Level 55.1",
+        "addressBar": "#camera-mechanics"
+      }
+    ],
+    "seo": {
+      "title": "Escape the Backrooms Level 55.1 Guide et fin normale",
+      "description": "Guide Escape the Backrooms Level 55.1 avec photo mur solo, wagon abaissé, trigger Bacteria, photos d’entités et route de fin normale validée.",
+      "keywords": "escape the backrooms level 55.1, level 55.1 guide, route camera, photo mur solo, trigger bacteria, photos d entites, fin normale"
+    },
+    "detailsHtml": `
+      <section id="camera-mechanics">
+        <h2>Comprendre Level 55.1 : objectifs caméra en solo et en coop</h2>
+        <p>Au début de <strong>Level 55.1</strong>, toute la progression repose sur la navigation et la photographie. Commencez par ramasser la caméra au spawn. Les objectifs affichés dessus changent selon le nombre de joueurs. En coop à quatre, la première étape consiste à photographier <strong>vos trois coéquipiers</strong> ensemble.</p>
+        
+        <p>En solo, ce n'est évidemment pas possible. Les développeurs ont donc prévu un remplacement direct : un mur marqué au départ. Photographiez ce mur pour valider l'objectif initial. Une fois cela fait, le reste du niveau fonctionne de la même manière qu'en multijoueur.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending! Video</h2>
+      <iframe src="https://www.youtube.com/embed/PRsArou9ipY" allowfullscreen></iframe>
+
+      <section>
+        <h2>Abaisser le wagon avant de descendre pour éviter le softlock</h2>
+        <p>Sous la zone de départ se trouve un wagon indispensable à la progression. L'erreur critique en solo est de sauter directement en bas <strong>sans avoir d'abord abaissé le wagon</strong>. Cela peut sembler plus rapide, mais vous laisse ensuite coincé.</p>
+        
+        <p>Si le wagon reste en haut alors que vous êtes déjà descendu, vous ne pourrez plus l'atteindre depuis le bas. Sur Nightmare, cela peut ruiner entièrement la run. La règle sûre est donc simple : utilisez les leviers pour faire descendre le wagon avant de vous engager dans la zone inférieure.</p>
+        <img src="/images/levels/level-28-01.webp" alt="Level 55.1 wagon d'ascenseur" />
+      </section>
+
+      <section>
+        <h2>Photographier les entités : la Bacteria buffée est la vraie menace</h2>
+        <p>Dans la zone inférieure, plusieurs entités doivent être photographiées pour compléter les objectifs. La menace prioritaire est clairement la <strong>Bacteria</strong>, car elle possède ici une logique spéciale :</p>
+        <ul>
+          <li><strong>La Bacteria :</strong> Dans Level 55.1, elle est plus rapide que toutes les autres entités de la map, et plus rapide encore que les Bacteria rencontrées dans les autres niveaux. Si elle n'est pas à son emplacement habituel, cela ne veut pas dire qu'elle a disparu : il faut passer sur la passerelle supérieure pour activer son trigger de spawn.</li>
+          <li><strong>Smiler et Skin-Stealer :</strong> Ces deux ennemis sont bien plus faciles à gérer. Prenez la photo du Smiler à distance. Le Skin-Stealer est suffisamment lent dans cet environnement pour que vous puissiez obtenir sa photo puis casser son aggro dans un casier sans dépenser trop d'endurance.</li>
+        </ul>
+        <img src="/images/levels/level-28-02.webp" alt="Level 55.1 Bacteria" />
+        <p>Une fois la statue, le Smiler, le Skin-Stealer et la Bacteria photographiés, la partie obligatoire des photos d'entités est terminée. Si vous avez mal préparé le wagon plus tôt, vous devrez alors soit remonter autrement, soit reset la run avec un restart contrôlé.</p>
+      </section>
+
+      <section>
+        <h2>La fin normale comme chemin de déverrouillage</h2>
+        <p>Avec toutes les photos obligatoires et le wagon correctement positionné, vous pouvez rejoindre la zone finale. Actionnez le levier principal complètement, alignez-vous avec la zone de chute centrale puis sautez dans l'extraction.</p>
+        
+        <p>Cette séquence déclenche la <strong>fin normale</strong> de Level 55.1. D'après la vidéo, ce point est essentiel : il faut d'abord valider cette fin normale pour déverrouiller correctement les fins cachées et alternatives de la suite.</p>
+      </section>
+    `
+  }
 ]
