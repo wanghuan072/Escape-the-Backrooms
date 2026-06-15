@@ -1,16 +1,15 @@
 <script setup>
+/* GPT 广告暂时停用，恢复时取消下方注释
 import { computed, inject, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { Gt } from '@/utils/gptAds'
 
 const props = defineProps({
-  /** sidebar: 300×250 | leaderboard: PC 728 / 移动 300 | native: 原生横幅（每页第一个全宽位） */
   variant: {
     type: String,
     required: true,
     validator: (v) => ['sidebar', 'leaderboard', 'native'].includes(v),
   },
-  /** 显式指定 GPT 单元：1 | 2 | 3 */
   unit: {
     type: [Number, String],
     default: null,
@@ -54,10 +53,13 @@ watch(
     mountAd()
   },
 )
+*/
 </script>
 
 <template>
+  <!-- GPT 广告暂时停用，恢复时取消 AdSlot.vue 中 script/template 注释
   <div class="gpt-ad-slot">
     <div :id="elementId" :style="minStyle" aria-hidden="true" />
   </div>
+  -->
 </template>

@@ -8,9 +8,7 @@
         </div>
       </div>
     </section>
-
-    <!-- 广告：banner_native（原生横幅） -->
-
+<!-- GPT 广告位暂时停用：banner_native（原生横幅）
 
     <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -19,6 +17,8 @@
 
 
     </aside>
+
+    -->
 
     <section class="levels-content">
       <div class="content-wrapper">
@@ -42,10 +42,13 @@
               </nav>
             </div>
           </div>
-          <!-- 广告：banner_300（侧边栏 300×250） -->
+<!-- GPT 广告位暂时停用：banner_300（侧边栏300×250）
+
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
   <AdSlot variant="sidebar" />
 </aside>
+
+-->
         </aside>
 
         <!-- Main Content: Categories -->
@@ -95,9 +98,7 @@
         </main>
       </div>
     </section>
-
-    <!-- 广告：banner_728（728×90，PC）/ 300×250（移动） -->
-
+<!-- GPT 广告位暂时停用：banner_728（728×90，PC）/300×250（移动）
 
     <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -106,6 +107,8 @@
 
 
     </aside>
+
+    -->
   </div>
 </template>
 

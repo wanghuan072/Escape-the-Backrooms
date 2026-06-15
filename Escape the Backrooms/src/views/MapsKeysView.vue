@@ -9,9 +9,7 @@
         </div>
       </div>
     </section>
-
-      <!-- 广告：banner_native（原生横幅） -->
-
+<!-- GPT 广告位暂时停用：banner_native（原生横幅）
 
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -20,6 +18,8 @@
 
 
       </aside>
+
+      -->
 
     <!-- Maps Section -->
     <section class="maps-section">
@@ -59,9 +59,7 @@
         </div>
       </div>
     </section>
-
-      <!-- 广告：banner_728（728×90，PC）/ 300×250（移动） -->
-
+<!-- GPT 广告位暂时停用：banner_728（728×90，PC）/300×250（移动）
 
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -70,6 +68,8 @@
 
 
       </aside>
+
+      -->
 
     <!-- Keys Section -->
     <section class="keys-section">
@@ -87,9 +87,7 @@
             <p class="intro-text">{{ $t('mapsPage.keysSection.introText') }}</p>
           </div>
         </div>
-
-          <!-- 广告：banner_728（728×90） -->
-
+<!-- GPT 广告位暂时停用：banner_728（728×90）
 
           <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -98,6 +96,8 @@
 
 
           </aside>
+
+          -->
 
         <!-- Keys Grid -->
         <div class="keys-grid">
@@ -212,9 +212,7 @@
         </div>
       </div>
     </section>
-
-      <!-- 广告：banner_728（728×90） -->
-
+<!-- GPT 广告位暂时停用：banner_728（728×90）
 
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -223,6 +221,8 @@
 
 
       </aside>
+
+      -->
   </div>
 </template>
 
