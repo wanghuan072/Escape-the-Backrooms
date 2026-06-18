@@ -2825,6 +2825,350 @@ export default [
         <p>Descending through this path triggers the official <strong>Normal Ending</strong> sequence for Level 55.1. It is highly recommended to secure this standard completion path first; completing the main ending is a hard-coded prerequisite that updates your save state, permanently unlocking the necessary flags required to access the hidden "Wrong Door" Secret Ending and alternate side branches on subsequent playthroughs.</p>
       </section>
     `,
+  },
+
+  {
+    id: 29,
+    title: 'Escape the Backrooms Level B Guide: The M.E.G. Safe Zone & Elevator Hub',
+    pageTitle: 'Escape the Backrooms Level B Guide: The M.E.G. Safe Zone & Elevator Hub',
+    addressBar: 'escape-the-backrooms-level-b-unlock-guide',
+    description: 'Unlock Escape the Backrooms Level B through the M.E.G. Bunker after Level 55.1. Use this route checklist to find the ID card doors, Level 931 portal, and the elevator connection to Hub 3999.',
+    imageUrl: '/images/levels/level-29.webp',
+    imageAlt: 'Escape the Backrooms Level B M.E.G. Safe Zone and elevator hub',
+    category: 'Hidden Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level B / M.E.G. Bunker',
+      difficulty: 'Route Unlock / Hidden Level Access',
+      objectives: 'Clear Level 55.1, leave the M.E.G. sleeping room, open the ID card doors, identify the Level 931 supermarket portal, and use the bunker elevator for the Level B route.'
+    },
+    featured: [
+      {
+        title: 'Level 55.1 Normal Ending Route',
+        description: 'Level 55.1 is the prerequisite route shown before the hidden-level unlock sequence begins.',
+        imageUrl: '/images/levels/level-28.webp',
+        imageAlt: 'Escape the Backrooms Level 55.1 prerequisite route',
+        addressBar: 'escape-the-backrooms-level-55-1-guide'
+      },
+      {
+        title: 'Level 3999 Arcade Hub',
+        description: 'The bunker elevator connects back toward Hub 3999, making the Arcade route relevant after the unlock.',
+        imageUrl: '/images/levels/level-21.webp',
+        imageAlt: 'Escape the Backrooms Level 3999 Arcade hub',
+        addressBar: 'level-3999-the-arcade-guide'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Level B M.E.G. Safe Zone Guide',
+      description: 'Escape the Backrooms Level B guide covering the M.E.G. Safe Zone, Level 55.1 unlock route, ID card doors, Level 931 portal, and elevator hub path.',
+      keywords: 'escape the backrooms level b, m.e.g. safe zone, elevator hub, level b guide, level 931 portal, id card doors, level 55.1 unlock',
+    },
+    detailsHtml: `
+      <section>
+        <h2>Start Requirement: Clear Level 55.1 First</h2>
+        <p><strong>Level B</strong> does not open from a normal Hub doorway. The unlock route starts after you finish the main story path that leads through <strong>Level 55.1</strong>. When the handoff works correctly, you wake inside a small M.E.G. sleeping room instead of loading back into a standard level corridor.</p>
+
+        <p>Use that wake-up room as your first route check. If you are still holding the camera in Level 55.1, standing in Hub 3999, or walking through a regular Backrooms hallway, you are not on the Level B unlock path yet. The correct run begins when you can leave the sleeping room and step into the M.E.G. Bunker interior.</p>
+      </section>
+
+      <h2>Escape the Backrooms: How to Unlock Level B (The M.E.G. Bunker) & Level 931 Portal Video</h2>
+      <iframe src="https://www.youtube.com/embed/tDD7YKWHY9Y" allowfullscreen></iframe>
+
+      <section>
+        <h2>Step 1: Leave the M.E.G. Sleeping Room</h2>
+        <p>After the transition, turn toward the door in the sleeping room and open it. This moves you into the <strong>M.E.G. Bunker</strong>, a controlled facility area where the main progression check is access control, not stealth or entity management.</p>
+
+        <div>
+          <strong>Fast route check:</strong>
+          <ul>
+            <li>You wake in a sleeping area used by M.E.G. members.</li>
+            <li>The first usable door is directly in or near that room.</li>
+            <li>The next space looks like a bunker facility, not a normal Backrooms loop.</li>
+          </ul>
+        </div>
+      </section>
+
+      <img src="/images/levels/level-29-01.webp" alt="Escape the Backrooms Level B M.E.G. Safe Zone" />
+
+      <section>
+        <h2>Step 2: Use the ID Card Doors</h2>
+        <p>Inside the bunker, progression is gated by <strong>ID card</strong> access. Walk up to the card reader, swipe the card, then press <code>C</code> when the door interaction is available. If the door does not open, stay on the reader and repeat the interaction instead of leaving the route.</p>
+
+        <p>This section is easy to overthink because it looks like a new level hub. It is really a controlled access chain. Your job is to keep moving door-to-door through the bunker until the route splits between the Level 931 portal branch and the elevator path.</p>
+      </section>
+
+      <section>
+        <h2>Step 3: Identify the Level 931 Portal</h2>
+        <p>After the first access door, you reach another card-locked door leading toward the <strong>supermarket</strong> route. That branch is the <strong>Level 931 portal</strong>. If your immediate goal is Level 931, take this supermarket path.</p>
+
+        <p>For a Level B unlock run, treat the Level 931 door as a landmark. It confirms you are in the correct hidden-level access area, but it is not the same exit as Level B. The Level B route continues through the bunker elevator path.</p>
+      </section>
+
+      <img src="/images/levels/level-29-03.webp" alt="Escape the Backrooms Level B M.E.G. Safe Zone" />
+
+      <section>
+        <h2>Step 4: Take the Elevator Toward Level B</h2>
+        <p>The final key object is the bunker elevator. This elevator connects the bunker route with <strong>Hub 3999</strong> and the hidden level path that starts with <strong>B</strong>. After you confirm the Level 931 branch, use the elevator route to continue toward Level B.</p>
+
+        <p>The clean checklist is simple: clear Level 55.1, wake in the M.E.G. sleeping room, open the bunker door, swipe the ID card doors, identify the Level 931 supermarket portal, then take the elevator route for Level B. The main failure point is routing confusion, not combat, so move slowly enough to confirm each doorway before committing.</p>
+      </section>
+    `,
+  },
+
+  {
+    id: 30,
+    title: 'Escape the Backrooms Level 2 Graffiti: How to Solve the Colored Tubes & Fan Puzzle',
+    pageTitle: 'Escape the Backrooms Level 2 Graffiti: How to Solve the Colored Tubes & Fan Puzzle',
+    addressBar: 'escape-the-backrooms-level-2-graffiti-guide',
+    description: 'Solve the Escape the Backrooms Level 2 Graffiti colored tubes and fan puzzle. This route covers speed drinks, carrying NPCs, avoiding Bacteria, breaking the fans, and entering the final tube.',
+    imageUrl: '/images/levels/level-30.webp',
+    imageAlt: 'Escape the Backrooms Level 2 Graffiti colored tubes and fan puzzle',
+    category: 'Hidden Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 2 Graffiti',
+      difficulty: 'High pressure route / Bacteria patrols',
+      objectives: 'Collect speed drinks, carry four NPCs to the tube holes, use the drops to disable the fans, wait for all four holes to turn dark, then press F to enter the exit tube.'
+    },
+    featured: [
+      {
+        title: 'Level B M.E.G. Safe Zone Route',
+        description: 'Level B and the M.E.G. hub routes connect into the hidden-level progression chain.',
+        imageUrl: '/images/levels/level-29.webp',
+        imageAlt: 'Escape the Backrooms Level B M.E.G. Safe Zone',
+        addressBar: 'escape-the-backrooms-level-b-unlock-guide'
+      },
+      {
+        title: 'Level 2 Pipe Dreams',
+        description: 'Review the standard Level 2 route if you need the earlier pipe-area survival basics.',
+        imageUrl: '/images/levels/level-03.webp',
+        imageAlt: 'Escape the Backrooms Level 2 Pipe Dreams',
+        addressBar: 'level-2-pipe-dreams-Walkthrough'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Level 2 Graffiti Puzzle Guide',
+      description: 'Escape the Backrooms Level 2 Graffiti guide covering colored tubes, speed drinks, carried NPCs, fan-breaking drops, Bacteria movement, and final F-entry.',
+      keywords: 'escape the backrooms level 2 graffiti, colored tubes puzzle, fan puzzle, speed drinks, carried npcs, bacteria route, final tube entry',
+    },
+    detailsHtml: `
+      <section>
+        <h2>First Route Check: Plaza, Locked Doors, and Four Tube Holes</h2>
+        <p><strong>Level 2 Graffiti</strong> starts in a plaza-like area with three doors that are not ready to open yet and four tube holes tied to the fan puzzle. Do not jump into the holes immediately. At the start of the route, those drops are unsafe because the fans inside can kill you before the puzzle state changes.</p>
+
+        <p>Before leaving the plaza, grab the speed drink near the switch area. There is also a piece of paper underneath the switch. Pulling the switch opens the outside route, but the drink is the real survival tool for the level. Without drinks, carrying objectives becomes slow and the Bacteria patrols can catch up easily.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 2 Graffiti: How to Solve the Colored Tubes & Fan Puzzle Video</h2>
+      <iframe src="https://www.youtube.com/embed/LysnApdBzxY" allowfullscreen></iframe>
+
+      <section>
+        <h2>Why Speed Drinks Matter</h2>
+        <p>The route depends on moving carried NPCs back to the tube holes. While carrying someone, your movement is heavily restricted: keep holding <code>W</code> to move forward, avoid <code>S</code>, and do not press <code>Shift</code> unless you want to drop the carry. The speed drink offsets that slowdown and lets you cross open space before Bacteria pressure becomes a problem.</p>
+
+        <div>
+          <strong>Drink handling rules:</strong>
+          <ul>
+            <li>Pick up the first drink before leaving the starting area.</li>
+            <li>Use drinks before long carries or before crossing patrol-heavy space.</li>
+            <li>If you run out, reset and restock rather than forcing slow carries through Bacteria routes.</li>
+          </ul>
+        </div>
+      </section>
+
+      <img src="/images/levels/level-30-01.webp" alt="Escape the Backrooms Level 2 Graffiti colored tubes and fan puzzle" />
+
+      <section>
+        <h2>Carry the NPCs to the Tube Holes</h2>
+        <p>Your main objective is to find the NPC-like bodies around the level and bring them back to the four tube holes. Start by sticking left from the opened route. The first target is on the left-side path. Pick him up, drink if needed, then return to the plaza without using <code>Shift</code> or backing up with <code>S</code>.</p>
+
+        <p>At each tube hole, throw the carried body into the opening. The drop is used to break the fan below. Do not immediately follow the body into the hole; even after one fan breaks, the route is not ready until all four tube states are completed. Watch the interaction text and the hole state after each successful drop.</p>
+      </section>
+
+      <section>
+        <h2>Use Left-Wall and Right-Side Routing to Find All Four</h2>
+        <p>For the first two carries, the safest route is to keep working the left side and return to the plaza after each pickup. Bacteria patrols can appear along this path, but the speed drink lets you outrun them if you keep moving cleanly and avoid wasting stamina on bad turns.</p>
+
+        <p>For another pickup, move toward the right-hand side where the route climbs toward a second-floor or high-place section. Use the ladder/high route to reposition, then drop back down if needed. Another target can be reached from the middle-door route by moving right at roughly a 45-degree angle toward the UFO/sticker landmark, then carrying him back diagonally from that side.</p>
+      </section>
+
+      <img src="/images/levels/level-30-02.webp" alt="Escape the Backrooms Level 2 Graffiti colored tubes and fan puzzle" />
+
+      <section>
+        <h2>Finish the Fan Puzzle and Enter the Final Hole</h2>
+        <p>After all four carried bodies are thrown into the correct tube holes, the four holes turn dark. That visual change is your completion signal. At that point, choose any completed hole and press <code>F</code> to go down.</p>
+
+        <p>The important mistake to avoid is entering too early. If only one or two fans have been broken, the route is still unsafe and incomplete. Treat the puzzle as a four-step checklist: collect drinks, carry each target back, throw one into each tube hole, confirm all four holes have changed state, then use <code>F</code> for the exit drop.</p>
+      </section>
+    `,
+  },
+
+  {
+    id: 31,
+    title: 'Escape the Backrooms: How to Beat the "Crazy Growth" Grass Puzzle (Level 931)',
+    pageTitle: 'Escape the Backrooms: How to Beat the "Crazy Growth" Grass Puzzle (Level 931)',
+    addressBar: 'escape-the-backrooms-level-931-crazy-growth-guide',
+    description: 'Beat the Escape the Backrooms Level 931 Crazy Growth grass puzzle with this route guide. Keep moving on the grass, use cart levers, carry the knife, free teammates, press the four buttons, and reach the final elevator.',
+    imageUrl: '/images/levels/level-31.webp',
+    imageAlt: 'Escape the Backrooms Level 931 Crazy Growth grass puzzle',
+    category: 'Hidden Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 931: Crazy Growth',
+      difficulty: 'Movement pressure / Grass trap hazard',
+      objectives: 'Keep moving on the grass, use the cart and levers, grab the knife, cut ropes and trapped teammates, activate four button lights, then take the final elevator.'
+    },
+    featured: [
+      {
+        title: 'Level B M.E.G. Safe Zone Route',
+        description: 'Use the M.E.G. Safe Zone route to understand how the Level 931 portal branch is reached.',
+        imageUrl: '/images/levels/level-29.webp',
+        imageAlt: 'Escape the Backrooms Level B M.E.G. Safe Zone',
+        addressBar: 'escape-the-backrooms-level-b-unlock-guide'
+      },
+      {
+        title: 'Level 2 Graffiti Tube Puzzle',
+        description: 'Another hidden-route puzzle built around movement pressure and exact interaction order.',
+        imageUrl: '/images/levels/level-30.webp',
+        imageAlt: 'Escape the Backrooms Level 2 Graffiti tube puzzle',
+        addressBar: 'escape-the-backrooms-level-2-graffiti-guide'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Crazy Growth Level 931 Guide',
+      description: 'Escape the Backrooms Level 931 guide for the Crazy Growth grass puzzle, cart levers, knife rescue, rope cuts, four button lights, and final elevator route.',
+      keywords: 'escape the backrooms level 931, crazy growth guide, grass puzzle, cart levers, knife rescue, rope cuts, four button lights, final elevator',
+    },
+    detailsHtml: `
+      <section>
+        <h2>Core Rule: Never Stand Still on the Grass</h2>
+        <p><strong>Crazy Growth</strong> is built around one simple punishment rule: if you stop moving on the grass field, the grass can bind you in place. Treat every grass section as a movement check. Keep tapping movement, circle in place if needed, and never pause to read the room while standing on the hazard surface.</p>
+
+        <p>Before dropping into the route, look for the tied-up person shown above the area as your warning. The level is teaching you the main mechanic early: grass is not just decoration. It is the active threat, and slow decision-making is what gets players caught.</p>
+      </section>
+
+      <h2>Escape the Backrooms: How to Beat the "Crazy Growth" Grass Puzzle (Level 931) Video</h2>
+      <iframe src="https://www.youtube.com/embed/sYQfhIlponU" allowfullscreen></iframe>
+
+      <section>
+        <h2>Use the Lever Cart to Cross the First Gap</h2>
+        <p>Go down from the starting side and use the lever to move the cart or elevator platform across the gap. In solo play, the cart can move by itself once you trigger it correctly. In co-op, one player may need to work the lever from below while another rides or waits on the opposite side.</p>
+
+        <p>When you step onto the grass or rope-covered floor near this section, keep moving the entire time. The route is not mechanically hard, but it punishes players who stop to line up too carefully. Pull the lever, cross to the opposite side, and use the switch there to open the door across the route.</p>
+      </section>
+
+      <img src="/images/levels/level-31-01.webp" alt="Escape the Backrooms Level 931 Crazy Growth grass puzzle" />
+
+      <section>
+        <h2>Co-op Rope Handling and the Knife</h2>
+        <p>On the opposite side, there is a rope used to pull a teammate up. Solo players can ignore part of that rescue setup because the cart routing handles the required movement by itself. In co-op, drop or position the rope so the lower player can be pulled up safely.</p>
+
+        <p>Next, grab the <strong>knife</strong>. The knife is a rescue tool, not a general weapon. If a teammate gets trapped by grass, use the knife to cut them free. Be careful with unnecessary swings: if there is no grass on the teammate, you can damage or kill them instead of helping.</p>
+      </section>
+
+      <section>
+        <h2>Cut the Rope and Break the Glass Cover</h2>
+        <p>After securing the knife, work the lever route again so you can return across the platform path. Move over the wooden board and find the rope tied near the glass cover area. Cut the rope to drop the coil or weight onto the glass. This breaks the cover and opens the next puzzle layer.</p>
+
+        <p>Listen for the sizzling or tightening sound while moving through grass sections. That sound is the warning that the grass is close to binding you. If you hear it, do not stop to fight the mechanic; keep moving until you are clear.</p>
+      </section>
+
+      <img src="/images/levels/level-31-02.webp" alt="Escape the Backrooms Level 931 Crazy Growth grass puzzle" />
+
+      <section>
+        <h2>Find the Four Buttons and Watch the Lights</h2>
+        <p>After the glass breaks, look for the four indicator lights. They start in a non-complete state, and each correct button press turns one light white. One button is near the first accessible side, another is on the left route, and multiple buttons sit on the right-side path or upper route.</p>
+
+        <p>The layout includes a small maze and stairs near the later buttons. Move through the maze, climb the stairs, and press the upper button. If you still have enough stamina, you can drop down after pressing it to shorten the return. Once all four lights have changed, the door opens.</p>
+      </section>
+
+      <section>
+        <h2>Final Elevator Exit</h2>
+        <p>When the four-button door opens, go through and press the elevator. Avoid backtracking too far after committing to the elevator room, because some route transitions can lock you out of the previous note or side area.</p>
+
+        <p>The safe completion checklist is: keep moving on grass, operate the cart levers, use rope support in co-op, take the knife, cut trapped teammates or puzzle ropes only when needed, press all four buttons, confirm the door opens, then enter the elevator.</p>
+      </section>
+    `,
+  },
+
+  {
+    id: 32,
+    title: 'Escape the Backrooms Level 363 Guide: How to Enter the Secret Easter Egg Level (No Cheats!)',
+    pageTitle: 'Escape the Backrooms Level 363 Guide: How to Enter the Secret Easter Egg Level (No Cheats!)',
+    addressBar: 'escape-the-backrooms-level-363-secret-easter-egg-guide',
+    description: 'Enter Escape the Backrooms Level 363 without cheats using the spider grab route. This short Easter egg guide explains the timing, death-transition entry, locked knocking door, and return path.',
+    imageUrl: '/images/levels/level-32.webp',
+    imageAlt: 'Escape the Backrooms Level 363 secret Easter egg level',
+    category: 'Hidden Levels',
+    isHome: false,
+    sideBarInfo: {
+      name: 'Level 363',
+      difficulty: 'Secret Easter Egg / Death-transition entry',
+      objectives: 'Trigger the spider grab route, cross the entry line before the death transition finishes, load into Level 363, avoid the locked knocking door, and use the return side when leaving.'
+    },
+    featured: [
+      {
+        title: 'Level 931 Crazy Growth Route',
+        description: 'Another hidden level route where exact movement timing matters more than combat.',
+        imageUrl: '/images/levels/level-31.webp',
+        imageAlt: 'Escape the Backrooms Level 931 Crazy Growth route',
+        addressBar: 'escape-the-backrooms-level-931-crazy-growth-guide'
+      },
+      {
+        title: 'Level B M.E.G. Safe Zone Route',
+        description: 'Use the M.E.G. Safe Zone guide to track the hidden-level access chain before branching deeper.',
+        imageUrl: '/images/levels/level-29.webp',
+        imageAlt: 'Escape the Backrooms Level B M.E.G. Safe Zone',
+        addressBar: 'escape-the-backrooms-level-b-unlock-guide'
+      }
+    ],
+    seo: {
+      title: 'Escape the Backrooms Level 363 No-Cheat Entry Guide',
+      description: 'Escape the Backrooms Level 363 guide for the secret Easter egg route, spider grab timing, no-cheat entry, locked knocking door, and return path.',
+      keywords: 'escape the backrooms level 363, level 363 guide, secret easter egg level, no-cheat entry, spider grab timing, locked knocking door, return path',
+    },
+    detailsHtml: `
+      <section>
+        <h2>What Level 363 Is</h2>
+        <p><strong>Level 363</strong> is a secret Easter egg level in <em>Escape the Backrooms</em>. It is not presented like a normal hub door route. The important trick is entering through a spider encounter without using cheats, modifiers, or external tools.</p>
+
+        <p>The route is short, but the timing matters. You are using the moment where the spider tries to grab you as the entry window. If you cross far enough during that grab/death transition, the game can still place you inside Level 363.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 363 Guide: How to Enter the Secret Easter Egg Level (No Cheats!) Video</h2>
+      <iframe src="https://www.youtube.com/embed/I3iu31tuNu0" allowfullscreen></iframe>
+
+      <section>
+        <h2>No-Cheat Entry Route</h2>
+        <p>Set up near the spider entry path, then run toward the access side as the spider starts its grab. The goal is not to survive the hit. The goal is to move far enough into the entry route before the death state fully resolves.</p>
+
+        <div>
+          <strong>Entry checklist:</strong>
+          <ul>
+            <li>Do not use modifiers or cheat movement.</li>
+            <li>Let the spider commit to the grab while you run through the route.</li>
+            <li>Keep moving toward the entry side even if the death transition starts.</li>
+            <li>If the timing works, the next load places you inside Level 363.</li>
+          </ul>
+        </div>
+      </section>
+
+      <img src="/images/levels/level-32-01.webp" alt="Escape the Backrooms Level 363 secret Easter egg level" />
+
+      <section>
+        <h2>Inside Level 363</h2>
+        <p>Once the transition succeeds, you spawn inside the Easter egg area. Do not expect a full combat route or puzzle chain here. Level 363 is mainly a secret destination and a confirmation that the entry trick worked.</p>
+
+        <p>There is a door behind you where knocking sounds can sometimes be heard, but that door is not the exit route. Treat it as part of the Easter egg atmosphere rather than a usable progression door.</p>
+      </section>
+
+      <section>
+        <h2>How to Leave</h2>
+        <p>If you entered from the correct side, you can return by using the opposite side route instead of forcing the locked knocking door. The level is small, so the main thing to remember is which side is decorative and which side actually lets you back out.</p>
+
+        <p>For repeat attempts, focus on the spider timing. If you die too early, you will fail the entry. If you move far enough before the transition completes, Level 363 loads without needing any cheat setup.</p>
+      </section>
+    `,
   }
 
 
