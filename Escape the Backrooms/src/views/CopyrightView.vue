@@ -44,7 +44,7 @@
             </ul>
 
             <h2>{{ $t('copyrightPage.content.contactTitle') }}</h2>
-            <p>For copyright-related inquiries, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.</p>
+            <p v-html="$t('copyrightPage.content.contactText')"></p>
           </div>
         </div>
       </div>
@@ -126,7 +126,6 @@
   }
 }
 </style>
-
 
 
 

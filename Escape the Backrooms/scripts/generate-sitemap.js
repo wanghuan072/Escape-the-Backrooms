@@ -16,7 +16,7 @@ const seoConfig = {
 }
 
 // 支持的语言列表
-const supportedLocales = ['en', 'de', 'fr']
+const supportedLocales = ['en', 'de', 'fr', 'es']
 
 // 基础路由配置
 // Note: Legal pages (privacy-policy, terms-of-service, copyright) are excluded from sitemap
@@ -247,9 +247,10 @@ async function main() {
     console.log(`   Existing URLs (lastmod preserved): ${stats.preservedCount}`)
 
     const enUrls = sitemapXml.match(/<loc>https:\/\/escapethebackrooms\.org\/[^<]*<\/loc>/g) || []
-    const enUrlCount = enUrls.filter((url) => !url.includes('/de/') && !url.includes('/fr/')).length
+    const enUrlCount = enUrls.filter((url) => !url.includes('/de/') && !url.includes('/fr/') && !url.includes('/es/')).length
     const deUrlCount = enUrls.filter((url) => url.includes('/de/')).length
     const frUrlCount = enUrls.filter((url) => url.includes('/fr/')).length
+    const esUrlCount = enUrls.filter((url) => url.includes('/es/')).length
     const levelsCount = (sitemapXml.match(/\/levels\//g) || []).length
     const mapsCount = (sitemapXml.match(/\/maps-keys\//g) || []).length
 
@@ -257,6 +258,7 @@ async function main() {
     console.log(`   English (en): ${enUrlCount}`)
     console.log(`   German (de): ${deUrlCount}`)
     console.log(`   French (fr): ${frUrlCount}`)
+    console.log(`   Spanish (es): ${esUrlCount}`)
     console.log(`   Total: ${stats.total}`)
 
     console.log('\n📊 URLs by category:')

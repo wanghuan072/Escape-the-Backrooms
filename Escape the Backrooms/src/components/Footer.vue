@@ -8,34 +8,34 @@
             <span class="logo-text">ESCAPE THE BACKROOMS</span>
           </div>
           <p class="footer-text">
-            Comprehensive Escape the Backrooms resources including guides, wiki, maps, and strategies to help you navigate and escape the Backrooms.
+            {{ footerLabels.description }}
           </p>
         </div>
         <div class="link-column">
-          <h2>Navigate</h2>
+          <h2>{{ footerLabels.navigate }}</h2>
           <ul>
-            <li><a :href="getLocalizedPath('/')">Home</a></li>
-            <li><a :href="getLocalizedPath('/levels')">Levels</a></li>
-            <li><a :href="getLocalizedPath('/maps-keys')">Maps & Keys</a></li>
-            <li><a :href="getLocalizedPath('/codes-solutions')">Codes & Solutions</a></li>
+            <li><a :href="getLocalizedPath('/')">{{ footerLabels.home }}</a></li>
+            <li><a :href="getLocalizedPath('/levels')">{{ footerLabels.levels }}</a></li>
+            <li><a :href="getLocalizedPath('/maps-keys')">{{ footerLabels.maps }}</a></li>
+            <li><a :href="getLocalizedPath('/codes-solutions')">{{ footerLabels.codes }}</a></li>
             <!-- <li><a href="/wiki">Wiki</a></li>
             <li><a href="/guides">Guides</a></li> -->
           </ul>
         </div>
         <div class="link-column">
-          <h2>Legal</h2>
+          <h2>{{ footerLabels.legal }}</h2>
           <ul>
-            <li><a :href="getLocalizedPath('/privacy-policy')" rel="nofollow">Privacy Policy</a></li>
-            <li><a :href="getLocalizedPath('/terms-of-service')" rel="nofollow">Terms of Service</a></li>
-            <li><a :href="getLocalizedPath('/copyright')" rel="nofollow">Copyright</a></li>
-            <li><a :href="getLocalizedPath('/about-us')" rel="nofollow">About Us</a></li>
-            <li><a :href="getLocalizedPath('/contact-us')" rel="nofollow">Contact Us</a></li>
+            <li><a :href="getLocalizedPath('/privacy-policy')" rel="nofollow">{{ footerLabels.privacy }}</a></li>
+            <li><a :href="getLocalizedPath('/terms-of-service')" rel="nofollow">{{ footerLabels.terms }}</a></li>
+            <li><a :href="getLocalizedPath('/copyright')" rel="nofollow">{{ footerLabels.copyright }}</a></li>
+            <li><a :href="getLocalizedPath('/about-us')" rel="nofollow">{{ footerLabels.about }}</a></li>
+            <li><a :href="getLocalizedPath('/contact-us')" rel="nofollow">{{ footerLabels.contact }}</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 escapethebackrooms.org. All rights reserved.</p>
-        <p>This is an independent fan site created for informational purposes only. All trademarks and copyrights belong to their respective owners.</p>
+        <p>{{ footerLabels.rights }}</p>
+        <p>{{ footerLabels.disclaimer }}</p>
       </div>
     </div>
   </footer>
@@ -46,9 +46,48 @@ defineOptions({
   name: 'SiteFooter'
 })
 
+import { computed } from 'vue'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
-const { getLocalizedPath } = useLocalizedPath()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
+
+const footerLabels = computed(() => {
+  if (getCurrentLocale() === 'es') {
+    return {
+      navigate: 'Navegación',
+      home: 'Inicio',
+      levels: 'Niveles',
+      maps: 'Mapas y llaves',
+      codes: 'Códigos y soluciones',
+      legal: 'Legal',
+      privacy: 'Política de privacidad',
+      terms: 'Términos de servicio',
+      copyright: 'Derechos de autor',
+      about: 'Sobre nosotros',
+      contact: 'Contacto',
+      description: 'Recursos completos de Escape the Backrooms, con guías, wiki, mapas y estrategias para ayudarte a orientarte y escapar de los Backrooms.',
+      rights: '© 2026 escapethebackrooms.org. Todos los derechos reservados.',
+      disclaimer: 'Este es un sitio de fans independiente creado solo con fines informativos. Todas las marcas comerciales y derechos de autor pertenecen a sus respectivos propietarios.'
+    }
+  }
+
+  return {
+    navigate: 'Navigate',
+    home: 'Home',
+    levels: 'Levels',
+    maps: 'Maps & Keys',
+    codes: 'Codes & Solutions',
+    legal: 'Legal',
+    privacy: 'Privacy Policy',
+    terms: 'Terms of Service',
+    copyright: 'Copyright',
+    about: 'About Us',
+    contact: 'Contact Us',
+    description: 'Comprehensive Escape the Backrooms resources including guides, wiki, maps, and strategies to help you navigate and escape the Backrooms.',
+    rights: '© 2026 escapethebackrooms.org. All rights reserved.',
+    disclaimer: 'This is an independent fan site created for informational purposes only. All trademarks and copyrights belong to their respective owners.'
+  }
+})
 </script>
 
 <style scoped>

@@ -40,7 +40,7 @@
             <p v-html="$t('termsOfServicePage.content.modificationsText')"></p>
 
             <h2>{{ $t('termsOfServicePage.content.contactTitle') }}</h2>
-            <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.</p>
+            <p v-html="$t('termsOfServicePage.content.contactText')"></p>
           </div>
         </div>
       </div>
@@ -122,7 +122,6 @@
   }
 }
 </style>
-
 
 
 

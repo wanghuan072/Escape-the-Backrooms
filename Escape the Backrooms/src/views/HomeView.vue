@@ -406,7 +406,7 @@ import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 import entitiesData from '../data/wiki/entities.js'
 
 const { t } = useI18n()
-const { getLocalizedPath } = useLocalizedPath()
+const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 const { loadData: loadLevelsData, getHomeLevels } = useLevelsData()
 const { loadData: loadMapsData, getHomeMaps } = useMapsData()
 
@@ -433,8 +433,30 @@ const homeLevels = computed(() => {
   return getHomeLevels()
 })
 
+const entityCopy = {
+  es: {
+    1: {
+      title: 'Vagabundo',
+      description: 'Seres humanos atrapados en los Backrooms, casi siempre vistos con un traje de protección.'
+    },
+    2: {
+      title: 'Bacteria',
+      description: 'Criaturas humanoides negras con estructura esquelética de alambres que persiguen a los vagabundos al verlos.'
+    },
+    3: {
+      title: 'Ladrón de piel',
+      description: 'Entidades humanoides grises capaces de robar la piel de un jugador y hacerse pasar por vagabundos.'
+    }
+  }
+}
+
+const localizeEntity = (entity) => {
+  const localized = entityCopy[getCurrentLocale()]?.[entity.id]
+  return localized ? { ...entity, ...localized } : entity
+}
+
 const homeEntities = computed(() => {
-  return entitiesData.filter(entity => entity.isHome === true)
+  return entitiesData.filter(entity => entity.isHome === true).map(localizeEntity)
 })
 
 const homeMaps = computed(() => {

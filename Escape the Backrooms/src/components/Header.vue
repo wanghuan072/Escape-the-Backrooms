@@ -13,7 +13,7 @@
             <input
               type="text"
               class="search-input"
-              placeholder="Search levels, maps, codes, entities..."
+              :placeholder="$t('searchPage.search.placeholder')"
               v-model="searchQuery"
               @keyup.enter="handleSearch"
             />
@@ -60,7 +60,7 @@
               <input
                 type="text"
                 class="search-input"
-                placeholder="Search levels, maps, codes, entities..."
+                :placeholder="$t('searchPage.search.placeholder')"
                 v-model="searchQuery"
                 @keyup.enter="handleSearch"
               />
@@ -71,10 +71,10 @@
               </button>
             </div>
           </div>
-          <a :href="getLocalizedPath('/')" class="nav-link" @click="closeMobileMenu">Home</a>
-          <a :href="getLocalizedPath('/levels')" class="nav-link" @click="closeMobileMenu">Levels</a>
-          <a :href="getLocalizedPath('/maps-keys')" class="nav-link" @click="closeMobileMenu">Maps & Keys</a>
-          <a :href="getLocalizedPath('/codes-solutions')" class="nav-link" @click="closeMobileMenu">Codes & Solutions</a>
+          <a :href="getLocalizedPath('/')" class="nav-link" @click="closeMobileMenu">{{ navLabels.home }}</a>
+          <a :href="getLocalizedPath('/levels')" class="nav-link" @click="closeMobileMenu">{{ navLabels.levels }}</a>
+          <a :href="getLocalizedPath('/maps-keys')" class="nav-link" @click="closeMobileMenu">{{ navLabels.maps }}</a>
+          <a :href="getLocalizedPath('/codes-solutions')" class="nav-link" @click="closeMobileMenu">{{ navLabels.codes }}</a>
           <!-- <a :href="getLocalizedPath('/wiki')" class="nav-link" @click="closeMobileMenu">Wiki</a> -->
           <!-- <a :href="getLocalizedPath('/guides')" class="nav-link" @click="closeMobileMenu">Guides</a> -->
         </nav>
@@ -105,7 +105,8 @@ const langSwitcherRef = ref(null)
 const languages = [
   { code: 'en', name: 'English' },
   { code: 'de', name: 'Deutsch' },
-  { code: 'fr', name: 'Français' }
+  { code: 'fr', name: 'Français' },
+  { code: 'es', name: 'Español' }
 ]
 
 // 当前语言
@@ -115,6 +116,24 @@ const currentLocale = computed(() => getCurrentLocale())
 const currentLanguageName = computed(() => {
   const lang = languages.find(l => l.code === currentLocale.value)
   return lang ? lang.name : 'English'
+})
+
+const navLabels = computed(() => {
+  if (currentLocale.value === 'es') {
+    return {
+      home: 'Inicio',
+      levels: 'Niveles',
+      maps: 'Mapas y llaves',
+      codes: 'Códigos y soluciones'
+    }
+  }
+
+  return {
+    home: 'Home',
+    levels: 'Levels',
+    maps: 'Maps & Keys',
+    codes: 'Codes & Solutions'
+  }
 })
 
 // 切换语言下拉菜单
@@ -134,7 +153,7 @@ const selectLanguage = (newLocale) => {
   const pathSegments = currentPath.split('/').filter(Boolean)
   
   // 如果当前路径有语言前缀，移除它
-  if (pathSegments.length > 0 && ['en', 'de', 'fr'].includes(pathSegments[0])) {
+  if (pathSegments.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathSegments[0])) {
     pathSegments.shift()
     currentPath = '/' + pathSegments.join('/')
   }

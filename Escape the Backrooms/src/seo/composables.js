@@ -178,7 +178,7 @@ const routeToSeoKey = {
   'home': 'home',
   'levels': 'levels',
   'level-detail': 'levelDetail',
-  'maps-keys': 'mapsKeys',
+  'maps-keys': 'maps',
   'map-detail': 'mapDetail',
   'codes-solutions': 'codes',
   'search': 'search',
@@ -207,7 +207,7 @@ export function useAutoSEO() {
     let baseRouteName = routeName
     if (typeof routeName === 'string') {
       // 检查是否是带语言后缀的路由名称（以 '-en'、'-de' 或 '-fr' 结尾）
-      const supportedLocales = ['en', 'de', 'fr']
+      const supportedLocales = ['en', 'de', 'fr', 'es']
       for (const loc of supportedLocales) {
         if (routeName.endsWith(`-${loc}`)) {
           baseRouteName = routeName.slice(0, -(loc.length + 1)) // 移除 '-en'、'-de' 或 '-fr'
@@ -282,7 +282,7 @@ export function useAutoSEO() {
     const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]')
     existingHreflangs.forEach(link => link.remove())
     
-    const supportedLocales = ['en', 'de', 'fr']
+    const supportedLocales = ['en', 'de', 'fr', 'es']
     const currentPath = route.path
     
     // 从当前路径中提取基础路径（移除语言前缀）

@@ -214,6 +214,10 @@ const summaryCopy = {
   fr: {
     found: (count, query) => `${count} résultat${count > 1 ? 's' : ''} pour "${query}"`,
     empty: (query) => `Aucun résultat pour "${query}"`
+  },
+  es: {
+    found: (count, query) => `${count} resultado${count > 1 ? 's' : ''} para "${query}"`,
+    empty: (query) => `No se encontraron resultados para "${query}"`
   }
 }
 
@@ -228,7 +232,8 @@ const noResultsSummary = computed(() => {
 })
 
 // Codes data (extracted from CodesSolutionsView structure)
-const codesData = [
+const codeCopy = {
+  en: [
   { id: 1, title: 'Level 3 - Elevator Code', code: '042', description: 'The elevator code for Level 3 (Electrical Station). Enter this code in the elevator keypad to access different floors.', type: 'elevator' },
   { id: 2, title: 'Level 4 - Elevator Code', code: '729', description: 'Elevator code required to navigate between floors in Level 4 (Abandoned Office).', type: 'elevator' },
   { id: 3, title: 'Level 5 - Elevator Code', code: '314', description: 'The elevator code for Level 5 (Terror Hotel). This code is needed to access the upper floors of the hotel.', type: 'elevator' },
@@ -239,7 +244,56 @@ const codesData = [
   { id: 8, title: 'Level 52 - Door Code', code: '3456', description: 'Door code for Level 52 (School Halls). Required to unlock the principal\'s office door.', type: 'door' },
   { id: 9, title: 'Level 94 - Computer Password', code: 'PASSWORD', description: 'Computer password for Level 94 (Motion). This password is needed to access the computer system and unlock important information.', type: 'computer' },
   { id: 10, title: 'Level 3999 - Computer Password', code: 'ESCAPE', description: 'The final computer password for Level 3999 (The True Ending). This password is crucial for completing the escape sequence.', type: 'computer' },
-]
+  ],
+  es: [
+    { id: 1, title: 'Nivel 3 - Código del ascensor', code: '042', description: 'Código del ascensor del Nivel 3 (Estación eléctrica). Introdúcelo en el teclado del ascensor para acceder a diferentes plantas.', type: 'ascensor' },
+    { id: 2, title: 'Nivel 4 - Código del ascensor', code: '729', description: 'Código necesario para moverte entre plantas en el Nivel 4 (Oficina abandonada).', type: 'ascensor' },
+    { id: 3, title: 'Nivel 5 - Código del ascensor', code: '314', description: 'Código del ascensor del Nivel 5 (Hotel del Terror). Se usa para acceder a las plantas superiores del hotel.', type: 'ascensor' },
+    { id: 4, title: 'Nivel 8 - Código del ascensor', code: '826', description: 'Código del ascensor del Nivel 8 (Sistema de cuevas). Úsalo para avanzar por la red de cuevas.', type: 'ascensor' },
+    { id: 5, title: 'Nivel 1 - Código de puerta', code: '1234', description: 'Código de puerta del Nivel 1. Desbloquea una puerta segura que bloquea el avance.', type: 'puerta' },
+    { id: 6, title: 'Nivel 2 - Código de puerta', code: '5678', description: 'Código necesario para abrir puertas en el Nivel 2 (Pipe Dreams).', type: 'puerta' },
+    { id: 7, title: 'Nivel 4 - Código de puerta', code: '9012', description: 'Código de puerta del Nivel 4. Abre la salida para avanzar al siguiente nivel.', type: 'puerta' },
+    { id: 8, title: 'Nivel 52 - Código de puerta', code: '3456', description: 'Código de puerta del Nivel 52 (School Halls). Necesario para abrir la puerta de la oficina del director.', type: 'puerta' },
+    { id: 9, title: 'Nivel 94 - Contraseña de computadora', code: 'PASSWORD', description: 'Contraseña de la computadora del Nivel 94 (Motion). Sirve para acceder al sistema y desbloquear información importante.', type: 'computadora' },
+    { id: 10, title: 'Nivel 3999 - Contraseña de computadora', code: 'ESCAPE', description: 'Contraseña final de la computadora del Nivel 3999 (The True Ending). Es clave para completar la secuencia de escape.', type: 'computadora' },
+  ]
+}
+
+const codesData = computed(() => {
+  const locale = getCurrentLocale()
+  return codeCopy[locale] || codeCopy.en
+})
+
+const entityCopy = {
+  es: {
+    1: {
+      name: 'Vagabundo',
+      title: 'Vagabundo',
+      description: 'Seres humanos atrapados en los Backrooms, casi siempre vistos con un traje de protección.',
+      dangerLevel: 'Amistoso',
+      species: 'Humano'
+    },
+    2: {
+      name: 'Bacteria',
+      title: 'Bacteria',
+      description: 'Criaturas humanoides negras con estructura esquelética de alambres que persiguen a los vagabundos al verlos.',
+      dangerLevel: 'Moderado',
+      species: 'Bacteria'
+    },
+    3: {
+      name: 'Ladrón de piel',
+      title: 'Ladrón de piel',
+      description: 'Entidades humanoides grises capaces de robar la piel de un jugador y hacerse pasar por vagabundos.',
+      dangerLevel: 'Peligroso',
+      species: 'Humanoide'
+    }
+  }
+}
+
+const localizeEntity = (entity) => {
+  const localized = entityCopy[getCurrentLocale()]?.[entity.id]
+  return localized ? { ...entity, ...localized } : entity
+}
 
 // Search function
 const searchInText = (text, query) => {
@@ -293,7 +347,7 @@ const entityResults = computed(() => {
   if (!searchQuery.value.trim()) return []
   const query = searchQuery.value.trim().toLowerCase()
   
-  return entitiesData.filter(item => {
+  return entitiesData.map(localizeEntity).filter(item => {
     return (
       searchInText(item.name, query) ||
       searchInText(item.title, query) ||
@@ -314,7 +368,7 @@ const codeResults = computed(() => {
   if (!searchQuery.value.trim()) return []
   const query = searchQuery.value.trim().toLowerCase()
   
-  return codesData.filter(item => {
+  return codesData.value.filter(item => {
     return (
       searchInText(item.title, query) ||
       searchInText(item.code, query) ||
@@ -749,5 +803,3 @@ watch(() => route.query.q, (newQuery) => {
 }
 
 </style>
-
-

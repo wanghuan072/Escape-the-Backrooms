@@ -11,6 +11,10 @@
     "hash": "45edfa4522ba5ab6",
     "lastmod": "2026-06-09"
   },
+  "https://escapethebackrooms.org/es/": {
+    "hash": "862d17f8645b3eba",
+    "lastmod": "2026-06-29"
+  },
   "https://escapethebackrooms.org/levels": {
     "hash": "f57ff659754994d7",
     "lastmod": "2026-06-09"
@@ -22,6 +26,10 @@
   "https://escapethebackrooms.org/fr/levels": {
     "hash": "030aee798b760617",
     "lastmod": "2026-06-09"
+  },
+  "https://escapethebackrooms.org/es/levels": {
+    "hash": "e5d15f8a988fa3df",
+    "lastmod": "2026-06-29"
   },
   "https://escapethebackrooms.org/maps-keys": {
     "hash": "a2e6f78bcad9ea69",
@@ -35,6 +43,10 @@
     "hash": "a0b8b65956a6aad2",
     "lastmod": "2026-06-09"
   },
+  "https://escapethebackrooms.org/es/maps-keys": {
+    "hash": "2e22607247d7b1a9",
+    "lastmod": "2026-06-29"
+  },
   "https://escapethebackrooms.org/codes-solutions": {
     "hash": "3977d16be80e69f6",
     "lastmod": "2026-06-09"
@@ -47,6 +59,10 @@
     "hash": "5a49eec61111f037",
     "lastmod": "2026-06-09"
   },
+  "https://escapethebackrooms.org/es/codes-solutions": {
+    "hash": "bd6d86febceffae3",
+    "lastmod": "2026-06-29"
+  },
   "https://escapethebackrooms.org/search": {
     "hash": "209a58c28dd99e04",
     "lastmod": "2026-06-09"
@@ -58,6 +74,10 @@
   "https://escapethebackrooms.org/fr/search": {
     "hash": "8bfbd026a9bfeb5b",
     "lastmod": "2026-06-09"
+  },
+  "https://escapethebackrooms.org/es/search": {
+    "hash": "64a7c9a6704831ab",
+    "lastmod": "2026-06-29"
   },
   "https://escapethebackrooms.org/levels/level-0-the-lobby-Walkthrough": {
     "hash": "0a21eac80343c572",
@@ -479,6 +499,146 @@
     "hash": "4cfedb60a9ab3290",
     "lastmod": "2026-06-29"
   },
+  "https://escapethebackrooms.org/es/levels/level-0-the-lobby-Walkthrough": {
+    "hash": "1510a143303ec376",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-1-the-habitable-zone-Walkthrough": {
+    "hash": "8a2840d9f1b72408",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-2-pipe-dreams-Walkthrough": {
+    "hash": "90422a1d771d7696",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-3-the-electrical-station-Walkthrough": {
+    "hash": "41cf6b1687b4525d",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-4-the-abandoned-office-Walkthrough": {
+    "hash": "1faeca4fbd6ca5db",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-5-terror-hotel-Walkthrough": {
+    "hash": "a8d1283437ba0ad3",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-5-5-the-beverly-room-Walkthrough": {
+    "hash": "42ce607cf637bdd4",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-5-the-boiler-room-Walkthrough": {
+    "hash": "239fba27dd6515f9",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-6-the-pipe-run-Walkthrough": {
+    "hash": "2cca7a71676e5a00",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-fun-the-party-rooms-Walkthrough": {
+    "hash": "edd5af4a00960c32",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-37-the-poolrooms-Walkthrough": {
+    "hash": "38b5dfdb5986e2e2",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-run-for-your-life-walkthrough": {
+    "hash": "49e9b88e90f8621d",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-the-end-library-updated-guide": {
+    "hash": "bc9cddcf57014211",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-94-motion-walkthrough": {
+    "hash": "d69436e8069d9fd0",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-6-lights-out-walkthrough": {
+    "hash": "8e766b6f9f2a6797",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-7-thalassophobia-walkthrough": {
+    "hash": "ce1b2fc097c118e0",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-8-cave-system-walkthrough": {
+    "hash": "d4fb4958da4b7a79",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-8-cave-system-guide": {
+    "hash": "945b86bd3319f404",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-9-suburbs-and-lab-walkthrough": {
+    "hash": "26992ca57bc38379",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-10-the-fields-and-arcade-guide": {
+    "hash": "8f972e405c9f431e",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-3999-the-arcade-guide": {
+    "hash": "3a27cd65b1ada359",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-0-2-ancient-path-walkthrough": {
+    "hash": "336804603bf58619",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-double-exclamation": {
+    "hash": "bbdca60b065c103f",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-188-courtyard-walkthrough": {
+    "hash": "44fd28b83d8ac47c",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/level-37-2-poolrooms-walkthrough": {
+    "hash": "4534caba37188a24",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-fun-plus-guide": {
+    "hash": "b3993f23e1c9f2e1",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-52-guide": {
+    "hash": "dad278049b915152",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-55-1-guide": {
+    "hash": "bc859832b0e4cc46",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-b-unlock-guide": {
+    "hash": "7676da7d488bc926",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-2-graffiti-guide": {
+    "hash": "33e66db70c6c9843",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-931-crazy-growth-guide": {
+    "hash": "77bb3ca6c989b143",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-363-secret-easter-egg-guide": {
+    "hash": "e87b3db372c8bbee",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-974-kittys-house-guide": {
+    "hash": "f2dcd571b26f5dc3",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-922-spiral-stairs-fps-hack-guide": {
+    "hash": "93ed0594d31699e4",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-3999-true-ending-guide": {
+    "hash": "27d7e9514aa819a8",
+    "lastmod": "2026-06-29"
+  },
   "https://escapethebackrooms.org/maps-keys/level-0-map": {
     "hash": "42d0282d1ccadfbe",
     "lastmod": "2026-06-09"
@@ -574,5 +734,37 @@
   "https://escapethebackrooms.org/fr/maps-keys/level-9-map": {
     "hash": "246f798e71a4c4b4",
     "lastmod": "2026-06-09"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-0-map": {
+    "hash": "2dcb9ac8e6d8f66e",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-1-floor-1-map": {
+    "hash": "af96ac213dcca307",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-1-floor-3-map": {
+    "hash": "2c453649c51cc4e5",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-2-map": {
+    "hash": "8d503cf900bac11c",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-37-map": {
+    "hash": "456935bca8f9fe79",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-3-map": {
+    "hash": "4725db3fd3fcae31",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-4-map": {
+    "hash": "4938102fbb5cd0b7",
+    "lastmod": "2026-06-29"
+  },
+  "https://escapethebackrooms.org/es/maps-keys/level-9-map": {
+    "hash": "500f2305430c48ed",
+    "lastmod": "2026-06-29"
   }
 }

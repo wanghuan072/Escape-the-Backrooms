@@ -40,7 +40,7 @@
             <p v-html="$t('privacyPolicyPage.content.changesText')"></p>
 
             <h2>{{ $t('privacyPolicyPage.content.contactTitle') }}</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> or through our <a href="/contact-us">Contact Us</a> page.</p>
+            <p v-html="$t('privacyPolicyPage.content.contactText')"></p>
           </div>
         </div>
       </div>
@@ -122,7 +122,6 @@
   }
 }
 </style>
-
 
 
 
