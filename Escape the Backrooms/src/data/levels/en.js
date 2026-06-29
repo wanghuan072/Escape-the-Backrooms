@@ -3169,8 +3169,269 @@ export default [
         <p>For repeat attempts, focus on the spider timing. If you die too early, you will fail the entry. If you move far enough before the transition completes, Level 363 loads without needing any cheat setup.</p>
       </section>
     `,
-  }
+  },
 
+  {
+    id: 33,
+    title: "Escape the Backrooms Level 974 Guide: How to Escape Kitty's House (Secret Ending)",
+    pageTitle: "Escape the Backrooms Level 974 Guide: How to Escape Kitty's House (Secret Ending)",
+    addressBar: "escape-the-backrooms-level-974-kittys-house-guide",
+    description: "Clear Escape the Backrooms Level 974 (Kitty's House) with the card-swipe entry route, item spawn rules, Kitty aggro control, and secret ending trigger.",
+    imageUrl: "/images/levels/level-33.webp",
+    imageAlt: "Escape the Backrooms Level 974 Kitty's House gameplay",
+    category: "Hidden Levels",
+    isHome: false,
+    sideBarInfo: {
+        name: "Level 974 (Kitty's House)",
+        difficulty: "Hard / Fixed Aggro Teleportation",
+        objectives: "Access the entry door using the card swipe, locate 5 randomly spawning cute plush dolls by sound, avoid Kitty's direct attacks via eye contact, place all items on the lobby stools, and step into the light to trigger the secret ending."
+    },
+    featured: [
+        {
+            title: "Level 363 Secret Easter Egg Route",
+            description: "Another hidden layer of the Backrooms where precise timing and death-transition physics unlock an unlisted zone.",
+            imageUrl: "/images/levels/level-32.webp",
+            imageAlt: "Escape the Backrooms Level 363 secret Easter egg level",
+            addressBar: "escape-the-backrooms-level-363-secret-easter-egg-guide"
+        },
+        {
+            title: "Level 931 Crazy Growth Route",
+            description: "Navigate a frantic, hidden path where movement efficiency and spatial awareness matter more than puzzle solving.",
+            imageUrl: "/images/levels/level-31.webp",
+            imageAlt: "Escape the Backrooms Level 931 Crazy Growth route",
+            addressBar: "escape-the-backrooms-level-931-crazy-growth-guide"
+        }
+    ],
+    seo: {
+        title: "Escape the Backrooms Level 974 Kitty's House Guide",
+        description: "Escape the Backrooms Level 974 guide for Kitty's House: card-swipe entry, five plush doll spawns, audio cues, eye-contact aggro, co-op rules, and secret ending.",
+        keywords: "escape the backrooms level 974, level 974 guide, kittys house, how to beat level 974, kitty backrooms, secret ending guide, level 974 dolls, backrooms plushies location"
+    },
+    detailsHtml: `
+      <section>
+        <h2>What Level 974 Is</h2>
+        <p><strong>Level 974</strong>, widely recognized in the lore as <strong>"Kitty's House,"</strong> is a unique secret level in <em>Escape the Backrooms</em>. Unlike normal progressive hub gates, accessing this level requires navigating a specific hidden sequence between Level 6 and Level 7. Visually, the level resembles a cozy, brightly colored pastel-pink suburban home, contrasting sharply with the bleak environments of other levels. However, its deceptive domestic comfort conceals an intense, high-pressure survival scenario.</p>
+
+        <p>The primary objective within Level 974 is a scavenger hunt: players must locate five hidden plush toys (such as teddy bears or doll items) scattered across the two-story house and return them to the central stools in the main lobby. Completing this ritual activates a mystical pillar of light, providing a clean exit route and unlocking a unique secret ending transition.</p>
+      </section>
+
+      <h2>Escape the Backrooms Level 974 Guide: How to Escape Kitty's House (Secret Ending) Video</h2>
+      <iframe src="https://www.youtube.com/embed/uGpIdqnQq8w" allowfullscreen></iframe>
+
+      <section>
+        <h2>How to Access the Level 974 Entry Route (Step-by-Step)</h2>
+        <p>To reach Kitty's House, you must follow a deliberate path after reaching the transitional space between Level 6 and Level 7 (accessible after completing the core game loop). Locate the locked metallic door that lights up when approached. To unlock it, you must possess the correct workplace credential item: swipe your <strong>Work Badge / NC Key Card</strong> across the card terminal to cycle the door mechanisms.</p>
+
+        <p>Once you take the elevator down, you will find yourself in a pitch-black, eerie utility hallway filled with pipes. Do not panic about the confusing layout; veteran players use a simple navigation rule to clear this maze efficiently.</p>
+
+        <div>
+          <strong>Accessing the House Checklist & Route Rule:</strong>
+          <ul>
+            <li>Clear the main progression path to reach the sub-level terminal corridor between Level 6 and Level 7.</li>
+            <li>Equip your Work Badge / Keycard and interact with the lit electronic reader interface.</li>
+            <li>Take the elevator down and exit into the dark concrete utility hallway.</li>
+            <li><strong>The Right-Side Rule:</strong> Continuously navigate to the right side of the corridor layout. Walk forward, and whenever you see a gap or a hallway opening to your right, turn into it. Keep repeating this right-turn process until you reach the main pink entrance framing Kitty's House.</li>
+          </ul>
+        </div>
+      </section>
+
+      <img src="/images/levels/level-33-01.webp" alt="Escape the Backrooms Level 974 Kitty's House entryway" />
+
+      <section>
+        <h2>Surviving Kitty: Core Entity Mechanics & AI Behavior</h2>
+        <p>The sole resident of Level 974 is <strong>Kitty</strong>—a massive, pitch-black silhouette entity that moves with terrifying speed and agility. Surviving solo on this level is considered exceptionally difficult and highly oppressive due to Kitty's unique aggressive behavior rules:</p>
+
+        <ul>
+          <li><strong>The Eye Contact Rule (Fixed Aggro):</strong> Kitty operates on a mechanic similar to SCP-173 or "Peanut." If you maintain continuous, direct eye contact with Kitty, the entity remains locked in place and cannot harm you. Turning your back on the entity or breaking line-of-sight instantly triggers an aggressive strike.</li>
+          <li><strong>Teleportation and Door Interaction:</strong> Kitty possesses the ability to blink-teleport ahead of your positioning, making it easy to run straight into its face when turning corners. Note that closing doors will NOT secure your safety indefinitely; Kitty has the ability to open closed doors to pursue targets.</li>
+          <li><strong>Multiplayer Target Lock (Un-interceptable):</strong> In multiplayer sessions, Kitty's aggro targets a single player completely at random. It is NOT based on who holds a plush doll. Crucially, if Kitty is locked onto you, teammates cannot intercept or pull hostility by looking at Kitty for you—the targeted player must maintain their own eye contact.</li>
+        </ul>
+        <p><em>Pro Survival Tip:</em> When exploring unsearched rooms, always open doors and walk through thresholds <strong>backward</strong>. This guarantees that if Kitty has teleported inside the room, you are already maintaining the necessary eye contact to freeze the entity instantly upon entry, preventing sudden death jumpscares.</p>
+      </section>
+
+      <section>
+        <h2>Scavenger Hunt: Doll & Plushie Spawn Rules</h2>
+        <p>To escape, players must locate 5 distinct plush doll items distributed randomly across the kitchen, dining rooms, bedrooms, and dead-end hallways of both the first and second floors. These spawns are highly dynamic; an area that appears empty at the start of a match may dynamically update or populate a plushie later in the run.</p>
+
+        <p><strong>Tracking by Audio Cues (and Audio Glitches):</strong> The absolute key to locating items efficiently is listening for distinct sound effects. As you draw physically close to a hidden plush doll, a faint, repeating child-like giggling or musical toy sound will play. However, you should be aware of two critical spawn behaviors:</p>
+        <ul>
+          <li><strong>Delayed Audio Cues:</strong> Sometimes a room will remain completely silent when you first walk in. Do not instantly leave; wait a few seconds as the audio cue can sometimes delay or fail to trigger until you are standing directly adjacent to the item's furniture container.</li>
+          <li><strong>Silent Spawns:</strong> In rare cases, a plushie (such as the raw meat item or specific bears) can spawn completely silently in deep dead ends without making any noise. If you are missing one last item to clear the level, manually double-check all corners on the first floor, even if they sound silent.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Triggering the Secret Ending Exit</h2>
+        <p>Once an item is successfully acquired, carefully navigate back to the main lobby area. Place the collected item onto one of the matching wooden stools arranged in the center of the room. Submitting items progressively fills the extraction requirements.</p>
+
+        <p>After all five plushies are securely positioned on the stools, a celestial column of light will descend into the lobby. The number of active light beams precisely scales to match the player count of your session (e.g., one beam for solo players, more for co-op teams). To secure your escape, ensure all survivors step directly inside the illuminated zone simultaneously. The screen will fill with structural smoke, simulating a deep sleep transition, safely concluding Level 974 and clearing the secret path.</p>
+      </section>
+    `,
+},
+
+{
+  id: 34,
+  title: "Escape the Backrooms Level 922 Guide: Spiral Stairs FPS Hack & 'The Suburbs' Secret Ending",
+  pageTitle: "Escape the Backrooms Level 922 Guide: Spiral Stairs FPS Hack & 'The Suburbs' Secret Ending",
+  addressBar: "escape-the-backrooms-level-922-spiral-stairs-fps-hack-guide",
+  description: "Clear Escape the Backrooms Level 922 (Spiral Stairs) with the NC card entry route, FPS limit trick, Floor 94 spawn rules, and The Suburbs secret ending.",
+  imageUrl: "/images/levels/level-34.webp",
+  imageAlt: "Escape the Backrooms Level 922 endless spiral stairs gameplay",
+  category: "Hidden Levels",
+  isHome: false,
+  sideBarInfo: {
+      name: "Level 922 (Spiral Stairs)",
+      difficulty: "Medium / Precision Drop & FPS Glitch",
+      objectives: "Access the hidden rooftop corridor using the NC Key Card, enter the dark endless interlude, descend the infinite spiral staircase to locate the randomly spawning Floor 94, and execute a precision leap to unlock the secret ending."
+  },
+  featured: [
+      {
+          title: "Level 974 Kitty's House Survival Guide",
+          description: "Survive Kitty's fixed aggro rules and complete the doll scavenger hunt to unlock another deep secret ending.",
+          imageUrl: "/images/levels/level-33.webp",
+          imageAlt: "Escape the Backrooms Level 974 Kitty's House",
+          addressBar: "escape-the-backrooms-level-974-kittys-house-guide"
+      },
+      {
+          title: "Level 363 Secret Easter Egg Route",
+          description: "Master the spider-grab death transition timing to enter an unlisted hidden developer map without using cheats.",
+          imageUrl: "/images/levels/level-32.webp",
+          imageAlt: "Escape the Backrooms Level 363 secret Easter egg level",
+          addressBar: "escape-the-backrooms-level-363-secret-easter-egg-guide"
+      }
+  ],
+  seo: {
+      title: "Escape the Backrooms Level 922 Spiral Stairs Guide",
+      description: "Escape the Backrooms Level 922 guide covering the NC keycard entry, spiral stairs route, FPS limit trick, random Floor 94 spawn, and Suburbs secret ending.",
+      keywords: "escape the backrooms level 922, level 922 guide, spiral stairs backrooms, fps hack backrooms, floor 94 drop, how to beat level 922, the suburbs secret ending"
+  },
+  detailsHtml: `
+    <section>
+      <h2>What Level 922 Is</h2>
+      <p><strong>Level 922</strong>, widely known within the community as the <strong>"Endless Spiral Stairs"</strong> or <strong>"Endless Interlude,"</strong> is a vertical-focused hidden level in <em>Escape the Backrooms</em>. Structurally, it consists of an infinitely descending concrete spiral staircase surrounded by total darkness. The level has no standard enemy entities chasing you dynamically on the stairs, but it introduces a severe psychological and mechanical challenge: finding the elusive <strong>Floor 94</strong> exit gate amidst hundreds of identical floors.</p>
+
+      <p>The core objective is deceptively simple but mechanically tedious: you must descend the spiral staircase until you spot a prominent \"94\" painted on the concrete support pillar, then immediately throw yourself over the ledge into the central abyss to trigger \"The Suburbs\" secret ending sequence. Because the correct floor spawns entirely at random, completing this level normally can take an immense amount of time.</p>
+    </section>
+
+    <h2>Escape the Backrooms Level 922: Spiral Stairs FPS Hack & \"The Suburbs\" Secret Ending! Video</h2>
+    <iframe src="https://www.youtube.com/embed/AN6K0M1pz1Y" allowfullscreen></iframe>
+
+    <section>
+      <h2>How to Access Level 922 (Rooftop Card Swipe Route)</h2>
+      <p>Following recent game updates, the entrance route to Level 922 has been repositioned. It can now only be accessed after successfully clearing all primary progressive levels. You must navigate to the elevated rooftop access point while keeping a sharp eye out for local threats like <em>Xiao Yan</em>, who will pursue you relentlessly until you clear the threshold of the final security doorway.</p>
+
+      <div>
+        <strong>Level 922 Access Checklist:</strong>
+        <ul>
+          <li>Ensure all baseline progression maps are completely cleared to unlock the endgame roof pathways.</li>
+          <li>Sprint to the high security entrance zone and lose any active entity aggro at the doorframe.</li>
+          <li>Equip your <strong>NC Key Card (Work Badge)</strong> and swipe it at the illuminated electronic reader panel to unlock the heavy door.</li>
+          <li>Step into the pitch-black transitional room ahead to load into the infinite staircase interlude. (Note: A separate return door is located immediately inside if you wish to backtrack).</li>
+        </ul>
+      </div>
+    </section>
+
+    <img src="/images/levels/level-34-01.webp" alt="Escape the Backrooms Level 922 infinite spiral stairs entrance" />
+
+    <section>
+      <h2>The FPS Limit Trick: How to Descend Faster</h2>
+      <p>Under normal gameplay conditions, jogging down the outer edge of the spiral stairs requires careful camera manipulation and takes several minutes due to the massive pool of potential floor spawns. Experienced speedrunners use an <strong>FPS limitation trick</strong> tied to the game's movement physics:</p>
+
+      <ul>
+        <li><strong>The Mechanic:</strong> Go into your game graphics settings and manually cap or limit your frame rate (FPS) to a very low value (e.g., 30 FPS or lower) to induce heavy structural lag.</li>
+        <li><strong>The Execution:</strong> Hug the outermost edge of the concrete railing and sprint forward. Due to how the player-movement velocity scales with low frame rates, your character will begin spinning around the central pillar at an extreme, automated speed.</li>
+        <li><strong>The Glitch Automation:</strong> This method spins you downward so fast that you don't even need to look at individual floor markers. When your character model passes the dynamically loaded Floor 94, the extreme lag combined with your high downward velocity will often cause you to naturally glitch and clip straight through the floor boundaries, falling automatically toward the exit trigger.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Locating Floor 94 & Triggering the Leap of Faith</h2>
+      <p>If you prefer a legitimate run or if the FPS glitch doesn't automatically clip you through the map, you must understand the random generation rules governing Floor 94. The exit floor is completely unpredictable: it can spawn as high as the 10th or 20th floor, or it might bury itself deep into the 60s, 100s, or even well past the 150th flight of stairs.</p>
+
+      <p>As you run or spin downwards, closely monitor the vertical concrete pillars. The moment you visually confirm the painted <strong>\"94\"</strong> numbers, immediately halt your forward momentum. Do not keep running past it. Walk straight to the ledge adjacent to the number 94 sign and perform a blind leap of faith down into the central hollow abyss. Hitting this specific zone correctly bypasses the infinite loop, immediately fading the screen to black and safely loading you into \"The Suburbs\" secret ending area.</p>
+    </section>
+  `,
+},
+
+{
+  id: 35,
+  title: "Escape the Backrooms Level 3999 Guide: How to Unlock the Master True Ending (The Final Escape)",
+  pageTitle: "Escape the Backrooms Level 3999 Guide: How to Unlock the Master True Ending (The Final Escape)",
+  addressBar: "escape-the-backrooms-level-3999-true-ending-guide",
+  description: "Unlock the true ending in Escape the Backrooms Level 3999 with the M.E.G. elevator card swipe, 4 arcade cabinet activations, and Janitor NPC route.",
+  imageUrl: "/images/levels/level-35.webp",
+  imageAlt: "Escape the Backrooms Level 3999 Arcade true ending gameplay",
+  category: "Hidden Levels",
+  isHome: false,
+  sideBarInfo: {
+      name: "Level 3999 (The Arcade)",
+      difficulty: "Hard / 100% Game Completion Requirement",
+      objectives: "Clear all main and hidden levels to activate the arcade screens, swipe the M.E.G. card to access the restricted elevator, power up the 4 final master arcade cabinets, interact with the Janitor NPC to unlock the exit doors, and eject the CRT tape to escape."
+  },
+  featured: [
+      {
+          title: "Level 922 Spiral Stairs FPS Hack",
+          description: "Use the exclusive frame rate limitation trick to glitch through floors and locate the random Floor 94 exit speedrun-style.",
+          imageUrl: "/images/levels/level-34.webp",
+          imageAlt: "Escape the Backrooms Level 922 infinite spiral stairs",
+          addressBar: "escape-the-backrooms-level-922-spiral-stairs-fps-hack-guide"
+      },
+      {
+          title: "Level 974 Kitty's House Survival Guide",
+          description: "Survive Kitty's oppressive fixed aggro rules and complete the doll scavenger hunt to unlock an alternate pink ending path.",
+          imageUrl: "/images/levels/level-33.webp",
+          imageAlt: "Escape the Backrooms Level 974 Kitty's House",
+          addressBar: "escape-the-backrooms-level-974-kittys-house-guide"
+      }
+  ],
+  seo: {
+      title: "Escape the Backrooms Level 3999 True Ending Guide",
+      description: "Escape the Backrooms Level 3999 guide for the true ending: 100% clear requirement, M.E.G. card swipe, four arcade cabinets, Janitor NPC, and tape eject.",
+      keywords: "escape the backrooms level 3999, level 3999 guide, true ending backrooms, final escape ending, m.e.g. janitor npc, arcade cabinets puzzle, backrooms credits roll"
+  },
+  detailsHtml: `
+    <section>
+      <h2>What Level 3999 Is</h2>
+      <p><strong>Level 3999</strong>, titled <strong>"The Arcade"</strong> or <strong>"The Final Escape,"</strong> represents the true ending route of <em>Escape the Backrooms</em>. Unlike standard progressive room exits or alternate survival bubbles, this level serves as the final mechanical checkmark for your entire playthrough. Visually presented as an expansive, neon-lit retro arcade zone layered with nostalgia, this environment holds no hostile chasing entities, but it imposes a strict completionist checkpoint.</p>
+
+      <p>The primary core challenge here is not dynamic survival, but <strong>structural activation</strong>. The master puzzle requires powering up a set of four distinct final arcade cabinets hidden within the restricted sections of the level. Doing so triggers a critical lore event with an automated <strong>M.E.G. Janitor NPC</strong>, who holds the ultimate physical key to unlocking the real-world exits and initiating the official developer credits roll.</p>
+    </section>
+
+    <h2>Level 3999 \"Final Escape\" Walkthrough: The Janitor NPC & All Credits Video</h2>
+    <iframe src="https://www.youtube.com/embed/0hSXEPpTuH4" allowfullscreen></iframe>
+
+    <section>
+      <h2>The 100% Completion Rule: Unlocking the Arcade Screens</h2>
+      <p>The biggest roadblock new players experience when arriving at Level 3999 is finding all the primary arcade terminals completely pitch-black and unresponsive. This is a deliberate hard-coded gate. To even begin the Level 3999 puzzle sequence, you must satisfy an unconditional <strong>100% level clearing condition</strong>.</p>
+
+      <p><strong>Why your screens are black:</strong> If you bypassed or skipped previous hidden levels (such as Level 363, Level 974, or Level 922), the master game state will refuse to boot up the Level 3999 logic. You must play through and clear every single main and hidden sub-level across the backrooms universe first. Only when this criterion is achieved will the arcade terminal monitors automatically transition from a dead black state to active, illuminating screens upon your arrival.</p>
+    </section>
+
+    <img src="/images/levels/level-35-01.webp" alt="Escape the Backrooms Level 3999 Arcade master terminal activation" />
+
+    <section>
+      <h2>Step-by-Step True Ending Route & M.E.G. Elevator</h2>
+      <p>Once your game state confirms total level completion, execute the following precise movement path observed in the veteran speedrun footage to successfully trigger the final escape sequence:</p>
+
+      <div>
+        <strong>Final Escape Sequence Checklist:</strong>
+        <ul>
+          <li><strong>Riding the M.E.G. Lift:</strong> Navigate to the secured sub-level hub area and approach the high-security electronic elevator. Pull out your <strong>Work Badge / M.E.G. NC Key Card</strong>, swipe it at the illuminated terminal console, and ride the lift directly into the primary Level 3999 zone.</li>
+          <li><strong>Powering the 4 Master Cabinets:</strong> Fan out across the labyrinthine corridors of the secret arcade rooms. Locate the four centralized master arcade cabinets. Since you met the 100% level requirement, manually interact with each console to feed power into the grid, turning their interfaces completely active.</li>
+          <li><strong>Locating the Janitor NPC:</strong> Once all four screens are online, a security gate nearby will click open. Walk deep into the maintenance corridor behind the arcade floor to find a lone <strong>M.E.G. Janitor NPC</strong> sweeping the floors.</li>
+          <li><strong>Triggering the Exit Dialogue:</strong> Walk directly up to the Janitor and interact with him. Cycle through his contextual lore dialogue trees completely. Upon concluding the conversation, the Janitor will walk over to the locked secure doors at the back of the room and physically unlock them for you.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>The Final Eject: Returning to the Real World</h2>
+      <p>With the maintenance bay doors officially unbolted by the Janitor, push through the threshold and move toward the final control room hub. In the center of the terminal space, you will find a primary CRT display unit loaded with a retro magnetic tape layout.</p>
+
+      <p>Step up to the console and activate the <strong>\"Final Escape\" Tape Eject</strong> option. The physical cassette will pop out of the simulation reader deck, instantly blacking out the digital rendering of the Backrooms environment. Your character will safely transition out of the liminal space loop and awaken back in the objective real world, rolling the official developer credit sequence to signify a flawless, complete true ending run.</p>
+    </section>
+  `,
+},
 
 
 

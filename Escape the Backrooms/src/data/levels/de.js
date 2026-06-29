@@ -3076,5 +3076,264 @@ export default [
           <p>Für Wiederholungen konzentrierst du dich auf das Spider-Timing. Stirbst du zu früh, scheitert der Einstieg. Bewegst du dich weit genug vor Abschluss der Transition, lädt Level 363 ohne Cheat-Setup.</p>
         </section>
       `
+    },
+    {
+      "id": 33,
+      "title": "Escape the Backrooms Level 974 Guide: So entkommst du Kittys Haus (Secret Ending)",
+      "pageTitle": "Escape the Backrooms Level 974 Guide: So entkommst du Kittys Haus (Secret Ending)",
+      "addressBar": "escape-the-backrooms-level-974-kittys-house-guide",
+      "description": "Schließe Escape the Backrooms Level 974 (Kittys Haus) mit Card-Swipe-Einstieg, Item-Spawn-Regeln, Kitty-Aggro-Kontrolle und Secret-Ending-Trigger ab.",
+      "imageUrl": "/images/levels/level-33.webp",
+      "imageAlt": "Escape the Backrooms Level 974 Kittys Haus Gameplay",
+      "category": "Versteckte Level",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 974 (Kittys Haus)",
+        "difficulty": "Schwer / feste Aggro-Teleportation",
+        "objectives": "Öffne die Eingangstür per Card Swipe, finde 5 zufällig spawnende Plüschpuppen über Sound-Cues, halte Kitty per Blickkontakt auf Abstand, lege alle Items auf die Lobby-Hocker und tritt ins Licht für das Secret Ending."
+      },
+      "featured": [
+        {
+          "title": "Level 363 Secret-Easter-Egg-Route",
+          "description": "Eine weitere versteckte Ebene, bei der präzises Timing und Death-Transition-Physik ein nicht gelistetes Gebiet öffnen.",
+          "imageUrl": "/images/levels/level-32.webp",
+          "imageAlt": "Escape the Backrooms Level 363 geheimes Easter-Egg-Level",
+          "addressBar": "escape-the-backrooms-level-363-secret-easter-egg-guide"
+        },
+        {
+          "title": "Level 931 Crazy-Growth-Route",
+          "description": "Eine schnelle versteckte Route, bei der Bewegungseffizienz und Orientierung wichtiger sind als Puzzle-Lösungen.",
+          "imageUrl": "/images/levels/level-31.webp",
+          "imageAlt": "Escape the Backrooms Level 931 Crazy Growth Route",
+          "addressBar": "escape-the-backrooms-level-931-crazy-growth-guide"
+        }
+      ],
+      "seo": {
+        "title": "Escape the Backrooms Level 974 Kittys Haus Guide",
+        "description": "Escape the Backrooms Level 974 Guide für Kittys Haus: Card-Swipe-Einstieg, fünf Plüschpuppen, Audio-Cues, Blickkontakt-Aggro, Koop-Regeln und Secret Ending.",
+        "keywords": "escape the backrooms level 974, level 974 guide, kittys haus, level 974 plueschpuppen, card swipe einstieg, kitty aggro, secret ending"
+      },
+      "detailsHtml": `
+        <section>
+          <h2>Was Level 974 ist</h2>
+          <p><strong>Level 974</strong>, in der Backrooms-Lore meist als <strong>"Kittys Haus"</strong> bekannt, ist ein geheimes Level in <em>Escape the Backrooms</em>. Es öffnet sich nicht über eine normale Hub-Tür, sondern über eine versteckte Route zwischen Level 6 und Level 7. Optisch wirkt das Haus hell, pink und fast gemütlich; spielerisch ist es aber ein enger Survival-Abschnitt mit dauerhaftem Druck.</p>
+
+          <p>Dein Ziel ist eine Schnitzeljagd: Du musst fünf versteckte Plüsch- oder Puppen-Items in dem zweistöckigen Haus finden und sie auf die Hocker in der Lobby zurückbringen. Sobald alle fünf Items abgelegt sind, erscheint eine Lichtsäule als Ausgang und löst den Secret-Ending-Übergang aus.</p>
+        </section>
+
+        <h2>Escape the Backrooms Level 974 Guide: How to Escape Kitty's House (Secret Ending) Video</h2>
+        <iframe src="https://www.youtube.com/embed/uGpIdqnQq8w" allowfullscreen></iframe>
+
+        <section>
+          <h2>So erreichst du Level 974</h2>
+          <p>Der Einstieg liegt nach dem Übergangsbereich zwischen Level 6 und Level 7. Suche die verschlossene Metalltür, die beim Annähern aufleuchtet. Zum Öffnen brauchst du den passenden Ausweis: Ziehe deine <strong>Work Badge / NC Key Card</strong> über das Kartenlesegerät, damit der Türmechanismus durchschaltet.</p>
+
+          <p>Nach der Fahrstuhlfahrt landest du in einem dunklen Utility-Korridor voller Rohre. Die Route wirkt verwirrend, lässt sich aber mit einer einfachen Regel stabil laufen.</p>
+
+          <div>
+            <strong>Einstiegscheckliste und Routenregel:</strong>
+            <ul>
+              <li>Erreiche den Sub-Level-Korridor zwischen Level 6 und Level 7.</li>
+              <li>Rüste Work Badge / Keycard aus und interagiere mit dem beleuchteten Kartenleser.</li>
+              <li>Nimm den Fahrstuhl nach unten und laufe in den dunklen Beton-Korridor.</li>
+              <li><strong>Rechts-Regel:</strong> Laufe vorwärts und nimm jede Öffnung auf der rechten Seite. Wiederhole das, bis der pinke Eingang zu Kittys Haus erscheint.</li>
+            </ul>
+          </div>
+        </section>
+
+        <img src="/images/levels/level-33-01.webp" alt="Escape the Backrooms Level 974 Kittys Haus Eingang" />
+
+        <section>
+          <h2>Kitty überleben: Aggro- und Blickkontakt-Regeln</h2>
+          <p>In Level 974 jagt dich <strong>Kitty</strong>, eine große schwarze Silhouetten-Entity mit hoher Bewegungsgeschwindigkeit. Solo ist dieses Level besonders hart, weil Kitty nicht wie ein normaler Patrouillen-Gegner funktioniert.</p>
+
+          <ul>
+            <li><strong>Blickkontakt-Regel:</strong> Solange du Kitty direkt ansiehst, bleibt die Entity stehen. Drehst du dich weg oder brichst die Sichtlinie, kann Kitty sofort angreifen.</li>
+            <li><strong>Teleportation und Türen:</strong> Kitty kann vor deine Position blinken und Türen öffnen. Geschlossene Türen verschaffen höchstens kurz Raum, sind aber kein sicherer Schutz.</li>
+            <li><strong>Koop-Target-Lock:</strong> Im Multiplayer wählt Kitty zufällig ein Ziel. Teammates können die Aggro nicht zuverlässig abfangen; der getargetete Spieler muss selbst Blickkontakt halten.</li>
+          </ul>
+          <p><em>Praxis-Tipp:</em> Betritt ungeprüfte Räume rückwärts. So schaust du automatisch in Richtung Tür und kannst Kitty direkt einfrieren, falls sie bereits im Raum steht.</p>
+        </section>
+
+        <section>
+          <h2>Plüschpuppen finden: Spawn- und Audio-Regeln</h2>
+          <p>Zum Abschluss musst du 5 unterschiedliche Items finden. Sie können in Küche, Esszimmern, Schlafzimmern und Sackgassen auf beiden Etagen spawnen. Die Spawns sind nicht starr; ein Raum kann zu Beginn leer wirken und später trotzdem relevant werden.</p>
+
+          <p><strong>Suche über Audio-Cues:</strong> In Item-Nähe hörst du oft ein leises Kichern oder Spielzeuggeräusch. Verlasse einen Raum nicht sofort, wenn er still ist, denn manche Sounds starten verzögert oder erst sehr nah am Möbelstück.</p>
+          <ul>
+            <li><strong>Verzögerte Sounds:</strong> Warte kurz und prüfe Betten, Ecken, Tische und kleine Nebenräume.</li>
+            <li><strong>Stille Spawns:</strong> Wenn dir das letzte Item fehlt, kontrolliere auch stille Dead Ends auf der ersten Etage manuell.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Secret Ending auslösen</h2>
+          <p>Bringe jedes gefundene Item vorsichtig zurück in die Lobby und lege es auf einen der Hocker. Sobald alle fünf Items platziert sind, erscheint die Lichtsäule im Zentrum des Raums.</p>
+
+          <p>Im Koop muss jeder überlebende Spieler in die aktive Lichtzone treten. Danach füllt Rauch den Bildschirm, der Übergang startet und Level 974 ist abgeschlossen.</p>
+        </section>
+      `
+    },
+    {
+      "id": 34,
+      "title": "Escape the Backrooms Level 922 Guide: Spiralstufen, FPS-Trick & Suburbs Secret Ending",
+      "pageTitle": "Escape the Backrooms Level 922 Guide: Spiralstufen, FPS-Trick & Suburbs Secret Ending",
+      "addressBar": "escape-the-backrooms-level-922-spiral-stairs-fps-hack-guide",
+      "description": "Schließe Escape the Backrooms Level 922 (Spiralstufen) mit NC-Card-Einstieg, FPS-Limit-Trick, Floor-94-Spawn-Regeln und The-Suburbs-Secret-Ending ab.",
+      "imageUrl": "/images/levels/level-34.webp",
+      "imageAlt": "Escape the Backrooms Level 922 endlose Spiralstufen",
+      "category": "Versteckte Level",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 922 (Spiralstufen)",
+        "difficulty": "Mittel / Präzisionssprung & FPS-Glitch",
+        "objectives": "Öffne den versteckten Dachkorridor mit der NC Key Card, betrete das dunkle Endless Interlude, steige die Spiralstufen bis zum zufälligen Floor 94 hinab und springe gezielt in den Abgrund, um das Secret Ending freizuschalten."
+      },
+      "featured": [
+        {
+          "title": "Level 974 Kittys-Haus-Survival-Guide",
+          "description": "Überlebe Kittys feste Aggro-Regeln und sammle alle Puppenitems für ein weiteres Secret Ending.",
+          "imageUrl": "/images/levels/level-33.webp",
+          "imageAlt": "Escape the Backrooms Level 974 Kittys Haus",
+          "addressBar": "escape-the-backrooms-level-974-kittys-house-guide"
+        },
+        {
+          "title": "Level 363 Secret-Easter-Egg-Route",
+          "description": "Nutze Spider-Grab-Death-Transition-Timing, um ein verstecktes Level ohne Cheats zu betreten.",
+          "imageUrl": "/images/levels/level-32.webp",
+          "imageAlt": "Escape the Backrooms Level 363 geheimes Easter-Egg-Level",
+          "addressBar": "escape-the-backrooms-level-363-secret-easter-egg-guide"
+        }
+      ],
+      "seo": {
+        "title": "Escape the Backrooms Level 922 Spiralstufen Guide",
+        "description": "Escape the Backrooms Level 922 Guide mit NC-Keycard-Einstieg, Spiralstufen-Route, FPS-Limit-Trick, zufälligem Floor 94 und Suburbs Secret Ending.",
+        "keywords": "escape the backrooms level 922, level 922 guide, spiralstufen, fps trick, floor 94, the suburbs secret ending, nc keycard"
+      },
+      "detailsHtml": `
+        <section>
+          <h2>Was Level 922 ist</h2>
+          <p><strong>Level 922</strong>, auch als <strong>"Endless Spiral Stairs"</strong> oder <strong>"Endless Interlude"</strong> bekannt, ist ein vertikales verstecktes Level in <em>Escape the Backrooms</em>. Es besteht aus einer scheinbar endlosen Beton-Spiraltreppe in völliger Dunkelheit. Es gibt keinen klassischen Gegner auf den Stufen, aber die Route verlangt Geduld und saubere Orientierung.</p>
+
+          <p>Das Ziel ist Floor 94. Sobald du die große <strong>"94"</strong> an der Betonstruktur siehst, musst du an der richtigen Stelle in den zentralen Schacht springen, um das Secret Ending in <strong>The Suburbs</strong> auszulösen. Weil Floor 94 zufällig platziert wird, kann der normale Lauf sehr lang werden.</p>
+        </section>
+
+        <h2>Escape the Backrooms Level 922: Spiral Stairs FPS Hack & "The Suburbs" Secret Ending! Video</h2>
+        <iframe src="https://www.youtube.com/embed/AN6K0M1pz1Y" allowfullscreen></iframe>
+
+        <section>
+          <h2>So erreichst du Level 922</h2>
+          <p>Der Eingang liegt nach den Hauptleveln im Dachbereich. Achte auf aktive Verfolger, bevor du die Sicherheitstür erreichst, und verliere Aggro am Türrahmen, damit du sicher interagieren kannst.</p>
+
+          <div>
+            <strong>Level-922-Einstiegscheckliste:</strong>
+            <ul>
+              <li>Schließe die Hauptprogression ab, damit die Endgame-Dachroute verfügbar ist.</li>
+              <li>Sprint zur Hochsicherheitstür und sichere kurz den Bereich.</li>
+              <li>Nutze die <strong>NC Key Card / Work Badge</strong> am beleuchteten Kartenleser.</li>
+              <li>Betritt den pechschwarzen Übergangsraum, um in die Spiralstufen zu laden.</li>
+            </ul>
+          </div>
+        </section>
+
+        <img src="/images/levels/level-34-01.webp" alt="Escape the Backrooms Level 922 Spiralstufen Eingang" />
+
+        <section>
+          <h2>FPS-Limit-Trick: schneller absteigen</h2>
+          <p>Normalerweise kostet das Ablaufen der Außenkante mehrere Minuten. Speedrunner nutzen dafür einen <strong>FPS-Limit-Trick</strong>, der mit der Bewegungsphysik des Spiels zusammenhängt.</p>
+
+          <ul>
+            <li><strong>Mechanik:</strong> Begrenze die FPS in den Grafikeinstellungen auf einen niedrigen Wert, zum Beispiel 30 FPS oder darunter.</li>
+            <li><strong>Ausführung:</strong> Halte dich an der äußersten Kante der Betonbrüstung und sprinte vorwärts.</li>
+            <li><strong>Effekt:</strong> Die Figur rotiert deutlich schneller um die Säule. Mit genug Geschwindigkeit kann Floor 94 schneller erreicht oder durch Clipping direkt in den Exit-Trigger überführt werden.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Floor 94 finden und springen</h2>
+          <p>Wenn du ohne Glitch spielst oder der FPS-Trick nicht sauber auslöst, beobachte die vertikalen Betonsäulen. Floor 94 kann früh erscheinen, aber auch erst sehr tief im Lauf.</p>
+
+          <p>Sobald du die <strong>"94"</strong> siehst, stoppe deine Vorwärtsbewegung. Stelle dich an die Kante neben der Markierung und springe in den zentralen Schacht. Triffst du die richtige Zone, endet die Schleife und The Suburbs lädt.</p>
+        </section>
+      `
+    },
+    {
+      "id": 35,
+      "title": "Escape the Backrooms Level 3999 Guide: Master True Ending freischalten (The Final Escape)",
+      "pageTitle": "Escape the Backrooms Level 3999 Guide: Master True Ending freischalten (The Final Escape)",
+      "addressBar": "escape-the-backrooms-level-3999-true-ending-guide",
+      "description": "Schalte das True Ending in Escape the Backrooms Level 3999 frei: M.E.G.-Fahrstuhl-Card-Swipe, 4 Arcade-Cabinets, Janitor-NPC und Tape-Eject.",
+      "imageUrl": "/images/levels/level-35.webp",
+      "imageAlt": "Escape the Backrooms Level 3999 Arcade True Ending",
+      "category": "Versteckte Level",
+      "isHome": false,
+      "sideBarInfo": {
+        "name": "Level 3999 (The Arcade)",
+        "difficulty": "Schwer / 100%-Abschluss erforderlich",
+        "objectives": "Schließe alle Haupt- und Hidden-Level ab, aktiviere die Arcade-Screens, nutze die M.E.G.-Karte am gesicherten Fahrstuhl, starte 4 finale Arcade-Cabinets, sprich mit dem Janitor-NPC und wirf das CRT-Tape aus."
+      },
+      "featured": [
+        {
+          "title": "Level 922 Spiralstufen-FPS-Trick",
+          "description": "Nutze den FPS-Limit-Trick, um Floor 94 schneller zu erreichen und die Suburbs-Route zu öffnen.",
+          "imageUrl": "/images/levels/level-34.webp",
+          "imageAlt": "Escape the Backrooms Level 922 Spiralstufen",
+          "addressBar": "escape-the-backrooms-level-922-spiral-stairs-fps-hack-guide"
+        },
+        {
+          "title": "Level 974 Kittys-Haus-Survival-Guide",
+          "description": "Überlebe Kittys Blickkontakt-Aggro und sammle alle Puppenitems für das pinke Secret Ending.",
+          "imageUrl": "/images/levels/level-33.webp",
+          "imageAlt": "Escape the Backrooms Level 974 Kittys Haus",
+          "addressBar": "escape-the-backrooms-level-974-kittys-house-guide"
+        }
+      ],
+      "seo": {
+        "title": "Escape the Backrooms Level 3999 True Ending Guide",
+        "description": "Escape the Backrooms Level 3999 Guide für das True Ending: 100%-Voraussetzung, M.E.G.-Card-Swipe, vier Arcade-Cabinets, Janitor-NPC und Tape-Eject.",
+        "keywords": "escape the backrooms level 3999, level 3999 guide, true ending, final escape, m.e.g. janitor npc, arcade cabinets, tape eject"
+      },
+      "detailsHtml": `
+        <section>
+          <h2>Was Level 3999 ist</h2>
+          <p><strong>Level 3999</strong>, auch <strong>"The Arcade"</strong> oder <strong>"The Final Escape"</strong>, ist die True-Ending-Route von <em>Escape the Backrooms</em>. Statt einer Flucht unter Gegnerdruck prüft das Level deinen kompletten Fortschritt: Ohne vollständigen Abschluss bleiben zentrale Arcade-Terminals schwarz.</p>
+
+          <p>Der Kern ist eine Aktivierungsroute. Du musst vier finale Arcade-Cabinets in den gesperrten Bereichen starten. Danach öffnet sich die Wartungsroute zum <strong>M.E.G. Janitor NPC</strong>, der die letzte Türsequenz auslöst.</p>
+        </section>
+
+        <h2>Level 3999 "Final Escape" Walkthrough: The Janitor NPC & All Credits Video</h2>
+        <iframe src="https://www.youtube.com/embed/0hSXEPpTuH4" allowfullscreen></iframe>
+
+        <section>
+          <h2>100%-Regel: Warum die Arcade-Screens schwarz bleiben</h2>
+          <p>Wenn die Screens in Level 3999 nicht reagieren, fehlt dir sehr wahrscheinlich Fortschritt. Das Level verlangt, dass alle Haupt- und Hidden-Level abgeschlossen sind, bevor die finale Arcade-Logik startet.</p>
+
+          <p><strong>Wichtig:</strong> Übersprungene Hidden-Level wie Level 363, Level 974 oder Level 922 können verhindern, dass die Monitore aktiv werden. Erst nach vollständigem Abschluss wechseln die Arcade-Terminals von schwarz auf aktiv.</p>
+        </section>
+
+        <img src="/images/levels/level-35-01.webp" alt="Escape the Backrooms Level 3999 Arcade Terminal Aktivierung" />
+
+        <section>
+          <h2>True-Ending-Route und M.E.G.-Fahrstuhl</h2>
+          <p>Sobald dein Spielstand die 100%-Bedingung erfüllt, folgst du dieser Route durch den Arcade-Bereich.</p>
+
+          <div>
+            <strong>Final-Escape-Checkliste:</strong>
+            <ul>
+              <li><strong>M.E.G.-Lift:</strong> Gehe zum gesicherten Sub-Level-Hub, nutze Work Badge / M.E.G. NC Key Card am Terminal und fahre in Level 3999.</li>
+              <li><strong>4 Master-Cabinets:</strong> Suche die vier zentralen Arcade-Cabinets und interagiere mit jedem, bis alle Interfaces aktiv sind.</li>
+              <li><strong>Janitor-NPC:</strong> Nach Aktivierung öffnet sich ein Sicherheitsbereich. Folge dem Wartungskorridor bis zum M.E.G. Janitor NPC.</li>
+              <li><strong>Exit-Dialog:</strong> Sprich den Dialog vollständig durch. Danach öffnet der Janitor die verschlossenen Türen zum finalen Kontrollraum.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tape Eject und Credits</h2>
+          <p>Hinter den geöffneten Türen erreichst du den letzten Kontrollraum. In der Mitte steht ein CRT-Terminal mit Tape-Setup.</p>
+
+          <p>Interagiere mit der <strong>"Final Escape" Tape-Eject</strong>-Option. Die Kassette wird ausgeworfen, die Backrooms-Simulation bricht ab und der Credits-Übergang startet.</p>
+        </section>
+      `
     }
 ]
