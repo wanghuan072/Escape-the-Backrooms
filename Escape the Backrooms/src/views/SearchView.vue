@@ -59,12 +59,17 @@
                   <img :src="item.imageUrl" :alt="item.imageAlt || item.title" loading="lazy" />
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">{{ item.title }}</h3>
-                  <p class="card-description">{{ item.description }}</p>
+                  <h3 class="card-title" v-html="highlightText(item.title, searchQuery)"></h3>
+                  <p class="card-description" v-html="highlightText(item.description, searchQuery)"></p>
                   <div class="card-meta">
-                    <span class="card-category">{{ item.category }}</span>
+                    <span class="card-category" v-html="highlightText(item.category, searchQuery)"></span>
                     <div class="card-tags">
-                      <span v-for="tag in item.tags?.slice(0, 3)" :key="tag" class="tag">{{ tag }}</span>
+                      <span
+                        v-for="tag in item.tags?.slice(0, 3)"
+                        :key="tag"
+                        class="tag"
+                        v-html="highlightText(tag, searchQuery)"
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -89,12 +94,17 @@
                   <img :src="item.imageUrl" :alt="item.imageAlt || item.title" loading="lazy" />
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">{{ item.title }}</h3>
-                  <p class="card-description">{{ item.description }}</p>
+                  <h3 class="card-title" v-html="highlightText(item.title, searchQuery)"></h3>
+                  <p class="card-description" v-html="highlightText(item.description, searchQuery)"></p>
                   <div class="card-meta">
-                    <span class="card-category">{{ item.category }}</span>
+                    <span class="card-category" v-html="highlightText(item.category, searchQuery)"></span>
                     <div class="card-tags">
-                      <span v-for="tag in item.tags?.slice(0, 3)" :key="tag" class="tag">{{ tag }}</span>
+                      <span
+                        v-for="tag in item.tags?.slice(0, 3)"
+                        :key="tag"
+                        class="tag"
+                        v-html="highlightText(tag, searchQuery)"
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -118,12 +128,21 @@
                   <img :src="item.imageUrl" :alt="item.imageAlt || item.name" loading="lazy" />
                 </div>
                 <div class="card-content">
-                  <h3 class="card-title">{{ item.name }}</h3>
-                  <p class="card-description">{{ item.description }}</p>
+                  <h3 class="card-title" v-html="highlightText(item.name || item.title, searchQuery)"></h3>
+                  <p class="card-description" v-html="highlightText(item.description, searchQuery)"></p>
                   <div class="card-meta">
-                    <span class="card-category" :class="item.dangerClass">{{ item.dangerLevel }}</span>
+                    <span
+                      class="card-category"
+                      :class="item.dangerClass"
+                      v-html="highlightText(item.dangerLevel, searchQuery)"
+                    ></span>
                     <div class="card-tags">
-                      <span v-for="tag in item.tags?.slice(0, 3)" :key="tag" class="tag">{{ tag }}</span>
+                      <span
+                        v-for="tag in item.tags?.slice(0, 3)"
+                        :key="tag"
+                        class="tag"
+                        v-html="highlightText(tag, searchQuery)"
+                      ></span>
                     </div>
                   </div>
                 </div>
@@ -145,10 +164,10 @@
                 class="result-card code-card"
               >
                 <div class="card-content">
-                  <h3 class="card-title">{{ item.title }}</h3>
-                  <p class="card-description">{{ item.description }}</p>
+                  <h3 class="card-title" v-html="highlightText(item.title, searchQuery)"></h3>
+                  <p class="card-description" v-html="highlightText(item.description, searchQuery)"></p>
                   <div class="card-meta">
-                    <span class="code-value">{{ item.code }}</span>
+                    <span class="code-value" v-html="highlightText(item.code, searchQuery)"></span>
                   </div>
                 </div>
               </a>
@@ -301,6 +320,31 @@ const searchInText = (text, query) => {
   return text.toLowerCase().includes(query.toLowerCase())
 }
 
+const escapeHtml = (text) => {
+  return String(text ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+const highlightText = (text, query) => {
+  const safeText = escapeHtml(text)
+  const trimmedQuery = String(query ?? '').trim()
+  if (!safeText || !trimmedQuery) return safeText
+
+  const tokens = trimmedQuery.split(/\s+/).filter(Boolean)
+  if (!tokens.length) return safeText
+
+  const pattern = tokens
+    .map((token) => token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('|')
+  const regex = new RegExp(`(${pattern})`, 'gi')
+
+  return safeText.replace(regex, '<mark class="search-highlight">$1</mark>')
+}
+
 const performSearch = () => {
   if (!searchQuery.value.trim()) {
     return
@@ -314,7 +358,7 @@ const levelResults = computed(() => {
   if (!searchQuery.value.trim()) return []
   const query = searchQuery.value.trim().toLowerCase()
   
-  return levelsData.filter(item => {
+  return (levelsData.value || []).filter(item => {
     return (
       searchInText(item.title, query) ||
       searchInText(item.description, query) ||
@@ -329,7 +373,7 @@ const mapResults = computed(() => {
   if (!searchQuery.value.trim()) return []
   const query = searchQuery.value.trim().toLowerCase()
   
-  return mapsData.filter(item => {
+  return (mapsData.value || []).filter(item => {
     return (
       searchInText(item.title, query) ||
       searchInText(item.description, query) ||
@@ -556,6 +600,19 @@ watch(() => route.query.q, (newQuery) => {
   color: #ffd700;
   margin: 0;
   font-weight: 600;
+}
+
+.card-title :deep(.search-highlight),
+.card-description :deep(.search-highlight),
+.card-category :deep(.search-highlight),
+.tag :deep(.search-highlight),
+.code-value :deep(.search-highlight),
+:deep(.search-highlight) {
+  background: rgba(255, 215, 0, 0.28);
+  color: #fff7b0;
+  padding: 0 0.15em;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.35);
 }
 
 .card-description {
