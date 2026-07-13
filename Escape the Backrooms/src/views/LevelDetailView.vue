@@ -26,7 +26,7 @@
         </div>
       </div>
     </section>
-<!-- GPT 广告位暂时停用：banner_native（原生横幅）
+<!-- 联盟广告位：banner_native（原生横幅） -->
 
     <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -36,7 +36,7 @@
 
     </aside>
 
-    -->
+    
 
     <!-- Main Content -->
     <section class="detail-content">
@@ -45,7 +45,7 @@
           <!-- Left -->
           <main class="main-content">
             <div class="content-body v-html-style" v-html="level.detailsHtml"></div>
-<!-- GPT 广告位暂时停用：banner_728（728×90，PC）/300×250（移动）
+<!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->
 
             <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -55,7 +55,7 @@
 
             </aside>
 
-            -->
+            
             
             <!-- Previous / Next Navigation -->
             <div class="nav-links" v-if="prevLevel || nextLevel">
@@ -82,7 +82,7 @@
                 <span class="nav-arrow">→</span>
               </a>
             </div>
-<!-- GPT 广告位暂时停用：banner_728（728×90）
+<!-- 联盟广告位：banner_728（728×90） -->
 
             <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -92,7 +92,7 @@
 
             </aside>
 
-            -->
+            
           </main>
 
           <!-- Right -->
@@ -111,13 +111,13 @@
                 <div v-else class="level-image placeholder">{{ level.title }}</div>
               </div>
             </div>
-<!-- GPT 广告位暂时停用：banner_300（侧边栏300×250）
+<!-- 联盟广告位：banner_300（侧边栏300×250） -->
 
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
   <AdSlot variant="sidebar" />
 </aside>
 
--->
+
 
             <!-- Sidebar Information -->
             <div class="info-card" v-if="level.sideBarInfo">
@@ -135,13 +135,13 @@
                 </div>
               </div>
             </div>
-<!-- GPT 广告位暂时停用：banner_300（侧边栏300×250）
+<!-- 联盟广告位：banner_300（侧边栏300×250） -->
 
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
   <AdSlot variant="sidebar" />
 </aside>
 
--->
+
 
             <!-- Featured Levels -->
             <div class="info-card" v-if="level.featured && level.featured.length > 0">
@@ -169,13 +169,13 @@
                 </a>
               </div>
             </div>
-<!-- GPT 广告位暂时停用：banner_300（侧边栏300×250）
+<!-- 联盟广告位：banner_300（侧边栏300×250） -->
 
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
   <AdSlot variant="sidebar" />
 </aside>
 
--->
+
       
           </aside>
         </div>

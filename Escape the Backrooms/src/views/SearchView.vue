@@ -25,7 +25,7 @@
         </div>
       </div>
     </section>
-<!-- GPT 广告位暂时停用：banner_native（原生横幅）
+<!-- 联盟广告位：banner_native（原生横幅） -->
 
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
@@ -35,7 +35,7 @@
 
       </aside>
 
-      -->
+      
 
     <!-- Search Results -->
     <section class="search-results" v-if="searchQuery">

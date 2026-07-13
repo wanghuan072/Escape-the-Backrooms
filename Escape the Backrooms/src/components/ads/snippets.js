@@ -1,7 +1,3 @@
-/**
- * 旧广告代码（highperformanceformat / effectivecpmnetwork）已停用，保留备查。
- */
-/*
 export const AD_SNIPPETS = {
   sidebar: {
     atOptions: `atOptions = {
@@ -36,7 +32,3 @@ export const NATIVE_AD = {
     'https://pl29633107.effectivecpmnetwork.com/891ef749e6c0675d4b64b98d4922ecad/invoke.js',
   containerId: 'container-891ef749e6c0675d4b64b98d4922ecad',
 }
-*/
-
-export const AD_SNIPPETS = {}
-export const NATIVE_AD = {}
