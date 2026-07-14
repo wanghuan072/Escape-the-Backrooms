@@ -11,37 +11,34 @@ function getSlotMap() {
   return window.__gptSlotMap
 }
 
-function defineBannerSlot(path, elementId) {
-  const mapping = googletag
-    .sizeMapping()
-    .addSize([728, 0], [[728, 90], [300, 250]])
-    .addSize([0, 0], [300, 250])
-    .build()
-
-  return googletag
-    .defineSlot(path, [[300, 250], [728, 90]], elementId)
-    ?.defineSizeMapping(mapping)
-    ?.addService(googletag.pubads())
-}
-
-function defineSlotForUnit(unit, elementId) {
-  const path = UNIT_PATH[unit] ?? UNIT_PATH[Number(unit)]
-  if (!path) return null
-
-  return defineBannerSlot(path, elementId)
-}
-
 export function Gt(elementId, unit) {
   const path = UNIT_PATH[unit] ?? UNIT_PATH[Number(unit)]
   if (!path || !elementId) return
 
   window.googletag = window.googletag || { cmd: [] }
+  const googletag = window.googletag
   googletag.cmd.push(() => {
     const slotMap = getSlotMap()
     let slot = slotMap[elementId]
 
     if (!slot) {
-      slot = defineSlotForUnit(unit, elementId)
+      const mapping = googletag
+        .sizeMapping()
+        .addSize([1024, 768], [
+          [970, 250],
+          [300, 250],
+        ])
+        .addSize([0, 0], [300, 250])
+        .build()
+
+      slot = googletag
+        .defineSlot(path, [
+          [300, 250],
+          [970, 250],
+        ], elementId)
+        ?.defineSizeMapping(mapping)
+        ?.addService(googletag.pubads())
+
       if (!slot) return
       slotMap[elementId] = slot
     }

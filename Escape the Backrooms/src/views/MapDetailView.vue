@@ -19,6 +19,7 @@
 
 
         <AdSlot variant="native" />
+        <GptAdSlot unit="1" />
 
 
       </aside>
@@ -50,6 +51,7 @@
 
 
                 <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
               </aside>
@@ -78,6 +80,7 @@
 
 
                 <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
               </aside>
@@ -92,6 +95,7 @@
 
 
                 <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
               </aside>
@@ -119,6 +123,7 @@
 
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
   <AdSlot variant="sidebar" />
+          <GptAdSlot unit="1" />
 </aside>
 
 
@@ -145,6 +150,7 @@
 
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
   <AdSlot variant="sidebar" />
+          <GptAdSlot unit="1" />
 </aside>
 
 

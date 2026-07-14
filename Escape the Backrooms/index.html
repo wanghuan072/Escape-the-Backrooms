@@ -80,38 +80,50 @@
     src="https://pl29633105.effectivecpmnetwork.com/8e/03/52/8e035273b08267f4adb8f1fd96d3e90f.js"
   ></script>
 
-  <!-- GPT 广告（暂时停用，恢复时取消注释）
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-    <script>
-      window.googletag = window.googletag || { cmd: [] };
-      googletag.cmd.push(function () {
-        var anchorSlot = googletag.defineOutOfPageSlot(
-          '/23346398271/escapethebackrooms.org_0610_all/escapethebackrooms.org_0610_anchor_1',
-          googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
-        );
-        if (anchorSlot) anchorSlot.addService(googletag.pubads());
-        window.__gptAnchorSlot = anchorSlot;
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(function () {
+      var anchorSlot = googletag.defineOutOfPageSlot(
+        '/23355878051/escapethebackrooms.org_0713_all/escapethebackrooms.org_0713_anchor_1',
+        googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+      );
+      if (anchorSlot) anchorSlot.addService(googletag.pubads());
+      window.__gptAnchorSlot = anchorSlot;
+
+      var leftSideRailSlot = googletag.defineOutOfPageSlot(
+        '/23355878051/escapethebackrooms.org_0713_all/escapethebackrooms.org_0713_anchor_1',
+        googletag.enums.OutOfPageFormat.LEFT_SIDE_RAIL
+      );
+      if (leftSideRailSlot) leftSideRailSlot.addService(googletag.pubads());
+      window.__gptLeftSideRailSlot = leftSideRailSlot;
+
+      var rightSideRailSlot = googletag.defineOutOfPageSlot(
+        '/23355878051/escapethebackrooms.org_0713_all/escapethebackrooms.org_0713_anchor_1',
+        googletag.enums.OutOfPageFormat.RIGHT_SIDE_RAIL
+      );
+      if (rightSideRailSlot) rightSideRailSlot.addService(googletag.pubads());
+      window.__gptRightSideRailSlot = rightSideRailSlot;
+    });
+  </script>
+  <script>
+    googletag.cmd.push(function () {
+      var interstitialSlot = googletag.defineOutOfPageSlot(
+        '/23355878051/escapethebackrooms.org_0713_all/escapethebackrooms.org_0713_inter_1',
+        googletag.enums.OutOfPageFormat.INTERSTITIAL
+      );
+      if (interstitialSlot) {
+        interstitialSlot.addService(googletag.pubads());
+      }
+      window.__gptInterstitialSlot = interstitialSlot;
+      googletag.setConfig({
+        centering: true,
+        disableInitialLoad: true,
+        singleRequest: true,
       });
-    </script>
-    <script>
-      googletag.cmd.push(function () {
-        var interstitialSlot = googletag.defineOutOfPageSlot(
-          '/23346398271/escapethebackrooms.org_0610_all/escapethebackrooms.org_0610_inter_1',
-          googletag.enums.OutOfPageFormat.INTERSTITIAL
-        );
-        if (interstitialSlot) {
-          interstitialSlot.addService(googletag.pubads());
-        }
-        window.__gptInterstitialSlot = interstitialSlot;
-        googletag.setConfig({
-          centering: true,
-          disableInitialLoad: true,
-          singleRequest: true,
-        });
-        googletag.enableServices();
-      });
-    </script>
-    -->
+      googletag.enableServices();
+    });
+  </script>
 
   <script>
     window.addEventListener('load', function () {
@@ -148,22 +160,28 @@
   </script>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
-  <!-- GPT 广告（暂时停用，恢复时取消注释）
-    <script>
-      googletag.cmd.push(function () {
-        var oopSlots = [];
-        if (window.__gptAnchorSlot) {
-          googletag.display(window.__gptAnchorSlot);
-          oopSlots.push(window.__gptAnchorSlot);
-        }
-        if (window.__gptInterstitialSlot) {
-          googletag.display(window.__gptInterstitialSlot);
-          oopSlots.push(window.__gptInterstitialSlot);
-        }
-        if (oopSlots.length) googletag.pubads().refresh(oopSlots);
-      });
-    </script>
-    -->
+  <script>
+    googletag.cmd.push(function () {
+      var oopSlots = [];
+      if (window.__gptAnchorSlot) {
+        googletag.display(window.__gptAnchorSlot);
+        oopSlots.push(window.__gptAnchorSlot);
+      }
+      if (window.__gptLeftSideRailSlot) {
+        googletag.display(window.__gptLeftSideRailSlot);
+        oopSlots.push(window.__gptLeftSideRailSlot);
+      }
+      if (window.__gptRightSideRailSlot) {
+        googletag.display(window.__gptRightSideRailSlot);
+        oopSlots.push(window.__gptRightSideRailSlot);
+      }
+      if (window.__gptInterstitialSlot) {
+        googletag.display(window.__gptInterstitialSlot);
+        oopSlots.push(window.__gptInterstitialSlot);
+      }
+      if (oopSlots.length) googletag.pubads().refresh(oopSlots);
+    });
+  </script>
 
   <!-- 数据收集脚本 -->
   <script src="/collet-data.js"></script>

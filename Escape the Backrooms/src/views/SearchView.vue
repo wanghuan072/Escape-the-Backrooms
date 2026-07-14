@@ -31,6 +31,7 @@
 
 
         <AdSlot variant="native" />
+        <GptAdSlot unit="1" />
 
 
       </aside>

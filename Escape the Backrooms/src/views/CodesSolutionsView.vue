@@ -14,6 +14,7 @@
 
 
         <AdSlot variant="native" />
+        <GptAdSlot unit="1" />
 
 
       </aside>
@@ -57,6 +58,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -108,6 +110,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -176,6 +179,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -204,6 +208,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -254,6 +259,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -310,6 +316,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -337,6 +344,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
@@ -369,6 +377,7 @@
 
 
           <AdSlot variant="leaderboard" />
+          <GptAdSlot unit="1" />
 
 
         </aside>
