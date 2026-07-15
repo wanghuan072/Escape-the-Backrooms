@@ -62,7 +62,7 @@
 
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
-        <AdSlot variant="native" />
+        <!-- <AdSlot variant="native" /> -->
         <GptAdSlot unit="1" />
       
       </aside>
@@ -115,7 +115,7 @@
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-        <AdSlot variant="leaderboard" />
+        <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
 
 
@@ -169,7 +169,7 @@
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-        <AdSlot variant="leaderboard" />
+        <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
 
 
@@ -224,7 +224,7 @@
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-        <AdSlot variant="leaderboard" />
+        <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
 
 
@@ -284,7 +284,7 @@
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-        <AdSlot variant="leaderboard" />
+        <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
 
 
@@ -356,7 +356,7 @@
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-        <AdSlot variant="leaderboard" />
+        <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
 
 
@@ -393,7 +393,7 @@
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
 
 
-        <AdSlot variant="leaderboard" />
+        <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
 
 
