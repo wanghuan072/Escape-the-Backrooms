@@ -25,6 +25,7 @@ const baseRoutes = [
   { path: '/levels', name: 'levels', priority: 0.9, changefreq: 'weekly' },
   { path: '/maps-keys', name: 'maps-keys', priority: 0.9, changefreq: 'weekly' },
   { path: '/codes-solutions', name: 'codes-solutions', priority: 0.9, changefreq: 'weekly' },
+  { path: '/backrooms-games', name: 'related-games', priority: 0.8, changefreq: 'monthly' },
   { path: '/search', name: 'search', priority: 0.7, changefreq: 'daily' },
 ]
 
@@ -93,6 +94,7 @@ async function loadData(locale = 'en') {
   const data = {
     levels: [],
     maps: [],
+    relatedGames: [],
   }
 
   try {
@@ -111,6 +113,13 @@ async function loadData(locale = 'en') {
     data.maps = mapsModule.default || mapsModule.maps || []
   } catch (error) {
     console.warn(`Failed to load maps data (${locale}):`, error.message)
+  }
+
+  try {
+    const relatedGamesModule = await import('../src/data/relatedGames.js')
+    data.relatedGames = relatedGamesModule.getRelatedGames?.(locale) || relatedGamesModule.relatedGames || []
+  } catch (error) {
+    console.warn('Failed to load related games data:', error.message)
   }
 
   return data
@@ -142,6 +151,20 @@ async function collectUrlEntries() {
         priority: route.priority,
         changefreq: route.changefreq,
         hash: fingerprint(`route:${routePath}`),
+      })
+    })
+  })
+
+  supportedLocales.forEach((locale) => {
+    const relatedGames = allData[locale]?.relatedGames || []
+    relatedGames.forEach((game) => {
+      if (!game?.addressBar) return
+      const routePath = createLocalizedPath(`/backrooms-games/${game.addressBar}`, locale)
+      entries.push({
+        loc: fullUrl(routePath),
+        priority: 0.7,
+        changefreq: 'monthly',
+        hash: fingerprint(`related-game:${locale}:${game.id}:${game.addressBar}`),
       })
     })
   })
@@ -253,6 +276,7 @@ async function main() {
     const esUrlCount = enUrls.filter((url) => url.includes('/es/')).length
     const levelsCount = (sitemapXml.match(/\/levels\//g) || []).length
     const mapsCount = (sitemapXml.match(/\/maps-keys\//g) || []).length
+    const relatedGamesCount = (sitemapXml.match(/\/backrooms-games\//g) || []).length
 
     console.log('\n📊 URLs by language:')
     console.log(`   English (en): ${enUrlCount}`)
@@ -265,6 +289,7 @@ async function main() {
     console.log(`   Base routes: ${baseRoutes.length * supportedLocales.length}`)
     console.log(`   Levels: ${levelsCount}`)
     console.log(`   Maps: ${mapsCount}`)
+    console.log(`   Related game details: ${relatedGamesCount}`)
 
     const validation =
       sitemapXml.includes('<?xml') &&

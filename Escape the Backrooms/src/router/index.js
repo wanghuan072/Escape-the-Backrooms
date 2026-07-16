@@ -5,6 +5,8 @@ import LevelDetailView from '../views/LevelDetailView.vue'
 import MapsKeysView from '../views/MapsKeysView.vue'
 import MapDetailView from '../views/MapDetailView.vue'
 import CodesSolutionsView from '../views/CodesSolutionsView.vue'
+import RelatedGamesView from '../views/RelatedGamesView.vue'
+import RelatedGameDetailView from '../views/RelatedGameDetailView.vue'
 // import WikiView from '../views/wiki/WikiView.vue'
 // import EntitiesView from '../views/wiki/EntitiesView.vue'
 // import EntityDetailView from '../views/wiki/EntityDetailView.vue'
@@ -78,6 +80,22 @@ const baseRoutes = [
         // TDK is loaded from i18n in useAutoSEO
       }
     }
+  },
+  {
+    path: '/backrooms-games',
+    name: 'related-games',
+    component: RelatedGamesView,
+    meta: {
+      seo: {
+        // TDK is loaded from i18n in useAutoSEO
+      }
+    }
+  },
+  {
+    path: '/backrooms-games/:slug',
+    name: 'related-game-detail',
+    component: RelatedGameDetailView,
+    // Detail page TDK is loaded from related game data
   },
   {
     path: '/search',

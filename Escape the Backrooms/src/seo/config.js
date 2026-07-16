@@ -35,7 +35,8 @@ export const seoConfig = {
     wikiEntities: 0.8,
     wikiEntityDetail: 0.7,
     guides: 0.8,
-    search: 0.7
+    search: 0.7,
+    relatedGames: 0.8
   },
 
   // 更新频率设置
@@ -50,7 +51,7 @@ export const seoConfig = {
     wikiEntities: 'weekly',
     wikiEntityDetail: 'monthly',
     guides: 'weekly',
-    search: 'daily'
+    search: 'daily',
+    relatedGames: 'monthly'
   }
 }
-

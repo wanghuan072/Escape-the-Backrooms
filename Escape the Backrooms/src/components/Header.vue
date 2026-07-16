@@ -75,6 +75,7 @@
           <a :href="getLocalizedPath('/levels')" class="nav-link" @click="closeMobileMenu">{{ navLabels.levels }}</a>
           <a :href="getLocalizedPath('/maps-keys')" class="nav-link" @click="closeMobileMenu">{{ navLabels.maps }}</a>
           <a :href="getLocalizedPath('/codes-solutions')" class="nav-link" @click="closeMobileMenu">{{ navLabels.codes }}</a>
+          <a :href="getLocalizedPath('/backrooms-games')" class="nav-link" @click="closeMobileMenu">{{ navLabels.relatedGames }}</a>
           <!-- <a :href="getLocalizedPath('/wiki')" class="nav-link" @click="closeMobileMenu">Wiki</a> -->
           <!-- <a :href="getLocalizedPath('/guides')" class="nav-link" @click="closeMobileMenu">Guides</a> -->
         </nav>
@@ -119,12 +120,33 @@ const currentLanguageName = computed(() => {
 })
 
 const navLabels = computed(() => {
+  if (currentLocale.value === 'de') {
+    return {
+      home: 'Startseite',
+      levels: 'Level',
+      maps: 'Karten & Schlüssel',
+      codes: 'Codes & Lösungen',
+      relatedGames: 'Ähnliche Spiele'
+    }
+  }
+
+  if (currentLocale.value === 'fr') {
+    return {
+      home: 'Accueil',
+      levels: 'Niveaux',
+      maps: 'Cartes et clés',
+      codes: 'Codes et solutions',
+      relatedGames: 'Jeux similaires'
+    }
+  }
+
   if (currentLocale.value === 'es') {
     return {
       home: 'Inicio',
       levels: 'Niveles',
       maps: 'Mapas y llaves',
-      codes: 'Códigos y soluciones'
+      codes: 'Códigos y soluciones',
+      relatedGames: 'Juegos relacionados'
     }
   }
 
@@ -132,7 +154,8 @@ const navLabels = computed(() => {
     home: 'Home',
     levels: 'Levels',
     maps: 'Maps & Keys',
-    codes: 'Codes & Solutions'
+    codes: 'Codes & Solutions',
+    relatedGames: 'Related Games'
   }
 })
 
@@ -251,6 +274,7 @@ const closeMobileMenu = () => {
     order: 2;
     flex: 1;
     justify-content: center;
+    gap: 1.25rem;
   }
 
   .header-actions {

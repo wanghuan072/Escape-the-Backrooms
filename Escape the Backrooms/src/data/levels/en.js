@@ -3310,10 +3310,10 @@ export default [
       <h2>What Level 922 Is</h2>
       <p><strong>Level 922</strong>, widely known within the community as the <strong>"Endless Spiral Stairs"</strong> or <strong>"Endless Interlude,"</strong> is a vertical-focused hidden level in <em>Escape the Backrooms</em>. Structurally, it consists of an infinitely descending concrete spiral staircase surrounded by total darkness. The level has no standard enemy entities chasing you dynamically on the stairs, but it introduces a severe psychological and mechanical challenge: finding the elusive <strong>Floor 94</strong> exit gate amidst hundreds of identical floors.</p>
 
-      <p>The core objective is deceptively simple but mechanically tedious: you must descend the spiral staircase until you spot a prominent \"94\" painted on the concrete support pillar, then immediately throw yourself over the ledge into the central abyss to trigger \"The Suburbs\" secret ending sequence. Because the correct floor spawns entirely at random, completing this level normally can take an immense amount of time.</p>
+      <p>The core objective is deceptively simple but mechanically tedious: you must descend the spiral staircase until you spot a prominent "94" painted on the concrete support pillar, then immediately throw yourself over the ledge into the central abyss to trigger "The Suburbs" secret ending sequence. Because the correct floor spawns entirely at random, completing this level normally can take an immense amount of time.</p>
     </section>
 
-    <h2>Escape the Backrooms Level 922: Spiral Stairs FPS Hack & \"The Suburbs\" Secret Ending! Video</h2>
+    <h2>Escape the Backrooms Level 922: Spiral Stairs FPS Hack & "The Suburbs" Secret Ending! Video</h2>
     <iframe src="https://www.youtube.com/embed/AN6K0M1pz1Y" allowfullscreen></iframe>
 
     <section>
@@ -3348,7 +3348,7 @@ export default [
       <h2>Locating Floor 94 & Triggering the Leap of Faith</h2>
       <p>If you prefer a legitimate run or if the FPS glitch doesn't automatically clip you through the map, you must understand the random generation rules governing Floor 94. The exit floor is completely unpredictable: it can spawn as high as the 10th or 20th floor, or it might bury itself deep into the 60s, 100s, or even well past the 150th flight of stairs.</p>
 
-      <p>As you run or spin downwards, closely monitor the vertical concrete pillars. The moment you visually confirm the painted <strong>\"94\"</strong> numbers, immediately halt your forward momentum. Do not keep running past it. Walk straight to the ledge adjacent to the number 94 sign and perform a blind leap of faith down into the central hollow abyss. Hitting this specific zone correctly bypasses the infinite loop, immediately fading the screen to black and safely loading you into \"The Suburbs\" secret ending area.</p>
+      <p>As you run or spin downwards, closely monitor the vertical concrete pillars. The moment you visually confirm the painted <strong>"94"</strong> numbers, immediately halt your forward momentum. Do not keep running past it. Walk straight to the ledge adjacent to the number 94 sign and perform a blind leap of faith down into the central hollow abyss. Hitting this specific zone correctly bypasses the infinite loop, immediately fading the screen to black and safely loading you into "The Suburbs" secret ending area.</p>
     </section>
   `,
 },
@@ -3397,7 +3397,7 @@ export default [
       <p>The primary core challenge here is not dynamic survival, but <strong>structural activation</strong>. The master puzzle requires powering up a set of four distinct final arcade cabinets hidden within the restricted sections of the level. Doing so triggers a critical lore event with an automated <strong>M.E.G. Janitor NPC</strong>, who holds the ultimate physical key to unlocking the real-world exits and initiating the official developer credits roll.</p>
     </section>
 
-    <h2>Level 3999 \"Final Escape\" Walkthrough: The Janitor NPC & All Credits Video</h2>
+    <h2>Level 3999 "Final Escape" Walkthrough: The Janitor NPC & All Credits Video</h2>
     <iframe src="https://www.youtube.com/embed/0hSXEPpTuH4" allowfullscreen></iframe>
 
     <section>
@@ -3428,7 +3428,7 @@ export default [
       <h2>The Final Eject: Returning to the Real World</h2>
       <p>With the maintenance bay doors officially unbolted by the Janitor, push through the threshold and move toward the final control room hub. In the center of the terminal space, you will find a primary CRT display unit loaded with a retro magnetic tape layout.</p>
 
-      <p>Step up to the console and activate the <strong>\"Final Escape\" Tape Eject</strong> option. The physical cassette will pop out of the simulation reader deck, instantly blacking out the digital rendering of the Backrooms environment. Your character will safely transition out of the liminal space loop and awaken back in the objective real world, rolling the official developer credit sequence to signify a flawless, complete true ending run.</p>
+      <p>Step up to the console and activate the <strong>"Final Escape" Tape Eject</strong> option. The physical cassette will pop out of the simulation reader deck, instantly blacking out the digital rendering of the Backrooms environment. Your character will safely transition out of the liminal space loop and awaken back in the objective real world, rolling the official developer credit sequence to signify a flawless, complete true ending run.</p>
     </section>
   `,
 },

@@ -190,7 +190,8 @@ const routeToSeoKey = {
   'wiki': 'wiki',
   'wiki-entities': 'wikiEntities',
   'wiki-entity-detail': 'wikiEntityDetail',
-  'guides': 'guides'
+  'guides': 'guides',
+  'related-games': 'relatedGames'
 }
 
 // 自动SEO composable - 监听路由变化自动设置SEO
@@ -217,7 +218,7 @@ export function useAutoSEO() {
     }
     
     // 详情页的 SEO 由页面组件自己从数据中设置，跳过自动 SEO
-    if (baseRouteName === 'level-detail' || baseRouteName === 'map-detail' || baseRouteName === 'wiki-entity-detail') {
+    if (baseRouteName === 'level-detail' || baseRouteName === 'map-detail' || baseRouteName === 'wiki-entity-detail' || baseRouteName === 'related-game-detail') {
       return
     }
     

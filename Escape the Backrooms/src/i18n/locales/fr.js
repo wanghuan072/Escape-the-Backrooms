@@ -49,6 +49,11 @@ export default {
             title: 'Droit d\'auteur | Escape the Backrooms Wiki',
             description: 'Informations sur le droit d\'auteur pour Escape the Backrooms Wiki. Politique de propriété intellectuelle.',
             keywords: 'copyright, propriété intellectuelle, DMCA, usage loyal'
+        },
+        relatedGames: {
+            title: 'À quoi jouer après Escape the Backrooms ? | Inside the Backrooms',
+            description: 'Recommandation pensée pour les joueurs d\'Escape the Backrooms : comparaison d\'Inside the Backrooms, co-op, énigmes, entités, médias, Wiki et verdict.',
+            keywords: 'Inside the Backrooms, jeux comme Escape the Backrooms, jeu associé Escape the Backrooms, horreur co-op Backrooms, jeux Backrooms'
         }
     },
     homePage: {

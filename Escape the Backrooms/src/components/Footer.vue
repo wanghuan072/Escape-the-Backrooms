@@ -18,6 +18,7 @@
             <li><a :href="getLocalizedPath('/levels')">{{ footerLabels.levels }}</a></li>
             <li><a :href="getLocalizedPath('/maps-keys')">{{ footerLabels.maps }}</a></li>
             <li><a :href="getLocalizedPath('/codes-solutions')">{{ footerLabels.codes }}</a></li>
+            <li><a :href="getLocalizedPath('/backrooms-games')">{{ footerLabels.relatedGames }}</a></li>
             <!-- <li><a href="/wiki">Wiki</a></li>
             <li><a href="/guides">Guides</a></li> -->
           </ul>
@@ -52,6 +53,46 @@ import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 
 const footerLabels = computed(() => {
+  if (getCurrentLocale() === 'de') {
+    return {
+      navigate: 'Navigation',
+      home: 'Startseite',
+      levels: 'Level',
+      maps: 'Karten & Schlüssel',
+      codes: 'Codes & Lösungen',
+      relatedGames: 'Ähnliche Spiele',
+      legal: 'Rechtliches',
+      privacy: 'Datenschutzerklärung',
+      terms: 'Nutzungsbedingungen',
+      copyright: 'Urheberrecht',
+      about: 'Über uns',
+      contact: 'Kontakt',
+      description: 'Umfassende Escape-the-Backrooms-Ressourcen mit Guides, Wiki, Karten und Strategien, die dir beim Orientieren und Entkommen helfen.',
+      rights: '© 2026 escapethebackrooms.org. Alle Rechte vorbehalten.',
+      disclaimer: 'Dies ist eine unabhängige Fan-Seite nur zu Informationszwecken. Alle Marken und Urheberrechte gehören ihren jeweiligen Eigentümern.'
+    }
+  }
+
+  if (getCurrentLocale() === 'fr') {
+    return {
+      navigate: 'Navigation',
+      home: 'Accueil',
+      levels: 'Niveaux',
+      maps: 'Cartes et clés',
+      codes: 'Codes et solutions',
+      relatedGames: 'Jeux similaires',
+      legal: 'Mentions légales',
+      privacy: 'Politique de confidentialité',
+      terms: 'Conditions d’utilisation',
+      copyright: 'Droit d’auteur',
+      about: 'À propos',
+      contact: 'Contact',
+      description: 'Ressources complètes pour Escape the Backrooms, avec guides, wiki, cartes et stratégies pour vous aider à vous orienter et à vous échapper.',
+      rights: '© 2026 escapethebackrooms.org. Tous droits réservés.',
+      disclaimer: 'Ceci est un site de fans indépendant créé uniquement à des fins d’information. Toutes les marques et droits d’auteur appartiennent à leurs propriétaires respectifs.'
+    }
+  }
+
   if (getCurrentLocale() === 'es') {
     return {
       navigate: 'Navegación',
@@ -59,6 +100,7 @@ const footerLabels = computed(() => {
       levels: 'Niveles',
       maps: 'Mapas y llaves',
       codes: 'Códigos y soluciones',
+      relatedGames: 'Juegos relacionados',
       legal: 'Legal',
       privacy: 'Política de privacidad',
       terms: 'Términos de servicio',
@@ -77,6 +119,7 @@ const footerLabels = computed(() => {
     levels: 'Levels',
     maps: 'Maps & Keys',
     codes: 'Codes & Solutions',
+    relatedGames: 'Related Games',
     legal: 'Legal',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
