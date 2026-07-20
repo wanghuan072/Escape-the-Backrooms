@@ -68,7 +68,7 @@ export function useLevelsData() {
    * 获取首页显示的 levels
    */
   const getHomeLevels = () => {
-    return data.value.filter(level => level.isHome === true)
+    return data.value.filter(level => level.isHome === true).slice(-6)
   }
 
   /**
