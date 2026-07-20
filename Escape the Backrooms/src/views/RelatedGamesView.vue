@@ -12,9 +12,12 @@
       </div>
     </section>
 
+    <!-- GPT广告位：banner -->
+    <!--
     <aside class="container ad-container">
       <GptAdSlot unit="1" />
     </aside>
+    -->
 
     <section class="featured-related">
       <div class="container">

@@ -13,16 +13,19 @@
         </div>
       </div>
     </section>
-<!-- 联盟广告位：banner_native（原生横幅） -->
-
+<!-- GPT广告位：banner_native（原生横幅） -->
+      <!--
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-        <!-- <AdSlot variant="native" /> -->
         <GptAdSlot unit="1" />
-
-
       </aside>
+      -->
+
+<!-- 联盟广告位：banner_native（原生横幅） -->
+      <!--
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+        <AdSlot variant="native" />
+      </aside>
+      -->
 
       
 
@@ -45,16 +48,19 @@
                 <div v-else class="map-image placeholder">{{ map.title }}</div>
               </div>
             </div>
-<!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->
-
+<!-- GPT广告位：banner_728（728×90，PC）/300×250（移动） -->
+              <!--
               <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-                <!-- <AdSlot variant="leaderboard" /> -->
-          <GptAdSlot unit="1" />
-
-
+                <GptAdSlot unit="1" />
               </aside>
+              -->
+
+<!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->
+              <!--
+              <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+                <AdSlot variant="leaderboard" />
+              </aside>
+              -->
 
               
 
@@ -74,31 +80,37 @@
                 </div>
               </div>
             </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+              <!--
               <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-                <!-- <AdSlot variant="leaderboard" /> -->
-          <GptAdSlot unit="1" />
-
-
+                <GptAdSlot unit="1" />
               </aside>
+              -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+              <!--
+              <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+                <AdSlot variant="leaderboard" />
+              </aside>
+              -->
 
               
 
             <!-- Content Body with v-html -->
             <div class="content-body v-html-style" v-html="map.detailsHtml"></div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+              <!--
               <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-                <!-- <AdSlot variant="leaderboard" /> -->
-          <GptAdSlot unit="1" />
-
-
+                <GptAdSlot unit="1" />
               </aside>
+              -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+              <!--
+              <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+                <AdSlot variant="leaderboard" />
+              </aside>
+              -->
 
               
           </main>
@@ -119,12 +131,19 @@
                 <div v-else class="level-image placeholder">{{ map.title }}</div>
               </div>
             </div>
-<!-- 联盟广告位：banner_300（侧边栏300×250） -->
-
+<!-- GPT广告位：banner_300（侧边栏300×250） -->
+<!--
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-  <!-- <AdSlot variant="sidebar" /> -->
-          <GptAdSlot unit="1" />
+  <GptAdSlot unit="1" />
 </aside>
+-->
+
+<!-- 联盟广告位：banner_300（侧边栏300×250） -->
+<!--
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
+-->
 
 
 
@@ -146,12 +165,19 @@
                 </div>
               </div>
             </div>
-<!-- 联盟广告位：banner_300（侧边栏300×250） -->
-
+<!-- GPT广告位：banner_300（侧边栏300×250） -->
+<!--
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-  <!-- <AdSlot variant="sidebar" /> -->
-          <GptAdSlot unit="1" />
+  <GptAdSlot unit="1" />
 </aside>
+-->
+
+<!-- 联盟广告位：banner_300（侧边栏300×250） -->
+<!--
+<aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+  <AdSlot variant="sidebar" />
+</aside>
+-->
 
 
           </aside>

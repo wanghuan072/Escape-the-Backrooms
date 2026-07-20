@@ -8,16 +8,19 @@
           <p class="page-subtitle">{{ $t('codesPage.hero.subtitle') }}</p>
         </div>
       </div>
-<!-- 联盟广告位：banner_native（原生横幅） -->
-
+<!-- GPT广告位：banner_native（原生横幅） -->
+      <!--
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-        <!-- <AdSlot variant="native" /> -->
         <GptAdSlot unit="1" />
-
-
       </aside>
+      -->
+
+<!-- 联盟广告位：banner_native（原生横幅） -->
+      <!--
+      <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+        <AdSlot variant="native" />
+      </aside>
+      -->
 
       
     </section>
@@ -52,16 +55,19 @@
             </div>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->
-
+<!-- GPT广告位：banner_728（728×90，PC）/300×250（移动） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -104,16 +110,19 @@
             </div>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -173,16 +182,19 @@
             </div>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -202,16 +214,19 @@
             </div>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -253,16 +268,19 @@
             </div>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -310,16 +328,19 @@
             </ul>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -338,16 +359,19 @@
             </div>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
 
@@ -371,16 +395,19 @@
             <p class="solution-description" v-html="$t('codesPage.levels.otherLevels.solution2.description')"></p>
           </div>
         </div>
-<!-- 联盟广告位：banner_728（728×90） -->
-
+<!-- GPT广告位：banner_728（728×90） -->
+        <!--
         <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-
-
-          <!-- <AdSlot variant="leaderboard" /> -->
           <GptAdSlot unit="1" />
-
-
         </aside>
+        -->
+
+<!-- 联盟广告位：banner_728（728×90） -->
+        <!--
+        <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+          <AdSlot variant="leaderboard" />
+        </aside>
+        -->
 
         
       </div>
