@@ -75,6 +75,11 @@
       
     </section>
 
+    <!-- ADS广告位：adsense-banner-1 -->
+    <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
+      <AdsAdSlot />
+    </aside>
+
     <!-- Featured Levels Section -->
     <section class="featured-section" v-if="homeLevels.length > 0">
       <div class="container">
