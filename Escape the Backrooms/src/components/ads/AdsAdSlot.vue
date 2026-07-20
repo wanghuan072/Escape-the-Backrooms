@@ -11,7 +11,7 @@ onMounted(() => {
   <div class="ads-ad-slot">
     <ins
       class="adsbygoogle"
-      style="display: block"
+      style="display: block; height: 90px"
       data-ad-client="ca-pub-1042701865163735"
       data-ad-slot="3495022871"
       data-ad-format="auto"
@@ -23,5 +23,6 @@ onMounted(() => {
 <style scoped>
 .ads-ad-slot {
   width: 100%;
+  height: 90px;
 }
 </style>

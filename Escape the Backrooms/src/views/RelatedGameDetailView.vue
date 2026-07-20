@@ -19,11 +19,9 @@
     </section>
 
     <!-- GPT广告位：banner -->
-    <!--
     <aside class="container ad-container">
       <GptAdSlot unit="1" />
     </aside>
-    -->
 
     <section class="article-section">
       <div class="container article-layout">
@@ -64,11 +62,9 @@
           </section>
 
           <!-- GPT广告位：banner -->
-          <!--
           <aside class="container ad-container inline-ad">
             <GptAdSlot unit="1" />
           </aside>
-          -->
 
           <section class="comparison-section">
             <div class="section-heading">
@@ -182,11 +178,9 @@
           </section>
 
           <!-- GPT广告位：banner -->
-          <!--
           <aside class="container ad-container side-ad">
             <GptAdSlot unit="1" />
           </aside>
-          -->
 
           <section class="side-panel">
             <h2>{{ pageCopy.sourcesChecked }}</h2>
