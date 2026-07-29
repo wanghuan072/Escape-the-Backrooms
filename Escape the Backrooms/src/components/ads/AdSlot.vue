@@ -3,6 +3,9 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { mountBannerAd, mountNativeAd, resolveBannerVariant } from './loadAd.js'
 
+// 联盟广告组件（当前停用）
+// 加载方式：启用后在组件挂载、路由变化或屏幕尺寸变化时，由 loadAd.js 动态创建联盟广告 iframe/script。
+// 当前 main.js 未 import/注册该组件，页面中的 <AdSlot> 也保持注释，因此这些请求不会执行。
 const props = defineProps({
   variant: {
     type: String,
@@ -67,6 +70,7 @@ watch(
 </script>
 
 <template>
+  <!-- 联盟广告位：支持 sidebar、leaderboard 和 native；当前所有调用均保持注释。 -->
   <div class="affiliate-ad-slot" :class="`affiliate-ad-slot--${variant}`">
     <div ref="slotRef" class="affiliate-ad-inner" :style="minStyle" aria-hidden="true"></div>
   </div>

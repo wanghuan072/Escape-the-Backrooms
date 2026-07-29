@@ -1,5 +1,8 @@
 import { AD_SNIPPETS, NATIVE_AD } from './snippets.js'
 
+// 联盟广告加载器（当前不会执行）
+// Banner：在独立 iframe 的 srcdoc 中加载联盟脚本，iframe 本身使用 loading="lazy"。
+// Native：向指定容器动态插入联盟广告容器和 async script。
 function escapeScriptContent(value) {
   return String(value).replace(/<\/script/gi, '<\\/script')
 }

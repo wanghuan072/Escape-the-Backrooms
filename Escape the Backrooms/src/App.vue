@@ -11,7 +11,8 @@ import './assets/css/public.css'
 // 启用自动 SEO
 useAutoSEO()
 
-// GPT banner 轮换（暂时停用，恢复 GPT 广告时取消注释）
+// GPT Banner 单元轮换辅助逻辑（当前未使用）
+// 注意：GPT 广告系统本身已经启用；这里注释的只是 banner1/2/3 轮换，不是 GPT 总开关。
 /*
 const bannerSeq = ref(0)
 provide('gptNextBannerUnit', () => {

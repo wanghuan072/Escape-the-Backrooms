@@ -1,6 +1,8 @@
 <script setup>
 import { onMounted } from 'vue'
 
+// ADS 广告（Google AdSense）
+// 加载方式：index.html 延迟加载 adsbygoogle.js；组件挂载时向 adsbygoogle 队列提交当前广告位。
 onMounted(() => {
   window.adsbygoogle = window.adsbygoogle || []
   window.adsbygoogle.push({})
@@ -8,6 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <!-- ADS 广告位：AdSense adsense-banner-1，仅用于首页 FAQ 下方。 -->
   <div class="ads-ad-slot">
     <ins
       class="adsbygoogle"
