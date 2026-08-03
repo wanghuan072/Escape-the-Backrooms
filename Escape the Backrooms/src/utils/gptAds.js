@@ -1,8 +1,5 @@
 import { GPT_UNITS } from '@/config/gpt'
 
-// GPT 广告（Google Ad Manager）页面 Banner 加载器
-// 这里只定义尺寸映射、注册 Slot 并调用 display()；不主动 refresh()。
-// 广告请求与渲染由 index.html 中的 GPT 原生 lazyLoad 配置按视口距离触发。
 const UNIT_PATH = {
   1: GPT_UNITS.banner1,
   2: GPT_UNITS.banner2,
@@ -49,21 +46,7 @@ export function Gt(elementId, unit) {
     if (!document.getElementById(elementId)) return
 
     googletag.display(elementId)
-  })
-}
-
-export function destroyGptSlot(elementId) {
-  if (!elementId || !window.__gptSlotMap?.[elementId]) return
-
-  window.googletag = window.googletag || { cmd: [] }
-  window.googletag.cmd.push(() => {
-    const slotMap = getSlotMap()
-    const slot = slotMap[elementId]
-    if (!slot) return
-
-    if (window.googletag.destroySlots([slot])) {
-      delete slotMap[elementId]
-    }
+    googletag.pubads().refresh([slot])
   })
 }
 

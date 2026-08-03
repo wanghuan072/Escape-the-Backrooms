@@ -40,8 +40,7 @@
   <meta name="googlebot" content="index, follow">
   <meta name="theme-color" content="#ffd700">
 
-  <!-- 联盟广告全局代码
-  加载方式：当前整段保持 HTML 注释，因此不会预连接联盟广告域名；以后启用联盟广告时再解除注释。
+  <!-- 联盟广告全局代码，暂时停用，保留以便后续恢复。
   <link rel="preconnect" href="https://www.highperformanceformat.com" crossorigin>
   <link rel="preconnect" href="https://pl29633105.effectivecpmnetwork.com" crossorigin>
   <link rel="preconnect" href="https://pl29633107.effectivecpmnetwork.com" crossorigin>
@@ -78,18 +77,14 @@
     }
     </script>
 
-  <!-- 联盟广告 Popunder
-  加载方式：当前整段保持 HTML 注释，不会请求联盟广告脚本。
+  <!-- 联盟广告 Popunder，暂时停用，保留以便后续恢复。
   <script
     async
     src="https://pl29633105.effectivecpmnetwork.com/8e/03/52/8e035273b08267f4adb8f1fd96d3e90f.js"
   ></script>
   -->
 
-  <!-- GPT 广告（Google Ad Manager）全局代码
-  加载方式：GPT 库全站只加载一次；页面 Banner 由原生 lazyLoad 控制请求和渲染时机。
-  广告内容保持不变：下方继续定义 Anchor、左右侧边栏和 Interstitial。
-  -->
+  <!-- GPT 广告全局代码 -->
   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
   <script>
     window.googletag = window.googletag || { cmd: [] };
@@ -128,14 +123,8 @@
       window.__gptInterstitialSlot = interstitialSlot;
       googletag.setConfig({
         centering: true,
-        // GPT 页面 Banner：桌面端提前 2 屏请求、1 屏渲染；移动端距离乘以 2。
-        lazyLoad: {
-          fetchMarginPercent: 200,
-          renderMarginPercent: 100,
-          mobileScaling: 2.0,
-        },
-        // 每个页面 Banner 独立进入懒加载范围后请求，避免 SRA 首次请求带出全部 Banner。
-        singleRequest: false,
+        disableInitialLoad: true,
+        singleRequest: true,
       });
       googletag.enableServices();
     });
@@ -157,8 +146,6 @@
         gtag('config', 'G-BFYQB388T1');
 
 
-        // ADS 广告（Google AdSense）全局脚本：
-        // 页面 load 后延迟 3 秒加载；具体广告请求由 AdsAdSlot.vue 挂载时 push 触发。
         const adsScript = document.createElement('script');
         adsScript.async = true;
         adsScript.defer = true;
@@ -177,23 +164,27 @@
   </script>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
-  <!-- GPT 广告（Google Ad Manager）Out-of-page 展示代码
-  加载方式：Anchor、左右侧边栏和 Interstitial 保持原有 display() 调用，不使用 Banner 的手动 refresh()。
-  -->
+  <!-- GPT Out-of-page 展示代码 -->
   <script>
     googletag.cmd.push(function () {
+      var oopSlots = [];
       if (window.__gptAnchorSlot) {
         googletag.display(window.__gptAnchorSlot);
+        oopSlots.push(window.__gptAnchorSlot);
       }
       if (window.__gptLeftSideRailSlot) {
         googletag.display(window.__gptLeftSideRailSlot);
+        oopSlots.push(window.__gptLeftSideRailSlot);
       }
       if (window.__gptRightSideRailSlot) {
         googletag.display(window.__gptRightSideRailSlot);
+        oopSlots.push(window.__gptRightSideRailSlot);
       }
       if (window.__gptInterstitialSlot) {
         googletag.display(window.__gptInterstitialSlot);
+        oopSlots.push(window.__gptInterstitialSlot);
       }
+      if (oopSlots.length) googletag.pubads().refresh(oopSlots);
     });
   </script>
 

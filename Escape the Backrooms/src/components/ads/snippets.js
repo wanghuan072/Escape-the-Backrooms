@@ -1,5 +1,3 @@
-// 联盟广告配置（当前停用）
-// 这里只保存联盟广告尺寸、key、脚本地址和原生广告容器 ID，不属于 ADS 或 GPT 广告代码。
 export const AD_SNIPPETS = {
   sidebar: {
     atOptions: `atOptions = {
