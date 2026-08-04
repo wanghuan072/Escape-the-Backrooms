@@ -20,7 +20,7 @@
 
     <!-- GPT广告位：banner -->
     <aside class="container ad-container">
-      <GptAdSlot unit="1" />
+      <GptAdSlot />
     </aside>
 
     <section class="article-section">
@@ -63,7 +63,7 @@
 
           <!-- GPT广告位：banner -->
           <aside class="container ad-container inline-ad">
-            <GptAdSlot unit="1" />
+            <GptAdSlot />
           </aside>
 
           <section class="comparison-section">
@@ -179,7 +179,7 @@
 
           <!-- GPT广告位：banner -->
           <aside class="container ad-container side-ad">
-            <GptAdSlot unit="1" />
+            <GptAdSlot />
           </aside>
 
           <section class="side-panel">

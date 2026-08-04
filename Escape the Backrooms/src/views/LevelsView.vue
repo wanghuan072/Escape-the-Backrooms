@@ -10,7 +10,7 @@
     </section>
 <!-- GPT广告位：banner_native（原生横幅） -->
     <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-      <GptAdSlot unit="1" />
+      <GptAdSlot />
     </aside>
 
 <!-- 联盟广告位：banner_native（原生横幅） -->
@@ -46,7 +46,7 @@
           </div>
 <!-- GPT广告位：banner_300（侧边栏300×250） -->
 <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-  <GptAdSlot unit="1" />
+  <GptAdSlot />
 </aside>
 
 <!-- 联盟广告位：banner_300（侧边栏300×250） -->
@@ -108,7 +108,7 @@
     </section>
 <!-- GPT广告位：banner_728（728×90，PC）/300×250（移动） -->
     <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-      <GptAdSlot unit="1" />
+      <GptAdSlot />
     </aside>
 
 <!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->

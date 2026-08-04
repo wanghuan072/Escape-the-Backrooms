@@ -1,24 +1,35 @@
 <script setup>
-import { onMounted } from 'vue'
-import { Gt } from '@/utils/gptAds'
+import { inject, onBeforeUnmount, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { destroyGptBanner, mountGptBanner } from '@/utils/gptAds'
 
 const props = defineProps({
   unit: {
     type: [Number, String],
-    default: 1,
+    default: null,
   },
 })
 
+const route = useRoute()
+const nextBannerUnit = inject('gptNextBannerUnit', () => 1)
 const elementId = `div-gpt-ad-banner-${Math.random().toString(36).slice(2, 11)}`
+let scope
 
 onMounted(() => {
-  Gt(elementId, props.unit)
+  const routeName = String(route.name ?? '')
+  scope = routeName === 'home' || routeName.startsWith('home-') ? 'home' : 'post'
+  const unit = props.unit ?? nextBannerUnit()
+  mountGptBanner(elementId, scope, unit)
+})
+
+onBeforeUnmount(() => {
+  destroyGptBanner(elementId, scope)
 })
 </script>
 
 <template>
   <div class="gpt-ad-slot">
-    <div :id="elementId" class="gpt-ad-inner" style="min-width: 300px; min-height: 250px;" aria-hidden="true"></div>
+    <div :id="elementId" class="gpt-ad-inner" style="min-width: 300px; min-height: 90px;" aria-hidden="true"></div>
   </div>
 </template>
 

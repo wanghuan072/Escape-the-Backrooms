@@ -60,7 +60,7 @@
       </div>
 <!-- GPT广告位：banner_native（原生横幅，每页首个全宽位） -->
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
 
 <!-- 联盟广告位：banner_native（原生横幅，每页首个全宽位） -->
@@ -115,7 +115,7 @@
       </div>
 <!-- GPT广告位：banner_728（728×90，PC）/300×250（移动） -->
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
 
 <!-- 联盟广告位：banner_728（728×90，PC）/300×250（移动） -->
@@ -170,7 +170,7 @@
       </div>
 <!-- GPT广告位：banner_728（728×90） -->
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
 
 <!-- 联盟广告位：banner_728（728×90） -->
@@ -226,7 +226,7 @@
       </div>
 <!-- GPT广告位：banner_728（728×90） -->
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
 
 <!-- 联盟广告位：banner_728（728×90） -->
@@ -287,7 +287,7 @@
       </div>
 <!-- GPT广告位：banner_728（728×90） -->
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
 
 <!-- 联盟广告位：banner_728（728×90） -->
@@ -360,7 +360,7 @@
       </div>
 <!-- GPT广告位：banner_728（728×90） -->
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
 
 <!-- 联盟广告位：banner_728（728×90） -->
@@ -404,7 +404,7 @@
 <!-- GPT广告位：banner_728（728×90，首页 FAQ 下方暂不启用） -->
       <!--
       <aside class="container" style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center">
-        <GptAdSlot unit="1" />
+        <GptAdSlot />
       </aside>
       -->
 

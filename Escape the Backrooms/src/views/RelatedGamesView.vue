@@ -14,7 +14,7 @@
 
     <!-- GPT广告位：banner -->
     <aside class="container ad-container">
-      <GptAdSlot unit="1" />
+      <GptAdSlot />
     </aside>
 
     <section class="featured-related">

@@ -1,9 +1,11 @@
 <script setup>
-import { watch } from 'vue'
+import { computed, provide, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import HomeGptOutOfPageAds from './components/ads/HomeGptOutOfPageAds.vue'
+import PostGptOutOfPageAds from './components/ads/PostGptOutOfPageAds.vue'
 import { useAutoSEO } from './seo/composables.js'
 import { extractLocaleFromPath } from './composables/useLocalizedPath.js'
 import './assets/css/public.css'
@@ -11,8 +13,13 @@ import './assets/css/public.css'
 // 启用自动 SEO
 useAutoSEO()
 
-// GPT banner 轮换（暂时停用，恢复 GPT 广告时取消注释）
-/*
+const route = useRoute()
+const isHomeRoute = computed(() => {
+  const routeName = String(route.name ?? '')
+  return routeName === 'home' || routeName.startsWith('home-')
+})
+
+// GPT banner 在每个页面内按 1 → 2 → 3 循环，切换页面后重新从 1 开始。
 const bannerSeq = ref(0)
 provide('gptNextBannerUnit', () => {
   bannerSeq.value = bannerSeq.value >= 3 ? 1 : bannerSeq.value + 1
@@ -24,10 +31,8 @@ watch(
   () => {
     bannerSeq.value = 0
   },
+  { flush: 'sync' },
 )
-*/
-
-const route = useRoute()
 
 // 更新 HTML lang 属性
 const { locale } = useI18n()
@@ -55,9 +60,11 @@ watch(() => locale.value, () => {
 
 <template>
   <div id="app">
+    <HomeGptOutOfPageAds v-if="isHomeRoute" :key="`home-${route.fullPath}`" />
+    <PostGptOutOfPageAds v-else :key="`post-${route.fullPath}`" />
     <Header />
     <main>
-      <router-view />
+      <router-view :key="route.fullPath" />
     </main>
     <Footer />
   </div>
