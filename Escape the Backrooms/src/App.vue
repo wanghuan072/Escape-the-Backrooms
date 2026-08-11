@@ -1,5 +1,5 @@
 <script setup>
-import { computed, provide, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, provide, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Header from './components/Header.vue'
@@ -14,6 +14,33 @@ import './assets/css/public.css'
 useAutoSEO()
 
 const route = useRoute()
+const mainElement = ref(null)
+let mediaObserver
+
+const optimizeEmbeddedMedia = () => {
+  if (!mainElement.value) return
+
+  mainElement.value.querySelectorAll('.v-html-style img').forEach((image) => {
+    if (!image.hasAttribute('loading')) image.setAttribute('loading', 'lazy')
+    if (!image.hasAttribute('decoding')) image.setAttribute('decoding', 'async')
+  })
+
+  mainElement.value.querySelectorAll('.v-html-style iframe').forEach((frame) => {
+    if (!frame.hasAttribute('loading')) frame.setAttribute('loading', 'lazy')
+  })
+}
+
+onMounted(async () => {
+  await nextTick()
+  optimizeEmbeddedMedia()
+
+  mediaObserver = new MutationObserver(optimizeEmbeddedMedia)
+  mediaObserver.observe(mainElement.value, { childList: true, subtree: true })
+})
+
+onBeforeUnmount(() => {
+  mediaObserver?.disconnect()
+})
 const isHomeRoute = computed(() => {
   const routeName = String(route.name ?? '')
   return routeName === 'home' || routeName.startsWith('home-')
@@ -63,7 +90,7 @@ watch(() => locale.value, () => {
     <HomeGptOutOfPageAds v-if="isHomeRoute" :key="`home-${route.fullPath}`" />
     <PostGptOutOfPageAds v-else :key="`post-${route.fullPath}`" />
     <Header />
-    <main>
+    <main ref="mainElement">
       <router-view :key="route.fullPath" />
     </main>
     <Footer />

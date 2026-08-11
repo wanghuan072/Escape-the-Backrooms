@@ -1,21 +1,9 @@
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+import { addLocalePrefix, extractLocaleFromPath } from '../utils/locales.js'
+import { translateLocalizedPath } from '../utils/localizedRoutes.js'
 
-// 支持的语言列表
-const supportedLocales = ['en', 'de', 'fr', 'es']
-
-/**
- * 从路径中提取语言
- */
-export function extractLocaleFromPath(path) {
-  const pathSegments = path.split('/').filter(Boolean)
-  const firstSegment = pathSegments[0]
-  
-  if (supportedLocales.includes(firstSegment)) {
-    return firstSegment
-  }
-  return 'en' // 默认英文
-}
+export { extractLocaleFromPath } from '../utils/locales.js'
 
 /**
  * 获取本地化路径的 composable
@@ -29,14 +17,7 @@ export function useLocalizedPath() {
     // 这样可以确保即使 locale.value 还没有更新，也能使用正确的语言前缀
     const currentLocale = extractLocaleFromPath(route.path)
     
-    let localizedPath
-    if (currentLocale === 'en') {
-      localizedPath = path
-    } else {
-      localizedPath = `/${currentLocale}${path}`
-    }
-    
-    return localizedPath
+    return addLocalePrefix(path, currentLocale)
   }
   
   // 从当前路由路径中提取语言（更可靠）
@@ -47,6 +28,7 @@ export function useLocalizedPath() {
   return {
     getLocalizedPath,
     getCurrentLocale,
+    getTranslatedPath: translateLocalizedPath,
     locale
   }
 }

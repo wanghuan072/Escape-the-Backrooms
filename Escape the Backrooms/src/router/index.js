@@ -1,20 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import LevelsView from '../views/LevelsView.vue'
-import LevelDetailView from '../views/LevelDetailView.vue'
-import MapsKeysView from '../views/MapsKeysView.vue'
-import MapDetailView from '../views/MapDetailView.vue'
-import CodesSolutionsView from '../views/CodesSolutionsView.vue'
-import RelatedGamesView from '../views/RelatedGamesView.vue'
-import RelatedGameDetailView from '../views/RelatedGameDetailView.vue'
+const HomeView = () => import('../views/HomeView.vue')
+const LevelsView = () => import('../views/LevelsView.vue')
+const LevelDetailView = () => import('../views/LevelDetailView.vue')
+const MapsKeysView = () => import('../views/MapsKeysView.vue')
+const MapDetailView = () => import('../views/MapDetailView.vue')
+const CodesSolutionsView = () => import('../views/CodesSolutionsView.vue')
+const RelatedGamesView = () => import('../views/RelatedGamesView.vue')
+const RelatedGameDetailView = () => import('../views/RelatedGameDetailView.vue')
 // import WikiView from '../views/wiki/WikiView.vue'
 // import EntitiesView from '../views/wiki/EntitiesView.vue'
 // import EntityDetailView from '../views/wiki/EntityDetailView.vue'
 // import GuidesView from '../views/GuidesView.vue'
 // import GuideDetailView from '../views/GuideDetailView.vue'
-import SearchView from '../views/SearchView.vue'
-import i18n from '../i18n'
-import { extractLocaleFromPath } from '../composables/useLocalizedPath.js'
+const SearchView = () => import('../views/SearchView.vue')
+import i18n, { loadLocaleMessages } from '../i18n'
+import { extractLocaleFromPath } from '../utils/locales.js'
 
 // 支持的语言列表
 const supportedLocales = ['en', 'de', 'fr', 'es']
@@ -191,6 +191,15 @@ baseRoutes.forEach(route => {
   })
 })
 
+routes.push({
+  path: '/:pathMatch(.*)*',
+  name: 'not-found',
+  component: () => import('../views/NotFoundView.vue'),
+  meta: {
+    noIndex: true,
+  },
+})
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
@@ -200,14 +209,14 @@ const router = createRouter({
 })
 
 // 路由守卫：从 URL 中提取语言并设置 i18n
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to) => {
   // 从路径中提取语言
   const locale = extractLocaleFromPath(to.path)
-  
+
+  await loadLocaleMessages(locale)
+
   // 强制设置 i18n 语言（确保在组件加载前设置）
   i18n.global.locale.value = locale
-  
-  next()
 })
 
 export default router

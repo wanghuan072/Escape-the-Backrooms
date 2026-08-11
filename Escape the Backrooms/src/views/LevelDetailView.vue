@@ -170,7 +170,7 @@
                 <a
                   v-for="featured in level.featured"
                   :key="featured.title"
-                  :href="getLocalizedPath(`/levels/${featured.addressBar}`)"
+                  :href="getFeaturedHref(featured)"
                   class="featured-item"
                 >
                   <img
@@ -222,11 +222,13 @@ import { useI18n } from 'vue-i18n'
 import { useLevelsData } from '../composables/useLevelsData.js'
 import { useSEO } from '../seo/composables.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+import { getLocalizedRouteAlternates } from '../utils/localizedRoutes.js'
+import { updateHreflangTags } from '../seo/hreflang.js'
 
 const route = useRoute()
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
-const { loadData, findByAddress, getAdjacentLevels } = useLevelsData()
+const { loadData, findByAddress, resolveAddress, getAdjacentLevels } = useLevelsData()
 const { setSEO, generateStructuredData, addStructuredData } = useSEO()
 
 const level = computed(() => {
@@ -242,7 +244,14 @@ const adjacentLevels = computed(() => {
 const prevLevel = computed(() => adjacentLevels.value.prev)
 const nextLevel = computed(() => adjacentLevels.value.next)
 
-const updateSEO = () => {
+const getFeaturedHref = (featured) => {
+  const address = featured?.addressBar || ''
+  if (address.startsWith('#')) return `${route.path}${address}`
+
+  return getLocalizedPath(`/levels/${resolveAddress(address, featured?.title)}`)
+}
+
+const updateSEO = async () => {
   if (level.value && level.value.seo) {
     const seoData = {
       title: level.value.seo.title || level.value.title,
@@ -256,6 +265,7 @@ const updateSEO = () => {
     // 添加结构化数据
     const structuredData = generateStructuredData('Article')
     addStructuredData(structuredData)
+    updateHreflangTags(await getLocalizedRouteAlternates(route.path))
   }
 }
 
@@ -263,7 +273,7 @@ const updateSEO = () => {
 const initLevel = async () => {
   await nextTick() // 等待路由守卫设置语言
   await loadData()
-  updateSEO()
+  await updateSEO()
 }
 
 onMounted(async () => {
@@ -282,7 +292,7 @@ watch(() => route.fullPath, async (newPath, oldPath) => {
 watch(() => route.params.slug, async () => {
   await nextTick() // 等待路由守卫设置语言
   await loadData()
-  updateSEO()
+    await updateSEO()
 })
 
 // 监听语言变化，重新加载数据

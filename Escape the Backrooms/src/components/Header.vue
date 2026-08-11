@@ -95,7 +95,7 @@ import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const router = useRouter()
 const route = useRoute()
-const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
+const { getLocalizedPath, getCurrentLocale, getTranslatedPath } = useLocalizedPath()
 
 const searchQuery = ref('')
 const isMobileMenuOpen = ref(false)
@@ -165,29 +165,14 @@ const toggleLangDropdown = () => {
 }
 
 // 选择语言
-const selectLanguage = (newLocale) => {
+const selectLanguage = async (newLocale) => {
   if (newLocale === currentLocale.value) {
     isLangDropdownOpen.value = false
     return
   }
   
-  // 获取当前路径（去除语言前缀）
-  let currentPath = route.path
-  const pathSegments = currentPath.split('/').filter(Boolean)
-  
-  // 如果当前路径有语言前缀，移除它
-  if (pathSegments.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathSegments[0])) {
-    pathSegments.shift()
-    currentPath = '/' + pathSegments.join('/')
-  }
-  
-  // 如果新语言是英文，直接跳转（无前缀）
-  if (newLocale === 'en') {
-    router.push(currentPath || '/')
-  } else {
-    // 其他语言添加前缀
-    router.push(`/${newLocale}${currentPath || '/'}`)
-  }
+  const translatedPath = await getTranslatedPath(route.path, newLocale)
+  await router.push({ path: translatedPath, query: route.query, hash: route.hash })
   
   isLangDropdownOpen.value = false
   closeMobileMenu()

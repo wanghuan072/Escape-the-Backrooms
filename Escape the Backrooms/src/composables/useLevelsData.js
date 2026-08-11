@@ -33,6 +33,17 @@ export function useLevelsData() {
   const { locale } = useI18n()
   const data = ref([])
   const loading = ref(false)
+  const addressAliases = ref(new Map())
+
+  const normalizeAddress = (address) => String(address || '')
+    .trim()
+    .toLowerCase()
+    .replace(/-walkthrough$/i, '')
+
+  const extractLevelKey = (value) => {
+    const match = String(value || '').match(/(?:level|niveau|nivel)[-\s]*([0-9]+(?:[.-][0-9]+)?|[!b]+)/i)
+    return match?.[1]?.replace('-', '.')?.toLowerCase() || null
+  }
 
   /**
    * 加载数据
@@ -41,7 +52,19 @@ export function useLevelsData() {
     const currentLang = lang || locale.value || 'en'
     loading.value = true
     try {
-      data.value = await loadLevelsData(currentLang)
+      const localizedData = await loadLevelsData(currentLang)
+      data.value = localizedData
+      addressAliases.value = new Map()
+
+      if (currentLang !== 'en') {
+        const englishData = await loadLevelsData('en')
+        englishData.forEach((englishLevel) => {
+          const localizedLevel = localizedData.find((item) => item.id === englishLevel.id)
+          if (englishLevel.addressBar && localizedLevel?.addressBar) {
+            addressAliases.value.set(englishLevel.addressBar, localizedLevel.addressBar)
+          }
+        })
+      }
     } catch (error) {
       console.error('Error loading levels data:', error)
       data.value = []
@@ -55,6 +78,37 @@ export function useLevelsData() {
    */
   const findByAddress = (addressBar) => {
     return data.value.find(level => level.addressBar === addressBar)
+  }
+
+  /**
+   * Resolve legacy recommendation slugs without mutating localized content data.
+   */
+  const resolveAddress = (addressBar, title = '') => {
+    if (!addressBar || addressBar.startsWith('#')) return addressBar
+
+    const aliasedAddress = addressAliases.value.get(addressBar)
+    if (aliasedAddress) return aliasedAddress
+
+    const normalizedAddress = normalizeAddress(addressBar)
+    const normalizedAlias = [...addressAliases.value.entries()]
+      .find(([sourceAddress]) => normalizeAddress(sourceAddress) === normalizedAddress)?.[1]
+    if (normalizedAlias) return normalizedAlias
+
+    const directMatch = data.value.find(
+      (item) => normalizeAddress(item.addressBar) === normalizedAddress,
+    )
+    if (directMatch) return directMatch.addressBar
+
+    const levelKey = extractLevelKey(addressBar) || extractLevelKey(title)
+    if (levelKey) {
+      const identityMatch = data.value.find((item) => {
+        const identityValues = [item.addressBar, item.title, item.pageTitle, item.sideBarInfo?.name]
+        return identityValues.some((value) => extractLevelKey(value) === levelKey)
+      })
+      if (identityMatch) return identityMatch.addressBar
+    }
+
+    return addressBar
   }
 
   /**
@@ -104,6 +158,7 @@ export function useLevelsData() {
     loading,
     loadData,
     findByAddress,
+    resolveAddress,
     findById,
     getHomeLevels,
     getGroupedLevels,

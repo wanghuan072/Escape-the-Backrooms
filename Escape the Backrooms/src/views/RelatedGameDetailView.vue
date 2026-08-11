@@ -233,7 +233,8 @@ import { useRoute } from 'vue-router'
 import { findRelatedGameByAddress, getRelatedGamesPageCopy } from '../data/relatedGames.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 import { useSEO } from '../seo/composables.js'
-import { seoConfig } from '../seo/config.js'
+import { getLocalizedRouteAlternates } from '../utils/localizedRoutes.js'
+import { updateHreflangTags } from '../seo/hreflang.js'
 
 const route = useRoute()
 const { setSEO, generateStructuredData, addStructuredData } = useSEO()
@@ -243,33 +244,7 @@ const currentLocale = computed(() => getCurrentLocale())
 const pageCopy = computed(() => getRelatedGamesPageCopy(currentLocale.value))
 const game = computed(() => findRelatedGameByAddress(route.params.slug, currentLocale.value))
 
-const addDetailHreflangTags = () => {
-  if (typeof document === 'undefined' || !game.value) return
-
-  const supportedLocales = ['en', 'de', 'fr', 'es']
-  const basePath = `/backrooms-games/${game.value.addressBar}`
-
-  document
-    .querySelectorAll('link[rel="alternate"][hreflang]')
-    .forEach((link) => link.remove())
-
-  supportedLocales.forEach((locale) => {
-    const localizedPath = locale === 'en' ? basePath : `/${locale}${basePath}`
-    const link = document.createElement('link')
-    link.setAttribute('rel', 'alternate')
-    link.setAttribute('hreflang', locale)
-    link.setAttribute('href', `${seoConfig.fullDomain}${localizedPath}`)
-    document.head.appendChild(link)
-  })
-
-  const defaultLink = document.createElement('link')
-  defaultLink.setAttribute('rel', 'alternate')
-  defaultLink.setAttribute('hreflang', 'x-default')
-  defaultLink.setAttribute('href', `${seoConfig.fullDomain}${basePath}`)
-  document.head.appendChild(defaultLink)
-}
-
-const updateSEO = () => {
+const updateSEO = async () => {
   if (!game.value) return
 
   setSEO({
@@ -293,7 +268,7 @@ const updateSEO = () => {
     image: game.value.imageUrl,
   })
 
-  addDetailHreflangTags()
+  updateHreflangTags(await getLocalizedRouteAlternates(route.path))
 }
 
 onMounted(updateSEO)

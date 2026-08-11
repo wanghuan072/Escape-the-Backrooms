@@ -139,8 +139,6 @@ export function useSEO() {
         '@type': 'Organization',
         name: 'Escape the Backrooms Community'
       }
-      baseData.datePublished = new Date().toISOString()
-      baseData.dateModified = new Date().toISOString()
     }
 
     return baseData
@@ -203,6 +201,15 @@ export function useAutoSEO() {
   // 处理SEO的函数
   const handleSEO = async () => {
     const routeName = route.name
+
+    if (typeof document !== 'undefined') {
+      const robots = document.querySelector('meta[name="robots"]')
+      if (robots) {
+        robots.setAttribute('content', route.meta?.noIndex ? 'noindex, nofollow' : 'index, follow')
+      }
+    }
+
+    if (route.meta?.noIndex) return
     
     // 从路由名称中提取基础名称（移除语言后缀，如 'home-de' -> 'home', 'levels-de' -> 'levels'）
     let baseRouteName = routeName

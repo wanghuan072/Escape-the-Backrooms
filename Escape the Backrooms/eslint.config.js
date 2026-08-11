@@ -10,7 +10,8 @@ export default defineConfig([
     files: ['**/*.{vue,js,mjs,jsx}'],
   },
 
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
+  // Company-provided collection script is maintained outside the app source.
+  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**', 'public/collet-data.js']),
 
   {
     languageOptions: {

@@ -189,6 +189,8 @@ import { useI18n } from 'vue-i18n'
 import { useMapsData } from '../composables/useMapsData.js'
 import { useSEO } from '../seo/composables.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+import { getLocalizedRouteAlternates } from '../utils/localizedRoutes.js'
+import { updateHreflangTags } from '../seo/hreflang.js'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -201,7 +203,7 @@ const map = computed(() => {
   return findByAddress(slug)
 })
 
-const updateSEO = () => {
+const updateSEO = async () => {
   if (map.value && map.value.seo) {
     const seoData = {
       title: map.value.seo.title || map.value.title,
@@ -215,6 +217,7 @@ const updateSEO = () => {
     // 添加结构化数据
     const structuredData = generateStructuredData('Article')
     addStructuredData(structuredData)
+    updateHreflangTags(await getLocalizedRouteAlternates(route.path))
   }
 }
 
@@ -222,7 +225,7 @@ const updateSEO = () => {
 const initMap = async () => {
   await nextTick() // 等待路由守卫设置语言
   await loadData()
-  updateSEO()
+  await updateSEO()
 }
 
 onMounted(async () => {
@@ -241,7 +244,7 @@ watch(() => route.fullPath, async (newPath, oldPath) => {
 watch(() => route.params.slug, async () => {
   await nextTick() // 等待路由守卫设置语言
   await loadData()
-  updateSEO()
+    await updateSEO()
 })
 
 // 监听语言变化，重新加载数据

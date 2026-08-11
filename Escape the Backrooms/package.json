@@ -8,11 +8,14 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-static-pages.js",
     "preview": "vite preview",
-    "lint": "eslint . --fix --cache",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --fix --cache",
     "format": "prettier --write --experimental-cli src/",
-    "generate-sitemap": "node scripts/generate-sitemap.js"
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "validate:data": "node scripts/validate-data.js",
+    "check": "npm run lint && npm run validate:data && npm run build"
   },
   "dependencies": {
     "pinia": "^3.0.4",
