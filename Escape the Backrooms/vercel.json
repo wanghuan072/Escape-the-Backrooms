@@ -1,3 +1,115 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/levels/level-0-the-lobby-walkthrough",
+      "destination": "/levels/level-0-the-lobby-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-0-the-lobby-walkthrough",
+      "destination": "/:locale/levels/level-0-the-lobby-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-1-the-habitable-zone-walkthrough",
+      "destination": "/levels/level-1-the-habitable-zone-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-1-the-habitable-zone-walkthrough",
+      "destination": "/:locale/levels/level-1-the-habitable-zone-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-2-pipe-dreams-walkthrough",
+      "destination": "/levels/level-2-pipe-dreams-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-2-pipe-dreams-walkthrough",
+      "destination": "/:locale/levels/level-2-pipe-dreams-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-3-the-electrical-station-walkthrough",
+      "destination": "/levels/level-3-the-electrical-station-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-3-the-electrical-station-walkthrough",
+      "destination": "/:locale/levels/level-3-the-electrical-station-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-4-the-abandoned-office-walkthrough",
+      "destination": "/levels/level-4-the-abandoned-office-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-4-the-abandoned-office-walkthrough",
+      "destination": "/:locale/levels/level-4-the-abandoned-office-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-5-terror-hotel-walkthrough",
+      "destination": "/levels/level-5-terror-hotel-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-5-terror-hotel-walkthrough",
+      "destination": "/:locale/levels/level-5-terror-hotel-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-5-5-the-beverly-room-walkthrough",
+      "destination": "/levels/level-5-5-the-beverly-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-5-5-the-beverly-room-walkthrough",
+      "destination": "/:locale/levels/level-5-5-the-beverly-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-5-the-boiler-room-walkthrough",
+      "destination": "/levels/level-5-the-boiler-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-5-the-boiler-room-walkthrough",
+      "destination": "/:locale/levels/level-5-the-boiler-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-6-the-pipe-run-walkthrough",
+      "destination": "/levels/level-6-the-pipe-run-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-6-the-pipe-run-walkthrough",
+      "destination": "/:locale/levels/level-6-the-pipe-run-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-fun-the-party-rooms-walkthrough",
+      "destination": "/levels/level-fun-the-party-rooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-fun-the-party-rooms-walkthrough",
+      "destination": "/:locale/levels/level-fun-the-party-rooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-37-the-poolrooms-walkthrough",
+      "destination": "/levels/level-37-the-poolrooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-37-the-poolrooms-walkthrough",
+      "destination": "/:locale/levels/level-37-the-poolrooms-Walkthrough",
+      "statusCode": 301
+    }
+  ]
 }
