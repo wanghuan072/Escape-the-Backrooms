@@ -110,6 +110,181 @@
       "source": "/:locale(de|fr|es)/levels/level-37-the-poolrooms-walkthrough",
       "destination": "/:locale/levels/level-37-the-poolrooms-Walkthrough",
       "statusCode": 301
+    },
+    {
+      "source": "/levels/level-0-the-lobby",
+      "destination": "/levels/level-0-the-lobby-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-0-the-lobby",
+      "destination": "/:locale/levels/level-0-the-lobby-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-1-the-habitable-zone",
+      "destination": "/levels/level-1-the-habitable-zone-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-1-the-habitable-zone",
+      "destination": "/:locale/levels/level-1-the-habitable-zone-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-2-pipe-dreams",
+      "destination": "/levels/level-2-pipe-dreams-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-2-pipe-dreams",
+      "destination": "/:locale/levels/level-2-pipe-dreams-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-3-the-electrical-station",
+      "destination": "/levels/level-3-the-electrical-station-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-3-the-electrical-station",
+      "destination": "/:locale/levels/level-3-the-electrical-station-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-4-the-abandoned-office",
+      "destination": "/levels/level-4-the-abandoned-office-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-4-the-abandoned-office",
+      "destination": "/:locale/levels/level-4-the-abandoned-office-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-5-terror-hotel",
+      "destination": "/levels/level-5-terror-hotel-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-5-terror-hotel",
+      "destination": "/:locale/levels/level-5-terror-hotel-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-5-5-the-beverly-room",
+      "destination": "/levels/level-5-5-the-beverly-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-5-5-the-beverly-room",
+      "destination": "/:locale/levels/level-5-5-the-beverly-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-5-the-boiler-room",
+      "destination": "/levels/level-5-the-boiler-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-5-the-boiler-room",
+      "destination": "/:locale/levels/level-5-the-boiler-room-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-6-the-pipe-run",
+      "destination": "/levels/level-6-the-pipe-run-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-6-the-pipe-run",
+      "destination": "/:locale/levels/level-6-the-pipe-run-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-fun-the-party-rooms",
+      "destination": "/levels/level-fun-the-party-rooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-fun-the-party-rooms",
+      "destination": "/:locale/levels/level-fun-the-party-rooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/levels/level-37-the-poolrooms",
+      "destination": "/levels/level-37-the-poolrooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(de|fr|es)/levels/level-37-the-poolrooms",
+      "destination": "/:locale/levels/level-37-the-poolrooms-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa",
+      "destination": "/fr/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/",
+      "destination": "/fr/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/codes-solutions",
+      "destination": "/fr/codes-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/maps-keys",
+      "destination": "/fr/maps-keys",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/maps-keys/level-9-map",
+      "destination": "/fr/maps-keys/level-9-map",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/levels",
+      "destination": "/fr/levels",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/levels/level-0-the-lobby",
+      "destination": "/fr/levels/level-0-the-lobby-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/levels/level-1-the-habitable-zone-Walkthrough",
+      "destination": "/fr/levels/level-1-the-habitable-zone-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/fa/levels/level-94-motion-walkthrough",
+      "destination": "/fr/levels/level-94-motion-walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/fa/maps-keys/level-1-floor-1-map",
+      "destination": "/fr/maps-keys/level-1-floor-1-map",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/fa/levels/level-4-the-abandoned-office-Walkthrough",
+      "destination": "/fr/levels/level-4-the-abandoned-office-Walkthrough",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/fa/levels/guide-niveau-3999-larcade",
+      "destination": "/es/levels/level-3999-the-arcade-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/fa/levels/level-94-motion-walkthrough",
+      "destination": "/de/levels/level-94-motion-walkthrough",
+      "statusCode": 301
     }
   ]
 }
