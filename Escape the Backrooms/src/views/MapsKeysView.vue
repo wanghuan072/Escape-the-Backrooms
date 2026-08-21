@@ -240,7 +240,7 @@ import { useMapsData } from '../composables/useMapsData.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const { getLocalizedPath } = useLocalizedPath()
-const { loadData } = useMapsData()
+const { data: mapsData, loadData } = useMapsData()
 
 // Load data
 onMounted(async () => {
