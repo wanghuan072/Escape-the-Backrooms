@@ -1,0 +1,308 @@
+/* Codes and solutions page. */
+:global(.codes-solutions-view) {
+  min-height: 100vh;
+}
+
+
+:global(.codes-solutions-view .solutions-content) {
+  padding: 3rem 0;
+}
+
+:global(.codes-solutions-view .level-section) {
+  margin-bottom: 4rem;
+}
+
+:global(.codes-solutions-view .level-title) {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  color: #ffd700;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+:global(.codes-solutions-view .solution-item) {
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+:global(.codes-solutions-view .solution-item:hover) {
+  border-color: rgba(255, 215, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+}
+
+:global(.codes-solutions-view .solution-header) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+:global(.codes-solutions-view .solution-title) {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+  flex: 1;
+  min-width: 200px;
+}
+
+:global(.codes-solutions-view .solution-badge) {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+:global(.codes-solutions-view .solution-badge.type-code) {
+  background: rgba(74, 144, 226, 0.2);
+  color: #4a90e2;
+  border: 1px solid rgba(74, 144, 226, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-key) {
+  background: rgba(243, 198, 35, 0.2);
+  color: #f3c623;
+  border: 1px solid rgba(243, 198, 35, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-color) {
+  background: rgba(255, 87, 34, 0.2);
+  color: #ff5722;
+  border: 1px solid rgba(255, 87, 34, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-wire) {
+  background: rgba(126, 211, 33, 0.2);
+  color: #7ed321;
+  border: 1px solid rgba(126, 211, 33, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-puzzle) {
+  background: rgba(156, 39, 176, 0.2);
+  color: #9c27b0;
+  border: 1px solid rgba(156, 39, 176, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-collect) {
+  background: rgba(255, 152, 0, 0.2);
+  color: #ff9800;
+  border: 1px solid rgba(255, 152, 0, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-count) {
+  background: rgba(0, 188, 212, 0.2);
+  color: #00bcd4;
+  border: 1px solid rgba(0, 188, 212, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-stealth) {
+  background: rgba(158, 158, 158, 0.2);
+  color: #9e9e9e;
+  border: 1px solid rgba(158, 158, 158, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-switch) {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.4);
+}
+
+:global(.codes-solutions-view .solution-badge.type-find) {
+  background: rgba(233, 30, 99, 0.2);
+  color: #e91e63;
+  border: 1px solid rgba(233, 30, 99, 0.4);
+}
+
+:global(.codes-solutions-view .solution-description) {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 1.5rem 0;
+}
+
+:global(.codes-solutions-view .solution-details) {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 215, 0, 0.05);
+  border-left: 3px solid rgba(255, 215, 0, 0.3);
+  border-radius: 4px;
+}
+
+:global(.codes-solutions-view .solution-details h4) {
+  color: #ffd700;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+:global(.codes-solutions-view .solution-details p) {
+  color: #ccc;
+  margin: 0.5rem 0;
+  line-height: 1.7;
+}
+
+:global(.codes-solutions-view .solution-codes) {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+:global(.codes-solutions-view .solution-codes li) {
+  color: #ffd700;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+
+:global(.codes-solutions-view .solution-images) {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+:global(.codes-solutions-view .solution-img) {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+:global(.codes-solutions-view .solution-img:hover) {
+  border-color: rgba(255, 215, 0, 0.5);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+}
+
+/* iPad端 - 1024px */
+@media (max-width: 1024px) {
+  :global(.codes-solutions-view .solution-images) {
+    flex-wrap: wrap;
+  }
+}
+
+/* 移动端 - 768px */
+@media (max-width: 768px) {
+  :global(.codes-solutions-view section) {
+    padding: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .page-hero) {
+    padding: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .page-title) {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  :global(.codes-solutions-view .page-subtitle) {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  :global(.codes-solutions-view .solutions-content) {
+    padding: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .level-section) {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  :global(.codes-solutions-view .level-title) {
+  font-size: 1.3rem;
+    line-height: 1.2;
+  margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  :global(.codes-solutions-view .solution-item) {
+    padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+  :global(.codes-solutions-view .solution-header) {
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.6rem;
+  }
+
+  :global(.codes-solutions-view .solution-title) {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  :global(.codes-solutions-view .solution-badge) {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  :global(.codes-solutions-view .solution-description) {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+  }
+
+  :global(.codes-solutions-view .solution-details) {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .solution-details h4) {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.codes-solutions-view .solution-details p) {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .solution-codes) {
+    margin: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .solution-codes li) {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  :global(.codes-solutions-view .solution-images) {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  :global(.codes-solutions-view .solution-img) {
+    max-width: 100%;
+  }
+}

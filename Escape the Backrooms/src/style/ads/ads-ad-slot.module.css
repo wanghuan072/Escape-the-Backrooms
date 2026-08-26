@@ -1,0 +1,10 @@
+/* AdSense slot. */
+:global(.ads-ad-slot) {
+  width: 100%;
+  height: 90px;
+}
+
+:global(.ads-ad-slot .adsbygoogle) {
+  display: block;
+  height: 90px;
+}

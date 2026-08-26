@@ -1,0 +1,487 @@
+/* Related game detail page. */
+:global(.related-game-detail-view) {
+  min-height: 100vh;
+}
+
+:global(.related-game-detail-view .detail-hero) {
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.94), rgba(28, 22, 7, 0.78)),
+    url('/images/bg.webp') center / cover;
+}
+
+:global(.related-game-detail-view .hero-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 2rem;
+  align-items: center;
+}
+
+:global(.related-game-detail-view .back-link) {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+:global(.related-game-detail-view .back-link:hover) {
+  color: #ffc107;
+}
+
+:global(.related-game-detail-view .section-label) {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 4px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+:global(.related-game-detail-view .intro-panel),
+:global(.related-game-detail-view .media-panel),
+:global(.related-game-detail-view .side-panel),
+:global(.related-game-detail-view .fit-column),
+:global(.related-game-detail-view .tip-item),
+:global(.related-game-detail-view .faq-item) {
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 8px;
+  background: rgba(18, 18, 18, 0.88);
+}
+
+:global(.related-game-detail-view .hero-media) {
+  overflow: hidden;
+  border: 1px solid rgba(255, 215, 0, 0.18);
+  border-radius: 8px;
+  background: rgba(14, 14, 14, 0.86);
+}
+
+:global(.related-game-detail-view .hero-media img) {
+  width: 100%;
+  display: block;
+}
+
+:global(.related-game-detail-view .hero-media figcaption) {
+  padding: 0.65rem 0.85rem;
+  color: #aaa;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+:global(.related-game-detail-view .ad-container) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+:global(.related-game-detail-view .article-section) {
+  padding: 3rem 0;
+}
+
+:global(.related-game-detail-view .article-layout) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+:global(.related-game-detail-view .article-main) {
+  min-width: 0;
+}
+
+:global(.related-game-detail-view .media-panel),
+:global(.related-game-detail-view .intro-panel),
+:global(.related-game-detail-view .analysis-block),
+:global(.related-game-detail-view .comparison-section),
+:global(.related-game-detail-view .fit-section),
+:global(.related-game-detail-view .tips-section),
+:global(.related-game-detail-view .mechanics-section),
+:global(.related-game-detail-view .reference-section),
+:global(.related-game-detail-view .faq-section) {
+  margin-bottom: 2.5rem;
+}
+
+:global(.related-game-detail-view .intro-panel) {
+  padding: 2rem;
+}
+
+:global(.related-game-detail-view .media-panel) {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  overflow: hidden;
+}
+
+:global(.related-game-detail-view .media-image) {
+  min-height: 260px;
+  background: #050505;
+}
+
+:global(.related-game-detail-view .media-image img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+:global(.related-game-detail-view .media-copy) {
+  padding: 1.5rem;
+}
+
+:global(.related-game-detail-view .media-copy h2) {
+  color: #ffd700;
+  font-size: 1.55rem;
+  margin-bottom: 0.75rem;
+}
+
+:global(.related-game-detail-view .media-copy p) {
+  color: #ccc;
+  line-height: 1.75;
+}
+
+:global(.related-game-detail-view .media-actions) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .media-actions a) {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 6px;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+:global(.related-game-detail-view .media-actions a:hover) {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+:global(.related-game-detail-view .intro-panel h2),
+:global(.related-game-detail-view .analysis-block h2),
+:global(.related-game-detail-view .section-heading h2),
+:global(.related-game-detail-view .fit-column h2),
+:global(.related-game-detail-view .tips-section h2),
+:global(.related-game-detail-view .faq-section h2),
+:global(.related-game-detail-view .side-panel h2) {
+  color: #ffd700;
+}
+
+:global(.related-game-detail-view .intro-panel p),
+:global(.related-game-detail-view .analysis-block p),
+:global(.related-game-detail-view .fit-column li),
+:global(.related-game-detail-view .tip-item p),
+:global(.related-game-detail-view .faq-item p),
+:global(.related-game-detail-view .side-panel p),
+:global(.related-game-detail-view .source-note p) {
+  color: #ccc;
+  line-height: 1.75;
+}
+
+:global(.related-game-detail-view .analysis-block) {
+  max-width: 900px;
+}
+
+:global(.related-game-detail-view .analysis-block h2) {
+  font-size: 1.7rem;
+  margin-bottom: 0.85rem;
+}
+
+:global(.related-game-detail-view .analysis-block p + p) {
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .inline-ad) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+:global(.related-game-detail-view .section-heading) {
+  margin-bottom: 1rem;
+}
+
+:global(.related-game-detail-view .comparison-table) {
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(18, 18, 18, 0.88);
+}
+
+:global(.related-game-detail-view .comparison-row) {
+  display: grid;
+  grid-template-columns: 0.75fr repeat(3, 1fr);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.12);
+}
+
+:global(.related-game-detail-view .comparison-row:last-child) {
+  border-bottom: none;
+}
+
+:global(.related-game-detail-view .comparison-row > div) {
+  padding: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+:global(.related-game-detail-view .comparison-head > div) {
+  color: #ffd700;
+  font-weight: 700;
+  background: rgba(255, 215, 0, 0.08);
+}
+
+:global(.related-game-detail-view .aspect-cell),
+:global(.related-game-detail-view .takeaway-cell) {
+  color: #f4df77 !important;
+}
+
+:global(.related-game-detail-view .fit-section) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+:global(.related-game-detail-view .fit-column) {
+  padding: 1.5rem;
+}
+
+:global(.related-game-detail-view .fit-column ul) {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+:global(.related-game-detail-view .fit-column li) {
+  margin-bottom: 0.55rem;
+}
+
+:global(.related-game-detail-view .tips-grid) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .mechanics-list) {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .mechanics-list article) {
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 8px;
+  background: rgba(18, 18, 18, 0.88);
+}
+
+:global(.related-game-detail-view .mechanics-list h3) {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+:global(.related-game-detail-view .mechanics-list p) {
+  color: #ccc;
+  line-height: 1.65;
+}
+
+:global(.related-game-detail-view .reference-grid) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .reference-grid a) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.1rem;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 8px;
+  background: rgba(18, 18, 18, 0.88);
+  color: #ddd;
+  text-decoration: none;
+}
+
+:global(.related-game-detail-view .reference-grid a:hover) {
+  border-color: #ffd700;
+}
+
+:global(.related-game-detail-view .reference-grid strong) {
+  color: #ffd700;
+}
+
+:global(.related-game-detail-view .reference-grid span) {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+:global(.related-game-detail-view .tip-item),
+:global(.related-game-detail-view .faq-item) {
+  padding: 1.25rem;
+}
+
+:global(.related-game-detail-view .tip-item h3),
+:global(.related-game-detail-view .faq-item h3),
+:global(.related-game-detail-view .source-note h3) {
+  color: #ffd700;
+  margin-bottom: 0.6rem;
+}
+
+:global(.related-game-detail-view .faq-item) {
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .article-sidebar) {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+:global(.related-game-detail-view .side-panel) {
+  padding: 1.25rem;
+}
+
+:global(.related-game-detail-view .side-panel dl) {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .side-panel dt) {
+  color: #999;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+:global(.related-game-detail-view .side-panel dd) {
+  color: #fff;
+  line-height: 1.45;
+}
+
+:global(.related-game-detail-view .source-note) {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 215, 0, 0.12);
+}
+
+:global(.related-game-detail-view .source-note:first-of-type) {
+  border-top: none;
+  margin-top: 0;
+}
+
+:global(.related-game-detail-view .source-note a),
+:global(.related-game-detail-view .official-link) {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+:global(.related-game-detail-view .official-link) {
+  display: inline-flex;
+  margin-top: 1rem;
+}
+
+:global(.related-game-detail-view .side-image) {
+  width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0;
+  display: block;
+}
+
+:global(.related-game-detail-view .not-found) {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+:global(.related-game-detail-view .not-found h1) {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1100px) {
+  :global(.related-game-detail-view .hero-layout),
+  :global(.related-game-detail-view .article-layout) {
+    grid-template-columns: 1fr;
+  }
+
+  :global(.related-game-detail-view .article-sidebar) {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  :global(.related-game-detail-view .comparison-table) {
+    display: grid;
+    gap: 1rem;
+    border: none;
+    background: transparent;
+  }
+
+  :global(.related-game-detail-view .comparison-row),
+  :global(.related-game-detail-view .comparison-head) {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 8px;
+    background: rgba(18, 18, 18, 0.88);
+    overflow: hidden;
+  }
+
+  :global(.related-game-detail-view .comparison-head) {
+    display: none;
+  }
+
+  :global(.related-game-detail-view .fit-section),
+  :global(.related-game-detail-view .tips-grid),
+  :global(.related-game-detail-view .reference-grid),
+  :global(.related-game-detail-view .media-panel) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.related-game-detail-view .page-hero),
+  :global(.related-game-detail-view .article-section) {
+    padding: 1rem 0;
+  }
+
+  :global(.related-game-detail-view .intro-panel),
+  :global(.related-game-detail-view .media-copy),
+  :global(.related-game-detail-view .fit-column),
+  :global(.related-game-detail-view .tip-item),
+  :global(.related-game-detail-view .mechanics-list article),
+  :global(.related-game-detail-view .faq-item),
+  :global(.related-game-detail-view .side-panel) {
+    padding: 0.75rem;
+  }
+
+  :global(.related-game-detail-view .analysis-block h2),
+  :global(.related-game-detail-view .intro-panel h2),
+  :global(.related-game-detail-view .tips-section h2),
+  :global(.related-game-detail-view .faq-section h2) {
+    font-size: 1.25rem;
+  }
+
+  :global(.related-game-detail-view .intro-panel p),
+  :global(.related-game-detail-view .media-copy p),
+  :global(.related-game-detail-view .analysis-block p),
+  :global(.related-game-detail-view .comparison-row > div),
+  :global(.related-game-detail-view .fit-column li),
+  :global(.related-game-detail-view .tip-item p),
+  :global(.related-game-detail-view .mechanics-list p),
+  :global(.related-game-detail-view .faq-item p),
+  :global(.related-game-detail-view .side-panel p),
+  :global(.related-game-detail-view .source-note p),
+  :global(.related-game-detail-view .reference-grid span) {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+}

@@ -1,28 +1,27 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
-import globals from 'globals'
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import nextVitals from 'eslint-config-next/core-web-vitals'
+import nextTypeScript from 'eslint-config-next/typescript'
 
 export default defineConfig([
+  ...nextVitals,
+  ...nextTypeScript,
   {
-    name: 'app/files-to-lint',
-    files: ['**/*.{vue,js,mjs,jsx}'],
-  },
-
-  // Company-provided collection script is maintained outside the app source.
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**', 'public/collet-data.js']),
-
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
+    rules: {
+      '@next/next/no-img-element': 'off',
+      'import/no-anonymous-default-export': 'off',
     },
   },
-
-  js.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
-
-  skipFormatting,
+  {
+    files: ['src/components/layout/RootDocument.tsx'],
+    rules: {
+      '@next/next/no-head-element': 'off',
+      '@next/next/no-sync-scripts': 'off',
+    },
+  },
+  globalIgnores([
+    '.next/**',
+    'coverage/**',
+    'next-env.d.ts',
+    'public/collet-data.js',
+  ]),
 ])

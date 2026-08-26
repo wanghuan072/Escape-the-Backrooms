@@ -1,0 +1,21 @@
+# Local dependencies and generated output
+node_modules
+.next
+out
+build
+dist
+coverage
+
+# Local configuration and caches
+.env*
+.vercel
+.vscode
+.idea
+.cursor
+*.log
+*.tsbuildinfo
+.eslintcache
+
+# Repository-only documentation and audits
+docs
+scripts/audit
