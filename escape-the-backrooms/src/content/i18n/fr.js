@@ -197,8 +197,7 @@ export default {
         },
         sidebar: {
             difficulty: 'Difficulté',
-            objectives: 'Objectifs',
-            featuredTitle: 'Niveaux Vedettes'
+            objectives: 'Objectifs'
         },
         navigation: {
             previous: 'Précédent',

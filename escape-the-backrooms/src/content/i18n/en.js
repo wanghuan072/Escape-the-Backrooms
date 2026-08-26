@@ -197,8 +197,7 @@ export default {
     },
     sidebar: {
       difficulty: 'Difficulty',
-      objectives: 'Objectives',
-      featuredTitle: 'Featured Levels'
+      objectives: 'Objectives'
     },
     navigation: {
       previous: 'Previous',

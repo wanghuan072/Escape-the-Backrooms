@@ -1,5 +1,5 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
-import { getLevels, resolveLevelAddress } from '@/lib/data/levels'
+import { getLevels } from '@/lib/data/levels'
 import { localizedPath, translate } from '@/lib/i18n/messages'
 import { siteConfig } from '@/config/site'
 import { JsonLd, pageJsonLd } from '@/seo/json-ld'
@@ -13,10 +13,6 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
   const index = allLevels.findIndex((entry) => entry.id === level.id)
   const previous = index > 0 ? allLevels[index - 1] : undefined
   const next = index >= 0 && index < allLevels.length - 1 ? allLevels[index + 1] : undefined
-  const featuredHref = (featured: NonNullable<LevelEntry['featured']>[number]) => featured.addressBar.startsWith('#')
-    ? `${localizedPath(`/levels/${level.addressBar}`, locale)}${featured.addressBar}`
-    : localizedPath(`/levels/${resolveLevelAddress(locale, featured.addressBar, featured.title)}`, locale)
-
   return (
     <>
     <JsonLd data={pageJsonLd(level.seo.title || level.title, level.seo.description || level.description, `${siteConfig.url}${localizedPath(`/levels/${level.addressBar}`, locale)}`, 'Article')} />
@@ -37,8 +33,6 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
           <div className="image-card"><div className="image-wrapper">{level.imageUrl ? <img src={level.imageUrl} alt={level.imageAlt || level.title} className="level-image" loading="lazy" /> : <div className="level-image placeholder">{level.title}</div>}</div></div>
           <AdPlacement />
           {level.sideBarInfo && <div className="info-card">{level.sideBarInfo.name && <div className="info-header"><h3 className="info-title">{level.sideBarInfo.name}</h3></div>}<div className="info-content">{level.sideBarInfo.difficulty && <div className="info-row"><div className="info-label">{translate(locale, 'levelDetailPage.sidebar.difficulty')}</div><div className="info-value-text">{level.sideBarInfo.difficulty}</div></div>}{level.sideBarInfo.objectives && <div className="info-row"><div className="info-label">{translate(locale, 'levelDetailPage.sidebar.objectives')}</div><div className="info-value-text">{level.sideBarInfo.objectives}</div></div>}</div></div>}
-          <AdPlacement />
-          {level.featured && level.featured.length > 0 && <div className="info-card"><div className="info-header"><h3 className="info-title">{translate(locale, 'levelDetailPage.sidebar.featuredTitle')}</h3></div><div className="featured-levels">{level.featured.map((featured) => <a key={featured.title} href={featuredHref(featured)} className="featured-item">{featured.imageUrl && <img src={featured.imageUrl} alt={featured.title} className="featured-image" loading="lazy" />}<div className="featured-info"><div className="featured-title">{featured.title}</div>{featured.description && <div className="featured-desc">{featured.description}</div>}</div></a>)}</div></div>}
           <AdPlacement />
         </aside>
       </div></div></section>

@@ -50,7 +50,9 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
 export function SiteBody({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
     <>
+      {/* Temporarily disabled:
       <script dangerouslySetInnerHTML={{ __html: "window.localStorage.removeItem('__lsv__');" }} />
+      */}
       <AdRuntime>
         <div id="app">
           <SiteHeader locale={locale} searchPlaceholder={translate(locale, 'searchPage.search.placeholder')} />

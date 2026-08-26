@@ -197,8 +197,7 @@ export default {
         },
         "sidebar": {
             "difficulty": "Schwierigkeit",
-            "objectives": "Ziele",
-            "featuredTitle": "Hervorgehobene Level"
+            "objectives": "Ziele"
         },
         "navigation": {
             "previous": "Vorheriges",
