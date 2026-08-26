@@ -108,7 +108,7 @@ if (localStorageOccurrences !== 1) {
 const referencedImages = new Set()
 for (const filePath of sourceFiles) {
   const text = fs.readFileSync(filePath, 'utf8')
-  for (const match of text.matchAll(/\/images\/[^\s"'`()<>]+/g)) {
+  for (const match of text.matchAll(/\/images\/[^\s"'\\`()<>]+/g)) {
     const reference = match[0].split(/[?#]/)[0]
     referencedImages.add(reference)
     const publicPath = path.join(rootDir, 'public', reference.replace(/^\//, ''))
