@@ -2,26 +2,15 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
-import { localizedRouteMap } from '@/config/localized-routes.generated'
 import { languages, navigationLabels } from '@/config/navigation'
 import { localizedPath } from '@/lib/i18n/messages'
+import { getLocalizedPath } from '@/lib/routes/localized-path'
 import type { Locale } from '@/types/locale'
 import '@/style/navigation/site-header.module.css'
 
 interface SiteHeaderProps {
   locale: Locale
   searchPlaceholder: string
-}
-
-function stripLocale(pathname: string): string {
-  const stripped = pathname.replace(/^\/(de|fr|es)(?=\/|$)/, '')
-  return stripped || '/'
-}
-
-function translatedPath(pathname: string, locale: Locale): string {
-  const detailTranslation = localizedRouteMap[pathname]?.[locale]
-  if (detailTranslation) return detailTranslation
-  return localizedPath(stripLocale(pathname), locale)
 }
 
 export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
@@ -56,7 +45,7 @@ export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
       return
     }
     const suffix = `${window.location.search}${window.location.hash}`
-    router.push(`${translatedPath(pathname, targetLocale)}${suffix}`)
+    router.push(`${getLocalizedPath(pathname, targetLocale)}${suffix}`)
     setLanguageOpen(false)
     setMobileMenuOpen(false)
   }

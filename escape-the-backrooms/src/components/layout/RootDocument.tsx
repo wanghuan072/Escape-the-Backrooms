@@ -1,7 +1,7 @@
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteHeader } from '@/components/navigation/SiteHeader'
 import { AdRuntime } from '@/components/ads/GptRuntime'
-import { MediaOptimizer } from '@/components/content/MediaOptimizer'
+import Script from 'next/script'
 import { JsonLd, websiteJsonLd } from '@/seo/json-ld'
 import { translate } from '@/lib/i18n/messages'
 import type { Locale } from '@/types/locale'
@@ -50,18 +50,20 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
 export function SiteBody({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
     <>
-      {/* Temporarily disabled:
-      <script dangerouslySetInnerHTML={{ __html: "window.localStorage.removeItem('__lsv__');" }} />
-      */}
       <AdRuntime>
         <div id="app">
           <SiteHeader locale={locale} searchPlaceholder={translate(locale, 'searchPage.search.placeholder')} />
           <main>{children}</main>
           <SiteFooter locale={locale} />
         </div>
-        <MediaOptimizer />
       </AdRuntime>
-      <script src="/collet-data.js" />
+      {/* Global browser scripts — the Next.js equivalent of scripts at the end of Vue index.html. */}
+      {/* To enable the legacy cleanup again, remove this JSX comment wrapper:
+      <Script id="legacy-lsv-cleanup" strategy="afterInteractive">
+        {"window.localStorage.removeItem('__lsv__');"}
+      </Script>
+      */}
+      <Script src="/collet-data.js" strategy="afterInteractive" />
     </>
   )
 }

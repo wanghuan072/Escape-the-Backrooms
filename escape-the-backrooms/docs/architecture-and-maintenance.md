@@ -19,7 +19,7 @@ The site uses Next.js App Router, React, and TypeScript.
 - `src/components`: UI shared by multiple page areas.
 - `src/style`: all authored CSS, mirroring the ownership structure under `page` and `components`.
 - `src/types`: domain contracts split into levels, maps, entities, related games, locale, and SEO.
-- `src/lib`: domain queries, localization, rich-HTML transforms, and route helpers.
+- `src/lib`: domain queries, localization, rich-HTML transforms, and route helpers. Client components use the small route helper rather than carrying route-selection logic themselves.
 - `src/config`: stable site, navigation, advertising, and generated localized-route configuration.
 - `src/seo`: shared Metadata and JSON-LD behavior.
 - `scripts/data`: content-derived route and sitemap generators.
@@ -52,7 +52,7 @@ Do not edit these files directly:
 
 `npm run predev` and `npm run prebuild` run both route generators:
 
-1. `scripts/data/generate-localized-routes.js` builds cross-locale detail-page mappings.
+1. `scripts/data/generate-localized-routes.js` builds the compact detail-route lookup consumed by `src/lib/routes/localized-path.ts`; this keeps localized content collections out of the header's browser bundle.
 2. `scripts/data/generate-next-routes.js` writes thin App Router entry files.
 
 Run `npm run generate-sitemap` after a deliberate URL or content inventory change. The sitemap cache compares content fingerprints: unchanged URLs preserve their existing `lastmod`, while new or changed URLs receive the current date.
@@ -73,7 +73,7 @@ Unknown URLs keep the requested browser address and are handled by App Router ca
 
 ## Preserved integrations
 
-`public/collet-data.js` is company-managed and must not be reformatted or edited as part of application work. The root document loads it from `/collet-data.js`. The root document also contains exactly one executable `window.localStorage.removeItem('__lsv__');` statement.
+`public/collet-data.js` is company-managed and must not be reformatted or edited as part of application work. `src/components/layout/RootDocument.tsx` is the site-wide HTML shell; its `Global browser scripts` block is the equivalent of placing scripts at the end of Vue's `index.html` body. It uses Next.js `next/script` to load `/collet-data.js`; the legacy `window.localStorage.removeItem('__lsv__');` statement is intentionally retained there as a JSX comment and must stay disabled until it is explicitly re-enabled.
 
 Advertising identifiers and behavior live in `src/config/ads.ts` and `src/components/ads`. Preserve their unit paths, delayed loading, page scope, and banner sequence unless an advertising change is explicitly requested.
 
