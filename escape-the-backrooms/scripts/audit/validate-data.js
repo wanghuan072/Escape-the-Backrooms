@@ -135,6 +135,53 @@ async function main() {
     }
   }
 
+  const relationsModule = await import('../../src/content/map-level-relations.js')
+  const mapLevelRelations = relationsModule.mapLevelRelations || {}
+  const englishMapIds = new Set(data.maps.en.map((entry) => String(entry.id)))
+  const englishLevelIds = new Set(data.levels.en.map((entry) => String(entry.id)))
+
+  for (const mapId of englishMapIds) {
+    const relation = mapLevelRelations[mapId]
+    const relatedLevelIds = relation?.levelIds
+    if (!Array.isArray(relatedLevelIds) || relatedLevelIds.length === 0) {
+      addError(`map-level-relations[${mapId}]`, 'map is missing related level IDs')
+      continue
+    }
+    if (!Number.isInteger(relation.levelLinkParagraph) || relation.levelLinkParagraph < 1) {
+      addError(`map-level-relations[${mapId}]`, 'level link paragraph must be a positive integer')
+    }
+    if (!Number.isInteger(relation.mapLinkParagraph) || relation.mapLinkParagraph < 1) {
+      addError(`map-level-relations[${mapId}]`, 'map link paragraph must be a positive integer')
+    }
+    for (const levelId of relatedLevelIds) {
+      if (!englishLevelIds.has(String(levelId))) {
+        addError(`map-level-relations[${mapId}]`, `unknown level ID ${levelId}`)
+      }
+    }
+  }
+
+  for (const locale of locales) {
+    for (const map of data.maps[locale]) {
+      const relation = mapLevelRelations[map.id]
+      if (!relation) continue
+      const mapParagraphCount = (map.detailsHtml.match(/<\/p>/gi) || []).length
+      if (relation.mapLinkParagraph > mapParagraphCount) {
+        addError(`maps.${locale}[${map.id}]`, 'map link paragraph does not exist')
+      }
+      for (const levelId of relation.levelIds) {
+        const level = data.levels[locale].find((entry) => String(entry.id) === String(levelId))
+        const levelParagraphCount = (level?.detailsHtml.match(/<\/p>/gi) || []).length
+        if (!level || relation.levelLinkParagraph > levelParagraphCount) {
+          addError(`levels.${locale}[${levelId}]`, `map ${map.id} link paragraph does not exist`)
+        }
+      }
+    }
+  }
+
+  for (const mapId of Object.keys(mapLevelRelations)) {
+    if (!englishMapIds.has(mapId)) addError(`map-level-relations[${mapId}]`, 'unknown map ID')
+  }
+
   for (const locale of locales) {
     data.levels[locale].forEach((level) => {
       level.featured?.forEach((featured) => {

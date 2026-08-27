@@ -1,9 +1,12 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
 import { getLevels } from '@/lib/data/levels'
+import { getMapLevelRelation, getMapsForLevel } from '@/lib/data/map-level-relations'
+import { RelatedContentLinks } from '@/components/content/RelatedContentLinks'
 import { localizedPath, translate } from '@/lib/i18n/messages'
 import { siteConfig } from '@/config/site'
 import { JsonLd, pageJsonLd } from '@/seo/json-ld'
 import { optimizeRichHtml } from '@/lib/html/media'
+import { addContextualLinks } from '@/lib/html/contextual-links'
 import type { LevelEntry } from '@/types/level'
 import type { Locale } from '@/types/locale'
 import '@/style/page/levels/level-detail-page.module.css'
@@ -13,6 +16,17 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
   const index = allLevels.findIndex((entry) => entry.id === level.id)
   const previous = index > 0 ? allLevels[index - 1] : undefined
   const next = index >= 0 && index < allLevels.length - 1 ? allLevels[index + 1] : undefined
+  const relatedMaps = getMapsForLevel(locale, level.id)
+  const levelHtml = addContextualLinks(level.detailsHtml, relatedMaps.flatMap((map) => {
+    const relation = getMapLevelRelation(map.id)
+    if (!relation) return []
+    return [{
+      paragraph: relation.levelLinkParagraph,
+      lead: translate(locale, 'levelDetailPage.inlineMapLink'),
+      href: localizedPath(`/maps-keys/${map.addressBar}`, locale),
+      label: map.title,
+    }]
+  }))
   return (
     <>
     <JsonLd data={pageJsonLd(level.seo.title || level.title, level.seo.description || level.description, `${siteConfig.url}${localizedPath(`/levels/${level.addressBar}`, locale)}`, 'Article')} />
@@ -21,8 +35,19 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
       <AdPlacement />
       <section className="detail-content"><div className="container"><div className="content-layout">
         <main className="main-content">
-          <div className="content-body v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(level.detailsHtml) }} />
+          <div className="content-body v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(levelHtml) }} />
           <AdPlacement />
+          <RelatedContentLinks
+            title={translate(locale, 'levelDetailPage.relatedMaps.title')}
+            actionLabel={translate(locale, 'levelDetailPage.relatedMaps.action')}
+            links={relatedMaps.map((map) => ({
+              href: localizedPath(`/maps-keys/${map.addressBar}`, locale),
+              title: map.title,
+              description: map.description,
+              imageUrl: map.imageUrl,
+              imageAlt: map.imageAlt,
+            }))}
+          />
           {(previous || next) && <div className="nav-links">
             {previous && <a href={localizedPath(`/levels/${previous.addressBar}`, locale)} className="nav-link prev-link"><span className="nav-arrow">←</span><div className="nav-content"><span className="nav-label">{translate(locale, 'levelDetailPage.navigation.previous')}</span><span className="nav-title">{previous.title}</span></div></a>}
             {next && <a href={localizedPath(`/levels/${next.addressBar}`, locale)} className="nav-link next-link"><div className="nav-content"><span className="nav-label">{translate(locale, 'levelDetailPage.navigation.next')}</span><span className="nav-title">{next.title}</span></div><span className="nav-arrow">→</span></a>}

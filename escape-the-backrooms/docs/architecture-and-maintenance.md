@@ -38,6 +38,7 @@ The manually maintained content sources are:
 - `src/content/i18n/<locale>.js`
 - `src/content/wiki/entities.js`
 - `src/content/related-games.js`
+- `src/content/map-level-relations.js` (the stable-ID relationships used by map and walkthrough detail-page links)
 
 Keep content values, HTML, image paths, IDs, slugs, and per-entry SEO records unchanged unless a content change is explicitly requested. Pages consume these sources through the domain modules in `src/lib/data`; they should not import the large source collections directly.
 

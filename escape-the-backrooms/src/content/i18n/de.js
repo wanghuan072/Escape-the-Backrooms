@@ -203,6 +203,11 @@ export default {
             "previous": "Vorheriges",
             "next": "Nächstes"
         },
+        "relatedMaps": {
+            "title": "Zugehörige Karten",
+            "action": "Karte ansehen"
+        },
+        "inlineMapLink": "Für eine visuelle Orientierung auf dieser Route siehe",
         "notFound": {
             "title": "Level nicht gefunden",
             "backLink": "Zurück zur Level-Liste"
@@ -278,6 +283,11 @@ export default {
             "category": "Kategorie",
             "tags": "Tags"
         },
+        "relatedWalkthrough": {
+            "title": "Zugehörige Komplettlösung",
+            "action": "Komplettlösung ansehen"
+        },
+        "inlineWalkthroughLink": "Für die vollständige Reihenfolge der Ziele und die Überlebensstrategie folge",
         "notFound": {
             "title": "Karte nicht gefunden",
             "backLink": "Zurück zu Karten & Schlüssel"

@@ -203,6 +203,11 @@ export default {
       previous: 'Previous',
       next: 'Next'
     },
+    relatedMaps: {
+      title: 'Related Maps',
+      action: 'View Map'
+    },
+    inlineMapLink: 'For a visual reference to this route, see',
     notFound: {
       title: 'Level Not Found',
       backLink: 'Back to Levels List'
@@ -278,6 +283,11 @@ export default {
       category: 'Category',
       tags: 'Tags'
     },
+    relatedWalkthrough: {
+      title: 'Related Walkthrough',
+      action: 'View Walkthrough'
+    },
+    inlineWalkthroughLink: 'For the full objective order and survival strategy, follow',
     notFound: {
       title: 'Map Not Found',
       backLink: 'Back to Maps & Keys'

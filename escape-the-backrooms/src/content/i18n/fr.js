@@ -203,6 +203,11 @@ export default {
             previous: 'Précédent',
             next: 'Suivant'
         },
+        relatedMaps: {
+            title: 'Cartes associées',
+            action: 'Voir la carte'
+        },
+        inlineMapLink: 'Pour visualiser cet itinéraire, consultez',
         notFound: {
             title: 'Niveau Non Trouvé',
             backLink: 'Retour à la liste des niveaux'
@@ -278,6 +283,11 @@ export default {
             category: 'Catégorie',
             tags: 'Étiquettes'
         },
+        relatedWalkthrough: {
+            title: 'Guide associé',
+            action: 'Voir le guide'
+        },
+        inlineWalkthroughLink: 'Pour l’ordre complet des objectifs et la stratégie de survie, suivez',
         notFound: {
             title: 'Carte Non Trouvée',
             backLink: 'Retour à Cartes et Clés'

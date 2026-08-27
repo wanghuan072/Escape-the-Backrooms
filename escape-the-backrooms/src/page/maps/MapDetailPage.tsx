@@ -2,12 +2,23 @@ import { AdPlacement } from '@/components/ads/AdPlacement'
 import { localizedPath, translate } from '@/lib/i18n/messages'
 import { siteConfig } from '@/config/site'
 import { JsonLd, pageJsonLd } from '@/seo/json-ld'
+import { addContextualLinks } from '@/lib/html/contextual-links'
 import { optimizeRichHtml } from '@/lib/html/media'
+import { getLevelsForMap, getMapLevelRelation } from '@/lib/data/map-level-relations'
+import { RelatedContentLinks } from '@/components/content/RelatedContentLinks'
 import type { Locale } from '@/types/locale'
 import type { MapEntry } from '@/types/map'
 import '@/style/page/maps/map-detail-page.module.css'
 
 export default function MapDetailPage({ locale, map }: { locale: Locale; map: MapEntry }) {
+  const relatedLevels = getLevelsForMap(locale, map.id)
+  const relation = getMapLevelRelation(map.id)
+  const mapHtml = addContextualLinks(map.detailsHtml, relation ? relatedLevels.map((level) => ({
+    paragraph: relation.mapLinkParagraph,
+    lead: translate(locale, 'mapDetailPage.inlineWalkthroughLink'),
+    href: localizedPath(`/levels/${level.addressBar}`, locale),
+    label: level.title,
+  })) : [])
   return (
     <>
     <JsonLd data={pageJsonLd(map.seo.title || map.title, map.seo.description || map.description, `${siteConfig.url}${localizedPath(`/maps-keys/${map.addressBar}`, locale)}`, 'Article')} />
@@ -20,8 +31,19 @@ export default function MapDetailPage({ locale, map }: { locale: Locale; map: Ma
           <AdPlacement />
           {map.mapPoints && map.mapPoints.length > 0 && <div className="map-points-container"><div className="map-points-grid">{map.mapPoints.map((point, index) => <div key={point.id ?? `${point.title}-${index}`} className="map-point-card"><div className="map-point-header"><h3 className="map-point-title">{point.title}</h3><button className="map-point-menu" type="button">⋮</button></div><p className="map-point-content">{point.content}</p></div>)}</div></div>}
           <AdPlacement />
-          <div className="content-body v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(map.detailsHtml) }} />
+          <div className="content-body v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(mapHtml) }} />
           <AdPlacement />
+          <RelatedContentLinks
+            title={translate(locale, 'mapDetailPage.relatedWalkthrough.title')}
+            actionLabel={translate(locale, 'mapDetailPage.relatedWalkthrough.action')}
+            links={relatedLevels.map((level) => ({
+              href: localizedPath(`/levels/${level.addressBar}`, locale),
+              title: level.title,
+              description: level.description,
+              imageUrl: level.imageUrl,
+              imageAlt: level.imageAlt,
+            }))}
+          />
         </main>
         <aside className="sidebar">
           <div className="image-card"><div className="image-header">{map.title}</div><div className="image-wrapper">{map.imageUrl ? <img src={map.imageUrl} alt={map.imageAlt || map.title} className="level-image" loading="lazy" /> : <div className="level-image placeholder">{map.title}</div>}</div></div>
