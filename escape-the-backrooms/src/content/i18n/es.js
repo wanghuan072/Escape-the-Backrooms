@@ -12,7 +12,7 @@ export default {
     },
     "maps": {
       "title": "Escape the Backrooms Mapas y ubicaciones clave (alta resolución)",
-      "description": "Accede a mapas de alta resolución para Escape the Backrooms. Encuentre ubicaciones precisas para llaves, piezas de escaleras, códigos de ascensores y salidas para todos los niveles (v1.0).",
+      "description": "Accede a mapas de alta resolución para Escape the Backrooms. Encuentra ubicaciones precisas para llaves, piezas de escaleras, códigos de ascensores y salidas en los mapas disponibles (v1.0).",
       "keywords": "Mapas Escape the Backrooms, mapas de nivel, ubicaciones clave, puntos de aparición, mapa de nivel 0, mapa de nivel 1, ubicaciones de escalera"
     },
     "codes": {
@@ -216,11 +216,11 @@ export default {
   "mapsPage": {
     "hero": {
       "title": "Escape the Backrooms Mapas y ubicaciones clave",
-      "subtitle": "Mapas de alta resolución y guías de ubicación clave para todos los niveles. Encuentra puntos de aparición, salidas, piezas de escalera y elementos ocultos precisos."
+      "subtitle": "Mapas de alta resolución y guías de ubicación clave para los niveles cubiertos actualmente. Encuentra puntos de aparición, salidas, piezas de escalera y elementos ocultos precisos."
     },
     "mapsSection": {
-      "title": "Escape the Backrooms: Todos los mapas",
-      "subtitle": "Mapas de navegación detallados para todos los niveles."
+      "title": "Escape the Backrooms: Mapas disponibles",
+      "subtitle": "Mapas de navegación detallados disponibles actualmente en este sitio."
     },
     "keysSection": {
       "title": "Llaves",

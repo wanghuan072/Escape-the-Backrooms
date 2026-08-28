@@ -12,7 +12,7 @@ export default {
         },
         maps: {
             title: 'Escape the Backrooms : Cartes et Emplacements Clés (Haute-Res)',
-            description: 'Accédez aux cartes haute résolution pour Escape the Backrooms. Trouvez l\'emplacement précis des clés, pièces d\'échelle, codes d\'ascenseur et sorties (v1.0).',
+            description: 'Accédez aux cartes haute résolution disponibles pour Escape the Backrooms. Trouvez l\'emplacement précis des clés, pièces d\'échelle, codes d\'ascenseur et sorties (v1.0).',
             keywords: 'Escape the Backrooms cartes, cartes des niveaux, emplacements clés, points d\'apparition, carte niveau 0, carte niveau 1, emplacements échelle'
         },
         codes: {
@@ -216,11 +216,11 @@ export default {
     mapsPage: {
         hero: {
             title: 'Cartes Escape the Backrooms et Emplacements des Clés',
-            subtitle: 'Cartes haute résolution et guides pour tous les niveaux. Trouvez les points de spawn, sorties, pièces d\'échelle et objets cachés.'
+            subtitle: 'Cartes haute résolution et guides pour les niveaux actuellement couverts. Trouvez les points de spawn, sorties, pièces d\'échelle et objets cachés.'
         },
         mapsSection: {
-            title: 'Escape the Backrooms : Toutes les Cartes',
-            subtitle: 'Cartes de navigation détaillées pour tous les niveaux'
+            title: 'Escape the Backrooms : Cartes Disponibles',
+            subtitle: 'Cartes de navigation détaillées actuellement disponibles sur ce site'
         },
         keysSection: {
             title: 'Clés',

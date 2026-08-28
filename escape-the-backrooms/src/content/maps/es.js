@@ -1,7 +1,7 @@
 export default [
   {
     "id": 1,
-    "title": "Mapa:Mapa de nivel 0",
+    "title": "Mapa del nivel 0",
     "addressBar": "level-0-map",
     "description": "Mapa de navegación completo para el nivel 0 con todos los puntos de aparición, ubicaciones clave y rutas de salida.",
     "imageUrl": "/images/maps/map-01.webp",
@@ -75,7 +75,7 @@ export default [
   },
   {
     "id": 2,
-    "title": "Mapa: Nivel 1 Piso 1 Mapa",
+    "title": "Mapa del nivel 1, piso 1",
     "addressBar": "level-1-floor-1-map",
     "description": "Mapa detallado del Nivel 1 Piso 1 que muestra ubicaciones clave y rutas de escape.",
     "imageUrl": "/images/maps/map-02.webp",
@@ -114,7 +114,7 @@ export default [
   },
   {
     "id": 3,
-    "title": "Mapa: Nivel 1 Piso 3 Mapa",
+    "title": "Mapa del nivel 1, piso 3",
     "addressBar": "level-1-floor-3-map",
     "description": "Mapa detallado del Nivel 1 Piso 3 que muestra ubicaciones clave y rutas de escape.",
     "imageUrl": "/images/maps/map-03.webp",
@@ -162,7 +162,7 @@ export default [
   },
   {
     "id": 4,
-    "title": "Mapa: Mapa de nivel 2",
+    "title": "Mapa del nivel 2",
     "addressBar": "level-2-map",
     "description": "Mapa de navegación completo para el nivel 2 que muestra todas las rutas y ubicaciones clave.",
     "imageUrl": "/images/maps/map-04.webp",
@@ -195,7 +195,7 @@ export default [
   },
   {
     "id": 5,
-    "title": "Mapa: Mapa de nivel 37",
+    "title": "Mapa del nivel 37",
     "addressBar": "level-37-map",
     "description": "Mapa de navegación completo para el nivel 37 Las Poolrooms que muestra habitaciones con azulejos oscuros, puntos de aparición y rutas de salida.",
     "imageUrl": "/images/maps/map-05.webp",
@@ -269,7 +269,7 @@ export default [
   },
   {
     "id": 6,
-    "title": "Mapa: Mapa de nivel 3",
+    "title": "Mapa del nivel 3",
     "addressBar": "level-3-map",
     "description": "Mapa de navegación completo para la estación eléctrica de nivel 3 que muestra las ubicaciones de los interruptores, las zonas y el ascensor.",
     "imageUrl": "/images/maps/map-06.webp",
@@ -494,7 +494,7 @@ export default [
   },
   {
     "id": 7,
-    "title": "Mapa: Mapa de nivel 4",
+    "title": "Mapa del nivel 4",
     "addressBar": "level-4-map",
     "description": "Mapa de navegación completo para la oficina abandonada de nivel 4 que muestra rompecabezas de máquinas expendedoras, cámaras CCTV y zonas seguras.",
     "imageUrl": "/images/maps/map-07.webp",
@@ -569,7 +569,7 @@ export default [
   },
   {
     "id": 8,
-    "title": "Mapa: Mapa de nivel 9",
+    "title": "Mapa del nivel 9",
     "addressBar": "level-9-map",
     "description": "Mapa de navegación completo para el nivel 9, Los suburbios, que muestra casas seguras, casas inseguras, computadoras y ubicaciones de Wretch.",
     "imageUrl": "/images/maps/map-08.webp",

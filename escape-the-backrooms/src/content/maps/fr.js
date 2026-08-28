@@ -1,7 +1,7 @@
 export default [
     {
         "id": 1,
-        "title": "Carte : Niveau 0",
+        "title": "Niveau 0 — Carte",
         "addressBar": "level-0-map",
         "description": "Carte de navigation complète pour le Niveau 0 avec tous les points d'apparition, les emplacements clés et les itinéraires de sortie.",
         "imageUrl": "/images/maps/map-01.webp",
@@ -105,7 +105,7 @@ export default [
     },
     {
         "id": 2,
-        "title": "Carte : Niveau 1 Étage 1",
+        "title": "Niveau 1 Étage 1 — Carte",
         "addressBar": "level-1-floor-1-map",
         "description": "Carte détaillée du Niveau 1 Étage 1 montrant les emplacements clés et les itinéraires d'évasion.",
         "imageUrl": "/images/maps/map-02.webp",
@@ -165,7 +165,7 @@ export default [
     },
     {
         "id": 3,
-        "title": "Carte : Niveau 1 Étage 3",
+        "title": "Niveau 1 Étage 3 — Carte",
         "addressBar": "level-1-floor-3-map",
         "description": "Carte détaillée du Niveau 1 Étage 3 montrant les emplacements clés et les itinéraires d'évasion.",
         "imageUrl": "/images/maps/map-03.webp",
@@ -232,7 +232,7 @@ export default [
     },
     {
         "id": 4,
-        "title": "Carte : Niveau 2",
+        "title": "Niveau 2 — Carte",
         "addressBar": "level-2-map",
         "description": "Carte de navigation complète pour le Niveau 2 montrant tous les itinéraires et les emplacements clés.",
         "imageUrl": "/images/maps/map-04.webp",
@@ -283,7 +283,7 @@ export default [
     },
     {
         "id": 5,
-        "title": "Carte : Niveau 37",
+        "title": "Niveau 37 — Carte",
         "addressBar": "level-37-map",
         "description": "Carte de navigation complète pour le Niveau 37 The Poolrooms montrant les Salles aux Carreaux Sombres, les points d'apparition et les itinéraires de sortie.",
         "imageUrl": "/images/maps/map-05.webp",
@@ -390,7 +390,7 @@ export default [
     },
     {
         "id": 6,
-        "title": "Carte : Niveau 3",
+        "title": "Niveau 3 — Carte",
         "addressBar": "level-3-map",
         "description": "Carte de navigation complète pour le Niveau 3 (Station Électrique) montrant l'emplacement des disjoncteurs, les zones et l'ascenseur.",
         "imageUrl": "/images/maps/map-06.webp",
@@ -491,7 +491,7 @@ export default [
     },
     {
         "id": 7,
-        "title": "Carte : Niveau 4",
+        "title": "Niveau 4 — Carte",
         "addressBar": "level-4-map",
         "description": "Carte de navigation complète pour le Niveau 4 (Bureau Abandonné) montrant l'énigme des distributeurs, les caméras de surveillance et les zones sûres.",
         "imageUrl": "/images/maps/map-07.webp",
@@ -605,7 +605,7 @@ export default [
     },
     {
         "id": 8,
-        "title": "Carte : Niveau 9",
+        "title": "Niveau 9 — Carte",
         "addressBar": "level-9-map",
         "description": "Carte de navigation complète pour le Niveau 9 (The Suburbs) montrant les maisons sûres, les maisons dangereuses, les ordinateurs et l'emplacement des Wretches.",
         "imageUrl": "/images/maps/map-08.webp",

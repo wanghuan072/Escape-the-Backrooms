@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        title: 'Karte: Level 0 Karte',
+          title: 'Level 0 Karte',
         addressBar: 'level-0-map',
         description: 'Vollständige Navigationskarte für Level 0 mit allen Spawn-Punkten, wichtigen Orten und Ausgangsrouten.',
         imageUrl: '/images/maps/map-01.webp',
@@ -102,7 +102,7 @@ export default [
     },
     {
         id: 2,
-        title: 'Karte: Level 1 Etage 1 Karte',
+          title: 'Level 1 Etage 1 Karte',
         addressBar: 'level-1-floor-1-map',
         description: 'Detaillierte Karte von Level 1 Etage 1 mit wichtigen Orten und Fluchtwegen.',
         imageUrl: '/images/maps/map-02.webp',
@@ -162,7 +162,7 @@ export default [
     },
     {
         id: 3,
-        title: 'Karte: Level 1 Etage 3 Karte',
+          title: 'Level 1 Etage 3 Karte',
         addressBar: 'level-1-floor-3-map',
         description: 'Detaillierte Karte von Level 1 Etage 3 mit Fokus auf Aufzug-Ausgänge und Navigation.',
         imageUrl: '/images/maps/map-03.webp',
@@ -229,7 +229,7 @@ export default [
     },
         {
           id: 4,
-          title: 'Karte: Level 2 Karte',
+          title: 'Level 2 Karte',
           addressBar: 'level-2-map',
           description: 'Vollständige Navigationskarte für Level 2 mit allen Routen und wichtigen Orten.',
           imageUrl: '/images/maps/map-04.webp',
@@ -280,7 +280,7 @@ export default [
         },
         {
           id: 5,
-          title: 'Karte: Level 37 Karte',
+          title: 'Level 37 Karte',
           addressBar: 'level-37-map',
           description: 'Vollständige Navigationskarte für Level 37 (The Poolrooms) mit dunkel gefliesten Räumen, Spawn-Punkten und Ausgangsrouten.',
           imageUrl: '/images/maps/map-05.webp',
@@ -379,7 +379,7 @@ export default [
 
         {
             id: 6,
-            title: 'Karte: Level 3 Karte',
+          title: 'Level 3 Karte',
             addressBar: 'level-3-map',
             description: 'Vollständige Navigationskarte für Level 3 (Electrical Station) mit Breaker-Standorten, Zonen und Aufzug.',
             imageUrl: '/images/maps/map-06.webp',
@@ -480,7 +480,7 @@ export default [
       },
         {
           id: 7,
-          title: 'Karte: Level 4 Karte',
+          title: 'Level 4 Karte',
           addressBar: 'level-4-map',
           description: 'Vollständige Navigationskarte für Level 4 (Abandoned Office) mit Verkaufsautomaten-Rätsel, Überwachungskameras und Sicherheitszonen.',
           imageUrl: '/images/maps/map-07.webp',
@@ -587,7 +587,7 @@ export default [
         },
         {
           id: 8,
-          title: 'Karte: Level 9 Karte',
+          title: 'Level 9 Karte',
           addressBar: 'level-9-map',
           description: 'Vollständige Navigationskarte für Level 9 (The Suburbs) mit sicheren Häusern, Computern und Wretch-Standorten.',
           imageUrl: '/images/maps/map-08.webp',
@@ -618,9 +618,24 @@ export default [
               content: 'Kann einen Computer enthalten, wird aber von einem Wretch bewacht.',
             },
             {
+              id: 4,
+              title: '4: Unsicheres Haus',
+              content: 'Kann einen Computer enthalten, wird aber von einem Wretch bewacht.',
+            },
+            {
               id: 5,
               title: '5: Eingang zum verlassenen Außenposten',
               content: 'Öffnet sich erst, wenn alle Computer im Level aktiviert wurden.',
+            },
+            {
+              id: 6,
+              title: '6: Sicheres Haus',
+              content: 'Ein Haus, das einen Computer enthalten kann und keinen Wretch beherbergt.',
+            },
+            {
+              id: 7,
+              title: '7: Unsicheres Haus',
+              content: 'Kann einen Computer enthalten, wird aber von einem Wretch bewacht.',
             },
             {
               id: 8,
@@ -628,9 +643,29 @@ export default [
               content: 'Spawn-Punkt, nachdem das Tor entdeckt wurde. Enthält das Terminal, das die Computer-Standorte anzeigt.',
             },
             {
+              id: 9,
+              title: '9: Unsicheres Haus',
+              content: 'Kann einen Computer enthalten, wird aber von einem Wretch bewacht.',
+            },
+            {
+              id: 10,
+              title: '10: Unsicheres Haus',
+              content: 'Kann einen Computer enthalten, wird aber von einem Wretch bewacht.',
+            },
+            {
+              id: 11,
+              title: '11: Sicheres Haus',
+              content: 'Ein Haus, das einen Computer enthalten kann und keinen Wretch beherbergt.',
+            },
+            {
               id: 12,
               title: '12: Haupt-Spawn',
               content: 'Der initiale Startpunkt für alle Spieler.',
+            },
+            {
+              id: 13,
+              title: '13: Unsicheres Haus',
+              content: 'Kann einen Computer enthalten, wird aber von einem Wretch bewacht. Hier befindet sich auch der Eingang zum Hub.',
             },
             {
               id: 14,

@@ -12,7 +12,7 @@ export default {
         },
         "maps": {
             "title": "Escape the Backrooms Karten & Wichtige Orte (High-Res)",
-            "description": "Greifen Sie auf hochauflösende Karten für Escape the Backrooms zu. Finden Sie präzise Fundorte für Schlüssel, Leiterteile, Aufzugscodes und Ausgänge für alle Level (v1.0).",
+            "description": "Greifen Sie auf hochauflösende Karten für Escape the Backrooms zu. Finden Sie präzise Fundorte für Schlüssel, Leiterteile, Aufzugscodes und Ausgänge in den verfügbaren Karten (v1.0).",
             "keywords": "Escape the Backrooms Karten, Level-Karten, Schlüssel-Fundorte, Spawn-Punkte, Level 0 Karte, Level 1 Karte, Leiter-Fundorte"
         },
         "codes": {
@@ -216,11 +216,11 @@ export default {
     "mapsPage": {
         "hero": {
             "title": "Escape the Backrooms: Karten & Schlüssel-Fundorte",
-            "subtitle": "Hochauflösende Karten und Guides zu Schlüssel-Fundorten für alle Level. Finden Sie präzise Spawn-Punkte, Ausgänge, Leiterteile und versteckte Gegenstände."
+            "subtitle": "Hochauflösende Karten und Guides zu Schlüssel-Fundorten für die aktuell abgedeckten Level. Finden Sie präzise Spawn-Punkte, Ausgänge, Leiterteile und versteckte Gegenstände."
         },
         "mapsSection": {
-            "title": "Escape the Backrooms: Alle Karten",
-            "subtitle": "Detaillierte Navigationskarten für alle Level"
+            "title": "Escape the Backrooms: Verfügbare Karten",
+            "subtitle": "Detaillierte Navigationskarten, die derzeit auf dieser Website verfügbar sind"
         },
         "keysSection": {
             "title": "Schlüssel",

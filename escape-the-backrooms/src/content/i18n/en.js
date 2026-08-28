@@ -12,7 +12,7 @@ export default {
     },
     maps: {
       title: 'Escape the Backrooms Maps & Key Locations (High-Res)',
-      description: 'Access high-resolution maps for Escape the Backrooms. Find precise locations for keys, ladder pieces, elevator codes, and exits for all levels (v1.0).',
+      description: 'Access high-resolution maps for Escape the Backrooms. Find precise locations for keys, ladder pieces, elevator codes, and exits in the available maps (v1.0).',
       keywords: 'Escape the Backrooms maps, level maps, key locations, spawn points, level 0 map, level 1 map, ladder locations'
     },
     codes: {
@@ -216,11 +216,11 @@ export default {
   mapsPage: {
     hero: {
       title: 'Escape the Backrooms Maps & Key Locations',
-      subtitle: 'High-resolution maps and key location guides for all levels. Find precise spawn points, exits, ladder pieces, and hidden items.'
+      subtitle: 'High-resolution maps and key location guides for the levels currently covered. Find precise spawn points, exits, ladder pieces, and hidden items.'
     },
     mapsSection: {
-      title: 'Escape the Backrooms: All Maps',
-      subtitle: 'Detailed navigation maps for all levels'
+      title: 'Escape the Backrooms: Available Maps',
+      subtitle: 'Detailed navigation maps currently available on this site'
     },
     keysSection: {
       title: 'Keys',

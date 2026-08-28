@@ -135,6 +135,17 @@ async function main() {
     }
   }
 
+  for (const locale of locales.slice(1)) {
+    for (const englishMap of data.maps.en) {
+      const localizedMap = data.maps[locale].find((entry) => entry.id === englishMap.id)
+      const englishPointIds = (englishMap.mapPoints || []).map((point) => String(point.id)).sort().join(',')
+      const localizedPointIds = (localizedMap?.mapPoints || []).map((point) => String(point.id)).sort().join(',')
+      if (englishPointIds !== localizedPointIds) {
+        addError(`maps.${locale}[${englishMap.id}]`, 'map point IDs differ from English data')
+      }
+    }
+  }
+
   const relationsModule = await import('../../src/content/map-level-relations.js')
   const mapLevelRelations = relationsModule.mapLevelRelations || {}
   const englishMapIds = new Set(data.maps.en.map((entry) => String(entry.id)))
