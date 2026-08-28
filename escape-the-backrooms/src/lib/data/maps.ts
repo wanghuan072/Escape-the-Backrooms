@@ -20,6 +20,10 @@ export function findMap(locale: Locale, slug: string): MapEntry | undefined {
   return getMaps(locale).find((entry) => entry.addressBar === decodeURIComponent(slug))
 }
 
+export function getMapSections(locale: Locale, map: MapEntry) {
+  return map.mapSections ?? maps.en.find((entry) => entry.id === map.id)?.mapSections
+}
+
 export function getMapAlternates(id: string | number): Record<Locale, string> {
   return Object.fromEntries(
     (Object.keys(maps) as Locale[]).map((locale) => {

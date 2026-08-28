@@ -7,6 +7,21 @@ export interface MapPoint {
   position?: string
 }
 
+export interface MapGalleryImage {
+  src: string
+  alt: string
+  title: string
+}
+
+export interface MapSection {
+  title: string
+  imageUrl: string
+  imageAlt: string
+  mapPoints: MapPoint[]
+  detailsHtml: string
+  callouts?: Array<{ id: number; x: number; y: number }>
+}
+
 export interface MapEntry {
   id: number | string
   title: string
@@ -15,6 +30,8 @@ export interface MapEntry {
   imageUrl?: string
   imageAlt?: string
   mapImageUrl?: string
+  galleryImages?: MapGalleryImage[]
+  mapSections?: MapSection[]
   category?: string
   tags?: string[]
   isHome?: boolean

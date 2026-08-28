@@ -9,4 +9,6 @@ export const mapLevelRelations = {
   6: { levelIds: [4], levelLinkParagraph: 2, mapLinkParagraph: 1 },
   7: { levelIds: [5], levelLinkParagraph: 2, mapLinkParagraph: 1 },
   8: { levelIds: [19], levelLinkParagraph: 2, mapLinkParagraph: 1 },
+  9: { levelIds: [6], levelLinkParagraph: 3, mapLinkParagraph: 1 },
+  10: { levelIds: [13], levelLinkParagraph: 2, mapLinkParagraph: 1 },
 }

@@ -890,6 +890,18 @@ export const localizedRouteMap = {
     "fr": "/fr/maps-keys/level-9-map",
     "es": "/es/maps-keys/level-9-map"
   },
+  "/maps-keys/level-5-terror-hotel-map": {
+    "en": "/maps-keys/level-5-terror-hotel-map",
+    "de": "/de/maps-keys/level-5-terror-hotel-map",
+    "fr": "/fr/maps-keys/level-5-terror-hotel-map",
+    "es": "/es/maps-keys/level-5-terror-hotel-map"
+  },
+  "/maps-keys/the-end-map": {
+    "en": "/maps-keys/the-end-map",
+    "de": "/de/maps-keys/the-end-map",
+    "fr": "/fr/maps-keys/the-end-map",
+    "es": "/es/maps-keys/the-end-map"
+  },
   "/de/maps-keys/level-0-map": {
     "en": "/maps-keys/level-0-map",
     "de": "/de/maps-keys/level-0-map",
@@ -937,6 +949,18 @@ export const localizedRouteMap = {
     "de": "/de/maps-keys/level-9-map",
     "fr": "/fr/maps-keys/level-9-map",
     "es": "/es/maps-keys/level-9-map"
+  },
+  "/de/maps-keys/level-5-terror-hotel-map": {
+    "en": "/maps-keys/level-5-terror-hotel-map",
+    "de": "/de/maps-keys/level-5-terror-hotel-map",
+    "fr": "/fr/maps-keys/level-5-terror-hotel-map",
+    "es": "/es/maps-keys/level-5-terror-hotel-map"
+  },
+  "/de/maps-keys/the-end-map": {
+    "en": "/maps-keys/the-end-map",
+    "de": "/de/maps-keys/the-end-map",
+    "fr": "/fr/maps-keys/the-end-map",
+    "es": "/es/maps-keys/the-end-map"
   },
   "/fr/maps-keys/level-0-map": {
     "en": "/maps-keys/level-0-map",
@@ -986,6 +1010,18 @@ export const localizedRouteMap = {
     "fr": "/fr/maps-keys/level-9-map",
     "es": "/es/maps-keys/level-9-map"
   },
+  "/fr/maps-keys/level-5-terror-hotel-map": {
+    "en": "/maps-keys/level-5-terror-hotel-map",
+    "de": "/de/maps-keys/level-5-terror-hotel-map",
+    "fr": "/fr/maps-keys/level-5-terror-hotel-map",
+    "es": "/es/maps-keys/level-5-terror-hotel-map"
+  },
+  "/fr/maps-keys/the-end-map": {
+    "en": "/maps-keys/the-end-map",
+    "de": "/de/maps-keys/the-end-map",
+    "fr": "/fr/maps-keys/the-end-map",
+    "es": "/es/maps-keys/the-end-map"
+  },
   "/es/maps-keys/level-0-map": {
     "en": "/maps-keys/level-0-map",
     "de": "/de/maps-keys/level-0-map",
@@ -1033,6 +1069,18 @@ export const localizedRouteMap = {
     "de": "/de/maps-keys/level-9-map",
     "fr": "/fr/maps-keys/level-9-map",
     "es": "/es/maps-keys/level-9-map"
+  },
+  "/es/maps-keys/level-5-terror-hotel-map": {
+    "en": "/maps-keys/level-5-terror-hotel-map",
+    "de": "/de/maps-keys/level-5-terror-hotel-map",
+    "fr": "/fr/maps-keys/level-5-terror-hotel-map",
+    "es": "/es/maps-keys/level-5-terror-hotel-map"
+  },
+  "/es/maps-keys/the-end-map": {
+    "en": "/maps-keys/the-end-map",
+    "de": "/de/maps-keys/the-end-map",
+    "fr": "/fr/maps-keys/the-end-map",
+    "es": "/es/maps-keys/the-end-map"
   },
   "/backrooms-games/inside-the-backrooms": {
     "en": "/backrooms-games/inside-the-backrooms",

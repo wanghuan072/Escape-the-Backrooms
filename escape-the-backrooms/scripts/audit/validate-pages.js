@@ -376,8 +376,8 @@ async function main() {
   const validPaths = new Set(inventory.routes.map(normalizePathname))
   const sitemapPaths = new Set(inventory.sitemapRoutes)
   if (validPaths.size !== inventory.routes.length) addError('routes', 'duplicate public routes found')
-  if (inventory.routes.length !== 220) addError('routes', `expected 220 public routes, found ${inventory.routes.length}`)
-  if (inventory.sitemapRoutes.length !== 200) addError('routes', `expected 200 sitemap routes, found ${inventory.sitemapRoutes.length}`)
+  if (inventory.routes.length !== 228) addError('routes', `expected 228 public routes, found ${inventory.routes.length}`)
+  if (inventory.sitemapRoutes.length !== 208) addError('routes', `expected 208 sitemap routes, found ${inventory.sitemapRoutes.length}`)
 
   const redirectSources = validateVercelConfig(validPaths)
   const sitemapResult = validateSitemap(sitemapPaths)
