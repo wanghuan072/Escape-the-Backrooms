@@ -20,6 +20,8 @@ export interface MapSection {
   mapPoints: MapPoint[]
   detailsHtml: string
   callouts?: Array<{ id: number; x: number; y: number }>
+  width: number
+  height: number
 }
 
 export interface MapEntry {
@@ -29,6 +31,8 @@ export interface MapEntry {
   description: string
   imageUrl?: string
   imageAlt?: string
+  imageWidth?: number
+  imageHeight?: number
   mapImageUrl?: string
   galleryImages?: MapGalleryImage[]
   mapSections?: MapSection[]
@@ -38,4 +42,5 @@ export interface MapEntry {
   seo: SeoRecord
   mapPoints?: MapPoint[]
   detailsHtml: string
+  introHtml?: string
 }
