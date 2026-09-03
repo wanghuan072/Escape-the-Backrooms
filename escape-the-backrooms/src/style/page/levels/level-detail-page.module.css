@@ -209,9 +209,6 @@
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 :global(.level-detail-view .content-body) {
@@ -784,7 +781,6 @@
 
   :global(.level-detail-view .content-layout) {
     gap: 1rem;
-    padding: 0 0.5rem;
   }
 
   :global(.level-detail-view .content-body) {

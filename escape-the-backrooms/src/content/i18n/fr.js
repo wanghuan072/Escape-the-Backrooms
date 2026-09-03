@@ -209,6 +209,7 @@ export default {
             action: 'Voir la carte'
         },
         inlineMapLink: 'Pour visualiser cet itinéraire, consultez',
+        advertisement: 'Publicité',
         research: {
             kicker: 'Notes de parcours entre joueurs',
             title: 'Ce que nous vérifions avant d’avancer',

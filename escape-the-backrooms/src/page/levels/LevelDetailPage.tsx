@@ -50,7 +50,7 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
       <section className="detail-content"><div className="container"><div className="content-layout">
         <main className="main-content">
           <div className="content-body level-overview v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(remainingHtml) }} />
-          {videoHtml && <AdPlacement className="level-inline-ad level-video-ad" horizontal />}
+          {videoHtml && <AdPlacement className="level-inline-ad level-video-ad" horizontal label={translate(locale, 'levelDetailPage.advertisement')} />}
           {videoHtml && <div id="video-guide" className="content-body level-video-guide v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(identifyFirstVideoIframe(videoHtml, `${level.title} — ${guideCopy.embeddedVideo}`)) }} />}
           {chapters.length ? <VideoChapters chapters={chapters} title={guideCopy.videoChapters} /> : null}
           <LevelResearchNotes locale={locale} levelId={level.id} topics={routeTopics} />
@@ -69,7 +69,7 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
             {previous && <a href={localizedPath(`/levels/${previous.addressBar}`, locale)} className="nav-link prev-link"><span className="nav-arrow">←</span><div className="nav-content"><span className="nav-label">{translate(locale, 'levelDetailPage.navigation.previous')}</span><span className="nav-title">{previous.title}</span></div></a>}
             {next && <a href={localizedPath(`/levels/${next.addressBar}`, locale)} className="nav-link next-link"><div className="nav-content"><span className="nav-label">{translate(locale, 'levelDetailPage.navigation.next')}</span><span className="nav-title">{next.title}</span></div><span className="nav-arrow">→</span></a>}
           </div>}
-          <AdPlacement />
+          <AdPlacement className="level-footer-ad" horizontal label={translate(locale, 'levelDetailPage.advertisement')} />
         </main>
         <aside className="sidebar">
           <AdPlacement />

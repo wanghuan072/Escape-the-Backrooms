@@ -371,6 +371,11 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
     } else if (!contentOrder.every(([, position], index) => index === 0 || position > contentOrder[index - 1][1])) {
       addError(scope, `level content order is incorrect: ${contentOrder.map(([name]) => name).join(' -> ')}`)
     }
+
+    const navigationPosition = html.indexOf('class="nav-links"')
+    const footerAdPosition = html.indexOf('class="ad-placement level-footer-ad"')
+    if (footerAdPosition < 0) addError(scope, 'level footer ad is missing')
+    else if (navigationPosition >= 0 && footerAdPosition < navigationPosition) addError(scope, 'level footer ad must follow level navigation')
   }
 
   for (const tag of tags(html, 'img')) {

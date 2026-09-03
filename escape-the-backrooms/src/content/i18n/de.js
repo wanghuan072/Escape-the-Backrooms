@@ -209,6 +209,7 @@ export default {
             "action": "Karte ansehen"
         },
         "inlineMapLink": "Für eine visuelle Orientierung auf dieser Route siehe",
+        "advertisement": "Anzeige",
         "research": {
             "kicker": "Notizen aus der Spielrunde",
             "title": "Das prüfen wir, bevor es weitergeht",

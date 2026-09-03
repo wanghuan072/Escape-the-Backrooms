@@ -209,6 +209,7 @@ export default {
       "action": "Ver mapa"
     },
     "inlineMapLink": "Para ver visualmente esta ruta, consulta",
+    "advertisement": "Publicidad",
     "research": {
       "kicker": "Notas de ruta de jugadores",
       "title": "Lo que comprobamos antes de seguir",

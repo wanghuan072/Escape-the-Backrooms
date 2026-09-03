@@ -209,6 +209,7 @@ export default {
       action: 'View Map'
     },
     inlineMapLink: 'For a visual reference to this route, see',
+    advertisement: 'Advertisement',
     research: {
       kicker: 'Player route notes',
       title: 'Things we check before pushing ahead',
