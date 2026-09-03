@@ -1,4 +1,5 @@
 import { footerLabels } from '@/config/navigation'
+import { siteConfig } from '@/config/site'
 import { localizedPath } from '@/lib/i18n/messages'
 import type { Locale } from '@/types/locale'
 import '@/style/layout/site-footer.module.css'
@@ -15,6 +16,9 @@ export function SiteFooter({ locale }: { locale: Locale }) {
               <span className="logo-text">ESCAPE THE BACKROOMS</span>
             </div>
             <p className="footer-text">{labels.description}</p>
+            <a className="footer-youtube-link" href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="Visit Bombit on YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z" /></svg>
+            </a>
           </div>
           <div className="link-column">
             <h2>{labels.navigate}</h2>

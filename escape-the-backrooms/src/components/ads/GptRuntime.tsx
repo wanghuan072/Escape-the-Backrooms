@@ -50,7 +50,7 @@ export function AdRuntime({ children }: { children: React.ReactNode }) {
   )
 }
 
-export function GptAdSlot({ unit }: { unit?: 1 | 2 | 3 }) {
+export function GptAdSlot({ unit, horizontal = false }: { unit?: 1 | 2 | 3; horizontal?: boolean }) {
   const pathname = usePathname()
   const nextUnit = useContext(BannerSequenceContext)
   const elementId = `div-gpt-ad-banner-${useId().replace(/:/g, '')}`
@@ -64,7 +64,8 @@ export function GptAdSlot({ unit }: { unit?: 1 | 2 | 3 }) {
       if (!document.getElementById(elementId)) return
       let slot = bannerSlots.get(elementId)
       if (!slot) {
-        slot = googletag.defineSlot(banner.path, banner.sizes, elementId)?.addService(googletag.pubads()) ?? undefined
+        const sizes = horizontal ? [[320, 50], [728, 90]] : banner.sizes
+        slot = googletag.defineSlot(banner.path, sizes, elementId)?.addService(googletag.pubads()) ?? undefined
         if (!slot) return
         bannerSlots.set(elementId, slot)
       }
@@ -80,7 +81,7 @@ export function GptAdSlot({ unit }: { unit?: 1 | 2 | 3 }) {
         bannerSlots.delete(elementId)
       })
     }
-  }, [elementId, nextUnit, pathname, unit])
+  }, [elementId, horizontal, nextUnit, pathname, unit])
 
   return <div className="gpt-ad-slot"><div id={elementId} className="gpt-ad-inner" aria-hidden="true" /></div>
 }

@@ -62,6 +62,31 @@
   max-width: 500px;
 }
 
+:global(.site-footer .footer-youtube-link) {
+  align-items: center;
+  background: rgba(36, 48, 68, 0.72);
+  border: 1px solid rgba(135, 154, 182, 0.28);
+  border-radius: 7px;
+  display: inline-flex;
+  height: 38px;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  width: 38px;
+}
+
+:global(.site-footer .footer-youtube-link svg) {
+  fill: #f03a3a;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+:global(.site-footer .footer-youtube-link:hover) {
+  background: rgba(52, 67, 91, 0.95);
+  border-color: rgba(255, 215, 0, 0.58);
+  transform: translateY(-1px);
+}
+
 :global(.site-footer .link-column h2) {
   color: #fff;
   font-size: 1.2rem;

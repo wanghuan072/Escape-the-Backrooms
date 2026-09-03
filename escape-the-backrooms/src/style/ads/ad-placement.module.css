@@ -4,3 +4,13 @@
   padding: 1rem;
   text-align: center;
 }
+
+:global(aside.ad-placement.level-inline-ad) {
+  margin: 1rem 0 1.5rem;
+  min-height: 50px;
+  padding: 0;
+}
+
+:global(aside.ad-placement.level-inline-ad .gpt-ad-inner) {
+  min-height: 50px;
+}

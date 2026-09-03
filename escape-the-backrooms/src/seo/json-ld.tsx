@@ -49,6 +49,7 @@ export function pageJsonLd(
   description: string,
   url: string,
   type: 'WebPage' | 'Article' = 'WebPage',
+  article?: { authorName: string; authorUrl: string; dateModified?: string },
 ) {
   return {
     '@context': 'https://schema.org',
@@ -58,7 +59,12 @@ export function pageJsonLd(
     url,
     publisher: websiteJsonLd.publisher,
     ...(type === 'Article'
-      ? { author: { '@type': 'Organization', name: siteConfig.author } }
+      ? {
+          author: article
+            ? { '@type': 'Organization', name: article.authorName, url: article.authorUrl, sameAs: [article.authorUrl] }
+            : { '@type': 'Organization', name: siteConfig.author },
+          ...(article?.dateModified ? { dateModified: article.dateModified } : {}),
+        }
       : {}),
   }
 }
