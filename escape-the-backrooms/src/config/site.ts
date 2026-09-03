@@ -4,6 +4,7 @@ export const siteConfig = {
   url: 'https://escapethebackrooms.org',
   author: 'Escape the Backrooms Community',
   social: {
+    youtube: 'https://www.youtube.com/@bombit999-u6i',
     twitter: '@escapethebackrooms',
     facebook: 'escapethebackrooms',
     instagram: 'escapethebackrooms',

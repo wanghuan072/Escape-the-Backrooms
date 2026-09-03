@@ -35,6 +35,7 @@ export const websiteJsonLd = {
       url: `${siteConfig.url}/images/logo.webp`,
     },
     sameAs: [
+      siteConfig.social.youtube,
       'https://twitter.com/escapethebackrooms',
       'https://facebook.com/escapethebackrooms',
       'https://instagram.com/escapethebackrooms',
