@@ -8,25 +8,33 @@ import type { Locale } from '@/types/locale'
 import '@/style/layout/root-document.module.css'
 
 const delayedThirdPartyScripts = `
-window.addEventListener('load', function () {
-  setTimeout(function () {
-    const gtagScript = document.createElement('script');
-    gtagScript.async = true;
-    gtagScript.defer = true;
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-BFYQB388T1';
-    document.head.appendChild(gtagScript);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-BFYQB388T1');
-    const adsScript = document.createElement('script');
-    adsScript.async = true;
-    adsScript.defer = true;
-    adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042701865163735';
-    adsScript.crossOrigin = 'anonymous';
-    document.head.appendChild(adsScript);
-  }, 4000);
-});`
+(function () {
+  function loadDelayedScripts() {
+    setTimeout(function () {
+      const gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.defer = true;
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-BFYQB388T1';
+      document.head.appendChild(gtagScript);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BFYQB388T1');
+      const adsScript = document.createElement('script');
+      adsScript.async = true;
+      adsScript.defer = true;
+      adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042701865163735';
+      adsScript.crossOrigin = 'anonymous';
+      document.head.appendChild(adsScript);
+    }, 4000);
+  }
+
+  if (document.readyState === 'complete') {
+    loadDelayedScripts();
+  } else {
+    window.addEventListener('load', loadDelayedScripts, { once: true });
+  }
+})();`
 
 export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
@@ -36,8 +44,17 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
         <link rel="shortcut icon" type="image/x-icon" href="https://escapethebackrooms.org/favicon.ico" />
         <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net" />
         <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossOrigin="anonymous" />
-        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossOrigin="anonymous" />
-        <script dangerouslySetInnerHTML={{ __html: delayedThirdPartyScripts }} />
+        <Script
+          id="google-publisher-tag"
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+        <Script
+          id="delayed-third-party-scripts"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: delayedThirdPartyScripts }}
+        />
         <JsonLd id="website-jsonld" data={websiteJsonLd} />
       </head>
       <body>

@@ -74,7 +74,8 @@ export default {
       "stat03Text": "Entidades únicas",
       "button01": "Explorar todos los niveles",
       "button02": "Códigos y soluciones",
-      "videoTitle": "Tutorial de Escape the Backrooms"
+      "videoTitle": "Tutorial de Escape the Backrooms",
+      "closeVideo": "Cerrar la guía en vídeo"
     },
     "featuredLevels": {
       "label": "Destacado",
@@ -165,7 +166,7 @@ export default {
       "item04Question": "¿Cómo encuentro las llaves en cada nivel?",
       "item04Answer": "Las llaves son esenciales para avanzar en muchos niveles de Escape the Backrooms. Nuestra sección <strong>Mapas y llaves</strong> ofrece información detallada sobre las ubicaciones de llaves de cada nivel. Por ejemplo, en el Nivel 0 necesitas encontrar una llave después de reparar la escalera; en el Nivel 1 hay 4 llaves escondidas en armarios de la Sección II; y en el Nivel 5 las llaves se obtienen colocando Moth Jelly en el montaplatos.",
       "item05Question": "¿Qué son los códigos de ascensor y los códigos de puertas?",
-      "item05Answer": "Muchos niveles de Escape the Backrooms requieren códigos específicos para acceder a ascensores o desbloquear puertas. Nuestra página <strong>Códigos y soluciones</strong> contiene una lista completa de todos los códigos de ascensor Escape the Backrooms (como el Nivel 3: 042, Nivel 5: 314), códigos de puertas (como el Nivel 1: 1234) y contraseñas de computadora (como el Nivel 94: CONTRASEÑA). Cada entrada de código Escape the Backrooms incluye la ubicación, instrucciones de uso e imágenes útiles.",
+      "item05Answer": "Algunas cerraduras usan una contraseña fija, mientras que otras calculan la respuesta a partir de los objetos o las pistas de la partida actual. En <strong>Códigos y soluciones</strong> distinguimos respuestas fijas, como la contraseña del Hub y el código del billete del nivel 3999, de acertijos variables como los coches de colores del nivel 1 y el recuento de objetos del nivel 4.",
       "item06Question": "¿Cómo evito entidades como Sabueso o Polilla?",
       "item06Answer": "Nuestra <strong>Base de datos de entidades</strong> proporciona información completa sobre todas las entidades Escape the Backrooms, incluidos sus comportamientos, ubicaciones y niveles de peligro. Cada guía de entidades Escape the Backrooms explica cómo evitarlos o tratarlos. Por ejemplo, los perros en Escape the Backrooms son agresivos y rápidos, por lo que debes evitarlos en los primeros niveles de Escape the Backrooms. Las polillas del nivel 5 de Escape the Backrooms se sienten atraídas por la luz, así que evita utilizar fuentes de luz cerca de ellas.",
       "item07Question": "¿Qué es el nivel 3999 y el sistema de lista de tareas?",
@@ -208,6 +209,12 @@ export default {
       "action": "Ver mapa"
     },
     "inlineMapLink": "Para ver visualmente esta ruta, consulta",
+    "research": {
+      "kicker": "Notas de ruta de jugadores",
+      "title": "Lo que comprobamos antes de seguir",
+      "check": "Comprobación",
+      "multiplayer": "Consejos multijugador"
+    },
     "notFound": {
       "title": "Nivel no encontrado",
       "backLink": "Volver a la lista de niveles"
@@ -341,8 +348,8 @@ export default {
       "level3": {
         "title": "Nivel 3 - Estación Eléctrica",
         "solution1": {
-          "title": "Código de ascensor: 042",
-          "description": "El código del ascensor para el nivel 3 es <strong>042</strong>. Introduce este código en el teclado del ascensor para acceder a diferentes pisos."
+          "title": "No hay un código fijo de ascensor",
+          "description": "El nivel 3 <strong>no</strong> utiliza el código universal 042. Para avanzar hay que activar las cajas de fusibles de cada zona y resolver los paneles de cables del generador."
         },
         "solution2": {
           "title": "Zona 1: habilitar cajas de fusibles",
@@ -373,8 +380,8 @@ export default {
       "level4": {
         "title": "Nivel 4 - Oficina abandonada",
         "solution1": {
-          "title": "Código de ascensor: 729",
-          "description": "El código del ascensor para el nivel 4 es <strong>729</strong>. Ingrese este código en el teclado del ascensor para navegar entre pisos."
+          "title": "No hay un código fijo de ascensor",
+          "description": "El nivel 4 <strong>no</strong> tiene el código universal 729. Los números salen de contar los objetos que pide la sala actual y pueden cambiar entre partidas."
         },
         "solution2": {
           "title": "Rompecabezas de máquinas expendedoras (contar objetos)",
@@ -388,8 +395,8 @@ export default {
       "level5": {
         "title": "Nivel 5 - Hotel del Terror",
         "solution1": {
-          "title": "Código de ascensor: 314",
-          "description": "El código del ascensor para el nivel 5 es <strong>314</strong>. Introduce este código en el teclado del ascensor para acceder a los pisos superiores del hotel."
+          "title": "No hay un código general de ascensor",
+          "description": "El nivel 5 <strong>no</strong> utiliza 314 como código universal. La combinación fija aparece más adelante, en la habitación 235, y será una de las tres opciones indicadas abajo."
         },
         "solution2": {
           "title": "Salón principal - Rompecabezas de botones de pintura",
@@ -407,19 +414,19 @@ export default {
       "level8": {
         "title": "Nivel 8 - Sistema de cuevas",
         "solution1": {
-          "title": "Código de ascensor: 826",
-          "description": "El código del ascensor para el nivel 8 es <strong>826</strong>. Utilice este código para navegar por la compleja red de cuevas."
+          "title": "No hay un código fijo de ascensor",
+          "description": "El nivel 8 <strong>no</strong> utiliza el código universal 826. Sigue la ruta de las cuevas y resuelve el mecanismo de la puerta M.E.G. en vez de buscar un atajo con teclado."
         }
       },
       "otherLevels": {
         "title": "Otros niveles",
         "solution1": {
-          "title": "Nivel 94 - Contraseña de la Computadora: CONTRASEÑA",
-          "description": "La contraseña de la computadora para el Nivel 94 (Movimiento) es <strong>CONTRASEÑA</strong>. Esta contraseña es necesaria para acceder al sistema informático y desbloquear información importante."
+          "title": "Nivel 188 - Código de salida: 415314",
+          "description": "El teclado de seis cifras de la ruta del nivel 188 acepta <strong>415314</strong>. Es un código fijo y no forma parte del objetivo de transportar televisores del recorrido actual."
         },
         "solution2": {
-          "title": "Nivel 3999 - Contraseña De La Computadora: ESCAPE",
-          "description": "La contraseña final de la computadora para el nivel 3999 (El final verdadero) es <strong>ESCAPE</strong>. Esta contraseña es crucial para completar la secuencia de escape."
+          "title": "Nivel 3999 - Código del billete: 931",
+          "description": "Recoge el billete de premio de la sala recreativa e introduce <strong>931</strong> en el teclado del ascensor. El final verdadero exige otros requisitos; la palabra ESCAPE no es una contraseña."
         }
       }
     }
@@ -446,7 +453,7 @@ export default {
         "levelNames": "Nombres de niveles (por ejemplo, \"Nivel 0\", \"Nivel 1\")",
         "entityNames": "Nombres de entidades (por ejemplo, \"Vagabundo\", \"Bacteria\")",
         "mapNames": "Nombres de mapas (por ejemplo, \"Mapa de nivel 0\")",
-        "codes": "Códigos (por ejemplo, \"042\", \"729\")",
+        "codes": "Códigos y respuestas a pistas (por ejemplo, \"itheardyou\", \"931\")",
         "keywords": "Palabras clave (por ejemplo, \"llave\", \"salida\", \"puerta\")"
       }
     }
@@ -470,7 +477,25 @@ export default {
       "communityText": "Valoramos nuestra comunidad y estamos comprometidos a proporcionar un recurso útil e informativo para todos los jugadores. Sus comentarios y sugerencias nos ayudan a mejorar nuestro contenido y servicios.",
       "contactTitle": "Contáctenos",
       "contactText": "Si tiene alguna pregunta, sugerencia o comentario, no dude en contactarnos a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>. ¡Nos encantaría saber de usted!",
-      "lastUpdated": "Última actualización: 14 de enero de 2025"
+      "lastUpdated": "Última actualización: 3 de septiembre de 2026",
+      "v2Intro": "Frontline Pathfinder es un equipo independiente de investigación y guías para jugadores que buscan respuestas fiables y prácticas, no resúmenes reciclados.",
+      "v2OriginTitle": "Cómo nació Frontline Pathfinder",
+      "v2OriginText": "Frontline Pathfinder se fundó a principios de 2026 por aficionados a los juegos independientes y perfiles técnicos. Nos centramos en puzles exigentes, sistemas de supervivencia táctica y juegos narrativos donde un pequeño detalle puede decidir un logro, una ruta oculta o toda una partida.",
+      "v2WhyTitle": "Por qué creamos este proyecto",
+      "v2WhyText": "Al jugar títulos tan particulares como Sally Face y Road to Vostok, encontramos demasiadas guías generalistas incompletas, copiadas o nunca comprobadas dentro del juego. Este sitio sustituye las conjeturas por rutas probadas de primera mano, controles completos de coleccionables y explicaciones claras de la lógica que hay detrás de cada solución.",
+      "v2MethodTitle": "Nuestro método de investigación",
+      "v2MethodText": "Cada guía publicada empieza con una partida y una comprobación real. Si una actualización cambia las rutas, el comportamiento de un objeto, un puzle o un logro, revisamos las páginas afectadas.",
+      "v2MethodItem1": "Pruebas repetidas con rutas alternativas, distintos estados de dificultad y condiciones multijugador cuando son relevantes.",
+      "v2MethodItem2": "Comprobación práctica de códigos, elementos perdibles, pasos de puzles, mapas y rutas de recuperación antes de presentarlos como instrucciones.",
+      "v2MethodItem3": "Correcciones claras cuando una actualización vuelve incompleta u obsoleta una indicación anterior.",
+      "v2FormatTitle": "Guías estructuradas y útiles",
+      "v2FormatText": "No confundimos cantidad con calidad. Organizamos las guías en torno a respuestas rápidas, comprobaciones de ruta, pasos bien delimitados y requisitos de logros para que cada jugador encuentre la decisión que necesita sin perder el contexto.",
+      "v2StandardsTitle": "Los jugadores, primero",
+      "v2StandardsText": "Nos importan los detalles que se pasan por alto con facilidad: una pista del escenario, una conexión del mapa, una bifurcación dinámica o la condición que bloquea un logro. Queremos que los juegos difíciles sean más claros sin quitar la satisfacción de descubrirlos.",
+      "v2IndependenceTitle": "Recurso independiente de aficionados",
+      "v2IndependenceText": "Escape the Backrooms Wiki está gestionado por Frontline Pathfinder como recurso independiente creado por aficionados. No está afiliado, respaldado ni patrocinado por Fancy Games, Secret Mode ni ningún otro titular de derechos. Los nombres, ilustraciones y marcas de los juegos pertenecen a sus respectivos propietarios.",
+      "v2ContactTitle": "Ayúdanos a mantener la precisión",
+      "v2ContactText": "¿Has encontrado una ruta desactualizada, una condición que falta o un método mejor? Envía la dirección de la página, la versión del juego y lo que observaste a <a href=\"mailto:wyong@escapethebackrooms.org\">wyong@escapethebackrooms.org</a>."
     }
   },
   "contactUsPage": {
@@ -479,11 +504,11 @@ export default {
       "subtitle": "Póngase en contacto con nosotros"
     },
     "content": {
-      "intro": "¡Nos encantaría saber de usted! Si tiene preguntas, sugerencias, comentarios o simplemente quiere saludar, no dude en comunicarse con nosotros.",
+      "intro": "Las preguntas, correcciones, avisos de derechos de autor y propuestas de colaboración pueden enviarse directamente a <a href=\"mailto:wyong@escapethebackrooms.org\">wyong@escapethebackrooms.org</a>. No incluya contraseñas, códigos de acceso ni otros datos sensibles.",
       "howToContactTitle": "Cómo contactarnos",
-      "howToContactText": "Para consultas generales, comentarios o preguntas, utilice el formulario de contacto a continuación o comuníquese a través de nuestros canales de redes sociales.",
+      "howToContactText": "Escriba a <a href=\"mailto:wyong@escapethebackrooms.org\">wyong@escapethebackrooms.org</a>. Es el canal directo de Frontline Pathfinder y Escape the Backrooms Wiki; no hace falta usar un formulario.",
       "responseTimeTitle": "Tiempo de respuesta",
-      "responseTimeText": "Nos esforzamos por responder a todas las consultas dentro de las 48 horas. Tenga en cuenta que durante las horas pico, los tiempos de respuesta pueden ser un poco más largos.",
+      "responseTimeText": "Intentamos revisar los mensajes en un plazo de cinco días laborables. La investigación, las actualizaciones del juego o el detalle necesario para verificar un aviso pueden retrasar la respuesta, pero revisamos todas las correcciones de buena fe y los mensajes relacionados con derechos.",
       "whatToIncludeTitle": "Qué incluir",
       "whatToIncludeText": "Cuando se comunique con nosotros, incluya:",
       "whatToIncludeItems": {
@@ -500,13 +525,13 @@ export default {
       "correctionsText": "Si nota alguna inexactitud en nuestro contenido, contáctenos con la información correcta. Agradecemos su ayuda para mantener nuestro contenido preciso y actualizado.",
       "partnershipTitle": "Consultas sobre asociaciones",
       "partnershipText": "Para consultas sobre asociación o colaboración, contáctenos con detalles sobre su propuesta.",
-      "lastUpdated": "Última actualización: 14 de enero de 2025"
+      "lastUpdated": "Última actualización: 3 de septiembre de 2026"
     }
   },
   "privacyPolicyPage": {
     "hero": {
       "title": "Política de privacidad",
-      "subtitle": "Última actualización: 14 de enero de 2025"
+      "subtitle": "Última actualización: 3 de septiembre de 2026"
     },
     "content": {
       "intro": "En Escape the Backrooms Wiki, estamos comprometidos a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos y salvaguardamos su información cuando visita nuestro sitio web.",
@@ -526,13 +551,54 @@ export default {
       "changesTitle": "Cambios a esta política",
       "changesText": "Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la fecha de \"Última actualización\".",
       "contactTitle": "Contáctenos",
-      "contactText": "Si tiene alguna pregunta sobre esta Política de privacidad, comuníquese con nosotros a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>."
+      "contactText": "Si tiene alguna pregunta sobre esta Política de privacidad, comuníquese con nosotros a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>.",
+      "v2Intro": "Esta Política de Privacidad explica cómo Frontline Pathfinder, responsable de Escape the Backrooms Wiki (el «Sitio»), trata la información cuando usted visita el Sitio o se pone en contacto con nosotros. Solo se aplica a este Sitio y no cubre servicios de terceros.",
+      "v2ScopeTitle": "A quién se aplica esta Política",
+      "v2ScopeText": "Al utilizar el Sitio, usted reconoce las prácticas aquí descritas. El Sitio es un recurso informativo sobre videojuegos y no está diseñado para exigir una cuenta, datos de pago ni información personal sensible.",
+      "v2ScopeDetails": "Esta Política cubre las páginas, guías, medios integrados y comunicaciones gestionados bajo escapethebackrooms.org. No regula las prácticas de una editora de videojuegos, una tienda de aplicaciones, una red social, un socio publicitario ni ninguna web a la que se llegue mediante un enlace externo.",
+      "v2DataTitle": "Información que podemos recopilar",
+      "v2DataText": "La información tratada depende de cómo utilice el Sitio. Limitamos la recopilación a lo razonablemente necesario para operar, proteger, medir y mejorar el Sitio.",
+      "v2DataDetails": "No solicitamos de forma intencionada identificadores oficiales, datos de cuentas financieras, contraseñas ni categorías especialmente sensibles de datos personales. No los incluya en un correo. Si envía voluntariamente información sensible que no necesitamos, podemos eliminarla en lugar de conservarla.",
+      "v2DataItem1": "Los datos de contacto y el contenido de los mensajes que usted decida enviarnos.",
+      "v2DataItem2": "Información técnica básica como la dirección IP, el tipo de navegador y dispositivo, el sistema operativo, la página de procedencia y eventos aproximados de uso.",
+      "v2DataItem3": "Identificadores de cookies o tecnologías similares para funciones esenciales, medición de audiencia, publicidad o almacenamiento de preferencias cuando estén habilitadas.",
+      "v2UseTitle": "Cómo utilizamos la información",
+      "v2UseText": "Utilizamos la información para prestar y proteger el Sitio, diagnosticar errores, entender qué guías resultan útiles, responder a mensajes, evitar abusos y cumplir obligaciones legales. No vendemos datos personales a cambio de dinero.",
+      "v2UseDetails": "Cuando hace falta una base jurídica, el funcionamiento y la seguridad se apoyan en nuestro interés legítimo en mantener un recurso público fiable; respondemos a un mensaje por la solicitud que usted decide realizar; y cualquier tecnología basada en consentimiento se utiliza únicamente de acuerdo con su elección y la legislación aplicable.",
+      "v2CookiesTitle": "Cookies, análisis y publicidad",
+      "v2CookiesText": "El Sitio puede utilizar cookies y tecnologías similares propias o de proveedores. Sirven para recordar preferencias, medir el rendimiento y facilitar publicidad. Puede gestionar o borrar las cookies desde el navegador; bloquearlas puede afectar a algunas funciones o preferencias publicitarias.",
+      "v2CookiesDetails": "El navegador también puede conservar almacenamiento local, archivos en caché o ajustes creados por servicios integrados. Borrar los datos de navegación puede eliminarlos. Las herramientas de exclusión y extensiones de privacidad pueden cambiar el funcionamiento de contenidos integrados y anuncios sin impedir el acceso a las guías escritas.",
+      "v2AnalyticsTitle": "Análisis y medición",
+      "v2AnalyticsText": "Podemos medir visitas agregadas, rendimiento de páginas, fuentes de tráfico e interacciones con funciones del Sitio para saber qué debemos mejorar. Los informes pueden contener señales técnicas y de uso, pero no las empleamos para crear un perfil personal ni para tomar decisiones con efectos jurídicos o de importancia similar sobre usted.",
+      "v2PartnersTitle": "Servicios y enlaces de terceros",
+      "v2PartnersText": "Los proveedores de vídeo integrado, análisis, publicidad, redes sociales o enlaces externos pueden recopilar información bajo sus propias políticas cuando usted interactúa con ellos. Por ejemplo, los vídeos integrados de YouTube se rigen por las condiciones y prácticas de privacidad de Google. No controlamos el tratamiento realizado por terceros.",
+      "v2PartnersDetails": "Le recomendamos leer la política del servicio externo antes de facilitarle información. La presencia de un enlace, reproductor integrado, logotipo o mención no significa que controlemos a ese proveedor ni que sus reglas formen parte de esta Política.",
+      "v2AdsTitle": "Publicidad",
+      "v2AdsText": "El Sitio puede mostrar publicidad para contribuir a financiar la investigación y el funcionamiento. Los proveedores publicitarios pueden utilizar cookies o tecnologías similares según sus propias políticas y las obligaciones de consentimiento aplicables donde usted vive. No controlamos cada anuncio mostrado y un anuncio no constituye una recomendación de Frontline Pathfinder.",
+      "v2SharingTitle": "Cuándo puede compartirse información",
+      "v2SharingText": "Podemos compartir información con proveedores que ayudan a alojar, proteger, analizar u operar el Sitio, pero solo para esas funciones. También podemos revelarla cuando lo exija la ley, para proteger a los visitantes o al Sitio frente al fraude o el abuso, o durante una transferencia empresarial. No vendemos datos personales a cambio de dinero.",
+      "v2RetentionTitle": "Durante cuánto tiempo conservamos la información",
+      "v2RetentionText": "Los registros técnicos y datos de medición se conservan durante un periodo limitado acorde con las necesidades operativas y de seguridad. Los mensajes pueden guardarse mientras resolvemos el asunto y durante un plazo razonable de seguimiento; después se eliminan o anonimizan, salvo que la ley exija más tiempo o exista una disputa pendiente.",
+      "v2ChoicesTitle": "Sus opciones y solicitudes",
+      "v2ChoicesText": "Con sujeción a la legislación aplicable y a la verificación de identidad, puede solicitar acceso, rectificación o eliminación de los datos personales que nos haya facilitado. También puede rechazar las cookies no esenciales mediante el navegador o los controles de consentimiento disponibles en el Sitio.",
+      "v2ChoicesDetails": "Para proteger a los visitantes, podemos pedir información suficiente para confirmar que la solicitud se refiere a usted. Según su lugar de residencia, también puede tener derecho a oponerse o limitar determinados tratamientos y a presentar una reclamación ante la autoridad de protección de datos correspondiente.",
+      "v2SecurityTitle": "Conservación y seguridad",
+      "v2SecurityText": "Solo conservamos la información durante el tiempo razonablemente necesario para los fines descritos, incluida la seguridad, el mantenimiento de registros y las obligaciones legales. Aplicamos medidas de protección razonables, pero ningún sistema de transmisión o almacenamiento en Internet puede garantizar una seguridad absoluta.",
+      "v2ChildrenTitle": "Privacidad de los menores",
+      "v2ChildrenText": "El Sitio es un recurso general sobre videojuegos y no está dirigido a menores de 13 años, o de una edad mínima superior cuando la legislación local así lo exija. No recopilamos deliberadamente datos personales de menores. Si cree que un menor nos ha enviado información, escríbanos para que podamos revisarla y eliminarla cuando corresponda.",
+      "v2ChildrenDetails": "Los padres y tutores deben supervisar el uso de servicios en línea por parte de los menores. Si una solicitud de eliminación se refiere a un menor, indique la dirección de correo o la comunicación relacionada para que podamos localizarla sin pedir más datos personales de los necesarios.",
+      "v2InternationalTitle": "Tratamiento internacional",
+      "v2InternationalText": "El Sitio está disponible en todo el mundo y sus proveedores de alojamiento, seguridad u otros servicios pueden tratar información en países distintos del suyo. Esos países pueden tener normas de protección de datos diferentes. Tomamos medidas razonables para utilizar proveedores y garantías adecuados a los servicios prestados.",
+      "v2ChangesTitle": "Cambios en esta Política",
+      "v2ChangesText": "Podemos actualizar esta Política cuando cambien el Sitio o los requisitos aplicables. La versión revisada entra en vigor al publicarse y la fecha que aparece en la parte superior indica la última revisión.",
+      "v2ContactTitle": "Contacto de privacidad",
+      "v2ContactText": "Para preguntas o solicitudes de privacidad, escriba a <a href=\"mailto:wyong@escapethebackrooms.org\">wyong@escapethebackrooms.org</a> e indique la página o el servicio relacionado. No envíe contraseñas, códigos de autenticación ni documentos de identidad en su primer mensaje."
     }
   },
   "termsOfServicePage": {
     "hero": {
       "title": "Términos de servicio",
-      "subtitle": "Última actualización: 14 de enero de 2025"
+      "subtitle": "Última actualización: 3 de septiembre de 2026"
     },
     "content": {
       "intro": "Bienvenidos a Wiki Escape the Backrooms. Al acceder y utilizar este sitio web, usted acepta estar sujeto a estos Términos de servicio. Si no está de acuerdo con alguna parte de estos términos, no utilice nuestro sitio web.",
@@ -552,13 +618,50 @@ export default {
       "modificationsTitle": "Modificaciones a los términos",
       "modificationsText": "Nos reservamos el derecho de modificar estos Términos de servicio en cualquier momento. Su uso continuado del sitio web después de cualquier cambio constituye su aceptación de los nuevos términos.",
       "contactTitle": "Información de contacto",
-      "contactText": "Si tiene alguna pregunta sobre estos Términos de servicio, comuníquese con nosotros a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>."
+      "contactText": "Si tiene alguna pregunta sobre estos Términos de servicio, comuníquese con nosotros a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>.",
+      "v2Intro": "Estos Términos de Servicio regulan el uso de Escape the Backrooms Wiki, gestionado por Frontline Pathfinder. Léalos antes de utilizar el Sitio.",
+      "v2AcceptanceTitle": "Aceptación de estos Términos",
+      "v2AcceptanceText": "Al acceder al Sitio o utilizarlo, usted acepta estos Términos y nuestra Política de Privacidad. Si no está de acuerdo, no utilice el Sitio. Es responsable de que su uso cumpla las leyes que le sean aplicables.",
+      "v2AcceptanceDetails": "Estos Términos se aplican a todos los visitantes, también a quienes llegan mediante un enlace o un buscador, usan una función integrada o se comunican con nosotros. Si utiliza el Sitio en nombre de una organización, confirma que puede aceptar los Términos por ella.",
+      "v2ServiceTitle": "Qué ofrece el Sitio",
+      "v2ServiceText": "El Sitio ofrece guías editoriales de videojuegos, mapas, vídeos, material de consulta y recursos relacionados con fines generales de información y entretenimiento. Podemos cambiar, corregir, retirar o interrumpir cualquier parte del Sitio en cualquier momento.",
+      "v2ServiceDetails": "Las guías describen las versiones y condiciones que hemos probado; no son instrucciones del desarrollador. Usted sigue siendo responsable de sus decisiones en el juego, su equipo, la seguridad de sus cuentas, las normas de la plataforma y las consecuencias de utilizar una estrategia, mod, exploit o servicio externo.",
+      "v2UseTitle": "Uso permitido",
+      "v2UseText": "Puede consultar el Sitio con fines personales y no comerciales. No debe:",
+      "v2UseItem1": "Copiar, extraer automáticamente, volver a publicar o explotar comercialmente partes sustanciales de nuestro contenido original sin permiso escrito.",
+      "v2UseItem2": "Intentar eludir controles de seguridad, interferir con el Sitio o analizarlo en busca de vulnerabilidades.",
+      "v2UseItem3": "Utilizar sistemas automatizados de forma que generen una carga poco razonable o dificulten el acceso de otros visitantes.",
+      "v2UseItem4": "Usar el Sitio en relación con actividades ilícitas, perjudiciales, engañosas o que vulneren derechos.",
+      "v2OwnershipTitle": "Nuestro contenido editorial",
+      "v2OwnershipText": "Salvo que se indique lo contrario, Frontline Pathfinder es titular de los textos originales, la estructura de las guías, las notas de investigación, el diseño de las páginas y otros materiales creados por el equipo. La ley puede permitir citas breves para comentario o reseña, pero eso no transfiere la titularidad.",
+      "v2OwnershipDetails": "Puede guardar páginas como favoritas, compartir un enlace normal e imprimir una copia razonable para consulta personal. Cualquier otro uso —en especial traducción, extracción automatizada, conjuntos de entrenamiento, sitios espejo o publicación comercial— requiere una solicitud por escrito.",
+      "v2GameIpTitle": "Propiedad intelectual del juego",
+      "v2GameIpText": "Escape the Backrooms y los elementos, nombres, capturas y marcas relacionados pertenecen a sus respectivos titulares. Este Sitio no concede ninguna licencia sobre esa propiedad intelectual y nuestras referencias no implican afiliación ni respaldo.",
+      "v2UserSubmissionsTitle": "Mensajes y aportaciones",
+      "v2UserSubmissionsText": "Si envía una corrección, captura, sugerencia u otro material, debe tener derecho a hacerlo. Nos concede permiso no exclusivo y gratuito para revisarlo y utilizarlo con el fin de responderle, verificar una guía o mejorar el Sitio. No envíe información confidencial ni material que no pueda compartir legalmente.",
+      "v2ExternalTitle": "Enlaces externos y contenido integrado",
+      "v2ExternalText": "El Sitio puede enlazar o integrar contenido de terceros. Esos servicios los prestan sus respectivos propietarios. No somos responsables de su disponibilidad, exactitud, seguridad, condiciones ni prácticas de privacidad.",
+      "v2ExternalDetails": "Si sale del Sitio, usa una cuenta de terceros, realiza una compra, descarga software o facilita datos a otro servicio, su relación es con ese proveedor. Revise sus reglas antes de actuar; la presencia de un enlace no es una recomendación ni una garantía.",
+      "v2AvailabilityTitle": "Disponibilidad y actualizaciones",
+      "v2AvailabilityText": "Intentamos mantener el Sitio disponible, pero puede interrumpirse por mantenimiento, problemas técnicos, trabajos de seguridad o circunstancias fuera de nuestro control. Podemos actualizar o retirar guías y funciones sin previo aviso, especialmente cuando un parche vuelve poco fiable la información anterior.",
+      "v2DisclaimerTitle": "Sin garantías",
+      "v2DisclaimerText": "Las guías se ofrecen «tal cual» y «según disponibilidad». Los parches, la generación aleatoria, las diferencias entre plataformas y las decisiones del jugador pueden cambiar los resultados. No garantizamos que cada ruta, código, marca de tiempo o resultado sea completo, actual o adecuado para su situación.",
+      "v2DisclaimerDetails": "Nada del Sitio constituye asesoramiento profesional jurídico, de ciberseguridad, financiero, médico ni de otra actividad regulada. Antes de tomar una decisión de gran impacto o compartir datos de una cuenta, consulte cuando proceda la fuente oficial o a un profesional cualificado.",
+      "v2LiabilityTitle": "Limitación de responsabilidad",
+      "v2LiabilityText": "En la máxima medida permitida por la ley, Frontline Pathfinder y sus colaboradores no responden de daños indirectos, incidentales, consecuentes, especiales o punitivos derivados del uso o de la imposibilidad de usar el Sitio o los servicios enlazados.",
+      "v2LiabilityDetails": "Cuando la responsabilidad no pueda excluirse legalmente, quedará limitada al mínimo permitido por la legislación aplicable. Algunas jurisdicciones no admiten determinadas exclusiones o límites, por lo que una parte de esta sección podría no aplicarse.",
+      "v2TerminationTitle": "Restricción del acceso",
+      "v2TerminationText": "Podemos limitar o bloquear un acceso que consideremos razonablemente peligroso para el Sitio, contrario a estos Términos, lesivo de derechos o perjudicial para otros visitantes. Esto no limita otros recursos disponibles para nosotros o para un titular de derechos.",
+      "v2ChangesTitle": "Cambios en estos Términos",
+      "v2ChangesText": "Podemos revisar estos Términos publicando una versión actualizada en esta página. El uso continuado después de su entrada en vigor implica la aceptación de la versión revisada.",
+      "v2ContactTitle": "Preguntas sobre los Términos",
+      "v2ContactText": "Puede enviar sus preguntas sobre estos Términos a <a href=\"mailto:wyong@escapethebackrooms.org\">wyong@escapethebackrooms.org</a>."
     }
   },
   "copyrightPage": {
     "hero": {
       "title": "Derechos de autor",
-      "subtitle": "Última actualización: 14 de enero de 2025"
+      "subtitle": "Última actualización: 3 de septiembre de 2026"
     },
     "content": {
       "copyright": "© 2025 Escape the Backrooms Wiki. Reservados todos los derechos.",
@@ -583,7 +686,35 @@ export default {
         "statement2": "Una declaración de que la información contenida en su aviso es exacta"
       },
       "contactTitle": "Información de contacto",
-      "contactText": "Para consultas relacionadas con derechos de autor, comuníquese con nosotros a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>."
+      "contactText": "Para consultas relacionadas con derechos de autor, comuníquese con nosotros a través de nuestra página <a href=\"/es/contact-us\">Contacto</a>.",
+      "v2Intro": "Esta página explica el criterio sobre derechos de autor y propiedad intelectual de Escape the Backrooms Wiki, gestionado por Frontline Pathfinder.",
+      "v2SiteTitle": "Contenido de Frontline Pathfinder",
+      "v2SiteText": "Nuestros textos originales, investigaciones, diseños de página, organización de rutas, ilustraciones propias y demás contenido original del Sitio están protegidos por la legislación aplicable sobre derechos de autor. Nos reservamos todos los derechos no concedidos expresamente.",
+      "v2SiteDetails": "Las fechas, hechos del juego, etiquetas funcionales breves e ideas pueden no recibir la misma protección que una expresión original. Lo que no puede copiarse es nuestra redacción concreta, selección, organización, presentación de la investigación y demás trabajo creativo propio.",
+      "v2GameTitle": "Propiedad de terceros relacionada con el juego",
+      "v2GameText": "Escape the Backrooms, su título, grabaciones, capturas, logotipos, personajes, ilustraciones y marcas relacionadas pertenecen a sus respectivos titulares. Este es un recurso independiente de aficionados y no reclama propiedad sobre esos elementos.",
+      "v2GameDetails": "Utilizamos referencias limitadas al juego para identificarlo, comentarlo, reseñarlo y explicar su funcionamiento. Ese uso pretende ajustarse a la legislación aplicable y no crea una relación de colaboración, patrocinio ni autorización por parte de un titular de derechos.",
+      "v2PermittedTitle": "Uso personal permitido",
+      "v2PermittedText": "Cuando la ley lo permita, puede enlazar nuestras páginas y utilizar citas breves con atribución clara y un enlace a la página correspondiente. Este permiso no incluye copiar una guía completa, eliminar la atribución ni presentar nuestro trabajo como propio.",
+      "v2PermittedDetails": "El permiso puede revocarse si el uso perjudica a los visitantes, tergiversa una guía, incumple estas condiciones o supera una cita lícita. Si desea reproducir más que un fragmento breve, contacte antes e indique el uso previsto, territorio, formato y público.",
+      "v2RestrictionsTitle": "Usos restringidos",
+      "v2RestrictionsText": "Sin permiso escrito previo, no reproduzca, traduzca, vuelva a publicar sistemáticamente, venda ni construya una base de datos competidora a partir de partes sustanciales de nuestro contenido original. Tampoco utilice nuestra marca o identidad visual de modo que sugiera patrocinio o respaldo.",
+      "v2TrademarkTitle": "Marcas y atribución",
+      "v2TrademarkText": "Los identificadores de Frontline Pathfinder y Escape the Backrooms Wiki no pueden utilizarse de forma que parezca que aprobamos otro producto, sitio o servicio. Las marcas de terceros solo identifican los juegos y servicios tratados y siguen perteneciendo a sus propietarios.",
+      "v2TakedownTitle": "Nuestro procedimiento de retirada",
+      "v2TakedownText": "Tomamos en serio las preocupaciones de buena fe sobre derechos de autor. Cuando recibimos un aviso completo, revisamos el material identificado y podemos restringirlo temporalmente durante la investigación. Podemos pedir más detalles si el aviso no identifica con claridad la obra o la dirección correspondiente.",
+      "v2NoticeTitle": "Avisos de derechos de autor",
+      "v2NoticeText": "Si cree que un material del Sitio vulnera sus derechos de autor, envíe por correo un aviso de buena fe que incluya:",
+      "v2NoticeDetails": "Envíe el aviso a la dirección indicada en la sección «Contacto de derechos de autor». Un aviso completo nos ayuda a actuar con rapidez, pero no demuestra automáticamente una infracción ni nos obliga a retirar comentarios, citas u otros usos lícitos.",
+      "v2NoticeItem1": "Identificación de la obra protegida que considera vulnerada.",
+      "v2NoticeItem2": "La URL exacta u otra ubicación precisa del material cuestionado.",
+      "v2NoticeItem3": "Su nombre y una forma fiable de contacto.",
+      "v2NoticeItem4": "Una declaración de que considera que el uso no está autorizado por el titular, su representante ni la ley.",
+      "v2NoticeItem5": "Una declaración de que la información es correcta y de que está autorizado para actuar por el titular de los derechos.",
+      "v2CounterTitle": "Contraavisos y correcciones",
+      "v2CounterText": "Si se retira contenido tras una reclamación y cree que ha sido un error, escríbanos con la URL, su explicación y la información de apoyo. Revisamos las solicitudes de buena fe; este procedimiento no limita los derechos legales de ninguna de las partes.",
+      "v2ContactTitle": "Contacto de derechos de autor",
+      "v2ContactText": "Envíe avisos de derechos de autor, preguntas de atribución o solicitudes de permiso a <a href=\"mailto:wyong@escapethebackrooms.org\">wyong@escapethebackrooms.org</a>."
     }
   }
 }

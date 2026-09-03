@@ -198,6 +198,15 @@
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
+  border: 0;
+  color: inherit;
+  padding: 0;
+  width: 100%;
+}
+
+:global(.home-view .video-thumbnail:focus-visible) {
+  outline: 3px solid #ffd700;
+  outline-offset: 3px;
 }
 
 :global(.home-view .video-thumbnail::before) {

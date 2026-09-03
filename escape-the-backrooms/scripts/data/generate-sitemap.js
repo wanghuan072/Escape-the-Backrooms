@@ -18,9 +18,9 @@ const seoConfig = {
 
 // 支持的语言列表
 const supportedLocales = ['en', 'de', 'fr', 'es']
+const redirectedLevelSlugs = new Set(['level-8-cave-system-guide'])
 
 // 基础路由配置
-// Note: Legal pages (privacy-policy, terms-of-service, copyright) are excluded from sitemap
 const baseRoutes = [
   { path: '/', name: 'home', priority: 1.0, changefreq: 'weekly' },
   { path: '/levels', name: 'levels', priority: 0.9, changefreq: 'weekly' },
@@ -28,6 +28,11 @@ const baseRoutes = [
   { path: '/codes-solutions', name: 'codes-solutions', priority: 0.9, changefreq: 'weekly' },
   { path: '/backrooms-games', name: 'related-games', priority: 0.8, changefreq: 'monthly' },
   { path: '/search', name: 'search', priority: 0.7, changefreq: 'daily' },
+  { path: '/privacy-policy', name: 'privacy-policy', priority: 0.3, changefreq: 'yearly' },
+  { path: '/terms-of-service', name: 'terms-of-service', priority: 0.3, changefreq: 'yearly' },
+  { path: '/copyright', name: 'copyright', priority: 0.3, changefreq: 'yearly' },
+  { path: '/about-us', name: 'about-us', priority: 0.6, changefreq: 'monthly' },
+  { path: '/contact-us', name: 'contact-us', priority: 0.4, changefreq: 'yearly' },
 ]
 
 function today() {
@@ -187,7 +192,7 @@ async function collectUrlEntries() {
   supportedLocales.forEach((locale) => {
     const levels = allData[locale].levels || []
     levels.forEach((level) => {
-      if (!level?.addressBar) return
+      if (!level?.addressBar || redirectedLevelSlugs.has(level.addressBar)) return
       const routePath = createLocalizedPath(`/levels/${level.addressBar}`, locale)
       entries.push({
         loc: fullUrl(routePath),

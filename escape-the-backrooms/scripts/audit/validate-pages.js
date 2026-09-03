@@ -20,7 +20,7 @@ const baseRoutes = [
   '/about-us',
   '/contact-us',
 ]
-const sitemapBaseRoutes = baseRoutes.slice(0, 6)
+const sitemapBaseRoutes = baseRoutes
 const requireSitemapToday = process.argv.includes('--require-sitemap-today')
 const errors = []
 
@@ -96,6 +96,7 @@ function findLink(html, rel, hreflang) {
 async function collectRoutes() {
   const routes = []
   const sitemapRoutes = []
+  const redirectedLevelSlugs = new Set(['level-8-cave-system-guide'])
   const datasets = { levels: {}, maps: {} }
 
   for (const locale of locales) {
@@ -112,6 +113,7 @@ async function collectRoutes() {
     sitemapRoutes.push(...sitemapBaseRoutes.map((routePath) => localizedPath(routePath, locale)))
 
     for (const level of datasets.levels[locale]) {
+      if (redirectedLevelSlugs.has(level.addressBar)) continue
       const routePath = localizedPath(`/levels/${level.addressBar}`, locale)
       routes.push(routePath)
       sitemapRoutes.push(routePath)
@@ -224,8 +226,8 @@ function validateSitemap(expectedRoutes) {
 
   const robots = fs.readFileSync(path.join(rootDir, 'public/robots.txt'), 'utf8')
   if (!robots.includes(`Sitemap: ${siteUrl}/sitemap.xml`)) addError('robots.txt', 'sitemap URL is missing or incorrect')
-  for (const privatePath of ['/privacy-policy', '/terms-of-service', '/copyright', '/about-us', '/contact-us']) {
-    if (actualSet.has(`${siteUrl}${privatePath}`)) addError('sitemap.xml', `robots-excluded URL is present: ${privatePath}`)
+  for (const publicPath of ['/privacy-policy', '/terms-of-service', '/copyright', '/about-us', '/contact-us']) {
+    if (!actualSet.has(`${siteUrl}${publicPath}`)) addError('sitemap.xml', `public information page is missing: ${publicPath}`)
   }
 
   return { sitemap, robots, count: actualLocations.length }
@@ -276,6 +278,15 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
     return
   }
   if (!response.headers.get('content-type')?.includes('text/html')) addError(scope, 'response is not HTML')
+  const requiredSecurityHeaders = {
+    'content-security-policy': "frame-ancestors 'self'",
+    'x-frame-options': 'SAMEORIGIN',
+    'x-content-type-options': 'nosniff',
+    'referrer-policy': 'strict-origin-when-cross-origin',
+  }
+  for (const [header, expected] of Object.entries(requiredSecurityHeaders)) {
+    if (response.headers.get(header) !== expected) addError(scope, `${header} response header is missing or incorrect`)
+  }
 
   const html = await response.text()
   if (html.length < 1000) addError(scope, `HTML response is unexpectedly small (${html.length} bytes)`)
@@ -312,12 +323,60 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1]
   const mainText = textContent(main)
   if (mainText.length < 80) addError(scope, `main content is empty or too short (${mainText.length} characters)`)
-  if (!/<script\b[^>]*type="application\/ld\+json"/i.test(html)) addError(scope, 'JSON-LD is missing')
+  const jsonLdBlocks = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)]
+  if (!jsonLdBlocks.length) addError(scope, 'JSON-LD is missing')
+  for (const block of jsonLdBlocks) {
+    try {
+      JSON.parse(block[1])
+    } catch {
+      addError(scope, 'JSON-LD contains invalid JSON')
+    }
+  }
+  if (!html.includes('https://www.youtube.com/@bombit999-u6i') || !html.includes('Frontline Pathfinder')) {
+    addError(scope, 'publisher entity is not associated with the official YouTube channel')
+  }
   for (const tag of tags(html, 'a')) {
-    const href = parseAttributes(tag).href
+    const attributes = parseAttributes(tag)
+    const href = attributes.href
+    if (attributes.target === '_blank' && !(attributes.rel || '').split(/\s+/).includes('noopener')) {
+      addError(scope, `target=_blank link is missing noopener: ${href || '(missing href)'}`)
+    }
     const pathname = localUrlPath(href)
     if (pathname && !validPaths.has(pathname) && !redirectSources.has(pathname)) {
       brokenLinks.add(`${routePath} -> ${href}`)
+    }
+  }
+
+  for (const tag of tags(html, 'iframe')) {
+    const attributes = parseAttributes(tag)
+    if (!attributes.title?.trim()) addError(scope, `iframe is missing a title: ${attributes.src || '(missing src)'}`)
+  }
+
+  if (/\/(?:de\/|fr\/|es\/)?levels\/[^/]+$/.test(routePath)) {
+    if (!html.includes('id="level-video-player"')) addError(scope, 'level video player is missing')
+    const chapterSection = html.match(/<section\b[^>]*class="video-chapters"[\s\S]*?<\/section>/i)?.[0] || ''
+    const chapterCount = tags(chapterSection, 'button').length
+    if (chapterCount < 3) addError(scope, `expected at least 3 verified video chapters, found ${chapterCount}`)
+
+    const contentOrder = [
+      ['level overview', html.indexOf('class="content-body level-overview')],
+      ['video ad', html.indexOf('class="ad-placement level-inline-ad level-video-ad')],
+      ['video', html.indexOf('id="video-guide"')],
+      ['video chapters', html.indexOf('class="video-chapters"')],
+      ['research notes', html.indexOf('class="level-research-notes"')],
+    ]
+    const missingSection = contentOrder.find(([, position]) => position < 0)
+    if (missingSection) {
+      addError(scope, `${missingSection[0]} section is missing`)
+    } else if (!contentOrder.every(([, position], index) => index === 0 || position > contentOrder[index - 1][1])) {
+      addError(scope, `level content order is incorrect: ${contentOrder.map(([name]) => name).join(' -> ')}`)
+    }
+  }
+
+  for (const tag of tags(html, 'img')) {
+    const attributes = parseAttributes(tag)
+    if (!Number(attributes.width) || !Number(attributes.height)) {
+      addError(scope, `image is missing intrinsic dimensions: ${attributes.src || '(missing src)'}`)
     }
   }
 
@@ -376,8 +435,8 @@ async function main() {
   const validPaths = new Set(inventory.routes.map(normalizePathname))
   const sitemapPaths = new Set(inventory.sitemapRoutes)
   if (validPaths.size !== inventory.routes.length) addError('routes', 'duplicate public routes found')
-  if (inventory.routes.length !== 228) addError('routes', `expected 228 public routes, found ${inventory.routes.length}`)
-  if (inventory.sitemapRoutes.length !== 208) addError('routes', `expected 208 sitemap routes, found ${inventory.sitemapRoutes.length}`)
+  if (inventory.routes.length !== 224) addError('routes', `expected 224 public routes, found ${inventory.routes.length}`)
+  if (inventory.sitemapRoutes.length !== 224) addError('routes', `expected 224 sitemap routes, found ${inventory.sitemapRoutes.length}`)
 
   const redirectSources = validateVercelConfig(validPaths)
   const sitemapResult = validateSitemap(sitemapPaths)

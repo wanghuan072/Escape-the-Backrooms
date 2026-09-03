@@ -8,7 +8,7 @@ function formatTimestamp(totalSeconds: number) {
   return `${minutes}:${seconds}`
 }
 
-export function VideoChapters({ chapters }: { chapters: readonly YouTubeChapter[] }) {
+export function VideoChapters({ chapters, title }: { chapters: readonly YouTubeChapter[]; title: string }) {
   function jumpToChapter(startSeconds: number) {
     const frame = document.getElementById('level-video-player') as HTMLIFrameElement | null
     if (!frame) return
@@ -19,8 +19,8 @@ export function VideoChapters({ chapters }: { chapters: readonly YouTubeChapter[
     document.getElementById('video-guide')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
-  return <section className="video-chapters" aria-label="Video chapters">
-    <div className="video-chapters-title">Video chapters</div>
+  return <section className="video-chapters" aria-label={title}>
+    <div className="video-chapters-title">{title}</div>
     <div className="video-chapters-list">
       {chapters.map((chapter) => <button key={chapter.startSeconds} type="button" onClick={() => jumpToChapter(chapter.startSeconds)}><time dateTime={`PT${chapter.startSeconds}S`}>{formatTimestamp(chapter.startSeconds)}</time><span>{chapter.label}</span></button>)}
     </div>

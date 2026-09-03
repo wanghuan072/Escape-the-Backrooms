@@ -1,4 +1,5 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
+import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import { translate } from '@/lib/i18n/messages'
 import type { Locale } from '@/types/locale'
 import '@/style/page/codes/codes-page.module.css'
@@ -32,7 +33,7 @@ const sections: SectionConfig[] = [
     { badge: 'switch', badgeClass: 'type-switch', images: [['/images/levels/level-05-04.webp', 'Level 3 Zone 2']] },
     { badge: 'wire', badgeClass: 'type-wire', details: true, images: [['/images/levels/level-05-05.webp', 'Level 3 Wire Puzzle']] },
   ] },
-  { key: 'hub', solutions: [{ badge: 'password', badgeClass: 'type-code', images: [['/images/levels/level-03-01.webp', 'The Hub M.E.G. Base'], ['/images/levels/level-03-02.webp', 'The Hub Computer']] }] },
+  { key: 'hub', solutions: [{ badge: 'password', badgeClass: 'type-code', codes: ['itheardyou'], images: [['/images/levels/level-03-01.webp', 'The Hub M.E.G. Base'], ['/images/levels/level-03-02.webp', 'The Hub Computer']] }] },
   { key: 'level4', solutions: [
     { badge: 'code', badgeClass: 'type-code', images: [['/images/levels/level-06-01.webp', 'Level 4 Elevator']] },
     { badge: 'count', badgeClass: 'type-count', images: [['/images/levels/level-06-02.webp', 'Level 4 Vending Machines'], ['/images/levels/level-06-03.webp', 'Level 4 Objects']] },
@@ -45,7 +46,7 @@ const sections: SectionConfig[] = [
     { badge: 'password', badgeClass: 'type-code', codes: ['17564', '05938', '89472'] },
   ] },
   { key: 'level8', solutions: [{ badge: 'code', badgeClass: 'type-code', images: [['/images/levels/level-08.webp', 'Level 8 Elevator']] }] },
-  { key: 'otherLevels', solutions: [{ badge: 'password', badgeClass: 'type-code' }, { badge: 'password', badgeClass: 'type-code' }] },
+  { key: 'otherLevels', solutions: [{ badge: 'password', badgeClass: 'type-code', codes: ['415314'] }, { badge: 'password', badgeClass: 'type-code', codes: ['931'] }] },
 ]
 
 export default function CodesPage({ locale }: { locale: Locale }) {
@@ -59,7 +60,7 @@ export default function CodesPage({ locale }: { locale: Locale }) {
             <div className="solution-header"><h3 className="solution-title">{translate(locale, `${solutionKey}.title`)}</h3><span className={`solution-badge ${solution.badgeClass}`}>{translate(locale, `codesPage.badge.${solution.badge}`)}</span></div>
             <p className="solution-description" dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.description`) }} />
             {solution.details && <div className="solution-details"><h4>{translate(locale, `${solutionKey}.details.triwayTitle`)}</h4><p dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.details.triwayDescription`) }} /><h4>{translate(locale, `${solutionKey}.details.coloredWiresTitle`)}</h4><p dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.details.coloredWiresDescription`) }} /></div>}
-            {solution.images && <div className="solution-images">{solution.images.map(([src, alt]) => <img key={src} src={src} alt={alt} className="solution-img" loading="lazy" />)}</div>}
+            {solution.images && <div className="solution-images">{solution.images.map(([src, alt]) => <IntrinsicImage key={src} src={src} alt={alt} className="solution-img" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />)}</div>}
             {solution.codes && <ul className="solution-codes">{solution.codes.map((code) => <li key={code}><strong>{code}</strong></li>)}</ul>}
           </div> })}
           <AdPlacement />

@@ -74,8 +74,6 @@ export function buildMetadata({
       title: finalSeo.title,
       description: finalSeo.description,
       images: [image],
-      site: siteConfig.social.twitter,
-      creator: siteConfig.social.twitter,
     },
     robots: {
       index: !noIndex,

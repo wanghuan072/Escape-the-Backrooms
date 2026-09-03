@@ -8,6 +8,7 @@ const sections = [
   ['levels', 'levels'],
   ['maps', 'maps-keys'],
 ]
+const redirectedLevelSlugs = new Set(['level-8-cave-system-guide'])
 
 const addPrefix = (routePath, locale) => (locale === 'en' ? routePath : `/${locale}${routePath}`)
 const routeMap = {}
@@ -20,6 +21,7 @@ for (const [dataDirectory, routeSection] of sections) {
 
   for (const sourceLocale of locales) {
     for (const sourceEntry of datasets[sourceLocale]) {
+      if (dataDirectory === 'levels' && redirectedLevelSlugs.has(sourceEntry.addressBar)) continue
       const sourcePath = addPrefix(`/${routeSection}/${sourceEntry.addressBar}`, sourceLocale)
       routeMap[sourcePath] = Object.fromEntries(
         locales.map((targetLocale) => {

@@ -1,4 +1,5 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
+import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import { getMaps } from '@/lib/data/maps'
 import { localizedPath, translate } from '@/lib/i18n/messages'
 import type { Locale } from '@/types/locale'
@@ -24,7 +25,7 @@ export default function MapsPage({ locale }: { locale: Locale }) {
       <AdPlacement />
       <section className="maps-section"><div className="container">
         <div className="section-header"><h2 className="section-title">{translate(locale, 'mapsPage.mapsSection.title')}</h2><p className="section-subtitle">{translate(locale, 'mapsPage.mapsSection.subtitle')}</p></div>
-        <div className="maps-grid">{maps.map((map) => <a key={map.id} href={localizedPath(`/maps-keys/${map.addressBar}`, locale)} className="map-card"><div className="map-image">{map.imageUrl ? <img src={map.imageUrl} alt={map.imageAlt || map.title} className="map-thumb" loading="lazy" /> : <div className="map-thumb placeholder">{map.title}</div>}</div><div className="map-content"><h3 className="map-title">{map.title}</h3><p className="map-desc">{map.description}</p><div className="map-meta"><span className="map-category">{map.category}</span>{map.tags && map.tags.length > 0 && <span className="map-tags">{map.tags.slice(0, 2).map((tag) => <span key={tag} className="map-tag">{tag}</span>)}</span>}</div></div></a>)}</div>
+        <div className="maps-grid">{maps.map((map) => <a key={map.id} href={localizedPath(`/maps-keys/${map.addressBar}`, locale)} className="map-card"><div className="map-image">{map.imageUrl ? <IntrinsicImage src={map.imageUrl} alt={map.imageAlt || map.title} className="map-thumb" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="map-thumb placeholder">{map.title}</div>}</div><div className="map-content"><h3 className="map-title">{map.title}</h3><p className="map-desc">{map.description}</p><div className="map-meta"><span className="map-category">{map.category}</span>{map.tags && map.tags.length > 0 && <span className="map-tags">{map.tags.slice(0, 2).map((tag) => <span key={tag} className="map-tag">{tag}</span>)}</span>}</div></div></a>)}</div>
       </div></section>
       <AdPlacement />
       <section className="keys-section"><div className="container">

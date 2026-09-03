@@ -28,19 +28,16 @@ export const websiteJsonLd = {
   },
   publisher: {
     '@type': 'Organization',
-    name: siteConfig.name,
+    '@id': `${siteConfig.url}/#organization`,
+    name: siteConfig.organization.name,
     url: siteConfig.url,
+    description: siteConfig.organization.description,
+    foundingDate: siteConfig.organization.foundingDate,
     logo: {
       '@type': 'ImageObject',
       url: `${siteConfig.url}/images/logo.webp`,
     },
-    sameAs: [
-      siteConfig.social.youtube,
-      'https://twitter.com/escapethebackrooms',
-      'https://facebook.com/escapethebackrooms',
-      'https://instagram.com/escapethebackrooms',
-      'https://discord.gg/escapethebackrooms',
-    ],
+    sameAs: [siteConfig.social.youtube],
   },
 }
 
@@ -61,7 +58,7 @@ export function pageJsonLd(
     ...(type === 'Article'
       ? {
           author: article
-            ? { '@type': 'Organization', name: article.authorName, url: article.authorUrl, sameAs: [article.authorUrl] }
+            ? { '@type': 'Organization', '@id': `${siteConfig.url}/#organization`, name: article.authorName, url: siteConfig.url, sameAs: [article.authorUrl] }
             : { '@type': 'Organization', name: siteConfig.author },
           ...(article?.dateModified ? { dateModified: article.dateModified } : {}),
         }

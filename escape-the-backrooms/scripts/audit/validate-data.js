@@ -189,6 +189,55 @@ async function main() {
     }
   }
 
+  const youtubeModule = await import('../../src/lib/data/youtube.ts')
+  const chapterCopyModule = await import('../../src/lib/data/video-chapter-copy.ts')
+  const metadataEntries = youtubeModule.getYouTubeMetadataEntries()
+  const metadataById = new Map(metadataEntries)
+  if (metadataEntries.length !== 34) addError('youtube', `expected 34 video records, found ${metadataEntries.length}`)
+  for (const [videoId, metadata] of metadataEntries) {
+    if (!Array.isArray(metadata.chapters) || metadata.chapters.length === 0) {
+      addError(`youtube.${videoId}`, 'verified chapters are missing')
+      continue
+    }
+    let previousStart = -1
+    for (const chapter of metadata.chapters) {
+      if (!Number.isInteger(chapter.startSeconds) || chapter.startSeconds <= previousStart) {
+        addError(`youtube.${videoId}`, 'chapter timestamps must be unique and strictly increasing')
+      }
+      if (chapter.startSeconds < 0 || chapter.startSeconds >= metadata.durationSeconds) {
+        addError(`youtube.${videoId}`, `chapter ${chapter.startSeconds} is outside the video duration`)
+      }
+      if (!isNonEmpty(chapter.label)) addError(`youtube.${videoId}`, 'chapter label is empty')
+      previousStart = chapter.startSeconds
+    }
+    for (const locale of locales.slice(1)) {
+      if (!chapterCopyModule.hasCompleteChapterTranslation(locale, videoId, metadata.chapters.length)) {
+        addError(`youtube.${videoId}`, `chapter translations are incomplete for ${locale}`)
+      }
+    }
+  }
+
+  const redirectedLevelSlugs = new Set(['level-8-cave-system-guide'])
+  for (const locale of locales) {
+    const retainedLevels = data.levels[locale].filter((level) => !redirectedLevelSlugs.has(level.addressBar))
+    const videoIds = retainedLevels.map((level) => level.detailsHtml.match(/youtube\.com\/embed\/([A-Za-z0-9_-]+)/)?.[1])
+    videoIds.forEach((videoId, index) => {
+      if (!videoId) addError(`levels.${locale}[${retainedLevels[index].id}]`, 'YouTube embed is missing')
+      else if (!metadataById.has(videoId)) addError(`levels.${locale}[${retainedLevels[index].id}]`, `unknown YouTube video ${videoId}`)
+    })
+    if (new Set(videoIds.filter(Boolean)).size !== 34) addError(`levels.${locale}`, 'retained level pages do not map to 34 unique videos')
+  }
+
+  const codesModule = await import('../../src/lib/data/codes.ts')
+  const englishCodeIds = codesModule.getCodeSearchEntries('en').map((entry) => entry.id).join(',')
+  for (const locale of locales) {
+    const entries = codesModule.getCodeSearchEntries(locale)
+    if (entries.map((entry) => entry.id).join(',') !== englishCodeIds) addError(`codes.${locale}`, 'search entries differ from English data')
+    for (const entry of entries) {
+      if (!isNonEmpty(entry.title) || !isNonEmpty(entry.code) || !isNonEmpty(entry.description)) addError(`codes.${locale}.${entry.id}`, 'entry is incomplete')
+    }
+  }
+
   for (const mapId of Object.keys(mapLevelRelations)) {
     if (!englishMapIds.has(mapId)) addError(`map-level-relations[${mapId}]`, 'unknown map ID')
   }

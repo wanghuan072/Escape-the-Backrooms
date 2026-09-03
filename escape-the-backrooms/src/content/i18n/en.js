@@ -74,7 +74,8 @@ export default {
       stat03Text: 'Unique Entities',
       button01: 'Explore All Levels',
       button02: 'Codes & Solutions',
-      videoTitle: 'Escape the Backrooms Walkthrough'
+      videoTitle: 'Escape the Backrooms Walkthrough',
+      closeVideo: 'Close walkthrough video'
     },
     featuredLevels: {
       label: 'Featured',
@@ -165,7 +166,7 @@ export default {
       item04Question: 'How do I find keys in each level?',
       item04Answer: 'Keys are essential for progressing through many Escape the Backrooms levels. Our <strong>Maps & Keys</strong> section provides detailed information about key locations for each Escape the Backrooms level. For example, Level 0 in Escape the Backrooms requires finding a key after repairing the ladder, Level 1 has 4 keys hidden in wardrobes in Section II, and Level 5 keys are obtained by placing Moth Jelly in the Food Elevator in Escape the Backrooms.',
       item05Question: 'What are elevator codes and door codes?',
-      item05Answer: 'Many Escape the Backrooms levels require specific codes to access elevators or unlock doors. Our <strong>Codes & Solutions</strong> page contains a complete list of all Escape the Backrooms elevator codes (like Level 3: 042, Level 5: 314), door codes (like Level 1: 1234), and computer passwords (like Level 94: PASSWORD). Each Escape the Backrooms code entry includes the location, usage instructions, and helpful images.',
+      item05Answer: 'Some locks use a fixed password, while others generate their answer from objects or clues in the current run. Our <strong>Codes & Solutions</strong> page separates fixed answers such as the Hub password and Level 3999 ticket code from variable puzzles such as the Level 1 car colours and Level 4 object counts.',
       item06Question: 'How do I avoid entities like the Hound or Moth?',
       item06Answer: 'Our <strong>Entity Database</strong> provides complete information about all Escape the Backrooms entities, including their behaviors, locations, and danger levels. Each Escape the Backrooms entity guide explains how to avoid or deal with them. For example, Hounds in Escape the Backrooms are aggressive and fast, so you should avoid them in early Escape the Backrooms levels. Moths in Level 5 of Escape the Backrooms are attracted to light, so avoid using light sources near them.',
       item07Question: 'What is Level 3999 and the task list system?',
@@ -208,6 +209,12 @@ export default {
       action: 'View Map'
     },
     inlineMapLink: 'For a visual reference to this route, see',
+    research: {
+      kicker: 'Player route notes',
+      title: 'Things we check before pushing ahead',
+      check: 'Check',
+      multiplayer: 'Multiplayer tips'
+    },
     notFound: {
       title: 'Level Not Found',
       backLink: 'Back to Levels List'
@@ -341,8 +348,8 @@ export default {
       level3: {
         title: 'Level 3 - Electrical Station',
         solution1: {
-          title: 'Elevator Code: 042',
-          description: 'The elevator code for Level 3 is <strong>042</strong>. Enter this code in the elevator keypad to access different floors.'
+          title: 'No Fixed Elevator Code',
+          description: 'Level 3 does <strong>not</strong> use a universal 042 code. Progress comes from powering the fuse boxes in each zone and completing the generator wire puzzles.'
         },
         solution2: {
           title: 'Zone 1 - Enable Fuse Boxes',
@@ -373,8 +380,8 @@ export default {
       level4: {
         title: 'Level 4 - Abandoned Office',
         solution1: {
-          title: 'Elevator Code: 729',
-          description: 'The elevator code for Level 4 is <strong>729</strong>. Enter this code in the elevator keypad to navigate between floors.'
+          title: 'No Fixed Elevator Code',
+          description: 'Level 4 does <strong>not</strong> have a universal 729 code. The numbers needed here come from counting the requested objects in the current room, so the answer can change between runs.'
         },
         solution2: {
           title: 'Vending Machine Puzzle (Count Objects)',
@@ -388,8 +395,8 @@ export default {
       level5: {
         title: 'Level 5 - Terror Hotel',
         solution1: {
-          title: 'Elevator Code: 314',
-          description: 'The elevator code for Level 5 is <strong>314</strong>. Enter this code in the elevator keypad to access the upper floors of the hotel.'
+          title: 'No General Elevator Code',
+          description: 'Level 5 does <strong>not</strong> use 314 as a universal elevator code. The fixed number entry appears later at Room 235, where the current run uses one of the three listed combinations.'
         },
         solution2: {
           title: 'Main Hall - Painting Button Puzzle',
@@ -407,19 +414,19 @@ export default {
       level8: {
         title: 'Level 8 - Cave System',
         solution1: {
-          title: 'Elevator Code: 826',
-          description: 'The elevator code for Level 8 is <strong>826</strong>. Use this code to navigate the complex cave network.'
+          title: 'No Fixed Elevator Code',
+          description: 'Level 8 does <strong>not</strong> use a universal 826 code. Follow the cave route, deal with the M.E.G. door mechanism, and use the level objectives rather than a keypad shortcut.'
         }
       },
       otherLevels: {
         title: 'Other Levels',
         solution1: {
-          title: 'Level 94 - Computer Password: PASSWORD',
-          description: 'The computer password for Level 94 (Motion) is <strong>PASSWORD</strong>. This password is needed to access the computer system and unlock important information.'
+          title: 'Level 188 - Exit Keypad: 415314',
+          description: 'The six-digit keypad used on the Level 188 route accepts <strong>415314</strong>. This fixed code is separate from the television-moving objective shown in the current walkthrough.'
         },
         solution2: {
-          title: 'Level 3999 - Computer Password: ESCAPE',
-          description: 'The final computer password for Level 3999 (The True Ending) is <strong>ESCAPE</strong>. This password is crucial for completing the escape sequence.'
+          title: 'Level 3999 - Ticket Code: 931',
+          description: 'Pick up the prize ticket in the Arcade and enter <strong>931</strong> at the nearby elevator keypad. The true-ending sequence has additional completion requirements; it does not use the word ESCAPE as a password.'
         }
       }
     }
@@ -446,7 +453,7 @@ export default {
         levelNames: 'Level names (e.g., "Level 0", "Level 1")',
         entityNames: 'Entity names (e.g., "Wanderer", "Bacteria")',
         mapNames: 'Map names (e.g., "Level 0 Map")',
-        codes: 'Codes (e.g., "042", "729")',
+        codes: 'Codes and clue answers (e.g., "itheardyou", "931")',
         keywords: 'Keywords (e.g., "key", "exit", "door")'
       }
     }
@@ -470,7 +477,25 @@ export default {
       communityText: 'We value our community and are committed to providing a helpful and informative resource for all players. Your feedback and suggestions help us improve our content and services.',
       contactTitle: 'Contact Us',
       contactText: 'If you have any questions, suggestions, or feedback, please feel free to contact us through our <a href="/contact-us">Contact Us</a> page. We\'d love to hear from you!',
-      lastUpdated: 'Last updated: January 14, 2025'
+      lastUpdated: 'Last updated: September 3, 2026',
+      v2Intro: 'Frontline Pathfinder is an independent research and guide team for players who want dependable, practical answers—not recycled summaries.',
+      v2OriginTitle: 'How Frontline Pathfinder Began',
+      v2OriginText: 'Frontline Pathfinder was founded in early 2026 by independent-game enthusiasts and technical researchers. We focus on demanding puzzles, tactical survival systems, and narrative-driven games where small details can decide an achievement, a hidden route, or an entire playthrough.',
+      v2WhyTitle: 'Why We Built This',
+      v2WhyText: 'While playing distinctive titles such as Sally Face and Road to Vostok, we repeatedly found broad guides that were incomplete, copied, or untested. This site exists to replace guesswork with first-hand route planning, full-collection checks, and clear explanations of the mechanics behind a solution.',
+      v2MethodTitle: 'Our Research Method',
+      v2MethodText: 'Every published guide starts with gameplay and verification. We revise pages when patches change routes, item behavior, puzzles, or achievements.',
+      v2MethodItem1: 'Repeat-play testing across alternate routes, difficulty states, and multiplayer conditions where relevant.',
+      v2MethodItem2: 'Practical validation of codes, missables, puzzle steps, maps, and recovery routes before they are presented as instructions.',
+      v2MethodItem3: 'Clear corrections when a game update makes prior guidance incomplete or obsolete.',
+      v2FormatTitle: 'Structured, Useful Guides',
+      v2FormatText: 'We do not treat length as quality. Our guides are organized around fast answers, route checks, milestone-based walkthroughs, and achievement requirements so players can find the needed decision without losing the wider context.',
+      v2StandardsTitle: 'Players First',
+      v2StandardsText: 'We care about the details that are easy to miss: a single environmental clue, a map connection, a dynamic branch, or the condition that locks an achievement. Our aim is to make difficult games more legible while preserving the satisfaction of exploration.',
+      v2IndependenceTitle: 'Independent Fan Resource',
+      v2IndependenceText: 'Escape the Backrooms Wiki is operated by Frontline Pathfinder as an independent fan resource. It is not affiliated with, endorsed by, or sponsored by Fancy Games, Secret Mode, or any other rights holder. Game names, artwork, and trademarks remain the property of their respective owners.',
+      v2ContactTitle: 'Help Us Keep It Accurate',
+      v2ContactText: 'Found an outdated route, a missing condition, or a better method? Email <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> with the page URL, game version, and the detail you observed.'
     }
   },
   contactUsPage: {
@@ -479,11 +504,11 @@ export default {
       subtitle: 'Get in touch with us'
     },
     content: {
-      intro: 'We\'d love to hear from you! Whether you have questions, suggestions, feedback, or just want to say hello, please don\'t hesitate to reach out to us.',
+      intro: 'Questions, corrections, copyright notices, and partnership proposals can be sent directly to <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a>. Please do not include passwords, login codes, or other sensitive information.',
       howToContactTitle: 'How to Contact Us',
-      howToContactText: 'For general inquiries, feedback, or questions, please use the contact form below or reach out through our social media channels.',
+      howToContactText: 'Email <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a>. This is the direct contact method for Frontline Pathfinder and Escape the Backrooms Wiki; no contact form is required.',
       responseTimeTitle: 'Response Time',
-      responseTimeText: 'We strive to respond to all inquiries within 48 hours. Please note that during peak times, response times may be slightly longer.',
+      responseTimeText: 'We aim to review messages within five business days. Research, game updates, and the detail required to verify a report can affect reply time, but every good-faith correction and rights-related message is reviewed.',
       whatToIncludeTitle: 'What to Include',
       whatToIncludeText: 'When contacting us, please include:',
       whatToIncludeItems: {
@@ -506,10 +531,51 @@ export default {
   privacyPolicyPage: {
     hero: {
       title: 'Privacy Policy',
-      subtitle: 'Last updated: January 14, 2025'
+      subtitle: 'Last updated: September 3, 2026'
     },
     content: {
       intro: 'At Escape the Backrooms Wiki, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.',
+      v2Intro: 'This Privacy Policy explains how Frontline Pathfinder, operating Escape the Backrooms Wiki (the “Site”), handles information when you browse the Site or contact us. It applies to this Site only and does not cover third-party services.',
+      v2ScopeTitle: 'Who This Policy Applies To',
+      v2ScopeText: 'By using the Site, you acknowledge the practices described here. The Site is an informational gaming resource and is not designed to require an account, payment details, or sensitive personal information.',
+      v2ScopeDetails: 'This Policy covers pages, guides, embedded media, and communications operated under escapethebackrooms.org. It does not govern the practices of a game publisher, an app store, a social platform, an advertising partner, or any website reached through a link from this Site.',
+      v2DataTitle: 'Information We May Collect',
+      v2DataText: 'The information collected depends on how you use the Site. We limit collection to what is reasonably needed to operate, secure, measure, and improve it.',
+      v2DataDetails: 'We do not intentionally request government identifiers, financial-account details, passwords, or special-category personal data. Please do not include those details in an email. If you voluntarily send unnecessary sensitive information, we may delete it rather than retain it.',
+      v2DataItem1: 'Contact information and message contents that you voluntarily send through a contact method.',
+      v2DataItem2: 'Basic technical information such as IP address, browser and device type, operating system, referring page, and approximate usage events.',
+      v2DataItem3: 'Cookie or similar-technology identifiers used for essential functionality, audience measurement, advertising, or preference storage where enabled.',
+      v2UseTitle: 'How We Use Information',
+      v2UseText: 'We use information to deliver and protect the Site, diagnose errors, understand which guides are useful, respond to messages, prevent abuse, and meet legal obligations. We do not sell personal information in exchange for money.',
+      v2UseDetails: 'Where a legal basis is required, our operational and security processing is based on legitimate interests in maintaining a reliable public resource; replying to a message is based on the request you choose to make; and any consent-based technology is used only as permitted by your choice and applicable law.',
+      v2CookiesTitle: 'Cookies, Analytics, and Advertising',
+      v2CookiesText: 'The Site may use cookies and similar technologies from us or service providers. These can remember preferences, measure performance, and support advertising. You can manage or delete cookies through your browser settings; blocking them may affect some features or ad preferences.',
+      v2CookiesDetails: 'A browser may also retain local storage, cached files, or settings created by embedded services. Clearing browser data can remove these items. Browser-level opt-out tools and privacy extensions can affect how third-party embeds and advertising operate, without preventing access to the written guides.',
+      v2AnalyticsTitle: 'Analytics and Measurement',
+      v2AnalyticsText: 'We may measure aggregate visits, page performance, referral sources, and interactions with Site features to understand what needs improvement. Analytics reports can include technical and usage signals, but we do not use them to build a personal profile or to make decisions with legal or similarly significant effects about you.',
+      v2PartnersTitle: 'Third-Party Services and Links',
+      v2PartnersText: 'Embedded video, analytics, advertising, social-media, and external-link providers may collect information under their own policies when you interact with them. For example, YouTube embeds are governed by Google’s terms and privacy practices. We do not control third-party data handling.',
+      v2PartnersDetails: 'We encourage you to read the policy of a third-party service before supplying information to it. A link, embedded player, logo, or mention does not mean that we control that provider or that its policy forms part of this Policy.',
+      v2AdsTitle: 'Advertising',
+      v2AdsText: 'The Site may display advertising to help fund research and operation. Advertising providers may use cookies or similar technologies according to their own policies and any consent requirements that apply where you live. We do not control the advertisements shown, and an advertisement is not an endorsement by Frontline Pathfinder.',
+      v2SharingTitle: 'When Information May Be Shared',
+      v2SharingText: 'We may share information with service providers that help host, secure, analyze, or operate the Site, but only for those functions. We may also disclose information when required by law, to protect users or the Site from fraud or abuse, or in connection with a business transfer. We do not sell personal information for money.',
+      v2RetentionTitle: 'How Long We Keep Information',
+      v2RetentionText: 'Technical logs and measurement data are retained for a limited period appropriate to security and operational needs. Messages you send may be kept while we address the matter and for a reasonable follow-up period, then deleted or anonymized unless a longer period is required by law or needed to resolve a dispute.',
+      v2ChoicesTitle: 'Your Choices and Requests',
+      v2ChoicesText: 'You may request access to, correction of, or deletion of personal information you provided to us, subject to applicable law and identity verification. You may also opt out of non-essential cookies through browser controls or any consent controls available on the Site.',
+      v2ChoicesDetails: 'To protect visitors, we may ask for enough information to confirm that a request relates to you before acting on it. Depending on where you live, you may also have rights to object to or restrict certain processing and to complain to a relevant data-protection authority.',
+      v2SecurityTitle: 'Retention and Security',
+      v2SecurityText: 'We retain information only for as long as reasonably necessary for the purposes described above, including security, recordkeeping, and legal requirements. We use reasonable safeguards, but no internet transmission or storage system can be guaranteed completely secure.',
+      v2ChildrenTitle: 'Children’s Privacy',
+      v2ChildrenText: 'The Site is a general-audience gaming reference and is not directed to children under 13, or a higher minimum age where local law requires it. We do not knowingly collect personal information from children. If you believe a child has sent us personal information, email us so we can review and remove it where appropriate.',
+      v2ChildrenDetails: 'Parents and guardians should supervise a child’s use of online services. If a deletion request concerns a child, please identify the email address or the relevant communication so that we can locate the information without asking for more personal data than needed.',
+      v2InternationalTitle: 'International Processing',
+      v2InternationalText: 'The Site can be accessed worldwide and its hosting, security, or service providers may process information in countries other than your own. Those countries may have different data-protection laws. We take reasonable steps to use providers and safeguards appropriate to the services they perform.',
+      v2ChangesTitle: 'Changes to This Policy',
+      v2ChangesText: 'We may update this Policy as the Site or applicable requirements change. The revised version becomes effective when posted, and the date at the top of the page indicates the latest revision.',
+      v2ContactTitle: 'Privacy Contact',
+      v2ContactText: 'For a privacy question or request, email <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a> and identify the relevant page or service. Do not send passwords, authentication codes, or identity documents in your first message.',
       informationTitle: 'Information We Collect',
       informationText1: 'We may collect information that you provide directly to us, such as when you contact us or subscribe to our newsletter. This may include your name, email address, and any other information you choose to provide.',
       informationText2: 'We also automatically collect certain information about your device when you visit our website, including your IP address, browser type, operating system, and browsing behavior.',
@@ -532,10 +598,47 @@ export default {
   termsOfServicePage: {
     hero: {
       title: 'Terms of Service',
-      subtitle: 'Last updated: January 14, 2025'
+      subtitle: 'Last updated: September 3, 2026'
     },
     content: {
       intro: 'Welcome to Escape the Backrooms Wiki. By accessing and using this website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website.',
+      v2Intro: 'These Terms of Service govern your use of Escape the Backrooms Wiki, operated by Frontline Pathfinder. Please read them before using the Site.',
+      v2AcceptanceTitle: 'Acceptance of These Terms',
+      v2AcceptanceText: 'By accessing or using the Site, you agree to these Terms and to our Privacy Policy. If you do not agree, do not use the Site. You are responsible for ensuring that your use complies with the laws that apply to you.',
+      v2AcceptanceDetails: 'These Terms apply to every visitor, including someone who follows a link, uses a search engine, accesses an embedded feature, or communicates with us. If you use the Site on behalf of an organization, you confirm that you can accept these Terms for that organization.',
+      v2ServiceTitle: 'What the Site Provides',
+      v2ServiceText: 'The Site provides editorial game guides, maps, videos, reference material, and related resources for general informational and entertainment purposes. We may change, correct, remove, or discontinue any part of the Site at any time.',
+      v2ServiceDetails: 'Guides describe our observed game versions and testing conditions, not instructions from a game developer. You remain responsible for your in-game decisions, hardware, account security, platform rules, and any consequences of using a strategy, mod, exploit, or external service.',
+      v2UseTitle: 'Acceptable Use',
+      v2UseText: 'You may use the Site for personal, non-commercial reference. You must not:',
+      v2UseItem1: 'Copy, scrape, republish, or commercially exploit substantial portions of our original content without written permission.',
+      v2UseItem2: 'Attempt to bypass security controls, interfere with the Site, or probe it for vulnerabilities.',
+      v2UseItem3: 'Use automated systems in a way that creates unreasonable load or disrupts access for other visitors.',
+      v2UseItem4: 'Use the Site in connection with unlawful, harmful, deceptive, or rights-infringing activity.',
+      v2OwnershipTitle: 'Our Editorial Content',
+      v2OwnershipText: 'Unless otherwise stated, Frontline Pathfinder owns the original text, guide structure, research notes, page design, and other Site materials created by our team. Limited quotation for commentary or review may be permitted by applicable law, but it does not transfer ownership.',
+      v2OwnershipDetails: 'You may bookmark, share a normal link to, and print a reasonable copy of a page for personal reference. Permission for any other reuse—especially translation, automated extraction, training datasets, mirrors, or commercial publication—must be requested in writing.',
+      v2GameIpTitle: 'Game Intellectual Property',
+      v2GameIpText: 'Escape the Backrooms and related game assets, names, screenshots, and trademarks belong to their respective rights holders. Nothing on this Site grants a license to their intellectual property, and our references do not imply affiliation or endorsement.',
+      v2UserSubmissionsTitle: 'Messages and Submissions',
+      v2UserSubmissionsText: 'If you send us a correction, screenshot, suggestion, or other material, you remain responsible for having the right to send it. You grant us a non-exclusive, no-charge permission to review and use it to respond to you, verify a guide, or improve the Site. Do not send confidential information or material you cannot lawfully share.',
+      v2ExternalTitle: 'External Links and Embedded Content',
+      v2ExternalText: 'The Site may link to or embed third-party content. Those services are provided by their respective owners. We are not responsible for their availability, accuracy, security, terms, or privacy practices.',
+      v2ExternalDetails: 'If you leave the Site, use a third-party account, make a purchase, download software, or provide details to another service, your relationship is with that provider. Review its rules before taking action; the presence of a link is not a recommendation or guarantee.',
+      v2AvailabilityTitle: 'Availability and Updates',
+      v2AvailabilityText: 'We aim to keep the Site available, but it may be interrupted for maintenance, technical issues, security work, or circumstances beyond our control. We may update or remove guides and features without notice, especially when a game patch makes previous information unreliable.',
+      v2DisclaimerTitle: 'No Warranty',
+      v2DisclaimerText: 'Guides are provided “as is” and “as available.” Game patches, random generation, platform differences, and player choices can change outcomes. We do not guarantee that every route, code, timestamp, or result will be complete, current, or suitable for your situation.',
+      v2DisclaimerDetails: 'Nothing on the Site is professional, legal, technical-security, financial, medical, or other regulated advice. Before relying on a high-impact decision or sharing account information, consult the official source or a qualified professional where appropriate.',
+      v2LiabilityTitle: 'Limitation of Liability',
+      v2LiabilityText: 'To the fullest extent permitted by law, Frontline Pathfinder and its contributors are not liable for indirect, incidental, consequential, special, or punitive damages arising from use of, or inability to use, the Site or linked services.',
+      v2LiabilityDetails: 'Where liability cannot legally be excluded, it is limited to the minimum extent allowed by applicable law. Some jurisdictions do not allow particular exclusions or limits, so portions of this section may not apply to you.',
+      v2TerminationTitle: 'Suspension of Access',
+      v2TerminationText: 'We may restrict or block access that we reasonably believe threatens the Site, violates these Terms, infringes rights, or interferes with other visitors. This does not limit any other remedy available to us or to a rights holder.',
+      v2ChangesTitle: 'Changes to These Terms',
+      v2ChangesText: 'We may revise these Terms by posting an updated version here. Continued use after the effective date means you accept the revised Terms.',
+      v2ContactTitle: 'Questions About These Terms',
+      v2ContactText: 'Questions about these Terms can be sent to <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a>.',
       useTitle: 'Use of Website',
       useText: 'You may use our website for personal, non-commercial purposes. You agree not to use the website in any way that violates any applicable laws or regulations, or that could damage, disable, or impair the website.',
       contentTitle: 'Content and Intellectual Property',
@@ -558,10 +661,38 @@ export default {
   copyrightPage: {
     hero: {
       title: 'Copyright',
-      subtitle: 'Last updated: January 14, 2025'
+      subtitle: 'Last updated: September 3, 2026'
     },
     content: {
-      copyright: '© 2025 Escape the Backrooms Wiki. All rights reserved.',
+      copyright: '© 2026 Frontline Pathfinder. All rights reserved.',
+      v2Intro: 'This page explains the copyright and intellectual-property approach for Escape the Backrooms Wiki, operated by Frontline Pathfinder.',
+      v2SiteTitle: 'Frontline Pathfinder Content',
+      v2SiteText: 'Our original guide text, research, page layout, route organization, illustrations we create, and other original Site content are protected by applicable copyright law. We reserve all rights not expressly granted.',
+      v2SiteDetails: 'Dates, game facts, short functional labels, and ideas themselves may not be protected in the same way as original expression. What may not be copied is our particular writing, selection, arrangement, research presentation, and other original creative work.',
+      v2GameTitle: 'Third-Party Game Property',
+      v2GameText: 'Escape the Backrooms, its title, game footage, screenshots, logos, characters, artwork, and related marks are owned by their respective rights holders. This is an independent fan resource; no ownership of third-party game property is claimed.',
+      v2GameDetails: 'We use limited game-related references to identify, discuss, review, and explain gameplay. Any such use is intended to be consistent with applicable law and does not create a partnership, sponsorship, or authorization from a rights holder.',
+      v2PermittedTitle: 'Permitted Personal Use',
+      v2PermittedText: 'You may link to our pages and use brief quotations with clear attribution and a link back to the relevant page, where permitted by law. This permission does not include copying a guide in full, removing attribution, or presenting our work as your own.',
+      v2PermittedDetails: 'Permission is revocable if a use harms visitors, misrepresents a guide, breaches these terms, or exceeds a lawful quotation. If you wish to reproduce material beyond a brief excerpt, contact us first with the intended use, territory, format, and audience.',
+      v2RestrictionsTitle: 'Restricted Uses',
+      v2RestrictionsText: 'Without prior written permission, do not reproduce, translate, systematically republish, sell, or build a competing database from substantial portions of our original content. Do not use our brand or visual identity in a way that suggests sponsorship or endorsement.',
+      v2TrademarkTitle: 'Trademarks and Attribution',
+      v2TrademarkText: 'Frontline Pathfinder and Escape the Backrooms Wiki identifiers may not be used in a way that implies our approval of another product, site, or service. Third-party trademarks are used only to identify the games and services discussed and remain the property of their owners.',
+      v2TakedownTitle: 'Our Takedown Practice',
+      v2TakedownText: 'We take good-faith copyright concerns seriously. On receiving a complete notice, we will review the identified material and may temporarily restrict it while we investigate. We may ask for further details if the notice does not identify the work or the relevant URL clearly enough.',
+      v2NoticeTitle: 'Copyright Notices',
+      v2NoticeText: 'If you believe material on the Site infringes your copyright, send a good-faith notice by email that includes:',
+      v2NoticeDetails: 'Send notices to the email address in the Copyright Contact section. A complete notice helps us act promptly, but sending a notice does not automatically establish infringement or require us to remove lawful commentary, quotation, or other permitted material.',
+      v2NoticeItem1: 'Identification of the copyrighted work you believe has been infringed.',
+      v2NoticeItem2: 'The exact URL or other precise location of the material at issue.',
+      v2NoticeItem3: 'Your name and a reliable way to contact you.',
+      v2NoticeItem4: 'A statement that you believe the use is not authorized by the copyright owner, its agent, or the law.',
+      v2NoticeItem5: 'A statement that the information is accurate and that you are authorized to act for the rights holder.',
+      v2CounterTitle: 'Counter-Notices and Corrections',
+      v2CounterText: 'If content is removed following a claim and you believe the removal was mistaken, contact us with the disputed URL, your explanation, and supporting information. We will review good-faith requests; nothing here limits any legal rights either party may have.',
+      v2ContactTitle: 'Copyright Contact',
+      v2ContactText: 'Send copyright notices, attribution questions, or permission requests to <a href="mailto:wyong@escapethebackrooms.org">wyong@escapethebackrooms.org</a>.',
       noticeTitle: 'Copyright Notice',
       noticeText: 'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Escape the Backrooms Wiki and is protected by international copyright laws.',
       fairUseTitle: 'Fair Use',

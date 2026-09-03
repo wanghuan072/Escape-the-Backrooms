@@ -1,3 +1,4 @@
+import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import '@/style/content/related-content-links.module.css'
 
 interface RelatedContentLink {
@@ -23,7 +24,7 @@ export function RelatedContentLinks({ title, actionLabel, links }: RelatedConten
       <div className="related-content-grid">
         {links.map((link) => (
           <a className="related-content-card" href={link.href} key={link.href}>
-            {link.imageUrl && <img className="related-content-image" src={link.imageUrl} alt={link.imageAlt || link.title} loading="lazy" />}
+            {link.imageUrl && <IntrinsicImage className="related-content-image" src={link.imageUrl} alt={link.imageAlt || link.title} loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />}
             <span className="related-content-copy">
               <span className="related-content-card-title">{link.title}</span>
               <span className="related-content-description">{link.description}</span>

@@ -7,9 +7,9 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
-    "predev": "node scripts/data/generate-localized-routes.js && node scripts/data/generate-next-routes.js",
+    "predev": "node scripts/data/generate-image-dimensions.js && node scripts/data/generate-localized-routes.js && node scripts/data/generate-next-routes.js",
     "dev": "next dev",
-    "prebuild": "node scripts/data/generate-localized-routes.js && node scripts/data/generate-next-routes.js",
+    "prebuild": "node scripts/data/generate-image-dimensions.js && node scripts/data/generate-localized-routes.js && node scripts/data/generate-next-routes.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --cache",
@@ -17,6 +17,7 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --write --experimental-cli src/ scripts/ docs/",
     "generate-sitemap": "node scripts/data/generate-sitemap.js",
+    "generate:image-dimensions": "node scripts/data/generate-image-dimensions.js",
     "validate:data": "node scripts/audit/validate-data.js",
     "validate:structure": "node scripts/audit/validate-structure.js",
     "audit:pages": "node scripts/audit/validate-pages.js",
@@ -34,6 +35,7 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.3",
     "prettier": "3.7.4",
+    "sharp": "^0.35.4",
     "typescript": "^5.9.2"
   }
 }

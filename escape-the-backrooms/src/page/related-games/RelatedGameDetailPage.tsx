@@ -1,4 +1,5 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
+import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import { getGamesCopy } from '@/lib/data/related-games'
 import { localizedPath } from '@/lib/i18n/messages'
 import { JsonLd, pageJsonLd } from '@/seo/json-ld'
@@ -17,11 +18,11 @@ export default function RelatedGameDetailPage({ locale, game }: { locale: Locale
   return (
     <div className="related-game-detail-view">
       <JsonLd data={articleJsonLd} />
-      <section className="page-hero detail-hero"><div className="container"><div className="hero-layout"><div className="hero-copy"><a href={localizedPath('/backrooms-games', locale)} className="back-link">{copy.backLink}</a><span className="section-label">{game.eyebrow}</span><h1 className="page-title">{copy.detailTitle}</h1><p className="page-subtitle">{game.editorialVerdict}</p></div><figure className="hero-media"><img src={game.imageUrl} alt={game.imageAlt} /><figcaption>{copy.heroCaption}</figcaption></figure></div></div></section>
+      <section className="page-hero detail-hero"><div className="container"><div className="hero-layout"><div className="hero-copy"><a href={localizedPath('/backrooms-games', locale)} className="back-link">{copy.backLink}</a><span className="section-label">{game.eyebrow}</span><h1 className="page-title">{copy.detailTitle}</h1><p className="page-subtitle">{game.editorialVerdict}</p></div><figure className="hero-media"><IntrinsicImage src={game.imageUrl} alt={game.imageAlt} sizes="(max-width: 768px) 100vw, 50vw" /><figcaption>{copy.heroCaption}</figcaption></figure></div></div></section>
       <AdPlacement className="container ad-container" />
       <section className="article-section"><div className="container article-layout">
         <main className="article-main">
-          <section className="media-panel"><div className="media-image"><img src={game.capsuleImageUrl} alt={game.imageAlt} loading="lazy" /></div><div className="media-copy"><span className="section-label">{copy.playerVerdict}</span><h2>{game.fit}</h2><p>{game.summary}</p><div className="media-actions"><a href={game.officialUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.steamPage}</a><a href={game.wikiUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.wikiHub}</a><a href={game.mediaUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.steamMedia}</a></div></div></section>
+          <section className="media-panel"><div className="media-image"><IntrinsicImage src={game.capsuleImageUrl} alt={game.imageAlt} loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" /></div><div className="media-copy"><span className="section-label">{copy.playerVerdict}</span><h2>{game.fit}</h2><p>{game.summary}</p><div className="media-actions"><a href={game.officialUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.steamPage}</a><a href={game.wikiUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.wikiHub}</a><a href={game.mediaUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.steamMedia}</a></div></div></section>
           <section className="intro-panel"><h2>{copy.whyCompare}</h2><p>{game.whySimilar}</p><p>{game.watchFor}</p></section>
           <section className="analysis-section">{game.detailSections.map((section) => <article key={section.heading} className="analysis-block"><h2>{section.heading}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</article>)}</section>
           <AdPlacement className="container ad-container inline-ad" />
@@ -36,7 +37,7 @@ export default function RelatedGameDetailPage({ locale, game }: { locale: Locale
           <section className="side-panel"><h2>{copy.gameFacts}</h2><dl>{game.quickFacts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}<div><dt>{copy.developer}</dt><dd>{game.developer}</dd></div><div><dt>{copy.publisher}</dt><dd>{game.publisher}</dd></div><div><dt>{copy.release}</dt><dd>{game.releaseDate}</dd></div></dl></section>
           <AdPlacement className="container ad-container side-ad" />
           <section className="side-panel"><h2>{copy.sourcesChecked}</h2>{game.sourceNotes.map((source) => <div key={source.url} className="source-note"><h3>{source.label}</h3><p>{source.text}</p><a href={source.url} target="_blank" rel="noopener noreferrer nofollow">{copy.openSource}</a></div>)}</section>
-          <section className="side-panel"><h2>{copy.media}</h2><img className="side-image" src={game.imageUrl} alt={game.imageAlt} loading="lazy" /><p>{copy.mediaText}</p><a href={game.mediaUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.openSteamMedia}</a></section>
+          <section className="side-panel"><h2>{copy.media}</h2><IntrinsicImage className="side-image" src={game.imageUrl} alt={game.imageAlt} loading="lazy" sizes="(max-width: 768px) 100vw, 25vw" /><p>{copy.mediaText}</p><a href={game.mediaUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.openSteamMedia}</a></section>
           <section className="side-panel"><h2>{copy.officialPage}</h2><p>{copy.officialText}</p><a className="official-link" href={game.officialUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.visitSource} {game.sourceLabel}</a></section>
         </aside>
       </div></section>

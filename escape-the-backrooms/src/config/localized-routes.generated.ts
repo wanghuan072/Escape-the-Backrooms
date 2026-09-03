@@ -104,12 +104,6 @@ export const localizedRouteMap = {
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
   },
-  "/levels/level-8-cave-system-guide": {
-    "en": "/levels/level-8-cave-system-guide",
-    "de": "/de/levels/level-8-cave-system-guide",
-    "fr": "/fr/levels/level-8-cave-system-guide",
-    "es": "/es/levels/level-8-cave-system-guide"
-  },
   "/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
     "de": "/de/levels/level-9-suburbs-and-lab-walkthrough",
@@ -313,12 +307,6 @@ export const localizedRouteMap = {
     "de": "/de/levels/level-8-cave-system-walkthrough",
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
-  },
-  "/de/levels/level-8-cave-system-guide": {
-    "en": "/levels/level-8-cave-system-guide",
-    "de": "/de/levels/level-8-cave-system-guide",
-    "fr": "/fr/levels/level-8-cave-system-guide",
-    "es": "/es/levels/level-8-cave-system-guide"
   },
   "/de/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
@@ -524,12 +512,6 @@ export const localizedRouteMap = {
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
   },
-  "/fr/levels/level-8-cave-system-guide": {
-    "en": "/levels/level-8-cave-system-guide",
-    "de": "/de/levels/level-8-cave-system-guide",
-    "fr": "/fr/levels/level-8-cave-system-guide",
-    "es": "/es/levels/level-8-cave-system-guide"
-  },
   "/fr/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
     "de": "/de/levels/level-9-suburbs-and-lab-walkthrough",
@@ -733,12 +715,6 @@ export const localizedRouteMap = {
     "de": "/de/levels/level-8-cave-system-walkthrough",
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
-  },
-  "/es/levels/level-8-cave-system-guide": {
-    "en": "/levels/level-8-cave-system-guide",
-    "de": "/de/levels/level-8-cave-system-guide",
-    "fr": "/fr/levels/level-8-cave-system-guide",
-    "es": "/es/levels/level-8-cave-system-guide"
   },
   "/es/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
