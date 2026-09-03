@@ -448,6 +448,10 @@
 }
 
 @media (max-width: 768px) {
+  :global(.related-game-detail-view .article-sidebar) {
+    display: none;
+  }
+
   :global(.related-game-detail-view .page-hero),
   :global(.related-game-detail-view .article-section) {
     padding: 1rem 0;

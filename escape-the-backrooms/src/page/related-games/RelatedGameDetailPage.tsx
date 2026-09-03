@@ -35,7 +35,7 @@ export default function RelatedGameDetailPage({ locale, game }: { locale: Locale
         </main>
         <aside className="article-sidebar">
           <section className="side-panel"><h2>{copy.gameFacts}</h2><dl>{game.quickFacts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}<div><dt>{copy.developer}</dt><dd>{game.developer}</dd></div><div><dt>{copy.publisher}</dt><dd>{game.publisher}</dd></div><div><dt>{copy.release}</dt><dd>{game.releaseDate}</dd></div></dl></section>
-          <AdPlacement className="container ad-container side-ad" />
+          <AdPlacement className="container ad-container side-ad" hideOnMobile />
           <section className="side-panel"><h2>{copy.sourcesChecked}</h2>{game.sourceNotes.map((source) => <div key={source.url} className="source-note"><h3>{source.label}</h3><p>{source.text}</p><a href={source.url} target="_blank" rel="noopener noreferrer nofollow">{copy.openSource}</a></div>)}</section>
           <section className="side-panel"><h2>{copy.media}</h2><IntrinsicImage className="side-image" src={game.imageUrl} alt={game.imageAlt} loading="lazy" sizes="(max-width: 768px) 100vw, 25vw" /><p>{copy.mediaText}</p><a href={game.mediaUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.openSteamMedia}</a></section>
           <section className="side-panel"><h2>{copy.officialPage}</h2><p>{copy.officialText}</p><a className="official-link" href={game.officialUrl} target="_blank" rel="noopener noreferrer nofollow">{copy.visitSource} {game.sourceLabel}</a></section>

@@ -55,9 +55,9 @@ export default function MapDetailPage({ locale, map }: { locale: Locale; map: Ma
         </main>
         <aside className="sidebar">
           <div className="image-card"><div className="image-header">{map.title}</div><div className="image-wrapper">{map.imageUrl ? <IntrinsicImage src={map.imageUrl} alt={map.imageAlt || map.title} className="level-image" loading="lazy" sizes="(max-width: 768px) 100vw, 25vw" /> : <div className="level-image placeholder">{map.title}</div>}</div></div>
-          <AdPlacement />
+          <AdPlacement hideOnMobile />
           {map.category && <div className="info-card"><div className="info-header"><h3 className="info-title">{translate(locale, 'mapDetailPage.sidebar.information')}</h3></div><div className="info-content"><div className="info-row"><div className="info-label">{translate(locale, 'mapDetailPage.sidebar.category')}</div><div className="info-value-text">{map.category}</div></div>{map.tags && map.tags.length > 0 && <div className="info-row"><div className="info-label">{translate(locale, 'mapDetailPage.sidebar.tags')}</div><div className="info-value-text">{map.tags.map((tag) => <span key={tag} className="tag-badge">{tag}</span>)}</div></div>}</div></div>}
-          <AdPlacement />
+          <AdPlacement hideOnMobile />
         </aside>
       </div></div></section>
     </div>

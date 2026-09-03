@@ -355,6 +355,10 @@
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
+  :global(.map-detail-view .sidebar) {
+    display: none;
+  }
+
   :global(.map-detail-view section) {
     padding: 0.5rem 0;
   }

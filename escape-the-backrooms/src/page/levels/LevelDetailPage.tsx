@@ -72,9 +72,9 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
           <AdPlacement className="level-footer-ad" horizontal label={translate(locale, 'levelDetailPage.advertisement')} />
         </main>
         <aside className="sidebar">
-          <AdPlacement />
+          <AdPlacement hideOnMobile />
           {level.sideBarInfo && <div className="info-card">{level.sideBarInfo.name && <div className="info-header"><h3 className="info-title">{level.sideBarInfo.name}</h3></div>}<div className="info-content">{level.sideBarInfo.difficulty && <div className="info-row"><div className="info-label">{translate(locale, 'levelDetailPage.sidebar.difficulty')}</div><div className="info-value-text">{level.sideBarInfo.difficulty}</div></div>}{level.sideBarInfo.objectives && <div className="info-row"><div className="info-label">{translate(locale, 'levelDetailPage.sidebar.objectives')}</div><div className="info-value-text">{level.sideBarInfo.objectives}</div></div>}</div></div>}
-          <AdPlacement />
+          <AdPlacement hideOnMobile />
         </aside>
       </div></div></section>
     </div>

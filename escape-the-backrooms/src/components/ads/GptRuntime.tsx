@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useCallback, useContext, useEffect, useId, useRef } from 'react'
+import { createContext, useCallback, useContext, useEffect, useId, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { GPT_UNITS } from '@/config/ads'
 import '@/style/ads/gpt-ad-slot.module.css'
@@ -50,12 +50,23 @@ export function AdRuntime({ children }: { children: React.ReactNode }) {
   )
 }
 
-export function GptAdSlot({ unit, horizontal = false }: { unit?: 1 | 2 | 3; horizontal?: boolean }) {
+export function GptAdSlot({ unit, horizontal = false, hideOnMobile = false }: { unit?: 1 | 2 | 3; horizontal?: boolean; hideOnMobile?: boolean }) {
   const pathname = usePathname()
   const nextUnit = useContext(BannerSequenceContext)
   const elementId = `div-gpt-ad-banner-${useId().replace(/:/g, '')}`
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches)
 
   useEffect(() => {
+    if (!hideOnMobile) return
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    const updateViewport = () => setIsMobile(mediaQuery.matches)
+    updateViewport()
+    mediaQuery.addEventListener('change', updateViewport)
+    return () => mediaQuery.removeEventListener('change', updateViewport)
+  }, [hideOnMobile])
+
+  useEffect(() => {
+    if (hideOnMobile && isMobile) return
     const scope = pageScope(pathname)
     const resolvedUnit = unit ?? nextUnit()
     const banner = GPT_UNITS[scope].banners[resolvedUnit]
@@ -81,7 +92,7 @@ export function GptAdSlot({ unit, horizontal = false }: { unit?: 1 | 2 | 3; hori
         bannerSlots.delete(elementId)
       })
     }
-  }, [elementId, horizontal, nextUnit, pathname, unit])
+  }, [elementId, hideOnMobile, horizontal, isMobile, nextUnit, pathname, unit])
 
   return <div className="gpt-ad-slot"><div id={elementId} className="gpt-ad-inner" aria-hidden="true" /></div>
 }

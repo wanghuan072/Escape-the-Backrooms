@@ -692,6 +692,10 @@
 
 /* 移动端 - 768px */
 @media (max-width: 768px) {
+  :global(.level-detail-view .sidebar) {
+    display: none;
+  }
+
   :global(.level-detail-view section) {
     padding: 0.5rem 0;
   }
