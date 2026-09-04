@@ -2,7 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useId, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { GPT_UNITS } from '@/config/ads'
+import { GPT_ADS_ENABLED, GPT_UNITS } from '@/config/ads'
 import '@/style/ads/gpt-ad-slot.module.css'
 
 const BannerSequenceContext = createContext<() => 1 | 2 | 3>(() => 1)
@@ -34,6 +34,11 @@ function pageScope(pathname: string): 'home' | 'post' {
 }
 
 export function AdRuntime({ children }: { children: React.ReactNode }) {
+  if (!GPT_ADS_ENABLED) return <>{children}</>
+  return <ActiveAdRuntime>{children}</ActiveAdRuntime>
+}
+
+function ActiveAdRuntime({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const sequence = useRef(0)
   useEffect(() => { sequence.current = 0 }, [pathname])
@@ -50,7 +55,15 @@ export function AdRuntime({ children }: { children: React.ReactNode }) {
   )
 }
 
-export function GptAdSlot({ unit, horizontal = false, hideOnMobile = false }: { unit?: 1 | 2 | 3; horizontal?: boolean; hideOnMobile?: boolean }) {
+type GptAdSlotProps = { unit?: 1 | 2 | 3; horizontal?: boolean; hideOnMobile?: boolean }
+
+export function GptAdSlot(props: GptAdSlotProps) {
+  // Covers direct GPT slots (for example, the search page) that do not use AdPlacement.
+  if (!GPT_ADS_ENABLED) return null
+  return <ActiveGptAdSlot {...props} />
+}
+
+function ActiveGptAdSlot({ unit, horizontal = false, hideOnMobile = false }: GptAdSlotProps) {
   const pathname = usePathname()
   const nextUnit = useContext(BannerSequenceContext)
   const elementId = `div-gpt-ad-banner-${useId().replace(/:/g, '')}`

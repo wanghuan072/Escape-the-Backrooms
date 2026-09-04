@@ -1,5 +1,9 @@
 const BASE = '/23355878051/escapethebackrooms.org_0713_all'
 
+// GPT is intentionally paused site-wide. Change only this value to true to restore GPT;
+// AdSense is configured separately and is unaffected by this switch.
+export const GPT_ADS_ENABLED = false
+
 export const GPT_UNITS = {
   home: {
     anchor: `${BASE}/home_escapethebackrooms.org_0804_anchor_1`,

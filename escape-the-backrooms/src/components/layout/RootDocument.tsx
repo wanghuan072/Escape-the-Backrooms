@@ -4,6 +4,7 @@ import { AdRuntime } from '@/components/ads/GptRuntime'
 import Script from 'next/script'
 import { JsonLd, websiteJsonLd } from '@/seo/json-ld'
 import { translate } from '@/lib/i18n/messages'
+import { GPT_ADS_ENABLED } from '@/config/ads'
 import type { Locale } from '@/types/locale'
 import '@/style/layout/root-document.module.css'
 
@@ -42,14 +43,16 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
       <head>
         <link rel="icon" type="image/x-icon" sizes="32x32" href="https://escapethebackrooms.org/favicon.ico" />
         <link rel="shortcut icon" type="image/x-icon" href="https://escapethebackrooms.org/favicon.ico" />
-        <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net" />
-        <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossOrigin="anonymous" />
-        <Script
-          id="google-publisher-tag"
-          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
+        {GPT_ADS_ENABLED && <>
+          <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net" />
+          <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossOrigin="anonymous" />
+          <Script
+            id="google-publisher-tag"
+            src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        </>}
         <Script
           id="delayed-third-party-scripts"
           strategy="afterInteractive"
