@@ -193,7 +193,7 @@ async function main() {
   const chapterCopyModule = await import('../../src/lib/data/video-chapter-copy.ts')
   const metadataEntries = youtubeModule.getYouTubeMetadataEntries()
   const metadataById = new Map(metadataEntries)
-  if (metadataEntries.length !== 34) addError('youtube', `expected 34 video records, found ${metadataEntries.length}`)
+  if (metadataEntries.length !== 36) addError('youtube', `expected 36 video records, found ${metadataEntries.length}`)
   for (const [videoId, metadata] of metadataEntries) {
     if (!Array.isArray(metadata.chapters) || metadata.chapters.length === 0) {
       addError(`youtube.${videoId}`, 'verified chapters are missing')
@@ -225,7 +225,7 @@ async function main() {
       if (!videoId) addError(`levels.${locale}[${retainedLevels[index].id}]`, 'YouTube embed is missing')
       else if (!metadataById.has(videoId)) addError(`levels.${locale}[${retainedLevels[index].id}]`, `unknown YouTube video ${videoId}`)
     })
-    if (new Set(videoIds.filter(Boolean)).size !== 34) addError(`levels.${locale}`, 'retained level pages do not map to 34 unique videos')
+    if (new Set(videoIds.filter(Boolean)).size !== 36) addError(`levels.${locale}`, 'retained level pages do not map to 36 unique videos')
   }
 
   const codesModule = await import('../../src/lib/data/codes.ts')

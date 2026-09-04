@@ -74,8 +74,11 @@ export default {
             stat03Text: 'Entités Uniques',
             button01: 'Explorer les Niveaux',
             button02: 'Codes et Solutions',
-            videoTitle: 'Solution Escape the Backrooms',
-            closeVideo: 'Fermer le guide vidéo'
+            latestLabel: 'Mise à jour du site',
+            latestDate: 'Septembre 2026',
+            latestImageAlt: "Entrée du Bruce's Discovery Center dans Escape the Backrooms, niveau 421 : Plastic Mariana",
+            latestSource: 'Frontline Pathfinder',
+            latestAria: 'Mise à jour du site en septembre 2026'
         },
         featuredLevels: {
             label: 'En Vedette',

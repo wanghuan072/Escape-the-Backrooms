@@ -1,3 +1,5 @@
+import { level011, level421 } from './en-new-levels.js'
+
 export default [
   {
     id: 1,
@@ -1955,6 +1957,8 @@ export default [
       `
   },
 
+  level011,
+
   {
     id: 19,
     title: 'Escape the Backrooms: Level 9 (The Suburbs) & The Lab',
@@ -2812,6 +2816,8 @@ export default [
       </section>
     `,
   },
+
+  level421,
 
   {
     id: 29,

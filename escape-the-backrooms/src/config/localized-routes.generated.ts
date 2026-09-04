@@ -104,6 +104,12 @@ export const localizedRouteMap = {
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
   },
+  "/levels/escape-the-backrooms-level-0-11-guide": {
+    "en": "/levels/escape-the-backrooms-level-0-11-guide",
+    "de": "/de/levels/escape-the-backrooms-level-0-11-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-0-11-guide",
+    "es": "/es/levels/escape-the-backrooms-level-0-11-guide"
+  },
   "/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
     "de": "/de/levels/level-9-suburbs-and-lab-walkthrough",
@@ -163,6 +169,12 @@ export const localizedRouteMap = {
     "de": "/de/levels/escape-the-backrooms-level-55-1-guide",
     "fr": "/fr/levels/escape-the-backrooms-level-55-1-guide",
     "es": "/es/levels/escape-the-backrooms-level-55-1-guide"
+  },
+  "/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
+    "en": "/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "de": "/de/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "es": "/es/levels/escape-the-backrooms-level-421-plastic-mariana-guide"
   },
   "/levels/escape-the-backrooms-level-b-unlock-guide": {
     "en": "/levels/escape-the-backrooms-level-b-unlock-guide",
@@ -308,6 +320,12 @@ export const localizedRouteMap = {
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
   },
+  "/de/levels/escape-the-backrooms-level-0-11-guide": {
+    "en": "/levels/escape-the-backrooms-level-0-11-guide",
+    "de": "/de/levels/escape-the-backrooms-level-0-11-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-0-11-guide",
+    "es": "/es/levels/escape-the-backrooms-level-0-11-guide"
+  },
   "/de/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
     "de": "/de/levels/level-9-suburbs-and-lab-walkthrough",
@@ -367,6 +385,12 @@ export const localizedRouteMap = {
     "de": "/de/levels/escape-the-backrooms-level-55-1-guide",
     "fr": "/fr/levels/escape-the-backrooms-level-55-1-guide",
     "es": "/es/levels/escape-the-backrooms-level-55-1-guide"
+  },
+  "/de/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
+    "en": "/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "de": "/de/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "es": "/es/levels/escape-the-backrooms-level-421-plastic-mariana-guide"
   },
   "/de/levels/escape-the-backrooms-level-b-unlock-guide": {
     "en": "/levels/escape-the-backrooms-level-b-unlock-guide",
@@ -512,6 +536,12 @@ export const localizedRouteMap = {
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
   },
+  "/fr/levels/escape-the-backrooms-level-0-11-guide": {
+    "en": "/levels/escape-the-backrooms-level-0-11-guide",
+    "de": "/de/levels/escape-the-backrooms-level-0-11-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-0-11-guide",
+    "es": "/es/levels/escape-the-backrooms-level-0-11-guide"
+  },
   "/fr/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
     "de": "/de/levels/level-9-suburbs-and-lab-walkthrough",
@@ -571,6 +601,12 @@ export const localizedRouteMap = {
     "de": "/de/levels/escape-the-backrooms-level-55-1-guide",
     "fr": "/fr/levels/escape-the-backrooms-level-55-1-guide",
     "es": "/es/levels/escape-the-backrooms-level-55-1-guide"
+  },
+  "/fr/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
+    "en": "/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "de": "/de/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "es": "/es/levels/escape-the-backrooms-level-421-plastic-mariana-guide"
   },
   "/fr/levels/escape-the-backrooms-level-b-unlock-guide": {
     "en": "/levels/escape-the-backrooms-level-b-unlock-guide",
@@ -716,6 +752,12 @@ export const localizedRouteMap = {
     "fr": "/fr/levels/level-8-cave-system-walkthrough",
     "es": "/es/levels/level-8-cave-system-walkthrough"
   },
+  "/es/levels/escape-the-backrooms-level-0-11-guide": {
+    "en": "/levels/escape-the-backrooms-level-0-11-guide",
+    "de": "/de/levels/escape-the-backrooms-level-0-11-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-0-11-guide",
+    "es": "/es/levels/escape-the-backrooms-level-0-11-guide"
+  },
   "/es/levels/level-9-suburbs-and-lab-walkthrough": {
     "en": "/levels/level-9-suburbs-and-lab-walkthrough",
     "de": "/de/levels/level-9-suburbs-and-lab-walkthrough",
@@ -775,6 +817,12 @@ export const localizedRouteMap = {
     "de": "/de/levels/escape-the-backrooms-level-55-1-guide",
     "fr": "/fr/levels/escape-the-backrooms-level-55-1-guide",
     "es": "/es/levels/escape-the-backrooms-level-55-1-guide"
+  },
+  "/es/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
+    "en": "/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "de": "/de/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "fr": "/fr/levels/escape-the-backrooms-level-421-plastic-mariana-guide",
+    "es": "/es/levels/escape-the-backrooms-level-421-plastic-mariana-guide"
   },
   "/es/levels/escape-the-backrooms-level-b-unlock-guide": {
     "en": "/levels/escape-the-backrooms-level-b-unlock-guide",

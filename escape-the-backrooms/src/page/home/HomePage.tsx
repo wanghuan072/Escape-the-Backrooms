@@ -5,7 +5,7 @@ import { getEntities } from '@/lib/data/entities'
 import { getLevels } from '@/lib/data/levels'
 import { getMaps } from '@/lib/data/maps'
 import { localizedPath, translate } from '@/lib/i18n/messages'
-import { HomeVideo } from '@/page/home/components/HomeVideo'
+import { HomeLatestUpdate } from '@/page/home/components/HomeLatestUpdate'
 import type { Locale } from '@/types/locale'
 import '@/style/page/home/home-page.module.css'
 
@@ -33,7 +33,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           <div className="hero-stats">{[1, 2, 3].map((number) => <div className="stat-box" key={number}><div className="stat-number">{translate(locale, `homePage.hero.stat0${number}Number`)}</div><div className="stat-text">{translate(locale, `homePage.hero.stat0${number}Text`)}</div></div>)}</div>
           <div className="hero-actions"><a href={localizedPath('/levels', locale)} className="btn btn-primary">{translate(locale, 'homePage.hero.button01')}</a><a href={localizedPath('/codes-solutions', locale)} className="btn btn-secondary">{translate(locale, 'homePage.hero.button02')}</a></div>
         </div>
-        <HomeVideo title={translate(locale, 'homePage.hero.videoTitle')} closeLabel={translate(locale, 'homePage.hero.closeVideo')} />
+        <HomeLatestUpdate locale={locale} />
       </div></div><AdPlacement /></section>
 
       {homeLevels.length > 0 && <section className="featured-section"><div className="container"><SectionHeader locale={locale} section="featuredLevels" link="/levels" linkText="homePage.featuredLevels.linkText" /><div className="featured-grid">{homeLevels.map((level) => <a key={level.id} href={localizedPath(`/levels/${level.addressBar}`, locale)} className="featured-card"><div className="card-image">{level.imageUrl ? <IntrinsicImage src={level.imageUrl} alt={level.imageAlt || level.title} className="card-img" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="card-img placeholder">{level.title}</div>}<div className="image-overlay" />{level.category && <div className="card-badge-top">{level.category}</div>}</div><div className="card-content"><h3 className="card-title">{level.title}</h3><p className="card-desc">{level.description}</p>{level.tags && level.tags.length > 0 && <div className="card-tags">{level.tags.slice(0, 3).map((tag) => <span key={tag} className="tag">{tag}</span>)}</div>}</div></a>)}</div></div><AdPlacement /></section>}

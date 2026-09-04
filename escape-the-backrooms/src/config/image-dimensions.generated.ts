@@ -64,6 +64,14 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 267,
     "height": 458
   },
+  "/images/home/level-421-site-update.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/levels/321.png": {
+    "width": 1247,
+    "height": 656
+  },
   "/images/levels/level-01-01.webp": {
     "width": 941,
     "height": 695
@@ -515,6 +523,42 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
   "/images/levels/level-35.webp": {
     "width": 994,
     "height": 548
+  },
+  "/images/levels/level-36-01.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-36-02.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-36-03.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-36-wiki-cover.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/levels/level-37-01.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-37-02.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-37-03.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-37-04.webp": {
+    "width": 960,
+    "height": 540
+  },
+  "/images/levels/level-37-wiki-cover.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/logo.webp": {
     "width": 695,

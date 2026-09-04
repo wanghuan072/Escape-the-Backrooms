@@ -1,3 +1,5 @@
+import { level011, level421 } from './de-new-levels.js'
+
 export default [
     {
         id: 1,
@@ -1899,6 +1901,7 @@ export default [
         </p>
       `
     },
+    level011,
     {
         id: 19,
         title: 'Escape the Backrooms: Level 9 (The Suburbs) & das Labor',
@@ -2737,6 +2740,7 @@ export default [
         </section>
       `
     },
+    level421,
     {
       "id": 29,
       "title": "Escape the Backrooms Level B Guide: Die M.E.G. Safe Zone & der Aufzug-Hub",

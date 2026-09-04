@@ -1,3 +1,5 @@
+import { level011, level421 } from './fr-new-levels.js'
+
 export default [
   {
     "id": 1,
@@ -1947,6 +1949,7 @@ export default [
           </p>
         `
   },
+  level011,
   {
     "id": 19,
     "title": "Escape the Backrooms : Niveau 9 (The Suburbs) & le laboratoire",
@@ -2785,6 +2788,7 @@ export default [
       </section>
     `
   },
+  level421,
   {
     "id": 29,
     "title": "Escape the Backrooms Level B Guide : la Safe Zone M.E.G. et le hub d'ascenseur",

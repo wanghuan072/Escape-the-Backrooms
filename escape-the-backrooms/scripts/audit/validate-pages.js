@@ -22,6 +22,9 @@ const baseRoutes = [
 ]
 const sitemapBaseRoutes = baseRoutes
 const requireSitemapToday = process.argv.includes('--require-sitemap-today')
+const gptAdsEnabled = /export const GPT_ADS_ENABLED\s*=\s*true\b/.test(
+  fs.readFileSync(path.join(rootDir, 'src/config/ads.ts'), 'utf8'),
+)
 const errors = []
 
 function addError(scope, message) {
@@ -360,7 +363,7 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
 
     const contentOrder = [
       ['level overview', html.indexOf('class="content-body level-overview')],
-      ['video ad', html.indexOf('class="ad-placement level-inline-ad level-video-ad')],
+      ...(gptAdsEnabled ? [['video ad', html.indexOf('class="ad-placement level-inline-ad level-video-ad')]] : []),
       ['video', html.indexOf('id="video-guide"')],
       ['video chapters', html.indexOf('class="video-chapters"')],
       ['research notes', html.indexOf('class="level-research-notes"')],
@@ -374,8 +377,8 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
 
     const navigationPosition = html.indexOf('class="nav-links"')
     const footerAdPosition = html.indexOf('class="ad-placement level-footer-ad"')
-    if (footerAdPosition < 0) addError(scope, 'level footer ad is missing')
-    else if (navigationPosition >= 0 && footerAdPosition < navigationPosition) addError(scope, 'level footer ad must follow level navigation')
+    if (gptAdsEnabled && footerAdPosition < 0) addError(scope, 'level footer ad is missing')
+    else if (footerAdPosition >= 0 && navigationPosition >= 0 && footerAdPosition < navigationPosition) addError(scope, 'level footer ad must follow level navigation')
   }
 
   for (const tag of tags(html, 'img')) {
@@ -440,8 +443,8 @@ async function main() {
   const validPaths = new Set(inventory.routes.map(normalizePathname))
   const sitemapPaths = new Set(inventory.sitemapRoutes)
   if (validPaths.size !== inventory.routes.length) addError('routes', 'duplicate public routes found')
-  if (inventory.routes.length !== 224) addError('routes', `expected 224 public routes, found ${inventory.routes.length}`)
-  if (inventory.sitemapRoutes.length !== 224) addError('routes', `expected 224 sitemap routes, found ${inventory.sitemapRoutes.length}`)
+  if (inventory.routes.length !== 232) addError('routes', `expected 232 public routes, found ${inventory.routes.length}`)
+  if (inventory.sitemapRoutes.length !== 232) addError('routes', `expected 232 sitemap routes, found ${inventory.sitemapRoutes.length}`)
 
   const redirectSources = validateVercelConfig(validPaths)
   const sitemapResult = validateSitemap(sitemapPaths)

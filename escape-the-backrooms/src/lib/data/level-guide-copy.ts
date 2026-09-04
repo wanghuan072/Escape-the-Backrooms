@@ -48,6 +48,8 @@ const englishNotes: Record<number, string> = {
   33: 'In Kitty’s House, keep one player watching Kitty while another carries toys to the theatre. Call every deposited toy; Kitty can move when nobody is looking, so never have the whole group turn away together.',
   34: 'On Level 922, keep the team together on the stairs and have one player call the floor labels. If somebody sees the wrong number, everyone stops before jumping.',
   35: 'On the final 3999 route, treat every completed objective as a team checkpoint. Confirm the key item, code, and exit state together before using the final ending trigger.',
+  36: 'For Level 0.11, scout the random side rooms before starting the lever chain, then give each player a numbered switch. Count down the first pull, call every activation, and leave someone close enough to the shutter to hold the exit route while the rest catch up.',
+  37: 'In Level 421, split the three floors for the flower search but use one caller to record each shape and colour. Regroup before setting the projectors. In Plastic Mariana, have the first player at the blue ball call it out and collect it before the team splits; if it is thrown as shark bait, name the lighthouse everyone else is running to. Announce every lighthouse switch, then assign one basketball hoop per player so the team can spot a missed score immediately.',
 }
 
 const germanNotes: Record<number, string> = {
@@ -85,6 +87,8 @@ const germanNotes: Record<number, string> = {
   33: 'In Kittys Haus beobachtet ein Spieler Kitty, während ein anderer Spielzeug zum Theater trägt. Meldet jedes abgelegte Stück und dreht niemals gleichzeitig als ganze Gruppe den Blick weg.',
   34: 'In Level 922 bleibt die Gruppe auf der Treppe zusammen; eine Person liest die Etagenzahlen vor. Sieht jemand eine falsche Zahl, halten alle vor dem Sprung an.',
   35: 'Auf der letzten 3999-Route ist jedes erfüllte Ziel ein Gruppen-Checkpoint. Prüft Schlüsselgegenstand, Code und Ausgang gemeinsam, bevor jemand den finalen Endauslöser betätigt.',
+  36: 'Erkundet in Level 0.11 zuerst die zufälligen Seitenräume und verteilt dann die nummerierten Schalter. Zählt den ersten Zug herunter, meldet jede Aktivierung und lasst jemanden nahe genug am Rolltor, damit die Fluchtroute offen bleibt, bis alle durch sind.',
+  37: 'Teilt in Level 421 die drei Etagen für die Blumensuche auf, aber lasst eine Person jede Form und Farbe notieren. Trefft euch vor den Projektoren. In Plastic Mariana meldet der erste Spieler an der blauen Kugel sie und nimmt sie auf, bevor sich die Gruppe verteilt; dient sie als Hai-Köder, sagt an, zu welchem Leuchtturm alle anderen laufen. Meldet jeden Leuchtturmschalter und verteilt die vier Basketballkörbe fest auf die Spieler.',
 }
 
 const frenchNotes: Record<number, string> = {
@@ -122,6 +126,8 @@ const frenchNotes: Record<number, string> = {
   33: 'Dans la maison de Kitty, un joueur garde Kitty en vue pendant qu’un autre rapporte les jouets au théâtre. Annoncez chaque dépôt et ne détournez jamais tous le regard en même temps.',
   34: 'Dans le niveau 922, restez groupés dans l’escalier et laissez une personne annoncer les numéros d’étage. Si quelqu’un repère le mauvais numéro, tout le monde s’arrête avant de sauter.',
   35: 'Sur la dernière route de 3999, traitez chaque objectif comme un point de contrôle collectif. Confirmez ensemble l’objet clé, le code et l’état de la sortie avant le déclencheur final.',
+  36: 'Dans le niveau 0.11, explorez les salles latérales aléatoires avant de lancer la chaîne, puis attribuez un levier numéroté à chacun. Comptez le premier tirage, annoncez chaque activation et gardez quelqu’un près du volet pour sécuriser le passage du reste de l’équipe.',
+  37: 'Dans le niveau 421, partagez les trois étages pour chercher les fleurs, mais confiez à une seule personne la liste des formes et des couleurs. Regroupez-vous avant les projecteurs. Dans Plastic Mariana, le premier joueur qui voit la balle bleue l’annonce et la ramasse avant que le groupe se disperse ; si elle sert d’appât, dites vers quel phare les autres courent. Annoncez chaque phare et attribuez un panier à chacun pour repérer aussitôt un tir non validé.',
 }
 
 const spanishNotes: Record<number, string> = {
@@ -159,6 +165,8 @@ const spanishNotes: Record<number, string> = {
   33: 'En la casa de Kitty, una persona mantiene a Kitty a la vista y otra lleva juguetes al teatro. Anunciad cada entrega y no apartéis todos la mirada al mismo tiempo.',
   34: 'En el nivel 922, mantened al grupo unido en la escalera y dejad que una persona cante los números de planta. Si alguien ve el número incorrecto, todos paran antes de saltar.',
   35: 'En la ruta final de 3999, tratad cada objetivo como un punto de control del equipo. Confirmad juntos el objeto clave, el código y la salida antes de activar el final.',
+  36: 'En el nivel 0.11, revisad primero las salas laterales aleatorias y asignad después una palanca numerada a cada persona. Haced una cuenta atrás, anunciad cada activación y dejad a alguien cerca de la persiana para asegurar el paso hasta que cruce todo el equipo.',
+  37: 'En el nivel 421, repartid las tres plantas para buscar flores, pero dejad que una sola persona anote cada forma y color. Reuníos antes de configurar los proyectores. En Plastic Mariana, quien vea primero la pelota azul debe avisarlo y recogerla antes de que el grupo se disperse; si se usa como cebo para el tiburón, decid hacia qué faro correrán las demás personas. Avisad de cada faro y asignad una canasta a cada jugador para detectar enseguida un tiro que no contó.',
 }
 
 const sharedCopy: Record<Locale, Omit<LevelGuideCopy, 'multiplayerNotes'>> = {

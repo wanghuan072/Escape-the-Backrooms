@@ -74,8 +74,11 @@ export default {
       stat03Text: 'Unique Entities',
       button01: 'Explore All Levels',
       button02: 'Codes & Solutions',
-      videoTitle: 'Escape the Backrooms Walkthrough',
-      closeVideo: 'Close walkthrough video'
+      latestLabel: 'Site update',
+      latestDate: 'September 2026',
+      latestImageAlt: "Bruce's Discovery Center entrance from Escape the Backrooms Level 421: Plastic Mariana",
+      latestSource: 'Frontline Pathfinder',
+      latestAria: 'Site update for September 2026'
     },
     featuredLevels: {
       label: 'Featured',

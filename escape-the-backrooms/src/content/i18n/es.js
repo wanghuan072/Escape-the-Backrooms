@@ -74,8 +74,11 @@ export default {
       "stat03Text": "Entidades únicas",
       "button01": "Explorar todos los niveles",
       "button02": "Códigos y soluciones",
-      "videoTitle": "Tutorial de Escape the Backrooms",
-      "closeVideo": "Cerrar la guía en vídeo"
+      "latestLabel": "Actualización del sitio",
+      "latestDate": "Septiembre de 2026",
+      "latestImageAlt": "Entrada de Bruce's Discovery Center en Escape the Backrooms, nivel 421: Plastic Mariana",
+      "latestSource": "Frontline Pathfinder",
+      "latestAria": "Actualización del sitio de septiembre de 2026"
     },
     "featuredLevels": {
       "label": "Destacado",
