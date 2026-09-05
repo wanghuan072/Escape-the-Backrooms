@@ -19,6 +19,7 @@ export function HomeLatestUpdate({ locale }: { locale: Locale }) {
           />
         </div>
         <div className="hero-update-caption">
+          <h2 className="hero-update-title">{translate(locale, 'homePage.hero.latestTitle')}</h2>
           <span className="hero-update-summary">{translate(locale, 'homePage.hero.latestSummary')}</span>
         </div>
       </article>

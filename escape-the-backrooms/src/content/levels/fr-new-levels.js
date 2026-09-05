@@ -8,7 +8,8 @@ export const level011 = {
   imageAlt: 'Couloir embrumé et détrempé dans Escape the Backrooms, niveau 0.11',
   category: 'Niveaux Principaux',
   tags: ['Water Damage', 'Bacteria', '415314'],
-  isHome: false,
+  isHome: true,
+  homePriority: 2,
   sideBarInfo: {
     name: 'Level 0.11 (Water Damage)',
     difficulty: 'Difficile / Leviers chronométrés et Bacteria rapide',
@@ -104,7 +105,8 @@ export const level421 = {
   imageAlt: "Entrée du Bruce's Discovery Center dans Escape the Backrooms, niveau 421 : Plastic Mariana",
   category: 'Niveaux Principaux',
   tags: ['Plastic Mariana', 'Énigmes de couleurs', 'Piscine à balles'],
-  isHome: false,
+  isHome: true,
+  homePriority: 1,
   sideBarInfo: {
     name: 'Level 421 (Plastic Mariana)',
     difficulty: 'Difficile / Énigmes aléatoires, Scratchers et requin',

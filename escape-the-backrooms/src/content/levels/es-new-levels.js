@@ -8,7 +8,8 @@ export const level011 = {
   imageAlt: 'Pasillo con niebla y daños por agua en Escape the Backrooms, nivel 0.11',
   category: 'Niveles principales',
   tags: ['Water Damage', 'Bacteria', '415314'],
-  isHome: false,
+  isHome: true,
+  homePriority: 2,
   sideBarInfo: {
     name: 'Nivel 0.11 (Water Damage)',
     difficulty: 'Difícil / Palancas contrarreloj y Bacteria rápida',
@@ -104,7 +105,8 @@ export const level421 = {
   imageAlt: "Entrada de Bruce's Discovery Center en Escape the Backrooms, nivel 421: Plastic Mariana",
   category: 'Niveles principales',
   tags: ['Plastic Mariana', 'Puzles de colores', 'Piscina de bolas'],
-  isHome: false,
+  isHome: true,
+  homePriority: 1,
   sideBarInfo: {
     name: 'Nivel 421 (Plastic Mariana)',
     difficulty: 'Difícil / Puzles aleatorios, Scratchers y tiburón',

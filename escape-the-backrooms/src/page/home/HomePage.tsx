@@ -18,7 +18,11 @@ function GameInfoCard({ locale, card, labeled }: { locale: Locale; card: 'card01
 }
 
 export default function HomePage({ locale }: { locale: Locale }) {
-  const homeLevels = getLevels(locale).filter((level) => level.isHome).slice(-6)
+  const selectedHomeLevels = getLevels(locale).filter((level) => level.isHome)
+  const homeLevels = [
+    ...selectedHomeLevels.filter((level) => level.homePriority !== undefined).sort((a, b) => a.homePriority! - b.homePriority!),
+    ...selectedHomeLevels.filter((level) => level.homePriority === undefined).slice(-4),
+  ].slice(0, 6)
   const homeMaps = getMaps(locale).filter((map) => map.isHome)
   const homeEntities = getEntities(locale).filter((entity) => entity.isHome)
   const faqItems = Array.from({ length: 10 }, (_, index) => { const number = String(index + 1).padStart(2, '0'); return { question: translate(locale, `homePage.faq.item${number}Question`), answer: translate(locale, `homePage.faq.item${number}Answer`) } })

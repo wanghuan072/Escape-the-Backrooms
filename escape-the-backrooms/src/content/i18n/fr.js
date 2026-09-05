@@ -78,6 +78,7 @@ export default {
             latestDate: 'Septembre 2026',
             latestImageAlt: "Entrée du Bruce's Discovery Center dans Escape the Backrooms, niveau 421 : Plastic Mariana",
             latestSource: 'Frontline Pathfinder',
+            latestTitle: 'Dernier guide : Level 421 — Plastic Mariana',
             latestSummary: 'Mise à jour du site : septembre 2026 · Frontline Pathfinder',
             latestAria: 'Mise à jour du site en septembre 2026'
         },

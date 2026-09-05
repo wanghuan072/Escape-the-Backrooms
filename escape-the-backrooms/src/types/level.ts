@@ -22,6 +22,7 @@ export interface LevelEntry {
   category?: string
   tags?: string[]
   isHome?: boolean
+  homePriority?: number
   sideBarInfo?: Record<string, string>
   featured?: FeaturedLink[]
   seo: SeoRecord

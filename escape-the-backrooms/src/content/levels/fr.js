@@ -783,7 +783,7 @@ export default [
     "imageUrl": "/images/levels/level-08.webp",
     "imageAlt": "Escape the Backrooms : Niveau 5 - La Chaufferie (Walkthrough et Secrets)",
     "category": "Main Levels",
-    "isHome": true,
+    "isHome": false,
     "sideBarInfo": {
       "name": "Escape the Backrooms : Niveau 5 - La Chaufferie",
       "difficulty": "Difficile",
@@ -2558,7 +2558,7 @@ export default [
     "imageUrl": "/images/levels/level-26.webp",
     "imageAlt": "Escape the Backrooms Level Fun Plus, salle centrale et zone dangereuse des Partygoers",
     "category": "Niveaux Principaux",
-    "isHome": true,
+    "isHome": false,
     "sideBarInfo": {
       "name": "Level Fun+ (maison de Levian)",
       "difficulty": "Difficile / Nightmare recommandé",

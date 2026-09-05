@@ -8,7 +8,8 @@ export const level011 = {
   imageAlt: 'Nebliger, wassergeschädigter Korridor in Escape the Backrooms Level 0.11',
   category: 'Hauptlevel',
   tags: ['Water Damage', 'Bacteria', '415314'],
-  isHome: false,
+  isHome: true,
+  homePriority: 2,
   sideBarInfo: {
     name: 'Level 0.11 (Water Damage)',
     difficulty: 'Schwer / Zeithebel und schnelle Bacteria',
@@ -105,7 +106,8 @@ export const level421 = {
   imageAlt: "Eingang zu Bruce's Discovery Center in Escape the Backrooms Level 421: Plastic Mariana",
   category: 'Hauptlevel',
   tags: ['Plastic Mariana', 'Farbrätsel', 'Bällebad'],
-  isHome: false,
+  isHome: true,
+  homePriority: 1,
   sideBarInfo: {
     name: 'Level 421 (Plastic Mariana)',
     difficulty: 'Schwer / Zufallsrätsel, Scratcher und Hai',

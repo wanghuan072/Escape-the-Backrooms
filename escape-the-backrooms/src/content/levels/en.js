@@ -784,7 +784,7 @@ export default [
     imageUrl: '/images/levels/level-08.webp',
     imageAlt: 'Escape the Backrooms: Level 5 - The Boiler Room (Walkthrough & Secrets)',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Escape the Backrooms: Level 5 - The Boiler Room',
       difficulty: 'Hard',
@@ -2575,7 +2575,7 @@ export default [
     imageUrl: '/images/levels/level-26.webp',
     imageAlt: 'Escape the Backrooms Level Fun Plus Hub Room and Partygoer Danger Zone',
     category: 'Main Levels',
-    isHome: true,
+    isHome: false,
     sideBarInfo: {
       name: 'Level Fun+ (Levian\'s House)',
       difficulty: 'Hard / Nightmare Recommended',

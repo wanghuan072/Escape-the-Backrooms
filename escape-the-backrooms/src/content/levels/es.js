@@ -269,7 +269,7 @@ export default [
     "imageUrl": "/images/levels/level-08.webp",
     "imageAlt": "Escape the Backrooms: Nivel 5 - La sala de calderas (tutorial y secretos)",
     "category": "Niveles principales",
-    "isHome": true,
+    "isHome": false,
     "sideBarInfo": {
       "name": "Escape the Backrooms: Nivel 5 - La sala de calderas",
       "difficulty": "Difícil",
@@ -877,7 +877,7 @@ export default [
     "imageUrl": "/images/levels/level-26.webp",
     "imageAlt": "Escape the Backrooms Sala central Level Fun Plus y zona de peligro para los asistentes a la fiesta",
     "category": "Niveles principales",
-    "isHome": true,
+    "isHome": false,
     "sideBarInfo": {
       "name": "Nivel Diversión+ (Casa de Levian)",
       "difficulty": "Difícil/Pesadilla Recomendado",
