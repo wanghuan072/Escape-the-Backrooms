@@ -241,34 +241,13 @@
   box-shadow: 0 0 12px rgba(255, 215, 0, 0.55);
 }
 
-:global(.home-view .hero-update-kicker) {
-  display: block;
-  margin-bottom: 0.45rem;
-  color: #a7a38f;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-:global(.home-view .hero-update-meta) {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.9rem;
-  padding-top: 0.8rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-:global(.home-view .hero-update-meta time) {
+:global(.home-view .hero-update-summary) {
   color: #c8c6ba;
-  font-size: 0.82rem;
-}
-
-:global(.home-view .hero-update-source) {
-  color: #a7a38f;
-  font-size: 0.82rem;
-  text-align: right;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.045em;
+  line-height: 1.55;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -703,11 +682,6 @@
 
   :global(.home-view .hero-update-caption::before) {
     left: 1rem;
-  }
-
-  :global(.home-view .hero-update-meta) {
-    margin-top: 0.7rem;
-    padding-top: 0.65rem;
   }
 
   :global(.home-view .btn) {

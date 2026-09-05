@@ -20,7 +20,8 @@ export const level011 = {
     keywords: 'escape the backrooms level 0.11 guide, level 0.11 water damage, code 415314, leviers level 0.11, bacteria, code ascenseur cour, sortie level 8',
   },
   detailsHtml: `
-    <p>Le Level 0.11 paraît court, mais la visibilité réduite, les salles de leviers variables et une Bacteria plus rapide que le joueur punissent les tentatives précipitées. Cet itinéraire distingue les indices fixes de ce qui change d'une partie à l'autre.</p>
+    <p>Dans le Level 0.11, le piège est de lancer le minuteur des leviers trop tôt. Nous séparons le labyrinthe, le repérage des leviers et la cour : d'abord la tronçonneuse, ensuite tous les leviers, puis une seule vraie tentative au volet.</p>
+    <nav class="guide-rail" aria-label="Itinéraire du Level 0.11"><a href="#011-saw">01 Route à la tronçonneuse</a><a href="#011-levers">02 Repérage des leviers</a><a href="#011-shutter">03 Timing du volet</a><a href="#011-code">04 Code 415314</a></nav>
 
     <h3>Temps forts du niveau :</h3>
     <ul>
@@ -37,7 +38,7 @@ export const level011 = {
     </section>
 
     <section>
-      <h2>Ouvrir le casier et préparer la route de la tronçonneuse</h2>
+      <h2 id="011-saw">Ouvrir le casier et préparer la route de la tronçonneuse</h2>
       <h3>Lire ou saisir directement la suite fixe</h3>
       <p>Réglez la qualité des ombres sur Élevée pour faire apparaître correctement les symboles projetés. Les indices numérotés forment la suite <strong>Carré → Cercle → Flèche</strong>. Cette solution est fixe dans la version actuelle : lors d'une nouvelle partie, vous pouvez donc la saisir sans refaire tout le contrôle visuel.</p>
       <img src="/images/levels/level-36-01.webp" alt="Code Carré Cercle Flèche du casier dans Escape the Backrooms Level 0.11" />
@@ -53,17 +54,20 @@ export const level011 = {
     </section>
 
     <section>
-      <h2>Ouvrir le volet avec les quatre leviers</h2>
+      <h2 id="011-levers">Ouvrir le volet avec les quatre leviers</h2>
       <h3>Repérer les salles variables avant de lancer le chrono</h3>
       <p>Le secteur contient <strong>quatre leviers au total</strong>. Celui près de la sortie et une autre salle servent de repères fixes ; deux salles actives peuvent changer après un nouvel essai. Explorez d'abord la zone et retenez le trajet le plus court. Une salle éclairée est un bon indice, mais son état peut changer après la mort du groupe.</p>
+      <div class="timing-card" id="011-shutter"><div><span>SOLO</span><strong>Faites la boucle et tirez le levier du volet en dernier.</strong><p>Le temps suffit si vous connaissez déjà les salles.</p></div><div><span>COOP</span><strong>Une personne par levier, confirmation puis compte à rebours.</strong><p>La fenêtre se resserre avec le nombre de joueurs vivants.</p></div></div>
       <p>Chaque levier actionné revient peu à peu à sa position initiale. En solo, la fenêtre permet de courir d'un point à l'autre. Plus le groupe est nombreux, plus le délai raccourcit. À quatre, placez une personne devant chaque levier, confirmez que tout le monde est prêt puis lancez un compte à rebours. En solo, gardez le levier de la grille pour la fin.</p>
       <p>Un levier se trouve de l'autre côté du volet. Un joueur déjà passé peut le relever pour un équipier en retard. Ne partez vers la cour qu'une fois le groupe réuni.</p>
     </section>
 
     <section>
-      <h2>Fenêtres de la cour et code d'ascenseur 415314</h2>
+      <h2 id="011-code">Fenêtres de la cour et code d'ascenseur 415314</h2>
       <h3>Une lecture fixe, pas un code deviné</h3>
-      <p>Observez la cour inspirée du Level 188 et relevez la position des fenêtres éclairées. La note voisine indique que ce motif correspond au clavier. Dans la version actuelle, le résultat est toujours <strong>415314</strong>. Saisissez les six chiffres, entrez dans l'ascenseur et revenez au Level 8.</p>
+      <p>Observez la cour inspirée du Level 188 et relevez la position des fenêtres éclairées. La note voisine indique que ce motif correspond au clavier. Une fois ici, la réponse est fixe :</p>
+      <div class="guide-code" aria-label="Code d'ascenseur 415314"><span>CODE ASCENSEUR</span><strong>415314</strong></div>
+      <p>Saisissez les six chiffres, entrez dans l'ascenseur et revenez au Level 8.</p>
       <img src="/images/levels/level-36-03.webp" alt="Fenêtres éclairées donnant le code d'ascenseur 415314 au Level 0.11" />
       <p>Si le clavier ne répond pas, effacez toute l'entrée puis retapez lentement les chiffres. Si le passage ramène le groupe dans la zone des leviers au lieu de charger la cour, reformez l'équipe et recommencez la route normale ; cette transition peut mal se synchroniser après un essai coop raté.</p>
     </section>
@@ -112,7 +116,8 @@ export const level421 = {
     keywords: 'escape the backrooms level 421 guide, soluce plastic mariana, code couleur level 421, enigme fleurs, interrupteurs phares, balles blanches, paniers basketball, scratcher, requin geant',
   },
   detailsHtml: `
-    <p>Le Level 421 enchaîne plusieurs longues étapes : le premier code change à chaque partie, les fleurs sont réparties sur trois étages et l'accès à la piscine à balles dépend d'une seconde correspondance de couleurs. Copier la combinaison de la vidéo ne suffit donc pas pour la partie suivante.</p>
+    <p>Le Level 421 ne bloque pas sur une énigme impossible ; il sanctionne surtout les petits détails ignorés en courant. Numéros des conteneurs, formes de fleurs, balle bleue et quatre paniers finaux méritent tous une seconde de vérification.</p>
+    <nav class="guide-rail" aria-label="Itinéraire du Level 421"><a href="#421-code">01 Code des conteneurs</a><a href="#421-flowers">02 Projecteurs-fleurs</a><a href="#421-pit">03 Requin et phares</a><a href="#421-hoops">04 Quatre paniers</a></nav>
 
     <h3>Temps forts du niveau :</h3>
     <ul>
@@ -135,15 +140,18 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Résoudre le code couleur aléatoire des conteneurs</h2>
+      <h2 id="421-code">Résoudre le code couleur aléatoire des conteneurs</h2>
       <h3>Suivre les numéros plutôt que l'ordre de découverte</h3>
-      <p>Quatre présentoirs numérotés donnent la suite du clavier. Trois montrent une couleur unique. Le quatrième en contient deux : utilisez le schéma de mélange voisin pour les convertir en une nouvelle couleur. Notez les résultats dans l'ordre des numéros, puis saisissez les quatre couleurs au terminal.</p>
+      <p>Le piège classique est de saisir les couleurs dans l'ordre où la caméra les voit. Les numéros peints imposent l'ordre. Les marques <strong>3 / 1 / 2</strong> dans la pièce le rappellent : la disposition n'est pas l'ordre du clavier. Trouvez les quatre conteneurs, notez leurs couleurs puis rangez-les de 1 à 4.</p>
+      <img src="/images/levels/321.png" alt="Marquages 3, 1 et 2 des conteneurs couleur du Level 421" />
+      <p>Nous avons d'abord pris cette vue pour un code <strong>321</strong>. Ce n'en est pas un : ce sont des étiquettes. Trois conteneurs ont une couleur ; celui qui en a deux demande d'abord la fiche de mélange.</p>
+      <div class="mix-card"><span>RAPPEL DE MÉLANGE</span><div><b>Rouge + vert</b><strong>Jaune</strong></div><div><b>Bleu + vert</b><strong>Cyan</strong></div><div><b>Bleu + rouge</b><strong>Rose</strong></div></div>
       <img src="/images/levels/level-37-01.webp" alt="Clavier couleur aléatoire après les conteneurs numérotés du Level 421" />
       <p>La suite bleu, vert, rouge, puis cyan/bleu clair réussie dans la vidéo ne vaut que pour cette partie. La disposition et le duo mélangé changent. Si la grille reste fermée, vérifiez le résultat du mélange et assurez-vous d'avoir trié les conteneurs par numéro, pas de gauche à droite.</p>
     </section>
 
     <section>
-      <h2>Trouver les trois fleurs et régler les projecteurs</h2>
+      <h2 id="421-flowers">Trouver les trois fleurs et régler les projecteurs</h2>
       <h3>Conserver ensemble la forme et la couleur</h3>
       <p>Après la première grille, cherchez trois peintures de fleurs différentes dans les salles des trois étages. Leur emplacement et leur couleur changent d'une partie à l'autre. Prenez une photo avec le téléphone du jeu ou une capture d'écran : retenir seulement « fleur jaune » ne suffit pas, car chaque forme correspond à son propre projecteur.</p>
       <p>La grille verrouillée et les projecteurs en forme de fleur se trouvent sur le parcours du deuxième étage. Dirigez chaque projecteur vers la fleur blanche correspondante et mélangez la couleur vue sur l'indice mural. Les trois couleurs cibles sont rose, cyan et jaune, mais leur attribution est aléatoire. Avec deux associations sûres, la troisième se déduit par élimination.</p>
@@ -152,7 +160,7 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Survivre à Plastic Mariana et activer quatre phares</h2>
+      <h2 id="421-pit">Survivre à Plastic Mariana et activer quatre phares</h2>
       <h3>Utiliser les interrupteurs comme repères de progression</h3>
       <p>Après la grille des projecteurs, l'une des trois piscines transporte l'équipe dans Plastic Mariana. Repérez les quatre structures en forme de phare et placez chaque interrupteur mural sur <strong>ON</strong>, tout en surveillant le déplacement du requin géant sous les balles.</p>
       <h3>Ramasser la balle bleue dès le premier passage</h3>
@@ -163,7 +171,7 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Réussir les quatre paniers de basket</h2>
+      <h2 id="421-hoops">Réussir les quatre paniers de basket</h2>
       <h3>Viser sous l'arceau plutôt qu'au centre du panneau</h3>
       <p>La dernière salle contient quatre paniers et chacun doit enregistrer un tir réussi. Ramassez les ballons, placez-vous assez près pour contrôler la trajectoire et visez légèrement sous l'arceau ou vers le bas du cadre. En visant directement le centre du panneau, le lancer part souvent trop haut.</p>
       <img src="/images/levels/level-37-04.webp" alt="Dernière piscine à balles avec les quatre paniers du Level 421" />

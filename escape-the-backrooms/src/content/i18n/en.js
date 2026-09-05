@@ -58,7 +58,7 @@ export default {
   },
   homePage: {
     hero: {
-      badgeNew: 'v1.0 Full Release',
+      badgeNew: 'v1.4 Update',
       badgeSteam: 'Steam Edition',
       title: 'Escape the Backrooms: Levels, Maps, Codes & Walkthroughs',
       description: 'Escape the Backrooms is your ultimate guide to navigating through 30+ levels of terror. Find levels, maps, codes, entity guides, and puzzle solutions for Escape the Backrooms. Everything you need to escape the Backrooms and survive this horror adventure.',
@@ -78,6 +78,7 @@ export default {
       latestDate: 'September 2026',
       latestImageAlt: "Bruce's Discovery Center entrance from Escape the Backrooms Level 421: Plastic Mariana",
       latestSource: 'Frontline Pathfinder',
+      latestSummary: 'Site update: September 2026 · Frontline Pathfinder',
       latestAria: 'Site update for September 2026'
     },
     featuredLevels: {

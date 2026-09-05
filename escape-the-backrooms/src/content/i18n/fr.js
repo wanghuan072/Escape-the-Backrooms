@@ -58,7 +58,7 @@ export default {
     },
     homePage: {
         hero: {
-            badgeNew: 'Sortie Complète v1.0',
+            badgeNew: 'Mise à jour v1.4',
             badgeSteam: 'Édition Steam',
             title: 'Escape the Backrooms : Niveaux, Cartes, Codes et Solutions',
             description: 'Escape the Backrooms est votre guide ultime pour naviguer à travers plus de 30 niveaux de terreur. Trouvez les cartes, codes, guides d\'entités et solutions d\'énigmes. Tout ce dont vous avez besoin pour survivre.',
@@ -78,6 +78,7 @@ export default {
             latestDate: 'Septembre 2026',
             latestImageAlt: "Entrée du Bruce's Discovery Center dans Escape the Backrooms, niveau 421 : Plastic Mariana",
             latestSource: 'Frontline Pathfinder',
+            latestSummary: 'Mise à jour du site : septembre 2026 · Frontline Pathfinder',
             latestAria: 'Mise à jour du site en septembre 2026'
         },
         featuredLevels: {

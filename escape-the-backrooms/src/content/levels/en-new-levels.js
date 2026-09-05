@@ -20,7 +20,11 @@ export const level011 = {
     keywords: 'escape the backrooms level 0.11 guide, level 0.11 water damage, 415314 code, level 0.11 levers, bacteria, courtyard elevator code, level 8 exit',
   },
   detailsHtml: `
-    <p>Level 0.11 is short on paper, but the combination of poor visibility, randomized lever rooms, and a Bacteria that can outrun a player turns a rushed attempt into a reset. The route below separates the fixed clues from the parts that change between runs.</p>
+    <p>Level 0.11 punishes starting the lever timer too early. We treat the maze, the lever sweep, and the courtyard as separate jobs: get the saw, learn which rooms actually contain levers, then make one clean run at the shutter.</p>
+
+    <nav class="guide-rail" aria-label="Level 0.11 route">
+      <a href="#011-saw">01 Chainsaw route</a><a href="#011-levers">02 Lever sweep</a><a href="#011-shutter">03 Shutter timing</a><a href="#011-code">04 Code 415314</a>
+    </nav>
 
     <h3>Level Highlights:</h3>
     <ul>
@@ -37,7 +41,7 @@ export const level011 = {
     </section>
 
     <section>
-      <h2>Open the Locker and Prepare the Chainsaw Route</h2>
+      <h2 id="011-saw">Open the Locker and Prepare the Chainsaw Route</h2>
       <h3>Read or enter the fixed symbol sequence</h3>
       <p>Set Shadow Quality to High if you want to reveal the projected symbol clues normally. Each numbered clue maps to a shape, and the finished locker sequence is <strong>Square → Circle → Arrow</strong>. The answer is fixed in the current build, so players who already know it do not need to repeat the lighting check.</p>
       <img src="/images/levels/level-36-01.webp" alt="Level 0.11 Square Circle Arrow locker code in Escape the Backrooms" />
@@ -53,17 +57,19 @@ export const level011 = {
     </section>
 
     <section>
-      <h2>Solve the Four-Lever Shutter Gate</h2>
+      <h2 id="011-levers">Solve the Four-Lever Shutter Gate</h2>
       <h3>Find the changing rooms before starting the timer</h3>
-      <p>There are <strong>four levers in total</strong>. The lever beside the exit gate and one nearby room are dependable landmarks; two of the active rooms can change between attempts. Search the area first and remember the shortest line between them. A lit room is useful evidence, but do not assume every door has the same state after a team wipe.</p>
-      <p>Every pulled lever slowly returns toward its starting position. In solo play the return is slow enough to run the route normally. With more players the timing becomes shorter, and a four-player lobby should treat the puzzle as a simultaneous interaction: put one person at each lever, confirm everyone is ready, then count down. Save the gate-side lever for last when playing alone.</p>
-      <p>After the shutter rises, anyone already through can use the lever on the far side to raise it again for teammates. Do not leave that player behind; the courtyard code is the next shared checkpoint.</p>
+      <p>There are <strong>four levers in total</strong>. Two are dependable landmarks—the one beside the shutter and one in a nearby room—while the other two can change after a reset. We always do a quiet lap first and remember the short joins between rooms. It feels slower for thirty seconds, but it saves a full wipe when someone pulls the first lever before the last room is found.</p>
+      <div class="timing-card" id="011-shutter"><div><span>SOLO</span><strong>Run the loop; pull the shutter-side lever last.</strong><p>The return time is long enough if you already know the route.</p></div><div><span>CO-OP</span><strong>One player per lever; confirm, then count down together.</strong><p>The window tightens as more players are alive, so do not start on a guess.</p></div></div>
+      <p>Every pulled lever slowly returns toward its starting position. If someone is already through, use the lever on the far side to raise the shutter again for the others. Do not sprint into the courtyard until the last person has made it through.</p>
     </section>
 
     <section>
-      <h2>Courtyard Windows and the 415314 Elevator Code</h2>
+      <h2 id="011-code">Courtyard Windows and the 415314 Elevator Code</h2>
       <h3>Why the number is not a random keypad guess</h3>
-      <p>Look across the Level 188-style courtyard and note the positions of the illuminated windows. The nearby note explains that the window layout is the keypad clue. In the current game the resulting number is always <strong>415314</strong>. Enter those six digits at the elevator keypad, step inside, and use the elevator to return to Level 8.</p>
+      <p>Look across the Level 188-style courtyard and note the positions of the illuminated windows. The nearby note explains that the window layout is the keypad clue. Once you have reached this point, the answer is fixed:</p>
+      <div class="guide-code" aria-label="Elevator code 415314"><span>ELEVATOR CODE</span><strong>415314</strong></div>
+      <p>Enter those six digits at the elevator keypad, step inside, and use the elevator to return to Level 8.</p>
       <img src="/images/levels/level-36-03.webp" alt="Level 0.11 illuminated-window clue for elevator code 415314" />
       <p>If the keypad refuses the answer, clear the input completely and enter one digit at a time. If the gate sends the group back to the lever area instead of loading the courtyard, regroup and repeat the intended lever route; community reports show that this transition has occasionally failed after a mistimed or desynchronized co-op attempt.</p>
     </section>
@@ -112,7 +118,11 @@ export const level421 = {
     keywords: 'escape the backrooms level 421 guide, plastic mariana walkthrough, level 421 color code, flower puzzle, lighthouse switches, white balls, basketball hoop puzzle, scratcher, giant shark',
   },
   detailsHtml: `
-    <p>Level 421 is a long, multi-stage route: the first code changes every run, the flower clues are spread across three floors, and the ball-pit section only opens after another matching puzzle. Memorizing the example code from one video will not clear the next lobby.</p>
+    <p>Level 421 is not difficult because one puzzle is impossible; it is difficult because the game keeps asking you to notice one small thing before you rush on. The container numbers, the flower shapes, the blue ball in the pit, and the last four hoops all punish a “we'll work it out later” run.</p>
+
+    <nav class="guide-rail" aria-label="Level 421 route">
+      <a href="#421-code">01 Container code</a><a href="#421-flowers">02 Flower projectors</a><a href="#421-pit">03 Shark and lighthouses</a><a href="#421-hoops">04 Four hoops</a>
+    </nav>
 
     <h3>Level Highlights:</h3>
     <ul>
@@ -135,35 +145,38 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Solve the Random Numbered-Container Color Code</h2>
+      <h2 id="421-code">Solve the Random Numbered-Container Color Code</h2>
       <h3>Read the container numbers, not the order you find them</h3>
-      <p>Four numbered displays provide the keypad sequence. Three show a single color. One contains two colors and must be converted into a new color using the nearby Venn-style mixing sheet. Write the answers in numerical order and enter the four resulting colors at the terminal.</p>
+      <p>The first time through, it is very easy to type the colors in the order the camera happens to see them. Do not. The numbers painted around the containers decide the order; the <strong>3 / 1 / 2</strong> markings in this room are a useful reminder that the layout is not the keypad order. Find all four numbered containers, note their colors, then sort your notes from 1 to 4.</p>
+      <img src="/images/levels/321.png" alt="Level 421 container-number markings 3, 1, and 2 used to establish color-code order" />
+      <p>We nearly read that shot as a literal <strong>321</strong> code. It is not one—those are labels. Three containers show one color; the container with two colors needs the mixing sheet before it joins the sequence.</p>
+      <div class="mix-card"><span>QUICK MIX CHECK</span><div><b>Red + Green</b><strong>Yellow</strong></div><div><b>Blue + Green</b><strong>Cyan</strong></div><div><b>Blue + Red</b><strong>Pink</strong></div></div>
       <img src="/images/levels/level-37-01.webp" alt="Level 421 randomized color keypad used after reading the numbered containers" />
       <p>The video's successful sequence—blue, green, red, then cyan/light blue—is only that run's answer. Both the arrangement and the mixed pair can change. If the terminal stays locked, check that the mixed result came from the chart and that the containers were sorted by their printed numbers rather than left-to-right position.</p>
     </section>
 
     <section>
-      <h2>Find the Three Flower Clues and Set the Projectors</h2>
+      <h2 id="421-flowers">Find the Three Flower Clues and Set the Projectors</h2>
       <h3>Record both the shape and the color</h3>
-      <p>Past the first gate, search all three floors for three different flower paintings. Their locations and the color assigned to each flower can change between runs. Take an in-game phone photo or a quick screenshot of every clue; remembering only “yellow flower” is not enough because each flower shape must be matched to its own projector.</p>
-      <p>The locked gate and flower-shaped projectors are on the second-floor route. Aim each projector at the corresponding white flower and use its buttons to create the color seen on the wall clue. The target set uses pink, cyan, and yellow, but which flower receives which color is randomized. If two matches are known, the remaining flower can be solved by elimination instead of searching every room again.</p>
+      <p>Past the first gate, take a photo of every flower wall you find. We write “shape + color,” not just “yellow,” because the projector wants the color attached to that exact outline. The locations move between runs; the three target colors remain pink, cyan, and yellow.</p>
+      <p>You do not always need to clear every room. Once two flower matches are confirmed, the remaining target color is the one left over. That is the point to head to the second-floor projectors instead of making another risky sweep through Scratcher halls.</p>
       <p>Scratchers patrol these halls. Close a door before working a projector and listen before stepping into a stairwell. The rolling-ball sound can continue when no enemy is immediately beside you, so use sight lines and door movement instead of treating that sound as a perfect proximity warning.</p>
       <img src="/images/levels/level-37-02.webp" alt="Scratcher patrol beside the Level 421 flower-projector gate" />
     </section>
 
     <section>
-      <h2>Survive Plastic Mariana and Activate Four Lighthouses</h2>
+      <h2 id="421-pit">Survive Plastic Mariana and Activate Four Lighthouses</h2>
       <h3>Use the switches as progress markers</h3>
       <p>After the projector gate opens, enter the pool area. One of the three pits transports the team into Plastic Mariana. In the main ball pit, find the four lighthouse structures and flip every wall switch to <strong>ON</strong> while watching for the giant shark's movement through the balls.</p>
       <h3>Take the blue ball when the route first passes it</h3>
-      <p>Do not run past the blue ball in the first dark stretch of the pit. Walk close enough for the pickup prompt, point the centre of the screen at the ball, and interact; because it sits among many loose balls, looking slightly down from a short distance is much more reliable than trying to grab it while running through the pile. If the prompt is blocked, take one step to either side and re-aim rather than repeatedly interacting from the same angle.</p>
-      <p>The blue ball is useful in two ways: it can be thrown toward a hoop later, or thrown away from your intended line to draw the shark after it. The pull is limited, so use it to create a small opening to reach a lighthouse or safe structure, not as a guaranteed stun. Keep moving as soon as the shark turns; waiting to see whether it commits wastes the window.</p>
+      <p>Do not run past the blue ball in the first dark stretch of the pit. Walk up until the pickup prompt appears, look slightly down at its centre, and interact. The loose balls love to cover the prompt; if it will not register, take one step sideways and try again instead of mashing the key while running.</p>
+      <p>We use the blue ball to buy space, not to win a fight with the shark. Throw it away from the lighthouse you want, wait for the shark to turn, then move immediately. Its pull is short and unreliable, so a lighthouse, staircase, or play structure is still your real safe point. You can also keep the ball for a later hoop.</p>
       <img src="/images/levels/level-37-03.webp" alt="Level 421 lighthouse wall switch inside the Plastic Mariana ball pit" />
       <p>Once the fourth lighthouse is active, wait for the white balls to appear. Follow the moving white trail until it gathers into a circle, then jump into that circle to leave the pit. Do not follow an isolated white ball before all four switches are on; it is the completed trail and circle that mark the exit.</p>
     </section>
 
     <section>
-      <h2>Complete the Four Basketball Hoops</h2>
+      <h2 id="421-hoops">Complete the Four Basketball Hoops</h2>
       <h3>Aim below the rim instead of at the backboard center</h3>
       <p>The final room contains four hoops, and the exit requires one successful score in each hoop. Pick up the balls from the floor, stand close enough to keep the arc controlled, then aim slightly below the hoop or low on its frame before throwing. Aiming directly at the middle of the backboard tends to send the ball too high.</p>
       <img src="/images/levels/level-37-04.webp" alt="Level 421 final ball-pit room with the four basketball hoops" />

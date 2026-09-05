@@ -20,7 +20,8 @@ export const level011 = {
     keywords: 'escape the backrooms nivel 0.11 guia, level 0.11 water damage, codigo 415314, palancas nivel 0.11, bacteria, codigo ascensor patio, salida nivel 8',
   },
   detailsHtml: `
-    <p>El nivel 0.11 parece corto, pero la poca visibilidad, las salas de palancas variables y una Bacteria capaz de correr más que el jugador convierten cualquier intento precipitado en un reinicio. Esta ruta diferencia las pistas fijas de las partes que cambian entre partidas.</p>
+    <p>En el nivel 0.11 el error típico es iniciar el temporizador de las palancas demasiado pronto. Separa laberinto, búsqueda de palancas y patio: primero la motosierra, después todas las salas y solo entonces un intento limpio de abrir la persiana.</p>
+    <nav class="guide-rail" aria-label="Ruta del nivel 0.11"><a href="#011-saw">01 Ruta de motosierra</a><a href="#011-levers">02 Búsqueda de palancas</a><a href="#011-shutter">03 Tiempo de persiana</a><a href="#011-code">04 Código 415314</a></nav>
 
     <h3>Momentos destacados del nivel:</h3>
     <ul>
@@ -37,7 +38,7 @@ export const level011 = {
     </section>
 
     <section>
-      <h2>Abrir la taquilla y preparar la ruta de la motosierra</h2>
+      <h2 id="011-saw">Abrir la taquilla y preparar la ruta de la motosierra</h2>
       <h3>Leer o introducir directamente la secuencia fija</h3>
       <p>Sube la calidad de las sombras a Alta si quieres ver bien los símbolos proyectados. Las pistas numeradas forman la combinación <strong>Cuadrado → Círculo → Flecha</strong>. La respuesta es fija en la versión actual, así que en futuras partidas puede introducirse sin repetir toda la comprobación visual.</p>
       <img src="/images/levels/level-36-01.webp" alt="Código Cuadrado Círculo Flecha de la taquilla en Escape the Backrooms nivel 0.11" />
@@ -53,17 +54,20 @@ export const level011 = {
     </section>
 
     <section>
-      <h2>Abrir la persiana con las cuatro palancas</h2>
+      <h2 id="011-levers">Abrir la persiana con las cuatro palancas</h2>
       <h3>Localizar las salas variables antes de iniciar la carrera</h3>
       <p>Hay <strong>cuatro palancas en total</strong>. La que está junto a la salida y otra sala sirven como referencias estables; dos de las salas activas pueden cambiar después de reiniciar. Registra primero la zona y memoriza la conexión más corta. Una sala iluminada es una pista útil, aunque su estado puede variar tras la muerte de todo el grupo.</p>
+      <div class="timing-card" id="011-shutter"><div><span>SOLO</span><strong>Haz el circuito y deja la palanca de la persiana para el final.</strong><p>Hay tiempo si ya conoces las salas.</p></div><div><span>COOPERATIVO</span><strong>Una persona por palanca; confirmad y haced la cuenta atrás.</strong><p>El margen se reduce cuantos más jugadores sigan vivos.</p></div></div>
       <p>Cada palanca accionada vuelve poco a poco a su posición original. En solitario hay tiempo para completar el recorrido corriendo. Cuantos más jugadores participan, menor es el margen. Con cuatro personas, lo más seguro es colocar una en cada palanca, confirmar que todos están listos y hacer una cuenta atrás. Si juegas solo, deja para el final la palanca situada junto a la persiana.</p>
       <p>Al otro lado hay otra palanca que permite volver a levantar la puerta para los compañeros rezagados. Reunid al equipo antes de avanzar al patio.</p>
     </section>
 
     <section>
-      <h2>Ventanas del patio y código de ascensor 415314</h2>
+      <h2 id="011-code">Ventanas del patio y código de ascensor 415314</h2>
       <h3>Una lectura fija, no un número al azar</h3>
-      <p>Mira al otro lado del patio con estética de nivel 188 y apunta la posición de las ventanas encendidas. La nota cercana explica que ese dibujo es la pista del teclado. En la versión actual, el resultado siempre es <strong>415314</strong>. Introduce las seis cifras, entra en el ascensor y regresa al nivel 8.</p>
+      <p>Mira al otro lado del patio con estética de nivel 188 y apunta la posición de las ventanas encendidas. La nota cercana explica que ese dibujo es la pista del teclado. Una vez aquí, la respuesta es fija:</p>
+      <div class="guide-code" aria-label="Código de ascensor 415314"><span>CÓDIGO DE ASCENSOR</span><strong>415314</strong></div>
+      <p>Introduce las seis cifras, entra en el ascensor y regresa al nivel 8.</p>
       <img src="/images/levels/level-36-03.webp" alt="Ventanas iluminadas que indican el código de ascensor 415314 en el nivel 0.11" />
       <p>Si el teclado no acepta la respuesta, borra toda la entrada y vuelve a marcarla despacio. Si la transición devuelve al grupo a la zona de palancas en vez de cargar el patio, reuníos y repetid la ruta normal; esta carga puede fallar después de un intento cooperativo desincronizado.</p>
     </section>
@@ -112,7 +116,8 @@ export const level421 = {
     keywords: 'escape the backrooms nivel 421 guia, recorrido plastic mariana, codigo colores nivel 421, puzle flores, interruptores faros, bolas blancas, puzle baloncesto, scratcher, tiburon gigante',
   },
   detailsHtml: `
-    <p>El nivel 421 encadena varias secciones largas: el primer código cambia en cada partida, las flores están repartidas por tres plantas y la piscina de bolas solo se abre después de otro puzle de correspondencias. Copiar la combinación que aparece en un vídeo no servirá para el siguiente intento.</p>
+    <p>El nivel 421 no es difícil por un único puzle imposible: castiga los detalles pequeños que se pasan por alto al correr. Los números de los recipientes, las flores, la pelota azul y las cuatro canastas finales merecen pararse un segundo.</p>
+    <nav class="guide-rail" aria-label="Ruta del nivel 421"><a href="#421-code">01 Código de recipientes</a><a href="#421-flowers">02 Proyectores de flores</a><a href="#421-pit">03 Tiburón y faros</a><a href="#421-hoops">04 Cuatro canastas</a></nav>
 
     <h3>Momentos destacados del nivel:</h3>
     <ul>
@@ -135,15 +140,18 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Resolver el código aleatorio de los recipientes numerados</h2>
+      <h2 id="421-code">Resolver el código aleatorio de los recipientes numerados</h2>
       <h3>Ordenar por números, no por orden de encuentro</h3>
-      <p>Cuatro expositores numerados indican la secuencia del terminal. Tres contienen un solo color. El cuarto muestra dos colores que deben convertirse en uno nuevo usando el diagrama de mezcla cercano. Apunta los resultados en orden numérico e introduce los cuatro colores.</p>
+      <p>Es muy fácil introducir los colores en el orden en que los ve la cámara. No lo hagas. Los números pintados mandan; las marcas <strong>3 / 1 / 2</strong> recuerdan que la posición no es el orden del teclado. Busca los cuatro recipientes, apunta sus colores y solo entonces ordénalos del 1 al 4.</p>
+      <img src="/images/levels/321.png" alt="Marcas 3, 1 y 2 de los recipientes de color del nivel 421" />
+      <p>Al principio leímos esa toma como un código <strong>321</strong>. No lo es: son etiquetas. Tres recipientes tienen un color; el que tiene dos necesita antes la tabla de mezclas.</p>
+      <div class="mix-card"><span>MEZCLAS RÁPIDAS</span><div><b>Rojo + verde</b><strong>Amarillo</strong></div><div><b>Azul + verde</b><strong>Cian</strong></div><div><b>Azul + rojo</b><strong>Rosa</strong></div></div>
       <img src="/images/levels/level-37-01.webp" alt="Teclado de colores aleatorio después de los recipientes numerados del nivel 421" />
       <p>La secuencia azul, verde, rojo y cian/azul claro que funciona en el vídeo pertenece únicamente a esa partida. La disposición y la pareja mezclada cambian. Si la puerta sigue cerrada, comprueba el color resultante y asegúrate de ordenar por el número impreso, no de izquierda a derecha.</p>
     </section>
 
     <section>
-      <h2>Encontrar las tres flores y ajustar los proyectores</h2>
+      <h2 id="421-flowers">Encontrar las tres flores y ajustar los proyectores</h2>
       <h3>Guardar la forma y el color como una sola pista</h3>
       <p>Después de la primera puerta hay tres dibujos de flores diferentes repartidos por las habitaciones de las tres plantas. Tanto la ubicación como el color asignado cambian entre partidas. Haz una foto con el teléfono del juego o una captura de cada pista; recordar solo «flor amarilla» no sirve, porque cada forma corresponde a su propio proyector.</p>
       <p>La puerta cerrada y los proyectores con forma de flor están en la ruta de la segunda planta. Apunta cada proyector hacia la flor blanca correspondiente y usa sus botones para crear el color de la pista. El conjunto final utiliza rosa, cian y amarillo, pero su reparto entre las formas es aleatorio. Si conoces dos asociaciones, la tercera se puede deducir por descarte.</p>
@@ -152,7 +160,7 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Sobrevivir a Plastic Mariana y activar cuatro faros</h2>
+      <h2 id="421-pit">Sobrevivir a Plastic Mariana y activar cuatro faros</h2>
       <h3>Usar los interruptores como marcas de progreso</h3>
       <p>Después de la puerta de los proyectores, una de las tres piscinas transporta al equipo a Plastic Mariana. Localiza las cuatro estructuras de faro y pon cada interruptor de pared en <strong>ON</strong> mientras vigilas el movimiento del tiburón gigante bajo las bolas.</p>
       <h3>Recoge la pelota azul en el primer paso por la piscina</h3>
@@ -163,7 +171,7 @@ export const level421 = {
     </section>
 
     <section>
-      <h2>Completar las cuatro canastas de baloncesto</h2>
+      <h2 id="421-hoops">Completar las cuatro canastas de baloncesto</h2>
       <h3>Apuntar por debajo del aro, no al centro del tablero</h3>
       <p>La última sala contiene cuatro canastas y cada una necesita un tiro válido. Recoge las pelotas del suelo, acércate lo suficiente para controlar la parábola y apunta un poco por debajo del aro o hacia la parte baja del marco. Al apuntar directamente al centro del tablero, el lanzamiento suele salir demasiado alto.</p>
       <img src="/images/levels/level-37-04.webp" alt="Piscina de bolas final con las cuatro canastas del nivel 421" />

@@ -223,6 +223,47 @@
   margin-bottom: 20px;
 }
 
+:global(.level-detail-view .guide-rail) {
+  border-left: 2px solid #ffd700;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  margin: 1.25rem 0 1.6rem;
+  padding: 0.65rem 0 0.65rem 0.85rem;
+}
+
+:global(.level-detail-view .guide-rail a) {
+  color: #d7d2b7;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.78rem;
+  text-decoration: none;
+}
+
+:global(.level-detail-view .guide-rail a:hover) { color: #ffd700; text-decoration: underline; }
+
+:global(.level-detail-view .mix-card),
+:global(.level-detail-view .timing-card),
+:global(.level-detail-view .guide-code) {
+  background: rgba(0, 0, 0, 0.26);
+  border: 1px solid rgba(255, 215, 0, 0.26);
+  margin: 1rem 0 1.25rem;
+}
+
+:global(.level-detail-view .mix-card) { display: grid; grid-template-columns: repeat(3, 1fr); }
+:global(.level-detail-view .mix-card > span) { color: #ffd700; font-family: 'Courier New', Courier, monospace; font-size: 0.7rem; grid-column: 1 / -1; letter-spacing: 0.1em; padding: 0.65rem 0.85rem; }
+:global(.level-detail-view .mix-card > div) { border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 0.7rem 0.85rem; }
+:global(.level-detail-view .mix-card b) { color: #d6d6d6; display: block; font-size: 0.82rem; }
+:global(.level-detail-view .mix-card strong) { color: #ffd700; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; }
+
+:global(.level-detail-view .timing-card) { display: grid; grid-template-columns: repeat(2, 1fr); }
+:global(.level-detail-view .timing-card > div) { padding: 0.9rem 1rem; }
+:global(.level-detail-view .timing-card > div + div) { border-left: 1px solid rgba(255, 255, 255, 0.1); }
+:global(.level-detail-view .timing-card span), :global(.level-detail-view .guide-code span) { color: #ffd700; display: block; font-family: 'Courier New', Courier, monospace; font-size: 0.68rem; letter-spacing: 0.12em; }
+:global(.level-detail-view .timing-card strong) { color: #fff; display: block; font-size: 0.92rem; line-height: 1.45; margin-top: 0.35rem; }
+:global(.level-detail-view .timing-card p) { color: #c6c6c6; font-size: 0.82rem; line-height: 1.55; margin: 0.45rem 0 0; }
+:global(.level-detail-view .guide-code) { border-left: 3px solid #ffd700; padding: 0.8rem 1rem; }
+:global(.level-detail-view .guide-code strong) { color: #fff; display: block; font-family: 'Courier New', Courier, monospace; font-size: 1.8rem; letter-spacing: 0.18em; line-height: 1.2; }
+
 :global(.level-detail-view .level-intro) {
   margin-bottom: 0;
 }
@@ -799,6 +840,20 @@
 
   :global(.level-detail-view .quick-guide-title) {
     font-size: 1.25rem;
+  }
+
+  :global(.level-detail-view .mix-card),
+  :global(.level-detail-view .timing-card) {
+    grid-template-columns: 1fr;
+  }
+
+  :global(.level-detail-view .timing-card > div + div) {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  :global(.level-detail-view .guide-code strong) {
+    font-size: 1.45rem;
   }
 
   :global(.level-detail-view .content-body h2) {
