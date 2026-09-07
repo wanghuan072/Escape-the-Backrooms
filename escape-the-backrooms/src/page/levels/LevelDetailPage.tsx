@@ -12,6 +12,7 @@ import { addContextualLinks } from '@/lib/html/contextual-links'
 import { getYouTubeVideo } from '@/lib/data/youtube'
 import { localizeVideoChapters } from '@/lib/data/video-chapter-copy'
 import { getLevelGuideCopy, getLocalizedMultiplayerNote } from '@/lib/data/level-guide-copy'
+import { getEntitiesForLevel } from '@/lib/data/entity-relations'
 import type { LevelEntry } from '@/types/level'
 import type { Locale } from '@/types/locale'
 import '@/style/page/levels/level-detail-page.module.css'
@@ -24,6 +25,7 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
   const previous = index > 0 ? allLevels[index - 1] : undefined
   const next = index >= 0 && index < allLevels.length - 1 ? allLevels[index + 1] : undefined
   const relatedMaps = getMapsForLevel(locale, level.id)
+  const levelEntities = getEntitiesForLevel(locale, level.addressBar)
   const levelHtml = addContextualLinks(level.detailsHtml, relatedMaps.flatMap((map) => {
     const relation = getMapLevelRelation(map.id)
     if (!relation) return []
@@ -54,6 +56,7 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
           {videoHtml && <div id="video-guide" className="content-body level-video-guide v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(identifyFirstVideoIframe(videoHtml, `${level.title} — ${guideCopy.embeddedVideo}`)) }} />}
           {chapters.length ? <VideoChapters chapters={chapters} title={guideCopy.videoChapters} /> : null}
           <LevelResearchNotes locale={locale} levelId={level.id} topics={routeTopics} />
+          {levelEntities.length > 0 && <LevelEntities locale={locale} entries={levelEntities} />}
           <RelatedContentLinks
             title={translate(locale, 'levelDetailPage.relatedMaps.title')}
             actionLabel={translate(locale, 'levelDetailPage.relatedMaps.action')}
@@ -80,6 +83,25 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
     </div>
     </>
   )
+}
+
+function LevelEntities({ locale, entries }: { locale: Locale; entries: ReturnType<typeof getEntitiesForLevel> }) {
+  return <section className="level-entities" aria-labelledby="level-entities-title">
+    <div className="level-entities-kicker">{translate(locale, 'levelDetailPage.entities.kicker')}</div>
+    <h2 id="level-entities-title">{translate(locale, 'levelDetailPage.entities.title')}</h2>
+    <p>{translate(locale, 'levelDetailPage.entities.intro')}</p>
+    <div className="level-entities-list">{entries.map(({ entity, appearance }) => {
+      const href = localizedPath(`/entities/${entity.addressBar}`, locale)
+      return <article key={entity.id} className="level-entity-encounter">
+        <header><span className={`entity-threat ${entity.dangerClass ?? ''}`}>{entity.dangerLevel}</span><h3><a href={href}>{entity.title}</a></h3></header>
+        <div className="level-entity-notes">
+          <div><span>{translate(locale, 'levelDetailPage.entities.encounter')}</span><p>{appearance.role}</p></div>
+          <div><span>{translate(locale, 'levelDetailPage.entities.avoid')}</span><p>{appearance.avoidance}</p></div>
+        </div>
+        <a className="level-entity-link" href={href}>{translate(locale, 'levelDetailPage.entities.dossier')} <b aria-hidden="true">→</b></a>
+      </article>
+    })}</div>
+  </section>
 }
 
 function LevelResearchNotes({ locale, levelId, topics }: { locale: Locale; levelId: string | number; topics: readonly string[] }) {

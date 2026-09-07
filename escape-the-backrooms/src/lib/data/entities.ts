@@ -25,3 +25,14 @@ export function getEntities(locale: Locale = 'en'): EntityEntry[] {
   if (locale === 'en') return source
   return source.map((entity) => ({ ...entity, ...localizedSummaries[locale][Number(entity.id)] }))
 }
+
+export function findEntity(locale: Locale, slug: string): EntityEntry | undefined {
+  return getEntities(locale).find((entity) => entity.addressBar === decodeURIComponent(slug))
+}
+
+export function getEntityAlternates(id: string | number): Record<Locale, string> {
+  return Object.fromEntries((['en', 'de', 'fr', 'es'] as Locale[]).map((locale) => {
+    const entity = getEntities(locale).find((candidate) => candidate.id === id)
+    return [locale, entity ? `/entities/${entity.addressBar}` : '/entities']
+  })) as Record<Locale, string>
+}

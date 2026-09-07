@@ -18,6 +18,7 @@ const write = (relativePath, content) => {
 const staticPages = [
   { route: '', path: '/', seoKey: 'home', component: 'home/HomePage', name: 'HomePage' },
   { route: 'levels', path: '/levels', seoKey: 'levels', component: 'levels/LevelsPage', name: 'LevelsPage' },
+  { route: 'entities', path: '/entities', seoKey: 'entities', component: 'entities/EntitiesPage', name: 'EntitiesPage' },
   { route: 'maps-keys', path: '/maps-keys', seoKey: 'maps', component: 'maps/MapsPage', name: 'MapsPage' },
   { route: 'codes-solutions', path: '/codes-solutions', seoKey: 'codes', component: 'codes/CodesPage', name: 'CodesPage' },
   { route: 'backrooms-games', path: '/backrooms-games', seoKey: 'relatedGames', component: 'related-games/RelatedGamesPage', name: 'RelatedGamesPage' },
@@ -64,17 +65,21 @@ export default async function RoutePage({ params }: Props) {
 
 const details = [
   { route: 'levels', type: 'levels', module: 'levels', getter: 'getLevels', finder: 'findLevel', alternates: 'getLevelAlternates', component: 'levels/LevelDetailPage', name: 'LevelDetailPage' },
+  { route: 'entities', type: 'entities', module: 'entities', getter: 'getEntities', finder: 'findEntity', alternates: 'getEntityAlternates', component: 'entities/EntityDetailPage', name: 'EntityDetailPage' },
   { route: 'maps-keys', type: 'maps', module: 'maps', getter: 'getMaps', finder: 'findMap', alternates: 'getMapAlternates', component: 'maps/MapDetailPage', name: 'MapDetailPage' },
   { route: 'backrooms-games', type: 'games', module: 'related-games', getter: 'getGames', finder: 'findGame', alternates: 'getGameAlternates', component: 'related-games/RelatedGameDetailPage', name: 'RelatedGameDetailPage' },
 ]
 
 for (const detail of details) {
-  const item = detail.type === 'levels' ? 'level' : detail.type === 'maps' ? 'map' : 'game'
+  const item = detail.type === 'levels' ? 'level' : detail.type === 'maps' ? 'map' : detail.type === 'entities' ? 'entity' : 'game'
   const titleFallback = `${item}.title`
   const descriptionFallback = detail.type === 'games' ? `${item}.summary` : `${item}.description`
   const image = detail.type === 'games'
     ? `${item}.imageUrl`
     : `${item}.imageUrl ? \`https://escapethebackrooms.org\${${item}.imageUrl}\` : undefined`
+  const seoTitle = detail.type === 'entities' ? `${item}.seo?.title || ${titleFallback}` : `${item}.seo.title || ${titleFallback}`
+  const seoDescription = detail.type === 'entities' ? `${item}.seo?.description || ${descriptionFallback}` : `${item}.seo.description || ${descriptionFallback}`
+  const seoKeywords = detail.type === 'entities' ? `${item}.seo?.keywords` : `${item}.seo.keywords`
   const componentProp = `${item}={${item}}`
 
   write(`(en)/${detail.route}/[slug]/page.tsx`, `
@@ -88,7 +93,7 @@ export function generateStaticParams() { return ${detail.getter}('en').map((entr
 export async function generateMetadata({ params }: Props) {
   const ${item} = ${detail.finder}('en', (await params).slug)
   if (!${item}) notFound()
-  return buildMetadata({ locale: 'en', path: '/${detail.route}/' + ${item}.addressBar, seo: { title: ${item}.seo.title || ${titleFallback}, description: ${item}.seo.description || ${descriptionFallback}, keywords: ${item}.seo.keywords }, image: ${image}, type: 'article', alternatePaths: ${detail.alternates}(${item}.id) })
+  return buildMetadata({ locale: 'en', path: '/${detail.route}/' + ${item}.addressBar, seo: { title: ${seoTitle}, description: ${seoDescription}, keywords: ${seoKeywords} }, image: ${image}, type: 'article', alternatePaths: ${detail.alternates}(${item}.id) })
 }
 export default async function RoutePage({ params }: Props) {
   const ${item} = ${detail.finder}('en', (await params).slug)
@@ -113,7 +118,7 @@ export async function generateMetadata({ params }: Props) {
   const locale = requirePrefixedLocale(resolved.locale)
   const ${item} = ${detail.finder}(locale, resolved.slug)
   if (!${item}) notFound()
-  return buildMetadata({ locale, path: '/${detail.route}/' + ${item}.addressBar, seo: { title: ${item}.seo.title || ${titleFallback}, description: ${item}.seo.description || ${descriptionFallback}, keywords: ${item}.seo.keywords }, image: ${image}, type: 'article', alternatePaths: ${detail.alternates}(${item}.id) })
+  return buildMetadata({ locale, path: '/${detail.route}/' + ${item}.addressBar, seo: { title: ${seoTitle}, description: ${seoDescription}, keywords: ${seoKeywords} }, image: ${image}, type: 'article', alternatePaths: ${detail.alternates}(${item}.id) })
 }
 export default async function RoutePage({ params }: Props) {
   const resolved = await params

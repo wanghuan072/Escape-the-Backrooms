@@ -1,0 +1,103 @@
+:global(.entity-detail-view) { min-height: 100vh; }
+:global(.entity-detail-view .entity-detail-hero) { padding: 2.25rem 0; }
+:global(.entity-detail-view .entity-detail-header) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 38%); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+:global(.entity-detail-view .entity-detail-header .entity-threat) { margin-bottom: .8rem; }
+:global(.entity-detail-view .page-title) { margin: 0; }
+:global(.entity-detail-view .entity-aliases) { margin: .5rem 0 0; color: #bdb9a9; font: .72rem/1.4 'Courier New', monospace; }
+:global(.entity-detail-view .page-subtitle) { max-width: 68ch; }
+:global(.entity-detail-view .entity-facts) { display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; margin: 1.25rem 0 0; }
+:global(.entity-detail-view .entity-facts div) { padding-left: .7rem; border-left: 2px solid rgba(255,215,0,.55); }
+:global(.entity-detail-view dt), :global(.entity-detail-view .playbook-heading > span), :global(.entity-detail-view .team-protocol span), :global(.entity-detail-view .player-margin-note span) { color: #aaa99f; font: 700 .68rem/1 'Courier New', monospace; letter-spacing: .1em; text-transform: uppercase; }
+:global(.entity-detail-view dd) { margin: .32rem 0 0; color: #f0eee4; }
+:global(.entity-detail-view .entity-hero-image) { display: grid; place-items: center; min-height: 270px; margin: 0; padding: 1rem; overflow: hidden; background: radial-gradient(circle at center, rgba(91,82,29,.34), #070806 70%); border: 1px solid rgba(255,215,0,.28); }
+:global(.entity-detail-view .entity-hero-image img) { width: 100%; height: 100%; max-height: 360px; object-fit: contain; object-position: center; }
+:global(.entity-detail-view .entity-playbook) { max-width: 1100px; margin: 0 auto; padding: 2.4rem 0 3.2rem; }
+:global(.entity-detail-view .entity-core-file) { display: grid; grid-template-columns: minmax(190px, .65fr) minmax(0, 1.5fr); gap: 1.3rem 2rem; padding: 1.3rem; border: 1px solid rgba(255,215,0,.28); background: rgba(10,11,8,.7); }
+:global(.entity-detail-view .entity-core-file > div:first-child > span), :global(.entity-detail-view .entity-core-file aside > span), :global(.entity-detail-view .spawn-ledger > .playbook-heading > span), :global(.entity-detail-view .counter-strategy > span) { color: #ffd700; font: 700 .68rem/1 'Courier New', monospace; letter-spacing: .1em; text-transform: uppercase; }
+:global(.entity-detail-view .entity-core-file h2) { font-size: 1.3rem; }
+:global(.entity-detail-view .core-file-grid) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem 1rem; }
+:global(.entity-detail-view .core-file-grid p) { margin: 0; color: #cfccc0; font-size: .88rem; line-height: 1.6; }
+:global(.entity-detail-view .core-file-grid strong) { color: #f0eee4; }
+:global(.entity-detail-view .entity-core-file aside) { grid-column: 1 / -1; padding: .95rem 0 0; border-top: 1px solid rgba(255,255,255,.1); }
+:global(.entity-detail-view .entity-core-file aside p) { max-width: 82ch; margin: .5rem 0 0; color: #d5d1c2; line-height: 1.65; }
+:global(.entity-detail-view .entity-journal) { padding: 2.6rem 0; }
+:global(.entity-detail-view .journal-entry) { display: grid; grid-template-columns: minmax(240px, .78fr) minmax(0, 1fr); gap: clamp(1.2rem, 3vw, 2.5rem); align-items: center; padding: 1.35rem 0; border-top: 1px solid rgba(255,215,0,.2); }
+:global(.entity-detail-view .journal-entry--reverse figure) { order: 2; }
+:global(.entity-detail-view .journal-entry figure) { display: grid; place-items: center; min-height: 210px; margin: 0; padding: .7rem; overflow: hidden; background: radial-gradient(circle at center, rgba(81,72,25,.26), #070806 74%); border: 1px solid rgba(255,215,0,.22); }
+:global(.entity-detail-view .journal-entry figure img) { width: 100%; height: 100%; max-height: 320px; object-fit: contain; }
+:global(.entity-detail-view .journal-entry > div > span) { color: #ffd700; font: 700 .68rem/1 'Courier New', monospace; letter-spacing: .09em; text-transform: uppercase; }
+:global(.entity-detail-view .journal-entry h3) { margin: .5rem 0 .6rem; color: #f0eee4; font-size: 1.2rem; }
+:global(.entity-detail-view .journal-entry p) { margin: 0 0 .75rem; color: #cbc8bc; line-height: 1.7; }
+:global(.entity-detail-view .journal-entry .journal-linked-sentence) { color: #d5d1c2; }
+:global(.entity-detail-view .journal-entry .journal-linked-sentence a) { color: #ffd700; font-weight: 700; text-decoration: none; }
+:global(.entity-detail-view .journal-entry .journal-linked-sentence a:hover) { text-decoration: underline; }
+:global(.entity-detail-view .playbook-heading) { max-width: 760px; }
+:global(.entity-detail-view .playbook-heading > span), :global(.entity-detail-view .team-protocol span), :global(.entity-detail-view .player-margin-note span) { color: #ffd700; }
+:global(.entity-detail-view h2) { margin: .45rem 0 .6rem; color: #ffd700; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.2; }
+:global(.entity-detail-view .playbook-heading p), :global(.entity-detail-view .team-protocol p), :global(.entity-detail-view .route-impact p), :global(.entity-detail-view .player-margin-note p) { color: #d4d3cb; line-height: 1.7; }
+:global(.entity-detail-view .survival-steps) { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.35rem; border: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .survival-steps > div) { min-height: 206px; padding: 1.15rem; border-right: 1px solid rgba(255,215,0,.18); background: rgba(12,12,10,.74); }
+:global(.entity-detail-view .survival-steps > div:last-child) { border-right: 0; }
+:global(.entity-detail-view .survival-steps b) { color: #ffd700; font: 700 .75rem/1 'Courier New', monospace; }
+:global(.entity-detail-view h3) { margin: .6rem 0 .45rem; color: #f2efe4; font-size: 1rem; }
+:global(.entity-detail-view .survival-steps p) { margin: 0; color: #c9c7bd; font-size: .92rem; line-height: 1.65; }
+:global(.entity-detail-view .team-protocol) { display: grid; grid-template-columns: minmax(180px, .7fr) minmax(0, 1fr); gap: 1.5rem 2.2rem; margin: 1.25rem 0 2.8rem; padding: 1.4rem; border-left: 3px solid #ffd700; background: rgba(26,24,12,.62); }
+:global(.entity-detail-view .team-protocol h2) { margin-bottom: 0; font-size: 1.3rem; }
+:global(.entity-detail-view .team-protocol p) { margin: 0; }
+:global(.entity-detail-view .team-protocol .protocol-mistake) { grid-column: 2; padding-top: .9rem; border-top: 1px solid rgba(255,255,255,.12); }
+:global(.entity-detail-view .protocol-mistake strong) { color: #ffd700; }
+:global(.entity-detail-view .spawn-ledger) { padding: 2.5rem 0; border-top: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .spawn-ledger > div:last-child) { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .8rem; margin-top: 1.15rem; }
+:global(.entity-detail-view .spawn-ledger article) { padding: 1.05rem; border-left: 2px solid #ffd700; background: rgba(12,12,10,.7); }
+:global(.entity-detail-view .spawn-ledger article > span) { color: #aaa99f; font: .68rem/1 'Courier New', monospace; text-transform: uppercase; }
+:global(.entity-detail-view .spawn-ledger article h3) { color: #ffd700; }
+:global(.entity-detail-view .spawn-ledger article p) { margin: 0; color: #cbc8bc; font-size: .9rem; line-height: 1.65; }
+:global(.entity-detail-view .counter-strategy) { margin: 0 0 2.5rem; padding: 1.4rem; border: 1px solid rgba(255,215,0,.4); background: linear-gradient(100deg, rgba(66,56,13,.42), rgba(12,12,10,.72)); }
+:global(.entity-detail-view .counter-strategy h2) { margin-bottom: .45rem; font-size: 1.45rem; }
+:global(.entity-detail-view .counter-strategy p) { max-width: 84ch; margin: 0; color: #d5d1c2; line-height: 1.7; }
+:global(.entity-detail-view .run-notes) { padding: 2.5rem 0; border-top: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .run-note-list) { display: grid; gap: .75rem; margin-top: 1.25rem; }
+:global(.entity-detail-view .run-note-list > section) { display: grid; grid-template-columns: 110px minmax(180px, .62fr) minmax(0, 1.45fr); gap: 1rem; padding: 1.1rem; background: rgba(12,12,10,.68); border: 1px solid rgba(255,215,0,.18); }
+:global(.entity-detail-view .run-note-list > section > span), :global(.entity-detail-view .after-action > span) { color: #ffd700; font: 700 .68rem/1 'Courier New', monospace; letter-spacing: .08em; text-transform: uppercase; }
+:global(.entity-detail-view .run-note-list h3) { margin: 0; color: #f2efe4; }
+:global(.entity-detail-view .run-note-list p) { margin: 0 0 .55rem; color: #ccc9bd; font-size: .9rem; line-height: 1.6; }
+:global(.entity-detail-view .run-note-list p:last-child) { margin-bottom: 0; }
+:global(.entity-detail-view .run-note-list strong) { color: #ffd700; font-family: 'Courier New', monospace; font-size: .74rem; letter-spacing: .04em; text-transform: uppercase; }
+:global(.entity-detail-view .mechanics-notes) { padding: 2.5rem 0; border-top: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .tactic-grid) { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; margin-top: 1.25rem; }
+:global(.entity-detail-view .tactic-grid section) { padding: 1.1rem; border-top: 2px solid rgba(255,215,0,.62); background: rgba(12,12,10,.7); }
+:global(.entity-detail-view .tactic-grid h3) { color: #ffd700; }
+:global(.entity-detail-view .tactic-grid p) { margin: 0; color: #cbc8bc; font-size: .9rem; line-height: 1.65; }
+:global(.entity-detail-view .route-impact) { padding-top: 2.5rem; border-top: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .route-impact-list) { display: grid; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+:global(.entity-detail-view .route-impact-list a) { display: flex; flex-direction: column; min-height: 210px; padding: 1.15rem; color: inherit; text-decoration: none; background: rgba(12,12,10,.76); border: 1px solid rgba(255,215,0,.2); transition: background .18s ease, transform .18s ease, border-color .18s ease; }
+:global(.entity-detail-view .route-impact-list a:hover) { transform: translateY(-3px); background: rgba(38,34,13,.75); border-color: rgba(255,215,0,.68); }
+:global(.entity-detail-view .route-impact-list span) { color: #aaa99f; font: 700 .68rem/1 'Courier New', monospace; letter-spacing: .08em; text-transform: uppercase; }
+:global(.entity-detail-view .route-impact-list h3) { color: #ffd700; }
+:global(.entity-detail-view .route-impact-list p) { margin: 0; font-size: .9rem; }
+:global(.entity-detail-view .route-impact-list b) { margin-top: auto; padding-top: 1rem; color: #ffd700; font: 700 .72rem/1 'Courier New', monospace; text-transform: uppercase; }
+:global(.entity-detail-view .related-entities) { padding: 2.5rem 0; border-top: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .related-entities > div:last-child) { display: grid; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); gap: .8rem; margin-top: 1.15rem; }
+:global(.entity-detail-view .related-entities a) { display: flex; flex-direction: column; min-height: 176px; padding: 1rem; color: inherit; text-decoration: none; border: 1px solid rgba(255,215,0,.18); background: rgba(12,12,10,.68); }
+:global(.entity-detail-view .related-entities a:hover) { border-color: rgba(255,215,0,.68); background: rgba(37,33,13,.72); }
+:global(.entity-detail-view .related-entities a > span) { color: #aaa99f; font: .66rem/1 'Courier New', monospace; text-transform: uppercase; }
+:global(.entity-detail-view .related-entities h3) { color: #ffd700; }
+:global(.entity-detail-view .related-entities p) { margin: 0; color: #c9c6b9; font-size: .86rem; line-height: 1.55; }
+:global(.entity-detail-view .related-entities b) { margin-top: auto; padding-top: .9rem; color: #ffd700; font: .7rem/1 'Courier New', monospace; text-transform: uppercase; }
+:global(.entity-detail-view .player-margin-note) { max-width: 760px; margin: 2.6rem auto 0; padding: 1.1rem 1.25rem; border-top: 1px solid rgba(255,215,0,.42); border-bottom: 1px solid rgba(255,215,0,.2); text-align: center; }
+:global(.entity-detail-view .player-margin-note p) { margin: .65rem 0 0; font-size: 1.02rem; }
+:global(.entity-detail-view .after-action) { max-width: 760px; margin: 2.5rem auto 0; padding: 1.35rem 1.5rem; border: 1px solid rgba(255,215,0,.28); background: rgba(25,22,10,.5); }
+:global(.entity-detail-view .after-action > span) { color: #ffd700; }
+:global(.entity-detail-view .after-action h2) { margin-bottom: .9rem; font-size: 1.35rem; }
+:global(.entity-detail-view .after-action ol) { margin: 0; padding-left: 1.3rem; color: #d7d4c8; }
+:global(.entity-detail-view .after-action li) { padding: .3rem 0 .3rem .2rem; line-height: 1.55; }
+:global(.entity-detail-view .entity-faq) { max-width: 920px; margin: 3rem auto 0; padding-top: 2.5rem; border-top: 1px solid rgba(255,215,0,.25); }
+:global(.entity-detail-view .entity-faq > div:last-child) { margin-top: 1rem; border-top: 1px solid rgba(255,255,255,.12); }
+:global(.entity-detail-view .entity-faq details) { border-bottom: 1px solid rgba(255,255,255,.12); }
+:global(.entity-detail-view .entity-faq summary) { display: flex; justify-content: space-between; gap: 1rem; padding: .95rem 0; color: #f0eee4; cursor: pointer; font-weight: 600; list-style: none; }
+:global(.entity-detail-view .entity-faq summary::-webkit-details-marker) { display: none; }
+:global(.entity-detail-view .entity-faq summary b) { color: #ffd700; font-family: 'Courier New', monospace; }
+:global(.entity-detail-view .entity-faq details[open] summary b) { transform: rotate(45deg); }
+:global(.entity-detail-view .entity-faq details p) { max-width: 78ch; margin: 0; padding: 0 0 1rem; color: #cbc8bc; line-height: 1.7; }
+@media (max-width: 820px) { :global(.entity-detail-view .entity-detail-header), :global(.entity-detail-view .team-protocol), :global(.entity-detail-view .run-note-list > section), :global(.entity-detail-view .tactic-grid), :global(.entity-detail-view .entity-core-file), :global(.entity-detail-view .journal-entry) { grid-template-columns: 1fr; } :global(.entity-detail-view .journal-entry--reverse figure) { order: 0; } :global(.entity-detail-view .core-file-grid) { grid-template-columns: 1fr; } :global(.entity-detail-view .team-protocol .protocol-mistake) { grid-column: auto; } :global(.entity-detail-view .survival-steps) { grid-template-columns: 1fr; } :global(.entity-detail-view .survival-steps > div) { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(255,215,0,.18); } :global(.entity-detail-view .survival-steps > div:last-child) { border-bottom: 0; } }
+@media (max-width: 540px) { :global(.entity-detail-view .entity-facts) { gap: 1rem; } :global(.entity-detail-view .entity-hero-image) { min-height: 215px; } :global(.entity-detail-view .entity-playbook) { padding-top: 1.6rem; } }

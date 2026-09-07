@@ -33,6 +33,13 @@ for (const [dataDirectory, routeSection] of sections) {
   }
 }
 
+const entitiesModule = await import('../../src/content/wiki/entities.js')
+const entities = entitiesModule.default || []
+for (const entity of entities) {
+  const sourcePath = `/entities/${entity.addressBar}`
+  routeMap[sourcePath] = Object.fromEntries(locales.map((locale) => [locale, locale === 'en' ? sourcePath : `/${locale}${sourcePath}`]))
+}
+
 const gamesModule = await import('../../src/content/related-games.js')
 for (const sourceLocale of locales) {
   const sourceGames = gamesModule.getRelatedGames(sourceLocale)

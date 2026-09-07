@@ -10,6 +10,11 @@ export default {
             description: 'Niveaux Escape the Backrooms, liste complète, répertoire des solutions, guide des chapitres, carte niveau 0, niveau 974, niveau 3999, guide steam',
             keywords: 'Escape the Backrooms niveaux, guide de niveau, solution, niveau 0, niveau 1, guide de survie'
         },
+        entities: {
+            title: 'Entités d’Escape the Backrooms : guide de survie',
+            description: 'Guides pratiques sur les entités, leurs signaux, les options de fuite et la coopération.',
+            keywords: 'entités Escape the Backrooms, Bacteria, Skin-Stealer, Wanderer, guide, coopération'
+        },
         maps: {
             title: 'Escape the Backrooms : Cartes et Emplacements Clés (Haute-Res)',
             description: 'Accédez aux cartes haute résolution disponibles pour Escape the Backrooms. Trouvez l\'emplacement précis des clés, pièces d\'échelle, codes d\'ascenseur et sorties (v1.0).',
@@ -184,6 +189,12 @@ export default {
             item10Answer: 'Consultez nos guides étape par étape. Ils incluent les objectifs précis et les chemins à suivre pour ne pas rester coincé.'
         }
     },
+    entitiesPage: {
+        kicker: 'Dossiers de survie', title: 'Entités d’Escape the Backrooms', subtitle: 'Identifiez la menace avant qu’elle ne vous repère.', fieldGuide: 'Guide de terrain actuel', intro: 'Ces dossiers privilégient les signaux, les options d’évasion concrètes et les annonces coop utiles en partie.', firstEncounter: 'Première rencontre', openDossier: 'Ouvrir le dossier'
+    },
+    entityDetailPage: {
+        species: 'Espèce', firstEncounter: 'Première rencontre', liveBrief: 'Note de terrain', beforeYouMove: 'Avant d’avancer', signal: 'Signe distinctif', response: 'Réaction immédiate', coop: 'Conseil coop', relatedLevels: 'Guides de niveaux associés'
+    },
     levelsPage: {
         hero: {
             title: 'Escape the Backrooms : Liste de tous les Niveaux',
@@ -215,6 +226,7 @@ export default {
             action: 'Voir la carte'
         },
         inlineMapLink: 'Pour visualiser cet itinéraire, consultez',
+        entities: { kicker: 'Dossier de rencontre', title: 'Entités présentes dans ce niveau', intro: 'Le comportement de chaque entité sur cet itinéraire et le bon réflexe pour garder la rencontre sous contrôle.', encounter: 'Son comportement ici', avoid: 'Comment l’éviter', dossier: 'Ouvrir le dossier de l’entité' },
         advertisement: 'Publicité',
         research: {
             kicker: 'Notes de parcours entre joueurs',

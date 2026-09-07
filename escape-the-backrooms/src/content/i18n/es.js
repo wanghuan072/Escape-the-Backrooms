@@ -10,6 +10,11 @@ export default {
       "description": "Niveles Escape the Backrooms, lista de todos los niveles, directorio de recorridos, guía de capítulos, mapa de nivel 0, nivel 974, nivel 3999, guía de Steam",
       "keywords": "Niveles Escape the Backrooms, guía de niveles, tutorial, nivel 0, nivel 1, tutorial de niveles, guía de supervivencia"
     },
+    "entities": {
+      "title": "Entidades de Escape the Backrooms: guía de supervivencia",
+      "description": "Guías prácticas de entidades, señales de peligro, rutas de escape y coordinación cooperativa.",
+      "keywords": "entidades Escape the Backrooms, Bacteria, Skin-Stealer, Errante, guía, cooperativo"
+    },
     "maps": {
       "title": "Escape the Backrooms Mapas y ubicaciones clave (alta resolución)",
       "description": "Accede a mapas de alta resolución para Escape the Backrooms. Encuentra ubicaciones precisas para llaves, piezas de escaleras, códigos de ascensores y salidas en los mapas disponibles (v1.0).",
@@ -184,6 +189,12 @@ export default {
       "item10Answer": "Si te quedas atascado en Escape the Backrooms, consulta nuestras guías detalladas de niveles con instrucciones paso a paso, objetivos y rutas de salida. También puedes revisar los mapas para entender el diseño del nivel, la sección de códigos si necesitas una contraseña o la base de datos de entidades si tienes problemas para evitarlas."
     }
   },
+  "entitiesPage": {
+    "kicker": "Expedientes de supervivencia", "title": "Entidades de Escape the Backrooms", "subtitle": "Reconoce la amenaza antes de que te encuentre.", "fieldGuide": "Guía de campo actual", "intro": "Estos expedientes se centran en señales, opciones de escape y avisos cooperativos que importan durante la partida.", "firstEncounter": "Primer encuentro", "openDossier": "Abrir expediente"
+  },
+  "entityDetailPage": {
+    "species": "Especie", "firstEncounter": "Primer encuentro", "liveBrief": "Nota de campo", "beforeYouMove": "Antes de avanzar", "signal": "Señal de reconocimiento", "response": "Mejor respuesta inmediata", "coop": "Consejo cooperativo", "relatedLevels": "Guías de nivel relacionadas"
+  },
   "levelsPage": {
     "hero": {
       "title": "Escape the Backrooms: Lista de todos los niveles y tutoriales",
@@ -215,6 +226,7 @@ export default {
       "action": "Ver mapa"
     },
     "inlineMapLink": "Para ver visualmente esta ruta, consulta",
+    "entities": { "kicker": "Expediente del encuentro", "title": "Entidades en este nivel", "intro": "Cómo actúa cada entidad en esta ruta y qué movimiento mantiene el encuentro bajo control.", "encounter": "Cómo aparece aquí", "avoid": "Cómo evitarla", "dossier": "Abrir expediente de la entidad" },
     "advertisement": "Publicidad",
     "research": {
       "kicker": "Notas de ruta de jugadores",

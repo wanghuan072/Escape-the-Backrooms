@@ -10,6 +10,11 @@ export default {
             "description": "Escape the Backrooms Level, Liste aller Ebenen, Walkthrough-Verzeichnis, Kapitel-Guide, Level 0 Karte, Level 974, Level 3999, Steam-Guide",
             "keywords": "Escape the Backrooms Level, Level-Guide, Walkthrough, Level 0, Level 1, Level-Anleitung, Überlebenshandbuch"
         },
+        "entities": {
+            "title": "Escape the Backrooms Entitäten: Überlebenshandbuch",
+            "description": "Spielerorientierte Guides zu Entitäten, ihren Warnsignalen, Fluchtwegen und Koop-Absprachen.",
+            "keywords": "Escape the Backrooms Entitäten, Bacteria, Skin-Stealer, Wanderer, Entity Guide, Koop"
+        },
         "maps": {
             "title": "Escape the Backrooms Karten & Wichtige Orte (High-Res)",
             "description": "Greifen Sie auf hochauflösende Karten für Escape the Backrooms zu. Finden Sie präzise Fundorte für Schlüssel, Leiterteile, Aufzugscodes und Ausgänge in den verfügbaren Karten (v1.0).",
@@ -184,6 +189,12 @@ export default {
             "item10Answer": "Wenn du feststeckst, prüfe unsere detaillierten Walkthroughs mit Schritt-für-Schritt-Anleitungen. Nutze unsere Karten für das Layout, den Code-Bereich für Passwörter oder die Entitäten-Datenbank für Überlebensstrategien. Jeder Guide hilft dir weiter, ohne zu viel zu spoilern."
         }
     },
+    "entitiesPage": {
+        "kicker": "Überlebensakten", "title": "Escape the Backrooms Entitäten", "subtitle": "Erkenne die Gefahr, bevor sie dich erkennt.", "fieldGuide": "Aktueller Feldguide", "intro": "Diese Akten konzentrieren sich auf Warnsignale, praktische Fluchtmöglichkeiten und Koop-Ansagen, die im Spiel zählen.", "firstEncounter": "Erster Fundort", "openDossier": "Akte öffnen"
+    },
+    "entityDetailPage": {
+        "species": "Spezies", "firstEncounter": "Erster Fundort", "liveBrief": "Feldnotiz", "beforeYouMove": "Bevor du weitergehst", "signal": "Erkennungszeichen", "response": "Sofort reagieren", "coop": "Koop-Hinweis", "relatedLevels": "Zugehörige Level-Guides"
+    },
     "levelsPage": {
         "hero": {
             "title": "Escape the Backrooms: Liste aller Level & Walkthroughs",
@@ -215,6 +226,7 @@ export default {
             "action": "Karte ansehen"
         },
         "inlineMapLink": "Für eine visuelle Orientierung auf dieser Route siehe",
+        "entities": { "kicker": "Begegnungsakte", "title": "Entitäten in diesem Level", "intro": "So verhält sich jede Entity auf dieser Route – und mit welchem Manöver ihr die Begegnung kontrolliert.", "encounter": "So tritt sie hier auf", "avoid": "So weicht ihr ihr aus", "dossier": "Entity-Dossier öffnen" },
         "advertisement": "Anzeige",
         "research": {
             "kicker": "Notizen aus der Spielrunde",

@@ -24,6 +24,7 @@ const redirectedLevelSlugs = new Set(['level-8-cave-system-guide'])
 const baseRoutes = [
   { path: '/', name: 'home', priority: 1.0, changefreq: 'weekly' },
   { path: '/levels', name: 'levels', priority: 0.9, changefreq: 'weekly' },
+  { path: '/entities', name: 'entities', priority: 0.9, changefreq: 'weekly' },
   { path: '/maps-keys', name: 'maps-keys', priority: 0.9, changefreq: 'weekly' },
   { path: '/codes-solutions', name: 'codes-solutions', priority: 0.9, changefreq: 'weekly' },
   { path: '/backrooms-games', name: 'related-games', priority: 0.8, changefreq: 'monthly' },
@@ -107,7 +108,15 @@ async function loadData(locale = 'en') {
     levels: [],
     maps: [],
     relatedGames: [],
+    entities: [],
     messages: {},
+  }
+
+  try {
+    const entitiesModule = await import('../../src/content/wiki/entities.js')
+    data.entities = entitiesModule.default || []
+  } catch (error) {
+    console.warn('Failed to load entity data:', error.message)
   }
 
   try {
@@ -172,6 +181,15 @@ async function collectUrlEntries() {
         changefreq: route.changefreq,
         hash: fingerprint(JSON.stringify({ type: 'route', routePath, messages: allData[locale].messages })),
       })
+    })
+  })
+
+  supportedLocales.forEach((locale) => {
+    const entities = allData[locale]?.entities || []
+    entities.forEach((entity) => {
+      if (!entity?.addressBar) return
+      const routePath = createLocalizedPath(`/entities/${entity.addressBar}`, locale)
+      entries.push({ loc: fullUrl(routePath), priority: 0.8, changefreq: 'monthly', hash: fingerprint(JSON.stringify({ type: 'entity', locale, entity })) })
     })
   })
 

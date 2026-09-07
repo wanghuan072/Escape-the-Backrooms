@@ -1106,6 +1106,24 @@ export const localizedRouteMap = {
     "fr": "/fr/maps-keys/the-end-map",
     "es": "/es/maps-keys/the-end-map"
   },
+  "/entities/wanderer": {
+    "en": "/entities/wanderer",
+    "de": "/de/entities/wanderer",
+    "fr": "/fr/entities/wanderer",
+    "es": "/es/entities/wanderer"
+  },
+  "/entities/bacteria": {
+    "en": "/entities/bacteria",
+    "de": "/de/entities/bacteria",
+    "fr": "/fr/entities/bacteria",
+    "es": "/es/entities/bacteria"
+  },
+  "/entities/skin-stealer": {
+    "en": "/entities/skin-stealer",
+    "de": "/de/entities/skin-stealer",
+    "fr": "/fr/entities/skin-stealer",
+    "es": "/es/entities/skin-stealer"
+  },
   "/backrooms-games/inside-the-backrooms": {
     "en": "/backrooms-games/inside-the-backrooms",
     "de": "/de/backrooms-games/inside-the-backrooms",

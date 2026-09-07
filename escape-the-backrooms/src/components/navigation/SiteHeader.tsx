@@ -18,9 +18,11 @@ export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
   const pathname = usePathname()
   const router = useRouter()
   const languageRef = useRef<HTMLDivElement>(null)
+  const searchInputRef = useRef<HTMLInputElement>(null)
   const [searchQuery, setSearchQuery] = useState('')
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isLanguageOpen, setLanguageOpen] = useState(false)
+  const [isSearchOpen, setSearchOpen] = useState(false)
   const labels = navigationLabels[locale]
   const currentLanguageName = languages.find((language) => language.code === locale)?.name ?? 'English'
 
@@ -34,10 +36,19 @@ export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
     return () => document.removeEventListener('click', closeOnOutsideClick)
   }, [])
 
+  useEffect(() => {
+    if (!isSearchOpen) return
+    searchInputRef.current?.focus()
+    const closeOnEscape = (event: KeyboardEvent) => event.key === 'Escape' && setSearchOpen(false)
+    document.addEventListener('keydown', closeOnEscape)
+    return () => document.removeEventListener('keydown', closeOnEscape)
+  }, [isSearchOpen])
+
   const submitSearch = () => {
     const query = searchQuery.trim()
     if (!query) return
     router.push(`${localizedPath('/search', locale)}?q=${encodeURIComponent(query)}`)
+    setSearchOpen(false)
   }
 
   const selectLanguage = (targetLocale: Locale) => {
@@ -51,27 +62,6 @@ export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
     setMobileMenuOpen(false)
   }
 
-  const searchBox = (mobile = false) => (
-    <div className={mobile ? 'mobile-search' : 'header-search'}>
-      <div className="search-wrapper">
-        <input
-          type="text"
-          className="search-input"
-          placeholder={searchPlaceholder}
-          aria-label={searchPlaceholder}
-          value={searchQuery}
-          onChange={(event) => setSearchQuery(event.target.value)}
-          onKeyDown={(event) => event.key === 'Enter' && submitSearch()}
-        />
-        <button className="search-button" onClick={submitSearch} type="button" aria-label={labels.search}>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  )
-
   return (
     <header className="header">
       <div className="header-container">
@@ -82,8 +72,8 @@ export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
               <span className="logo-text">Escape the Backrooms</span>
             </a>
           </div>
-          {searchBox()}
           <div className="header-actions">
+            <button className="header-search-trigger" onClick={() => { setSearchOpen(true); setMobileMenuOpen(false) }} aria-label={labels.search} type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21 15.7 15.7M17.2 10.6a6.6 6.6 0 1 1-13.2 0 6.6 6.6 0 0 1 13.2 0Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg></button>
             <button
               className={`mobile-menu-toggle${isMobileMenuOpen ? ' active' : ''}`}
               onClick={() => setMobileMenuOpen((open) => !open)}
@@ -113,15 +103,16 @@ export function SiteHeader({ locale, searchPlaceholder }: SiteHeaderProps) {
             </div>
           </div>
           <nav id="primary-navigation" className={`nav${isMobileMenuOpen ? ' open' : ''}`} aria-label={labels.navigate}>
-            {searchBox(true)}
             <a href={localizedPath('/', locale)} className="nav-link" onClick={() => setMobileMenuOpen(false)}>{labels.home}</a>
             <a href={localizedPath('/levels', locale)} className="nav-link" onClick={() => setMobileMenuOpen(false)}>{labels.levels}</a>
+            <a href={localizedPath('/entities', locale)} className="nav-link" onClick={() => setMobileMenuOpen(false)}>{labels.entities}</a>
             <a href={localizedPath('/maps-keys', locale)} className="nav-link" onClick={() => setMobileMenuOpen(false)}>{labels.maps}</a>
             <a href={localizedPath('/codes-solutions', locale)} className="nav-link" onClick={() => setMobileMenuOpen(false)}>{labels.codes}</a>
             <a href={localizedPath('/backrooms-games', locale)} className="nav-link" onClick={() => setMobileMenuOpen(false)}>{labels.relatedGames}</a>
           </nav>
         </div>
       </div>
+      {isSearchOpen && <div className="site-search-overlay" role="presentation" onMouseDown={() => setSearchOpen(false)}><section className="site-search-dialog" role="dialog" aria-modal="true" aria-label={labels.search} onMouseDown={(event) => event.stopPropagation()}><form className="site-search-form" onSubmit={(event) => { event.preventDefault(); submitSearch() }}><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21 15.7 15.7M17.2 10.6a6.6 6.6 0 1 1-13.2 0 6.6 6.6 0 0 1 13.2 0Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg><input ref={searchInputRef} type="search" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} placeholder={searchPlaceholder} aria-label={searchPlaceholder} /><button className="site-search-close" type="button" onClick={() => setSearchOpen(false)} aria-label={labels.closeMenu}>×</button></form><div className="site-search-links"><div><span>{labels.quickLinks}</span><small>Esc</small></div><a href={localizedPath('/levels', locale)} onClick={() => setSearchOpen(false)}>{labels.levels}<b>→</b></a><a href={localizedPath('/entities', locale)} onClick={() => setSearchOpen(false)}>{labels.entities}<b>→</b></a><a href={localizedPath('/maps-keys', locale)} onClick={() => setSearchOpen(false)}>{labels.maps}<b>→</b></a><a href={localizedPath('/codes-solutions', locale)} onClick={() => setSearchOpen(false)}>{labels.codes}<b>→</b></a></div></section></div>}
     </header>
   )
 }

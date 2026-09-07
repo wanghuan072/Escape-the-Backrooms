@@ -10,6 +10,11 @@ export default {
       description: 'Escape the Backrooms levels, all levels list, walkthrough directory, chapter guide, level 0 map, level 974, level 3999, steam guide',
       keywords: 'Escape the Backrooms levels, level guide, walkthrough, level 0, level 1, level walkthrough, survival guide'
     },
+    entities: {
+      title: 'Escape the Backrooms Entities: Survival Field Guide',
+      description: 'Player-focused Escape the Backrooms entity guides for recognizing threats, surviving encounters, and coordinating with a co-op team.',
+      keywords: 'Escape the Backrooms entities, Bacteria, Skin-Stealer, Wanderer, entity guide, survival tips, co-op'
+    },
     maps: {
       title: 'Escape the Backrooms Maps & Key Locations (High-Res)',
       description: 'Access high-resolution maps for Escape the Backrooms. Find precise locations for keys, ladder pieces, elevator codes, and exits in the available maps (v1.0).',
@@ -184,6 +189,12 @@ export default {
       item10Answer: 'If you get stuck in Escape the Backrooms, check our detailed Escape the Backrooms level walkthroughs which include step-by-step instructions, objectives, and exit routes. You can also refer to our Escape the Backrooms maps to see the level layout, check the codes section if you need an Escape the Backrooms code, or consult the entity database if you\'re having trouble avoiding Escape the Backrooms entities. Each Escape the Backrooms guide is designed to help you progress without spoiling the entire experience.'
     }
   },
+  entitiesPage: {
+    kicker: 'Survival dossiers', title: 'Escape the Backrooms Entities', subtitle: 'Recognize the threat before it recognizes you.', fieldGuide: 'Current field guide', intro: 'These dossiers focus on the encounter signals, practical escape options, and co-op calls that matter while playing.', firstEncounter: 'First encounter', openDossier: 'Open dossier'
+  },
+  entityDetailPage: {
+    species: 'Species', firstEncounter: 'First encounter', liveBrief: 'Field brief', beforeYouMove: 'Before you move', signal: 'Recognition signal', response: 'Best immediate response', coop: 'Co-op note', relatedLevels: 'Related level guides'
+  },
   levelsPage: {
     hero: {
       title: 'Escape the Backrooms: All Levels List & Walkthroughs',
@@ -215,6 +226,7 @@ export default {
       action: 'View Map'
     },
     inlineMapLink: 'For a visual reference to this route, see',
+    entities: { kicker: 'Encounter file', title: 'Entities in this level', intro: 'What each entity does on this route, and the move that keeps the encounter under control.', encounter: 'How it appears here', avoid: 'How to avoid it', dossier: 'Open entity dossier' },
     advertisement: 'Advertisement',
     research: {
       kicker: 'Player route notes',

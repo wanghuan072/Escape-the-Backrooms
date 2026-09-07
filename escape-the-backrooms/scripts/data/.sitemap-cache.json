@@ -1,179 +1,243 @@
 {
   "https://escapethebackrooms.org/": {
-    "hash": "71a6c575646dbe59",
-    "lastmod": "2026-09-04"
+    "hash": "fb40e63ac2aa67f6",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/": {
-    "hash": "dae8cefbd74c0418",
-    "lastmod": "2026-09-04"
+    "hash": "e035b878dd16519d",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/": {
-    "hash": "c57192b0d7e30aea",
-    "lastmod": "2026-09-04"
+    "hash": "4f008711879ad6aa",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/": {
-    "hash": "5e762bc8bf9be507",
-    "lastmod": "2026-09-04"
+    "hash": "648727254c50bbe5",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/levels": {
-    "hash": "6fa41d47fcfe494b",
-    "lastmod": "2026-09-04"
+    "hash": "abf9aea03b808022",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/levels": {
-    "hash": "8a7dee13e44871d8",
-    "lastmod": "2026-09-04"
+    "hash": "f80ff7c72b9feb15",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/levels": {
-    "hash": "2a6af9599918b93d",
-    "lastmod": "2026-09-04"
+    "hash": "9f550706d3dcb5ce",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/levels": {
-    "hash": "c661f0693779f644",
-    "lastmod": "2026-09-04"
+    "hash": "46cc7653c8307497",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/entities": {
+    "hash": "5e456919c791d017",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/de/entities": {
+    "hash": "fd17d8337d39b40a",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/fr/entities": {
+    "hash": "9ec60c8b3eac7c6d",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/es/entities": {
+    "hash": "b532bb2ade6eaea2",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/maps-keys": {
-    "hash": "149ab56c5286d291",
-    "lastmod": "2026-09-04"
+    "hash": "1a1c72ea949e8a20",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/maps-keys": {
-    "hash": "50a9c91413a010d8",
-    "lastmod": "2026-09-04"
+    "hash": "6fbaad678f913b78",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/maps-keys": {
-    "hash": "03259e4615046187",
-    "lastmod": "2026-09-04"
+    "hash": "fbd3f30b38e0d34f",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/maps-keys": {
-    "hash": "72bdd95504d42efb",
-    "lastmod": "2026-09-04"
+    "hash": "9576bdecf8ea4f22",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/codes-solutions": {
-    "hash": "3c3b46b76c4d495b",
-    "lastmod": "2026-09-04"
+    "hash": "fd349c50755f6052",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/codes-solutions": {
-    "hash": "f7a04728603f7fb4",
-    "lastmod": "2026-09-04"
+    "hash": "3a6f02ece515283d",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/codes-solutions": {
-    "hash": "29885b6ff12a19b9",
-    "lastmod": "2026-09-04"
+    "hash": "55f88fde705d4ce0",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/codes-solutions": {
-    "hash": "1addadfa055685f3",
-    "lastmod": "2026-09-04"
+    "hash": "63bfa0c82424b452",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/backrooms-games": {
-    "hash": "f80371d415bf2978",
-    "lastmod": "2026-09-04"
+    "hash": "89668b31a41b7497",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/backrooms-games": {
-    "hash": "42549e7c3365e623",
-    "lastmod": "2026-09-04"
+    "hash": "f60fe3a75d155a62",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/backrooms-games": {
-    "hash": "c475059ea4d45388",
-    "lastmod": "2026-09-04"
+    "hash": "125615461c74695d",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/backrooms-games": {
-    "hash": "269b341616965d79",
-    "lastmod": "2026-09-04"
+    "hash": "68fc88291498d095",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/search": {
-    "hash": "d5876a157bf5251b",
-    "lastmod": "2026-09-04"
+    "hash": "5df8b05825aeb4a0",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/search": {
-    "hash": "a2c9cb157af01be0",
-    "lastmod": "2026-09-04"
+    "hash": "271e91ba298bd3d4",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/search": {
-    "hash": "d1c4e2d73aab21f5",
-    "lastmod": "2026-09-04"
+    "hash": "9610ed912fffc972",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/search": {
-    "hash": "5dbce5c87ab6c1a5",
-    "lastmod": "2026-09-04"
+    "hash": "79a343791c591506",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/privacy-policy": {
-    "hash": "75ec4a763e24b29d",
-    "lastmod": "2026-09-04"
+    "hash": "c2fd97ac2d17a47a",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/privacy-policy": {
-    "hash": "64a72bc7e59e00dc",
-    "lastmod": "2026-09-04"
+    "hash": "0fb8b9c84e7b5aea",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/privacy-policy": {
-    "hash": "c6b4944b570b73fd",
-    "lastmod": "2026-09-04"
+    "hash": "b067bcc8ff53e151",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/privacy-policy": {
-    "hash": "453ad7e2d94dbb41",
-    "lastmod": "2026-09-04"
+    "hash": "24f7605f9cc0d5e2",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/terms-of-service": {
-    "hash": "ac020abf38eb2d20",
-    "lastmod": "2026-09-04"
+    "hash": "4496123f6bc742e8",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/terms-of-service": {
-    "hash": "7ebe9e660243ac3c",
-    "lastmod": "2026-09-04"
+    "hash": "60dd1a346ef46915",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/terms-of-service": {
-    "hash": "f4c72c4fbc5b0b96",
-    "lastmod": "2026-09-04"
+    "hash": "a8ceae3f0b981040",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/terms-of-service": {
-    "hash": "1d42f1af04d27d60",
-    "lastmod": "2026-09-04"
+    "hash": "d992692bfd020015",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/copyright": {
-    "hash": "3887df3b2ea00be2",
-    "lastmod": "2026-09-04"
+    "hash": "d6deac8b3f80655e",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/copyright": {
-    "hash": "140b82370af86c4d",
-    "lastmod": "2026-09-04"
+    "hash": "6596d130639c43d3",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/copyright": {
-    "hash": "a58f3363be0428ae",
-    "lastmod": "2026-09-04"
+    "hash": "ddcb21babaedf9cf",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/copyright": {
-    "hash": "3de62f2a91f8ad66",
-    "lastmod": "2026-09-04"
+    "hash": "5a4549ad944671e1",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/about-us": {
-    "hash": "a73f0db44892e4f9",
-    "lastmod": "2026-09-04"
+    "hash": "3b3977846fb020bb",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/about-us": {
-    "hash": "c076ce1fbfc4858d",
-    "lastmod": "2026-09-04"
+    "hash": "b5717826dc6f0f13",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/about-us": {
-    "hash": "56ed51c5fa120ef7",
-    "lastmod": "2026-09-04"
+    "hash": "50a2cf64fd459587",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/about-us": {
-    "hash": "3d76f62f6176cb7d",
-    "lastmod": "2026-09-04"
+    "hash": "4a4fe4008ce47baf",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/contact-us": {
-    "hash": "b298e142a8d7aa4f",
-    "lastmod": "2026-09-04"
+    "hash": "5a6d0f10dd8ba980",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/contact-us": {
-    "hash": "eb284fac9a91eec0",
-    "lastmod": "2026-09-04"
+    "hash": "2f73e0c4eccc7ee0",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/contact-us": {
-    "hash": "ab7a3c96994db421",
-    "lastmod": "2026-09-04"
+    "hash": "bd64542b7623215e",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/contact-us": {
-    "hash": "551aaf3cfea415a0",
-    "lastmod": "2026-09-04"
+    "hash": "f502983223ba2ed5",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/entities/wanderer": {
+    "hash": "d724295039010ee7",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/entities/bacteria": {
+    "hash": "f6c0de2dc444becd",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/entities/skin-stealer": {
+    "hash": "3381402a08e5dbd1",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/de/entities/wanderer": {
+    "hash": "b74f31f54d22f2f6",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/de/entities/bacteria": {
+    "hash": "e13ca23f58291164",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/de/entities/skin-stealer": {
+    "hash": "7b0719bc0055f6bf",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/fr/entities/wanderer": {
+    "hash": "c3816372b89b58e4",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/fr/entities/bacteria": {
+    "hash": "058fc7ca9f866018",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/fr/entities/skin-stealer": {
+    "hash": "05ad03a868ee99e8",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/es/entities/wanderer": {
+    "hash": "e7133a09fd7e1e77",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/es/entities/bacteria": {
+    "hash": "187dd220d5103e88",
+    "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/es/entities/skin-stealer": {
+    "hash": "321a815e3140628e",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/backrooms-games/inside-the-backrooms": {
     "hash": "f059893df1028eef",
@@ -220,8 +284,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/levels/level-5-the-boiler-room-Walkthrough": {
-    "hash": "5b9867d672d5b8f9",
-    "lastmod": "2026-08-26"
+    "hash": "60445de91c4c1030",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/levels/level-6-the-pipe-run-Walkthrough": {
     "hash": "01227a9e22edfccf",
@@ -260,8 +324,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/levels/escape-the-backrooms-level-0-11-guide": {
-    "hash": "8bb76e3a28273e57",
-    "lastmod": "2026-09-04"
+    "hash": "bf0e504cf50139dd",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/levels/level-9-suburbs-and-lab-walkthrough": {
     "hash": "c09f63375f0086c6",
@@ -292,8 +356,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/levels/escape-the-backrooms-level-fun-plus-guide": {
-    "hash": "6754dee354686915",
-    "lastmod": "2026-08-26"
+    "hash": "d4f54888af4d0307",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/levels/escape-the-backrooms-level-52-guide": {
     "hash": "4e3edb1015c6843f",
@@ -304,8 +368,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
-    "hash": "a14b444d2376c65a",
-    "lastmod": "2026-09-04"
+    "hash": "034a624ed2186f7a",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/levels/escape-the-backrooms-level-b-unlock-guide": {
     "hash": "49ad6151d65c5f43",
@@ -364,8 +428,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/de/levels/level-5-the-boiler-room-Walkthrough": {
-    "hash": "1ea8616dac4233c6",
-    "lastmod": "2026-08-26"
+    "hash": "0347d6bed6f9dc25",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/levels/level-6-the-pipe-run-Walkthrough": {
     "hash": "43b35ea575c64c2b",
@@ -404,8 +468,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/de/levels/escape-the-backrooms-level-0-11-guide": {
-    "hash": "144e1bbf2873300d",
-    "lastmod": "2026-09-04"
+    "hash": "5bf1b9fcf4c7483d",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/levels/level-9-suburbs-and-lab-walkthrough": {
     "hash": "b680f078d11fa2f4",
@@ -436,8 +500,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/de/levels/escape-the-backrooms-level-fun-plus-guide": {
-    "hash": "f6061f649b2eacd3",
-    "lastmod": "2026-08-26"
+    "hash": "8333a066cfc93394",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/levels/escape-the-backrooms-level-52-guide": {
     "hash": "a2b60219d892c14d",
@@ -448,8 +512,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/de/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
-    "hash": "8261e22e3233b0c8",
-    "lastmod": "2026-09-04"
+    "hash": "d5120bb21890c596",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/levels/escape-the-backrooms-level-b-unlock-guide": {
     "hash": "723b5053895ea6f4",
@@ -508,8 +572,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/fr/levels/level-5-the-boiler-room-Walkthrough": {
-    "hash": "cb2b2326a7e439e0",
-    "lastmod": "2026-08-26"
+    "hash": "7d132cb17242fa41",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/levels/level-6-the-pipe-run-Walkthrough": {
     "hash": "da910284908eeda9",
@@ -548,8 +612,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/fr/levels/escape-the-backrooms-level-0-11-guide": {
-    "hash": "8d49b4d3ad5e89b2",
-    "lastmod": "2026-09-04"
+    "hash": "b56795e6f325c2e4",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/levels/level-9-suburbs-and-lab-walkthrough": {
     "hash": "1862aa7f546a440e",
@@ -580,8 +644,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/fr/levels/escape-the-backrooms-level-fun-plus-guide": {
-    "hash": "bccdb5dd2e26dd8e",
-    "lastmod": "2026-08-26"
+    "hash": "b008093ff107adaf",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/levels/escape-the-backrooms-level-52-guide": {
     "hash": "59502d43abe5d9e8",
@@ -592,8 +656,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/fr/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
-    "hash": "565cdcfe2d719464",
-    "lastmod": "2026-09-04"
+    "hash": "f2cd1449ae24a3f7",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/levels/escape-the-backrooms-level-b-unlock-guide": {
     "hash": "80f0dd960fbd37b4",
@@ -652,8 +716,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/es/levels/level-5-the-boiler-room-Walkthrough": {
-    "hash": "aaf69128ef9d8689",
-    "lastmod": "2026-08-26"
+    "hash": "463b33b958293211",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/levels/level-6-the-pipe-run-Walkthrough": {
     "hash": "92ae8246defb51b8",
@@ -692,8 +756,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-0-11-guide": {
-    "hash": "18af431cc8f8621a",
-    "lastmod": "2026-09-04"
+    "hash": "2778c39dee92a739",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/levels/level-9-suburbs-and-lab-walkthrough": {
     "hash": "ff1db2e3d9169236",
@@ -724,8 +788,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-fun-plus-guide": {
-    "hash": "c9968b3a46a5cc2f",
-    "lastmod": "2026-08-26"
+    "hash": "bc4a56aa33c0fad3",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-52-guide": {
     "hash": "33ee890de6b8d2c5",
@@ -736,8 +800,8 @@
     "lastmod": "2026-08-26"
   },
   "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-421-plastic-mariana-guide": {
-    "hash": "3e7d1f1c04eda6db",
-    "lastmod": "2026-09-04"
+    "hash": "5776d45c8af2f56e",
+    "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/levels/escape-the-backrooms-level-b-unlock-guide": {
     "hash": "9466ed3f91ef0bfb",
