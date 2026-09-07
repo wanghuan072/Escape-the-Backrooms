@@ -763,8 +763,8 @@ export default [
           <li><strong>The Spawn:</strong> A Hound (Doggy Bro) often spawns inside or near Room 21.</li>
           <li><strong>Strategy:</strong></li>
           <li><strong>Pre-emptive Strike:</strong> If you have a flashlight, approach Room 21 carefully. Shine the light on the Hound once to make it run away/despawn temporarily. This clears the path for later.</li>
-          <li><strong>Stealth:</strong> If the Hound is roaming the halls, CROUCH. Walking upright makes noise that attracts it. Stay behind it and keep your distance.</li>
-          <li><strong>Hiding:</strong> If it chases you, you can hide under beds or inside wardrobes in the guest rooms.</li>
+          <li><strong>Do not crouch past it:</strong> Hounds are not handled with the sound-stealth rule. Keep your distance and save the flashlight for the charge.</li>
+          <li><strong>Hiding:</strong> Blind its eyes, move into a guest room, and close the door. Hounds cannot open doors.</li>
         </ul>
   
         <h2>Tips & Tricks for Level 5.5</h2>
@@ -788,7 +788,7 @@ export default [
     sideBarInfo: {
       name: 'Escape the Backrooms: Level 5 - The Boiler Room',
       difficulty: 'Hard',
-      objectives: 'Navigate Maze, Avoid Death Moths, Use Steam Valves, Find Exit Door'
+      objectives: 'Navigate Maze, Avoid Female Deathmoths, Use Bug Spray Valves, Find Exit Door'
     },
     featured: [
       {
@@ -808,8 +808,8 @@ export default [
     ],
     seo: {
       title: 'Level 5 Walkthrough: The Boiler Room Guide - Escape the Backrooms',
-      description: 'Complete guide for Level 5: The Boiler Room. Learn thermometer usage, moth stealth strategy, steam valve mechanics, fake door warnings, and exit location.',
-      keywords: 'Level 5, Escape the Backrooms, The Boiler Room, Death Moth, Thermometer, Steam Valve, Stealth, Walkthrough',
+      description: 'Complete guide for Level 5: The Boiler Room. Learn the 125°F and 140°F thermometer warnings, Female Deathmoth stealth, Bug Spray Valve barriers, and the real exit.',
+      keywords: 'Level 5, Escape the Backrooms, The Boiler Room, Female Deathmoth, Thermometer, Bug Spray Valve, Stealth, Walkthrough',
     },
     detailsHtml: `
         <p>Welcome to the complete guide for Level 5: The Boiler Room. This level is a maze of hot pipes and machinery, infested with deadly Death Moths. Your goal is to navigate the maze without getting caught.</p>
@@ -820,7 +820,7 @@ export default [
         <h3>Video Highlights:</h3>
         <ul>
           <li><strong>Thermometer Guide:</strong> How to use the thermometer (or visual cues) to detect moths.</li>
-          <li><strong>Moth Strategy:</strong> How to crouch under moths and use steam valves to repel them.</li>
+          <li><strong>Moth Strategy:</strong> How to crouch past Female Deathmoths and use Bug Spray Valves to create a safe barrier.</li>
           <li><strong>Fake Doors:</strong> Warning about the trap doors filled with moths.</li>
           <li><strong>The Real Exit:</strong> Location of the only safe exit door.</li>
         </ul>
@@ -831,7 +831,7 @@ export default [
         <h3>1. The Thermometer (Optional)</h3>
         <p>At the start, you may find a Thermometer on a table.</p>
         <ul>
-          <li><strong>Usage:</strong> It detects temperature changes. High temperature means a Death Moth is nearby (female moths are hot).</li>
+          <li><strong>Readings:</strong> 125°F / 51.5°C means a Female Deathmoth is nearby. At 140°F / 60°C, the Hive is very close—turn around instead of pushing deeper.</li>
           <li><strong>Pro Tip:</strong> You don't need the thermometer if you are observant. Look for heat waves (shimmering air) distortion on your screen. That is the visual cue for a moth.</li>
         </ul>
   
@@ -842,7 +842,7 @@ export default [
         <ul>
           <li><strong>Stealth:</strong> You can crouch and walk underneath them safely as long as you don't touch them.</li>
           <li><strong>Aggro:</strong> Do NOT shine your flashlight on the big moths. They hate light and will attack you instantly.</li>
-          <li><strong>Repelling:</strong> If a moth is blocking your path, look for a red Steam Valve on a nearby pipe. Turn it to release a jet of steam, which will force the moth to retreat.</li>
+          <li><strong>Bug Spray barrier:</strong> If a moth blocks the route, use the red Bug Spray Valve on the nearby pipe. It releases insecticide gas that creates the opening; it is not a steam valve.</li>
         </ul>
   
         <img src="/images/levels/level-08-02.webp" alt="Escape the Backrooms: Level 5 - Dealing with Death Moths" />
@@ -2752,7 +2752,7 @@ export default [
     title: 'Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending!',
     pageTitle: 'Escape the Backrooms Level 55.1 Guide: Normal Ending & "Wrong Door" Secret Ending!',
     addressBar: 'escape-the-backrooms-level-55-1-guide',
-    description: 'Master Escape the Backrooms Level 55.1 with this comprehensive guide covering both the Normal Ending and the secret "Wrong Door" Ending. Learn critical entity photography tracking mechanics for both solo and co-op players, and find out how to safely deal with the level\'s supercharged Bacteria.',
+    description: 'Master Escape the Backrooms Level 55.1 with the Normal Ending and secret "Wrong Door" Ending routes, solo and co-op photo requirements, lift setup, and safe entity photography.',
     imageUrl: '/images/levels/level-28.webp',
     imageAlt: 'Escape the Backrooms Level 55.1 Normal Ending and Secret Ending Walkthrough',
     category: 'Main Levels',
@@ -2797,13 +2797,13 @@ export default [
       <img src="/images/levels/level-28-01.webp" alt="Level 55.1 Elevator Car" />
   
       <section>
-        <h2>Entity Photography: Surviving the Supercharged Bacteria</h2>
+        <h2>Entity Photography: Bacteria, Smiler, and Skin-Stealer</h2>
         <p>Once you are safely in the lower corridors, you must locate and photograph several distinct entities native to this zone to fully satisfy your objective list. The threat priority here is vastly different from other standard levels, and you must adapt your movement styles accordingly:</p>
         <ul>
-          <li><strong>The Buffed Bacteria:</strong> The Bacteria lurking within Level 55.1 is an absolute nightmare. It possesses the fastest movement velocity of any entity on this level, and its baseline pursuit speed has been heavily buffed compared to the Bacteria you encounter anywhere else in the game. You must maintain extreme situational awareness. Furthermore, if you navigate to its designated spawn hall and find it empty, do not assume you are safe. The AI trigger is tied to a specific spatial zone; you must physically walk along the upper observation walkway to cross the invisible barrier that forces the Bacteria to spawn and activate.</li>
-          <li><strong>The Smiler and Skin-Stealer:</strong> Compared to the relentless speed of the Bacteria, the other entities here are much more manageable. When you encounter the Smiler, keep your distance and snap a clear, steady photo through your lens. Shortly after, a Skin-Stealer will emerge and attempt to stalk you. Because the Skin-Stealer's pathfinding and walking speed are incredibly slow in this specific environment, you can easily pull out your camera, secure its photograph, and slip into a nearby closet to break aggro without wasting precious stamina.</li>
+          <li><strong>Bacteria:</strong> This Level 0.3-layer variant is slower than the Level 0 Bacteria, but the camera objective still leaves you exposed. Choose the nearest locker or raised lift before taking the picture, then use it to end the chase.</li>
+          <li><strong>Smiler and Skin-Stealer:</strong> Hold the camera light on the Smiler's face while framing the shot. The Skin-Stealer is also slower on this route; take its picture with space in hand, then step into a nearby locker to break the chase.</li>
         </ul>
-        <p>After successfully securing clean photographs of the stone statue, the Smiler, the Skin-Stealer, and the supercharged Bacteria, your objective tracker will update. If you bypassed the elevator car earlier, you will have to make a choice to either loop back up using the mechanical lifts or run a calculated level restart to reset your tracking position safely with the car lowered.</p>
+        <p>After photographing the stone statue, Smiler, Skin-Stealer, and Bacteria, check that the objective tracker has updated. If you skipped lowering the elevator car earlier, you must loop back with the mechanical lifts or restart with the car in the correct position.</p>
       </section>
 
       <img src="/images/levels/level-28-02.webp" alt="Level 55.1 Bacteria" />

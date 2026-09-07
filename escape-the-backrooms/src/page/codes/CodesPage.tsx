@@ -54,7 +54,7 @@ export default function CodesPage({ locale }: { locale: Locale }) {
     <div className="codes-solutions-view">
       <section className="page-hero"><div className="container"><div className="hero-content"><h1 className="page-title">{translate(locale, 'codesPage.hero.title')}</h1><p className="page-subtitle">{translate(locale, 'codesPage.hero.subtitle')}</p></div></div><AdPlacement /></section>
       <section className="solutions-content"><div className="container">
-        {sections.map((section) => <div key={section.key} className="level-section">
+        {sections.map((section) => <div key={section.key} id={section.key} className="level-section">
           <h2 className="level-title">{translate(locale, `codesPage.levels.${section.key}.title`)}</h2>
           {section.solutions.map((solution, index) => { const solutionKey = `codesPage.levels.${section.key}.solution${index + 1}`; return <div className="solution-item" key={solutionKey}>
             <div className="solution-header"><h3 className="solution-title">{translate(locale, `${solutionKey}.title`)}</h3><span className={`solution-badge ${solution.badgeClass}`}>{translate(locale, `codesPage.badge.${solution.badge}`)}</span></div>

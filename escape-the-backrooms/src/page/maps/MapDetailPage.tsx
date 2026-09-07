@@ -16,21 +16,30 @@ function calloutPosition(x: number, y: number) {
   return { left: `${x}%`, top: `${y}%` }
 }
 
+function mapPageHeading(locale: Locale, title: string) {
+  if (title.toLowerCase().includes('escape the backrooms')) return title
+  if (locale === 'de') return `Escape the Backrooms: ${title}`
+  if (locale === 'fr') return `Escape the Backrooms : ${title}`
+  if (locale === 'es') return `Escape the Backrooms: ${title}`
+  return `Escape the Backrooms ${title}`
+}
+
 export default function MapDetailPage({ locale, map }: { locale: Locale; map: MapEntry }) {
   const relatedLevels = getLevelsForMap(locale, map.id)
   const relation = getMapLevelRelation(map.id)
   const mapSections = getMapSections(locale, map)
-  const mapHtml = addContextualLinks(map.detailsHtml, relation ? relatedLevels.map((level) => ({
+  const contextualMapHtml = addContextualLinks(map.detailsHtml, relation ? relatedLevels.map((level) => ({
     paragraph: relation.mapLinkParagraph,
     lead: translate(locale, 'mapDetailPage.inlineWalkthroughLink'),
     href: localizedPath(`/levels/${level.addressBar}`, locale),
     label: level.title,
   })) : [])
+  const mapHtml = contextualMapHtml.replace('The Hub', `<a href="${localizedPath('/codes-solutions#hub', locale)}">The Hub</a>`)
   return (
     <>
     <JsonLd data={pageJsonLd(map.seo.title || map.title, map.seo.description || map.description, `${siteConfig.url}${localizedPath(`/maps-keys/${map.addressBar}`, locale)}`, 'Article')} />
     <div className="map-detail-view">
-      <section className="page-hero"><div className="container"><div className="header-content"><div className="title-section"><h1 className="page-title">{map.title}</h1><div className="map-badges">{map.category && <span className="badge">{map.category}</span>}</div></div></div></div></section>
+      <section className="page-hero"><div className="container"><div className="header-content"><div className="title-section"><h1 className="page-title">{mapPageHeading(locale, map.title)}</h1><div className="map-badges">{map.category && <span className="badge">{map.category}</span>}</div></div></div></div></section>
       <AdPlacement />
       <section className="detail-content"><div className="container"><div className="content-layout">
         <main className="main-content">

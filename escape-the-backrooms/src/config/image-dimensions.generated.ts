@@ -4,6 +4,10 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 1920,
     "height": 1080
   },
+  "/images/entities/bacteria-current.webp": {
+    "width": 482,
+    "height": 672
+  },
   "/images/entities/entities-01-01.webp": {
     "width": 1000,
     "height": 429
@@ -63,6 +67,46 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
   "/images/entities/entities-03.webp": {
     "width": 267,
     "height": 458
+  },
+  "/images/entities/female-deathmoth-current.webp": {
+    "width": 618,
+    "height": 322
+  },
+  "/images/entities/hound-current.webp": {
+    "width": 428,
+    "height": 583
+  },
+  "/images/entities/male-deathmoth-current.webp": {
+    "width": 224,
+    "height": 206
+  },
+  "/images/entities/mr-kitty-current.webp": {
+    "width": 210,
+    "height": 499
+  },
+  "/images/entities/partygoer-current.webp": {
+    "width": 210,
+    "height": 525
+  },
+  "/images/entities/scratcher-current.webp": {
+    "width": 243,
+    "height": 262
+  },
+  "/images/entities/skin-stealer-current.webp": {
+    "width": 267,
+    "height": 458
+  },
+  "/images/entities/smiler-current.webp": {
+    "width": 173,
+    "height": 177
+  },
+  "/images/entities/wanderer-current.webp": {
+    "width": 348,
+    "height": 716
+  },
+  "/images/entities/wretch-current.webp": {
+    "width": 278,
+    "height": 473
   },
   "/images/home/level-421-site-update.webp": {
     "width": 1600,

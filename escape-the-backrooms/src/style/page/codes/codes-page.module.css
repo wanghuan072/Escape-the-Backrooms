@@ -10,6 +10,7 @@
 
 :global(.codes-solutions-view .level-section) {
   margin-bottom: 4rem;
+  scroll-margin-top: 6rem;
 }
 
 :global(.codes-solutions-view .level-title) {

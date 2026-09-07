@@ -759,8 +759,8 @@ export default [
                 <li><strong>Der Spawn:</strong> Ein Hound (Doggy Bro) spawnt oft in oder nahe Zimmer 21.</li>
                 <li><strong>Strategie:</strong></li>
                 <li><strong>Präventivschlag:</strong> Wenn du eine Taschenlampe hast, nähere dich Zimmer 21 vorsichtig. Leuchte den Hound einmal an, damit er wegläuft oder temporär despawnt.</li>
-                <li><strong>Stealth:</strong> Wenn der Hound in den Fluren patrouilliert, GEH IN DIE HOCKE. Aufrechtes Gehen macht Geräusche, die ihn anlocken.</li>
-                <li><strong>Verstecken:</strong> Wenn er dich jagt, kannst du dich unter Betten oder in Schränken der Gästezimmer verstecken.</li>
+                <li><strong>Nicht vorbeischleichen:</strong> Für den Hound gilt nicht die Geräusch-Schleichregel. Halte Abstand und spare die Taschenlampe für seinen Angriff.</li>
+                <li><strong>Flucht:</strong> Blende seine Augen, gehe in ein Gästezimmer und schließe die Tür. Hounds können keine Türen öffnen.</li>
               </ul>
         
               <h2>Tipps & Tricks für Level 5.5</h2>
@@ -784,7 +784,7 @@ export default [
         sideBarInfo: {
             name: 'Escape the Backrooms: Level 5 - Der Boiler Room',
             difficulty: 'Schwer',
-            objectives: 'Labyrinth durchqueren, Death Moths ausweichen, Dampfventile nutzen, Ausgang finden'
+            objectives: 'Labyrinth durchqueren, weiblichen Deathmoths ausweichen, Insektenspray-Ventile nutzen, Ausgang finden'
         },
         featured: [
             {
@@ -804,8 +804,8 @@ export default [
         ],
         seo: {
             title: 'Level 5 Walkthrough: Der Boiler Room Guide - Escape the Backrooms',
-            description: 'Kompletter Guide für Level 5: Der Boiler Room. Lerne die Nutzung des Thermometers, Stealth-Strategien gegen Motten und die Mechanik der Dampfventile.',
-            keywords: 'Level 5, Escape the Backrooms, Boiler Room, Death Moth, Thermometer, Dampfventil, Stealth, Walkthrough',
+            description: 'Kompletter Guide für Level 5: Boiler Room mit den Thermometerwarnungen bei 125 °F und 140 °F, Stealth gegen weibliche Deathmoths und Insektenspray-Ventilen.',
+            keywords: 'Level 5, Escape the Backrooms, Boiler Room, weibliche Deathmoth, Thermometer, Insektenspray-Ventil, Stealth, Walkthrough',
         },
         detailsHtml: `
               <p>Willkommen zum kompletten Guide für Level 5: Der Boiler Room. Dieses Level ist ein Labyrinth aus heißen Rohren und Maschinen, befallen von tödlichen Death Moths. Dein Ziel ist es, das Labyrinth zu durchqueren, ohne erwischt zu werden.</p>
@@ -816,7 +816,7 @@ export default [
               <h3>Video-Highlights:</h3>
               <ul>
                 <li><strong>Thermometer-Guide:</strong> Wie man das Thermometer (oder visuelle Hinweise) nutzt, um Motten aufzuspüren.</li>
-                <li><strong>Motten-Strategie:</strong> Wie man unter Motten kriecht und Dampfventile zur Abwehr nutzt.</li>
+                <li><strong>Motten-Strategie:</strong> Wie man geduckt an weiblichen Deathmoths vorbeikommt und Insektenspray-Ventile als Barriere nutzt.</li>
                 <li><strong>Falsche Türen:</strong> Warnung vor den Fallen-Türen voller Motten.</li>
                 <li><strong>Der echte Ausgang:</strong> Fundort der einzigen sicheren Ausgangstür.</li>
               </ul>
@@ -827,7 +827,7 @@ export default [
               <h3>1. Das Thermometer (Optional)</h3>
               <p>Am Anfang findest du eventuell ein Thermometer auf einem Tisch.</p>
               <ul>
-                <li><strong>Nutzung:</strong> Es erkennt Temperaturänderungen. Hohe Temperaturen bedeuten, dass eine Death Moth in der Nähe ist (weibliche Motten sind heiß).</li>
+                <li><strong>Messwerte:</strong> 125 °F / 51,5 °C bedeutet, dass eine weibliche Deathmoth in der Nähe ist. Bei 140 °F / 60 °C liegt das Nest direkt voraus – kehre um.</li>
                 <li><strong>Pro-Tipp:</strong> Du brauchst das Thermometer nicht unbedingt, wenn du aufmerksam bist. Achte auf Hitzewellen (flimmernde Luft) auf deinem Bildschirm. Das ist das visuelle Zeichen für eine Motte.</li>
               </ul>
         
@@ -838,7 +838,7 @@ export default [
               <ul>
                 <li><strong>Stealth:</strong> Du kannst geduckt unter ihnen hindurchgehen, solange du sie nicht berührst.</li>
                 <li><strong>Aggro:</strong> Leuchte die großen Motten NICHT mit der Taschenlampe an. Sie hassen Licht und greifen sofort an.</li>
-                <li><strong>Abwehr:</strong> Wenn eine Motte den Weg blockiert, suche nach einem roten Dampfventil an einem Rohr. Drehe es, um einen Dampfstrahl zu erzeugen, der die Motte zum Rückzug zwingt.</li>
+                <li><strong>Insektenspray-Barriere:</strong> Blockiert eine Motte den Weg, nutze das rote Insektenspray-Ventil am Rohr. Es setzt Insektizidgas frei und ist kein Dampfventil.</li>
               </ul>
         
               <img src="/images/levels/level-08-02.webp" alt="Escape the Backrooms: Level 5 - Motten-Abwehr" />
@@ -2678,7 +2678,7 @@ export default [
       "title": "Escape the Backrooms Level 55.1 Guide: Normales Ende & „Wrong Door“-Geheimende!",
       "pageTitle": "Escape the Backrooms Level 55.1 Guide: Normales Ende & „Wrong Door“-Geheimende!",
       "addressBar": "escape-the-backrooms-level-55-1-guide",
-      "description": "Meistere Escape the Backrooms Level 55.1 mit diesem umfassenden Guide zu Normal Ending und „Wrong Door“-Geheimende. Lerne die Kamera-Ziele für Solo und Koop, die korrekte Wagen-Vorbereitung und den Umgang mit der extrem schnellen Bacteria.",
+      "description": "Meistere Escape the Backrooms Level 55.1 mit Normal Ending und „Wrong Door“-Geheimende, Kamera-Zielen für Solo und Koop, korrekter Wagen-Vorbereitung und sicheren Entitätsfotos.",
       "imageUrl": "/images/levels/level-28.webp",
       "imageAlt": "Escape the Backrooms Level 55.1 Normal Ending und Secret Ending Walkthrough",
       "category": "Hauptlevel",
@@ -2722,11 +2722,11 @@ export default [
         </section>
   
         <section>
-          <h2>Entitäten fotografieren: Die gebuffte Bacteria hat Priorität</h2>
-          <p>Unten musst du mehrere Entitäten für deine Zielliste fotografieren. Der gefährlichste Gegner in diesem Level ist eindeutig die <strong>Bacteria</strong>, und genau hier hat sie eine Sonderregel:</p>
+          <h2>Entitäten fotografieren: Bacteria, Smiler und Skin-Stealer</h2>
+          <p>Unten musst du mehrere Entitäten für deine Zielliste fotografieren. Entscheide vor jedem Foto, welchen Spind oder Lift du danach als sicheren Rückzug nutzt:</p>
           <ul>
-            <li><strong>Die Bacteria:</strong> In Level 55.1 ist sie schneller als jede andere Entität dieser Map und sogar schneller als die Bacteria-Versionen aus anderen Levels. Wenn sie nicht an ihrer üblichen Stelle auftaucht, heißt das nicht, dass sie fehlt. Du musst den oberen Steg ablaufen, um ihren Spawn-Trigger zu aktivieren.</li>
-            <li><strong>Smiler und Skin-Stealer:</strong> Diese beiden sind deutlich kontrollierbarer. Fotografiere den Smiler mit Abstand. Der Skin-Stealer bewegt sich in diesem Level langsam genug, dass du sein Foto holen und danach bequem im Schrank die Aggro brechen kannst.</li>
+            <li><strong>Die Bacteria:</strong> Diese Variante in der Level-0.3-Schicht ist langsamer als die Bacteria aus Level 0. Das Foto lässt dich trotzdem offen stehen; wähle vorher Spind oder angehobenen Lift als Rückzug.</li>
+            <li><strong>Smiler und Skin-Stealer:</strong> Halte beim Fotografieren das Kameralicht auf das Gesicht des Smilers. Der Skin-Stealer bewegt sich hier langsam; fotografiere mit Abstand und gehe danach in einen nahen Spind.</li>
           </ul>
           <img src="/images/levels/level-28-02.webp" alt="Level 55.1 Bacteria" />
           <p>Wenn du die Statue, den Smiler, den Skin-Stealer und die Bacteria fotografiert hast, ist der Pflichtteil der Entitätsfotos abgeschlossen. Falls du den Wagen vorher nicht korrekt vorbereitet hast, musst du den Weg zurück organisieren oder die Run mit einem gezielten Restart resetten.</p>

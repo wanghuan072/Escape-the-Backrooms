@@ -75,8 +75,8 @@ export default {
             "stat01Text": "Spielbare Level",
             "stat02Number": "35+",
             "stat02Text": "Gesamte Szenen",
-            "stat03Number": "30+",
-            "stat03Text": "Einzigartige Entitäten",
+            "stat03Number": "11",
+            "stat03Text": "Detaillierte Entity-Guides",
             "button01": "Alle Level erkunden",
             "button02": "Codes & Lösungen",
             "latestLabel": "Website-Update",
@@ -128,7 +128,7 @@ export default {
             "card02Item02Label": "Gesamtszenen:",
             "card02Item02Value": "35+ inklusive Übergängen",
             "card02Item03Label": "Entitäten:",
-            "card02Item03Value": "30+ einzigartige Entitäten",
+            "card02Item03Value": "detaillierte Entity-Guides, weitere folgen",
             "card02Item04Label": "Spielzeit:",
             "card02Item04Value": "8-12 Stunden für den Abschluss",
             "card02Item05Label": "Schwierigkeit:",
@@ -149,7 +149,7 @@ export default {
             "subtitle": "Dein kompletter Guide zur Flucht aus den Backrooms",
             "text01": "Willkommen beim umfassendsten Guide für <strong>Escape the Backrooms</strong>, dem First-Person-Horror-Abenteuer von Fancy Games, veröffentlicht von Secret Mode. Dieses Fan-Wiki widmet sich der Aufgabe, Spielern dabei zu helfen, durch alle 28+ Terror-Ebenen zu navigieren und erfolgreich aus den Backrooms zu entkommen.",
             "text02": "Unsere Escape the Backrooms Guides decken die Steam-Version (v1.0 Full Release) ab, einschließlich detaillierter Walkthroughs für jedes Level von Level 0 (The Lobby) bis Level 3999 (The True Ending). Jeder Level-Guide enthält umfassende Informationen zu Zielen, Entitäten, Gegenständen, Eingängen, Ausgängen und detaillierte Schritte, um im Spiel voranzukommen.",
-            "text03": "Zusätzlich zu den Level-Guides bieten wir hochauflösende Navigationskarten mit Spawn-Punkten und wichtigen Fundorten, eine vollständige Datenbank aller Entitäten mit Verhaltensmustern und Überlebensstrategien sowie eine Referenz für alle Aufzugscodes, Türcodes und Computerpasswörter, die du auf deiner Reise benötigst.",
+            "text03": "Zusätzlich zu den Level-Guides pflegen wir hochauflösende Navigationskarten, eine wachsende Sammlung selbst getesteter Entity-Dossiers sowie eine praktische Referenz für die Aufzugs-, Tür- und Computercodes unserer aktuellen Routen.",
             "highlight01Title": "Level-Walkthroughs",
             "highlight01Text": "Komplette Guides für alle 28+ Level mit Zielen, Entitäten und Fluchtwegen",
             "highlight02Title": "Navigationskarten",
@@ -157,7 +157,7 @@ export default {
             "highlight03Title": "Wichtige Fundorte",
             "highlight03Text": "Detaillierte Anleitungen, wo Schlüssel zu finden sind und wie man sie einsammelt",
             "highlight04Title": "Entitäten-Datenbank",
-            "highlight04Text": "Vollständige Infos zu allen Entitäten, ihrem Verhalten und Vermeidungsstrategien",
+            "highlight04Text": "Detaillierte Begegnungsnotizen zu den Entities in unseren aktuellen Guides",
             "highlight05Title": "Codes & Lösungen",
             "highlight05Text": "Alle Aufzugscodes, Türcodes und Passwörter mit Gebrauchsanweisung",
             "highlight06Title": "Guides & Tipps",
@@ -178,7 +178,7 @@ export default {
             "item05Question": "Was sind Aufzugscodes und Türcodes?",
             "item05Answer": "Manche Schlösser haben ein festes Passwort, andere leiten ihre Lösung aus Gegenständen oder Hinweisen des aktuellen Durchlaufs ab. Unter <strong>Codes & Lösungen</strong> trennen wir feste Antworten wie das Hub-Passwort und den Ticketcode in Level 3999 von variablen Rätseln wie den Autofarben in Level 1 und den Objektzahlen in Level 4.",
             "item06Question": "Wie vermeide ich Entitäten wie den Hound oder die Moth?",
-            "item06Answer": "Unsere <strong>Entitäten-Datenbank</strong> bietet Infos zu Verhalten, Fundorten und Gefahrenstufen. Jede Anleitung erklärt, wie man ihnen ausweicht. Hounds sind beispielsweise aggressiv und schnell; Moths in Level 5 reagieren auf Licht, weshalb man dort Lichtquellen meiden sollte.",
+            "item06Answer": "Unsere wachsende <strong>Entity-Datenbank</strong> behandelt die Kreaturen, die bereits in unseren Routen vorkommen, mit levelbezogenem Verhalten und konkreten Fluchtwegen. Hebe den Lichtstun zum Beispiel für einen angreifenden Hound auf und bewege dich in der Nähe von Death Moths geduckt, ohne sie direkt anzuleuchten.",
             "item07Question": "Was ist Level 3999 und das Task-System?",
             "item07Answer": "Level 3999 ist das finale Level und das wahre Ende des Spiels. Es nutzt ein Task-System, bei dem Spieler zufällige Aufgaben (wie Glas zerbrechen oder Gegenstände finden) lösen müssen, bevor sie entkommen können. Dies ist derzeit das einzige „echte“ Flucht-Ende.",
             "item08Question": "Wie navigiere ich zwischen den Leveln?",
@@ -190,10 +190,10 @@ export default {
         }
     },
     "entitiesPage": {
-        "kicker": "Überlebensakten", "title": "Escape the Backrooms Entitäten", "subtitle": "Erkenne die Gefahr, bevor sie dich erkennt.", "fieldGuide": "Aktueller Feldguide", "intro": "Diese Akten konzentrieren sich auf Warnsignale, praktische Fluchtmöglichkeiten und Koop-Ansagen, die im Spiel zählen.", "firstEncounter": "Erster Fundort", "openDossier": "Akte öffnen"
+        "kicker": "Überlebensakten", "title": "Escape the Backrooms Entitäten", "subtitle": "Erkenne die Gefahr, bevor sie dich erkennt.", "fieldGuide": "Aktueller Feldguide", "intro": "Diese Akten konzentrieren sich auf Warnsignale, praktische Fluchtmöglichkeiten und Koop-Ansagen, die im Spiel zählen.", "firstEncounter": "Erster Fundort", "openDossier": "Akte öffnen", "countLabel": "dokumentierte Entitäten", "lowThreat": "Überlebende / geringe Gefahr", "pursuitRisk": "Verfolgungsrisiko", "lethalPressure": "tödliche Gefahr", "chaserTitle": "Verfolgungsgefahren", "chaserDescription": "Entitäten, die eine Flucht-, Schleich- oder Sichtlinienentscheidung erzwingen.", "ambientTitle": "Überlebendenprofile", "ambientDescription": "Spielerbezogene Akten zu Koordination und Routenverantwortung.", "interactiveTitle": "Mechanikgebundene Gefahren", "interactiveDescription": "Entitäten, deren Regeln sich durch Rätsel, Ausrüstung oder direkte Interaktion verändern."
     },
     "entityDetailPage": {
-        "species": "Spezies", "firstEncounter": "Erster Fundort", "liveBrief": "Feldnotiz", "beforeYouMove": "Bevor du weitergehst", "signal": "Erkennungszeichen", "response": "Sofort reagieren", "coop": "Koop-Hinweis", "relatedLevels": "Zugehörige Level-Guides"
+        "species": "Spezies", "firstEncounter": "Erster Fundort", "alsoKnownAs": "Auch bekannt als", "liveBrief": "Feldnotiz", "beforeYouMove": "Bevor du weitergehst", "signal": "Erkennungszeichen", "response": "Sofort reagieren", "coop": "Koop-Hinweis", "relatedLevels": "Zugehörige Level-Guides", "imageSource": "Entity-Bild: Escape the Backrooms Wiki", "tocTitle": "Feldindex", "tocHint": "Auf dieser Seite", "anchorOverview": "Merkmale und Verhalten", "anchorJournal": "Routenprotokoll", "anchorEncounter": "Erste Reaktion", "anchorCoop": "Koop-Tipps", "anchorSpawn": "Begegnungspunkte", "anchorCounter": "Fluchtplan", "anchorRun": "Routenhinweise", "anchorMechanics": "Mechaniken", "anchorLevels": "Vorkommen in Levels", "anchorAfter": "Abschlusscheck", "anchorRelated": "Ähnliche Entities", "anchorFaq": "Fragen"
     },
     "levelsPage": {
         "hero": {

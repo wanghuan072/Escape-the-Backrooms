@@ -13,8 +13,8 @@ function SectionHeader({ locale, section, link, linkText }: { locale: Locale; se
   return <div className="section-header"><div className="header-content"><span className="section-label">{translate(locale, `homePage.${section}.label`)}</span><h2 className="section-title">{translate(locale, `homePage.${section}.title`)}</h2><p className="section-subtitle">{translate(locale, `homePage.${section}.subtitle`)}</p></div>{link && linkText && <a href={localizedPath(link, locale)} className="section-link">{translate(locale, linkText)}</a>}</div>
 }
 
-function GameInfoCard({ locale, card, labeled }: { locale: Locale; card: 'card01' | 'card02' | 'card03'; labeled?: boolean }) {
-  return <div className="info-card"><h3>{translate(locale, `homePage.gameInfo.${card}Title`)}</h3><ul className="info-list">{Array.from({ length: 6 }, (_, index) => { const number = String(index + 1).padStart(2, '0'); return <li key={number}>{labeled && <strong>{translate(locale, `homePage.gameInfo.${card}Item${number}Label`)}</strong>} {translate(locale, `homePage.gameInfo.${card}Item${number}${labeled ? 'Value' : ''}`)}</li> })}</ul></div>
+function GameInfoCard({ locale, card, labeled, entityCount }: { locale: Locale; card: 'card01' | 'card02' | 'card03'; labeled?: boolean; entityCount: number }) {
+  return <div className="info-card"><h3>{translate(locale, `homePage.gameInfo.${card}Title`)}</h3><ul className="info-list">{Array.from({ length: 6 }, (_, index) => { const number = String(index + 1).padStart(2, '0'); const value = card === 'card02' && number === '03' ? `${entityCount} ${translate(locale, 'homePage.gameInfo.card02Item03Value')}` : translate(locale, `homePage.gameInfo.${card}Item${number}${labeled ? 'Value' : ''}`); return <li key={number}>{labeled && <strong>{translate(locale, `homePage.gameInfo.${card}Item${number}Label`)}</strong>} {value}</li> })}</ul></div>
 }
 
 export default function HomePage({ locale }: { locale: Locale }) {
@@ -24,7 +24,8 @@ export default function HomePage({ locale }: { locale: Locale }) {
     ...selectedHomeLevels.filter((level) => level.homePriority === undefined).slice(-4),
   ].slice(0, 6)
   const homeMaps = getMaps(locale).filter((map) => map.isHome)
-  const homeEntities = getEntities(locale).filter((entity) => entity.isHome)
+  const entities = getEntities(locale)
+  const homeEntities = entities.filter((entity) => entity.isHome)
   const faqItems = Array.from({ length: 10 }, (_, index) => { const number = String(index + 1).padStart(2, '0'); return { question: translate(locale, `homePage.faq.item${number}Question`), answer: translate(locale, `homePage.faq.item${number}Answer`) } })
 
   return (
@@ -34,7 +35,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           <div className="hero-badges"><span className="badge badge-new">{translate(locale, 'homePage.hero.badgeNew')}</span><span className="badge">{translate(locale, 'homePage.hero.badgeSteam')}</span></div>
           <h1 className="hero-title">{translate(locale, 'homePage.hero.title')}</h1><p className="hero-description">{translate(locale, 'homePage.hero.description')}</p>
           <div className="hero-features">{[1, 2, 3, 4].map((number) => <div className="feature-item" key={number}>{translate(locale, `homePage.hero.feature0${number}`)}</div>)}</div>
-          <div className="hero-stats">{[1, 2, 3].map((number) => <div className="stat-box" key={number}><div className="stat-number">{translate(locale, `homePage.hero.stat0${number}Number`)}</div><div className="stat-text">{translate(locale, `homePage.hero.stat0${number}Text`)}</div></div>)}</div>
+          <div className="hero-stats">{[1, 2, 3].map((number) => <div className="stat-box" key={number}><div className="stat-number">{number === 3 ? entities.length : translate(locale, `homePage.hero.stat0${number}Number`)}</div><div className="stat-text">{translate(locale, `homePage.hero.stat0${number}Text`)}</div></div>)}</div>
           <div className="hero-actions"><a href={localizedPath('/levels', locale)} className="btn btn-primary">{translate(locale, 'homePage.hero.button01')}</a><a href={localizedPath('/codes-solutions', locale)} className="btn btn-secondary">{translate(locale, 'homePage.hero.button02')}</a></div>
         </div>
         <HomeLatestUpdate locale={locale} />
@@ -46,7 +47,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
       {homeEntities.length > 0 && <section className="featured-section"><div className="container"><SectionHeader locale={locale} section="featuredEntities" link="/entities" linkText="homePage.featuredEntities.linkText" /><div className="featured-grid">{homeEntities.map((entity) => <a key={entity.id} href={localizedPath(`/entities/${entity.addressBar}`, locale)} className="featured-card"><div className="card-image">{entity.imageUrl ? <IntrinsicImage src={entity.imageUrl} alt={entity.imageAlt || entity.name || entity.title} className="card-img" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="card-img placeholder">{entity.name}</div>}<div className="image-overlay" /><div className={`card-badge-top ${entity.dangerClass ?? ''}`}>{entity.dangerLevel}</div></div><div className="card-content"><h3 className="card-title">{entity.title}</h3><p className="card-desc">{entity.description}</p><div className="card-meta">{entity.species && <span className="meta-item">{entity.species}</span>}{entity.firstAppearsIn && <span className="meta-item">{entity.firstAppearsIn}</span>}</div></div></a>)}</div></div><AdPlacement /></section>}
 
-      <section className="game-info"><div className="container"><SectionHeader locale={locale} section="gameInfo" /><div className="info-grid"><GameInfoCard locale={locale} card="card01" labeled /><GameInfoCard locale={locale} card="card02" labeled /><GameInfoCard locale={locale} card="card03" /></div></div><AdPlacement /></section>
+      <section className="game-info"><div className="container"><SectionHeader locale={locale} section="gameInfo" /><div className="info-grid"><GameInfoCard locale={locale} card="card01" labeled entityCount={entities.length} /><GameInfoCard locale={locale} card="card02" labeled entityCount={entities.length} /><GameInfoCard locale={locale} card="card03" entityCount={entities.length} /></div></div><AdPlacement /></section>
 
       <section className="about-section" id="about"><div className="container"><div className="about-wrap"><SectionHeader locale={locale} section="about" /><div className="about-content"><div className="about-text">{[1, 2, 3].map((number) => <p key={number} dangerouslySetInnerHTML={{ __html: translate(locale, `homePage.about.text0${number}`) }} />)}</div><div className="about-highlights">{[1, 2, 3, 4, 5, 6].map((number) => <div className="highlight-item" key={number}><div><strong>{translate(locale, `homePage.about.highlight0${number}Title`)}</strong><p>{translate(locale, `homePage.about.highlight0${number}Text`)}</p></div></div>)}</div></div></div></div><AdPlacement /></section>
 

@@ -75,8 +75,8 @@ export default {
       stat01Text: 'Playable Levels',
       stat02Number: '35+',
       stat02Text: 'Total Scenes',
-      stat03Number: '30+',
-      stat03Text: 'Unique Entities',
+      stat03Number: '11',
+      stat03Text: 'Detailed Entity Guides',
       button01: 'Explore All Levels',
       button02: 'Codes & Solutions',
       latestLabel: 'Site update',
@@ -128,7 +128,7 @@ export default {
       card02Item02Label: 'Total Scenes:',
       card02Item02Value: '35+ including transitions in Escape the Backrooms',
       card02Item03Label: 'Entities:',
-      card02Item03Value: '30+ unique Escape the Backrooms entities',
+      card02Item03Value: 'detailed entity guides, with more in progress',
       card02Item04Label: 'Playtime:',
       card02Item04Value: '8-12 hours to complete Escape the Backrooms',
       card02Item05Label: 'Difficulty:',
@@ -149,7 +149,7 @@ export default {
       subtitle: 'Your complete guide to escaping the Backrooms',
       text01: 'Welcome to the most comprehensive guide for <strong>Escape the Backrooms</strong>, the first-person horror adventure game developed by Fancy Games and published by Secret Mode. This fan-made wiki is dedicated to helping players navigate through all 28+ levels of terror in Escape the Backrooms and successfully escape the Backrooms.',
       text02: 'Our Escape the Backrooms guides cover the Steam version (v1.0 Full Release), including detailed walkthroughs for every level from Level 0 (The Lobby) to Level 3999 (The True Ending). Each Escape the Backrooms level guide includes comprehensive information about objectives, entities, items, entrances, exits, and detailed walkthrough steps to help you progress through Escape the Backrooms.',
-      text03: 'In addition to Escape the Backrooms level guides, we provide high-resolution navigation maps with spawn points and key locations for Escape the Backrooms, a complete database of all Escape the Backrooms entities with behavior patterns and survival strategies, and a comprehensive reference for all elevator codes, door codes, and computer passwords needed throughout your Escape the Backrooms journey.',
+      text03: 'In addition to the level guides, we maintain high-resolution navigation maps, a growing set of player-tested entity dossiers, and a practical reference for the elevator codes, door codes, and computer passwords covered by our current routes.',
       highlight01Title: 'Level Walkthroughs',
       highlight01Text: 'Complete guides for all 28+ levels with objectives, entities, and exit routes',
       highlight02Title: 'Navigation Maps',
@@ -157,7 +157,7 @@ export default {
       highlight03Title: 'Key Locations',
       highlight03Text: 'Detailed guides on where to find keys and how to collect them in each level',
       highlight04Title: 'Entity Database',
-      highlight04Text: 'Complete information about all entities, their behaviors, and avoidance strategies',
+      highlight04Text: 'Detailed encounter notes for the entities covered by our current guides',
       highlight05Title: 'Codes & Solutions',
       highlight05Text: 'All elevator codes, door codes, and computer passwords with usage instructions',
       highlight06Title: 'Guides & Tips',
@@ -178,7 +178,7 @@ export default {
       item05Question: 'What are elevator codes and door codes?',
       item05Answer: 'Some locks use a fixed password, while others generate their answer from objects or clues in the current run. Our <strong>Codes & Solutions</strong> page separates fixed answers such as the Hub password and Level 3999 ticket code from variable puzzles such as the Level 1 car colours and Level 4 object counts.',
       item06Question: 'How do I avoid entities like the Hound or Moth?',
-      item06Answer: 'Our <strong>Entity Database</strong> provides complete information about all Escape the Backrooms entities, including their behaviors, locations, and danger levels. Each Escape the Backrooms entity guide explains how to avoid or deal with them. For example, Hounds in Escape the Backrooms are aggressive and fast, so you should avoid them in early Escape the Backrooms levels. Moths in Level 5 of Escape the Backrooms are attracted to light, so avoid using light sources near them.',
+      item06Answer: 'Our growing <strong>Entity Database</strong> focuses on the creatures already covered by our routes, with level-specific behavior and escape advice. For example, save the flashlight stun for a charging Hound, and crouch near the Death Moths in the Cave System instead of shining a light directly at them.',
       item07Question: 'What is Level 3999 and the task list system?',
       item07Answer: 'Level 3999 is the final level and true ending of Escape the Backrooms. It features a unique task list system where players must complete randomly generated tasks (like breaking glass, finding specific items, or solving puzzles) before being able to escape Escape the Backrooms. This is currently the only "escape" ending in Escape the Backrooms. Our Escape the Backrooms level guides provide detailed walkthroughs for completing these tasks.',
       item08Question: 'How do I navigate between levels?',
@@ -190,10 +190,10 @@ export default {
     }
   },
   entitiesPage: {
-    kicker: 'Survival dossiers', title: 'Escape the Backrooms Entities', subtitle: 'Recognize the threat before it recognizes you.', fieldGuide: 'Current field guide', intro: 'These dossiers focus on the encounter signals, practical escape options, and co-op calls that matter while playing.', firstEncounter: 'First encounter', openDossier: 'Open dossier'
+    kicker: 'Survival dossiers', title: 'Escape the Backrooms Entities', subtitle: 'Recognize the threat before it recognizes you.', fieldGuide: 'Current field guide', intro: 'These dossiers focus on the encounter signals, practical escape options, and co-op calls that matter while playing.', firstEncounter: 'First encounter', openDossier: 'Open dossier', countLabel: 'documented entities', lowThreat: 'survivor / low threat', pursuitRisk: 'pursuit risk', lethalPressure: 'lethal pressure', chaserTitle: 'Pursuit threats', chaserDescription: 'Entities that force an escape, stealth, or line-of-sight decision.', ambientTitle: 'Survivor profiles', ambientDescription: 'Player-facing dossiers about coordination and route ownership.', interactiveTitle: 'Mechanic-driven threats', interactiveDescription: 'Entities whose rules change through puzzles, equipment, or direct interaction.'
   },
   entityDetailPage: {
-    species: 'Species', firstEncounter: 'First encounter', liveBrief: 'Field brief', beforeYouMove: 'Before you move', signal: 'Recognition signal', response: 'Best immediate response', coop: 'Co-op note', relatedLevels: 'Related level guides'
+    species: 'Species', firstEncounter: 'First encounter', alsoKnownAs: 'Also known as', liveBrief: 'Field brief', beforeYouMove: 'Before you move', signal: 'Recognition signal', response: 'Best immediate response', coop: 'Co-op note', relatedLevels: 'Related level guides', imageSource: 'Entity image: Escape the Backrooms Wiki', tocTitle: 'Field index', tocHint: 'On this page', anchorOverview: 'Identity and behavior', anchorJournal: 'Route journal', anchorEncounter: 'First response', anchorCoop: 'Co-op tips', anchorSpawn: 'Encounter points', anchorCounter: 'Escape plan', anchorRun: 'Run notes', anchorMechanics: 'Mechanics', anchorLevels: 'Level appearances', anchorAfter: 'Final check', anchorRelated: 'Related entities', anchorFaq: 'Questions'
   },
   levelsPage: {
     hero: {

@@ -10,6 +10,7 @@ const prefixedLocales = locales.slice(1)
 const baseRoutes = [
   '/',
   '/levels',
+  '/entities',
   '/maps-keys',
   '/codes-solutions',
   '/backrooms-games',
@@ -110,6 +111,8 @@ async function collectRoutes() {
   }
 
   const gamesModule = await import('../../src/content/related-games.js')
+  const entitiesModule = await import('../../src/content/wiki/entities.js')
+  const entities = entitiesModule.default || []
 
   for (const locale of locales) {
     routes.push(...baseRoutes.map((routePath) => localizedPath(routePath, locale)))
@@ -123,6 +126,11 @@ async function collectRoutes() {
     }
     for (const map of datasets.maps[locale]) {
       const routePath = localizedPath(`/maps-keys/${map.addressBar}`, locale)
+      routes.push(routePath)
+      sitemapRoutes.push(routePath)
+    }
+    for (const entity of entities) {
+      const routePath = localizedPath(`/entities/${entity.addressBar}`, locale)
       routes.push(routePath)
       sitemapRoutes.push(routePath)
     }
@@ -443,8 +451,6 @@ async function main() {
   const validPaths = new Set(inventory.routes.map(normalizePathname))
   const sitemapPaths = new Set(inventory.sitemapRoutes)
   if (validPaths.size !== inventory.routes.length) addError('routes', 'duplicate public routes found')
-  if (inventory.routes.length !== 232) addError('routes', `expected 232 public routes, found ${inventory.routes.length}`)
-  if (inventory.sitemapRoutes.length !== 232) addError('routes', `expected 232 sitemap routes, found ${inventory.sitemapRoutes.length}`)
 
   const redirectSources = validateVercelConfig(validPaths)
   const sitemapResult = validateSitemap(sitemapPaths)

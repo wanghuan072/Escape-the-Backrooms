@@ -9,6 +9,7 @@ export interface EntityEntry {
   description: string
   imageUrl?: string
   imageAlt?: string
+  imageSourceUrl?: string
   dangerLevel?: string
   dangerClass?: string
   species?: string

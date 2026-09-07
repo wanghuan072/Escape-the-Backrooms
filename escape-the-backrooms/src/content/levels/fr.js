@@ -762,8 +762,8 @@ export default [
                 <li><strong>Le Spawn :</strong> Un Hound (Doggy Bro) apparaît souvent à l'intérieur ou près de la Chambre 21.</li>
                 <li><strong>Stratégie :</strong></li>
                 <li><strong>Frappe préventive :</strong> Si vous avez une lampe de poche, approchez-vous prudemment de la Chambre 21. Éclairez le Hound une fois pour le faire fuir/disparaître temporairement. Cela libère le passage pour plus tard.</li>
-                <li><strong>Discrétion :</strong> Si le Hound rôde dans les couloirs, ACCROUPISSEZ-VOUS. Marcher debout fait du bruit qui l'attire. Restez derrière lui et gardez vos distances.</li>
-                <li><strong>Se cacher :</strong> S'il vous poursuit, vous pouvez vous cacher sous les lits ou à l'intérieur des armoires dans les chambres d'amis.</li>
+                <li><strong>Ne passez pas accroupi :</strong> le Hound ne suit pas la règle de discrétion au bruit. Gardez vos distances et réservez la lampe pour sa charge.</li>
+                <li><strong>Fuite :</strong> aveuglez ses yeux, entrez dans une chambre et fermez la porte. Les Hounds ne savent pas ouvrir les portes.</li>
               </ul>
         
               <h2>Conseils et astuces pour le Niveau 5.5</h2>
@@ -787,7 +787,7 @@ export default [
     "sideBarInfo": {
       "name": "Escape the Backrooms : Niveau 5 - La Chaufferie",
       "difficulty": "Difficile",
-      "objectives": "Naviguer dans le labyrinthe, éviter les Death Moths, utiliser les vannes de vapeur, trouver la porte de sortie"
+      "objectives": "Traverser le labyrinthe, éviter les Deathmoths femelles, utiliser les vannes de Bug Spray, trouver la sortie"
     },
     "featured": [
       {
@@ -807,8 +807,8 @@ export default [
     ],
     "seo": {
       "title": "Solution Niveau 5 : Guide de la Chaufferie - Escape the Backrooms",
-      "description": "Guide complet pour le Niveau 5 : La Chaufferie. Apprenez l'utilisation du thermomètre, la stratégie de discrétion contre les mites, la mécanique des vannes de vapeur et l'emplacement de la sortie.",
-      "keywords": "Niveau 5, Escape the Backrooms, La Chaufferie, Death Moth, Thermomètre, Vanne de vapeur, Discrétion, Walkthrough"
+      "description": "Guide complet du Niveau 5 : seuils du thermomètre à 125 °F et 140 °F, discrétion face aux Deathmoths femelles, vannes de Bug Spray et sortie.",
+      "keywords": "Niveau 5, Escape the Backrooms, Chaufferie, Deathmoth femelle, Thermomètre, Vanne Bug Spray, Discrétion, Walkthrough"
     },
     "detailsHtml": `
               <p>Bienvenue dans le guide complet du Niveau 5 : La Chaufferie. Ce niveau est un labyrinthe de tuyaux brûlants et de machines, infesté de Death Moths mortelles. Votre objectif est de naviguer dans le labyrinthe sans vous faire attraper.</p>
@@ -819,7 +819,7 @@ export default [
               <h3>Points saillants de la vidéo :</h3>
               <ul>
                 <li><strong>Guide du thermomètre :</strong> Comment utiliser le thermomètre (ou les indices visuels) pour détecter les mites.</li>
-                <li><strong>Stratégie contre les mites :</strong> Comment s'accroupir sous les mites et utiliser les vannes de vapeur pour les repousser.</li>
+                <li><strong>Stratégie contre les mites :</strong> Comment passer accroupi et utiliser les vannes de Bug Spray pour créer une barrière.</li>
                 <li><strong>Fausses portes :</strong> Avertissement concernant les portes pièges remplies de mites.</li>
                 <li><strong>La vraie sortie :</strong> Emplacement de la seule porte de sortie sûre.</li>
               </ul>
@@ -830,7 +830,7 @@ export default [
               <h3>1. Le thermomètre (Optionnel)</h3>
               <p>Au début, vous trouverez peut-être un thermomètre sur une table.</p>
               <ul>
-                <li><strong>Utilisation :</strong> Il détecte les changements de température. Une température élevée signifie qu'une Death Moth est proche (les mites femelles dégagent de la chaleur).</li>
+                <li><strong>Valeurs :</strong> 125 °F / 51,5 °C signale une femelle à proximité. À 140 °F / 60 °C, la ruche est toute proche : faites demi-tour.</li>
                 <li><strong>Astuce Pro :</strong> Vous n'avez pas besoin du thermomètre si vous êtes observateur. Cherchez les distorsions d'ondes de chaleur (air tremblant) sur votre écran. C'est l'indice visuel pour repérer une mite.</li>
               </ul>
         
@@ -841,7 +841,7 @@ export default [
               <ul>
                 <li><strong>Discrétion :</strong> Vous pouvez vous accroupir et marcher dessous en toute sécurité tant que vous ne les touchez pas.</li>
                 <li><strong>Aggro :</strong> N'éclairez JAMAIS les grandes mites avec votre lampe. Elles détestent la lumière et vous attaqueront instantanément.</li>
-                <li><strong>Répulsion :</strong> Si une mite bloque votre chemin, cherchez une vanne de vapeur rouge sur un tuyau proche. Tournez-la pour libérer un jet de vapeur, ce qui forcera la mite à reculer.</li>
+                <li><strong>Barrière insecticide :</strong> Si une mite bloque le passage, actionnez la vanne rouge de Bug Spray. Elle libère un gaz insecticide, pas un jet de vapeur.</li>
               </ul>
         
               <img src="/images/levels/level-08-02.webp" alt="Escape the Backrooms : Niveau 5 - Gérer les Death Moths" />
@@ -2726,7 +2726,7 @@ export default [
     "title": "Escape the Backrooms Level 55.1 Guide : fin normale et fin secrète « Wrong Door » !",
     "pageTitle": "Escape the Backrooms Level 55.1 Guide : fin normale et fin secrète « Wrong Door » !",
     "addressBar": "escape-the-backrooms-level-55-1-guide",
-    "description": "Maîtrisez Escape the Backrooms Level 55.1 avec ce guide complet. Vous y trouverez les objectifs photo en solo et en coop, la préparation correcte du wagon, ainsi que la gestion de la Bacteria extrêmement rapide de cette map.",
+    "description": "Maîtrisez Escape the Backrooms Level 55.1 : fins normale et « Wrong Door », objectifs photo solo et coop, préparation du wagon et prises de vue sûres des entités.",
     "imageUrl": "/images/levels/level-28.webp",
     "imageAlt": "Escape the Backrooms Level 55.1 guide fin normale et fin secrète",
     "category": "Niveaux Principaux",
@@ -2770,11 +2770,11 @@ export default [
       </section>
 
       <section>
-        <h2>Photographier les entités : la Bacteria buffée est la vraie menace</h2>
-        <p>Dans la zone inférieure, plusieurs entités doivent être photographiées pour compléter les objectifs. La menace prioritaire est clairement la <strong>Bacteria</strong>, car elle possède ici une logique spéciale :</p>
+        <h2>Photographier Bacteria, Smiler et Skin-Stealer</h2>
+        <p>Dans la zone inférieure, choisissez avant chaque photo le casier ou l'élévateur qui servira de repli :</p>
         <ul>
-          <li><strong>La Bacteria :</strong> Dans Level 55.1, elle est plus rapide que toutes les autres entités de la map, et plus rapide encore que les Bacteria rencontrées dans les autres niveaux. Si elle n'est pas à son emplacement habituel, cela ne veut pas dire qu'elle a disparu : il faut passer sur la passerelle supérieure pour activer son trigger de spawn.</li>
-          <li><strong>Smiler et Skin-Stealer :</strong> Ces deux ennemis sont bien plus faciles à gérer. Prenez la photo du Smiler à distance. Le Skin-Stealer est suffisamment lent dans cet environnement pour que vous puissiez obtenir sa photo puis casser son aggro dans un casier sans dépenser trop d'endurance.</li>
+          <li><strong>Bacteria :</strong> cette variante de la couche Level 0.3 est plus lente que celle de Level 0, mais la photo vous expose tout de même. Repérez d'abord le casier ou l'élévateur relevé.</li>
+          <li><strong>Smiler et Skin-Stealer :</strong> gardez la lumière de la caméra sur le visage du Smiler pendant le cadrage. Le Skin-Stealer est lent ici ; prenez la photo à distance puis gagnez un casier proche.</li>
         </ul>
         <img src="/images/levels/level-28-02.webp" alt="Level 55.1 Bacteria" />
         <p>Une fois la statue, le Smiler, le Skin-Stealer et la Bacteria photographiés, la partie obligatoire des photos d'entités est terminée. Si vous avez mal préparé le wagon plus tôt, vous devrez alors soit remonter autrement, soit reset la run avec un restart contrôlé.</p>

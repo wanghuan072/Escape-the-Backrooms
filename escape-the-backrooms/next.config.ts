@@ -22,6 +22,14 @@ const nextConfig: NextConfig = {
       { source: '/de/levels/level-8-cave-system-guide', destination: '/de/levels/level-8-cave-system-walkthrough', permanent: true },
       { source: '/fr/levels/level-8-cave-system-guide', destination: '/fr/levels/level-8-cave-system-walkthrough', permanent: true },
       { source: '/es/levels/level-8-cave-system-guide', destination: '/es/levels/level-8-cave-system-walkthrough', permanent: true },
+      { source: '/entities/death-moth', destination: '/entities/female-deathmoth', permanent: true },
+      { source: '/de/entities/death-moth', destination: '/de/entities/female-deathmoth', permanent: true },
+      { source: '/fr/entities/death-moth', destination: '/fr/entities/female-deathmoth', permanent: true },
+      { source: '/es/entities/death-moth', destination: '/es/entities/female-deathmoth', permanent: true },
+      { source: '/entities/kitty', destination: '/entities/mr-kitty', permanent: true },
+      { source: '/de/entities/kitty', destination: '/de/entities/mr-kitty', permanent: true },
+      { source: '/fr/entities/kitty', destination: '/fr/entities/mr-kitty', permanent: true },
+      { source: '/es/entities/kitty', destination: '/es/entities/mr-kitty', permanent: true },
     ]
   },
 }

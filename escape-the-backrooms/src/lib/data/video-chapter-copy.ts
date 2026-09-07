@@ -5,7 +5,7 @@ type ChapterLabels = Record<string, readonly string[]>
 
 const german: ChapterLabels = {
   _ebQrXMMcb8: ['Porträträtsel: von jung nach alt', 'Insektenspray und Mottengelee sammeln', 'Mottengelee gegen Schlüssel tauschen', 'Abkürzung an der fünften Ziegelreihe', 'Neustart-Trick für die Ausgangstür', 'Mit dem Aufzug entkommen'],
-  _q_HErkpw3M: ['Thermometer finden', 'Große Motten ohne Taschenlampe passieren', 'Route über die Dampfventile lösen', 'Letzte Jagd der Death Moth', 'Die echte Ausgangstür wählen'],
+  _q_HErkpw3M: ['Thermometer finden', 'Große Motten ohne Taschenlampe passieren', 'Insektenspray-Ventil auslösen', 'Letzte Jagd der Death Moth', 'Die echte Ausgangstür wählen'],
   '0hSXEPpTuH4': ['Voraussetzungen für das wahre Ende', 'M.E.G.-Aufzug zu Level 3999 nehmen', 'Geheimen Arcade-Bereich erkunden', 'Vier Hauptautomaten einschalten', 'Mit dem Hausmeister sprechen', 'Der Hausmeister öffnet den Ausgang', 'Das Ende „Final Escape“ auslösen'],
   '2Giiy2ixJNw': ['Normales Fernsehrätsel', 'Curtain Spirit ausweichen', 'Fernseher per Rutschangriff schieben', 'Aufzug-Abkürzung mit einem Fernseher', 'Level 188 verlassen'],
   '3FChsY_BfUs': ['Warnung zum Mehrspieler-Auslöser', 'Linken Sprung nehmen', 'Sprung-Duck-Technik einsetzen', 'Ausgangstür erreichen'],

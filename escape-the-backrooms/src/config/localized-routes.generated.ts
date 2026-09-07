@@ -1124,6 +1124,54 @@ export const localizedRouteMap = {
     "fr": "/fr/entities/skin-stealer",
     "es": "/es/entities/skin-stealer"
   },
+  "/entities/smiler": {
+    "en": "/entities/smiler",
+    "de": "/de/entities/smiler",
+    "fr": "/fr/entities/smiler",
+    "es": "/es/entities/smiler"
+  },
+  "/entities/hound": {
+    "en": "/entities/hound",
+    "de": "/de/entities/hound",
+    "fr": "/fr/entities/hound",
+    "es": "/es/entities/hound"
+  },
+  "/entities/male-deathmoth": {
+    "en": "/entities/male-deathmoth",
+    "de": "/de/entities/male-deathmoth",
+    "fr": "/fr/entities/male-deathmoth",
+    "es": "/es/entities/male-deathmoth"
+  },
+  "/entities/female-deathmoth": {
+    "en": "/entities/female-deathmoth",
+    "de": "/de/entities/female-deathmoth",
+    "fr": "/fr/entities/female-deathmoth",
+    "es": "/es/entities/female-deathmoth"
+  },
+  "/entities/partygoer": {
+    "en": "/entities/partygoer",
+    "de": "/de/entities/partygoer",
+    "fr": "/fr/entities/partygoer",
+    "es": "/es/entities/partygoer"
+  },
+  "/entities/scratcher": {
+    "en": "/entities/scratcher",
+    "de": "/de/entities/scratcher",
+    "fr": "/fr/entities/scratcher",
+    "es": "/es/entities/scratcher"
+  },
+  "/entities/wretch": {
+    "en": "/entities/wretch",
+    "de": "/de/entities/wretch",
+    "fr": "/fr/entities/wretch",
+    "es": "/es/entities/wretch"
+  },
+  "/entities/mr-kitty": {
+    "en": "/entities/mr-kitty",
+    "de": "/de/entities/mr-kitty",
+    "fr": "/fr/entities/mr-kitty",
+    "es": "/es/entities/mr-kitty"
+  },
   "/backrooms-games/inside-the-backrooms": {
     "en": "/backrooms-games/inside-the-backrooms",
     "de": "/de/backrooms-games/inside-the-backrooms",

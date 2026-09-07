@@ -165,6 +165,7 @@ export const level421 = {
       <p>Past the first gate, take a photo of every flower wall you find. We write “shape + color,” not just “yellow,” because the projector wants the color attached to that exact outline. The locations move between runs; the three target colors remain pink, cyan, and yellow.</p>
       <p>You do not always need to clear every room. Once two flower matches are confirmed, the remaining target color is the one left over. That is the point to head to the second-floor projectors instead of making another risky sweep through Scratcher halls.</p>
       <p>Scratchers patrol these halls. Close a door before working a projector and listen before stepping into a stairwell. The rolling-ball sound can continue when no enemy is immediately beside you, so use sight lines and door movement instead of treating that sound as a perfect proximity warning.</p>
+      <p><strong>Pick the hiding place before making noise:</strong> the reliable Level 421 resets are underneath a stretcher, inside the ball pit beside a basketball hoop, or in a room after fully closing its door. A Scratcher is faster once it has locked onto you, so sprinting down an unknown corridor is much less consistent than doubling back to a hide you already checked.</p>
       <img src="/images/levels/level-37-02.webp" alt="Scratcher patrol beside the Level 421 flower-projector gate" />
     </section>
 

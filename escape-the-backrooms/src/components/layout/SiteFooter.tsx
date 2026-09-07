@@ -26,6 +26,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <ul>
               <li><a href={localizedPath('/', locale)}>{labels.home}</a></li>
               <li><a href={localizedPath('/levels', locale)}>{labels.levels}</a></li>
+              <li><a href={localizedPath('/entities', locale)}>{labels.entities}</a></li>
               <li><a href={localizedPath('/maps-keys', locale)}>{labels.maps}</a></li>
               <li><a href={localizedPath('/codes-solutions', locale)}>{labels.codes}</a></li>
               <li><a href={localizedPath('/backrooms-games', locale)}>{labels.relatedGames}</a></li>

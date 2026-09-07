@@ -8,6 +8,17 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '../..')
 
+const levelTemplateSource = fs.readFileSync(path.join(rootDir, 'src/page/levels/LevelDetailPage.tsx'), 'utf8')
+const entityRelationsSource = fs.readFileSync(path.join(rootDir, 'src/lib/data/entity-relations.ts'), 'utf8')
+const entityRenderSource = [
+  fs.readFileSync(path.join(rootDir, 'src/page/entities/EntityDetailPage.tsx'), 'utf8'),
+  fs.readFileSync(path.join(rootDir, 'src/components/content/EntitySectionNav.tsx'), 'utf8'),
+  fs.readFileSync(path.join(rootDir, 'src/lib/data/additional-entity-guides.ts'), 'utf8'),
+  fs.readFileSync(path.join(rootDir, 'src/lib/data/entities.ts'), 'utf8'),
+  entityRelationsSource,
+].join('\n')
+const mapTemplateSource = fs.readFileSync(path.join(rootDir, 'src/page/maps/MapDetailPage.tsx'), 'utf8')
+
 const CACHE_FILE = path.join(__dirname, '.sitemap-cache.json')
 const PUBLIC_SITEMAP = path.join(rootDir, 'public/sitemap.xml')
 
@@ -42,6 +53,10 @@ function today() {
 
 function fingerprint(value) {
   return crypto.createHash('sha256').update(String(value)).digest('hex').slice(0, 16)
+}
+
+function levelRelationSignature(levelSlug) {
+  return entityRelationsSource.split(/\r?\n/).filter((line) => line.includes(levelSlug)).join('\n')
 }
 
 function createLocalizedPath(routePath, locale = 'en') {
@@ -189,7 +204,7 @@ async function collectUrlEntries() {
     entities.forEach((entity) => {
       if (!entity?.addressBar) return
       const routePath = createLocalizedPath(`/entities/${entity.addressBar}`, locale)
-      entries.push({ loc: fullUrl(routePath), priority: 0.8, changefreq: 'monthly', hash: fingerprint(JSON.stringify({ type: 'entity', locale, entity })) })
+      entries.push({ loc: fullUrl(routePath), priority: 0.8, changefreq: 'monthly', hash: fingerprint(JSON.stringify({ type: 'entity', locale, entity, render: fingerprint(entityRenderSource) })) })
     })
   })
 
@@ -216,7 +231,7 @@ async function collectUrlEntries() {
         loc: fullUrl(routePath),
         priority: 0.8,
         changefreq: 'monthly',
-        hash: fingerprint(JSON.stringify({ type: 'level', locale, level })),
+        hash: fingerprint(JSON.stringify({ type: 'level', locale, level, render: fingerprint(levelTemplateSource), entityRelations: fingerprint(levelRelationSignature(level.addressBar)) })),
       })
     })
   })
@@ -230,7 +245,7 @@ async function collectUrlEntries() {
         loc: fullUrl(routePath),
         priority: 0.8,
         changefreq: 'monthly',
-        hash: fingerprint(JSON.stringify({ type: 'map', locale, map })),
+        hash: fingerprint(JSON.stringify({ type: 'map', locale, map, render: fingerprint(mapTemplateSource) })),
       })
     })
   })

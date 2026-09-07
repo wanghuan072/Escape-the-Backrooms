@@ -75,8 +75,8 @@ export default {
       "stat01Text": "Niveles jugables",
       "stat02Number": "35+",
       "stat02Text": "Escenas totales",
-      "stat03Number": "30+",
-      "stat03Text": "Entidades únicas",
+      "stat03Number": "11",
+      "stat03Text": "Guías de entidades detalladas",
       "button01": "Explorar todos los niveles",
       "button02": "Códigos y soluciones",
       "latestLabel": "Actualización del sitio",
@@ -128,7 +128,7 @@ export default {
       "card02Item02Label": "Escenas totales:",
       "card02Item02Value": "35+ incluyendo transiciones en Escape the Backrooms",
       "card02Item03Label": "Entidades:",
-      "card02Item03Value": "Más de 30 entidades Escape the Backrooms únicas",
+      "card02Item03Value": "guías de entidades detalladas, con más en preparación",
       "card02Item04Label": "Duración:",
       "card02Item04Value": "8-12 horas para completar Escape the Backrooms",
       "card02Item05Label": "Dificultad:",
@@ -149,7 +149,7 @@ export default {
       "subtitle": "Tu guía completa para escapar de los Backrooms",
       "text01": "Bienvenido a la guía más completa de <strong>Escape the Backrooms</strong>, el juego de aventura y terror en primera persona desarrollado por Fancy Games y publicado por Secret Mode. Esta wiki creada por fans está dedicada a ayudar a los jugadores a recorrer los más de 28 niveles de terror de Escape the Backrooms y escapar con éxito de los Backrooms.",
       "text02": "Nuestras guías de Escape the Backrooms cubren la versión de Steam (lanzamiento completo v1.0), con tutoriales detallados para cada nivel, desde el Nivel 0 (El vestíbulo) hasta el Nivel 3999 (El verdadero final). Cada guía incluye objetivos, entidades, objetos, entradas, salidas e instrucciones paso a paso para avanzar en Escape the Backrooms.",
-      "text03": "Además de las guías de niveles, ofrecemos mapas de navegación de alta resolución con puntos de aparición y ubicaciones clave, una base de datos completa de entidades con patrones de comportamiento y estrategias de supervivencia, y una referencia para códigos de ascensor, códigos de puertas y contraseñas de computadora.",
+      "text03": "Además de las guías de niveles, mantenemos mapas de navegación de alta resolución, una colección creciente de expedientes de entidades probados en partida y una referencia práctica para los códigos de ascensores, puertas y ordenadores cubiertos por nuestras rutas actuales.",
       "highlight01Title": "Tutoriales de nivel",
       "highlight01Text": "Guías completas para todos los niveles principales, con objetivos, entidades y rutas de salida.",
       "highlight02Title": "Mapas de navegación",
@@ -157,7 +157,7 @@ export default {
       "highlight03Title": "Ubicaciones clave",
       "highlight03Text": "Guías detalladas sobre dónde encontrar llaves y cómo recogerlas en cada nivel.",
       "highlight04Title": "Base de datos de entidades",
-      "highlight04Text": "Información completa sobre todas las entidades, sus comportamientos y estrategias de evitación.",
+      "highlight04Text": "Notas detalladas de los encuentros con las entidades cubiertas por nuestras guías actuales.",
       "highlight05Title": "Códigos y soluciones",
       "highlight05Text": "Todos los códigos de ascensor, códigos de puertas y contraseñas de computadora con instrucciones de uso.",
       "highlight06Title": "Guías y consejos",
@@ -178,7 +178,7 @@ export default {
       "item05Question": "¿Qué son los códigos de ascensor y los códigos de puertas?",
       "item05Answer": "Algunas cerraduras usan una contraseña fija, mientras que otras calculan la respuesta a partir de los objetos o las pistas de la partida actual. En <strong>Códigos y soluciones</strong> distinguimos respuestas fijas, como la contraseña del Hub y el código del billete del nivel 3999, de acertijos variables como los coches de colores del nivel 1 y el recuento de objetos del nivel 4.",
       "item06Question": "¿Cómo evito entidades como Sabueso o Polilla?",
-      "item06Answer": "Nuestra <strong>Base de datos de entidades</strong> proporciona información completa sobre todas las entidades Escape the Backrooms, incluidos sus comportamientos, ubicaciones y niveles de peligro. Cada guía de entidades Escape the Backrooms explica cómo evitarlos o tratarlos. Por ejemplo, los perros en Escape the Backrooms son agresivos y rápidos, por lo que debes evitarlos en los primeros niveles de Escape the Backrooms. Las polillas del nivel 5 de Escape the Backrooms se sienten atraídas por la luz, así que evita utilizar fuentes de luz cerca de ellas.",
+      "item06Answer": "Nuestra <strong>base de entidades</strong> en crecimiento se centra en las criaturas ya cubiertas por nuestras rutas, con comportamiento específico por nivel y consejos de escape concretos. Guarda el aturdimiento de la linterna para un Hound que esté cargando y avanza agachado cerca de las Death Moths sin iluminarlas directamente.",
       "item07Question": "¿Qué es el nivel 3999 y el sistema de lista de tareas?",
       "item07Answer": "El nivel 3999 es el nivel final y el verdadero final de Escape the Backrooms. Cuenta con un sistema de lista de tareas único donde los jugadores deben completar tareas generadas aleatoriamente (como romper cristales, encontrar elementos específicos o resolver acertijos) antes de poder escapar de Escape the Backrooms. Este es actualmente el único final de \"escape\" en Escape the Backrooms. Nuestras guías de nivel Escape the Backrooms proporcionan tutoriales detallados para completar estas tareas.",
       "item08Question": "¿Cómo navego entre niveles?",
@@ -190,10 +190,10 @@ export default {
     }
   },
   "entitiesPage": {
-    "kicker": "Expedientes de supervivencia", "title": "Entidades de Escape the Backrooms", "subtitle": "Reconoce la amenaza antes de que te encuentre.", "fieldGuide": "Guía de campo actual", "intro": "Estos expedientes se centran en señales, opciones de escape y avisos cooperativos que importan durante la partida.", "firstEncounter": "Primer encuentro", "openDossier": "Abrir expediente"
+    "kicker": "Expedientes de supervivencia", "title": "Entidades de Escape the Backrooms", "subtitle": "Reconoce la amenaza antes de que te encuentre.", "fieldGuide": "Guía de campo actual", "intro": "Estos expedientes se centran en señales, opciones de escape y avisos cooperativos que importan durante la partida.", "firstEncounter": "Primer encuentro", "openDossier": "Abrir expediente", "countLabel": "entidades documentadas", "lowThreat": "superviviente / amenaza baja", "pursuitRisk": "riesgo de persecución", "lethalPressure": "presión letal", "chaserTitle": "Amenazas de persecución", "chaserDescription": "Entidades que obligan a decidir entre huir, avanzar con sigilo o romper la línea de visión.", "ambientTitle": "Perfiles de supervivientes", "ambientDescription": "Expedientes sobre coordinación y responsabilidad de la ruta.", "interactiveTitle": "Amenazas basadas en mecánicas", "interactiveDescription": "Entidades cuyas reglas cambian mediante puzles, equipo o interacción directa."
   },
   "entityDetailPage": {
-    "species": "Especie", "firstEncounter": "Primer encuentro", "liveBrief": "Nota de campo", "beforeYouMove": "Antes de avanzar", "signal": "Señal de reconocimiento", "response": "Mejor respuesta inmediata", "coop": "Consejo cooperativo", "relatedLevels": "Guías de nivel relacionadas"
+    "species": "Especie", "firstEncounter": "Primer encuentro", "alsoKnownAs": "También conocido como", "liveBrief": "Nota de campo", "beforeYouMove": "Antes de avanzar", "signal": "Señal de reconocimiento", "response": "Mejor respuesta inmediata", "coop": "Consejo cooperativo", "relatedLevels": "Guías de nivel relacionadas", "imageSource": "Imagen de la entidad: wiki de Escape the Backrooms", "tocTitle": "Índice de campo", "tocHint": "En esta página", "anchorOverview": "Aspecto y comportamiento", "anchorJournal": "Diario de ruta", "anchorEncounter": "Primera respuesta", "anchorCoop": "Consejos cooperativos", "anchorSpawn": "Puntos de encuentro", "anchorCounter": "Plan de huida", "anchorRun": "Notas de la ruta", "anchorMechanics": "Mecánicas", "anchorLevels": "Apariciones por nivel", "anchorAfter": "Comprobación final", "anchorRelated": "Entidades relacionadas", "anchorFaq": "Preguntas"
   },
   "levelsPage": {
     "hero": {

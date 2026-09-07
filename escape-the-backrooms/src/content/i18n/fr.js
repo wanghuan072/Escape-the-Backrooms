@@ -75,8 +75,8 @@ export default {
             stat01Text: 'Niveaux Jouables',
             stat02Number: '35+',
             stat02Text: 'Scènes Totales',
-            stat03Number: '30+',
-            stat03Text: 'Entités Uniques',
+            stat03Number: '11',
+            stat03Text: 'Guides d’entités détaillés',
             button01: 'Explorer les Niveaux',
             button02: 'Codes et Solutions',
             latestLabel: 'Mise à jour du site',
@@ -128,7 +128,7 @@ export default {
             card02Item02Label: 'Scènes Totales :',
             card02Item02Value: '35+ incluant les transitions',
             card02Item03Label: 'Entités :',
-            card02Item03Value: '30+ entités uniques',
+            card02Item03Value: 'guides d’entités détaillés, collection en cours',
             card02Item04Label: 'Temps de jeu :',
             card02Item04Value: '8-12 heures pour terminer le jeu',
             card02Item05Label: 'Difficulté :',
@@ -149,7 +149,7 @@ export default {
             subtitle: 'Votre guide complet pour s\'échapper des Backrooms',
             text01: 'Bienvenue sur le guide le plus complet pour <strong>Escape the Backrooms</strong>, le jeu d\'aventure d\'horreur développé par Fancy Games. Ce wiki géré par des fans est dédié à aider les joueurs à naviguer à travers les 28+ niveaux de terreur.',
             text02: 'Nos guides couvrent la version Steam (v1.0), incluant des solutions détaillées pour chaque niveau, du Niveau 0 (Le Lobby) au Niveau 3999 (La Vraie Fin). Chaque guide inclut les objectifs, entités, objets et sorties.',
-            text03: 'En plus des guides de niveaux, nous fournissons des cartes haute résolution avec les points d\'apparition, une base de données des entités avec leurs comportements et une liste complète de tous les codes d\'ascenseurs et mots de passe.',
+            text03: 'En plus des guides de niveaux, nous entretenons des cartes haute résolution, une collection grandissante de dossiers d’entités testés en jeu et une référence pratique pour les codes d’ascenseurs, de portes et d’ordinateurs couverts par nos itinéraires actuels.',
             highlight01Title: 'Solutions de Niveaux',
             highlight01Text: 'Guides complets pour 28+ niveaux avec objectifs et itinéraires de sortie',
             highlight02Title: 'Cartes de Navigation',
@@ -157,7 +157,7 @@ export default {
             highlight03Title: 'Emplacements des Clés',
             highlight03Text: 'Guides détaillés pour trouver et collecter les clés dans chaque niveau',
             highlight04Title: 'Base des Entités',
-            highlight04Text: 'Infos complètes sur les entités, leurs comportements et comment les éviter',
+            highlight04Text: 'Des notes de rencontre détaillées pour les entités couvertes par nos guides actuels',
             highlight05Title: 'Codes et Solutions',
             highlight05Text: 'Tous les codes d\'ascenseurs, de portes et mots de passe PC',
             highlight06Title: 'Guides et Astuces',
@@ -178,7 +178,7 @@ export default {
             item05Question: 'À quoi servent les codes d\'ascenseur et de porte ?',
             item05Answer: 'Certaines serrures utilisent un mot de passe fixe, tandis que d’autres tirent leur réponse des objets ou des indices de la partie en cours. La page <strong>Codes et solutions</strong> distingue les réponses fixes, comme le mot de passe du Hub et le code du ticket du niveau 3999, des énigmes variables des niveaux 1 et 4.',
             item06Question: 'Comment éviter les entités comme le Hound ou la Moth ?',
-            item06Answer: 'Notre base de données explique comment réagir. Par exemple, les Moths du Niveau 5 sont attirées par la lumière : il faut donc éteindre vos sources lumineuses près d\'elles.',
+            item06Answer: 'Notre <strong>base d’entités</strong> grandissante se concentre sur les créatures déjà présentes dans nos itinéraires, avec leur comportement propre à chaque niveau et des solutions de fuite concrètes. Gardez par exemple l’étourdissement lumineux pour un Hound qui charge et avancez accroupi près des Death Moths sans les éclairer directement.',
             item07Question: 'Qu\'est-ce que le Niveau 3999 et le système de tâches ?',
             item07Answer: 'Le Niveau 3999 est la fin du jeu. Vous devez accomplir une liste de tâches aléatoires (briser du verre, trouver des objets) pour pouvoir enfin vous échapper.',
             item08Question: 'Comment naviguer entre les niveaux ?',
@@ -190,10 +190,10 @@ export default {
         }
     },
     entitiesPage: {
-        kicker: 'Dossiers de survie', title: 'Entités d’Escape the Backrooms', subtitle: 'Identifiez la menace avant qu’elle ne vous repère.', fieldGuide: 'Guide de terrain actuel', intro: 'Ces dossiers privilégient les signaux, les options d’évasion concrètes et les annonces coop utiles en partie.', firstEncounter: 'Première rencontre', openDossier: 'Ouvrir le dossier'
+        kicker: 'Dossiers de survie', title: 'Entités d’Escape the Backrooms', subtitle: 'Identifiez la menace avant qu’elle ne vous repère.', fieldGuide: 'Guide de terrain actuel', intro: 'Ces dossiers privilégient les signaux, les options d’évasion concrètes et les annonces coop utiles en partie.', firstEncounter: 'Première rencontre', openDossier: 'Ouvrir le dossier', countLabel: 'entités documentées', lowThreat: 'survivant / menace faible', pursuitRisk: 'risque de poursuite', lethalPressure: 'pression mortelle', chaserTitle: 'Menaces de poursuite', chaserDescription: 'Des entités qui imposent une décision de fuite, d’infiltration ou de ligne de vue.', ambientTitle: 'Profils de survivants', ambientDescription: 'Des dossiers consacrés à la coordination et au partage de l’itinéraire.', interactiveTitle: 'Menaces liées aux mécaniques', interactiveDescription: 'Des entités dont les règles changent avec les énigmes, l’équipement ou l’interaction.'
     },
     entityDetailPage: {
-        species: 'Espèce', firstEncounter: 'Première rencontre', liveBrief: 'Note de terrain', beforeYouMove: 'Avant d’avancer', signal: 'Signe distinctif', response: 'Réaction immédiate', coop: 'Conseil coop', relatedLevels: 'Guides de niveaux associés'
+        species: 'Espèce', firstEncounter: 'Première rencontre', alsoKnownAs: 'Aussi appelé', liveBrief: 'Note de terrain', beforeYouMove: 'Avant d’avancer', signal: 'Signe distinctif', response: 'Réaction immédiate', coop: 'Conseil coop', relatedLevels: 'Guides de niveaux associés', imageSource: 'Image de l’entité : wiki Escape the Backrooms', tocTitle: 'Index de terrain', tocHint: 'Sur cette page', anchorOverview: 'Aspect et comportement', anchorJournal: 'Journal de route', anchorEncounter: 'Première réaction', anchorCoop: 'Conseils coop', anchorSpawn: 'Points de rencontre', anchorCounter: 'Plan de fuite', anchorRun: 'Notes de parcours', anchorMechanics: 'Mécaniques', anchorLevels: 'Présence par niveau', anchorAfter: 'Dernière vérification', anchorRelated: 'Entités associées', anchorFaq: 'Questions'
     },
     levelsPage: {
         hero: {
