@@ -194,7 +194,8 @@ export default {
         },
         category: {
             countText: 'niveaux Escape the Backrooms'
-        }
+        },
+        latestBadge: 'Niveau récent'
     },
     levelDetailPage: {
         badge: {

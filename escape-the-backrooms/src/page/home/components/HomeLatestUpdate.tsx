@@ -10,6 +10,7 @@ export function HomeLatestUpdate({ locale }: { locale: Locale }) {
     >
       <article className="hero-update-card">
         <div className="hero-update-image">
+          <span className="hero-latest-marker">{translate(locale, 'levelsPage.latestBadge')}</span>
           <IntrinsicImage
             src="/images/home/level-421-site-update.webp"
             alt={translate(locale, 'homePage.hero.latestImageAlt')}

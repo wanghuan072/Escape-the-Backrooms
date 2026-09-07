@@ -36,7 +36,7 @@ export default function LevelsPage({ locale }: { locale: Locale }) {
                   <div className="levels-grid">
                     {groups[category].map((level) => (
                       <a href={localizedPath(`/levels/${level.addressBar}`, locale)} className="level-card" key={level.id} id={`level-${level.id}`}>
-                        <div className="level-media">{level.imageUrl ? <IntrinsicImage src={level.imageUrl} alt={level.imageAlt || level.title} className="level-thumb" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="level-thumb level-thumb-placeholder">{level.title}</div>}</div>
+                        <div className="level-media">{level.isLatest && <span className="latest-level-marker">{translate(locale, 'levelsPage.latestBadge')}</span>}{level.imageUrl ? <IntrinsicImage src={level.imageUrl} alt={level.imageAlt || level.title} className="level-thumb" loading="lazy" sizes="(max-width: 768px) 100vw, 33vw" /> : <div className="level-thumb level-thumb-placeholder">{level.title}</div>}</div>
                         <div className="level-body"><h3 className="level-name">{level.title}</h3><p className="level-desc">{level.description}</p><div className="level-meta">{level.tags?.map((tag) => <span className="meta-tag" key={tag}>{tag}</span>)}</div></div>
                       </a>
                     ))}

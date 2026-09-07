@@ -10,6 +10,7 @@ export const level011 = {
   tags: ['Water Damage', 'Bacteria', '415314'],
   isHome: true,
   homePriority: 2,
+  isLatest: true,
   sideBarInfo: {
     name: 'Level 0.11 (Water Damage)',
     difficulty: 'Difficile / Leviers chronométrés et Bacteria rapide',
@@ -107,6 +108,7 @@ export const level421 = {
   tags: ['Plastic Mariana', 'Énigmes de couleurs', 'Piscine à balles'],
   isHome: true,
   homePriority: 1,
+  isLatest: true,
   sideBarInfo: {
     name: 'Level 421 (Plastic Mariana)',
     difficulty: 'Difficile / Énigmes aléatoires, Scratchers et requin',

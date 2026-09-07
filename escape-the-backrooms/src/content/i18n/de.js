@@ -194,7 +194,8 @@ export default {
         },
         "category": {
             "countText": "Level vorhanden"
-        }
+        },
+        "latestBadge": "Neuestes Level"
     },
     "levelDetailPage": {
         "badge": {

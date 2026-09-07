@@ -10,6 +10,7 @@ export const level011 = {
   tags: ['Water Damage', 'Bacteria', '415314'],
   isHome: true,
   homePriority: 2,
+  isLatest: true,
   sideBarInfo: {
     name: 'Level 0.11 (Water Damage)',
     difficulty: 'Hard / Timed levers and fast Bacteria',
@@ -109,6 +110,7 @@ export const level421 = {
   tags: ['Plastic Mariana', 'Color Puzzles', 'Ball Pit'],
   isHome: true,
   homePriority: 1,
+  isLatest: true,
   sideBarInfo: {
     name: 'Level 421 (Plastic Mariana)',
     difficulty: 'Hard / Random puzzles, Scratchers, and shark',
