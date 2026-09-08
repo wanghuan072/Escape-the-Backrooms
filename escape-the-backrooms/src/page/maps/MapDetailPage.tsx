@@ -34,7 +34,7 @@ export default function MapDetailPage({ locale, map }: { locale: Locale; map: Ma
     href: localizedPath(`/levels/${level.addressBar}`, locale),
     label: level.title,
   })) : [])
-  const mapHtml = contextualMapHtml.replace('The Hub', `<a href="${localizedPath('/codes-solutions#hub', locale)}">The Hub</a>`)
+  const mapHtml = contextualMapHtml.replaceAll('The Hub', `<a href="${localizedPath('/codes-solutions#hub', locale)}">The Hub</a>`)
   return (
     <>
     <JsonLd data={pageJsonLd(map.seo.title || map.title, map.seo.description || map.description, `${siteConfig.url}${localizedPath(`/maps-keys/${map.addressBar}`, locale)}`, 'Article')} />

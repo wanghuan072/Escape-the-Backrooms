@@ -5,6 +5,18 @@
  */
 const editorialEnhancements = {
   en: {
+    6: {
+      description:
+        'Read the portrait route in order, trade Moth Jelly for the three keys, and keep a clear reset point before moving from the Terror Hotel into the Boiler Room.',
+      seoTitle: 'Escape the Backrooms Level 5 Walkthrough: Terror Hotel Guide',
+      headings: [],
+    },
+    10: {
+      description:
+        'Treat Level Fun as a stealth route: use cover and table recovery deliberately, keep Partygoer patrols away from the group, and take the Poolrooms exit only when the route is clear.',
+      seoTitle: 'Escape the Backrooms Level Fun Walkthrough: The Party Rooms Guide',
+      headings: [],
+    },
     1: {
       description:
         'Level 0 becomes manageable once you route the four ladder fragments in one controlled loop, then use the key and pit crossing without losing the team’s landmarks.',
@@ -209,6 +221,18 @@ const editorialEnhancements = {
     },
   },
   de: {
+    6: {
+      description:
+        'Folgt den Porträts in der richtigen Reihenfolge, tauscht Moth Jelly gegen die drei Schlüssel und legt vor dem Boiler Room einen klaren Rückzugsort fest.',
+      seoTitle: 'Escape the Backrooms: Level-5-Walkthrough – Terror Hotel',
+      headings: [],
+    },
+    10: {
+      description:
+        'Behandelt Level Fun als Schleichroute: nutzt Deckung und Tische bewusst, haltet Partygoer von der Gruppe fern und nehmt den Poolrooms-Ausgang erst bei freier Route.',
+      seoTitle: 'Escape the Backrooms: Level-Fun-Walkthrough – The Party Rooms',
+      headings: [],
+    },
     1: {
       description:
         'Level 0 bleibt überschaubar, wenn ihr die vier Leiterteile in einer festen Runde sucht und Schlüssel sowie Grube an klaren Treffpunkten erledigt.',
@@ -320,6 +344,18 @@ const editorialEnhancements = {
     },
   },
   fr: {
+    6: {
+      description:
+        'Suivez les portraits dans le bon ordre, échangez la Moth Jelly contre les trois clés et gardez un vrai point de repli avant de passer à la chaufferie.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 5 — Terror Hotel',
+      headings: [],
+    },
+    10: {
+      description:
+        'Abordez Level Fun comme une route d’infiltration : utilisez couvert et tables avec intention, écartez les Partygoers du groupe et ne prenez la sortie des Poolrooms que lorsque la voie est libre.',
+      seoTitle: 'Escape the Backrooms : guide de Level Fun — Party Rooms',
+      headings: [],
+    },
     1: {
       description:
         'Le niveau 0 devient lisible lorsque vous cherchez les quatre morceaux d’échelle dans une boucle fixe, puis gérez clé et fosse avec des repères communs.',
@@ -447,6 +483,18 @@ const editorialEnhancements = {
     },
   },
   es: {
+    6: {
+      description:
+        'Seguid los retratos en orden, cambiad Moth Jelly por las tres llaves y dejad un punto de regreso claro antes de pasar a la Sala de Calderas.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 5 — Terror Hotel',
+      headings: [],
+    },
+    10: {
+      description:
+        'Tratad Level Fun como una ruta de sigilo: usad coberturas y mesas con intención, alejad a los Partygoers del grupo y tomad la salida a las Poolrooms solo cuando el camino esté libre.',
+      seoTitle: 'Escape the Backrooms: guía de Level Fun — Party Rooms',
+      headings: [],
+    },
     1: {
       description:
         'El nivel 0 se vuelve manejable al buscar los cuatro fragmentos de escalera en un circuito fijo y resolver llave y foso con referencias compartidas.',
@@ -580,34 +628,70 @@ function replaceHeading(html, from, to) {
   return html.includes(heading) ? html.replace(heading, `<h2>${to}</h2>`) : html
 }
 
+// Older drafts included build-specific collision, framerate, and AI shortcuts.
+// They age badly and leave readers with a route that may no longer work, so keep
+// the published guides focused on the intended, repeatable route instead.
+const legacyShortcutPattern =
+  /glitch|exploit|game-breaking|god-tier|x-ray vision|röntgenblick|rayons?\s*x|rayos\s*x|wall[-\s]?phas|wand[-\s]?phas|travers(?:er|ée).*mur|atravesar.*pared|restart[-\s]?glitch|neu(?:start|starten)|redémarr|reinici|f11|windowed water|wasser[-\s]?clip|clip de agua|fps[-\s]?(?:hack|clip)|fence[-\s]?skip|zaun[-\s]?skip|rock[-\s]?climb/iu
+
+function removeLegacyShortcutCopy(html = '') {
+  const blocks = html
+    .replace(/<div\b[^>]*class=["'][^"']*exploit-box[^"']*["'][^>]*>[\s\S]*?<\/div>/giu, '')
+    .replace(/<(h2|h3)\b[^>]*>[\s\S]*?<\/\1>/giu, (heading) =>
+      legacyShortcutPattern.test(heading) ? '' : heading,
+    )
+    .replace(/<(p|li)\b[^>]*>[\s\S]*?<\/\1>/giu, (block) =>
+      legacyShortcutPattern.test(block) ? '' : block,
+    )
+
+  return blocks.replace(/<ul>\s*<\/ul>/giu, '').replace(/\n{3,}/gu, '\n\n')
+}
+
+function cleanLegacyShortcutText(value = '') {
+  return value
+    .replace(legacyShortcutPattern, 'current-route guidance')
+    .replace(/\(\s*current-route guidance\s*\)/giu, '')
+    .replace(/\s{2,}/gu, ' ')
+    .trim()
+}
+
+function brandFirstTitle(title = '') {
+  const suffix = ' - Escape the Backrooms'
+  return title.endsWith(suffix)
+    ? `Escape the Backrooms ${title.slice(0, -suffix.length).trim()}`
+    : title
+}
+
 export function enhanceLevelDetails(locale, entry) {
   const enhancement = editorialEnhancements[locale]?.[entry.id]
-  if (!enhancement) return entry.detailsHtml
-
-  const baseHtml = enhancement.fullHtml ?? entry.detailsHtml
-  const updatedHeadings = enhancement.headings.reduce(
+  const baseHtml = enhancement?.fullHtml ?? entry.detailsHtml
+  const updatedHeadings = (enhancement?.headings ?? []).reduce(
     (html, [from, to]) => replaceHeading(html, from, to),
     baseHtml,
   )
-  const updated = (enhancement.replacements ?? []).reduce(
+  const updated = (enhancement?.replacements ?? []).reduce(
     (html, [from, to]) => (html.includes(from) ? html.replace(from, to) : html),
     updatedHeadings,
   )
   const withUpdatedIntro =
-    enhancement.description && !enhancement.fullHtml
+    enhancement?.description && !enhancement.fullHtml
       ? updated.replace(/^\s*<p\b[^>]*>[\s\S]*?<\/p>/i, `<p>${enhancement.description}</p>`)
       : updated
-  return enhancement.extra ? `${withUpdatedIntro}\n${enhancement.extra}` : withUpdatedIntro
+  const withExtra = enhancement?.extra ? `${withUpdatedIntro}\n${enhancement.extra}` : withUpdatedIntro
+  return removeLegacyShortcutCopy(withExtra)
 }
 
 export function enhanceLevelEntry(locale, entry) {
   const enhancement = editorialEnhancements[locale]?.[entry.id]
+  const title = brandFirstTitle(cleanLegacyShortcutText(enhancement?.seoTitle ?? entry.seo?.title))
+  const description = cleanLegacyShortcutText(enhancement?.description ?? entry.description)
+  const seoDescription = cleanLegacyShortcutText(enhancement?.description ?? entry.seo?.description)
   return {
     ...entry,
     detailsHtml: enhanceLevelDetails(locale, entry),
-    ...(enhancement?.description ? { description: enhancement.description } : {}),
-    ...(enhancement?.seoTitle && entry.seo
-      ? { seo: { ...entry.seo, title: enhancement.seoTitle } }
+    ...(description ? { description } : {}),
+    ...(entry.seo
+      ? { seo: { ...entry.seo, title, description: seoDescription } }
       : {}),
     ...(enhancement?.sideBarObjectives && entry.sideBarInfo
       ? {

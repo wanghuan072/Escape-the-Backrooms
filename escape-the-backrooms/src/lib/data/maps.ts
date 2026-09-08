@@ -12,8 +12,18 @@ const maps = {
   es: esMaps,
 } as Record<Locale, MapEntry[]>
 
+function removeEditorialSourceCopy(detailsHtml: string) {
+  return detailsHtml.replace(
+    /<p\b[^>]*>[^<]*(?:Fandom|source-linked|source link|images? originales?|original images?|Bilder[^<]*Quelle)[\s\S]*?<\/p>/gi,
+    '',
+  )
+}
+
 export function getMaps(locale: Locale): MapEntry[] {
-  return maps[locale] ?? maps.en
+  return (maps[locale] ?? maps.en).map((entry) => ({
+    ...entry,
+    detailsHtml: removeEditorialSourceCopy(entry.detailsHtml),
+  }))
 }
 
 export function findMap(locale: Locale, slug: string): MapEntry | undefined {

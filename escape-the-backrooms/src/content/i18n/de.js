@@ -352,7 +352,7 @@ export default {
                 },
                 "solution2": {
                     "title": "Spind-Code (Bei Betreten von Level 8)",
-                    "description": "Benutze im Miniatur-Bereich von Level 0.2 den Lichtschalter. Wenn das Licht kurz ausgeht, erscheinen Formen über den Zahlen an der Wand, die den Spind-Code anzeigen. Jeder Schalterdruck zeigt das nächste Symbol. Der Code lautet: Quadrat, Kreis, Pfeil. Das Öffnen des Spinds gewährt dir eine Kettensäge, mit der du die Bretter im Manilla-Raum zerschlagen kannst."
+                    "description": "Benutze im Miniatur-Bereich von Level 0.2 den Lichtschalter. Wenn das Licht kurz ausgeht, erscheinen Formen über den Zahlen an der Wand, die den Spind-Code anzeigen. Jeder Schalterdruck zeigt das nächste Symbol. Der Code lautet: Quadrat, Kreis, Pfeil. Das Öffnen des Spinds gibt dir eine Kettensäge, mit der du die Bretter im [manilla-room] zerstörst und Level 0.11 erreichst."
                 }
             },
             "level1": {

@@ -352,7 +352,7 @@ export default {
                 },
                 solution2: {
                     title: 'Code du Casier (Entrée depuis le Niveau 8)',
-                    description: 'Dans la zone miniature du Niveau 0.2, utilisez l\'interrupteur. Lorsque la lumière s\'éteint brièvement, des formes apparaissent sur les chiffres au mur, indiquant le code du casier. Chaque pression révèle le symbole suivant. Le code est : Carré, Cercle, Flèche. Ouvrir le casier vous donne la Tronçonneuse, utilisée pour briser les planches de la "Manilla Room".'
+                    description: 'Dans la zone miniature du Niveau 0.2, utilisez l\'interrupteur. Lorsque la lumière s\'éteint brièvement, des formes apparaissent sur les chiffres au mur, indiquant le code du casier. Chaque pression révèle le symbole suivant. Le code est : Carré, Cercle, Flèche. Le casier contient une tronçonneuse pour briser les planches de la [manilla-room] et entrer au niveau 0.11.'
                 }
             },
             level1: {

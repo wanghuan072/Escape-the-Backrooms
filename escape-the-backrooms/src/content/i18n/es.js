@@ -352,7 +352,7 @@ export default {
         },
         "solution2": {
           "title": "Código de casillero (al ingresar desde el nivel 8)",
-          "description": "En el área en miniatura del Nivel 0.2, use el interruptor de la luz. Cuando las luces se apagan brevemente, aparecerán formas sobre los números en la pared, indicando el código del casillero. Cada pulsación del interruptor revela el siguiente símbolo. El código es: Cuadrado, Círculo, Flecha. Abrir el casillero te otorga una motosierra, que se usa para romper las tablas en The Manilla Room."
+          "description": "En el área en miniatura del Nivel 0.2, use el interruptor de la luz. Cuando las luces se apagan brevemente, aparecerán formas sobre los números en la pared, indicando el código del casillero. Cada pulsación del interruptor revela el siguiente símbolo. El código es: Cuadrado, Círculo, Flecha. El casillero contiene una motosierra para romper las tablas de la [manilla-room] y entrar en el Nivel 0.11."
         }
       },
       "level1": {

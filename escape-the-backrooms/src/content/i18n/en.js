@@ -352,7 +352,7 @@ export default {
         },
         solution2: {
           title: 'Locker Code (When Entering from Level 8)',
-          description: 'In the miniature Level 0.2 area, use the light switch. When the lights go out briefly, shapes will appear over numbers on the wall, indicating the locker code. Each switch press reveals the next symbol. The code is: Square, Circle, Arrow. Opening the locker grants you a Chainsaw, which is used to break the boards in The Manilla Room.'
+          description: 'In the miniature Level 0.2 area, use the light switch. When the lights go out briefly, shapes will appear over numbers on the wall, indicating the locker code. Each switch press reveals the next symbol. The code is: Square, Circle, Arrow. Opening the locker grants you a Chainsaw to break the boards in the [manilla-room] and enter Level 0.11.'
         }
       },
       level1: {

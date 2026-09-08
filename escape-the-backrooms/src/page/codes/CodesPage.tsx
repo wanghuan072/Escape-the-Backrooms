@@ -1,6 +1,6 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
 import { IntrinsicImage } from '@/components/content/IntrinsicImage'
-import { translate } from '@/lib/i18n/messages'
+import { localizedPath, translate } from '@/lib/i18n/messages'
 import type { Locale } from '@/types/locale'
 import '@/style/page/codes/codes-page.module.css'
 
@@ -50,6 +50,7 @@ const sections: SectionConfig[] = [
 ]
 
 export default function CodesPage({ locale }: { locale: Locale }) {
+  const manillaRoomHref = localizedPath('/levels/level-0-2-ancient-path-walkthrough', locale)
   return (
     <div className="codes-solutions-view">
       <section className="page-hero"><div className="container"><div className="hero-content"><h1 className="page-title">{translate(locale, 'codesPage.hero.title')}</h1><p className="page-subtitle">{translate(locale, 'codesPage.hero.subtitle')}</p></div></div><AdPlacement /></section>
@@ -58,7 +59,7 @@ export default function CodesPage({ locale }: { locale: Locale }) {
           <h2 className="level-title">{translate(locale, `codesPage.levels.${section.key}.title`)}</h2>
           {section.solutions.map((solution, index) => { const solutionKey = `codesPage.levels.${section.key}.solution${index + 1}`; return <div className="solution-item" key={solutionKey}>
             <div className="solution-header"><h3 className="solution-title">{translate(locale, `${solutionKey}.title`)}</h3><span className={`solution-badge ${solution.badgeClass}`}>{translate(locale, `codesPage.badge.${solution.badge}`)}</span></div>
-            <p className="solution-description" dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.description`) }} />
+            <p className="solution-description" dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.description`).replace('[manilla-room]', `<a href="${manillaRoomHref}">Manilla Room</a>`) }} />
             {solution.details && <div className="solution-details"><h4>{translate(locale, `${solutionKey}.details.triwayTitle`)}</h4><p dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.details.triwayDescription`) }} /><h4>{translate(locale, `${solutionKey}.details.coloredWiresTitle`)}</h4><p dangerouslySetInnerHTML={{ __html: translate(locale, `${solutionKey}.details.coloredWiresDescription`) }} /></div>}
             {solution.images && <div className="solution-images">{solution.images.map(([src, alt]) => <IntrinsicImage key={src} src={src} alt={alt} className="solution-img" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />)}</div>}
             {solution.codes && <ul className="solution-codes">{solution.codes.map((code) => <li key={code}><strong>{code}</strong></li>)}</ul>}
