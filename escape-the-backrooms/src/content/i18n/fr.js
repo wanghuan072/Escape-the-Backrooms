@@ -396,7 +396,7 @@ export default {
                 }
             },
             hub: {
-                title: 'Le Hub',
+                title: 'Ordinateur de la base M.E.G.',
                 solution1: {
                     title: 'Mot de passe PC Base M.E.G. : itheardyou',
                     description: 'Après être entré dans la base M.E.G., déverrouillez l\'ordinateur avec le mot de passe <strong>"itheardyou"</strong>. Ouvrez ensuite le fichier "Gate.exe" pour déverrouiller la porte au Niveau 1.'

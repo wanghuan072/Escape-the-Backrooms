@@ -396,7 +396,7 @@ export default {
                 }
             },
             "hub": {
-                "title": "The Hub",
+                "title": "M.E.G.-Basiscomputer",
                 "solution1": {
                     "title": "M.E.G. Basis Computer-Passwort: itheardyou",
                     "description": "Nachdem du die M.E.G. Basis betreten hast, musst du den Computer entsperren. Das Passwort lautet <strong>\"itheardyou\"</strong>. Öffne nach der Passworteingabe die Datei \"Gate.exe\", um das Tor in Level 1 zu entriegeln."

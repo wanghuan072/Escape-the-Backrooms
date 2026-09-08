@@ -120,7 +120,15 @@ const editorialEnhancements = {
         <p>The crowbar in the security area opens the vent route back toward the earlier office. It is useful for a retry or for players deliberately checking the optional path, but it is not a substitute for clearing the camera sequence. We leave it until the main exit is understood so nobody disappears into the vent while the rest of the team waits at the locked door.</p>
       `,
     },
+    7: {
+      description:
+        'Read the looping Beverly Room corridor as a mailbox route, confirm the ceiling digits before entering the code, and keep a closed room ready whenever the Hound takes the hall.',
+      seoTitle: 'Escape the Backrooms Level 5.5 Walkthrough: The Beverly Room Guide',
+      headings: [],
+    },
     8: {
+      description:
+        'Use the thermometer to rule out dangerous corridors, cross blocked lanes only after the Bug Spray valve creates space, and confirm the illuminated Exit sign before committing the group.',
       headings: [
         ['Step-by-Step Text Guide', 'Read the Boiler Room Before Choosing a Door'],
         ['Tips & Tricks for The Boiler Room', 'Death Moth Warnings and Exit Checks'],
@@ -155,6 +163,9 @@ const editorialEnhancements = {
       `,
     },
     11: {
+      description:
+        'Take the right-right route through the Poolrooms, use its sanity recovery before spending supplies, and avoid the Hot Water Zone while looking for the red hallway exit.',
+      pageTitle: 'Escape the Backrooms Level 37 Guide: The Poolrooms & Deep Water Traps (Walkthrough & Secrets)',
       headings: [
         ['Step-by-Step Text Guide', 'Take the Safe Route Through the Poolrooms'],
         ['Tips & Tricks for The Poolrooms', 'Poolrooms Hazards and Version Differences'],
@@ -292,7 +303,15 @@ const editorialEnhancements = {
       ],
       extra: `<h2>Zählt den Raum, nicht den Beispielcode</h2><p>Die vier Werte der Automaten entstehen aus den Gegenständen in eurem Raum. Wir zählen jede Kategorie einzeln, notieren die Zahl und bedienen erst danach die Automaten. Stühle und Hocker werden leicht übersehen, weil Beine überlappen oder Möbel hinter Pflanzen stehen. Bleibt die Tür zu, zählt zuerst die unübersichtlichste Kategorie neu.</p><ul><li><strong>Eine Kategorie pro Spieler:</strong> Verteilt Bücher, Tische, Sitzmöbel und Wasserspender. Eine weitere Person kontrolliert nur strittige Zahlen.</li><li><strong>Kameragang:</strong> Vier Räume werden überwacht. Bewegt euch mit dem Schwenkbereich und schickt niemanden weiter, wenn eine Kamera bereits rot ist.</li><li><strong>Verriegelter Ausgang:</strong> Nach einer Sichtung kehrt ihr zur Rücksetztaste zurück. Die Gruppe an der letzten Tür zu sammeln, überschreibt den Alarm nicht.</li></ul><h3>Wozu der Brecheisenweg dient</h3><p>Das Brecheisen im Sicherheitsbereich öffnet einen Lüftungsweg zurück ins frühere Büro. Er hilft bei einem neuen Versuch oder beim optionalen Erkunden, ersetzt aber nicht die Kamerasequenz. Wir lassen ihn liegen, bis der normale Ausgang verstanden ist.</p>`,
     },
+    7: {
+      description:
+        'Behandelt den loopenden Beverly-Room-Flur als Briefkastenroute, prüft die Deckenziffern vor dem Code und haltet immer einen Raum mit Tür bereit, wenn der Hound im Flur ist.',
+      seoTitle: 'Escape the Backrooms: Level-5.5-Walkthrough – The Beverly Room',
+      headings: [],
+    },
     8: {
+      description:
+        'Nutzt das Thermometer, um gefährliche Gänge auszuschließen, überquert blockierte Wege erst nach dem Bug-Spray-Ventil und bestätigt vor dem Weitergehen das beleuchtete Exit-Schild.',
       headings: [
         ['Schritt-für-Schritt Text-Guide', 'Den Boiler Room lesen, bevor ihr eine Tür wählt'],
         ['Tipps & Tricks für den Boiler Room', 'Warnzeichen der Death Moths und Ausgangskontrolle'],
@@ -307,6 +326,9 @@ const editorialEnhancements = {
       extra: `<h2>Dieser zweite Rohrabschnitt hat ein anderes Ziel</h2><p>Nach dem Boiler Room führen euch die FUN-Markierungen, nicht mehr die frühere Station-Route. Nehmt den entsprechend markierten Abzweig und baut vor dem Smiler Tempo auf. Run-Jumping hilft, solange Ausdauer wichtig ist; in engen Rohren oder durch aktiven Dampf erzwingen wir keinen Sprung.</p><ul><li><strong>Vor der Jagd:</strong> Wartet den Dampfzyklus ab und haltet Abstand, damit eine Kollision nicht die ganze Reihe stoppt.</li><li><strong>Nach dem Auslöser:</strong> Haltet Sprint und konzentriert euch auf die Linie. Der Raum mit den roten Leitern ist der Ausgang; jede Leiter führt zu Level Fun.</li><li><strong>Letzter Spieler:</strong> Der Hinterste bestätigt jede enge Öffnung. Erst danach beginnt der nächste Richtungswechsel.</li></ul><h3>Warum Zurückschauen so teuer ist</h3><p>Der Abschnitt ist kurz; häufiger scheitert man an einem Rohr, einem Mitspieler oder einem übersehenen Dampfstoß als am Tempo des Smilers. Lasst das Geräusch hinter euch und meldet den Leiterraum sofort.</p>`,
     },
     11: {
+      description:
+        'Folgt in den Poolrooms der Rechts-rechts-Route, nutzt die Sanity-Erholung vor euren Vorräten und meidet die Hot Water Zone auf dem Weg zum roten Ausgangsflur.',
+      pageTitle: 'Escape the Backrooms Level 37 Guide: Die Poolrooms & Tiefwasser-Fallen (Walkthrough & Geheimnisse)',
       headings: [
         ['Schritt-für-Schritt Text-Guide', 'Die sichere Route durch die Poolrooms'],
         ['Tipps & Tricks für die Poolrooms', 'Gefahren und Versionsunterschiede der Poolrooms'],
@@ -424,7 +446,15 @@ const editorialEnhancements = {
       ],
       extra: `<h2>Comptez votre salle, pas le code d’exemple</h2><p>Les quatre valeurs des distributeurs viennent des objets présents dans votre partie. Nous comptons une catégorie à la fois, notons le résultat, puis utilisons les machines. Chaises et tabourets se cachent facilement derrière plantes et bureaux. Si la porte reste fermée, recomptez d’abord la catégorie la moins lisible.</p><ul><li><strong>Une catégorie par joueur :</strong> répartissez livres, tables, sièges et fontaines, puis faites contrôler seulement les nombres discutés.</li><li><strong>Couloir des caméras :</strong> quatre salles sont surveillées. Avancez avec le balayage et retenez le joueur suivant dès qu’une caméra devient rouge.</li><li><strong>Sortie verrouillée :</strong> revenez au bouton de réinitialisation. S’entasser devant la porte finale n’annule pas l’alarme.</li></ul><h3>À quoi sert vraiment le pied-de-biche</h3><p>Le pied-de-biche de la sécurité ouvre une ventilation qui revient vers le bureau précédent. Cette voie aide à recommencer ou à explorer, mais ne remplace pas la séquence des caméras. Nous la gardons pour après avoir compris la sortie principale.</p>`,
     },
+    7: {
+      description:
+        'Lisez le couloir en boucle de la Beverly Room comme une route de boîtes aux lettres, vérifiez les chiffres du plafond avant le code et gardez une porte fermable en tête lorsque le Hound est dans le couloir.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 5.5 — Beverly Room',
+      headings: [],
+    },
     8: {
+      description:
+        'Servez-vous du thermomètre pour écarter les couloirs dangereux, ne franchissez une voie bloquée qu’après la valve de Bug Spray et confirmez le panneau Exit éclairé avant d’avancer.',
       headings: [
         ['Guide Textuel Étape par Étape', 'Lire la chaufferie avant de choisir une porte'],
         [
@@ -442,6 +472,9 @@ const editorialEnhancements = {
       extra: `<h2>Ce retour dans les tuyaux a une autre destination</h2><p>Après la chaufferie, suivez le graffiti FUN plutôt que l’ancienne route de la Station. Prenez la branche indiquée et gagnez de la vitesse avant le déclenchement du Smiler. Le run-jump aide tant que l’endurance compte, mais nous ne forçons aucun saut dans un tuyau étroit ou sous un jet actif.</p><ul><li><strong>Avant la poursuite :</strong> passez la vapeur entre deux cycles et laissez assez d’espace pour qu’une collision n’arrête pas toute la file.</li><li><strong>Après le déclenchement :</strong> sprintez et soignez la trajectoire. La salle aux échelles rouges est la sortie ; elles mènent toutes à Level Fun.</li><li><strong>Dernier joueur :</strong> il confirme chaque passage étroit avant le prochain virage.</li></ul><h3>Pourquoi se retourner coûte la partie</h3><p>Le trajet est court. Les échecs viennent surtout d’un tuyau, d’un équipier ou d’un jet oublié. Gardez le bruit derrière vous et annoncez la salle des échelles dès qu’elle apparaît.</p>`,
     },
     11: {
+      description:
+        'Suivez la route droite-droite dans les Poolrooms, profitez de la récupération de santé mentale avant vos réserves et évitez la Hot Water Zone jusqu’au couloir rouge.',
+      pageTitle: 'Guide Escape the Backrooms Niveau 37 : Les Poolrooms et pièges aquatiques (Walkthrough et Secrets)',
       headings: [
         ['Guide Textuel Étape par Étape', 'Suivre la route sûre dans les Poolrooms'],
         [
@@ -563,7 +596,15 @@ const editorialEnhancements = {
       ],
       extra: `<h2>Contad vuestra sala, no el código de ejemplo</h2><p>Los cuatro valores de las máquinas salen de los objetos de la partida. Contamos una categoría, anotamos el resultado y solo después tocamos los controles. Sillas y taburetes se esconden detrás de plantas y escritorios. Si la puerta no abre, repetid primero la categoría con más siluetas superpuestas.</p><ul><li><strong>Una categoría por persona:</strong> repartid libros, mesas, asientos y fuentes de agua; que otra persona compruebe solo las cifras dudosas.</li><li><strong>Pasillo de cámaras:</strong> hay cuatro salas vigiladas. Moveos con el barrido y detened al siguiente jugador si una cámara ya está roja.</li><li><strong>Salida bloqueada:</strong> volved al control de reinicio. Juntarse frente a la puerta final no anula la alarma.</li></ul><h3>Para qué sirve realmente la palanca</h3><p>La palanca de seguridad abre un conducto hacia la oficina anterior. Sirve para reintentar o explorar, pero no sustituye la secuencia de cámaras. La dejamos para cuando todo el grupo entiende la salida principal.</p>`,
     },
+    7: {
+      description:
+        'Leed el pasillo circular de Beverly Room como una ruta de buzones, confirmad los dígitos del techo antes del código y dejad una habitación con puerta lista cuando el Hound patrulle el pasillo.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 5.5 — Beverly Room',
+      headings: [],
+    },
     8: {
+      description:
+        'Usad el termómetro para descartar pasillos peligrosos, cruzad las rutas bloqueadas solo tras abrir espacio con la válvula de Bug Spray y confirmad el cartel Exit iluminado antes de avanzar.',
       headings: [
         ['Guía de texto paso a paso', 'Leer la Sala de Calderas antes de elegir una puerta'],
         [
@@ -581,6 +622,9 @@ const editorialEnhancements = {
       extra: `<h2>Este regreso a las tuberías tiene otro destino</h2><p>Después de la Sala de Calderas, seguid el grafiti FUN y no la antigua ruta de la Station. Tomad el ramal marcado y ganad velocidad antes del Smiler. Correr y saltar ayuda mientras importa la resistencia, pero no forzamos saltos entre tuberías estrechas o bajo vapor activo.</p><ul><li><strong>Antes de la persecución:</strong> cruzad el vapor entre ciclos y dejad espacio para que un choque no detenga la fila.</li><li><strong>Después de activarla:</strong> mantened el sprint y cuidad la línea. La sala de las escaleras rojas es la salida; cualquiera conduce a Level Fun.</li><li><strong>Último jugador:</strong> confirma cada paso estrecho antes del siguiente giro.</li></ul><h3>Por qué mirar atrás sale caro</h3><p>La ruta es corta. Es más habitual chocar con una tubería, otro jugador o el vapor que perder por velocidad. Dejad el sonido atrás y avisad de las escaleras en cuanto aparezcan.</p>`,
     },
     11: {
+      description:
+        'Seguid la ruta derecha-derecha por las Poolrooms, aprovechad la recuperación de cordura antes de gastar provisiones y evitad la Hot Water Zone hasta el pasillo rojo.',
+      pageTitle: 'Guía Escape the Backrooms Nivel 37: Las Poolrooms y trampas de aguas profundas (Tutorial y secretos)',
       headings: [
         ['Guía de texto paso a paso', 'Seguir la ruta segura por las Poolrooms'],
         [
@@ -632,7 +676,7 @@ function replaceHeading(html, from, to) {
 // They age badly and leave readers with a route that may no longer work, so keep
 // the published guides focused on the intended, repeatable route instead.
 const legacyShortcutPattern =
-  /glitch|exploit|game-breaking|god-tier|x-ray vision|röntgenblick|rayons?\s*x|rayos\s*x|wall[-\s]?phas|wand[-\s]?phas|travers(?:er|ée).*mur|atravesar.*pared|restart[-\s]?glitch|neu(?:start|starten)|redémarr|reinici|f11|windowed water|wasser[-\s]?clip|clip de agua|fps[-\s]?(?:hack|clip)|fence[-\s]?skip|zaun[-\s]?skip|rock[-\s]?climb/iu
+  /glitch|\bexploit\b|game-breaking|god-tier|x-ray vision|röntgenblick|rayons?\s*x|rayos\s*x|wall[-\s]?phas|wand[-\s]?phas|travers(?:er|ée).*mur|atravesar.*pared|restart[-\s]?glitch|neu(?:start|starten)|redémarr|reinici|f11|windowed water|wasser[-\s]?clip|clip de agua|fps[-\s]?(?:hack|clip)|fence[-\s]?skip|zaun[-\s]?skip|rock[-\s]?climb/iu
 
 function removeLegacyShortcutCopy(html = '') {
   const blocks = html
@@ -644,13 +688,16 @@ function removeLegacyShortcutCopy(html = '') {
       legacyShortcutPattern.test(block) ? '' : block,
     )
 
-  return blocks.replace(/<ul>\s*<\/ul>/giu, '').replace(/\n{3,}/gu, '\n\n')
+  return blocks
+    .replace(new RegExp(legacyShortcutPattern.source, 'giu'), '')
+    .replace(/<ul>\s*<\/ul>/giu, '')
+    .replace(/\n{3,}/gu, '\n\n')
 }
 
 function cleanLegacyShortcutText(value = '') {
   return value
-    .replace(legacyShortcutPattern, 'current-route guidance')
-    .replace(/\(\s*current-route guidance\s*\)/giu, '')
+    .replace(new RegExp(legacyShortcutPattern.source, 'giu'), '')
+    .replace(/\s*[-–—,:]\s*(?=[-–—,:])/gu, '')
     .replace(/\s{2,}/gu, ' ')
     .trim()
 }
@@ -660,6 +707,63 @@ function brandFirstTitle(title = '') {
   return title.endsWith(suffix)
     ? `Escape the Backrooms ${title.slice(0, -suffix.length).trim()}`
     : title
+}
+
+function clarifyHubTerminology(locale, levelId, html) {
+  const replacements = {
+    '3': {
+      en: [['<h3>6. The "Hub" Confusion (Lore Note)</h3>', '<h3>Ignore the Old Level Signs</h3>']],
+    },
+    '5': {
+      en: [['<h3>4. The Hub "Trap"</h3>', '<h3>4. The Return Door</h3>']],
+      de: [['<h3>4. Die Hub-"Falle"</h3>', '<h3>4. Die Rückkehrtür</h3>']],
+      fr: [['<h3>4. Le piège du "Hub"</h3>', '<h3>4. La porte de retour</h3>']],
+      es: [['<h3>4. La "trampa" del cubo </h3>', '<h3>4. La puerta de regreso</h3>']],
+    },
+    '11': {
+      en: [['<h3>2. The Hub Trap</h3>', '<h3>2. The Return-Area Detour</h3>']],
+      de: [['<h3>2. Die Hub-Falle</h3>', '<h3>2. Der Umweg durch den Rückkehrbereich</h3>']],
+      fr: [['<h3>2. Le piège du Hub</h3>', '<h3>2. Le détour par la zone de retour</h3>']],
+      es: [['<h3>2. La trampa del cubo</h3>', '<h3>2. El desvío por la zona de regreso</h3>']],
+    },
+  }
+
+  return (replacements[String(levelId)]?.[locale] ?? []).reduce(
+    (currentHtml, [from, to]) => currentHtml.replace(from, to),
+    html,
+  )
+}
+
+function replaceLegacyTipsHeading(locale, title, html) {
+  const heading = {
+    en: `Route Notes for ${title}`,
+    de: `Routenhinweise für ${title}`,
+    fr: `Notes de parcours pour ${title}`,
+    es: `Notas de ruta para ${title}`,
+  }[locale]
+  const legacyHeading = /<h2>(?:Tips\s*&\s*Tricks|Tipps\s*(?:&|und)\s*Tricks|Conseils\s*et\s*astuces|Consejos\s+y\s*trucos)[^<]*<\/h2>/giu
+  return html.replace(legacyHeading, `<h2>${heading}</h2>`)
+}
+
+function ensureLevelThirteenImageDimensions(levelId, html) {
+  if (String(levelId) !== '13') return html
+  return [
+    [
+      '<img src="/images/levels/level-13-01.webp"',
+      '<img width="1000" height="753" src="/images/levels/level-13-01.webp"',
+    ],
+    [
+      '<img src="/images/levels/level-13-02.webp"',
+      '<img width="1000" height="737" src="/images/levels/level-13-02.webp"',
+    ],
+    [
+      '<img src="/images/levels/level-13-03.webp"',
+      '<img width="1000" height="755" src="/images/levels/level-13-03.webp"',
+    ],
+  ].reduce(
+    (currentHtml, [from, to]) => currentHtml.replaceAll(from, to),
+    html,
+  )
 }
 
 export function enhanceLevelDetails(locale, entry) {
@@ -678,7 +782,12 @@ export function enhanceLevelDetails(locale, entry) {
       ? updated.replace(/^\s*<p\b[^>]*>[\s\S]*?<\/p>/i, `<p>${enhancement.description}</p>`)
       : updated
   const withExtra = enhancement?.extra ? `${withUpdatedIntro}\n${enhancement.extra}` : withUpdatedIntro
-  return removeLegacyShortcutCopy(withExtra)
+  return removeLegacyShortcutCopy(
+    ensureLevelThirteenImageDimensions(
+      entry.id,
+      replaceLegacyTipsHeading(locale, entry.title, clarifyHubTerminology(locale, entry.id, withExtra)),
+    ),
+  )
 }
 
 export function enhanceLevelEntry(locale, entry) {
@@ -688,17 +797,24 @@ export function enhanceLevelEntry(locale, entry) {
   const seoDescription = cleanLegacyShortcutText(enhancement?.description ?? entry.seo?.description)
   return {
     ...entry,
+    title: cleanLegacyShortcutText(entry.title),
     detailsHtml: enhanceLevelDetails(locale, entry),
     ...(description ? { description } : {}),
+    pageTitle: cleanLegacyShortcutText(enhancement?.pageTitle ?? entry.pageTitle),
+    imageAlt: cleanLegacyShortcutText(entry.imageAlt),
     ...(entry.seo
-      ? { seo: { ...entry.seo, title, description: seoDescription } }
+      ? { seo: { ...entry.seo, title, description: seoDescription, keywords: cleanLegacyShortcutText(entry.seo.keywords) } }
       : {}),
-    ...(enhancement?.sideBarObjectives && entry.sideBarInfo
+    ...(entry.sideBarInfo
       ? {
           sideBarInfo: {
             ...entry.sideBarInfo,
-            ...(enhancement.difficulty ? { difficulty: enhancement.difficulty } : {}),
-            objectives: enhancement.sideBarObjectives,
+            ...(entry.sideBarInfo.difficulty
+              ? { difficulty: cleanLegacyShortcutText(enhancement?.difficulty ?? entry.sideBarInfo.difficulty) }
+              : {}),
+            ...(entry.sideBarInfo.objectives
+              ? { objectives: cleanLegacyShortcutText(enhancement?.sideBarObjectives ?? entry.sideBarInfo.objectives) }
+              : {}),
           },
         }
       : {}),

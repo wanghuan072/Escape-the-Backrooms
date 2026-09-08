@@ -178,7 +178,7 @@ const videoMetadata: Record<string, YouTubeVideoMetadata> = {
   LVHeNjt0XQ0: { updatedAt: '2026-01-19', durationSeconds: 740, chapters: [
     { startSeconds: 10, label: 'Squat-jump technique near the raft' },
     { startSeconds: 240, label: 'Cross the micro bridge' },
-    { startSeconds: 410, label: 'F11 window-mode shortcut' },
+    { startSeconds: 410, label: 'Cross the bridge and keep the route stable' },
     { startSeconds: 675, label: 'Enter Fun+ through the tubes' },
   ] },
   LysnApdBzxY: { updatedAt: '2026-06-14', durationSeconds: 309, chapters: [
@@ -301,7 +301,7 @@ const videoMetadata: Record<string, YouTubeVideoMetadata> = {
     { startSeconds: 232, label: 'Read the illuminated courtyard windows' },
     { startSeconds: 248, label: 'Enter the fixed code 415314' },
     { startSeconds: 261, label: 'Take the elevator toward Level 9' },
-    { startSeconds: 270, label: 'Optional PC window-border timing exploit' },
+    { startSeconds: 270, label: 'Take the elevator toward Level 9' },
   ] },
   '03LJ0T8gIGQ': { updatedAt: '2026-09-04', durationSeconds: 529, chapters: [
     { startSeconds: 0, label: 'Take the Staff Dorm M.E.G. card route' },

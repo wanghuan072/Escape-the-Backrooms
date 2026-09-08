@@ -396,7 +396,7 @@ export default {
         }
       },
       hub: {
-        title: 'The Hub',
+        title: 'M.E.G. Base Computer',
         solution1: {
           title: 'M.E.G. Base Computer Password: itheardyou',
           description: 'After entering The M.E.G. Base, you need to unlock the computer. The password is <strong>"itheardyou"</strong>. After entering the password, open the file "Gate.exe" to unlock the gate in Level 1.'

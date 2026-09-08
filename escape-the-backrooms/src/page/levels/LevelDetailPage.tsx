@@ -26,7 +26,7 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
   const next = index >= 0 && index < allLevels.length - 1 ? allLevels[index + 1] : undefined
   const relatedMaps = getMapsForLevel(locale, level.id)
   const levelEntities = getEntitiesForLevel(locale, level.addressBar)
-  const levelHtml = addContextualLinks(level.detailsHtml, relatedMaps.flatMap((map) => {
+  const mapLinkedHtml = addContextualLinks(level.detailsHtml, relatedMaps.flatMap((map) => {
     const relation = getMapLevelRelation(map.id)
     if (!relation) return []
     return [{
@@ -36,6 +36,7 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
       label: map.title,
     }]
   }))
+  const levelHtml = addLevelEntityContext(locale, level.id, mapLinkedHtml)
   const highlights = extractVideoHighlights(levelHtml)
   const { remainingHtml: afterIntroHtml } = splitRichHtmlAtFirstParagraph(highlights.remainingHtml)
   const { videoHtml, remainingHtml } = splitRichHtmlAtFirstIframe(afterIntroHtml)
@@ -84,6 +85,21 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
     </div>
     </>
   )
+}
+
+function addLevelEntityContext(locale: Locale, levelId: string | number, html: string) {
+  if (String(levelId) !== '11') return html
+
+  const bacteriaHref = localizedPath('/entities/bacteria', locale)
+  const lobbyHref = localizedPath('/levels/level-0-the-lobby-Walkthrough', locale)
+  const replacements: Record<Locale, readonly [string, string]> = {
+    en: ['not the roaming Bacteria from Level 0', `not the roaming <a href="${bacteriaHref}">Bacteria</a> from <a href="${lobbyHref}">Level 0</a>`],
+    de: ['nicht um eine umherlaufende Bacteria aus Level 0', `nicht um eine umherlaufende <a href="${bacteriaHref}">Bacteria</a> aus <a href="${lobbyHref}">Level 0</a>`],
+    fr: ['non de la Bacteria mobile du niveau 0', `non de la <a href="${bacteriaHref}">Bacteria</a> mobile du <a href="${lobbyHref}">niveau 0</a>`],
+    es: ['no la Bacteria móvil del nivel 0', `no la <a href="${bacteriaHref}">Bacteria</a> móvil del <a href="${lobbyHref}">nivel 0</a>`],
+  }
+  const [from, to] = replacements[locale]
+  return html.replace(from, to)
 }
 
 function LevelEntities({ locale, entries }: { locale: Locale; entries: ReturnType<typeof getEntitiesForLevel> }) {

@@ -396,7 +396,7 @@ export default {
         }
       },
       "hub": {
-        "title": "El centro",
+        "title": "Ordenador de la base M.E.G.",
         "solution1": {
           "title": "MEG Contraseña de la computadora base: lo he oído",
           "description": "Después de ingresar al M.E.G. Base, necesitas desbloquear la computadora. La contraseña es <strong>\"iheardyou\"</strong>. Después de ingresar la contraseña, abra el archivo \"Gate.exe\" para desbloquear la puerta en el Nivel 1."
