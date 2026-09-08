@@ -2,6 +2,7 @@ import deLevels from '@/content/levels/de.js'
 import enLevels from '@/content/levels/en.js'
 import esLevels from '@/content/levels/es.js'
 import frLevels from '@/content/levels/fr.js'
+import { enhanceLevelEntry } from '@/content/level-editorial-enhancements.js'
 import { getLevelPageUpdatedAt } from '@/content/level-page-updates.js'
 import type { LevelEntry } from '@/types/level'
 import type { Locale } from '@/types/locale'
@@ -38,13 +39,21 @@ function mergeLevelEightEntries(locale: Locale, entries: LevelEntry[]): LevelEnt
 
   return entries
     .filter((entry) => entry.addressBar !== levelEightDuplicateSlug)
-    .map((entry) => entry.addressBar === levelEightPrimarySlug
-      ? { ...entry, detailsHtml: `${entry.detailsHtml}\n<h2>${additionalLevelEightNotesTitle[locale]}</h2>${additionalNotes}` }
-      : entry)
+    .map((entry) =>
+      entry.addressBar === levelEightPrimarySlug
+        ? {
+            ...entry,
+            detailsHtml: `${entry.detailsHtml}\n<h2>${additionalLevelEightNotesTitle[locale]}</h2>${additionalNotes}`,
+          }
+        : entry,
+    )
 }
 
 export function getLevels(locale: Locale): LevelEntry[] {
-  return mergeLevelEightEntries(locale, levels[locale] ?? levels.en).map((entry) => ({
+  const localizedEntries = (levels[locale] ?? levels.en).map((entry) =>
+    enhanceLevelEntry(locale, entry),
+  )
+  return mergeLevelEightEntries(locale, localizedEntries).map((entry) => ({
     ...entry,
     contentUpdatedAt: getLevelPageUpdatedAt(entry.id),
   }))

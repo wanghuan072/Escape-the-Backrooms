@@ -174,7 +174,7 @@ const records: Record<string, EntityRecord> = {
     counterStrategy: 'Crouch, keep a wide gap, and do not shine the flashlight directly at the moth. In the Boiler Room, retreat at 140°F / 60°C and use a Bug Spray Valve when the route provides one.',
     multiplayerDiff: 'Cross narrow sections one player at a time. One player watches the thermometer or valve while the others wait behind the last cool corner; several lights and footsteps make the approach harder to read.',
     appearances: [
-      { levelSlug: 'level-5-the-boiler-room-Walkthrough', role: 'Female Deathmoths and the Hive turn heat readings into the main navigation warning. The red valves release Bug Spray gas that blocks or moves the threat long enough to pass.', avoidance: 'Treat 125°F / 51.5°C as a nearby-moth warning and leave immediately at 140°F / 60°C. Crouch, lower the light, and cross only after the gas barrier is active.', verifiedFor: 'Current game behavior and route guide' },
+      { levelSlug: 'level-5-the-boiler-room-Walkthrough', role: 'Female Deathmoths and the Hive turn heat readings into the main navigation warning. The red valves release Bug Spray gas that blocks or moves the threat long enough to pass.', avoidance: 'Treat 120–133°F / 49–56°C as a nearby-moth warning and leave immediately at 140°F / 60°C. Crouch, lower the light, and cross only after the gas barrier is active.', verifiedFor: 'Current game behavior and route guide' },
       { levelSlug: 'level-8-cave-system-walkthrough', role: 'Female Deathmoths rest along narrow cave walls and ceilings, where the flashlight can aggro them.', avoidance: 'Crouch before entering their space, keep the beam off the body, and send one player through each bottleneck so the retreat stays clear.', verifiedFor: 'Current game behavior and route guide' },
     ],
     relatedEntities: ['male-deathmoth', 'skin-stealer', 'hound'],
@@ -294,7 +294,7 @@ const localizedAppearanceCopy: Record<Exclude<Locale, 'en'>, Record<string, Reco
       'level-9-suburbs-and-lab-walkthrough': { role: 'Kleine harmlose Deathmoths können in Level 9 optional Moth Jelly liefern.', avoidance: 'Sprüht nur, wenn ihr die Ressource braucht; verstecken müsst ihr euch vor ihnen nicht.' },
     },
     'female-deathmoth': {
-      'level-5-the-boiler-room-Walkthrough': { role: 'Weibliche Deathmoths und ihr Nest machen die Temperatur zur wichtigsten Warnung; rote Ventile setzen Insektenspray-Gas frei.', avoidance: '125 °F bedeutet Gefahr in der Nähe, bei 140 °F kehrt ihr um. Geht geduckt und passiert erst nach Aktivierung der Gasbarriere.' },
+      'level-5-the-boiler-room-Walkthrough': { role: 'Weibliche Deathmoths und ihr Nest machen die Temperatur zur wichtigsten Warnung; rote Ventile setzen Insektenspray-Gas frei.', avoidance: '120–133 °F bedeuten Gefahr in der Nähe, bei 140 °F kehrt ihr um. Geht geduckt und passiert erst nach Aktivierung der Gasbarriere.' },
       'level-8-cave-system-walkthrough': { role: 'Weibliche Deathmoths ruhen an Wänden und Decken der engen Höhlen.', avoidance: 'Geht geduckt, leuchtet sie nicht direkt an und passiert Engstellen einzeln.' },
     },
     partygoer: {
@@ -333,7 +333,7 @@ const localizedAppearanceCopy: Record<Exclude<Locale, 'en'>, Record<string, Reco
       'level-9-suburbs-and-lab-walkthrough': { role: 'De petites Deathmoths inoffensives peuvent fournir de la Moth Jelly au niveau 9.', avoidance: 'Pulvérisez seulement si la ressource vous sert ; inutile de vous cacher.' },
     },
     'female-deathmoth': {
-      'level-5-the-boiler-room-Walkthrough': { role: 'Les femelles et leur ruche font de la température l’alerte principale ; les vannes rouges libèrent du gaz insecticide.', avoidance: '125 °F signale une femelle proche ; à 140 °F, faites demi-tour. Passez accroupi après avoir activé la barrière de gaz.' },
+      'level-5-the-boiler-room-Walkthrough': { role: 'Les femelles et leur ruche font de la température l’alerte principale ; les vannes rouges libèrent du gaz insecticide.', avoidance: '120–133 °F signalent une femelle proche ; à 140 °F, faites demi-tour. Passez accroupi après avoir activé la barrière de gaz.' },
       'level-8-cave-system-walkthrough': { role: 'Les femelles reposent sur les murs et plafonds des grottes étroites.', avoidance: 'Accroupissez-vous, ne les éclairez pas directement et franchissez les passages un par un.' },
     },
     partygoer: {
@@ -372,7 +372,7 @@ const localizedAppearanceCopy: Record<Exclude<Locale, 'en'>, Record<string, Reco
       'level-9-suburbs-and-lab-walkthrough': { role: 'En el Nivel 9 pueden aparecer pequeñas Deathmoths inofensivas como fuente opcional de Moth Jelly.', avoidance: 'Usad el spray solo si necesitáis el recurso; no hace falta esconderse.' },
     },
     'female-deathmoth': {
-      'level-5-the-boiler-room-Walkthrough': { role: 'Las hembras y su colmena convierten la temperatura en la alerta principal; las válvulas rojas liberan gas insecticida.', avoidance: '125 °F avisa de una hembra cercana; a 140 °F, dad la vuelta. Cruzad agachados tras activar la barrera de gas.' },
+      'level-5-the-boiler-room-Walkthrough': { role: 'Las hembras y su colmena convierten la temperatura en la alerta principal; las válvulas rojas liberan gas insecticida.', avoidance: '120–133 °F avisan de una hembra cercana; a 140 °F, dad la vuelta. Cruzad agachados tras activar la barrera de gas.' },
       'level-8-cave-system-walkthrough': { role: 'Las hembras descansan en las paredes y techos de las cuevas estrechas.', avoidance: 'Agachaos, no las iluminéis directamente y cruzad los pasos de uno en uno.' },
     },
     partygoer: {

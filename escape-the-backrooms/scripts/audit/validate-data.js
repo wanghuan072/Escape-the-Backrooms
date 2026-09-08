@@ -118,11 +118,15 @@ function resolvesFeaturedLevel(featured, localizedLevels, englishLevels) {
 
 async function main() {
   const data = { levels: {}, maps: {} }
+  const levelEnhancementsModule = await import('../../src/content/level-editorial-enhancements.js')
 
   for (const type of ['levels', 'maps']) {
     for (const locale of locales) {
       const contentModule = await import(`../../src/content/${type}/${locale}.js`)
-      data[type][locale] = contentModule.default || []
+      const entries = contentModule.default || []
+      data[type][locale] = type === 'levels'
+        ? entries.map((entry) => levelEnhancementsModule.enhanceLevelEntry(locale, entry))
+        : entries
       validateEntries(type, locale, data[type][locale])
     }
   }
@@ -290,6 +294,7 @@ async function main() {
   }
 
   const entitiesModule = await import('../../src/content/wiki/entities.js')
+  const entityPageUpdatesModule = await import('../../src/content/entity-page-updates.js')
   const entities = entitiesModule.default || []
   if (entities.length === 0) addError('entities', 'no entity data')
   entities.forEach((entity, index) => {
@@ -301,6 +306,10 @@ async function main() {
       const imagePath = path.join(rootDir, 'public', reference.replace(/^\//, ''))
       if (!fs.existsSync(imagePath)) addError(scope, `missing image ${reference}`)
     })
+    const updatedAt = entityPageUpdatesModule.getEntityPageUpdatedAt(entity.addressBar)
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(updatedAt || '') || Number.isNaN(Date.parse(`${updatedAt}T00:00:00Z`))) {
+      addError(scope, 'missing or invalid entity page updated date')
+    }
   })
 
   if (errors.length) {

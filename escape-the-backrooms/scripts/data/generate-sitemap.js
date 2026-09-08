@@ -4,6 +4,7 @@ import path from 'path'
 import process from 'node:process'
 import { fileURLToPath } from 'url'
 import { getLevelPageUpdatedAt } from '../../src/content/level-page-updates.js'
+import { getEntityPageUpdatedAt } from '../../src/content/entity-page-updates.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -207,7 +208,13 @@ async function collectUrlEntries() {
     entities.forEach((entity) => {
       if (!entity?.addressBar) return
       const routePath = createLocalizedPath(`/entities/${entity.addressBar}`, locale)
-      entries.push({ loc: fullUrl(routePath), priority: 0.8, changefreq: 'monthly', hash: fingerprint(JSON.stringify({ type: 'entity', locale, entity, render: fingerprint(entityRenderSource) })) })
+      entries.push({
+        loc: fullUrl(routePath),
+        priority: 0.8,
+        changefreq: 'monthly',
+        lastmod: getEntityPageUpdatedAt(entity.addressBar),
+        hash: fingerprint(JSON.stringify({ type: 'entity', locale, entity, render: fingerprint(entityRenderSource) })),
+      })
     })
   })
 

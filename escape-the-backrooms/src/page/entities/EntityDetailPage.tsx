@@ -4,6 +4,7 @@ import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import { localizedPath, translate } from '@/lib/i18n/messages'
 import { JsonLd, pageJsonLd } from '@/seo/json-ld'
 import { siteConfig } from '@/config/site'
+import { getEntityPageUpdatedAt } from '@/content/entity-page-updates.js'
 import { getEntityAppearances, getEntityRecord, getRelatedEntityRecords } from '@/lib/data/entity-relations'
 import { additionalEntityGuides } from '@/lib/data/additional-entity-guides'
 import { getLevels } from '@/lib/data/levels'
@@ -151,6 +152,7 @@ export default function EntityDetailPage({ locale, entity }: { locale: Locale; e
     level: levels.find((level) => level.addressBar === appearance.levelSlug),
   })) ?? []
   const path = `/entities/${entity.addressBar}`
+  const contentUpdatedAt = getEntityPageUpdatedAt(entity.addressBar)
   const facts = [{ label: translate(locale, 'entityDetailPage.species'), value: entity.entityInfo?.species || entity.species || '—' }, { label: translate(locale, 'entityDetailPage.firstEncounter'), value: entity.entityInfo?.firstAppearsIn || entity.firstAppearsIn || '—' }]
   const heading = (key: string, fallback: string) => guide?.headings[key] || fallback
   const sectionAnchors: EntitySectionAnchor[] = [
@@ -167,7 +169,7 @@ export default function EntityDetailPage({ locale, entity }: { locale: Locale; e
   sectionAnchors.push({ id: 'after-action', label: translate(locale, 'entityDetailPage.anchorAfter') })
   if (record?.modules.includes('relatedEntities') && relatedEntities.length > 0) sectionAnchors.push({ id: 'related-entities', label: translate(locale, 'entityDetailPage.anchorRelated') })
   if (record?.modules.includes('faq')) sectionAnchors.push({ id: 'entity-questions', label: translate(locale, 'entityDetailPage.anchorFaq') })
-  return <><JsonLd data={pageJsonLd(entity.seo?.title || entity.title, entity.seo?.description || entity.description, `${siteConfig.url}${localizedPath(path, locale)}`, 'Article', { authorName: 'Frontline Pathfinder', authorUrl: siteConfig.social.youtube })} /><div className="entity-detail-view">
+  return <><JsonLd data={pageJsonLd(entity.seo?.title || entity.title, entity.seo?.description || entity.description, `${siteConfig.url}${localizedPath(path, locale)}`, 'Article', { authorName: 'Frontline Pathfinder', authorUrl: siteConfig.social.youtube, dateModified: contentUpdatedAt })} /><div className="entity-detail-view">
     <section className="page-hero entity-detail-hero"><div className="container"><div className="entity-detail-header"><div className="entity-header-copy"><span className={`entity-threat ${entity.dangerClass ?? ''}`}>{entity.dangerLevel}</span><h1 className="page-title">{entityPageHeading(locale, entity.title)}</h1>{record?.aliases.length ? <p className="entity-aliases">{translate(locale, 'entityDetailPage.alsoKnownAs')}: {record.aliases.join(' · ')}</p> : null}<p className="page-subtitle">{locale === 'en' ? guide?.thesis || entity.description : entity.description}</p><dl className="entity-facts">{facts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl></div><figure className="entity-hero-image">{entity.imageUrl && <IntrinsicImage src={entity.imageUrl} alt={entity.imageAlt || entity.title} priority sizes="(max-width: 820px) 100vw, 38vw" />}{entity.imageSourceUrl && <figcaption><a href={entity.imageSourceUrl} target="_blank" rel="noopener noreferrer">{translate(locale, 'entityDetailPage.imageSource')} ↗</a></figcaption>}</figure></div></div></section>
     <AdPlacement />
     <main className="entity-detail-content"><div className="container"><div className="entity-content-layout">{guide && <article className="entity-playbook">
