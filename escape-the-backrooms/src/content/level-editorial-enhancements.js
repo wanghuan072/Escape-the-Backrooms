@@ -6,6 +6,9 @@
 const editorialEnhancements = {
   en: {
     1: {
+      description:
+        'Level 0 becomes manageable once you route the four ladder fragments in one controlled loop, then use the key and pit crossing without losing the team’s landmarks.',
+      seoTitle: 'Escape the Backrooms Level 0 Walkthrough: Ladder Locations & Map',
       headings: [
         ['Escape the Backrooms Level 0 Text Walkthrough', 'Find the Ladder, Key, and Level 1 Exit'],
         [
@@ -26,6 +29,9 @@ const editorialEnhancements = {
       `,
     },
     2: {
+      description:
+        'Read the garage’s changing car colours, coordinate four keys at the central locks, and keep a closable door ready when Skin-Stealers enter the search.',
+      seoTitle: 'Escape the Backrooms Level 1 Walkthrough: The Habitable Zone Guide',
       headings: [
         ['Step-by-Step Text Guide', 'Clear the Garage, Basement, and Final Tunnel'],
         ['Tips & Tricks for The Habitable Zone', 'What Usually Ends a Level 1 Run'],
@@ -43,6 +49,9 @@ const editorialEnhancements = {
       `,
     },
     3: {
+      description:
+        'Move through Pipe Dreams by saving stamina before the steam, then take the left-side gated opening when the Smiler chase begins.',
+      seoTitle: 'Escape the Backrooms Level 2 Walkthrough: Pipe Dreams Guide',
       headings: [
         ['Step-by-Step Text Guide', 'Manage Stamina, Steam, and the Smiler Chase'],
         ['Tips & Tricks for Pipe Dreams', 'Pipe Dreams Chase Checks'],
@@ -60,6 +69,9 @@ const editorialEnhancements = {
       `,
     },
     4: {
+      description:
+        'Power the Electrical Station one three-breaker zone at a time, keep clear of live puddles, and save the flashlight response for a committed Hound.',
+      seoTitle: 'Escape the Backrooms Level 3 Walkthrough: The Electrical Station Guide',
       headings: [
         ['Step-by-Step Text Guide', 'Power All Three Electrical Station Zones'],
         ['Tips & Tricks for Level 3', 'Hound, Breaker, and Puddle Failure Points'],
@@ -77,6 +89,9 @@ const editorialEnhancements = {
       `,
     },
     5: {
+      description:
+        'Solve Level 4 by counting each office prop carefully, moving with the camera sweep, and resetting the security route instead of forcing a locked exit.',
+      seoTitle: 'Escape the Backrooms Level 4 Walkthrough: The Abandoned Office Guide',
       headings: [
         ['Step-by-Step Text Guide', 'Solve the Office Puzzles and Camera Hall'],
         ['Tips & Tricks for Level 4', 'Level 4 Counting and Camera Mistakes'],
@@ -195,6 +210,9 @@ const editorialEnhancements = {
   },
   de: {
     1: {
+      description:
+        'Level 0 bleibt überschaubar, wenn ihr die vier Leiterteile in einer festen Runde sucht und Schlüssel sowie Grube an klaren Treffpunkten erledigt.',
+      seoTitle: 'Escape the Backrooms: Level 0 Walkthrough – Leiter-Fundorte & Karte',
       headings: [
         [
           'Escape the Backrooms Level 0 Text-Walkthrough',
@@ -208,6 +226,9 @@ const editorialEnhancements = {
       extra: `<h2>So behalten wir die Route in Level 0 unter Kontrolle</h2><p>Die gelben Räume wirken nur dann zufällig, wenn man mitten in der Suche ständig die Regel wechselt. Wir laufen zuerst eine vollständige Runde um den Leiterbereich, prüfen den Boden hinter jeder Trennwand und erweitern die Runde erst, wenn alle vier Teile gezählt sind. So bleibt die reparierte Leiter der feste Treffpunkt der Gruppe.</p><ul><li><strong>Wenn Bacteria klopft:</strong> Das Geräusch ist eine Warnung, kein Hinweis. Bleibt in Bewegung, nehmt mehrere Ecken hintereinander und vermeidet lange gerade Flure mit freier Sichtlinie.</li><li><strong>Wenn ein Leiterteil fehlt:</strong> Prüft die kurzen Trennwände und wiederholt die letzte vollständige Runde. Vier Spieler in vier unbekannten Gängen machen die Suche schwerer nachvollziehbar.</li><li><strong>Wenn jemand in die Grube fällt:</strong> Die übrigen Spieler wiederholen den Sprung nicht. Wer oben angekommen ist, lässt das Seil herab; sonst folgt ihr unten den Pfeilen zum Rückweg.</li></ul><h3>Routencheck für die aktuelle Version</h3><p>Ältere Videos zeigen Wand-Clips und Sprünge, die heute nicht mehr zuverlässig funktionieren. Wir nehmen den schmalen Übergang einzeln, halten die Kamera ruhig und warten, bis die Landefläche frei ist. Ein alter Kollisionsfehler spart weniger Zeit als eine erneute Suche nach allen Leiterteilen kostet.</p>`,
     },
     2: {
+      description:
+        'Lest die wechselnden Autofarben in der Garage, koordiniert die vier Schlösser und haltet bei Skin-Stealern immer einen abschließbaren Raum bereit.',
+      seoTitle: 'Escape the Backrooms: Level 1 Walkthrough – Die bewohnbare Zone',
       headings: [
         ['Schritt-für-Schritt Text-Guide', 'Garage, Keller und finalen Tunnel abschließen'],
         ['Tips & Tricks für The Habitable Zone', 'Woran ein Lauf durch Level 1 meist scheitert'],
@@ -215,6 +236,9 @@ const editorialEnhancements = {
       extra: `<h2>Die Garage ist vor allem ein Informationsrätsel</h2><p>Lest die Autofarben in Reihenfolge ab und wiederholt sie einmal, bevor jemand das Tastenfeld benutzt. Die Folge wechselt von Lauf zu Lauf; ein Code aus einem Video ist keine Lösung. Dasselbe gilt für die vier Schlüssel: Nennt den Fundraum und bringt alle Schlüssel zum zentralen Schloss, bevor jemand zu drehen beginnt.</p><ul><li><strong>Skin-Stealer auf der Suchroute:</strong> Behält einen abschließbaren Nebenraum im Rücken. Lockt ihn durch die Tür, verlasst den Raum und schließt ab, statt ihn durch alle Fundorte zu ziehen.</li><li><strong>Das Licht fällt aus:</strong> Brecht die Suche ab und lauft sofort in einen dauerhaft beleuchteten Seitengang. Die dunklen Fahrspuren gehören dann den Smilern.</li><li><strong>Vier Schlösser im Koop:</strong> Stellt je einen Spieler an ein Schloss und zählt herunter. Bei zu großem Abstand setzt ihr ruhig zurück, statt fertige Schlösser weiterzudrehen.</li></ul><h3>Plant den Keller nicht um einen Grafikfehler herum</h3><p>Niedrige Sichtweite hat in einigen Builds Türen oder Wände sichtbar gemacht, ist aber keine verlässliche Route. Nehmt die Taschenlampe, nutzt Rampe und Etagen als Orientierung und wartet an der letzten bekannten Tür, falls sich die Gruppe trennt. Das optionale Hub-Terminal kann später gelöst werden; für den Ausgang ist es nicht nötig.</p>`,
     },
     3: {
+      description:
+        'Teilt euch die Ausdauer vor den Dampfröhren ein und nehmt in der Smiler-Jagd die vergitterte Öffnung auf der linken Seite.',
+      seoTitle: 'Escape the Backrooms: Level 2 Walkthrough – Pipe Dreams',
       headings: [
         ['Schritt-für-Schritt Text-Guide', 'Ausdauer, Dampf und Smiler-Jagd meistern'],
         ['Tipps & Tricks für Pipe Dreams', 'Kontrollpunkte für die Pipe-Dreams-Jagd'],
@@ -222,6 +246,9 @@ const editorialEnhancements = {
       extra: `<h2>Die Jagd wird entschieden, bevor der Smiler erscheint</h2><p>Beim ersten Besuch folgt ihr den Markierungen zur Station und nutzt den ruhigen Abschnitt für einen sauberen Laufrhythmus. Run-Jumping schont Ausdauer, aber kontrollierte Lenkung ist wichtiger. Nehmt vor dem Ende des dunklen Bereichs die Taschenlampe links mit und wartet bei jedem Dampfstoß auf die Pause.</p><ul><li><strong>Startsignal:</strong> Sobald die Figur reagiert und der Smiler zu hören ist, schaut ihr nicht mehr zurück. Haltet Sprint und die nächste Öffnung in der Bildschirmmitte.</li><li><strong>Ausgangssignal:</strong> Gegen Ende liegt der sichere Weg in der offenen, vergitterten Lücke links. Wer daran vorbeiläuft, landet in der Sackgasse.</li><li><strong>Mehrspieler-Auslöser:</strong> Sammelt euch, bevor der letzte Spieler die Jagdschwelle überquert. Der Läufer vorne kann niemanden retten, der noch Gegenstände sucht.</li></ul><h3>Wenn die Gruppe auseinandergezogen wird</h3><p>Ruft nur das nächste Hindernis und die Seite des Ausgangs. Lange Anweisungen kommen im engen Tunnel zu spät. Fällt jemand, beendet der Rest zuerst die Jagd; ein Umdrehen bringt die ganze Gruppe in die Sichtlinie des Smilers.</p>`,
     },
     4: {
+      description:
+        'Versorgt die Electrical Station Abschnitt für Abschnitt, meidet Strompfützen und nutzt die Taschenlampe erst, wenn ein Hound wirklich angreift.',
+      seoTitle: 'Escape the Backrooms: Level 3 Walkthrough – Electrical Station',
       headings: [
         [
           'Schritt-für-Schritt Text-Guide',
@@ -232,6 +259,9 @@ const editorialEnhancements = {
       extra: `<h2>Die Neun-Lichter-Tafel sind drei getrennte Suchläufe</h2><p>Die Station wird übersichtlich, wenn ihr sie nicht als ein einziges Labyrinth behandelt. Die neun Sicherungskästen verteilen sich auf East Substation, West Substation und Generator. Schließt jeweils drei Lichter ab, prüft die Tafel und nutzt das neue Tor als Grenze für den nächsten Abschnitt.</p><ul><li><strong>Hound am Schalter:</strong> Blendet ihn erst beim Angriff. Das kurze Fenster reicht zum Betätigen oder zum Rückzug hinter eine geschlossene Tür. Berührt keinen betäubten Hound.</li><li><strong>Schwierigkeitsgrad:</strong> Auf Easy sind mehrere Blendungen verzeihlicher. Auf Hard oder Nightmare plant ihr so, als gäbe es nur eine sofortige Chance, und wählt vorher die Fluchttür.</li><li><strong>Generatorboden:</strong> Leuchtende Strompfützen sind tödliche Hindernisse. Sucht zuerst den trockenen Rand und geht nicht rückwärts hinein, während ihr einen Hound beobachtet.</li></ul><h3>Saubere Aufgabenverteilung im Koop</h3><p>Teilt benachbarte Räume auf, nicht ganze Zonen. Einer bedient den Kasten, einer sichert den Zugang, die anderen prüfen zwei Räume und treffen sich am letzten Tor. Jede Meldung nennt Raum und aktuellen Lichtstand; „Ich habe einen“ hilft beim fehlenden neunten Licht nicht.</p>`,
     },
     5: {
+      description:
+        'Zählt die Bürogegenstände sorgfältig, bewegt euch im Rhythmus der Kameras und setzt die Sicherheitsroute zurück, statt einen verschlossenen Ausgang zu erzwingen.',
+      seoTitle: 'Escape the Backrooms: Level 4 Walkthrough – Das verlassene Büro',
       headings: [
         ['Schritt-für-Schritt Text-Guide', 'Bürorätsel und Kameragang lösen'],
         ['Tipps & Tricks für Level 4', 'Zählfehler und Kameraalarme in Level 4'],
@@ -291,6 +321,9 @@ const editorialEnhancements = {
   },
   fr: {
     1: {
+      description:
+        'Le niveau 0 devient lisible lorsque vous cherchez les quatre morceaux d’échelle dans une boucle fixe, puis gérez clé et fosse avec des repères communs.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 0 — échelle et carte',
       headings: [
         [
           'Solution Textuelle Escape the Backrooms Niveau 0',
@@ -304,6 +337,9 @@ const editorialEnhancements = {
       extra: `<h2>Comment nous gardons le contrôle sur le niveau 0</h2><p>Les salles jaunes paraissent aléatoires dès qu’on change de méthode en cours de route. Nous terminons d’abord une boucle autour de l’échelle, vérifions le sol derrière chaque cloison, puis élargissons la recherche seulement après avoir compté les quatre morceaux. L’échelle réparée devient ainsi le repère fixe de l’équipe.</p><ul><li><strong>Si Bacteria se met à frapper :</strong> ce bruit est un avertissement, pas un indice. Continuez d’avancer, enchaînez les angles et évitez les longs couloirs où il conserve la ligne de vue.</li><li><strong>S’il manque un morceau :</strong> revérifiez les petites cloisons et refaites la dernière boucle complète. Quatre joueurs partis dans quatre branches rendent la recherche impossible à reconstruire.</li><li><strong>Si quelqu’un tombe dans la fosse :</strong> les autres ne répètent pas la même traversée. Un joueur déjà en haut peut descendre la corde ; sinon, suivez les flèches en contrebas.</li></ul><h3>Vérification pour la version actuelle</h3><p>D’anciennes vidéos montrent des passages dans les murs et des sauts devenus irréguliers. Nous traversons le passage étroit un par un, caméra stable, en attendant que l’arrivée soit libre. Un vieux bug de collision ne fait pas gagner le temps perdu à rechercher l’échelle.</p>`,
     },
     2: {
+      description:
+        'Lisez les couleurs variables des voitures, coordonnez les quatre serrures centrales et gardez une porte refermable en tête face aux Skin-Stealers.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 1 — zone habitable',
       headings: [
         ['Guide Textuel Étape par Étape', 'Traverser le parking, le sous-sol et le tunnel final'],
         [
@@ -314,6 +350,9 @@ const editorialEnhancements = {
       extra: `<h2>Le parking est surtout un problème d’information</h2><p>Relevez les couleurs des voitures dans l’ordre et répétez-les avant de toucher au clavier. La suite change à chaque partie : le code d’une vidéo ne résout pas votre salle. Pour les quatre clés, annoncez la pièce du butin et rapportez tout devant la porte centrale avant de tourner une serrure.</p><ul><li><strong>Skin-Stealer pendant la fouille :</strong> gardez une salle qui ferme derrière vous. Attirez-le à l’intérieur, ressortez et fermez la porte au lieu de le promener entre les clés.</li><li><strong>Extinction des lumières :</strong> arrêtez de fouiller et rejoignez immédiatement un couloir latéral éclairé ; les Smilers contrôlent les voies sombres.</li><li><strong>Porte à quatre clés :</strong> placez un joueur devant chaque serrure et faites un compte à rebours. Si le timing échoue, reprenez calmement.</li></ul><h3>Ne construisez pas l’itinéraire sur un bug graphique</h3><p>Une faible distance d’affichage a parfois révélé des portes, mais ce raccourci visuel n’est pas fiable. Gardez la lampe, utilisez la rampe et les étages comme repères, et attendez à la dernière porte connue si le groupe se sépare. Le terminal du Hub reste optionnel.</p>`,
     },
     3: {
+      description:
+        'Préservez votre endurance avant les jets de vapeur, puis prenez l’ouverture grillagée à gauche dès que la poursuite du Smiler commence.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 2 — Pipe Dreams',
       headings: [
         ['Guide Textuel Étape par Étape', 'Gérer l’endurance, la vapeur et la poursuite du Smiler'],
         [
@@ -324,6 +363,9 @@ const editorialEnhancements = {
       extra: `<h2>La poursuite se gagne avant l’apparition du Smiler</h2><p>Lors du premier passage, suivez les indications vers la Station et profitez de la zone calme pour stabiliser vos mouvements. Le run-jump économise l’endurance, mais une trajectoire propre compte davantage. Prenez la lampe à gauche avant de quitter l’obscurité et attendez la fin de chaque jet de vapeur.</p><ul><li><strong>Signal de départ :</strong> dès que le personnage réagit et que le Smiler s’entend, ne vous retournez plus. Sprintez en gardant la prochaine ouverture au centre.</li><li><strong>Signal de sortie :</strong> près de la fin, prenez la brèche grillagée ouverte à gauche. La dépasser mène au cul-de-sac.</li><li><strong>Déclenchement en multijoueur :</strong> regroupez-vous avant que le dernier joueur franchisse le seuil de la poursuite.</li></ul><h3>Si le groupe s’étire</h3><p>Annoncez seulement le prochain obstacle et le côté de la sortie. Les longues explications arrivent trop tard dans ce tunnel. Si quelqu’un tombe, terminez d’abord la poursuite ; faire demi-tour expose toute l’équipe.</p>`,
     },
     4: {
+      description:
+        'Alimentez l’Electrical Station zone par zone, évitez les flaques sous tension et gardez la lampe pour un Hound qui s’engage réellement.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 3 — Electrical Station',
       headings: [
         ['Guide Textuel Étape par Étape', 'Alimenter les trois zones de la centrale électrique'],
         [
@@ -334,6 +376,9 @@ const editorialEnhancements = {
       extra: `<h2>Les neuf voyants correspondent à trois recherches distinctes</h2><p>La centrale devient lisible lorsqu’on cesse de la traiter comme un seul labyrinthe. Les neuf boîtes sont réparties entre East Substation, West Substation et Generator. Terminez un groupe de trois, vérifiez le panneau et utilisez la grille ouverte comme frontière suivante.</p><ul><li><strong>Hound devant un boîtier :</strong> aveuglez-le au moment de la charge, puis utilisez ces secondes pour finir ou vous replier derrière une porte. Ne touchez pas un Hound étourdi.</li><li><strong>La difficulté compte :</strong> Easy autorise davantage d’erreurs. En Hard ou Nightmare, prévoyez une seule neutralisation immédiate et choisissez d’abord la porte de repli.</li><li><strong>Sol du Generator :</strong> contournez les flaques lumineuses avant de lire les fils et ne reculez jamais dedans en surveillant un Hound.</li></ul><h3>Une répartition plus propre en coopération</h3><p>Partagez les salles voisines, pas des zones entières. Un joueur manipule, un autre garde l’accès et les autres contrôlent deux pièces avant le regroupement. Chaque annonce doit donner la salle et le nombre de voyants.</p>`,
     },
     5: {
+      description:
+        'Comptez chaque élément du bureau, avancez avec le balayage des caméras et réinitialisez la sécurité au lieu de forcer une sortie verrouillée.',
+      seoTitle: 'Escape the Backrooms : guide du niveau 4 — bureau abandonné',
       headings: [
         [
           'Guide Textuel Étape par Étape',
@@ -403,6 +448,9 @@ const editorialEnhancements = {
   },
   es: {
     1: {
+      description:
+        'El nivel 0 se vuelve manejable al buscar los cuatro fragmentos de escalera en un circuito fijo y resolver llave y foso con referencias compartidas.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 0 — escalera y mapa',
       headings: [
         [
           'Escape the Backrooms Tutorial de texto de nivel 0',
@@ -416,6 +464,9 @@ const editorialEnhancements = {
       extra: `<h2>Cómo mantenemos bajo control la ruta del nivel 0</h2><p>Las salas amarillas solo parecen aleatorias cuando cambiamos de método a mitad de la búsqueda. Primero cerramos una vuelta alrededor de la escalera, miramos detrás de cada separador y ampliamos el recorrido después de contar los cuatro fragmentos. Así, la escalera reparada sigue siendo el punto fijo del equipo.</p><ul><li><strong>Si Bacteria empieza a golpear:</strong> el sonido es un aviso, no una pista. Seguid avanzando, enlazad varias esquinas y evitad pasillos largos donde mantenga la línea de visión.</li><li><strong>Si falta un fragmento:</strong> revisad los separadores bajos y repetid la última vuelta completa. Mandar a cuatro personas por cuatro ramales hace imposible reconstruir la búsqueda.</li><li><strong>Si alguien cae al pozo:</strong> los demás no repiten el cruce fallido. Quien ya esté arriba puede bajar la cuerda; si nadie ha cruzado, seguid las flechas de la ruta inferior.</li></ul><h3>Comprobación para la versión actual</h3><p>Los vídeos antiguos muestran saltos y clips de pared que ya no son constantes. Cruzamos de uno en uno, con la cámara estable, y esperamos a que quede libre la llegada. Un viejo fallo de colisión no compensa reiniciar la búsqueda de la escalera.</p>`,
     },
     2: {
+      description:
+        'Leed los colores cambiantes de los coches, coordinad las cuatro cerraduras centrales y dejad una puerta cerrable preparada ante los Skin-Stealers.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 1 — zona habitable',
       headings: [
         ['Guía de texto paso a paso', 'Superar el garaje, el sótano y el túnel final'],
         [
@@ -426,6 +477,9 @@ const editorialEnhancements = {
       extra: `<h2>El garaje es, sobre todo, un problema de información</h2><p>Leed los colores de los coches en orden y repetidlos antes de tocar el teclado. La secuencia cambia entre partidas; el código de un vídeo no resuelve vuestra sala. Con las cuatro llaves hacemos lo mismo: anunciad la habitación y llevadlas a la puerta central antes de girar ninguna.</p><ul><li><strong>Skin-Stealer durante la búsqueda:</strong> mantened a la espalda una sala que se pueda cerrar. Atraedlo dentro, salid y cerrad en vez de llevarlo por todas las llaves.</li><li><strong>Se apagan las luces:</strong> dejad de registrar objetos y corred a un pasillo lateral iluminado; los Smilers dominan las calles oscuras.</li><li><strong>Puerta de cuatro llaves:</strong> colocad a una persona en cada cerradura y haced una cuenta atrás. Si falla el ritmo, reiniciad con calma.</li></ul><h3>No baséis el sótano en un fallo gráfico</h3><p>Una distancia de dibujado baja ha mostrado puertas en algunas versiones, pero no es una ruta fiable. Llevad la linterna, usad la rampa y las plantas como referencias y esperad en la última puerta conocida si el grupo se separa. El terminal del Hub es opcional.</p>`,
     },
     3: {
+      description:
+        'Guardad resistencia antes de los chorros de vapor y tomad la abertura con reja de la izquierda cuando empiece la persecución del Smiler.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 2 — Pipe Dreams',
       headings: [
         [
           'Guía de texto paso a paso',
@@ -439,6 +493,9 @@ const editorialEnhancements = {
       extra: `<h2>La persecución se gana antes de que aparezca el Smiler</h2><p>En la primera visita, seguid las señales hacia la Station y aprovechad el tramo tranquilo para estabilizar el movimiento. Correr y saltar conserva resistencia, pero dirigir bien importa más. Recoged la linterna de la izquierda antes de salir de la zona oscura y esperad a que termine cada ráfaga de vapor.</p><ul><li><strong>Señal de inicio:</strong> cuando reaccione el personaje y se oiga al Smiler, dejad de mirar atrás. Mantened el sprint y la próxima abertura centrada.</li><li><strong>Señal de salida:</strong> cerca del final, tomad la abertura enrejada de la izquierda. Pasarla de largo conduce al callejón sin salida.</li><li><strong>Activación multijugador:</strong> reuníos antes de que la última persona cruce el umbral de la persecución.</li></ul><h3>Si el grupo se estira</h3><p>Avisad solo del siguiente obstáculo y del lado de la salida. Las explicaciones largas llegan tarde en el túnel. Si alguien cae, terminad primero la persecución; volver expone a todo el grupo.</p>`,
     },
     4: {
+      description:
+        'Activad la Electrical Station por zonas, evitad los charcos eléctricos y reservad la linterna para cuando un Hound se comprometa a atacar.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 3 — Electrical Station',
       headings: [
         ['Guía de texto paso a paso', 'Dar corriente a las tres zonas de la Central Eléctrica'],
         [
@@ -449,6 +506,9 @@ const editorialEnhancements = {
       extra: `<h2>El panel de nueve luces son tres búsquedas separadas</h2><p>La estación se entiende mejor si no se trata como un único laberinto. Las nueve cajas se reparten entre East Substation, West Substation y Generator. Completad tres luces, confirmad el panel y usad la nueva puerta como límite del siguiente tramo.</p><ul><li><strong>Hound junto a una caja:</strong> cegadlo cuando cargue y usad esos segundos para terminar o retiraros tras una puerta. No toquéis a un Hound aturdido.</li><li><strong>La dificultad importa:</strong> Easy permite más errores. En Hard o Nightmare, contad con una única oportunidad inmediata y elegid antes la puerta de huida.</li><li><strong>Suelo del Generator:</strong> bordeando los charcos eléctricos antes de leer los cables evitaréis retroceder hacia uno mientras vigiláis al Hound.</li></ul><h3>Un reparto más limpio en cooperativo</h3><p>Dividid habitaciones contiguas, no zonas completas. Una persona usa la caja, otra vigila el acceso y las demás revisan dos salas antes de reagruparse. Cada aviso debe incluir sala y número de luces.</p>`,
     },
     5: {
+      description:
+        'Contad cada objeto de la oficina, avanzad con el barrido de las cámaras y reiniciad seguridad en vez de forzar una salida bloqueada.',
+      seoTitle: 'Escape the Backrooms: guía del nivel 4 — oficina abandonada',
       headings: [
         ['Guía de texto paso a paso', 'Resolver las pruebas de la oficina y el pasillo de cámaras'],
         ['Consejos y trucos para el nivel 4', 'Errores de recuento y alarmas del nivel 4'],
@@ -533,7 +593,11 @@ export function enhanceLevelDetails(locale, entry) {
     (html, [from, to]) => (html.includes(from) ? html.replace(from, to) : html),
     updatedHeadings,
   )
-  return enhancement.extra ? `${updated}\n${enhancement.extra}` : updated
+  const withUpdatedIntro =
+    enhancement.description && !enhancement.fullHtml
+      ? updated.replace(/^\s*<p\b[^>]*>[\s\S]*?<\/p>/i, `<p>${enhancement.description}</p>`)
+      : updated
+  return enhancement.extra ? `${withUpdatedIntro}\n${enhancement.extra}` : withUpdatedIntro
 }
 
 export function enhanceLevelEntry(locale, entry) {
@@ -542,6 +606,9 @@ export function enhanceLevelEntry(locale, entry) {
     ...entry,
     detailsHtml: enhanceLevelDetails(locale, entry),
     ...(enhancement?.description ? { description: enhancement.description } : {}),
+    ...(enhancement?.seoTitle && entry.seo
+      ? { seo: { ...entry.seo, title: enhancement.seoTitle } }
+      : {}),
     ...(enhancement?.sideBarObjectives && entry.sideBarInfo
       ? {
           sideBarInfo: {
