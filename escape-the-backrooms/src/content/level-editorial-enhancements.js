@@ -125,6 +125,7 @@ const editorialEnhancements = {
         'Read the looping Beverly Room corridor as a mailbox route, confirm the ceiling digits before entering the code, and keep a closed room ready whenever the Hound takes the hall.',
       seoTitle: 'Escape the Backrooms Level 5.5 Walkthrough: The Beverly Room Guide',
       headings: [],
+      fullHtml: `<p>The Beverly Room is a short loop built around one readable clue, not a set of reusable Terror Hotel passwords. Check the open mailbox, follow its room number, and read the digits written on that room’s ceiling before returning to the locked exit.</p><h2>Escape the Backrooms: Beverly Room Video</h2><iframe src="https://www.youtube.com/embed/7eDAm964Cv4" allowfullscreen></iframe><h2>Read the Mailbox Before Running the Loop</h2><p>At the elevator, find the mailbox that is open or highlighted and call out its room number. The corridor loops, so the numbers on the doors are enough to keep your bearings; do not treat Room 235 or the Level 5 Hotel code list as Beverly Room clues.</p><ul><li><strong>Find the marked room:</strong> follow the door numbers until they match the mailbox.</li><li><strong>Look up inside:</strong> the five digits are written on the ceiling for that run.</li><li><strong>Return to the exit:</strong> enter only the digits you found in this room.</li></ul><img src="/images/levels/level-07-01.webp" alt="Mailbox route in Escape the Backrooms Level 5.5 Beverly Room" /><h2>Keep the Hound Out of the Route</h2><p>Room 21 is the callout worth remembering. If the Hound takes the hall, do not try to creep beside it. Keep a guest-room door between you and the charge, close it after breaking line of sight, then resume from the last door number you confirmed.</p><ul><li><strong>In co-op:</strong> one player reads the mailbox and ceiling while the others hold the nearest closable room. Calling “Room 21” is more useful than everyone sprinting in a different direction.</li><li><strong>Flashlight:</strong> save it for a committed Hound approach, then use the brief opening to move into a room rather than chasing it down the corridor.</li></ul><h2>Common Beverly Room Mistakes</h2><p>The error we see most is carrying the Level 5 Hotel Room 235 numbers into this level. They belong to the Terror Hotel mailbox puzzle. Beverly Room gives its own mailbox destination and ceiling number, so read the local clue every run.</p>`,
     },
     8: {
       description:
@@ -132,6 +133,10 @@ const editorialEnhancements = {
       headings: [
         ['Step-by-Step Text Guide', 'Read the Boiler Room Before Choosing a Door'],
         ['Tips & Tricks for The Boiler Room', 'Death Moth Warnings and Exit Checks'],
+      ],
+      replacements: [
+        ['<li><strong>Action:</strong> Open the door marked "EXIT" to leave the Boiler Room and proceed to Level 6: Lights Out.</li>', '<li><strong>Action:</strong> Open the door marked "EXIT" to leave the Boiler Room and enter the Pipe Run, where the route continues toward Level Fun.</li>'],
+        ["<li><strong>Save Insecticide:</strong> If you still have insecticide from the hotel, save it. It's more effective on small moths, not the giant ones here (use steam for them).</li>", '<li><strong>Use the valve, not steam:</strong> the red Bug Spray Valve releases insecticide gas and creates the safe opening for a blocked route. Save any carried spray for Male Deathmoths in the hotel.</li>'],
       ],
       extra: `
         <h2>Use Temperature as an Early Warning, Not a Compass</h2>
@@ -308,6 +313,7 @@ const editorialEnhancements = {
         'Behandelt den loopenden Beverly-Room-Flur als Briefkastenroute, prüft die Deckenziffern vor dem Code und haltet immer einen Raum mit Tür bereit, wenn der Hound im Flur ist.',
       seoTitle: 'Escape the Backrooms: Level-5.5-Walkthrough – The Beverly Room',
       headings: [],
+      fullHtml: `<p>Der Beverly Room ist eine Schleife mit einem lokalen Hinweis, keine Abkürzung über Terror-Hotel-Passwörter. Prüft den offenen Briefkasten, folgt seiner Zimmernummer und lest die Ziffern an der Decke dieses Zimmers, bevor ihr zum verschlossenen Ausgang zurückkehrt.</p><h2>Escape the Backrooms: Beverly-Room-Video</h2><iframe src="https://www.youtube.com/embed/7eDAm964Cv4" allowfullscreen></iframe><h2>Erst den Briefkasten lesen, dann die Schleife laufen</h2><p>Findet beim Aufzug den offenen oder markierten Briefkasten und sagt die Zimmernummer an. Die Flure bilden einen Ring; die Türnummern reichen zur Orientierung. Die Room-235-Codes aus dem Terror Hotel gehören nicht zu diesem Level.</p><ul><li><strong>Markiertes Zimmer suchen:</strong> folgt den Nummern bis zur Briefkastennummer.</li><li><strong>Nach oben schauen:</strong> die fünf Ziffern stehen für diesen Durchlauf an der Decke.</li><li><strong>Zum Ausgang zurück:</strong> gebt nur diese lokal gefundene Zahl ein.</li></ul><h2>Den Hound aus der Route halten</h2><p>Room 21 ist der wichtige Ruf. Nimmt der Hound den Flur, geht nicht neben ihm vorbei. Zieht euch durch eine Gästetür zurück, schließt sie nach dem Sichtverlust und setzt am letzten bestätigten Türschild fort.</p><h2>Häufiger Fehler</h2><p>Die drei Room-235-Nummern gelten für das Terror Hotel, nicht für den Beverly Room. Lest deshalb in jedem Durchlauf Briefkasten und Decke dieses Levels.</p>`,
     },
     8: {
       description:
@@ -315,6 +321,10 @@ const editorialEnhancements = {
       headings: [
         ['Schritt-für-Schritt Text-Guide', 'Den Boiler Room lesen, bevor ihr eine Tür wählt'],
         ['Tipps & Tricks für den Boiler Room', 'Warnzeichen der Death Moths und Ausgangskontrolle'],
+      ],
+      replacements: [
+        ['<li><strong>Aktion:</strong> Öffne die Tür mit dem "EXIT"-Schild, um den Boiler Room zu verlassen und zu Level 6: Lights Out zu gelangen.</li>', '<li><strong>Aktion:</strong> Die EXIT-Tür führt in den Pipe Run; von dort geht die Route weiter nach Level Fun.</li>'],
+        ['<li><strong>Insektizid sparen:</strong> Wenn du noch Insektizid vom Hotel hast, spare es. Es wirkt besser gegen kleine Motten, nicht gegen die großen hier (verwende Dampf für sie).</li>', '<li><strong>Ventil statt Dampf:</strong> Das rote Bug-Spray-Ventil setzt Insektizidgas frei und schafft ein sicheres Zeitfenster. Mitgenommenes Spray ist für Male Deathmoths im Hotel gedacht.</li>'],
       ],
       extra: `<h2>Die Temperatur warnt vor Gefahr, zeigt aber nicht den Ausgang</h2><p>Das Thermometer sagt, was in der Nähe ist, nicht welcher Flur richtig ist. Ein normaler Raum liegt bei etwa 72 °F. 120–133 °F weisen auf eine Female Deathmoth hin; 140 °F warnt vor einem Hive und bedeutet umkehren. Prüft zusätzlich Wände, Türfarbe und Ausgangsschild.</p><ul><li><strong>Das Bild wird unscharf:</strong> Senkt die Taschenlampe, geht in die Hocke und zieht euch zurück, bevor ihr lauft. Licht und unvorsichtige Bewegung können die Motten reizen.</li><li><strong>Blockierter Flur:</strong> Betätigt das rote Bug-Spray-Ventil, wartet auf die Gaswirkung und passiert erst in diesem Zeitfenster.</li><li><strong>Türprüfung:</strong> Nur die Tür mit beleuchtetem Exit-Schild ist der echte Ausgang. Violette oder unbeschriftete Türen können zum Hive führen.</li></ul><h3>Checkpoint-Regel im Koop</h3><p>Nutzt die drei Checkpoints als Treffpunkte, nicht als Einladung zum Aufteilen. Eine Person liest das Thermometer vor. Wird jemand gepackt, rennt die Gruppe nicht in den heißen Raum, sondern hält die letzte sichere Kreuzung.</p>`,
     },
@@ -451,6 +461,7 @@ const editorialEnhancements = {
         'Lisez le couloir en boucle de la Beverly Room comme une route de boîtes aux lettres, vérifiez les chiffres du plafond avant le code et gardez une porte fermable en tête lorsque le Hound est dans le couloir.',
       seoTitle: 'Escape the Backrooms : guide du niveau 5.5 — Beverly Room',
       headings: [],
+      fullHtml: `<p>La Beverly Room est une boucle avec son propre indice, pas un raccourci fondé sur les mots de passe du Terror Hotel. Vérifiez la boîte aux lettres ouverte, suivez son numéro de chambre et lisez les chiffres inscrits au plafond avant de revenir à la sortie verrouillée.</p><h2>Vidéo Escape the Backrooms : Beverly Room</h2><iframe src="https://www.youtube.com/embed/7eDAm964Cv4" allowfullscreen></iframe><h2>Lisez la boîte avant de parcourir la boucle</h2><p>Près de l’ascenseur, repérez la boîte ouverte ou marquée et annoncez le numéro. Les couloirs tournent en boucle : les numéros de portes suffisent. Les codes de la chambre 235 du Terror Hotel ne sont pas des indices de cette zone.</p><ul><li><strong>Trouvez la chambre indiquée :</strong> suivez les numéros jusqu’à celui de la boîte.</li><li><strong>Regardez le plafond :</strong> les cinq chiffres correspondent à cette partie.</li><li><strong>Revenez à la sortie :</strong> saisissez uniquement ce nombre local.</li></ul><h2>Gérer le Hound</h2><p>La chambre 21 est le repère à annoncer. Si le Hound prend le couloir, placez une porte de chambre entre vous et lui, fermez-la après avoir coupé la ligne de vue, puis reprenez au dernier numéro confirmé.</p><h2>Erreur fréquente</h2><p>Les trois numéros de la chambre 235 concernent le Terror Hotel, pas la Beverly Room. Lisez toujours la boîte et le plafond de la partie en cours.</p>`,
     },
     8: {
       description:
@@ -461,6 +472,10 @@ const editorialEnhancements = {
           'Conseils et astuces pour la Chaufferie',
           'Alertes des Death Moths et contrôle de la sortie',
         ],
+      ],
+      replacements: [
+        ['<li><strong>Action :</strong> Ouvrez la porte marquée "EXIT" pour quitter la chaufferie et passer au niveau 6 : Lights Out.</li>', '<li><strong>Action :</strong> La porte EXIT mène au Pipe Run, puis la route continue vers Level Fun.</li>'],
+        ['<li><strong>Économiser l’insecticide :</strong> Si vous avez encore de l’insecticide de l’hôtel, gardez-le. Il est plus efficace contre les petites mites, pas les grandes (utilisez la vapeur pour elles).</li>', '<li><strong>Valve, pas vapeur :</strong> la valve rouge de Bug Spray libère un gaz insecticide et crée la fenêtre de passage. Gardez le spray transporté pour les Male Deathmoths de l’hôtel.</li>'],
       ],
       extra: `<h2>La température avertit du danger, elle ne montre pas la sortie</h2><p>Le thermomètre indique ce qui se trouve à proximité. Une salle normale affiche environ 72 °F. Entre 120 et 133 °F, une Female Deathmoth est proche ; à 140 °F, la ruche impose de faire demi-tour. Vérifiez aussi la couleur des portes et le panneau Exit.</p><ul><li><strong>L’image devient floue :</strong> baissez la lampe, accroupissez-vous et reculez avant de courir. La lumière et les mouvements imprudents attirent les femelles.</li><li><strong>Couloir bloqué :</strong> actionnez la vanne rouge de Bug Spray, attendez l’effet du gaz, puis traversez pendant cette fenêtre.</li><li><strong>Contrôle des portes :</strong> seule la porte avec le panneau Exit éclairé mène dehors. Une porte violette ou sans panneau peut conduire à la ruche.</li></ul><h3>Discipline aux points de contrôle</h3><p>Servez-vous des trois checkpoints comme lieux de regroupement. Un seul joueur annonce le thermomètre. Si quelqu’un est emporté, les autres tiennent le dernier carrefour sûr au lieu de courir dans la zone chaude.</p>`,
     },
@@ -601,6 +616,7 @@ const editorialEnhancements = {
         'Leed el pasillo circular de Beverly Room como una ruta de buzones, confirmad los dígitos del techo antes del código y dejad una habitación con puerta lista cuando el Hound patrulle el pasillo.',
       seoTitle: 'Escape the Backrooms: guía del nivel 5.5 — Beverly Room',
       headings: [],
+      fullHtml: `<p>Beverly Room es un bucle con una pista propia, no un atajo basado en contraseñas de Terror Hotel. Revisad el buzón abierto, seguid su número de habitación y leed los dígitos del techo antes de volver a la salida cerrada.</p><h2>Vídeo de Escape the Backrooms: Beverly Room</h2><iframe src="https://www.youtube.com/embed/7eDAm964Cv4" allowfullscreen></iframe><h2>Leed el buzón antes de recorrer el bucle</h2><p>Junto al ascensor, localizad el buzón abierto o marcado y decid el número. Los pasillos forman un anillo y las puertas bastan para orientarse. Los códigos de la habitación 235 de Terror Hotel no son pistas de esta zona.</p><ul><li><strong>Buscad la habitación marcada:</strong> seguid los números hasta el del buzón.</li><li><strong>Mirad al techo:</strong> los cinco dígitos pertenecen a esa partida.</li><li><strong>Volved a la salida:</strong> introducid solo ese número local.</li></ul><h2>Cómo tratar al Hound</h2><p>La habitación 21 es el aviso importante. Si el Hound toma el pasillo, poned una puerta de habitación entre él y el grupo, cerradla al romper la línea de visión y retomad la ruta desde el último número confirmado.</p><h2>Error habitual</h2><p>Los tres números de la habitación 235 pertenecen a Terror Hotel, no a Beverly Room. Leed siempre el buzón y el techo de la partida actual.</p>`,
     },
     8: {
       description:
@@ -611,6 +627,10 @@ const editorialEnhancements = {
           'Consejos y trucos para la sala de calderas',
           'Avisos de las Death Moths y control de la salida',
         ],
+      ],
+      replacements: [
+        ['<li><strong>Acción:</strong> Abre la puerta marcada "EXIT" para salir de la Sala de Calderas y pasar al Nivel 6: Lights Out.</li>', '<li><strong>Acción:</strong> La puerta EXIT lleva a Pipe Run; desde allí la ruta sigue hacia Level Fun.</li>'],
+        ['<li><strong>Ahorra insecticida:</strong> Si todavía tienes insecticida del hotel, guárdalo. Es más efectivo con polillas pequeñas, no con las grandes (usa vapor con ellas).</li>', '<li><strong>Válvula, no vapor:</strong> la válvula roja de Bug Spray libera gas insecticida y abre la ventana segura. Reservad el spray que llevéis para las Male Deathmoths del hotel.</li>'],
       ],
       extra: `<h2>La temperatura avisa del peligro, no señala la salida</h2><p>El termómetro dice qué hay cerca. Una sala normal marca unos 72 °F. Entre 120 y 133 °F hay una Female Deathmoth próxima; 140 °F indica una colmena y toca dar la vuelta. Comprobad también el color de la puerta y el cartel Exit.</p><ul><li><strong>La imagen se vuelve borrosa:</strong> bajad la linterna, agachaos y retroceded antes de correr. La luz y el movimiento descuidado pueden atraer a las polillas.</li><li><strong>Pasillo bloqueado:</strong> activad la válvula roja de Bug Spray, esperad el efecto del gas y cruzad durante esa ventana.</li><li><strong>Control de puertas:</strong> solo la puerta con el cartel Exit iluminado es la salida. Las puertas moradas o sin señal pueden llevar a la colmena.</li></ul><h3>Disciplina en los puntos de control</h3><p>Usad los tres checkpoints para reuniros. Una persona canta la temperatura. Si una polilla atrapa a alguien, el resto mantiene el último cruce seguro en lugar de perseguirla hasta la sala caliente.</p>`,
     },
@@ -672,35 +692,10 @@ function replaceHeading(html, from, to) {
   return html.includes(heading) ? html.replace(heading, `<h2>${to}</h2>`) : html
 }
 
-// Older drafts included build-specific collision, framerate, and AI shortcuts.
-// They age badly and leave readers with a route that may no longer work, so keep
-// the published guides focused on the intended, repeatable route instead.
-const legacyShortcutPattern =
-  /glitch|\bexploit\b|game-breaking|god-tier|x-ray vision|röntgenblick|rayons?\s*x|rayos\s*x|wall[-\s]?phas|wand[-\s]?phas|travers(?:er|ée).*mur|atravesar.*pared|restart[-\s]?glitch|neu(?:start|starten)|redémarr|reinici|f11|windowed water|wasser[-\s]?clip|clip de agua|fps[-\s]?(?:hack|clip)|fence[-\s]?skip|zaun[-\s]?skip|rock[-\s]?climb/iu
-
-function removeLegacyShortcutCopy(html = '') {
-  const blocks = html
-    .replace(/<div\b[^>]*class=["'][^"']*exploit-box[^"']*["'][^>]*>[\s\S]*?<\/div>/giu, '')
-    .replace(/<(h2|h3)\b[^>]*>[\s\S]*?<\/\1>/giu, (heading) =>
-      legacyShortcutPattern.test(heading) ? '' : heading,
-    )
-    .replace(/<(p|li)\b[^>]*>[\s\S]*?<\/\1>/giu, (block) =>
-      legacyShortcutPattern.test(block) ? '' : block,
-    )
-
-  return blocks
-    .replace(new RegExp(legacyShortcutPattern.source, 'giu'), '')
-    .replace(/<ul>\s*<\/ul>/giu, '')
-    .replace(/\n{3,}/gu, '\n\n')
-}
-
-function cleanLegacyShortcutText(value = '') {
-  return value
-    .replace(new RegExp(legacyShortcutPattern.source, 'giu'), '')
-    .replace(/\s*[-–—,:]\s*(?=[-–—,:])/gu, '')
-    .replace(/\s{2,}/gu, ' ')
-    .trim()
-}
+// Do not remove words from arbitrary content at render time.  A former broad
+// keyword filter turned legitimate labels such as “Rock Climb” and “Glitches”
+// into empty quotes and “Skip es”.  Legacy material must instead be replaced
+// as a complete, reviewed section in the locale data above.
 
 function brandFirstTitle(title = '') {
   const suffix = ' - Escape the Backrooms'
@@ -766,9 +761,51 @@ function ensureLevelThirteenImageDimensions(levelId, html) {
   )
 }
 
+// These older Level 37.2 drafts described build-dependent clips as the route.
+// Keep one reviewed, standard route per locale rather than stripping phrases
+// out of the old HTML after the fact.
+function getReviewedLevelHtml(locale, levelId) {
+  if (String(levelId) !== '25') return null
+  return {
+    en: `<p>Dark Poolrooms is a valve-and-boat route. The water hurts, the valves raise the level enough for the next section, and the safest plan is to finish each valve set before trying to move the group onward.</p><h2>Escape the Backrooms Level 37.2 Walkthrough Video</h2><iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe><h2>Boat, ladders, and the first valves</h2><p>Board the floatie boat and follow the open channel. Whenever a ladder appears, climb it and turn every valve in that section before returning to the boat. A missed valve is easy to diagnose: the next barrier stays too high to cross.</p><img src="/images/levels/level-25-01.webp" alt="Valve route in Escape the Backrooms Level 37.2 Dark Poolrooms" /><h2>Clear the basement valve sets</h2><p>The lower areas ask for four, then three, then seven valves. Work one named area at a time and call out a valve only after its interaction finishes. On the glass bridge, walk rather than sprint; breaking it turns a simple regroup into a restart.</p><h2>When the Clump finds the group</h2><p>The Clump is the encounter that changes the route. Keep the nearest ladder or water edge in mind before turning a valve. If it commits, break the chase by ducking underwater, wait for it to lose interest, then climb out and continue from the last valve your team confirmed.</p><ul><li><strong>Toxic water:</strong> use the boat for long channels; on short unavoidable crossings, keep the contact brief and climb out immediately.</li><li><strong>Co-op:</strong> split only within sight of the same valve area. One player calls the remaining count, while another watches for the Clump.</li><li><strong>Exit check:</strong> after the final valves, regroup before using the next transition so no player is left in a drained section.</li></ul>`,
+    de: `<p>Die Dark Poolrooms sind eine Ventil- und Bootroute. Das Wasser schadet, die Ventile heben den Wasserstand für den nächsten Abschnitt, und die sichere Methode ist, jeden Ventilsatz vollständig abzuschließen.</p><h2>Escape the Backrooms Level 37.2: Walkthrough-Video</h2><iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe><h2>Boot, Leitern und erste Ventile</h2><p>Steigt in das Schwimmboot und folgt dem offenen Kanal. An jeder Leiter steigt ihr hoch und dreht alle Ventile dieses Bereichs, bevor ihr zum Boot zurückkehrt. Bleibt die nächste Barriere zu hoch, fehlt noch ein Ventil.</p><h2>Die Ventilsätze im Untergeschoss</h2><p>Unten folgen vier, dann drei und schließlich sieben Ventile. Arbeitet Bereich für Bereich ab und bestätigt ein Ventil erst nach der fertigen Animation. Auf der Glasbrücke wird gegangen, nicht gesprintet.</p><h2>Wenn der Clump auftaucht</h2><p>Merkt euch vor jedem Ventil die nächste Leiter oder Wasserkante. Setzt der Clump nach, taucht unter, wartet auf seinen Verlust des Interesses und macht am letzten bestätigten Ventil weiter.</p><ul><li><strong>Giftiges Wasser:</strong> nehmt das Boot für lange Kanäle und klettert nach kurzen Querungen sofort heraus.</li><li><strong>Koop:</strong> teilt euch nur innerhalb desselben Ventilbereichs auf; eine Person zählt die offenen Ventile.</li></ul>`,
+    fr: `<p>Les Dark Poolrooms sont une route de bateau et de vannes. L’eau blesse, les vannes montent le niveau pour la section suivante, et le plan sûr consiste à terminer chaque série avant d’avancer.</p><h2>Vidéo walkthrough Escape the Backrooms Niveau 37.2</h2><iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe><h2>Bateau, échelles et premières vannes</h2><p>Montez dans le bateau gonflable et suivez le canal. À chaque échelle, actionnez toutes les vannes de la zone avant de revenir au bateau. Si la barrière suivante reste trop haute, une vanne manque.</p><h2>Terminer les séries de vannes du sous-sol</h2><p>Les zones basses demandent quatre, puis trois, puis sept vannes. Traitez une zone à la fois et annoncez une vanne après la fin de l’interaction. Marchez sur le pont de verre : courir le casse.</p><h2>Quand le Clump vous repère</h2><p>Avant une vanne, repérez l’échelle ou le bord d’eau le plus proche. S’il poursuit, plongez sous l’eau, attendez qu’il perde l’intérêt, puis reprenez à la dernière vanne confirmée.</p><ul><li><strong>Eau toxique :</strong> utilisez le bateau pour les longs canaux et sortez aussitôt après une courte traversée.</li><li><strong>Co-op :</strong> répartissez-vous seulement dans la même zone de vannes ; une personne annonce le compte restant.</li></ul>`,
+    es: `<p>Dark Poolrooms es una ruta de barca y válvulas. El agua hace daño, las válvulas elevan el nivel para la siguiente zona y el plan seguro es terminar cada grupo antes de avanzar.</p><h2>Vídeo walkthrough de Escape the Backrooms Nivel 37.2</h2><iframe src="https://www.youtube.com/embed/LVHeNjt0XQ0" allowfullscreen></iframe><h2>Barca, escaleras y primeras válvulas</h2><p>Subid a la barca hinchable y seguid el canal abierto. En cada escalera, accionad todas las válvulas de esa zona antes de volver. Si la siguiente barrera sigue demasiado alta, falta una válvula.</p><h2>Completad los grupos de válvulas del sótano</h2><p>Las zonas inferiores piden cuatro, después tres y finalmente siete válvulas. Trabajad una zona a la vez y confirmad una válvula al acabar la interacción. En el puente de cristal se camina: correr lo rompe.</p><h2>Cuando os encuentra el Clump</h2><p>Antes de una válvula, ubicad la escalera o borde de agua más cercano. Si os persigue, sumergeos, esperad a que pierda el interés y retomad la última válvula confirmada.</p><ul><li><strong>Agua tóxica:</strong> usad la barca en canales largos y salid enseguida tras un cruce corto.</li><li><strong>Cooperativo:</strong> dividíos solo dentro de la misma zona de válvulas; una persona dice el número restante.</li></ul>`,
+  }[locale]
+}
+
+function getReviewedLevelMetadata(locale, levelId) {
+  if (String(levelId) !== '25') return null
+  return {
+    en: { title: 'Escape the Backrooms: Level 37.2 Dark Poolrooms Guide', description: 'Navigate Dark Poolrooms with the floatie boat, complete the 4-, 3-, and 7-valve sections, cross the glass bridge safely, and lose the Clump before moving on.', seoTitle: 'Escape the Backrooms Level 37.2 Dark Poolrooms Guide' },
+    de: { title: 'Escape the Backrooms: Level 37.2 Dark Poolrooms Guide', description: 'Nutzt das Schwimmboot, erledigt die Ventilbereiche mit 4, 3 und 7 Ventilen, überquert die Glasbrücke sicher und verliert den Clump.', seoTitle: 'Escape the Backrooms Level 37.2 Dark Poolrooms Guide' },
+    fr: { title: 'Escape the Backrooms : guide du niveau 37.2 Dark Poolrooms', description: 'Utilisez le bateau gonflable, terminez les zones à 4, 3 et 7 vannes, traversez le pont de verre et semez le Clump.', seoTitle: 'Escape the Backrooms : guide du niveau 37.2 Dark Poolrooms' },
+    es: { title: 'Escape the Backrooms: guía del nivel 37.2 Dark Poolrooms', description: 'Usad la barca hinchable, completad las zonas de 4, 3 y 7 válvulas, cruzad el puente de cristal y perdeos al Clump.', seoTitle: 'Escape the Backrooms: guía del nivel 37.2 Dark Poolrooms' },
+  }[locale]
+}
+
+function correctKnownRouteFacts(locale, levelId, html) {
+  if (String(levelId) !== '8') return html
+  const corrections = {
+    en: [
+      ['Open the door marked "EXIT" to leave the Boiler Room and proceed to Level 6: Lights Out.', 'Open the door marked "EXIT" to leave the Boiler Room and enter the Pipe Run, where the route continues toward Level Fun.'],
+      ["If you still have insecticide from the hotel, save it. It's more effective on small moths, not the giant ones here (use steam for them).", 'The red Bug Spray Valve releases insecticide gas and creates the safe opening when a Female Deathmoth blocks the route.'],
+    ],
+    de: [
+      ['Öffne die Tür mit der Aufschrift "EXIT", um den Boiler Room zu verlassen und zu Level 6: Lights Out zu gelangen.', 'Die EXIT-Tür führt in den Pipe Run; von dort geht die Route weiter nach Level Fun.'],
+      ['Falls du noch Spray aus dem Hotel hast, heb es auf. Es ist effektiver gegen kleine Motten, nicht bei den Riesen hier (nutze Dampf).', 'Das rote Bug-Spray-Ventil setzt Insektizidgas frei und schafft das sichere Zeitfenster bei einer blockierten Route.'],
+    ],
+    fr: [
+      ['Ouvrez la porte marquée "EXIT" pour quitter la Chaufferie et passer au Niveau 6 : Lights Out.', 'La porte EXIT mène au Pipe Run, puis la route continue vers Level Fun.'],
+      ['Si vous avez encore de l’insecticide de l’hôtel, gardez-le. Il est plus efficace contre les petites mites, pas les grandes (utilisez la vapeur pour elles).', 'La vanne rouge de Bug Spray libère un gaz insecticide et crée la fenêtre de passage lorsqu’une Female Deathmoth bloque la route.'],
+    ],
+  }
+  return (corrections[locale] ?? []).reduce((currentHtml, [from, to]) => currentHtml.replaceAll(from, to), html)
+}
+
 export function enhanceLevelDetails(locale, entry) {
   const enhancement = editorialEnhancements[locale]?.[entry.id]
-  const baseHtml = enhancement?.fullHtml ?? entry.detailsHtml
+  const baseHtml = enhancement?.fullHtml ?? getReviewedLevelHtml(locale, entry.id) ?? entry.detailsHtml
   const updatedHeadings = (enhancement?.headings ?? []).reduce(
     (html, [from, to]) => replaceHeading(html, from, to),
     baseHtml,
@@ -782,38 +819,41 @@ export function enhanceLevelDetails(locale, entry) {
       ? updated.replace(/^\s*<p\b[^>]*>[\s\S]*?<\/p>/i, `<p>${enhancement.description}</p>`)
       : updated
   const withExtra = enhancement?.extra ? `${withUpdatedIntro}\n${enhancement.extra}` : withUpdatedIntro
-  return removeLegacyShortcutCopy(
-    ensureLevelThirteenImageDimensions(
-      entry.id,
-      replaceLegacyTipsHeading(locale, entry.title, clarifyHubTerminology(locale, entry.id, withExtra)),
+  return ensureLevelThirteenImageDimensions(
+    entry.id,
+    replaceLegacyTipsHeading(
+      locale,
+      entry.title,
+      correctKnownRouteFacts(locale, entry.id, clarifyHubTerminology(locale, entry.id, withExtra)),
     ),
   )
 }
 
 export function enhanceLevelEntry(locale, entry) {
   const enhancement = editorialEnhancements[locale]?.[entry.id]
-  const title = brandFirstTitle(cleanLegacyShortcutText(enhancement?.seoTitle ?? entry.seo?.title))
-  const description = cleanLegacyShortcutText(enhancement?.description ?? entry.description)
-  const seoDescription = cleanLegacyShortcutText(enhancement?.description ?? entry.seo?.description)
+  const reviewedMetadata = getReviewedLevelMetadata(locale, entry.id)
+  const title = brandFirstTitle(reviewedMetadata?.seoTitle ?? enhancement?.seoTitle ?? entry.seo?.title)
+  const description = reviewedMetadata?.description ?? enhancement?.description ?? entry.description
+  const seoDescription = reviewedMetadata?.description ?? enhancement?.description ?? entry.seo?.description
   return {
     ...entry,
-    title: cleanLegacyShortcutText(entry.title),
+    ...(reviewedMetadata?.title || enhancement?.entryTitle ? { title: reviewedMetadata?.title ?? enhancement.entryTitle } : {}),
     detailsHtml: enhanceLevelDetails(locale, entry),
     ...(description ? { description } : {}),
-    pageTitle: cleanLegacyShortcutText(enhancement?.pageTitle ?? entry.pageTitle),
-    imageAlt: cleanLegacyShortcutText(entry.imageAlt),
+    pageTitle: enhancement?.pageTitle ?? entry.pageTitle,
+    imageAlt: entry.imageAlt,
     ...(entry.seo
-      ? { seo: { ...entry.seo, title, description: seoDescription, keywords: cleanLegacyShortcutText(entry.seo.keywords) } }
+      ? { seo: { ...entry.seo, title, description: seoDescription, keywords: entry.seo.keywords } }
       : {}),
     ...(entry.sideBarInfo
       ? {
           sideBarInfo: {
             ...entry.sideBarInfo,
             ...(entry.sideBarInfo.difficulty
-              ? { difficulty: cleanLegacyShortcutText(enhancement?.difficulty ?? entry.sideBarInfo.difficulty) }
+              ? { difficulty: enhancement?.difficulty ?? entry.sideBarInfo.difficulty }
               : {}),
             ...(entry.sideBarInfo.objectives
-              ? { objectives: cleanLegacyShortcutText(enhancement?.sideBarObjectives ?? entry.sideBarInfo.objectives) }
+              ? { objectives: enhancement?.sideBarObjectives ?? entry.sideBarInfo.objectives }
               : {}),
           },
         }

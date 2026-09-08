@@ -57,6 +57,39 @@ function richTextLength(value) {
   return String(value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().length
 }
 
+function plainText(value) {
+  return String(value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+}
+
+function validatePublishedCopy(locale, entries) {
+  for (const entry of entries) {
+    const scope = `levels.${locale}[${entry.id}]`
+    const renderedText = [entry.title, entry.pageTitle, entry.description, entry.seo?.title, entry.seo?.description, entry.detailsHtml]
+      .map(plainText)
+      .join(' ')
+
+    if (/["“”]\s*["“”]/u.test(renderedText)) {
+      addError(scope, 'published copy contains empty quotation marks')
+    }
+    if (/\bskip\s+es\b/iu.test(renderedText)) {
+      addError(scope, 'published copy contains a broken Skip label')
+    }
+  }
+
+  const boilerRoom = entries.find((entry) => String(entry.id) === '8')
+  if (boilerRoom) {
+    const boilerCopy = plainText(boilerRoom.detailsHtml)
+    if (/proceed to Level 6:\s*Lights Out|use steam for them/iu.test(boilerCopy)) {
+      addError(`levels.${locale}[8]`, 'Boiler Room still contains a superseded exit or steam instruction')
+    }
+  }
+
+  const beverlyRoom = entries.find((entry) => String(entry.id) === '7')
+  if (beverlyRoom && /05938|17564|89472/u.test(plainText(beverlyRoom.detailsHtml))) {
+    addError(`levels.${locale}[7]`, 'Beverly Room incorrectly includes Terror Hotel Room 235 codes')
+  }
+}
+
 function validateEntries(type, locale, entries) {
   const scope = `${type}.${locale}`
   const duplicateIds = findDuplicates(entries.map((entry) => entry.id))
@@ -128,6 +161,7 @@ async function main() {
         ? entries.map((entry) => levelEnhancementsModule.enhanceLevelEntry(locale, entry))
         : entries
       validateEntries(type, locale, data[type][locale])
+      if (type === 'levels') validatePublishedCopy(locale, data[type][locale])
     }
   }
 

@@ -178,7 +178,7 @@ export default {
             item04Question: 'Comment trouver les clés dans chaque niveau ?',
             item04Answer: 'Les clés sont essentielles pour progresser. Notre section Cartes et Clés détaille leur emplacement. Par exemple, le Niveau 1 nécessite 4 clés cachées dans des armoires.',
             item05Question: 'À quoi servent les codes d\'ascenseur et de porte ?',
-            item05Answer: 'Certaines serrures utilisent un mot de passe fixe, tandis que d’autres tirent leur réponse des objets ou des indices de la partie en cours. La page <strong>Codes et solutions</strong> distingue les réponses fixes, comme le mot de passe du Hub et le code du ticket du niveau 3999, des énigmes variables des niveaux 1 et 4.',
+            item05Answer: 'Certaines serrures utilisent un mot de passe fixe, tandis que d’autres tirent leur réponse des objets ou des indices de la partie en cours. La page <strong>Codes et solutions</strong> distingue les réponses fixes, comme le mot de passe de l’ordinateur de la base M.E.G. et le code du ticket du niveau 3999, des énigmes variables des niveaux 1 et 4.',
             item06Question: 'Comment éviter les entités comme le Hound ou la Moth ?',
             item06Answer: 'Notre <strong>base d’entités</strong> grandissante se concentre sur les créatures déjà présentes dans nos itinéraires, avec leur comportement propre à chaque niveau et des solutions de fuite concrètes. Gardez par exemple l’étourdissement lumineux pour un Hound qui charge et avancez accroupi près des Death Moths sans les éclairer directement.',
             item07Question: 'Qu\'est-ce que le Niveau 3999 et le système de tâches ?',

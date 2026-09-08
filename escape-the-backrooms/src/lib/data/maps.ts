@@ -13,10 +13,16 @@ const maps = {
 } as Record<Locale, MapEntry[]>
 
 function removeEditorialSourceCopy(detailsHtml: string) {
-  return detailsHtml.replace(
-    /<p\b[^>]*>[^<]*(?:Fandom|source-linked|source link|images? originales?|original images?|Bilder[^<]*Quelle)[\s\S]*?<\/p>/gi,
-    '',
-  )
+  return detailsHtml
+    .replace(/The Fandom guide states/gi, 'The current route uses')
+    .replace(
+      /<h2>\s*(?:Source(?:\s+and\s+Map)?\s+Scope|Map\s+Scope)\s*<\/h2>\s*<p\b[^>]*>[\s\S]*?<\/p>/gi,
+      '',
+    )
+    .replace(
+      /<p\b[^>]*>[^<]*(?:Fandom|source-linked|source link|images? originales?|original images?|Bilder[^<]*Quelle)[\s\S]*?<\/p>/gi,
+      '',
+    )
 }
 
 export function getMaps(locale: Locale): MapEntry[] {
