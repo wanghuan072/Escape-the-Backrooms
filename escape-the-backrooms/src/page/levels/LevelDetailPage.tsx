@@ -1,6 +1,6 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
 import { IntrinsicImage } from '@/components/content/IntrinsicImage'
-import { getLevels } from '@/lib/data/levels'
+import { getLevelCategoryKey, getLevels } from '@/lib/data/levels'
 import { getMapLevelRelation, getMapsForLevel } from '@/lib/data/map-level-relations'
 import { RelatedContentLinks } from '@/components/content/RelatedContentLinks'
 import { VideoChapters } from '@/components/content/VideoChapters'
@@ -44,11 +44,12 @@ export default function LevelDetailPage({ locale, level }: { locale: Locale; lev
   const routeTopics = extractedRouteTopics.length
     ? extractedRouteTopics
     : chapters.slice(0, 4).map((chapter) => chapter.label)
+  const contentUpdatedAt = level.contentUpdatedAt ?? video?.updatedAt
   return (
     <>
-    <JsonLd data={pageJsonLd(level.seo.title || level.title, level.seo.description || level.description, `${siteConfig.url}${localizedPath(`/levels/${level.addressBar}`, locale)}`, 'Article', { authorName: 'Frontline Pathfinder', authorUrl: siteConfig.social.youtube, dateModified: video?.updatedAt })} />
+    <JsonLd data={pageJsonLd(level.seo.title || level.title, level.seo.description || level.description, `${siteConfig.url}${localizedPath(`/levels/${level.addressBar}`, locale)}`, 'Article', { authorName: 'Frontline Pathfinder', authorUrl: siteConfig.social.youtube, dateModified: contentUpdatedAt })} />
     <div className="level-detail-view">
-      <section className="page-hero level-hero"><div className="container"><div className="header-content"><div className="title-section"><div className="level-eyebrow-row"><span className="level-eyebrow">{level.category || 'Walkthrough'}</span>{level.isLatest && <span className="latest-level-inline">{translate(locale, 'levelsPage.latestBadge')}</span>}</div><h1 className="page-title">{level.pageTitle}</h1>{video && <LevelVideoMeta locale={locale} video={video} />}<p className="level-hero-summary">{level.description}</p>{highlights.items.length > 0 && <div className="level-video-highlights"><div className="video-highlights-title">{guideCopy.highlights}</div><div className="video-highlights-grid">{highlights.items.map((item, index) => <div className="video-highlight" key={index} dangerouslySetInnerHTML={{ __html: item }} />)}</div></div>}</div><div className="level-hero-visual">{level.imageUrl ? <IntrinsicImage src={level.imageUrl} alt={level.imageAlt || level.title} priority sizes="(max-width: 768px) 100vw, 42vw" /> : <span>{level.title}</span>}</div></div></div></section>
+      <section className="page-hero level-hero"><div className="container"><div className="header-content"><div className="title-section"><div className="level-eyebrow-row"><span className="level-eyebrow">{translate(locale, `levelsPage.categories.${getLevelCategoryKey(level)}`)}</span>{level.isLatest && <span className="latest-level-inline">{translate(locale, 'levelsPage.latestBadge')}</span>}</div><h1 className="page-title">{level.pageTitle}</h1>{video && <LevelVideoMeta locale={locale} video={video} contentUpdatedAt={contentUpdatedAt} />}<p className="level-hero-summary">{level.description}</p>{highlights.items.length > 0 && <div className="level-video-highlights"><div className="video-highlights-title">{guideCopy.highlights}</div><div className="video-highlights-grid">{highlights.items.map((item, index) => <div className="video-highlight" key={index} dangerouslySetInnerHTML={{ __html: item }} />)}</div></div>}</div><div className="level-hero-visual">{level.imageUrl ? <IntrinsicImage src={level.imageUrl} alt={level.imageAlt || level.title} priority sizes="(max-width: 768px) 100vw, 42vw" /> : <span>{level.title}</span>}</div></div></div></section>
       <section className="detail-content"><div className="container"><div className="content-layout">
         <main className="main-content">
           <div className="content-body level-overview v-html-style" dangerouslySetInnerHTML={{ __html: optimizeRichHtml(remainingHtml) }} />
@@ -119,14 +120,16 @@ function LevelResearchNotes({ locale, levelId, topics }: { locale: Locale; level
   </section>
 }
 
-function LevelVideoMeta({ locale, video }: { locale: Locale; video: NonNullable<ReturnType<typeof getYouTubeVideo>> }) {
+function LevelVideoMeta({ locale, video, contentUpdatedAt }: { locale: Locale; video: NonNullable<ReturnType<typeof getYouTubeVideo>>; contentUpdatedAt?: string }) {
   const guideCopy = getLevelGuideCopy(locale)
-  const date = new Intl.DateTimeFormat(locale === 'en' ? 'en-US' : locale, { month: 'long', year: 'numeric' }).format(new Date(`${video.updatedAt}T00:00:00Z`))
+  const date = contentUpdatedAt
+    ? new Intl.DateTimeFormat(locale === 'en' ? 'en-US' : locale, { month: 'long', year: 'numeric' }).format(new Date(`${contentUpdatedAt}T00:00:00Z`))
+    : null
   const duration = `${Math.floor(video.durationSeconds / 60)}:${String(video.durationSeconds % 60).padStart(2, '0')}`
   return <div className="level-video-meta">
     <div className="level-guide-facts">
       <div><span className="level-meta-label">{guideCopy.author}</span><span>Frontline Pathfinder</span></div>
-      <div><span className="level-meta-label">{guideCopy.updated}</span><span>{date}</span></div>
+      {date && <div><span className="level-meta-label">{guideCopy.updated}</span><span>{date}</span></div>}
       <div><span className="level-meta-label">{guideCopy.duration}</span><span>{duration}</span></div>
     </div>
     <div className="level-social-links">

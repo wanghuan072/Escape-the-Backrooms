@@ -116,6 +116,10 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 1247,
     "height": 656
   },
+  "/images/levels/level-0-11-water-damage-cover.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/levels/level-01-01.webp": {
     "width": 941,
     "height": 695
@@ -580,10 +584,6 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 960,
     "height": 540
   },
-  "/images/levels/level-36-wiki-cover.webp": {
-    "width": 1600,
-    "height": 900
-  },
   "/images/levels/level-37-01.webp": {
     "width": 960,
     "height": 540
@@ -600,7 +600,7 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 960,
     "height": 540
   },
-  "/images/levels/level-37-wiki-cover.webp": {
+  "/images/levels/level-421-plastic-mariana-cover.webp": {
     "width": 1600,
     "height": 900
   },

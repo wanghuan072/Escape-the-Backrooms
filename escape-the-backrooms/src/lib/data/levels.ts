@@ -2,6 +2,7 @@ import deLevels from '@/content/levels/de.js'
 import enLevels from '@/content/levels/en.js'
 import esLevels from '@/content/levels/es.js'
 import frLevels from '@/content/levels/fr.js'
+import { getLevelPageUpdatedAt } from '@/content/level-page-updates.js'
 import type { LevelEntry } from '@/types/level'
 import type { Locale } from '@/types/locale'
 
@@ -14,6 +15,9 @@ const levels = {
 
 const levelEightPrimarySlug = 'level-8-cave-system-walkthrough'
 const levelEightDuplicateSlug = 'level-8-cave-system-guide'
+const hiddenLevelIds = new Set(['29', '30', '31', '32', '33', '34', '35'])
+
+export type LevelCategoryKey = 'main' | 'hidden'
 
 const additionalLevelEightNotesTitle: Record<Locale, string> = {
   en: 'Additional Level 8 Route Notes',
@@ -40,7 +44,20 @@ function mergeLevelEightEntries(locale: Locale, entries: LevelEntry[]): LevelEnt
 }
 
 export function getLevels(locale: Locale): LevelEntry[] {
-  return mergeLevelEightEntries(locale, levels[locale] ?? levels.en)
+  return mergeLevelEightEntries(locale, levels[locale] ?? levels.en).map((entry) => ({
+    ...entry,
+    contentUpdatedAt: getLevelPageUpdatedAt(entry.id),
+  }))
+}
+
+export function getLevelCategoryKey(level: Pick<LevelEntry, 'id'>): LevelCategoryKey {
+  return hiddenLevelIds.has(String(level.id)) ? 'hidden' : 'main'
+}
+
+export function getLevelDirectoryStats(locale: Locale) {
+  const entries = getLevels(locale)
+  const hidden = entries.filter((entry) => getLevelCategoryKey(entry) === 'hidden').length
+  return { total: entries.length, main: entries.length - hidden, hidden }
 }
 
 export function findLevel(locale: Locale, slug: string): LevelEntry | undefined {

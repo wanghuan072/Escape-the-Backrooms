@@ -2,6 +2,8 @@ import { AdPlacement } from '@/components/ads/AdPlacement'
 import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import { getMaps } from '@/lib/data/maps'
 import { localizedPath, translate } from '@/lib/i18n/messages'
+import { siteConfig } from '@/config/site'
+import { JsonLd, itemListJsonLd } from '@/seo/json-ld'
 import type { Locale } from '@/types/locale'
 import '@/style/page/maps/maps-page.module.css'
 
@@ -21,6 +23,12 @@ export default function MapsPage({ locale }: { locale: Locale }) {
   const maps = getMaps(locale)
   return (
     <div className="maps-keys-view">
+      <JsonLd id="maps-item-list" data={itemListJsonLd(
+        translate(locale, 'mapsPage.hero.title'),
+        translate(locale, 'mapsPage.hero.subtitle'),
+        `${siteConfig.url}${localizedPath('/maps-keys', locale)}`,
+        maps.map((map) => ({ name: map.title, url: `${siteConfig.url}${localizedPath(`/maps-keys/${map.addressBar}`, locale)}`, image: map.imageUrl ? `${siteConfig.url}${map.imageUrl}` : undefined })),
+      )} />
       <section className="page-hero"><div className="container"><div className="hero-content"><h1 className="page-title">{translate(locale, 'mapsPage.hero.title')}</h1><p className="page-subtitle">{translate(locale, 'mapsPage.hero.subtitle')}</p></div></div></section>
       <AdPlacement />
       <section className="maps-section"><div className="container">

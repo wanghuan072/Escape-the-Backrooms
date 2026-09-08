@@ -1,14 +1,15 @@
 'use client'
 
 interface CategoryNavigationProps {
-  categories: Array<{ name: string; count: number }>
+  categories: Array<{ name: string; count: number; slug?: string }>
 }
 
 const categorySlug = (category: string) => category.toLowerCase().replace(/\s+/g, '-')
 
 export function CategoryNavigation({ categories }: CategoryNavigationProps) {
-  const scrollToCategory = (category: string) => {
-    const element = document.getElementById(categorySlug(category))
+  const scrollToCategory = (category: string, slug?: string) => {
+    const target = slug ?? categorySlug(category)
+    const element = document.getElementById(target)
     if (!element) return
     const header = document.querySelector<HTMLElement>('.header')
     const headerHeight = header?.offsetHeight ?? 80
@@ -19,7 +20,7 @@ export function CategoryNavigation({ categories }: CategoryNavigationProps) {
   return (
     <nav className="nav-list">
       {categories.map((category) => (
-        <a key={category.name} href={`#${categorySlug(category.name)}`} className="nav-item" onClick={(event) => { event.preventDefault(); scrollToCategory(category.name) }}>
+        <a key={category.name} href={`#${category.slug ?? categorySlug(category.name)}`} className="nav-item" onClick={(event) => { event.preventDefault(); scrollToCategory(category.name, category.slug) }}>
           <span className="nav-name">{category.name}</span><span className="nav-count">{category.count}</span>
         </a>
       ))}

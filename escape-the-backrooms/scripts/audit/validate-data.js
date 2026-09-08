@@ -191,6 +191,7 @@ async function main() {
 
   const youtubeModule = await import('../../src/lib/data/youtube.ts')
   const chapterCopyModule = await import('../../src/lib/data/video-chapter-copy.ts')
+  const pageUpdatesModule = await import('../../src/content/level-page-updates.js')
   const metadataEntries = youtubeModule.getYouTubeMetadataEntries()
   const metadataById = new Map(metadataEntries)
   if (metadataEntries.length !== 36) addError('youtube', `expected 36 video records, found ${metadataEntries.length}`)
@@ -220,6 +221,12 @@ async function main() {
   const redirectedLevelSlugs = new Set(['level-8-cave-system-guide'])
   for (const locale of locales) {
     const retainedLevels = data.levels[locale].filter((level) => !redirectedLevelSlugs.has(level.addressBar))
+    retainedLevels.forEach((level) => {
+      const updatedAt = pageUpdatesModule.getLevelPageUpdatedAt(level.id)
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(updatedAt || '') || Number.isNaN(Date.parse(`${updatedAt}T00:00:00Z`))) {
+        addError(`levels.${locale}[${level.id}]`, 'missing or invalid page-level updated date')
+      }
+    })
     const videoIds = retainedLevels.map((level) => level.detailsHtml.match(/youtube\.com\/embed\/([A-Za-z0-9_-]+)/)?.[1])
     videoIds.forEach((videoId, index) => {
       if (!videoId) addError(`levels.${locale}[${retainedLevels[index].id}]`, 'YouTube embed is missing')
@@ -302,9 +309,14 @@ async function main() {
     process.exit(1)
   }
 
+  const publicLevelCount = data.levels.en.filter(
+    (level) => !redirectedLevelSlugs.has(level.addressBar),
+  ).length
   console.log(
     `Data validation passed: ${locales.length} locales, ` +
-    `${data.levels.en.length} levels/locale, ${data.maps.en.length} maps/locale.`,
+    `${publicLevelCount} public level guides/locale ` +
+    `(${data.levels.en.length} source records including the redirected Level 8 merge), ` +
+    `${data.maps.en.length} maps/locale.`,
   )
 }
 

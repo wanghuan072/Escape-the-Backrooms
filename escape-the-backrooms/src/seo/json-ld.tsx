@@ -65,3 +65,32 @@ export function pageJsonLd(
       : {}),
   }
 }
+
+interface ItemListEntry {
+  name: string
+  url: string
+  image?: string
+}
+
+export function itemListJsonLd(
+  name: string,
+  description: string,
+  url: string,
+  items: readonly ItemListEntry[],
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    description,
+    url,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+      ...(item.image ? { image: item.image } : {}),
+    })),
+  }
+}

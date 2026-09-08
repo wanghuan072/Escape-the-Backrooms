@@ -39,6 +39,7 @@ The manually maintained content sources are:
 - `src/content/wiki/entities.js`
 - `src/content/related-games.js`
 - `src/content/map-level-relations.js` (the stable-ID relationships used by map and walkthrough detail-page links)
+- `src/content/level-page-updates.js` (the substantial editorial-update date used by the visible byline, Article JSON-LD, and level sitemap entries)
 
 Keep content values, HTML, image paths, IDs, slugs, and per-entry SEO records unchanged unless a content change is explicitly requested. Pages consume these sources through the domain modules in `src/lib/data`; they should not import the large source collections directly.
 
@@ -56,7 +57,7 @@ Do not edit these files directly:
 1. `scripts/data/generate-localized-routes.js` builds the compact detail-route lookup consumed by `src/lib/routes/localized-path.ts`; this keeps localized content collections out of the header's browser bundle.
 2. `scripts/data/generate-next-routes.js` writes thin App Router entry files.
 
-Run `npm run generate-sitemap` after a deliberate URL or content inventory change. The sitemap cache compares content fingerprints: unchanged URLs preserve their existing `lastmod`, while new or changed URLs receive the current date.
+Run `npm run generate-sitemap` after a deliberate URL or content inventory change. The sitemap cache compares content fingerprints: unchanged URLs preserve their existing `lastmod`, while new or changed URLs receive the current date. Level guides are stricter: update the matching entry in `src/content/level-page-updates.js` only after a substantial editorial change. That explicit date keeps the visible update month, Article `dateModified`, and sitemap `lastmod` aligned; YouTube dates remain separate video metadata.
 
 ## SEO contracts
 
@@ -105,7 +106,7 @@ $env:PAGE_AUDIT_BASE_URL = 'http://127.0.0.1:3000'
 npm run audit:pages
 ```
 
-The page audit requires all 220 valid routes to return 200 with non-empty content, one non-empty H1, complete TDK/canonical/hreflang metadata, JSON-LD, valid internal links and rendered assets. It also verifies the 200 sitemap URLs and eight localized 404 cases, including the retired `/site-404` paths, for status, fallback TDK, `noindex, nofollow`, locale, and rendered content. CI starts the production server and runs this audit automatically after `npm run check`.
+The page audit currently requires all 280 valid routes to return 200 with non-empty content, one non-empty H1, complete TDK/canonical/hreflang metadata, JSON-LD, valid internal links and rendered assets. It also verifies all 280 sitemap URLs and eight localized 404 cases, including the retired `/site-404` paths, for status, fallback TDK, `noindex, nofollow`, locale, and rendered content. CI starts the production server and runs this audit automatically after `npm run check`.
 
 When public URLs or content inventory intentionally changes, also run:
 

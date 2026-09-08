@@ -24,6 +24,7 @@ export interface LevelEntry {
   isHome?: boolean
   homePriority?: number
   isLatest?: boolean
+  contentUpdatedAt?: string
   sideBarInfo?: Record<string, string>
   featured?: FeaturedLink[]
   seo: SeoRecord
