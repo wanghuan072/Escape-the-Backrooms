@@ -1,10 +1,8 @@
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { SiteHeader } from '@/components/navigation/SiteHeader'
-import { AdRuntime } from '@/components/ads/GptRuntime'
 import Script from 'next/script'
 import { JsonLd, websiteJsonLd } from '@/seo/json-ld'
 import { translate } from '@/lib/i18n/messages'
-import { GPT_ADS_ENABLED } from '@/config/ads'
 import type { Locale } from '@/types/locale'
 import '@/style/layout/root-document.module.css'
 
@@ -21,12 +19,6 @@ const delayedThirdPartyScripts = `
       function gtag(){window.dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-BFYQB388T1');
-      const adsScript = document.createElement('script');
-      adsScript.async = true;
-      adsScript.defer = true;
-      adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042701865163735';
-      adsScript.crossOrigin = 'anonymous';
-      document.head.appendChild(adsScript);
     }, 4000);
   }
 
@@ -43,16 +35,6 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
       <head>
         <link rel="icon" type="image/x-icon" sizes="32x32" href="https://escapethebackrooms.org/favicon.ico" />
         <link rel="shortcut icon" type="image/x-icon" href="https://escapethebackrooms.org/favicon.ico" />
-        {GPT_ADS_ENABLED && <>
-          <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net" />
-          <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossOrigin="anonymous" />
-          <Script
-            id="google-publisher-tag"
-            src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-            strategy="afterInteractive"
-            crossOrigin="anonymous"
-          />
-        </>}
         <Script
           id="delayed-third-party-scripts"
           strategy="afterInteractive"
@@ -70,13 +52,11 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
 export function SiteBody({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
     <>
-      <AdRuntime>
-        <div id="app">
-          <SiteHeader locale={locale} searchPlaceholder={translate(locale, 'searchPage.search.placeholder')} />
-          <main>{children}</main>
-          <SiteFooter locale={locale} />
-        </div>
-      </AdRuntime>
+      <div id="app">
+        <SiteHeader locale={locale} searchPlaceholder={translate(locale, 'searchPage.search.placeholder')} />
+        <main>{children}</main>
+        <SiteFooter locale={locale} />
+      </div>
       {/* Global browser scripts — the Next.js equivalent of scripts at the end of Vue index.html. */}
       {/* To enable the legacy cleanup again, remove this JSX comment wrapper:
       <Script id="legacy-lsv-cleanup" strategy="afterInteractive">

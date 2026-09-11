@@ -1,5 +1,4 @@
 import { AdPlacement } from '@/components/ads/AdPlacement'
-import { AdsAdSlot } from '@/components/ads/AdsAdSlot'
 import { IntrinsicImage } from '@/components/content/IntrinsicImage'
 import { getEntities } from '@/lib/data/entities'
 import { getLevelCategoryKey, getLevelDirectoryStats, getLevels } from '@/lib/data/levels'
@@ -52,7 +51,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
       <section className="about-section" id="about"><div className="container"><div className="about-wrap"><SectionHeader locale={locale} section="about" /><div className="about-content"><div className="about-text">{[1, 2, 3].map((number) => <p key={number} dangerouslySetInnerHTML={{ __html: translate(locale, `homePage.about.text0${number}`) }} />)}</div><div className="about-highlights">{[1, 2, 3, 4, 5, 6].map((number) => <div className="highlight-item" key={number}><div><strong>{translate(locale, `homePage.about.highlight0${number}Title`)}</strong><p>{translate(locale, `homePage.about.highlight0${number}Text`)}</p></div></div>)}</div></div></div></div><AdPlacement /></section>
 
-      <section className="faq-section" id="faq"><div className="container"><div className="faq-wrap"><SectionHeader locale={locale} section="faq" /><div className="faq-list">{faqItems.map((item, index) => <div className="faq-item" key={index}><h3 className="faq-question">{item.question}</h3><div className="faq-answer"><p dangerouslySetInnerHTML={{ __html: item.answer }} /></div></div>)}</div></div></div><aside className="container home-page-ad"><AdsAdSlot /></aside></section>
+      <section className="faq-section" id="faq"><div className="container"><div className="faq-wrap"><SectionHeader locale={locale} section="faq" /><div className="faq-list">{faqItems.map((item, index) => <div className="faq-item" key={index}><h3 className="faq-question">{item.question}</h3><div className="faq-answer"><p dangerouslySetInnerHTML={{ __html: item.answer }} /></div></div>)}</div></div></div><AdPlacement className="container home-page-ad" horizontal /></section>
     </div>
   )
 }

@@ -35,7 +35,22 @@
   text-transform: uppercase;
 }
 
-:global(aside.ad-placement.level-inline-ad .gpt-ad-inner),
-:global(aside.ad-placement.level-footer-ad .gpt-ad-inner) {
+:global(aside.ad-placement .ad-placeholder) {
+  min-height: 90px;
+  width: min(100%, 728px);
+  margin: 0 auto;
+  border: 1px dashed rgba(255, 215, 0, 0.22);
+  background: rgba(10, 10, 8, 0.26);
+}
+
+:global(aside.ad-placement .ad-placeholder--horizontal),
+:global(aside.ad-placement.level-inline-ad .ad-placeholder),
+:global(aside.ad-placement.level-footer-ad .ad-placeholder) {
   min-height: 50px;
+}
+
+@media (max-width: 768px) {
+  :global(aside.ad-placement.ad-placement--hide-on-mobile) {
+    display: none;
+  }
 }

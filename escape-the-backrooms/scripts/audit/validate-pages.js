@@ -23,9 +23,6 @@ const baseRoutes = [
 ]
 const sitemapBaseRoutes = baseRoutes
 const requireSitemapToday = process.argv.includes('--require-sitemap-today')
-const gptAdsEnabled = /export const GPT_ADS_ENABLED\s*=\s*true\b/.test(
-  fs.readFileSync(path.join(rootDir, 'src/config/ads.ts'), 'utf8'),
-)
 const errors = []
 
 function addError(scope, message) {
@@ -371,7 +368,7 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
 
     const contentOrder = [
       ['level overview', html.indexOf('class="content-body level-overview')],
-      ...(gptAdsEnabled ? [['video ad', html.indexOf('class="ad-placement level-inline-ad level-video-ad')]] : []),
+      ['video ad placeholder', html.indexOf('class="ad-placement level-inline-ad level-video-ad')],
       ['video', html.indexOf('id="video-guide"')],
       ['video chapters', html.indexOf('class="video-chapters"')],
       ['research notes', html.indexOf('class="level-research-notes"')],
@@ -385,7 +382,7 @@ async function auditPage(baseUrl, routePath, validPaths, redirectSources, linked
 
     const navigationPosition = html.indexOf('class="nav-links"')
     const footerAdPosition = html.indexOf('class="ad-placement level-footer-ad"')
-    if (gptAdsEnabled && footerAdPosition < 0) addError(scope, 'level footer ad is missing')
+    if (footerAdPosition < 0) addError(scope, 'level footer ad placeholder is missing')
     else if (footerAdPosition >= 0 && navigationPosition >= 0 && footerAdPosition < navigationPosition) addError(scope, 'level footer ad must follow level navigation')
   }
 
