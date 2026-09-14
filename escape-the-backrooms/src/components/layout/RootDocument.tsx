@@ -29,6 +29,19 @@ const delayedThirdPartyScripts = `
   }
 })();`
 
+const makeThisBetterScript = `
+(function () {
+  var script = document.createElement('script');
+  script.src = 'https://unpkg.com/makethisbetter@1';
+  script.async = true;
+  script.onload = function () {
+    if (window.MakeThisBetter) {
+      window.MakeThisBetter.init({ projectKey: 'mtb_proj_9bia3311ky2KVlRzRfRCMj4DCDE51LaO' });
+    }
+  };
+  document.head.appendChild(script);
+})();`
+
 export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
     <html lang={locale}>
@@ -40,11 +53,8 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: delayedThirdPartyScripts }}
         />
-        {/* MakeThisBetter 全站反馈工具：先加载 SDK，再使用项目密钥初始化。 */}
-        <Script id="make-this-better-sdk" src="https://unpkg.com/makethisbetter@1" strategy="afterInteractive" />
-        <Script id="make-this-better-init" strategy="afterInteractive">
-          {`MakeThisBetter.init({ projectKey: 'mtb_proj_9bia3311ky2KVlRzRfRCMj4DCDE51LaO' })`}
-        </Script>
+        {/* MakeThisBetter 全站反馈工具：SDK 加载完成后才初始化，避免脚本竞态报错。 */}
+        <Script id="make-this-better" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: makeThisBetterScript }} />
         <JsonLd id="website-jsonld" data={websiteJsonLd} />
       </head>
       <body>
