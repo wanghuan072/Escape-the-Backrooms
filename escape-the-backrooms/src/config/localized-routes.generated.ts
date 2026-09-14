@@ -1172,6 +1172,36 @@ export const localizedRouteMap = {
     "fr": "/fr/entities/mr-kitty",
     "es": "/es/entities/mr-kitty"
   },
+  "/entities/clump": {
+    "en": "/entities/clump",
+    "de": "/de/entities/clump",
+    "fr": "/fr/entities/clump",
+    "es": "/es/entities/clump"
+  },
+  "/entities/animation": {
+    "en": "/entities/animation",
+    "de": "/de/entities/animation",
+    "fr": "/fr/entities/animation",
+    "es": "/es/entities/animation"
+  },
+  "/entities/aranea-membri": {
+    "en": "/entities/aranea-membri",
+    "de": "/de/entities/aranea-membri",
+    "fr": "/fr/entities/aranea-membri",
+    "es": "/es/entities/aranea-membri"
+  },
+  "/entities/window": {
+    "en": "/entities/window",
+    "de": "/de/entities/window",
+    "fr": "/fr/entities/window",
+    "es": "/es/entities/window"
+  },
+  "/entities/party-host": {
+    "en": "/entities/party-host",
+    "de": "/de/entities/party-host",
+    "fr": "/fr/entities/party-host",
+    "es": "/es/entities/party-host"
+  },
   "/backrooms-games/inside-the-backrooms": {
     "en": "/backrooms-games/inside-the-backrooms",
     "de": "/de/backrooms-games/inside-the-backrooms",

@@ -192,180 +192,260 @@
     "lastmod": "2026-09-08"
   },
   "https://escapethebackrooms.org/entities/wanderer": {
-    "hash": "bb1382c68ceb2a35",
+    "hash": "16f8d26cc421492b",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/bacteria": {
-    "hash": "4178392f5d043b49",
+    "hash": "221893a652e4d65e",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/skin-stealer": {
-    "hash": "eeedf18313e994b9",
+    "hash": "ec3cde13920cbd9a",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/smiler": {
-    "hash": "1af58895a607340f",
+    "hash": "b27a0112ba54670e",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/hound": {
-    "hash": "deca1b281961048c",
+    "hash": "efd06d729da7402f",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/male-deathmoth": {
-    "hash": "b0e6efcdb21deb25",
+    "hash": "481cd1a9c9bb9c06",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/female-deathmoth": {
-    "hash": "d2f5e990692e9663",
+    "hash": "dc66e886abb19cb2",
     "lastmod": "2026-09-08"
   },
   "https://escapethebackrooms.org/entities/partygoer": {
-    "hash": "35c866c0f2765b46",
+    "hash": "7a91302bcddb7571",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/scratcher": {
-    "hash": "c35cda5c9b10d192",
+    "hash": "e485b2d4ed0011df",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/wretch": {
-    "hash": "06879ed08bf15e5d",
+    "hash": "acced76b682b6a4e",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/entities/mr-kitty": {
-    "hash": "650bb6e6d9bea6ec",
+    "hash": "3df1b43fe2bad1a0",
     "lastmod": "2026-09-07"
   },
+  "https://escapethebackrooms.org/entities/clump": {
+    "hash": "8e6add8529712de0",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/entities/animation": {
+    "hash": "2f074f143a7c54a2",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/entities/aranea-membri": {
+    "hash": "d0b548a4cec36d21",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/entities/window": {
+    "hash": "07438a6cee03cd58",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/entities/party-host": {
+    "hash": "3a3c034384f47e11",
+    "lastmod": "2026-09-14"
+  },
   "https://escapethebackrooms.org/de/entities/wanderer": {
-    "hash": "b162337dca3f603c",
+    "hash": "734bda55b69b6a12",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/bacteria": {
-    "hash": "21afae50d0543aba",
+    "hash": "8d2e887dce34af62",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/skin-stealer": {
-    "hash": "d85ab902f8e10d6d",
+    "hash": "285b0faaead036b1",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/smiler": {
-    "hash": "534c403351d5c867",
+    "hash": "13342791e8e37cb5",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/hound": {
-    "hash": "55fad290803940d4",
+    "hash": "166bb8485b5656f3",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/male-deathmoth": {
-    "hash": "10672a414829b661",
+    "hash": "a9ddc6b92d123c5a",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/female-deathmoth": {
-    "hash": "1af8193d1660fc35",
+    "hash": "331a32677d867907",
     "lastmod": "2026-09-08"
   },
   "https://escapethebackrooms.org/de/entities/partygoer": {
-    "hash": "e26ca08e82ed14b3",
+    "hash": "be59d24b226791c9",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/scratcher": {
-    "hash": "d0ebb451de3942ea",
+    "hash": "317294b91df170f5",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/wretch": {
-    "hash": "3de114f80745bf82",
+    "hash": "a6e49e33fa6efd6e",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/de/entities/mr-kitty": {
-    "hash": "0194399d338ba9b2",
+    "hash": "5441f4428372bd70",
     "lastmod": "2026-09-07"
   },
+  "https://escapethebackrooms.org/de/entities/clump": {
+    "hash": "7cc8a2e33065f157",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/de/entities/animation": {
+    "hash": "1e18ea72cc0b51d0",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/de/entities/aranea-membri": {
+    "hash": "01bd85e196289669",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/de/entities/window": {
+    "hash": "16eead5cadb070d6",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/de/entities/party-host": {
+    "hash": "851462bafa806178",
+    "lastmod": "2026-09-14"
+  },
   "https://escapethebackrooms.org/fr/entities/wanderer": {
-    "hash": "796153092affea14",
+    "hash": "692d030501a62b4a",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/bacteria": {
-    "hash": "35826c05465ea896",
+    "hash": "525a125360ac7a5f",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/skin-stealer": {
-    "hash": "986c20b3121013a4",
+    "hash": "df81f7e21f44ae78",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/smiler": {
-    "hash": "8aa55fe8aefd2c0c",
+    "hash": "86de638ccc4cd719",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/hound": {
-    "hash": "a8efa1537089b588",
+    "hash": "9807a051cf32a24e",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/male-deathmoth": {
-    "hash": "bd3fbb617ed1e659",
+    "hash": "5dceb64623408022",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/female-deathmoth": {
-    "hash": "2c4bed7e35a12f49",
+    "hash": "856e0a4e81fffbde",
     "lastmod": "2026-09-08"
   },
   "https://escapethebackrooms.org/fr/entities/partygoer": {
-    "hash": "9f4da2eed4c6de10",
+    "hash": "c42bbda274d824bd",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/scratcher": {
-    "hash": "df4fa405ba77c316",
+    "hash": "22a563b1fd1d2e4f",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/wretch": {
-    "hash": "79e391e14858bd4c",
+    "hash": "b9ed5f896f025c2a",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/fr/entities/mr-kitty": {
-    "hash": "b874b708470b95c5",
+    "hash": "80f4bee2424c033d",
     "lastmod": "2026-09-07"
   },
+  "https://escapethebackrooms.org/fr/entities/clump": {
+    "hash": "c019ab06e5a58588",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/fr/entities/animation": {
+    "hash": "f18c2855235db056",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/fr/entities/aranea-membri": {
+    "hash": "0289012e0cf4b2ad",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/fr/entities/window": {
+    "hash": "27f86bf64d1bdf3f",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/fr/entities/party-host": {
+    "hash": "367a748b11f8372b",
+    "lastmod": "2026-09-14"
+  },
   "https://escapethebackrooms.org/es/entities/wanderer": {
-    "hash": "0c95e6e056a47a24",
+    "hash": "bcb9c0933f8e06dd",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/bacteria": {
-    "hash": "e9fbfabe2235656d",
+    "hash": "0d0f95f44c223263",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/skin-stealer": {
-    "hash": "8423857473299030",
+    "hash": "f2b947cc26d7836d",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/smiler": {
-    "hash": "bef158c541e31ee2",
+    "hash": "41ed6487ef2d34f2",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/hound": {
-    "hash": "44e7dd8b7ee04896",
+    "hash": "d8edf27e3c0ad2ab",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/male-deathmoth": {
-    "hash": "992bbd30574a606b",
+    "hash": "5c8a323068f495bf",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/female-deathmoth": {
-    "hash": "5f20f64157b878c8",
+    "hash": "148a7a4002caab41",
     "lastmod": "2026-09-08"
   },
   "https://escapethebackrooms.org/es/entities/partygoer": {
-    "hash": "34f07dc93040fc12",
+    "hash": "8e9ad2fefeb6e7c4",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/scratcher": {
-    "hash": "429ef1e1bbdea572",
+    "hash": "f190dd0dce0157bd",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/wretch": {
-    "hash": "265c1a8f50264d8e",
+    "hash": "1ca01a19f96a0ca7",
     "lastmod": "2026-09-07"
   },
   "https://escapethebackrooms.org/es/entities/mr-kitty": {
-    "hash": "3f362cfbea1d80ac",
+    "hash": "58a6bd623d7a1640",
     "lastmod": "2026-09-07"
+  },
+  "https://escapethebackrooms.org/es/entities/clump": {
+    "hash": "c785cd33a7da1992",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/es/entities/animation": {
+    "hash": "bf16f1c98e5c3ae5",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/es/entities/aranea-membri": {
+    "hash": "536bb785963e1a20",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/es/entities/window": {
+    "hash": "8fd148e0f992f0e7",
+    "lastmod": "2026-09-14"
+  },
+  "https://escapethebackrooms.org/es/entities/party-host": {
+    "hash": "4e4f27ba55d95db6",
+    "lastmod": "2026-09-14"
   },
   "https://escapethebackrooms.org/backrooms-games/inside-the-backrooms": {
     "hash": "f059893df1028eef",

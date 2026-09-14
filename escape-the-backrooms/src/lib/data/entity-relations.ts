@@ -202,7 +202,7 @@ const records: Record<string, EntityRecord> = {
       { levelSlug: 'escape-the-backrooms-level-fun-plus-guide', role: 'Three Partygoers roam the Party and Arcade sections; the Funhouse adds pressure when the Party Host spots the group or the timer advances.', avoidance: 'Use tables as the reset, avoid close-range checks in the dark arcade, and leave an objective immediately when the patrol enters the room.', verifiedFor: 'Current game behavior and site video route' },
       { levelSlug: 'escape-the-backrooms-level-52-guide', role: 'A static Partygoer encounter is tied to the Partypooper escort. Failing to crouch can trigger the attack and kill the companion first.', avoidance: 'Stay behind the Partypooper, crouch when it crouches, and do not rush past the escort into the trigger area.', verifiedFor: 'Current game behavior and route guide' },
     ],
-    relatedEntities: ['smiler', 'scratcher', 'mr-kitty'],
+    relatedEntities: ['smiler', 'scratcher', 'mr-kitty', 'party-host'],
     modules: ['behaviorMechanics', 'spawnPoints', 'counterStrategy', 'multiplayerDiff', 'relatedEntities', 'faq'],
     uniqueModuleTitle: 'One visual theme, several rule sets',
     uniqueModuleSummary: 'The table, balloon, escort cue, and forced chase each belong to a different encounter. Carrying the previous room’s tactic into the next room is the common mistake.',
@@ -271,6 +271,108 @@ const records: Record<string, EntityRecord> = {
     uniqueModuleTitle: 'Attention is the defensive resource',
     uniqueModuleSummary: 'Mr. Kitty cannot be solved with a locked door. The repeatable route is watch, move backward, search briefly, place a doll, and reacquire before the next room.',
   },
+  clump: {
+    aliases: ['Hand Monster'],
+    threatScore: 4,
+    type: ['chaser'],
+    appearance: 'A tangled, low-to-the-ground mass of joined arms and torsos. It is easiest to recognise by the sudden chase pressure it creates in a flooded lane, not by stopping for a close look.',
+    behaviorSummary: 'The Clump takes over when it finds the group in Dark Poolrooms. It is quicker than a player in the open, but briefly going under water breaks its pursuit and lets the valve route restart.',
+    behaviorMechanics: 'The useful rule is not “run faster.” Keep the next water entry in mind while working the valves. If the Clump commits, submerge long enough to lose it, climb out, and resume from the last confirmed valve rather than swimming farther into the toxic route.',
+    spawnPoints: [
+      { levelSlug: 'level-37-2-poolrooms-walkthrough', timing: 'During the flooded valve phases', location: 'Dark Poolrooms water lanes and raised valve areas', routeEffect: 'A valve check can become a chase reset, so the nearest place to dip below the surface is part of the route plan.' },
+    ],
+    counterStrategy: 'Do not try to race the Clump across an open lane. Break the chase by ducking under water, then re-enter the route from a safe ledge or valve platform. Keep the reset short so the environmental water hazard does not become the new problem.',
+    multiplayerDiff: 'Call “down” before anyone separates. The group should use the same reset instead of sending one player ahead with the valve count; after surfacing, confirm which valves are already complete.',
+    appearances: [
+      { levelSlug: 'level-37-2-poolrooms-walkthrough', role: 'The Clump turns the flooded valve route into a choice between finishing the next interaction and taking a deliberate underwater reset.', avoidance: 'Keep a water entry nearby, submerge when the chase starts, then regroup at the last confirmed valve rather than trying to outrun it across the open lane.', verifiedFor: 'Current game behavior and route guide' },
+    ],
+    relatedEntities: ['wretch', 'scratcher'],
+    modules: ['behaviorMechanics', 'spawnPoints', 'counterStrategy', 'multiplayerDiff', 'relatedEntities', 'faq'],
+    uniqueModuleTitle: 'Water is the reset, not the obstacle',
+    uniqueModuleSummary: 'The Clump is one of the few chase threats where a short, intentional dive is the correct response. Treating the water only as terrain leaves the team with no planned reset.',
+  },
+  animation: {
+    aliases: ['Animated Doll', 'Doll'],
+    threatScore: 4,
+    type: ['chaser'],
+    appearance: 'A small childlike wooden puppet with glowing red eyes. It can look harmless at a distance among the bright Level 94 houses, which makes the curfew change easy to underestimate.',
+    behaviorSummary: 'Animations appear after night falls in Level 94 and quickly overwhelm players caught outside. They can force their way through a house door, while beds and closets are the real hiding tools once the group is indoors.',
+    behaviorMechanics: 'The day/night transition is the encounter trigger. Use daytime to choose the next house and inspect its hiding space. When the warning begins, stop searching for a better route: get inside, turn off the light, hide, and wait until the pressure has passed.',
+    spawnPoints: [
+      { levelSlug: 'level-94-motion-walkthrough', timing: 'After the Level 94 day phase ends', location: 'Rolling hills and houses around the route to the castle', routeEffect: 'Outdoor movement stops being viable, so the closest house with a usable bed or closet becomes the immediate objective.' },
+    ],
+    counterStrategy: 'Do not attempt to outrun a group of Animations over the hills. Enter a house before night, use a bed or closet rather than relying on the door, and do not leave the hiding space because one Animation has moved past the room.',
+    multiplayerDiff: 'Pick the house before the warning. In co-op, one player confirms the bed or closet while the others enter; a late player should take the closest usable hide instead of crossing the hills to rejoin the group.',
+    appearances: [
+      { levelSlug: 'level-94-motion-walkthrough', role: 'Animations flood the Level 94 hills after curfew, making the houses temporary shelters rather than optional scenery.', avoidance: 'Reach a house before dark, hide under a bed or in a closet, and stay there even if an Animation forces the door open nearby.', verifiedFor: 'Current game behavior and route guide' },
+    ],
+    relatedEntities: ['wretch', 'aranea-membri'],
+    modules: ['behaviorMechanics', 'spawnPoints', 'counterStrategy', 'multiplayerDiff', 'relatedEntities', 'faq'],
+    uniqueModuleTitle: 'A house is a checkpoint only if it has a hide',
+    uniqueModuleSummary: 'Entering a house at curfew is necessary, but the door is not the finish line. The practical check is whether the team can immediately reach a bed or closet inside it.',
+  },
+  'aranea-membri': {
+    aliases: ['Ceiling Spider'],
+    threatScore: 5,
+    type: ['chaser'],
+    appearance: 'A large spider-like humanoid that moves through Level 188’s hotel corridors. Its shape is visible long before it becomes safe to test a hallway, so treat the first sighting as a route decision.',
+    behaviorSummary: 'Aranea Membri patrols the Courtyard’s interior route and makes television hauling risky. It is faster than a loaded player in a corridor, which is why nearby rooms and a clean return line matter more than forcing a carry.',
+    behaviorMechanics: 'Separate movement from TV work. First identify a room or corner that can reset the chase. Then move a television through one clear stretch. If the entity enters the lane, abandon the carry position, reach the reset, and return only when the corridor is readable again.',
+    spawnPoints: [
+      { levelSlug: 'level-188-courtyard-walkthrough', timing: 'During the television collection and freight-elevator route', location: 'Hotel floors and connecting corridors', routeEffect: 'Each TV transfer needs an available room or retreat point; committing to a long corridor without one can strand the carrier.' },
+    ],
+    counterStrategy: 'Do not treat a television carry like a speedrun. Move it in short, planned segments, watch the corridor before leaving a room, and retreat to cover when the spider enters the lane instead of trying to squeeze past it.',
+    multiplayerDiff: 'One player carries or positions the TV; another watches the corridor and calls the nearest reset room. Do not make every player follow the television, because the group then blocks the only doorway that can break the chase.',
+    appearances: [
+      { levelSlug: 'level-188-courtyard-walkthrough', role: 'Aranea Membri patrols the hotel route while the team collects and transports televisions toward the freight elevator.', avoidance: 'Plan a reachable room before each TV move, keep the corridor caller ahead of the carrier, and reset behind cover instead of forcing a pass when the entity enters the lane.', verifiedFor: 'Current game behavior and route guide' },
+    ],
+    relatedEntities: ['window', 'skin-stealer'],
+    modules: ['behaviorMechanics', 'spawnPoints', 'counterStrategy', 'multiplayerDiff', 'relatedEntities', 'faq'],
+    uniqueModuleTitle: 'Carry in segments, not in panic',
+    uniqueModuleSummary: 'The television route is safer when every transfer has a chosen room and return line. A carrier who runs until the next corner has no answer when the corridor stops being empty.',
+  },
+  window: {
+    aliases: ['Window Entity', 'Strangler'],
+    threatScore: 2,
+    type: ['ambient'],
+    appearance: 'A pale humanoid figure seen behind glass, often with a face and hands pressed close enough to pull attention from the route. It is stationary, but that does not make the window safe to investigate.',
+    behaviorSummary: 'Window encounters punish closing the distance. In the Abandoned Office and Courtyard routes, the knock and silhouette are cues to keep moving through the middle of the hall and leave the glass out of the team’s path.',
+    behaviorMechanics: 'This is a positioning hazard, not a chase. The first player calls the window side; everyone takes the opposite side or the hall centre and continues. Do not stop for a clearer view, a screenshot, or a teammate who has stepped toward the glass.',
+    spawnPoints: [
+      { levelSlug: 'level-4-the-abandoned-office-Walkthrough', timing: 'Along the office corridor route', location: 'Windows facing the abandoned office hall', routeEffect: 'The team needs to keep a central walking line instead of searching the glass-side edges.' },
+      { levelSlug: 'level-188-courtyard-walkthrough', timing: 'During the hotel TV route', location: 'Courtyard-facing windows and interior halls', routeEffect: 'A window warning can pull attention away from the TV carrier and into an unsafe lane.' },
+    ],
+    counterStrategy: 'Keep distance from the glass and continue through the safe side of the corridor. If a player stops near a window, call the route and move first; trying to crowd around the sighting creates the larger risk.',
+    multiplayerDiff: 'The lead player calls “window left” or “window right,” then the team uses one opposite-side line. Do not stack at the glass to show everyone the model, especially while another player is carrying an objective.',
+    appearances: [
+      { levelSlug: 'level-4-the-abandoned-office-Walkthrough', role: 'Windows turn parts of the Abandoned Office into a spacing check: a figure and knock can draw the group to the dangerous edge of the hallway.', avoidance: 'Stay in the hall centre or the opposite side, do not approach the glass, and keep moving to the next confirmed room.', verifiedFor: 'Current game behavior and route guide' },
+      { levelSlug: 'level-188-courtyard-walkthrough', role: 'Courtyard-facing windows add a stationary danger while the team moves televisions through the hotel interior.', avoidance: 'Keep the TV carrier’s line clear, call the glass side early, and do not stop the group to inspect a silhouette behind a window.', verifiedFor: 'Current game behavior and route guide' },
+    ],
+    relatedEntities: ['aranea-membri', 'scratcher'],
+    modules: ['behaviorMechanics', 'spawnPoints', 'counterStrategy', 'multiplayerDiff', 'relatedEntities', 'faq'],
+    uniqueModuleTitle: 'The knock is a direction cue',
+    uniqueModuleSummary: 'Window encounters do not need a fight or a hide. The reliable response is simply to name the glass side, keep the group away from it, and preserve the corridor’s working line.',
+  },
+  'party-host': {
+    aliases: ['Cake'],
+    threatScore: 5,
+    type: ['interactive'],
+    appearance: 'A green cake-like creature with a single large eye, fixed to a wall or ceiling. It does not sprint after the group itself; its value to the level is the alarm it can raise.',
+    behaviorSummary: 'Party Hosts watch the Fun+ sectors and scream when they spot players, creating immediate Partygoer pressure. A thrown firework can remove a Host before the alarm, while a missed shot can turn a simple key trip into a group escape.',
+    behaviorMechanics: 'Look upward before entering a sector. If a Host covers the lane, choose whether a firework has a safe angle or whether the objective can be taken while staying below its sightline. The decision must happen before the party patrol is pulled into the room.',
+    spawnPoints: [
+      { levelSlug: 'escape-the-backrooms-level-fun-plus-guide', timing: 'During the four-sector key route', location: 'Fun+ ceilings and walls, especially the Funhouse approach', routeEffect: 'A Host alarm adds Partygoer pressure to the key route, so fireworks and table resets should be planned before entering the sector.' },
+    ],
+    counterStrategy: 'Use a firework from a clear angle before the Host sees the team. If there is no safe throw, stay below its sightline, take the planned objective quickly, and leave before it raises the alarm. Do not chase a Host while Partygoers have already filled the lane.',
+    multiplayerDiff: 'One player calls the Host and takes the firework shot; the others hold the nearest reset and avoid crossing the throw. If the alarm happens, abandon the key interaction and regroup around a table before trying again.',
+    appearances: [
+      { levelSlug: 'escape-the-backrooms-level-fun-plus-guide', role: 'Party Hosts hang above the Fun+ route and can pull Partygoers onto a sector that looked quiet seconds earlier.', avoidance: 'Check the ceiling before crossing, remove the Host with a safe firework throw when possible, or stay below its sightline and leave the sector promptly.', verifiedFor: 'Current game behavior and route guide' },
+    ],
+    relatedEntities: ['partygoer'],
+    modules: ['behaviorMechanics', 'spawnPoints', 'counterStrategy', 'multiplayerDiff', 'relatedEntities', 'faq'],
+    uniqueModuleTitle: 'The alarm is the real attack',
+    uniqueModuleSummary: 'A Party Host is dangerous because it changes the room’s population. Checking the ceiling before a key interaction prevents a quiet sector from becoming a Partygoer chase with no table in reach.',
+  },
 }
 
 type AppearanceCopy = Pick<EntityLevelAppearance, 'role' | 'avoidance'>
@@ -314,6 +416,22 @@ const localizedAppearanceCopy: Record<Exclude<Locale, 'en'>, Record<string, Reco
     'mr-kitty': {
       'escape-the-backrooms-level-974-kittys-house-guide': { role: 'Mr. Kitty kontrolliert die gesamte Puppensuche: Beim Ansehen bleibt er stehen, beim Wegsehen bewegt oder teleportiert er sich.', avoidance: 'Der anvisierte Spieler hält Blickkontakt und geht rückwärts durch Türen; die anderen suchen, ohne die Sichtlinie zu kreuzen.' },
     },
+    clump: {
+      'level-37-2-poolrooms-walkthrough': { role: 'Der Clump setzt die Gruppe während der überfluteten Ventilabschnitte unter Druck und ist im offenen Gang schneller als ein Spieler.', avoidance: 'Taucht kurz unter, wenn die Verfolgung beginnt, und trefft euch danach am zuletzt bestätigten Ventil statt über die offene Strecke zu sprinten.' },
+    },
+    animation: {
+      'level-94-motion-walkthrough': { role: 'Nach der Sperrstunde überrennen Animations die Hügel von Level 94 und machen die Häuser zu zeitlich begrenzten Zufluchten.', avoidance: 'Geht vor Einbruch der Nacht in ein Haus und versteckt euch unter einem Bett oder im Schrank; eine geschlossene Haustür allein genügt nicht.' },
+    },
+    'aranea-membri': {
+      'level-188-courtyard-walkthrough': { role: 'Aranea Membri patrouilliert die Hotelflure, während das Team Fernseher zum Lastenaufzug transportiert.', avoidance: 'Plant vor jedem TV-Transport ein erreichbares Zimmer, lasst den Träger nicht allein und zieht euch hinter Deckung zurück statt am Wesen vorbeizudrängen.' },
+    },
+    window: {
+      'level-4-the-abandoned-office-Walkthrough': { role: 'Fenstergefahren ziehen die Gruppe in den verlassenen Büros an die gefährliche Glasseite des Flurs.', avoidance: 'Bleibt in der Mitte oder auf der gegenüberliegenden Seite und geht weiter, statt an der Scheibe stehenzubleiben.' },
+      'level-188-courtyard-walkthrough': { role: 'Hoffenster ergänzen die TV-Route um eine stationäre Gefahr, die den Blick des Trägers ablenken kann.', avoidance: 'Sagt die Glasseite früh an, haltet die Laufbahn frei und untersucht keine Gestalt hinter dem Fenster.' },
+    },
+    'party-host': {
+      'escape-the-backrooms-level-fun-plus-guide': { role: 'Party Hosts hängen über der Fun+-Route und können Partygoers in einen gerade noch ruhigen Sektor rufen.', avoidance: 'Prüft vor dem Betreten die Decke, werft bei freier Linie ein Feuerwerk oder bleibt unter der Sichtlinie und verlasst den Bereich zügig.' },
+    },
   },
   fr: {
     smiler: {
@@ -353,6 +471,22 @@ const localizedAppearanceCopy: Record<Exclude<Locale, 'en'>, Record<string, Reco
     'mr-kitty': {
       'escape-the-backrooms-level-974-kittys-house-guide': { role: 'Mr. Kitty contrôle toute la recherche : il se fige sous le regard, puis avance ou se téléporte quand le joueur ciblé détourne les yeux.', avoidance: 'Le joueur ciblé garde le contact visuel et franchit les portes à reculons ; les autres cherchent sans couper son champ de vision.' },
     },
+    clump: {
+      'level-37-2-poolrooms-walkthrough': { role: 'Le Clump met le groupe sous pression pendant les phases de vannes inondées et court plus vite qu’un joueur à découvert.', avoidance: 'Plongez brièvement dès le début de la poursuite, puis retrouvez-vous à la dernière vanne confirmée plutôt que de courir dans le couloir ouvert.' },
+    },
+    animation: {
+      'level-94-motion-walkthrough': { role: 'Après le couvre-feu, les Animations envahissent les collines du niveau 94 et les maisons deviennent des abris temporaires.', avoidance: 'Entrez dans une maison avant la nuit et cachez-vous sous un lit ou dans un placard ; une porte d’entrée fermée ne suffit pas.' },
+    },
+    'aranea-membri': {
+      'level-188-courtyard-walkthrough': { role: 'Aranea Membri patrouille les couloirs de l’hôtel pendant que l’équipe transporte les téléviseurs vers le monte-charge.', avoidance: 'Prévoyez une chambre accessible avant chaque transport, ne laissez pas le porteur seul et repliez-vous à couvert plutôt que de forcer le passage.' },
+    },
+    window: {
+      'level-4-the-abandoned-office-Walkthrough': { role: 'Les fenêtres dangereuses attirent le groupe vers le côté vitré des couloirs de bureaux abandonnés.', avoidance: 'Restez au milieu ou du côté opposé du couloir et avancez au lieu de vous arrêter près de la vitre.' },
+      'level-188-courtyard-walkthrough': { role: 'Les fenêtres du Courtyard ajoutent une menace fixe qui peut distraire le porteur de téléviseur.', avoidance: 'Annoncez tôt le côté vitré, gardez le passage libre et n’inspectez pas une silhouette derrière la fenêtre.' },
+    },
+    'party-host': {
+      'escape-the-backrooms-level-fun-plus-guide': { role: 'Les Party Hosts surplombent la route de Fun+ et peuvent appeler les Partygoers dans un secteur pourtant calme.', avoidance: 'Vérifiez le plafond, lancez un feu d’artifice si la ligne est dégagée ou restez sous son champ de vision et quittez vite le secteur.' },
+    },
   },
   es: {
     smiler: {
@@ -391,6 +525,22 @@ const localizedAppearanceCopy: Record<Exclude<Locale, 'en'>, Record<string, Reco
     },
     'mr-kitty': {
       'escape-the-backrooms-level-974-kittys-house-guide': { role: 'Mr. Kitty controla toda la búsqueda: se queda quieto si lo miran y se acerca o teletransporta cuando el jugador marcado aparta la vista.', avoidance: 'El jugador marcado mantiene el contacto visual y cruza de espaldas; los demás buscan sin bloquear su línea de visión.' },
+    },
+    clump: {
+      'level-37-2-poolrooms-walkthrough': { role: 'El Clump presiona al grupo durante las fases inundadas de válvulas y es más rápido que un jugador en campo abierto.', avoidance: 'Sumergíos un instante cuando empiece la persecución y reuníos en la última válvula confirmada en vez de correr por el pasillo abierto.' },
+    },
+    animation: {
+      'level-94-motion-walkthrough': { role: 'Tras el toque de queda, las Animations invaden las colinas del Nivel 94 y las casas pasan a ser refugios temporales.', avoidance: 'Entrad en una casa antes de anochecer y escondeos bajo una cama o en un armario; la puerta cerrada no basta por sí sola.' },
+    },
+    'aranea-membri': {
+      'level-188-courtyard-walkthrough': { role: 'Aranea Membri patrulla los pasillos del hotel mientras el equipo transporta televisores hacia el montacargas.', avoidance: 'Planead una habitación accesible antes de cada traslado, no dejéis solo al portador y retroceded a cubierto en vez de intentar pasar a su lado.' },
+    },
+    window: {
+      'level-4-the-abandoned-office-Walkthrough': { role: 'Las ventanas peligrosas arrastran al grupo hacia el lado de cristal en las oficinas abandonadas.', avoidance: 'Mantened el centro o el lado opuesto del pasillo y seguid avanzando en lugar de parar junto al cristal.' },
+      'level-188-courtyard-walkthrough': { role: 'Las ventanas del Courtyard añaden una amenaza fija que puede distraer a quien transporta el televisor.', avoidance: 'Avisad pronto del lado de las ventanas, dejad libre la ruta y no investiguéis una silueta tras el cristal.' },
+    },
+    'party-host': {
+      'escape-the-backrooms-level-fun-plus-guide': { role: 'Los Party Hosts vigilan la ruta de Fun+ desde arriba y pueden llamar a los Partygoers a un sector que parecía tranquilo.', avoidance: 'Revisad el techo, lanzad un fuego artificial si la línea está despejada o mantened el perfil bajo y salid del sector con rapidez.' },
     },
   },
 }

@@ -4,9 +4,21 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 1920,
     "height": 1080
   },
+  "/images/entities/animation-current.webp": {
+    "width": 1480,
+    "height": 876
+  },
+  "/images/entities/aranea-membri-current.webp": {
+    "width": 1139,
+    "height": 1022
+  },
   "/images/entities/bacteria-current.webp": {
     "width": 482,
     "height": 672
+  },
+  "/images/entities/clump-current.webp": {
+    "width": 1230,
+    "height": 1072
   },
   "/images/entities/entities-01-01.webp": {
     "width": 1000,
@@ -84,6 +96,10 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
     "width": 210,
     "height": 499
   },
+  "/images/entities/party-host-current.webp": {
+    "width": 1175,
+    "height": 667
+  },
   "/images/entities/partygoer-current.webp": {
     "width": 210,
     "height": 525
@@ -103,6 +119,10 @@ export const imageDimensions: Readonly<Record<string, Readonly<{ width: number; 
   "/images/entities/wanderer-current.webp": {
     "width": 348,
     "height": 716
+  },
+  "/images/entities/window-current.webp": {
+    "width": 683,
+    "height": 500
   },
   "/images/entities/wretch-current.webp": {
     "width": 278,

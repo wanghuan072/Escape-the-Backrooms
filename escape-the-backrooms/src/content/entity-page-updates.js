@@ -11,6 +11,11 @@ export const entityPageUpdatedAt = Object.freeze({
   scratcher: '2026-09-07',
   wretch: '2026-09-07',
   'mr-kitty': '2026-09-07',
+  clump: '2026-09-14',
+  animation: '2026-09-14',
+  'aranea-membri': '2026-09-14',
+  window: '2026-09-14',
+  'party-host': '2026-09-14',
 })
 
 export function getEntityPageUpdatedAt(addressBar) {
