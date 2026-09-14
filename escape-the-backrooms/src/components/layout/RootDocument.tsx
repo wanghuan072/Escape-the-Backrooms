@@ -43,7 +43,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
         {/* MakeThisBetter 全站反馈工具：先加载 SDK，再使用项目密钥初始化。 */}
         <Script id="make-this-better-sdk" src="https://unpkg.com/makethisbetter@1" strategy="afterInteractive" />
         <Script id="make-this-better-init" strategy="afterInteractive">
-          {`MakeThisBetter.init({ projectKey: 'mtb_proj__yWdg1_ETuQEuXf7h8XpocsRSgjMkQ_q' })`}
+          {`MakeThisBetter.init({ projectKey: 'mtb_proj_9bia3311ky2KVlRzRfRCMj4DCDE51LaO' })`}
         </Script>
         <JsonLd id="website-jsonld" data={websiteJsonLd} />
       </head>
